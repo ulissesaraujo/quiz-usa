@@ -214,6 +214,133 @@ export async function buscarPerguntasAleatorias(quantidade = 10) {
 }
 
 /**
+ * Busca perguntas específicas por IDs (para modo Desafio)
+ * @param {Array} perguntasIds - Array de IDs das perguntas
+ * @returns {Promise<Array>} - Array de perguntas na mesma ordem dos IDs
+ */
+export async function buscarPerguntasPorIds(perguntasIds) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        console.log('Firebase offline - não é possível buscar perguntas');
+        return [];
+    }
+    
+    if (!perguntasIds || perguntasIds.length === 0) {
+        return [];
+    }
+    
+    try {
+        const { doc, getDoc, db } = window._firestore;
+        
+        const perguntas = [];
+        
+        // Busca cada pergunta pelo ID
+        for (const perguntaId of perguntasIds) {
+            const docRef = doc(db, "perguntas", perguntaId);
+            const docSnap = await getDoc(docRef);
+            
+            if (docSnap.exists()) {
+                perguntas.push({
+                    id: docSnap.id,
+                    ...docSnap.data()
+                });
+            } else {
+                console.warn(`Pergunta não encontrada: ${perguntaId}`);
+            }
+        }
+        
+        console.log(`✅ ${perguntas.length} perguntas carregadas para desafio`);
+        return perguntas;
+    } catch (error) {
+        console.error("Erro ao buscar perguntas por IDs:", error);
+        return [];
+    }
+}
+
+/**
+ * Busca uma partida específica pelo sessaoId
+ * @param {string} sessaoId - ID da sessão/partida
+ * @returns {Promise<Object|null>}
+ */
+export async function buscarPartidaPorSessaoId(sessaoId) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        return null;
+    }
+    
+    try {
+        const { collection, getDocs, query, where, db } = window._firestore;
+        const resultsCollection = collection(db, "quiz-results");
+        
+        const q = query(
+            resultsCollection,
+            where("sessaoId", "==", sessaoId)
+        );
+        
+        const snapshot = await getDocs(q);
+        
+        if (snapshot.empty) {
+            return null;
+        }
+        
+        // Retorna o primeiro resultado (deve ser único)
+        const doc = snapshot.docs[0];
+        return {
+            id: doc.id,
+            ...doc.data()
+        };
+    } catch (error) {
+        console.error("Erro ao buscar partida:", error);
+        return null;
+    }
+}
+
+/**
+ * Busca ranking de uma partida específica (todos que jogaram a mesma sessão)
+ * @param {string} sessaoId - ID da sessão original
+ * @param {number} limite - Quantidade máxima de resultados
+ * @returns {Promise<Array>}
+ */
+export async function buscarRankingPorSessao(sessaoId, limite = 50) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        return [];
+    }
+    
+    try {
+        const { collection, getDocs, query, where, orderBy, limit: limitFn, db } = window._firestore;
+        const resultsCollection = collection(db, "quiz-results");
+        
+        // Busca todos que jogaram esta sessão ou desafiaram ela
+        const q = query(
+            resultsCollection,
+            where("sessaoOriginalId", "==", sessaoId),
+            orderBy("pontuacaoTotal", "desc"),
+            limitFn(limite)
+        );
+        
+        const snapshot = await getDocs(q);
+        const ranking = [];
+        
+        snapshot.forEach((doc) => {
+            ranking.push({
+                id: doc.id,
+                ...doc.data()
+            });
+        });
+        
+        return ranking;
+    } catch (error) {
+        console.error("Erro ao buscar ranking da sessão:", error);
+        // Se der erro de índice, tenta busca simples
+        return [];
+    }
+}
+
+/**
  * Adiciona uma nova pergunta ao Firebase
  * @param {Object} pergunta - Dados da pergunta
  */

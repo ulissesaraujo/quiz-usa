@@ -22,6 +22,11 @@ export class QuizEngine {
         this.respondeu = false;
         this.sessaoId = null;
         
+        // Propriedades para modo Desafio
+        this.modoDesafio = false;
+        this.sessaoOriginalId = null; // ID da sessão que está sendo desafiada
+        this.jogadorDesafiado = null; // Nome do jogador que criou a partida original
+        
         // Callbacks
         this.onPerguntaCarregada = null;
         this.onFaseLeitura = null;
@@ -57,12 +62,18 @@ export class QuizEngine {
         this.descricaoTemas = configTemas.descricao || 'Quiz';
         this.sessaoId = this.gerarSessaoId();
         
+        // Configuração de desafio
+        this.modoDesafio = configTemas.modoDesafio || false;
+        this.sessaoOriginalId = configTemas.sessaoOriginalId || this.sessaoId;
+        this.jogadorDesafiado = configTemas.jogadorDesafiado || null;
+        
         this.perguntaAtual = 0;
         this.pontuacaoTotal = 0;
         this.respostas = [];
         this.respondeu = false;
         
-        console.log(`🎮 Quiz iniciado: ${this.descricaoTemas} (${this.perguntas.length} perguntas)`);
+        const tipoPartida = this.modoDesafio ? 'Desafio' : 'Quiz';
+        console.log(`🎮 ${tipoPartida} iniciado: ${this.descricaoTemas} (${this.perguntas.length} perguntas)`);
         
         this.carregarPergunta();
     }
@@ -236,15 +247,24 @@ export class QuizEngine {
         // Calcula temas das perguntas respondidas
         const temasRespondidos = [...new Set(this.respostas.map(r => r.tema).filter(Boolean))];
         
+        // Extrai IDs das perguntas para permitir desafios
+        const perguntasIds = this.perguntas.map(p => p.id);
+        
         const resultado = {
             jogador: '', // Será preenchido pelo app.js
             sessaoId: this.sessaoId,
+            sessaoOriginalId: this.sessaoOriginalId, // ID da sessão original (para agrupar desafios)
+            // IDs das perguntas (para permitir desafios)
+            perguntasIds: perguntasIds,
             // Informações dos temas
             temas: this.temasSelecionados,
             temasNomes: this.temasNomes,
             temasRespondidos: temasRespondidos,
             modoAleatorio: this.modoAleatorio,
             descricaoTemas: this.descricaoTemas,
+            // Informações de desafio
+            modoDesafio: this.modoDesafio,
+            jogadorDesafiado: this.jogadorDesafiado,
             // Pontuação
             pontuacaoTotal: this.pontuacaoTotal,
             acertos: acertos,
@@ -280,6 +300,9 @@ export class QuizEngine {
         this.cronometroSegundos = 0;
         this.respondeu = false;
         this.sessaoId = null;
+        this.modoDesafio = false;
+        this.sessaoOriginalId = null;
+        this.jogadorDesafiado = null;
     }
 
     /**

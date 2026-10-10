@@ -5,6 +5,7 @@
 import { QuizEngine } from './quiz.js';
 import { RankingManager } from './ranking.js';
 import { TemasManager } from './temas.js';
+import { buscarPerguntasPorIds } from './firebase-config.js';
 
 // ========================================
 // ESTADO DA APLICAÇÃO
@@ -270,6 +271,73 @@ async function iniciarQuiz() {
     }
 }
 
+/**
+ * Inicia um desafio - joga com as mesmas perguntas de outro jogador
+ * @param {Object} partidaOriginal - Dados da partida a ser desafiada
+ */
+async function iniciarDesafio(partidaOriginal) {
+    // Determina o ID da sessão original (pode ser a própria sessão ou uma sessão que ela desafiou)
+    const sessaoOriginalId = partidaOriginal.sessaoOriginalId || partidaOriginal.sessaoId;
+    
+    // Verifica se o jogador já jogou esta sessão
+    if (rankingManager.jaJogouSessao(sessaoOriginalId)) {
+        alert('Você já jogou este desafio! Não é possível jogar novamente as mesmas perguntas.');
+        return;
+    }
+    
+    // Verifica se a partida tem os IDs das perguntas
+    if (!partidaOriginal.perguntasIds || partidaOriginal.perguntasIds.length === 0) {
+        alert('Esta partida não suporta desafio (formato antigo).');
+        return;
+    }
+    
+    estado.carregando = true;
+    
+    try {
+        // Fecha o modal se estiver aberto
+        elementos.modalRanking.classList.add('oculto');
+        
+        // Busca as perguntas específicas pelo ID
+        const perguntas = await buscarPerguntasPorIds(partidaOriginal.perguntasIds);
+        
+        if (perguntas.length === 0) {
+            alert('Não foi possível carregar as perguntas do desafio.');
+            return;
+        }
+        
+        // Prepara configuração do desafio
+        const configDesafio = {
+            temas: partidaOriginal.temas || [],
+            temasNomes: partidaOriginal.temasNomes || [],
+            modoAleatorio: partidaOriginal.modoAleatorio || false,
+            descricao: `⚔️ Desafio: ${partidaOriginal.jogador}`,
+            modoDesafio: true,
+            sessaoOriginalId: sessaoOriginalId,
+            jogadorDesafiado: partidaOriginal.jogador
+        };
+        
+        // Atualiza UI
+        elementos.quizTemaInfo.textContent = configDesafio.descricao;
+        elementos.pontosAtuais.textContent = '0';
+        
+        // Configura callbacks do quiz engine
+        configurarCallbacksQuiz();
+        
+        // Inicia o quiz em modo desafio
+        quizEngine.iniciar(perguntas, configDesafio);
+        
+        console.log(`⚔️ Desafio iniciado contra ${partidaOriginal.jogador}`);
+        
+        // Mostra tela do quiz
+        mostrarTela('quiz');
+    } catch (error) {
+        console.error('Erro ao iniciar desafio:', error);
+        alert('Erro ao carregar o desafio. Tente novamente.');
+    } finally {
+        estado.carregando = false;
+    }
+}
+
 function configurarCallbacksQuiz() {
     quizEngine.onPerguntaCarregada = ({ numero, total, pergunta, tema }) => {
         elementos.perguntaContador.textContent = `${numero}/${total}`;
@@ -436,7 +504,7 @@ async function carregarRankingPartida(temas) {
     if (ranking.length === 0) {
         elementos.rankingPartidaBody.innerHTML = `
             <tr>
-                <td colspan="5" style="text-align: center; color: #9ca3af;">
+                <td colspan="6" style="text-align: center; color: #9ca3af;">
                     Nenhum resultado ainda
                 </td>
             </tr>
@@ -451,14 +519,42 @@ async function carregarRankingPartida(temas) {
         
         const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
         
+        // Determina se pode desafiar esta partida
+        const sessaoId = item.sessaoOriginalId || item.sessaoId;
+        const jaJogou = sessaoId ? rankingManager.jaJogouSessao(sessaoId) : true;
+        const podeDesafiar = !isJogadorAtual && item.perguntasIds && item.perguntasIds.length > 0;
+        
+        let btnDesafiarHtml = '';
+        if (podeDesafiar) {
+            if (jaJogou) {
+                btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
+            } else {
+                btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;
+            }
+        } else if (isJogadorAtual) {
+            btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
+        } else {
+            btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
+        }
+        
         tr.innerHTML = `
             <td>${index + 1}º</td>
             <td>${item.jogador}${isJogadorAtual ? ' (você)' : ''}</td>
             <td>${temasDisplay}</td>
             <td>${item.pontuacaoTotal}</td>
             <td>${item.acertos}/${item.totalPerguntas || 10}</td>
+            <td class="td-desafiar">${btnDesafiarHtml}</td>
         `;
+        
         elementos.rankingPartidaBody.appendChild(tr);
+    });
+    
+    // Adiciona event listeners para os botões de desafio
+    elementos.rankingPartidaBody.querySelectorAll('.btn-desafiar:not(.disabled)').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const index = parseInt(btn.dataset.index);
+            iniciarDesafio(ranking[index]);
+        });
     });
 }
 
@@ -485,7 +581,7 @@ async function mostrarRankingGlobal() {
     if (ranking.length === 0) {
         elementos.rankingGlobalBody.innerHTML = `
             <tr>
-                <td colspan="6" style="text-align: center; color: #9ca3af;">
+                <td colspan="7" style="text-align: center; color: #9ca3af;">
                     Nenhum resultado ainda
                 </td>
             </tr>
@@ -498,6 +594,24 @@ async function mostrarRankingGlobal() {
             
             const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
             
+            // Determina se pode desafiar esta partida
+            const sessaoId = item.sessaoOriginalId || item.sessaoId;
+            const jaJogou = sessaoId ? rankingManager.jaJogouSessao(sessaoId) : true;
+            const podeDesafiar = !isJogadorAtual && item.perguntasIds && item.perguntasIds.length > 0;
+            
+            let btnDesafiarHtml = '';
+            if (podeDesafiar) {
+                if (jaJogou) {
+                    btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
+                } else {
+                    btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;
+                }
+            } else if (isJogadorAtual) {
+                btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
+            } else {
+                btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
+            }
+            
             tr.innerHTML = `
                 <td>${index + 1}º</td>
                 <td>${item.jogador}${isJogadorAtual ? ' (você)' : ''}</td>
@@ -505,8 +619,17 @@ async function mostrarRankingGlobal() {
                 <td>${item.pontuacaoTotal}</td>
                 <td>${item.acertos}/${item.totalPerguntas || 10}</td>
                 <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
+                <td class="td-desafiar">${btnDesafiarHtml}</td>
             `;
             elementos.rankingGlobalBody.appendChild(tr);
+        });
+        
+        // Adiciona event listeners para os botões de desafio
+        elementos.rankingGlobalBody.querySelectorAll('.btn-desafiar:not(.disabled)').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const index = parseInt(btn.dataset.index);
+                iniciarDesafio(ranking[index]);
+            });
         });
     }
     

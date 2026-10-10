@@ -6,7 +6,8 @@ import {
     salvarResultado as _salvarResultado, 
     buscarRanking as _buscarRanking, 
     buscarRankingPorTemas as _buscarRankingPorTemas, 
-    buscarHistoricoJogador as _buscarHistoricoJogador 
+    buscarHistoricoJogador as _buscarHistoricoJogador,
+    buscarRankingPorSessao as _buscarRankingPorSessao
 } from './firebase-config.js';
 
 /**
@@ -16,14 +17,76 @@ export class RankingManager {
     constructor() {
         this.jogadorAtual = '';
         this.historicoPartidas = [];
+        // Set para armazenar sessões já jogadas pelo jogador atual
+        this.sessoesJogadas = new Set();
     }
 
     /**
-     * Define o jogador atual
+     * Define o jogador atual e carrega suas sessões jogadas
      * @param {string} nome - Nome do jogador
      */
     setJogador(nome) {
         this.jogadorAtual = nome;
+        // Carrega sessões jogadas do localStorage
+        this.carregarSessoesJogadas();
+    }
+
+    /**
+     * Carrega as sessões já jogadas pelo jogador atual do localStorage
+     */
+    carregarSessoesJogadas() {
+        const key = `quiz_sessoes_jogadas_${this.jogadorAtual}`;
+        const sessoesSalvas = localStorage.getItem(key);
+        if (sessoesSalvas) {
+            this.sessoesJogadas = new Set(JSON.parse(sessoesSalvas));
+        } else {
+            this.sessoesJogadas = new Set();
+        }
+    }
+
+    /**
+     * Salva as sessões jogadas no localStorage
+     */
+    salvarSessoesJogadas() {
+        const key = `quiz_sessoes_jogadas_${this.jogadorAtual}`;
+        localStorage.setItem(key, JSON.stringify([...this.sessoesJogadas]));
+    }
+
+    /**
+     * Registra que uma sessão foi jogada
+     * @param {string} sessaoId - ID da sessão jogada
+     */
+    registrarSessaoJogada(sessaoId) {
+        if (sessaoId) {
+            this.sessoesJogadas.add(sessaoId);
+            this.salvarSessoesJogadas();
+            console.log(`✅ Sessão ${sessaoId} registrada como jogada`);
+        }
+    }
+
+    /**
+     * Verifica se o jogador já jogou uma determinada sessão
+     * @param {string} sessaoId - ID da sessão a verificar
+     * @returns {boolean} - true se já jogou, false caso contrário
+     */
+    jaJogouSessao(sessaoId) {
+        return this.sessoesJogadas.has(sessaoId);
+    }
+
+    /**
+     * Busca o ranking de uma sessão específica (para desafios)
+     * @param {string} sessaoOriginalId - ID da sessão original
+     * @param {number} limite - Quantidade máxima de resultados
+     * @returns {Promise<Array>}
+     */
+    async obterRankingPorSessao(sessaoOriginalId, limite = 20) {
+        try {
+            const ranking = await _buscarRankingPorSessao(sessaoOriginalId, limite);
+            return ranking;
+        } catch (error) {
+            console.error('Erro ao buscar ranking por sessão:', error);
+            return [];
+        }
     }
 
     /**
@@ -60,6 +123,12 @@ export class RankingManager {
         
         // Salva localmente como backup
         this.salvarHistoricoLocal();
+        
+        // Registra a sessão como jogada (para controle de desafios)
+        const sessaoId = resultado.sessaoOriginalId || resultado.sessaoId;
+        if (sessaoId) {
+            this.registrarSessaoJogada(sessaoId);
+        }
         
         try {
             await _salvarResultado(resultado);
