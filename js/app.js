@@ -376,6 +376,14 @@ function configurarCallbacksQuiz() {
             elementos.alternativasContainer.classList.remove('oculto');
             elementos.cronometroTempo.textContent = `${tempo.toFixed(1)}s`;
             
+            // Muda cor do cronômetro conforme o tempo
+            elementos.cronometroTempo.classList.remove('alerta', 'critico');
+            if (tempo >= 8) {
+                elementos.cronometroTempo.classList.add('critico');
+            } else if (tempo >= 6) {
+                elementos.cronometroTempo.classList.add('alerta');
+            }
+            
             // Renderiza alternativas apenas uma vez
             const perguntaAtual = quizEngine.perguntas[quizEngine.perguntaAtual];
             if (elementos.alternativas.children.length === 0 || 
@@ -415,7 +423,7 @@ function renderizarAlternativas() {
 }
 
 function mostrarFeedback(resultado) {
-    const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus } = resultado;
+    const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus, tempoEsgotado } = resultado;
     
     // Destaca a alternativa correta/errada
     const botoes = elementos.alternativas.querySelectorAll('.alternativa-btn');
@@ -424,20 +432,26 @@ function mostrarFeedback(resultado) {
         if (i === indiceCorreto) {
             btn.classList.add('correta');
         }
-        if (i === indiceEscolhido && !correta) {
+        if (i === indiceEscolhido && !correta && indiceEscolhido >= 0) {
             btn.classList.add('errada');
         }
     });
     
     // Mostra feedback
     elementos.feedback.className = `feedback ${correta ? 'correto' : 'errado'}`;
-    elementos.feedbackIcon.textContent = correta ? '✓' : '✗';
-    elementos.feedbackTexto.textContent = correta ? 'Correto!' : 'Errado!';
     
-    if (correta) {
+    if (tempoEsgotado) {
+        elementos.feedbackIcon.textContent = '⏱️';
+        elementos.feedbackTexto.textContent = 'Tempo esgotado!';
+        elementos.feedbackPontos.textContent = '0 pts';
+    } else if (correta) {
+        elementos.feedbackIcon.textContent = '✓';
+        elementos.feedbackTexto.textContent = 'Correto!';
         const bonusTexto = bonus > 0 ? ` (+${bonus} bônus)` : '';
         elementos.feedbackPontos.textContent = `+${pontosGanhos} pts${bonusTexto}`;
     } else {
+        elementos.feedbackIcon.textContent = '✗';
+        elementos.feedbackTexto.textContent = 'Errado!';
         elementos.feedbackPontos.textContent = '0 pts';
     }
     

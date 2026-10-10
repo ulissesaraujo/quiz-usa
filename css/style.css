@@ -555,6 +555,21 @@ body {
     font-size: 1.1rem;
     color: var(--gray-700);
     min-width: 50px;
+    transition: color 0.3s ease;
+}
+
+.cronometro-tempo.alerta {
+    color: var(--warning);
+}
+
+.cronometro-tempo.critico {
+    color: var(--danger);
+    animation: pulseCritico 0.5s infinite;
+}
+
+@keyframes pulseCritico {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
 }
 
 .alternativas {

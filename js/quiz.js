@@ -158,7 +158,58 @@ export class QuizEngine {
                     tempo: this.cronometroSegundos 
                 });
             }
+            
+            // Tempo esgotado após 10 segundos
+            if (this.cronometroSegundos >= 10 && !this.respondeu) {
+                this.tempoEsgotado();
+            }
         }, 100);
+    }
+
+    /**
+     * Chamado quando o tempo de resposta esgota (10 segundos)
+     */
+    tempoEsgotado() {
+        if (this.respondeu) return;
+        
+        this.respondeu = true;
+        
+        // Para o cronômetro
+        clearInterval(this.timerCronometro);
+        
+        const tempoResposta = 10; // Tempo máximo
+        const pergunta = this.perguntas[this.perguntaAtual];
+        
+        // Registra a resposta como erro (sem resposta)
+        const detalheResposta = {
+            perguntaId: pergunta.id,
+            tema: pergunta.tema || null,
+            tempo: tempoResposta,
+            correto: false,
+            pontosBase: 0,
+            bonus: 0,
+            pontosTotais: 0,
+            respostaEscolhida: -1, // -1 indica que não respondeu
+            respostaCorreta: pergunta.correta,
+            tempoEsgotado: true
+        };
+        
+        this.respostas.push(detalheResposta);
+        
+        // Notifica que a resposta foi processada (tempo esgotado)
+        if (this.onRespostaProcessada) {
+            this.onRespostaProcessada({
+                correta: false,
+                indiceCorreto: pergunta.correta,
+                indiceEscolhido: -1,
+                tempo: tempoResposta,
+                pontosBase: 0,
+                bonus: 0,
+                pontosGanhos: 0,
+                pontuacaoTotal: this.pontuacaoTotal,
+                tempoEsgotado: true
+            });
+        }
     }
 
     /**
