@@ -423,7 +423,7 @@ function renderizarAlternativas() {
 }
 
 function mostrarFeedback(resultado) {
-    const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus, tempoEsgotado } = resultado;
+    const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus, tempoEsgotado, tempo } = resultado;
     
     // Destaca a alternativa correta/errada
     const botoes = elementos.alternativas.querySelectorAll('.alternativa-btn');
@@ -440,6 +440,9 @@ function mostrarFeedback(resultado) {
     // Mostra feedback
     elementos.feedback.className = `feedback ${correta ? 'correto' : 'errado'}`;
     
+    // Formata o tempo
+    const tempoFormatado = tempo ? `${tempo.toFixed(1)}s` : '';
+    
     if (tempoEsgotado) {
         elementos.feedbackIcon.textContent = '⏱️';
         elementos.feedbackTexto.textContent = 'Tempo esgotado!';
@@ -448,11 +451,11 @@ function mostrarFeedback(resultado) {
         elementos.feedbackIcon.textContent = '✓';
         elementos.feedbackTexto.textContent = 'Correto!';
         const bonusTexto = bonus > 0 ? ` (+${bonus} bônus)` : '';
-        elementos.feedbackPontos.textContent = `+${pontosGanhos} pts${bonusTexto}`;
+        elementos.feedbackPontos.textContent = `+${pontosGanhos} pts${bonusTexto} • ${tempoFormatado}`;
     } else {
         elementos.feedbackIcon.textContent = '✗';
         elementos.feedbackTexto.textContent = 'Errado!';
-        elementos.feedbackPontos.textContent = '0 pts';
+        elementos.feedbackPontos.textContent = `0 pts • ${tempoFormatado}`;
     }
     
     elementos.feedbackContainer.classList.remove('oculto');
