@@ -1,5 +1,5 @@
 // ========================================
-// APP.JS - Aplicação Principal Quiz USA
+// APP.JS - Aplicação Principal Quiz Arena
 // ========================================
 
 import { QuizEngine } from './quiz.js';
@@ -762,7 +762,7 @@ function inicializarModal() {
 // INICIALIZAÇÃO
 // ========================================
 async function init() {
-    console.log('🇺🇸 Quiz USA - Iniciando...');
+    console.log('🏟️ Quiz Arena - Iniciando...');
     
     // Inicializa módulos
     inicializarLogin();
@@ -780,7 +780,7 @@ async function init() {
         elementos.inputNome.value = jogadorSalvo;
     }
     
-    console.log('✅ Quiz USA - Pronto!');
+    console.log('✅ Quiz Arena - Pronto!');
 }
 
 // Inicia a aplicação quando o DOM estiver pronto
