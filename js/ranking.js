@@ -2,23 +2,12 @@
 // RANKING.JS - Funções de Ranking
 // ========================================
 
-// Importações do Firebase com fallback
-let salvarResultado, buscarRanking, buscarRankingPorTemas, buscarHistoricoJogador;
-
-try {
-    const firebaseModule = await import('./firebase-config.js');
-    salvarResultado = firebaseModule.salvarResultado;
-    buscarRanking = firebaseModule.buscarRanking;
-    buscarRankingPorTemas = firebaseModule.buscarRankingPorTemas;
-    buscarHistoricoJogador = firebaseModule.buscarHistoricoJogador;
-} catch (error) {
-    console.warn('Firebase não carregado, usando modo offline:', error);
-    // Funções fallback
-    salvarResultado = async () => null;
-    buscarRanking = async () => [];
-    buscarRankingPorTemas = async () => [];
-    buscarHistoricoJogador = async () => [];
-}
+import { 
+    salvarResultado as _salvarResultado, 
+    buscarRanking as _buscarRanking, 
+    buscarRankingPorTemas as _buscarRankingPorTemas, 
+    buscarHistoricoJogador as _buscarHistoricoJogador 
+} from './firebase-config.js';
 
 /**
  * Classe que gerencia o ranking do quiz
@@ -44,7 +33,7 @@ export class RankingManager {
         if (!this.jogadorAtual) return [];
         
         try {
-            this.historicoPartidas = await buscarHistoricoJogador(this.jogadorAtual);
+            this.historicoPartidas = await _buscarHistoricoJogador(this.jogadorAtual);
             return this.historicoPartidas;
         } catch (error) {
             console.error('Erro ao carregar histórico:', error);
@@ -73,7 +62,7 @@ export class RankingManager {
         this.salvarHistoricoLocal();
         
         try {
-            await salvarResultado(resultado);
+            await _salvarResultado(resultado);
             console.log('✅ Resultado salvo com sucesso!');
             return true;
         } catch (error) {
@@ -99,7 +88,7 @@ export class RankingManager {
      */
     async obterRankingGlobal(limite = 50) {
         try {
-            const ranking = await buscarRanking(limite);
+            const ranking = await _buscarRanking(limite);
             return ranking;
         } catch (error) {
             console.error('Erro ao buscar ranking global:', error);
@@ -115,7 +104,7 @@ export class RankingManager {
      */
     async obterRankingPorTemas(temas, limite = 20) {
         try {
-            const ranking = await buscarRankingPorTemas(temas, limite);
+            const ranking = await _buscarRankingPorTemas(temas, limite);
             return ranking;
         } catch (error) {
             console.error('Erro ao buscar ranking por temas:', error);
@@ -130,7 +119,7 @@ export class RankingManager {
      */
     async obterHistoricoJogador(limite = 20) {
         try {
-            const historico = await buscarHistoricoJogador(this.jogadorAtual, limite);
+            const historico = await _buscarHistoricoJogador(this.jogadorAtual, limite);
             return historico;
         } catch (error) {
             console.error('Erro ao buscar histórico:', error);
