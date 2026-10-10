@@ -1,10 +1,18 @@
-# Especificação: Quiz USA - Jogo de Quiz com Salas e Ranking
+# Especificação: Quiz USA - Jogo de Quiz com Temas Dinâmicos
+
+## 🎮 Acesso ao Jogo
+
+- **Quiz:** https://ulissesaraujo.github.io/quiz-usa
+- **Painel Admin:** https://ulissesaraujo.github.io/quiz-usa/admin.html
+- **Repositório:** https://github.com/ulissesaraujo/quiz-usa
+
+---
 
 ## 1. Visão Geral
 
-Aplicativo web de quiz interativo construído com HTML5, CSS3, JavaScript puro (Vanilla JS) e Firebase. O jogo possui identificação de usuário por nome, sistema de salas com trava (cada sala jogada apenas uma vez), mecânica de revelação de respostas com tempo e ranking global.
+Aplicativo web de quiz interativo construído com HTML5, CSS3, JavaScript puro (Vanilla JS) e Firebase. O jogo possui identificação de usuário por nome, sistema de temas com seleção múltipla ou aleatório, mecânica de revelação de respostas com tempo e ranking global.
 
-**Objetivo inicial:** Projeto de aprendizado para entender o fluxo de desenvolvimento com Kiro.
+**Objetivo:** Projeto de aprendizado para entender o fluxo de desenvolvimento com Kiro.
 
 ---
 
@@ -13,16 +21,33 @@ Aplicativo web de quiz interativo construído com HTML5, CSS3, JavaScript puro (
 ### A. Identificação do Jogador
 
 - Tela inicial com campo para digitar nome/apelido
-- Nome salvo no `localStorage` e no Firebase para identificar o jogador
-- Sem autenticação complexa nesta fase (melhoria futura)
+- Nome salvo no `localStorage`
+- Sem autenticação complexa nesta fase
 
-### B. Hub de Salas com Paginação
+### B. Seleção de Temas
 
-- Lista/grade de salas exibidas em páginas (ex: 10 salas por página)
-- Navegação "Anterior / Próxima" para ver mais salas
-- **Status da Sala:**
-  - **Disponível:** Jogador pode clicar e jogar
-  - **Concluída:** Indicador visual + desabilitada para replay
+O jogador pode escolher como jogar:
+
+- **Temas Aleatórios:** Sistema sorteia 10 perguntas de qualquer tema
+- **Temas Específicos:** Seleciona um ou mais temas para jogar
+
+#### Temas Disponíveis (13)
+
+| ID | Nome | Ícone |
+|----|------|-------|
+| `geografia` | Geografia | 🗺️ |
+| `historia` | História | 📜 |
+| `ciencia` | Ciência | 🔬 |
+| `arte` | Arte | 🎨 |
+| `literatura` | Literatura | 📚 |
+| `cinema-series` | Cinema e Séries | 🎬 |
+| `musica` | Música | 🎵 |
+| `games` | Mundo dos Games | 🎮 |
+| `mitos-verdades` | Mitos ou Verdades | 🤔 |
+| `comidas-bebidas` | Comidas e Bebidas | 🍔 |
+| `nostalgia` | Nostalgia | 📼 |
+| `esportes` | Esportes | ⚽ |
+| `curiosidades` | Curiosidades | 💡 |
 
 ### C. Mecânica da Partida
 
@@ -34,14 +59,13 @@ Aplicativo web de quiz interativo construído com HTML5, CSS3, JavaScript puro (
    - Contador visual de 3 segundos
 
 2. **Fase de Resposta**
-   - Alternativas reveladas (2 a 4 opções)
+   - Alternativas reveladas (4 opções)
    - Cronômetro inicia e mede o tempo de resposta
    - Jogador clica na resposta escolhida
 
 #### Controle Local de Respostas:
 
 - Durante a partida, todas as respostas são armazenadas **em memória (JavaScript)**
-- Nenhuma chamada ao Firebase durante o jogo
 - **Somente ao finalizar as 10 perguntas**, o resultado completo é enviado ao Firebase
 - Isso garante resiliência a quedas de conexão durante a partida
 
@@ -63,35 +87,50 @@ Aplicativo web de quiz interativo construído com HTML5, CSS3, JavaScript puro (
 
 #### Pontuação Máxima
 - **Por pergunta:** 10 + 5 = **15 pontos**
-- **Por sala (10 perguntas):** 10 × 15 = **150 pontos**
+- **Por partida (10 perguntas):** 10 × 15 = **150 pontos**
 
-### E. Dados Salvos no Firebase
+### E. Dados Salvos no Firebase (Firestore)
 
-Após finalizar uma sala:
+Após finalizar uma partida:
 
 ```javascript
 {
   jogador: "apelido",
-  salaId: "sala_001",
-  pontuacaoTotal: 127,        // soma de pontos base + bônus
-  acertos: 8,                 // quantidade de respostas corretas
-  tempoTotal: 25.4,           // segundos totais gastos
-  detalhes: [                 // array com detalhes de cada pergunta
-    { tempo: 1.2, correto: true, pontosBase: 10, bonus: 3 },
-    { tempo: 3.5, correto: true, pontosBase: 10, bonus: 2 },
-    { tempo: 2.1, correto: false, pontosBase: 0, bonus: 0 },
+  sessaoId: "quiz_1696789123456_abc123",
+  temas: ["geografia", "historia"],
+  temasNomes: ["Geografia", "História"],
+  modoAleatorio: false,
+  descricaoTemas: "Geografia, História",
+  pontuacaoTotal: 127,
+  acertos: 8,
+  totalPerguntas: 10,
+  tempoTotal: 25.4,
+  detalhes: [
+    { perguntaId: "abc123", tema: "geografia", tempo: 1.2, correto: true, pontosBase: 10, bonus: 3 },
     // ... 10 itens
   ],
-  dataHora: "2026-10-08T14:30:00Z" // ISO timestamp para desempate
+  dataHora: "2026-10-08T14:30:00Z"
 }
 ```
 
 ### F. Ranking Global
 
 - Tabela comparativa dos melhores jogadores
+- Exibe temas jogados por cada jogador
 - **Ordenação:**
-  1. **Maior pontuação total** (já inclui bônus de velocidade)
+  1. **Maior pontuação total** (inclui bônus de velocidade)
   2. **Data/hora mais antiga** (quem jogou primeiro, em caso de empate)
+
+### G. Painel Administrativo
+
+O painel admin (`admin.html`) permite:
+
+- **Adicionar perguntas** uma a uma
+- **Visualizar todas as perguntas** cadastradas
+- **Filtrar por tema**
+- **Excluir perguntas**
+- **Exportar** todas as perguntas para JSON
+- **Importar** perguntas de um arquivo JSON
 
 ---
 
@@ -100,9 +139,9 @@ Após finalizar uma sala:
 | Tela | Descrição |
 |------|-----------|
 | **1. Login** | Campo de nome + botão "Entrar" |
-| **2. Salas** | Grade de salas paginada + botão "Ver Ranking" |
+| **2. Temas** | Grid de temas + botão aleatório + "Ver Ranking" |
 | **3. Quiz** | Pergunta + contador 3s + alternativas + cronômetro |
-| **4. Resultado** | Resumo da partida + ranking global |
+| **4. Resultado** | Resumo da partida + ranking |
 
 ---
 
@@ -110,8 +149,8 @@ Após finalizar uma sala:
 
 - **HTML5** - Estrutura semântica
 - **CSS3** - Design responsivo, cards, animações de transição
-- **JavaScript (Vanilla)** - Lógica do jogo, estado em memória, timers
-- **Firebase Firestore** - Persistência de dados e ranking
+- **JavaScript (ES6 Modules)** - Lógica do jogo, estado em memória, timers
+- **Firebase Firestore** - Persistência de perguntas e resultados
 
 ---
 
@@ -119,76 +158,90 @@ Após finalizar uma sala:
 
 ```
 quiz-usa/
-├── index.html          # Estrutura das 4 telas
+├── index.html              # Aplicação principal (4 telas)
+├── admin.html              # Painel administrativo
 ├── css/
-│   └── style.css       # Estilos e responsividade
+│   └── style.css           # Estilos e responsividade
 ├── js/
-│   ├── app.js          # Lógica principal e navegação
-│   ├── firebase-config.js  # Inicialização Firebase
-│   ├── quiz.js         # Mecânica do quiz (timers, respostas)
-│   └── ranking.js      # Funções de ranking
+│   ├── app.js              # Lógica principal e navegação
+│   ├── firebase-config.js  # Configuração Firebase + funções de dados
+│   ├── temas.js            # Gerenciador de seleção de temas
+│   ├── quiz.js             # Mecânica do quiz (timers, respostas)
+│   └── ranking.js          # Funções de ranking
 ├── data/
-│   └── perguntas.json  # Dados de teste (poucas perguntas)
+│   ├── perguntas.json          # Dados antigos (deprecated)
+│   └── perguntas-iniciais.json # 96 perguntas para importar
 └── docs/
-    └── SPEC.md         # Esta especificação
+    └── SPEC.md             # Esta especificação
 ```
 
 ---
 
-## 6. Dados de Teste
+## 6. Coleções no Firebase (Firestore)
 
-Criar 2 salas de exemplo com 10 perguntas cada:
+### Coleção: `perguntas`
 
-- **Sala 1:** "Geografia dos EUA"
-- **Sala 2:** "História dos EUA"
+```javascript
+{
+  tema: "geografia",
+  enunciado: "Qual é a capital dos EUA?",
+  alternativas: ["Nova York", "Los Angeles", "Washington D.C.", "Chicago"],
+  correta: 2,
+  criadoEm: "2026-10-09T10:00:00Z"
+}
+```
 
-Perguntas simples com 4 alternativas cada.
+### Coleção: `quiz-results`
+
+Armazena os resultados de todas as partidas jogadas.
 
 ---
 
-## 7. Melhorias Futuras (Fora do Escopo Inicial)
+## 7. Como Usar
+
+### Jogar
+
+1. Acesse https://ulissesaraujo.github.io/quiz-usa
+2. Digite seu nome
+3. Escolha temas ou clique em "Aleatório"
+4. Clique em "Jogar"
+5. Responda as 10 perguntas
+6. Veja seu resultado e posição no ranking
+
+### Adicionar Perguntas
+
+1. Acesse https://ulissesaraujo.github.io/quiz-usa/admin.html
+2. Preencha o formulário com tema, enunciado e alternativas
+3. Marque a alternativa correta
+4. Clique em "Salvar Pergunta"
+
+### Importar Perguntas em Lote
+
+1. Acesse o painel admin
+2. Clique em "Importar JSON"
+3. Selecione um arquivo JSON com o formato:
+
+```json
+{
+  "perguntas": [
+    {
+      "tema": "geografia",
+      "enunciado": "Pergunta aqui?",
+      "alternativas": ["A", "B", "C", "D"],
+      "correta": 0
+    }
+  ]
+}
+```
+
+---
+
+## 8. Melhorias Futuras
 
 - [ ] Firebase Authentication (login com Google)
-- [ ] Regras de segurança do Firebase
-- [ ] Painel admin para cadastrar perguntas
-- [ ] Categorias/temas de salas
+- [ ] Regras de segurança mais restritivas no Firebase
+- [ ] Níveis de dificuldade por pergunta
+- [ ] Perguntas com imagens
 - [ ] Modo multiplayer em tempo real
 - [ ] PWA (Progressive Web App)
-
----
-
-## 8. Tarefas de Implementação
-
-1. **Setup inicial**
-   - Criar estrutura de pastas
-   - Configurar Firebase no console
-   - Criar `firebase-config.js`
-
-2. **HTML base**
-   - Estrutura das 4 telas em `index.html`
-   - Importação dos scripts
-
-3. **CSS**
-   - Layout responsivo
-   - Cards de salas (disponível/concluída)
-   - Animações de revelação
-   - Tabela de ranking
-
-4. **JavaScript - Navegação**
-   - Sistema de troca de telas (SPA)
-   - Gerenciamento de estado do usuário
-
-5. **JavaScript - Quiz**
-   - Timer de 3 segundos (leitura)
-   - Cronômetro de resposta
-   - Cálculo de bônus por velocidade
-   - Armazenamento em memória
-   - Envio ao Firebase no final
-
-6. **JavaScript - Ranking**
-   - Buscar dados do Firebase
-   - Ordenar por acertos > tempo > data
-   - Exibir tabela
-
-7. **Dados de teste**
-   - Criar `perguntas.json` com 2 salas
+- [ ] Estatísticas do jogador (histórico de partidas)

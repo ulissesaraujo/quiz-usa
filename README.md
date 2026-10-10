@@ -1,55 +1,68 @@
 # 🇺🇸 Quiz USA
 
-Jogo de quiz interativo sobre os Estados Unidos, construído com HTML5, CSS3, JavaScript puro e Firebase.
+Jogo de quiz interativo com temas variados, sistema de pontuação por velocidade e ranking global.
 
-## 🎮 Funcionalidades
+## 🎮 Jogar Agora
 
-- **Sistema de Salas:** Múltiplas salas temáticas (Geografia, História, etc.)
-- **Mecânica de Tempo:** 3 segundos para ler a pergunta, depois cronômetro para responder
-- **Pontuação com Bônus:** Respostas rápidas ganham pontos extras
-- **Ranking Global:** Compare sua pontuação com outros jogadores
-- **Trava de Sala:** Cada sala só pode ser jogada uma vez por jogador
+**[Acessar o Quiz](https://ulissesaraujo.github.io/quiz-usa)**
 
-## 🏆 Sistema de Pontuação
+## 📋 Funcionalidades
 
-| Resposta | Pontos Base | Bônus (≤1s) | Bônus (≤2s) | Bônus (≤3s) | Bônus (≤4s) |
-|----------|-------------|-------------|-------------|-------------|-------------|
-| Correta  | 10 pts      | +5 pts      | +3 pts      | +2 pts      | +1 pt       |
-| Errada   | 0 pts       | -           | -           | -           | -           |
+- ✅ 13 temas diferentes (Geografia, História, Ciência, Cinema, Música, etc.)
+- ✅ Modo aleatório (mistura todos os temas)
+- ✅ Sistema de pontuação com bônus por velocidade
+- ✅ Ranking global
+- ✅ 10 perguntas por partida
+- ✅ Painel admin para adicionar perguntas
 
-**Pontuação máxima por sala:** 150 pontos (10 perguntas × 15 pts)
+## 🎯 Como Jogar
+
+1. Digite seu nome
+2. Escolha um ou mais temas (ou clique em "Aleatório")
+3. Clique em "Jogar"
+4. Leia a pergunta durante os 3 segundos iniciais
+5. Responda o mais rápido possível para ganhar bônus
+6. Veja sua pontuação e posição no ranking
+
+## 📊 Sistema de Pontuação
+
+| Resultado | Pontos |
+|-----------|--------|
+| Resposta correta | 10 pts |
+| Bônus ≤ 1 segundo | +5 pts |
+| Bônus ≤ 2 segundos | +3 pts |
+| Bônus ≤ 3 segundos | +2 pts |
+| Bônus ≤ 4 segundos | +1 pt |
+
+**Pontuação máxima:** 150 pontos (15 pts × 10 perguntas)
 
 ## 🛠️ Tecnologias
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- HTML5 / CSS3 / JavaScript (ES6 Modules)
 - Firebase Firestore
-
-## 🚀 Como Executar
-
-1. Clone o repositório
-2. Abra o `index.html` com Live Server ou qualquer servidor local
-3. Ou acesse via GitHub Pages: [link será adicionado]
 
 ## 📁 Estrutura
 
 ```
 quiz-usa/
-├── index.html
-├── css/
-│   └── style.css
+├── index.html          # Quiz principal
+├── admin.html          # Painel para adicionar perguntas
+├── css/style.css       # Estilos
 ├── js/
-│   ├── app.js
+│   ├── app.js          # Lógica principal
+│   ├── firebase-config.js
+│   ├── temas.js
 │   ├── quiz.js
-│   ├── ranking.js
-│   └── firebase-config.js
-├── data/
-│   └── perguntas.json
-└── docs/
-    └── SPEC.md
+│   └── ranking.js
+└── docs/SPEC.md        # Documentação completa
 ```
 
-## 📝 Licença
+## 🔗 Links
 
-Este projeto é para fins de aprendizado.
+- [Jogar Quiz](https://ulissesaraujo.github.io/quiz-usa)
+- [Painel Admin](https://ulissesaraujo.github.io/quiz-usa/admin.html)
+- [Documentação](docs/SPEC.md)
+
+---
+
+Desenvolvido como projeto de aprendizado com [Kiro](https://kiro.dev).
