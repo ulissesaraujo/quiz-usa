@@ -606,11 +606,18 @@ function agruparPorSessao(ranking) {
                 descricao: item.descricaoTemas || rankingManager.formatarTemas(item.temasNomes || item.temas),
                 modoDesafio: item.modoDesafio || false,
                 perguntasIds: item.perguntasIds || [],
+                dataHora: item.dataHora || null, // Data da primeira partida do grupo
                 resultados: []
             });
         }
         
-        grupos.get(sessaoId).resultados.push(item);
+        // Atualiza a data para a mais antiga (data de criação da sessão)
+        const grupo = grupos.get(sessaoId);
+        if (item.dataHora && (!grupo.dataHora || item.dataHora < grupo.dataHora)) {
+            grupo.dataHora = item.dataHora;
+        }
+        
+        grupo.resultados.push(item);
     });
     
     // Converte para array e ordena cada grupo por pontuação
@@ -626,11 +633,15 @@ function agruparPorSessao(ranking) {
         });
     });
     
-    // Ordena grupos pela melhor pontuação do grupo
+    // Ordena grupos pela data mais recente primeiro
     gruposArray.sort((a, b) => {
-        const melhorA = a.resultados[0]?.pontuacaoTotal || 0;
-        const melhorB = b.resultados[0]?.pontuacaoTotal || 0;
-        return melhorB - melhorA;
+        if (a.dataHora && b.dataHora) {
+            return new Date(b.dataHora) - new Date(a.dataHora);
+        }
+        // Grupos sem data vão para o final
+        if (!a.dataHora) return 1;
+        if (!b.dataHora) return -1;
+        return 0;
     });
     
     return gruposArray;
@@ -662,6 +673,13 @@ async function mostrarRankingGlobal() {
             const icone = temParticipantes ? '⚔️' : '🎮';
             const participantesText = `${grupo.resultados.length} jogador${grupo.resultados.length > 1 ? 'es' : ''}`;
             
+            // Formata a data da sessão
+            let dataText = '';
+            if (grupo.dataHora) {
+                const data = new Date(grupo.dataHora);
+                dataText = data.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+            }
+            
             // Verifica se o jogador atual pode desafiar este grupo
             const jaJogou = rankingManager.jaJogouSessao(grupo.sessaoId);
             const jogadorNoGrupo = grupo.resultados.some(r => r.jogador === estado.jogador);
@@ -682,7 +700,7 @@ async function mostrarRankingGlobal() {
                 <td class="grupo-col-icone">${icone}</td>
                 <td class="grupo-col-info" colspan="3">
                     <strong>${grupo.descricao}</strong>
-                    <span class="grupo-participantes">${participantesText}</span>
+                    <span class="grupo-meta">${participantesText}${dataText ? ' • ' + dataText : ''}</span>
                 </td>
                 <td></td>
                 <td class="grupo-col-acao">${btnDesafiarGrupoHtml}</td>

@@ -305,6 +305,7 @@ export class QuizEngine {
             jogador: '', // Será preenchido pelo app.js
             sessaoId: this.sessaoId,
             sessaoOriginalId: this.sessaoOriginalId, // ID da sessão original (para agrupar desafios)
+            dataHora: new Date().toISOString(), // Data/hora da partida
             // IDs das perguntas (para permitir desafios)
             perguntasIds: perguntasIds,
             // Informações dos temas
