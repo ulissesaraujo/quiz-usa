@@ -287,6 +287,10 @@ function configurarCallbacksQuiz() {
         // Reseta estados visuais
         elementos.feedbackContainer.classList.add('oculto');
         elementos.alternativasContainer.classList.add('oculto');
+        
+        // Limpa alternativas anteriores para forçar nova renderização
+        elementos.alternativas.innerHTML = '';
+        elementos.alternativas.dataset.perguntaId = '';
     };
     
     quizEngine.onFaseLeitura = ({ segundos, ativa }) => {
