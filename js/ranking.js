@@ -2,22 +2,34 @@
 // RANKING.JS - Funções de Ranking
 // ========================================
 
-// Importações do Firebase com fallback
-let salvarResultado, buscarRanking, buscarRankingSala, buscarSalasJogadas;
+// Funções do Firebase (serão carregadas dinamicamente)
+let firebaseFunctions = null;
 
-try {
-    const firebaseModule = await import('./firebase-config.js');
-    salvarResultado = firebaseModule.salvarResultado;
-    buscarRanking = firebaseModule.buscarRanking;
-    buscarRankingSala = firebaseModule.buscarRankingSala;
-    buscarSalasJogadas = firebaseModule.buscarSalasJogadas;
-} catch (error) {
-    console.warn('Firebase não carregado, usando modo offline:', error);
-    // Funções fallback
-    salvarResultado = async () => null;
-    buscarRanking = async () => [];
-    buscarRankingSala = async () => [];
-    buscarSalasJogadas = async () => [];
+/**
+ * Inicializa as funções do Firebase
+ */
+async function initFirebase() {
+    if (firebaseFunctions) return firebaseFunctions;
+    
+    try {
+        const module = await import('./firebase-config.js');
+        firebaseFunctions = {
+            salvarResultado: module.salvarResultado,
+            buscarRanking: module.buscarRanking,
+            buscarRankingSala: module.buscarRankingSala,
+            buscarSalasJogadas: module.buscarSalasJogadas
+        };
+        console.log('✅ Firebase carregado no ranking.js');
+    } catch (error) {
+        console.warn('⚠️ Firebase não disponível, usando modo offline:', error.message);
+        firebaseFunctions = {
+            salvarResultado: async () => null,
+            buscarRanking: async () => [],
+            buscarRankingSala: async () => [],
+            buscarSalasJogadas: async () => []
+        };
+    }
+    return firebaseFunctions;
 }
 
 /**
@@ -44,7 +56,8 @@ export class RankingManager {
         if (!this.jogadorAtual) return;
         
         try {
-            const salas = await buscarSalasJogadas(this.jogadorAtual);
+            const fb = await initFirebase();
+            const salas = await fb.buscarSalasJogadas(this.jogadorAtual);
             this.salasJogadas = new Set(salas);
             return this.salasJogadas;
         } catch (error) {
@@ -93,7 +106,8 @@ export class RankingManager {
         this.marcarSalaJogada(resultado.salaId);
         
         try {
-            await salvarResultado(resultado);
+            const fb = await initFirebase();
+            await fb.salvarResultado(resultado);
             console.log('Resultado salvo com sucesso!');
             return true;
         } catch (error) {
@@ -120,7 +134,8 @@ export class RankingManager {
      */
     async obterRankingGlobal(limite = 50) {
         try {
-            const ranking = await buscarRanking(limite);
+            const fb = await initFirebase();
+            const ranking = await fb.buscarRanking(limite);
             return ranking;
         } catch (error) {
             console.error('Erro ao buscar ranking global:', error);
@@ -136,7 +151,8 @@ export class RankingManager {
      */
     async obterRankingSala(salaId, limite = 20) {
         try {
-            const ranking = await buscarRankingSala(salaId, limite);
+            const fb = await initFirebase();
+            const ranking = await fb.buscarRankingSala(salaId, limite);
             return ranking;
         } catch (error) {
             console.error('Erro ao buscar ranking da sala:', error);
