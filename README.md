@@ -15,6 +15,7 @@ Jogo de quiz interativo com temas variados, sistema de pontuação por velocidad
 - ✅ Ranking por Sala (agrupado por sessão de perguntas)
 - ✅ Ranking Geral (lista simples por pontuação)
 - ✅ Sistema de desafio (jogue com as mesmas perguntas de outro jogador)
+- ✅ Painel admin para adicionar perguntas
 - ✅ 10 perguntas por partida
 
 ## 🎯 Como Jogar
@@ -50,6 +51,7 @@ Jogo de quiz interativo com temas variados, sistema de pontuação por velocidad
 ```
 quizlandia/
 ├── index.html          # Quiz principal
+├── admin.html          # Painel para adicionar perguntas
 ├── css/style.css       # Estilos
 ├── js/
 │   ├── app.js          # Lógica principal
@@ -64,6 +66,7 @@ quizlandia/
 ## 🔗 Links
 
 - [Jogar Quiz](https://ulissesaraujo.github.io/quizlandia)
+- [Painel Admin](https://ulissesaraujo.github.io/quizlandia/admin.html)
 - [Documentação](docs/SPEC.md)
 
 ---
