@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ulissesaraujo.github.io/quiz-usa/sitemap.xml
