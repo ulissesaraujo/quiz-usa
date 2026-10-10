@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz USA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- TELA 1: LOGIN -->
+        <section id="tela-login" class="tela ativa">
+            <div class="login-container">
+                <div class="logo">
+                    <span class="logo-icon">🇺🇸</span>
+                    <h1>Quiz USA</h1>
+                    <p class="tagline">Teste seus conhecimentos sobre os Estados Unidos!</p>
+                </div>
+                
+                <form id="form-login" class="form-login">
+                    <div class="input-group">
+                        <label for="nome-jogador">Como você quer ser chamado?</label>
+                        <input 
+                            type="text" 
+                            id="nome-jogador" 
+                            placeholder="Digite seu nome ou apelido"
+                            maxlength="20"
+                            required
+                        >
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Começar a Jogar
+                        <span class="btn-icon">→</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- TELA 2: SELEÇÃO DE SALAS -->
+        <section id="tela-salas" class="tela">
+            <header class="header-salas">
+                <div class="header-info">
+                    <span class="jogador-nome" id="display-jogador">Jogador</span>
+                    <button class="btn btn-small btn-outline" id="btn-trocar-jogador">Trocar</button>
+                </div>
+                <button class="btn btn-small btn-secondary" id="btn-ver-ranking">
+                    🏆 Ranking
+                </button>
+            </header>
+
+            <div class="salas-container">
+                <h2>Escolha uma Sala</h2>
+                <p class="salas-subtitle">Cada sala tem 10 perguntas. Responda rápido para ganhar bônus!</p>
+                
+                <div class="salas-grid" id="salas-grid">
+                    <!-- Salas serão carregadas via JavaScript -->
+                </div>
+
+                <div class="paginacao" id="paginacao">
+                    <button class="btn btn-small" id="btn-anterior" disabled>← Anterior</button>
+                    <span class="pagina-info" id="pagina-info">Página 1 de 1</span>
+                    <button class="btn btn-small" id="btn-proxima">Próxima →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA 3: QUIZ -->
+        <section id="tela-quiz" class="tela">
+            <header class="header-quiz">
+                <div class="quiz-info">
+                    <span class="sala-nome" id="quiz-sala-nome">Nome da Sala</span>
+                    <span class="pergunta-contador" id="pergunta-contador">1/10</span>
+                </div>
+                <div class="pontuacao-atual">
+                    <span class="pontos" id="pontos-atuais">0</span>
+                    <span class="label">pontos</span>
+                </div>
+            </header>
+
+            <div class="quiz-container">
+                <!-- Fase de Leitura -->
+                <div class="fase-leitura" id="fase-leitura">
+                    <div class="countdown-circle" id="countdown-circle">
+                        <span class="countdown-numero" id="countdown-numero">3</span>
+                    </div>
+                    <p class="leitura-texto">Leia a pergunta...</p>
+                </div>
+
+                <!-- Pergunta -->
+                <div class="pergunta-container">
+                    <h2 class="pergunta-enunciado" id="pergunta-enunciado">
+                        Carregando pergunta...
+                    </h2>
+                </div>
+
+                <!-- Alternativas (ocultas durante fase de leitura) -->
+                <div class="alternativas-container oculto" id="alternativas-container">
+                    <div class="cronometro">
+                        <span class="cronometro-icon">⏱️</span>
+                        <span class="cronometro-tempo" id="cronometro-tempo">0.0s</span>
+                    </div>
+                    
+                    <div class="alternativas" id="alternativas">
+                        <!-- Alternativas serão carregadas via JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Feedback da resposta -->
+                <div class="feedback-container oculto" id="feedback-container">
+                    <div class="feedback" id="feedback">
+                        <span class="feedback-icon" id="feedback-icon">✓</span>
+                        <span class="feedback-texto" id="feedback-texto">Correto!</span>
+                        <span class="feedback-pontos" id="feedback-pontos">+15 pts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA 4: RESULTADO -->
+        <section id="tela-resultado" class="tela">
+            <div class="resultado-container">
+                <div class="resultado-header">
+                    <h2>🎉 Partida Finalizada!</h2>
+                    <p class="sala-finalizada" id="sala-finalizada">Geografia dos EUA</p>
+                </div>
+
+                <div class="resultado-resumo">
+                    <div class="resultado-card destaque">
+                        <span class="resultado-valor" id="resultado-pontuacao">0</span>
+                        <span class="resultado-label">Pontuação Total</span>
+                    </div>
+                    <div class="resultado-card">
+                        <span class="resultado-valor" id="resultado-acertos">0/10</span>
+                        <span class="resultado-label">Acertos</span>
+                    </div>
+                    <div class="resultado-card">
+                        <span class="resultado-valor" id="resultado-tempo">0.0s</span>
+                        <span class="resultado-label">Tempo Total</span>
+                    </div>
+                </div>
+
+                <div class="resultado-detalhes">
+                    <h3>Detalhes por Pergunta</h3>
+                    <div class="detalhes-lista" id="detalhes-lista">
+                        <!-- Detalhes serão carregados via JavaScript -->
+                    </div>
+                </div>
+
+                <div class="resultado-ranking">
+                    <h3>🏆 Ranking da Sala</h3>
+                    <table class="ranking-tabela" id="ranking-sala-tabela">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Jogador</th>
+                                <th>Pontos</th>
+                                <th>Acertos</th>
+                                <th>Tempo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ranking-sala-body">
+                            <!-- Ranking será carregado via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="resultado-acoes">
+                    <button class="btn btn-primary" id="btn-voltar-salas">
+                        Escolher Outra Sala
+                    </button>
+                    <button class="btn btn-secondary" id="btn-ranking-global">
+                        🏆 Ver Ranking Global
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL: RANKING GLOBAL -->
+        <div class="modal oculto" id="modal-ranking">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>🏆 Ranking Global</h2>
+                    <button class="modal-fechar" id="modal-fechar">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <table class="ranking-tabela">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Jogador</th>
+                                <th>Sala</th>
+                                <th>Pontos</th>
+                                <th>Acertos</th>
+                                <th>Tempo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ranking-global-body">
+                            <!-- Ranking será carregado via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

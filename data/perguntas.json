@@ -1,0 +1,140 @@
+{
+    "salas": [
+        {
+            "id": "sala_001",
+            "nome": "Geografia dos EUA",
+            "descricao": "Teste seus conhecimentos sobre a geografia americana",
+            "icone": "🗺️",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "enunciado": "Qual é a capital dos Estados Unidos?",
+                    "alternativas": ["Nova York", "Los Angeles", "Washington D.C.", "Chicago"],
+                    "correta": 2
+                },
+                {
+                    "id": 2,
+                    "enunciado": "Quantos estados compõem os Estados Unidos?",
+                    "alternativas": ["48", "50", "51", "52"],
+                    "correta": 1
+                },
+                {
+                    "id": 3,
+                    "enunciado": "Qual é o maior estado dos EUA em área territorial?",
+                    "alternativas": ["Texas", "Califórnia", "Alasca", "Montana"],
+                    "correta": 2
+                },
+                {
+                    "id": 4,
+                    "enunciado": "Qual rio é o mais longo dos Estados Unidos?",
+                    "alternativas": ["Rio Colorado", "Rio Mississippi", "Rio Missouri", "Rio Ohio"],
+                    "correta": 2
+                },
+                {
+                    "id": 5,
+                    "enunciado": "Em qual estado fica o Grand Canyon?",
+                    "alternativas": ["Nevada", "Utah", "Arizona", "Colorado"],
+                    "correta": 2
+                },
+                {
+                    "id": 6,
+                    "enunciado": "Qual é a cidade mais populosa dos Estados Unidos?",
+                    "alternativas": ["Los Angeles", "Chicago", "Houston", "Nova York"],
+                    "correta": 3
+                },
+                {
+                    "id": 7,
+                    "enunciado": "Qual montanha é a mais alta dos EUA?",
+                    "alternativas": ["Monte McKinley (Denali)", "Monte Whitney", "Monte Rainier", "Monte Elbert"],
+                    "correta": 0
+                },
+                {
+                    "id": 8,
+                    "enunciado": "Quantos fusos horários existem nos Estados Unidos continental?",
+                    "alternativas": ["3", "4", "5", "6"],
+                    "correta": 1
+                },
+                {
+                    "id": 9,
+                    "enunciado": "Qual estado faz fronteira com o México e o Oceano Pacífico?",
+                    "alternativas": ["Arizona", "Texas", "Califórnia", "Novo México"],
+                    "correta": 2
+                },
+                {
+                    "id": 10,
+                    "enunciado": "Em qual região dos EUA fica a Flórida?",
+                    "alternativas": ["Nordeste", "Centro-Oeste", "Sudeste", "Sudoeste"],
+                    "correta": 2
+                }
+            ]
+        },
+        {
+            "id": "sala_002",
+            "nome": "História dos EUA",
+            "descricao": "Descubra o quanto você sabe sobre a história americana",
+            "icone": "📜",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "enunciado": "Em que ano os Estados Unidos declararam independência?",
+                    "alternativas": ["1774", "1775", "1776", "1777"],
+                    "correta": 2
+                },
+                {
+                    "id": 2,
+                    "enunciado": "Quem foi o primeiro presidente dos Estados Unidos?",
+                    "alternativas": ["Thomas Jefferson", "John Adams", "Benjamin Franklin", "George Washington"],
+                    "correta": 3
+                },
+                {
+                    "id": 3,
+                    "enunciado": "Qual presidente aboliu a escravidão nos EUA?",
+                    "alternativas": ["Abraham Lincoln", "Andrew Johnson", "Ulysses Grant", "Theodore Roosevelt"],
+                    "correta": 0
+                },
+                {
+                    "id": 4,
+                    "enunciado": "Em que ano começou a Guerra Civil Americana?",
+                    "alternativas": ["1859", "1860", "1861", "1862"],
+                    "correta": 2
+                },
+                {
+                    "id": 5,
+                    "enunciado": "Qual evento levou os EUA a entrarem na Segunda Guerra Mundial?",
+                    "alternativas": ["Invasão da Polônia", "Ataque a Pearl Harbor", "Batalha da Inglaterra", "Invasão da França"],
+                    "correta": 1
+                },
+                {
+                    "id": 6,
+                    "enunciado": "Quantas colônias originais formaram os Estados Unidos?",
+                    "alternativas": ["10", "11", "12", "13"],
+                    "correta": 3
+                },
+                {
+                    "id": 7,
+                    "enunciado": "Qual presidente comprou a Louisiana da França?",
+                    "alternativas": ["George Washington", "John Adams", "Thomas Jefferson", "James Madison"],
+                    "correta": 2
+                },
+                {
+                    "id": 8,
+                    "enunciado": "Em que ano o homem pisou na Lua pela primeira vez?",
+                    "alternativas": ["1967", "1968", "1969", "1970"],
+                    "correta": 2
+                },
+                {
+                    "id": 9,
+                    "enunciado": "Qual movimento lutou pelos direitos civis nos anos 1960?",
+                    "alternativas": ["Movimento Sufragista", "Movimento pelos Direitos Civis", "Movimento Trabalhista", "Movimento Ambientalista"],
+                    "correta": 1
+                },
+                {
+                    "id": 10,
+                    "enunciado": "Quem foi o presidente durante a maior parte da Grande Depressão?",
+                    "alternativas": ["Herbert Hoover", "Franklin D. Roosevelt", "Harry Truman", "Calvin Coolidge"],
+                    "correta": 1
+                }
+            ]
+        }
+    ]
+}
