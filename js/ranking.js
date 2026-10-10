@@ -2,34 +2,22 @@
 // RANKING.JS - Funções de Ranking
 // ========================================
 
-// Funções do Firebase (serão carregadas dinamicamente)
-let firebaseFunctions = null;
+// Importações do Firebase com fallback
+let salvarResultado, buscarRanking, buscarRankingPorTemas, buscarHistoricoJogador;
 
-/**
- * Inicializa as funções do Firebase
- */
-async function initFirebase() {
-    if (firebaseFunctions) return firebaseFunctions;
-    
-    try {
-        const module = await import('./firebase-config.js');
-        firebaseFunctions = {
-            salvarResultado: module.salvarResultado,
-            buscarRanking: module.buscarRanking,
-            buscarRankingSala: module.buscarRankingSala,
-            buscarSalasJogadas: module.buscarSalasJogadas
-        };
-        console.log('✅ Firebase carregado no ranking.js');
-    } catch (error) {
-        console.warn('⚠️ Firebase não disponível, usando modo offline:', error.message);
-        firebaseFunctions = {
-            salvarResultado: async () => null,
-            buscarRanking: async () => [],
-            buscarRankingSala: async () => [],
-            buscarSalasJogadas: async () => []
-        };
-    }
-    return firebaseFunctions;
+try {
+    const firebaseModule = await import('./firebase-config.js');
+    salvarResultado = firebaseModule.salvarResultado;
+    buscarRanking = firebaseModule.buscarRanking;
+    buscarRankingPorTemas = firebaseModule.buscarRankingPorTemas;
+    buscarHistoricoJogador = firebaseModule.buscarHistoricoJogador;
+} catch (error) {
+    console.warn('Firebase não carregado, usando modo offline:', error);
+    // Funções fallback
+    salvarResultado = async () => null;
+    buscarRanking = async () => [];
+    buscarRankingPorTemas = async () => [];
+    buscarHistoricoJogador = async () => [];
 }
 
 /**
@@ -38,7 +26,7 @@ async function initFirebase() {
 export class RankingManager {
     constructor() {
         this.jogadorAtual = '';
-        this.salasJogadas = new Set();
+        this.historicoPartidas = [];
     }
 
     /**
@@ -50,47 +38,23 @@ export class RankingManager {
     }
 
     /**
-     * Carrega as salas já jogadas pelo jogador atual
+     * Carrega o histórico de partidas do jogador atual
      */
-    async carregarSalasJogadas() {
-        if (!this.jogadorAtual) return;
+    async carregarHistorico() {
+        if (!this.jogadorAtual) return [];
         
         try {
-            const fb = await initFirebase();
-            const salas = await fb.buscarSalasJogadas(this.jogadorAtual);
-            this.salasJogadas = new Set(salas);
-            return this.salasJogadas;
+            this.historicoPartidas = await buscarHistoricoJogador(this.jogadorAtual);
+            return this.historicoPartidas;
         } catch (error) {
-            console.error('Erro ao carregar salas jogadas:', error);
+            console.error('Erro ao carregar histórico:', error);
             // Fallback para localStorage
-            const salasLocal = localStorage.getItem(`quiz_salas_${this.jogadorAtual}`);
-            if (salasLocal) {
-                this.salasJogadas = new Set(JSON.parse(salasLocal));
+            const historicoLocal = localStorage.getItem(`quiz_historico_${this.jogadorAtual}`);
+            if (historicoLocal) {
+                this.historicoPartidas = JSON.parse(historicoLocal);
             }
-            return this.salasJogadas;
+            return this.historicoPartidas;
         }
-    }
-
-    /**
-     * Verifica se uma sala já foi jogada
-     * @param {string} salaId - ID da sala
-     * @returns {boolean}
-     */
-    salaJaJogada(salaId) {
-        return this.salasJogadas.has(salaId);
-    }
-
-    /**
-     * Marca uma sala como jogada
-     * @param {string} salaId - ID da sala
-     */
-    marcarSalaJogada(salaId) {
-        this.salasJogadas.add(salaId);
-        // Salva também no localStorage como backup
-        localStorage.setItem(
-            `quiz_salas_${this.jogadorAtual}`,
-            JSON.stringify([...this.salasJogadas])
-        );
     }
 
     /**
@@ -102,29 +66,30 @@ export class RankingManager {
         // Adiciona o nome do jogador
         resultado.jogador = this.jogadorAtual;
         
-        // Marca a sala como jogada
-        this.marcarSalaJogada(resultado.salaId);
+        // Adiciona ao histórico local
+        this.historicoPartidas.unshift(resultado);
+        
+        // Salva localmente como backup
+        this.salvarHistoricoLocal();
         
         try {
-            const fb = await initFirebase();
-            await fb.salvarResultado(resultado);
-            console.log('Resultado salvo com sucesso!');
+            await salvarResultado(resultado);
+            console.log('✅ Resultado salvo com sucesso!');
             return true;
         } catch (error) {
             console.error('Erro ao salvar resultado:', error);
-            // Salva localmente como backup
-            this.salvarResultadoLocal(resultado);
             return false;
         }
     }
 
     /**
-     * Salva resultado localmente (backup)
-     * @param {Object} resultado - Dados do resultado
+     * Salva histórico localmente (backup)
      */
-    salvarResultadoLocal(resultado) {
-        const key = `quiz_resultado_${resultado.salaId}_${this.jogadorAtual}`;
-        localStorage.setItem(key, JSON.stringify(resultado));
+    salvarHistoricoLocal() {
+        const key = `quiz_historico_${this.jogadorAtual}`;
+        // Mantém apenas as últimas 50 partidas localmente
+        const historicoLimitado = this.historicoPartidas.slice(0, 50);
+        localStorage.setItem(key, JSON.stringify(historicoLimitado));
     }
 
     /**
@@ -134,8 +99,7 @@ export class RankingManager {
      */
     async obterRankingGlobal(limite = 50) {
         try {
-            const fb = await initFirebase();
-            const ranking = await fb.buscarRanking(limite);
+            const ranking = await buscarRanking(limite);
             return ranking;
         } catch (error) {
             console.error('Erro ao buscar ranking global:', error);
@@ -144,20 +108,69 @@ export class RankingManager {
     }
 
     /**
-     * Busca o ranking de uma sala específica
-     * @param {string} salaId - ID da sala
+     * Busca o ranking filtrado por temas
+     * @param {Array} temas - IDs dos temas para filtrar
      * @param {number} limite - Quantidade máxima de resultados
      * @returns {Promise<Array>}
      */
-    async obterRankingSala(salaId, limite = 20) {
+    async obterRankingPorTemas(temas, limite = 20) {
         try {
-            const fb = await initFirebase();
-            const ranking = await fb.buscarRankingSala(salaId, limite);
+            const ranking = await buscarRankingPorTemas(temas, limite);
             return ranking;
         } catch (error) {
-            console.error('Erro ao buscar ranking da sala:', error);
+            console.error('Erro ao buscar ranking por temas:', error);
             return [];
         }
+    }
+
+    /**
+     * Busca o histórico do jogador atual
+     * @param {number} limite - Quantidade máxima de resultados
+     * @returns {Promise<Array>}
+     */
+    async obterHistoricoJogador(limite = 20) {
+        try {
+            const historico = await buscarHistoricoJogador(this.jogadorAtual, limite);
+            return historico;
+        } catch (error) {
+            console.error('Erro ao buscar histórico:', error);
+            return this.historicoPartidas.slice(0, limite);
+        }
+    }
+
+    /**
+     * Calcula estatísticas do jogador
+     * @returns {Object}
+     */
+    calcularEstatisticas() {
+        if (this.historicoPartidas.length === 0) {
+            return {
+                totalPartidas: 0,
+                pontuacaoMedia: 0,
+                melhorPontuacao: 0,
+                totalAcertos: 0,
+                totalPerguntas: 0,
+                taxaAcerto: 0,
+                tempoMedio: 0
+            };
+        }
+        
+        const totalPartidas = this.historicoPartidas.length;
+        const pontuacaoTotal = this.historicoPartidas.reduce((acc, p) => acc + p.pontuacaoTotal, 0);
+        const melhorPontuacao = Math.max(...this.historicoPartidas.map(p => p.pontuacaoTotal));
+        const totalAcertos = this.historicoPartidas.reduce((acc, p) => acc + p.acertos, 0);
+        const totalPerguntas = this.historicoPartidas.reduce((acc, p) => acc + p.totalPerguntas, 0);
+        const tempoTotal = this.historicoPartidas.reduce((acc, p) => acc + p.tempoTotal, 0);
+        
+        return {
+            totalPartidas,
+            pontuacaoMedia: Math.round(pontuacaoTotal / totalPartidas),
+            melhorPontuacao,
+            totalAcertos,
+            totalPerguntas,
+            taxaAcerto: totalPerguntas > 0 ? Math.round((totalAcertos / totalPerguntas) * 100) : 0,
+            tempoMedio: Math.round((tempoTotal / totalPartidas) * 10) / 10
+        };
     }
 
     /**
@@ -191,20 +204,63 @@ export class RankingManager {
     }
 
     /**
+     * Formata lista de temas para exibição
+     * @param {Array} temasNomes - Array de nomes de temas
+     * @returns {string}
+     */
+    formatarTemas(temasNomes) {
+        if (!temasNomes || temasNomes.length === 0) {
+            return 'Não especificado';
+        }
+        
+        if (temasNomes.length === 1) {
+            return temasNomes[0];
+        }
+        
+        if (temasNomes.length <= 2) {
+            return temasNomes.join(' e ');
+        }
+        
+        return `${temasNomes.slice(0, 2).join(', ')} +${temasNomes.length - 2}`;
+    }
+
+    /**
      * Encontra a posição do jogador atual no ranking
      * @param {Array} ranking - Lista de ranking
-     * @param {string} salaId - ID da sala (opcional)
      * @returns {number} - Posição (1-indexed) ou -1 se não encontrado
      */
-    encontrarPosicaoJogador(ranking, salaId = null) {
+    encontrarPosicaoJogador(ranking) {
         for (let i = 0; i < ranking.length; i++) {
-            const item = ranking[i];
-            if (item.jogador === this.jogadorAtual) {
-                if (!salaId || item.salaId === salaId) {
-                    return i + 1;
-                }
+            if (ranking[i].jogador === this.jogadorAtual) {
+                return i + 1;
             }
         }
         return -1;
+    }
+
+    /**
+     * Agrupa o ranking por temas para exibição
+     * @param {Array} ranking - Lista de ranking
+     * @returns {Object} - Ranking agrupado por tema
+     */
+    agruparPorTemas(ranking) {
+        const grupos = {};
+        
+        ranking.forEach(item => {
+            const temas = item.temas || ['outros'];
+            temas.forEach(tema => {
+                if (!grupos[tema]) {
+                    grupos[tema] = [];
+                }
+                grupos[tema].push(item);
+            });
+        });
+        
+        // Ordena cada grupo por pontuação
+        Object.keys(grupos).forEach(tema => {
+            grupos[tema].sort((a, b) => b.pontuacaoTotal - a.pontuacaoTotal);
+        });
+        
+        return grupos;
     }
 }

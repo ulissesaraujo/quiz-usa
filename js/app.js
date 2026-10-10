@@ -4,21 +4,20 @@
 
 import { QuizEngine } from './quiz.js';
 import { RankingManager } from './ranking.js';
+import { TemasManager } from './temas.js';
 
 // ========================================
 // ESTADO DA APLICAÇÃO
 // ========================================
 const estado = {
     jogador: '',
-    salas: [],
-    paginaAtual: 1,
-    salasPorPagina: 6,
-    salaAtual: null
+    carregando: false
 };
 
 // Instâncias dos gerenciadores
 const quizEngine = new QuizEngine();
 const rankingManager = new RankingManager();
+const temasManager = new TemasManager();
 
 // ========================================
 // ELEMENTOS DO DOM
@@ -26,7 +25,7 @@ const rankingManager = new RankingManager();
 const elementos = {
     // Telas
     telaLogin: document.getElementById('tela-login'),
-    telaSalas: document.getElementById('tela-salas'),
+    telaTemas: document.getElementById('tela-temas'),
     telaQuiz: document.getElementById('tela-quiz'),
     telaResultado: document.getElementById('tela-resultado'),
     
@@ -36,20 +35,21 @@ const elementos = {
     displayJogador: document.getElementById('display-jogador'),
     btnTrocarJogador: document.getElementById('btn-trocar-jogador'),
     
-    // Salas
-    salasGrid: document.getElementById('salas-grid'),
-    btnAnterior: document.getElementById('btn-anterior'),
-    btnProxima: document.getElementById('btn-proxima'),
-    paginaInfo: document.getElementById('pagina-info'),
+    // Temas
+    temasGrid: document.getElementById('temas-grid'),
+    btnAleatorio: document.getElementById('btn-aleatorio'),
+    btnJogar: document.getElementById('btn-jogar'),
+    selecaoInfo: document.getElementById('selecao-info'),
     btnVerRanking: document.getElementById('btn-ver-ranking'),
     
     // Quiz
-    quizSalaNome: document.getElementById('quiz-sala-nome'),
+    quizTemaInfo: document.getElementById('quiz-tema-info'),
     perguntaContador: document.getElementById('pergunta-contador'),
     pontosAtuais: document.getElementById('pontos-atuais'),
     faseLeitura: document.getElementById('fase-leitura'),
     countdownNumero: document.getElementById('countdown-numero'),
     perguntaEnunciado: document.getElementById('pergunta-enunciado'),
+    perguntaTema: document.getElementById('pergunta-tema'),
     alternativasContainer: document.getElementById('alternativas-container'),
     cronometroTempo: document.getElementById('cronometro-tempo'),
     alternativas: document.getElementById('alternativas'),
@@ -60,13 +60,13 @@ const elementos = {
     feedback: document.getElementById('feedback'),
     
     // Resultado
-    salaFinalizada: document.getElementById('sala-finalizada'),
+    resultadoTemas: document.getElementById('resultado-temas'),
     resultadoPontuacao: document.getElementById('resultado-pontuacao'),
     resultadoAcertos: document.getElementById('resultado-acertos'),
     resultadoTempo: document.getElementById('resultado-tempo'),
     detalhesLista: document.getElementById('detalhes-lista'),
-    rankingSalaBody: document.getElementById('ranking-sala-body'),
-    btnVoltarSalas: document.getElementById('btn-voltar-salas'),
+    rankingPartidaBody: document.getElementById('ranking-partida-body'),
+    btnVoltarTemas: document.getElementById('btn-voltar-temas'),
     btnRankingGlobal: document.getElementById('btn-ranking-global'),
     
     // Modal
@@ -92,21 +92,6 @@ function mostrarTela(telaNome) {
 }
 
 // ========================================
-// CARREGAMENTO DE DADOS
-// ========================================
-async function carregarPerguntas() {
-    try {
-        const response = await fetch('data/perguntas.json');
-        const data = await response.json();
-        estado.salas = data.salas;
-        console.log('Perguntas carregadas:', estado.salas.length, 'salas');
-    } catch (error) {
-        console.error('Erro ao carregar perguntas:', error);
-        estado.salas = [];
-    }
-}
-
-// ========================================
 // TELA DE LOGIN
 // ========================================
 function inicializarLogin() {
@@ -127,101 +112,177 @@ function inicializarLogin() {
             localStorage.setItem('quiz_jogador', nome);
             rankingManager.setJogador(nome);
             
-            // Carrega salas jogadas pelo jogador
-            await rankingManager.carregarSalasJogadas();
+            // Carrega histórico do jogador
+            await rankingManager.carregarHistorico();
             
-            // Atualiza display e vai para seleção de salas
+            // Atualiza display e vai para seleção de temas
             elementos.displayJogador.textContent = nome;
-            renderizarSalas();
-            mostrarTela('salas');
+            await carregarTemas();
+            mostrarTela('temas');
         }
     });
 }
 
 // ========================================
-// TELA DE SALAS
+// TELA DE SELEÇÃO DE TEMAS
 // ========================================
-function renderizarSalas() {
-    const inicio = (estado.paginaAtual - 1) * estado.salasPorPagina;
-    const fim = inicio + estado.salasPorPagina;
-    const salasPagina = estado.salas.slice(inicio, fim);
+async function carregarTemas() {
+    estado.carregando = true;
     
-    elementos.salasGrid.innerHTML = '';
+    try {
+        await temasManager.carregarTemas();
+        renderizarTemas();
+    } catch (error) {
+        console.error('Erro ao carregar temas:', error);
+    } finally {
+        estado.carregando = false;
+    }
+}
+
+function renderizarTemas() {
+    const temas = temasManager.obterTemas();
     
-    salasPagina.forEach(sala => {
-        const jaJogada = rankingManager.salaJaJogada(sala.id);
+    elementos.temasGrid.innerHTML = '';
+    
+    temas.forEach(tema => {
+        const selecionado = temasManager.temaSelecionado(tema.id);
         
         const card = document.createElement('div');
-        card.className = `sala-card${jaJogada ? ' concluida' : ''}`;
+        card.className = `tema-card${selecionado ? ' selecionado' : ''}`;
+        card.dataset.temaId = tema.id;
+        
         card.innerHTML = `
-            <span class="sala-icone">${sala.icone}</span>
-            <h3 class="sala-nome">${sala.nome}</h3>
-            <p class="sala-descricao">${sala.descricao}</p>
+            <span class="tema-icone">${tema.icone}</span>
+            <h3 class="tema-nome">${tema.nome}</h3>
+            <span class="tema-contador">${tema.totalPerguntas || 0} perguntas</span>
         `;
         
-        if (!jaJogada) {
-            card.addEventListener('click', () => iniciarQuiz(sala));
-        }
+        card.addEventListener('click', () => {
+            temasManager.alternarTema(tema.id);
+            atualizarUITemas();
+        });
         
-        elementos.salasGrid.appendChild(card);
+        elementos.temasGrid.appendChild(card);
     });
     
-    // Atualiza paginação
-    const totalPaginas = Math.ceil(estado.salas.length / estado.salasPorPagina);
-    elementos.paginaInfo.textContent = `Página ${estado.paginaAtual} de ${totalPaginas}`;
-    elementos.btnAnterior.disabled = estado.paginaAtual <= 1;
-    elementos.btnProxima.disabled = estado.paginaAtual >= totalPaginas;
+    atualizarUITemas();
 }
 
-function inicializarSalas() {
-    elementos.btnAnterior.addEventListener('click', () => {
-        if (estado.paginaAtual > 1) {
-            estado.paginaAtual--;
-            renderizarSalas();
+function atualizarUITemas() {
+    // Atualiza cards de temas
+    document.querySelectorAll('.tema-card').forEach(card => {
+        const temaId = card.dataset.temaId;
+        if (temasManager.temaSelecionado(temaId)) {
+            card.classList.add('selecionado');
+        } else {
+            card.classList.remove('selecionado');
         }
     });
     
-    elementos.btnProxima.addEventListener('click', () => {
-        const totalPaginas = Math.ceil(estado.salas.length / estado.salasPorPagina);
-        if (estado.paginaAtual < totalPaginas) {
-            estado.paginaAtual++;
-            renderizarSalas();
-        }
+    // Atualiza botão aleatório
+    if (temasManager.isModoAleatorio()) {
+        elementos.btnAleatorio.classList.add('ativo');
+    } else {
+        elementos.btnAleatorio.classList.remove('ativo');
+    }
+    
+    // Atualiza info de seleção
+    const descricao = temasManager.gerarDescricaoSelecao();
+    const totalPerguntas = temasManager.totalPerguntasDisponiveis();
+    
+    if (temasManager.podeIniciar()) {
+        elementos.selecaoInfo.textContent = `${descricao} (${totalPerguntas} perguntas disponíveis)`;
+        elementos.btnJogar.disabled = false;
+    } else {
+        elementos.selecaoInfo.textContent = 'Selecione um ou mais temas para jogar';
+        elementos.btnJogar.disabled = true;
+    }
+}
+
+function inicializarTemas() {
+    // Botão aleatório
+    elementos.btnAleatorio.addEventListener('click', () => {
+        temasManager.alternarModoAleatorio();
+        atualizarUITemas();
     });
     
+    // Botão jogar
+    elementos.btnJogar.addEventListener('click', async () => {
+        if (!temasManager.podeIniciar()) return;
+        await iniciarQuiz();
+    });
+    
+    // Botão trocar jogador
     elementos.btnTrocarJogador.addEventListener('click', () => {
         mostrarTela('login');
     });
     
+    // Botão ver ranking
     elementos.btnVerRanking.addEventListener('click', () => {
         mostrarRankingGlobal();
     });
+    
+    // Callback quando seleção muda
+    temasManager.onSelecaoAlterada = () => {
+        atualizarUITemas();
+    };
 }
 
 // ========================================
 // TELA DE QUIZ
 // ========================================
-function iniciarQuiz(sala) {
-    estado.salaAtual = sala;
+async function iniciarQuiz() {
+    estado.carregando = true;
+    elementos.btnJogar.disabled = true;
+    elementos.btnJogar.textContent = 'Carregando...';
     
-    // Atualiza UI
-    elementos.quizSalaNome.textContent = sala.nome;
-    elementos.pontosAtuais.textContent = '0';
-    
-    // Configura callbacks do quiz engine
-    configurarCallbacksQuiz();
-    
-    // Inicia o quiz
-    quizEngine.iniciar(sala);
-    
-    // Mostra tela do quiz
-    mostrarTela('quiz');
+    try {
+        // Busca perguntas
+        const perguntas = await temasManager.buscarPerguntas(10);
+        
+        if (perguntas.length === 0) {
+            alert('Não há perguntas disponíveis para os temas selecionados.');
+            return;
+        }
+        
+        // Prepara configuração dos temas
+        const configTemas = temasManager.serializarParaResultado();
+        
+        // Atualiza UI
+        elementos.quizTemaInfo.textContent = configTemas.descricao;
+        elementos.pontosAtuais.textContent = '0';
+        
+        // Configura callbacks do quiz engine
+        configurarCallbacksQuiz();
+        
+        // Inicia o quiz
+        quizEngine.iniciar(perguntas, configTemas);
+        
+        // Mostra tela do quiz
+        mostrarTela('quiz');
+    } catch (error) {
+        console.error('Erro ao iniciar quiz:', error);
+        alert('Erro ao carregar perguntas. Tente novamente.');
+    } finally {
+        estado.carregando = false;
+        elementos.btnJogar.disabled = false;
+        elementos.btnJogar.textContent = 'Jogar';
+    }
 }
 
 function configurarCallbacksQuiz() {
-    quizEngine.onPerguntaCarregada = ({ numero, total, pergunta }) => {
+    quizEngine.onPerguntaCarregada = ({ numero, total, pergunta, tema }) => {
         elementos.perguntaContador.textContent = `${numero}/${total}`;
         elementos.perguntaEnunciado.textContent = pergunta.enunciado;
+        
+        // Mostra o tema da pergunta se disponível
+        if (elementos.perguntaTema && tema) {
+            const temaObj = temasManager.obterTemaPorId(tema);
+            if (temaObj) {
+                elementos.perguntaTema.textContent = `${temaObj.icone} ${temaObj.nome}`;
+                elementos.perguntaTema.classList.remove('oculto');
+            }
+        }
         
         // Reseta estados visuais
         elementos.feedbackContainer.classList.add('oculto');
@@ -237,27 +298,16 @@ function configurarCallbacksQuiz() {
         }
     };
     
-    quizEngine.onFaseResposta = ({ ativa, tempo, tempoRestante }) => {
+    quizEngine.onFaseResposta = ({ ativa, tempo }) => {
         if (ativa) {
             elementos.faseLeitura.classList.add('oculto');
             elementos.alternativasContainer.classList.remove('oculto');
-            
-            // Mostra tempo restante (contagem regressiva)
-            const tempoRestanteFormatado = tempoRestante.toFixed(1);
-            elementos.cronometroTempo.textContent = `${tempoRestanteFormatado}s`;
-            
-            // Muda cor quando tempo está acabando
-            if (tempoRestante <= 3) {
-                elementos.cronometroTempo.style.color = '#ef4444'; // vermelho
-            } else if (tempoRestante <= 5) {
-                elementos.cronometroTempo.style.color = '#f59e0b'; // amarelo
-            } else {
-                elementos.cronometroTempo.style.color = '#374151'; // normal
-            }
+            elementos.cronometroTempo.textContent = `${tempo.toFixed(1)}s`;
             
             // Renderiza alternativas apenas uma vez
+            const perguntaAtual = quizEngine.perguntas[quizEngine.perguntaAtual];
             if (elementos.alternativas.children.length === 0 || 
-                elementos.alternativas.dataset.perguntaId !== quizEngine.perguntas[quizEngine.perguntaAtual].id.toString()) {
+                elementos.alternativas.dataset.perguntaId !== perguntaAtual.id) {
                 renderizarAlternativas();
             }
         }
@@ -293,7 +343,7 @@ function renderizarAlternativas() {
 }
 
 function mostrarFeedback(resultado) {
-    const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus, tempoEsgotado } = resultado;
+    const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus } = resultado;
     
     // Destaca a alternativa correta/errada
     const botoes = elementos.alternativas.querySelectorAll('.alternativa-btn');
@@ -302,28 +352,21 @@ function mostrarFeedback(resultado) {
         if (i === indiceCorreto) {
             btn.classList.add('correta');
         }
-        if (i === indiceEscolhido && indiceEscolhido >= 0 && !correta) {
+        if (i === indiceEscolhido && !correta) {
             btn.classList.add('errada');
         }
     });
     
     // Mostra feedback
-    if (tempoEsgotado) {
-        elementos.feedback.className = 'feedback errado';
-        elementos.feedbackIcon.textContent = '⏱️';
-        elementos.feedbackTexto.textContent = 'Tempo Esgotado!';
-        elementos.feedbackPontos.textContent = '0 pts';
-    } else {
-        elementos.feedback.className = `feedback ${correta ? 'correto' : 'errado'}`;
-        elementos.feedbackIcon.textContent = correta ? '✓' : '✗';
-        elementos.feedbackTexto.textContent = correta ? 'Correto!' : 'Errado!';
+    elementos.feedback.className = `feedback ${correta ? 'correto' : 'errado'}`;
+    elementos.feedbackIcon.textContent = correta ? '✓' : '✗';
+    elementos.feedbackTexto.textContent = correta ? 'Correto!' : 'Errado!';
     
-        if (correta) {
-            const bonusTexto = bonus > 0 ? ` (+${bonus} bônus)` : '';
-            elementos.feedbackPontos.textContent = `+${pontosGanhos} pts${bonusTexto}`;
-        } else {
-            elementos.feedbackPontos.textContent = '0 pts';
-        }
+    if (correta) {
+        const bonusTexto = bonus > 0 ? ` (+${bonus} bônus)` : '';
+        elementos.feedbackPontos.textContent = `+${pontosGanhos} pts${bonusTexto}`;
+    } else {
+        elementos.feedbackPontos.textContent = '0 pts';
     }
     
     elementos.feedbackContainer.classList.remove('oculto');
@@ -345,7 +388,7 @@ async function mostrarResultado(resultado) {
     await rankingManager.salvarResultadoPartida(resultado);
     
     // Atualiza UI
-    elementos.salaFinalizada.textContent = resultado.salaNome;
+    elementos.resultadoTemas.textContent = resultado.descricaoTemas;
     elementos.resultadoPontuacao.textContent = resultado.pontuacaoTotal;
     elementos.resultadoAcertos.textContent = `${resultado.acertos}/${resultado.totalPerguntas}`;
     elementos.resultadoTempo.textContent = rankingManager.formatarTempo(resultado.tempoTotal);
@@ -355,28 +398,39 @@ async function mostrarResultado(resultado) {
     resultado.detalhes.forEach((detalhe, index) => {
         const item = document.createElement('div');
         item.className = `detalhe-item ${detalhe.correto ? 'correto' : 'errado'}`;
+        
+        // Busca info do tema
+        let temaInfo = '';
+        if (detalhe.tema) {
+            const temaObj = temasManager.obterTemaPorId(detalhe.tema);
+            if (temaObj) {
+                temaInfo = `<span class="detalhe-tema">${temaObj.icone}</span>`;
+            }
+        }
+        
         item.innerHTML = `
             <span class="detalhe-numero">#${index + 1}</span>
+            ${temaInfo}
             <span class="detalhe-tempo">${detalhe.tempo}s</span>
             <span class="detalhe-pontos">${detalhe.pontosTotais} pts</span>
         `;
         elementos.detalhesLista.appendChild(item);
     });
     
-    // Carrega ranking da sala
-    await carregarRankingSala(resultado.salaId);
+    // Carrega ranking
+    await carregarRankingPartida(resultado.temas);
     
     // Mostra tela de resultado
     mostrarTela('resultado');
 }
 
-async function carregarRankingSala(salaId) {
-    const ranking = await rankingManager.obterRankingSala(salaId);
+async function carregarRankingPartida(temas) {
+    const ranking = await rankingManager.obterRankingGlobal(20);
     
-    elementos.rankingSalaBody.innerHTML = '';
+    elementos.rankingPartidaBody.innerHTML = '';
     
     if (ranking.length === 0) {
-        elementos.rankingSalaBody.innerHTML = `
+        elementos.rankingPartidaBody.innerHTML = `
             <tr>
                 <td colspan="5" style="text-align: center; color: #9ca3af;">
                     Nenhum resultado ainda
@@ -390,21 +444,25 @@ async function carregarRankingSala(salaId) {
         const isJogadorAtual = item.jogador === estado.jogador;
         const tr = document.createElement('tr');
         tr.className = isJogadorAtual ? 'destaque' : '';
+        
+        const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
+        
         tr.innerHTML = `
             <td>${index + 1}º</td>
             <td>${item.jogador}${isJogadorAtual ? ' (você)' : ''}</td>
+            <td>${temasDisplay}</td>
             <td>${item.pontuacaoTotal}</td>
             <td>${item.acertos}/${item.totalPerguntas || 10}</td>
-            <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
         `;
-        elementos.rankingSalaBody.appendChild(tr);
+        elementos.rankingPartidaBody.appendChild(tr);
     });
 }
 
 function inicializarResultado() {
-    elementos.btnVoltarSalas.addEventListener('click', () => {
-        renderizarSalas();
-        mostrarTela('salas');
+    elementos.btnVoltarTemas.addEventListener('click', () => {
+        temasManager.limparSelecao();
+        renderizarTemas();
+        mostrarTela('temas');
     });
     
     elementos.btnRankingGlobal.addEventListener('click', () => {
@@ -433,10 +491,13 @@ async function mostrarRankingGlobal() {
             const isJogadorAtual = item.jogador === estado.jogador;
             const tr = document.createElement('tr');
             tr.className = isJogadorAtual ? 'destaque' : '';
+            
+            const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
+            
             tr.innerHTML = `
                 <td>${index + 1}º</td>
                 <td>${item.jogador}${isJogadorAtual ? ' (você)' : ''}</td>
-                <td>${item.salaNome || item.salaId}</td>
+                <td>${temasDisplay}</td>
                 <td>${item.pontuacaoTotal}</td>
                 <td>${item.acertos}/${item.totalPerguntas || 10}</td>
                 <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
@@ -466,21 +527,18 @@ function inicializarModal() {
 async function init() {
     console.log('🇺🇸 Quiz USA - Iniciando...');
     
-    // Carrega dados
-    await carregarPerguntas();
-    
     // Inicializa módulos
     inicializarLogin();
-    inicializarSalas();
+    inicializarTemas();
     inicializarResultado();
     inicializarModal();
     
     // Verifica se existe jogador salvo
     const jogadorSalvo = localStorage.getItem('quiz_jogador');
-    if (jogadorSalvo && estado.salas.length > 0) {
+    if (jogadorSalvo) {
         estado.jogador = jogadorSalvo;
         rankingManager.setJogador(jogadorSalvo);
-        await rankingManager.carregarSalasJogadas();
+        await rankingManager.carregarHistorico();
         elementos.displayJogador.textContent = jogadorSalvo;
         elementos.inputNome.value = jogadorSalvo;
     }

@@ -59,7 +59,7 @@ body {
 
 /* Container Principal */
 .app-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
@@ -105,7 +105,7 @@ body {
     color: var(--white);
 }
 
-.btn-primary:hover {
+.btn-primary:hover:not(:disabled) {
     background: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -116,7 +116,7 @@ body {
     color: var(--white);
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover:not(:disabled) {
     background: #7c3aed;
     transform: translateY(-2px);
 }
@@ -218,9 +218,9 @@ body {
 }
 
 /* ========================================
-   TELA 2: SALAS
+   TELA 2: SELEÇÃO DE TEMAS
    ======================================== */
-.header-salas {
+.header-temas {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -242,89 +242,160 @@ body {
     color: var(--gray-800);
 }
 
-.salas-container {
+.temas-container {
     background: var(--white);
     border-radius: var(--radius-lg);
     padding: 32px;
     box-shadow: var(--shadow-lg);
 }
 
-.salas-container h2 {
+.temas-container h2 {
     color: var(--gray-800);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.temas-subtitle {
+    color: var(--gray-500);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Botão Aleatório */
+.aleatorio-container {
+    margin-bottom: 24px;
+}
+
+.btn-aleatorio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: 3px solid transparent;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--white);
+}
+
+.btn-aleatorio:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-aleatorio.ativo {
+    border-color: var(--warning);
+    box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.3);
+}
+
+.aleatorio-icone {
+    font-size: 2.5rem;
     margin-bottom: 8px;
 }
 
-.salas-subtitle {
-    color: var(--gray-500);
-    margin-bottom: 24px;
+.aleatorio-texto {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 4px;
 }
 
-.salas-grid {
+.aleatorio-desc {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+/* Divisor */
+.divisor {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.divisor::before,
+.divisor::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--gray-200);
+}
+
+.divisor span {
+    padding: 0 16px;
+    color: var(--gray-400);
+    font-size: 0.875rem;
+}
+
+/* Grid de Temas */
+.temas-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
     margin-bottom: 24px;
 }
 
-/* Card de Sala */
-.sala-card {
+/* Card de Tema */
+.tema-card {
     background: var(--gray-50);
     border: 2px solid var(--gray-200);
     border-radius: var(--radius);
-    padding: 20px;
+    padding: 16px 12px;
     cursor: pointer;
     transition: var(--transition);
     text-align: center;
 }
 
-.sala-card:hover:not(.concluida) {
+.tema-card:hover {
     border-color: var(--primary);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
 }
 
-.sala-card.concluida {
-    background: var(--gray-100);
-    opacity: 0.7;
-    cursor: not-allowed;
+.tema-card.selecionado {
+    border-color: var(--primary);
+    background: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
 
-.sala-card.concluida::after {
-    content: '✓ Concluída';
+.tema-icone {
+    font-size: 2rem;
     display: block;
-    margin-top: 12px;
-    color: var(--success);
-    font-weight: 600;
-    font-size: 0.875rem;
+    margin-bottom: 8px;
 }
 
-.sala-icone {
-    font-size: 2.5rem;
-    margin-bottom: 12px;
-}
-
-.sala-nome {
+.tema-nome {
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--gray-800);
     margin-bottom: 4px;
 }
 
-.sala-descricao {
-    font-size: 0.875rem;
+.tema-contador {
+    font-size: 0.75rem;
     color: var(--gray-500);
 }
 
-/* Paginação */
-.paginacao {
+/* Footer de Seleção */
+.selecao-footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray-200);
 }
 
-.pagina-info {
+.selecao-info {
     color: var(--gray-500);
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.btn-jogar {
+    min-width: 200px;
+    padding: 16px 32px;
+    font-size: 1.1rem;
 }
 
 /* ========================================
@@ -346,9 +417,10 @@ body {
     flex-direction: column;
 }
 
-.quiz-info .sala-nome {
+.quiz-info .tema-info {
     font-weight: 600;
     color: var(--gray-800);
+    font-size: 0.95rem;
 }
 
 .pergunta-contador {
@@ -427,6 +499,20 @@ body {
 /* Pergunta */
 .pergunta-container {
     margin-bottom: 32px;
+}
+
+.pergunta-tema {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--gray-100);
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    margin-bottom: 16px;
+}
+
+.pergunta-tema.oculto {
+    display: none;
 }
 
 .pergunta-enunciado {
@@ -587,7 +673,7 @@ body {
     margin-bottom: 8px;
 }
 
-.sala-finalizada {
+.resultado-temas {
     color: var(--gray-500);
     font-size: 1.1rem;
 }
@@ -660,6 +746,10 @@ body {
 
 .detalhe-numero {
     font-weight: 600;
+}
+
+.detalhe-tema {
+    font-size: 1rem;
 }
 
 .detalhe-tempo {
@@ -812,10 +902,35 @@ body {
         font-size: 3rem;
     }
     
-    .salas-container,
+    .temas-container,
     .quiz-container,
     .resultado-container {
         padding: 20px;
+    }
+    
+    .temas-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 8px;
+    }
+    
+    .tema-card {
+        padding: 12px 8px;
+    }
+    
+    .tema-icone {
+        font-size: 1.5rem;
+    }
+    
+    .tema-nome {
+        font-size: 0.8rem;
+    }
+    
+    .btn-aleatorio {
+        padding: 20px;
+    }
+    
+    .aleatorio-icone {
+        font-size: 2rem;
     }
     
     .resultado-resumo {
@@ -834,24 +949,19 @@ body {
         font-size: 1.2rem;
     }
     
-    .header-salas,
+    .header-temas,
     .header-quiz {
         flex-direction: column;
         gap: 12px;
         text-align: center;
     }
     
-    .paginacao {
-        flex-direction: column;
-        gap: 8px;
-    }
-    
     .ranking-tabela {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
     }
     
     .ranking-tabela th,
     .ranking-tabela td {
-        padding: 8px;
+        padding: 8px 4px;
     }
 }

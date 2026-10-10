@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quiz USA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #3b82f6;
+            --primary-dark: #2563eb;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --radius: 12px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--gray-100);
+            min-height: 100vh;
+            color: var(--gray-800);
+        }
+
+        .admin-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .admin-header {
+            background: var(--white);
+            padding: 20px 24px;
+            border-radius: var(--radius);
+            margin-bottom: 24px;
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .admin-header h1 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+        }
+
+        .admin-header a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .admin-header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-valor {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+        }
+
+        /* Layout Principal */
+        .admin-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        @media (max-width: 900px) {
+            .admin-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--gray-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-header h2 {
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Formulário */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: var(--gray-700);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 8px;
+            align-items: end;
+        }
+
+        .alternativas-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .alternativa-item {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .alternativa-item input[type="text"] {
+            flex: 1;
+        }
+
+        .alternativa-item input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .alternativa-item .btn-remover {
+            padding: 8px 12px;
+            background: var(--danger);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        /* Botões */
+        .btn {
+            padding: 12px 20px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+        }
+
+        .btn-success {
+            background: var(--success);
+            color: white;
+        }
+
+        .btn-danger {
+            background: var(--danger);
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--gray-300);
+            color: var(--gray-600);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 0.85rem;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-block {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Lista de Perguntas */
+        .perguntas-lista {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .pergunta-item {
+            padding: 16px;
+            border-bottom: 1px solid var(--gray-100);
+            transition: background 0.2s;
+        }
+
+        .pergunta-item:hover {
+            background: var(--gray-50);
+        }
+
+        .pergunta-item:last-child {
+            border-bottom: none;
+        }
+
+        .pergunta-tema {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--gray-100);
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: var(--gray-600);
+            margin-bottom: 8px;
+        }
+
+        .pergunta-enunciado {
+            font-weight: 500;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .pergunta-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+
+        .pergunta-acoes {
+            display: flex;
+            gap: 8px;
+        }
+
+        /* Filtros */
+        .filtros {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .filtros select {
+            padding: 8px 12px;
+            border: 2px solid var(--gray-200);
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        /* Mensagens */
+        .mensagem {
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            display: none;
+        }
+
+        .mensagem.sucesso {
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--success);
+            display: block;
+        }
+
+        .mensagem.erro {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+            display: block;
+        }
+
+        /* Import/Export */
+        .import-export {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--gray-500);
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--gray-200);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: var(--gray-500);
+        }
+
+        .empty-state span {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Header -->
+        <header class="admin-header">
+            <h1>🇺🇸 Quiz USA - Painel Admin</h1>
+            <a href="index.html">← Voltar ao Quiz</a>
+        </header>
+
+        <!-- Stats -->
+        <div class="stats-grid" id="stats-grid">
+            <div class="stat-card">
+                <div class="stat-valor" id="total-perguntas">-</div>
+                <div class="stat-label">Total de Perguntas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-valor" id="total-temas">13</div>
+                <div class="stat-label">Temas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-valor" id="total-partidas">-</div>
+                <div class="stat-label">Partidas Jogadas</div>
+            </div>
+        </div>
+
+        <!-- Layout Principal -->
+        <div class="admin-layout">
+            <!-- Formulário de Adicionar -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>➕ Adicionar Pergunta</h2>
+                </div>
+                <div class="card-body">
+                    <div id="mensagem-form" class="mensagem"></div>
+                    
+                    <form id="form-pergunta">
+                        <div class="form-group">
+                            <label for="tema">Tema *</label>
+                            <select id="tema" required>
+                                <option value="">Selecione um tema</option>
+                                <option value="geografia">🗺️ Geografia</option>
+                                <option value="historia">📜 História</option>
+                                <option value="ciencia">🔬 Ciência</option>
+                                <option value="arte">🎨 Arte</option>
+                                <option value="literatura">📚 Literatura</option>
+                                <option value="cinema-series">🎬 Cinema e Séries</option>
+                                <option value="musica">🎵 Música</option>
+                                <option value="games">🎮 Mundo dos Games</option>
+                                <option value="mitos-verdades">🤔 Mitos ou Verdades</option>
+                                <option value="comidas-bebidas">🍔 Comidas e Bebidas</option>
+                                <option value="nostalgia">📼 Nostalgia</option>
+                                <option value="esportes">⚽ Esportes</option>
+                                <option value="curiosidades">💡 Curiosidades</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enunciado">Enunciado da Pergunta *</label>
+                            <textarea id="enunciado" placeholder="Digite a pergunta..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Alternativas * (marque a correta)</label>
+                            <div class="alternativas-list" id="alternativas-list">
+                                <div class="alternativa-item">
+                                    <input type="radio" name="correta" value="0" checked>
+                                    <input type="text" placeholder="Alternativa 1" required>
+                                </div>
+                                <div class="alternativa-item">
+                                    <input type="radio" name="correta" value="1">
+                                    <input type="text" placeholder="Alternativa 2" required>
+                                </div>
+                                <div class="alternativa-item">
+                                    <input type="radio" name="correta" value="2">
+                                    <input type="text" placeholder="Alternativa 3" required>
+                                </div>
+                                <div class="alternativa-item">
+                                    <input type="radio" name="correta" value="3">
+                                    <input type="text" placeholder="Alternativa 4" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="btn-salvar">
+                            💾 Salvar Pergunta
+                        </button>
+                    </form>
+
+                    <div class="import-export">
+                        <button class="btn btn-outline btn-small" id="btn-exportar">
+                            📥 Exportar JSON
+                        </button>
+                        <label class="btn btn-outline btn-small">
+                            📤 Importar JSON
+                            <input type="file" id="input-importar" accept=".json" style="display: none;">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista de Perguntas -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>📋 Perguntas Cadastradas</h2>
+                    <button class="btn btn-small btn-outline" id="btn-atualizar">🔄 Atualizar</button>
+                </div>
+                <div class="card-body">
+                    <div class="filtros">
+                        <select id="filtro-tema">
+                            <option value="">Todos os temas</option>
+                            <option value="geografia">🗺️ Geografia</option>
+                            <option value="historia">📜 História</option>
+                            <option value="ciencia">🔬 Ciência</option>
+                            <option value="arte">🎨 Arte</option>
+                            <option value="literatura">📚 Literatura</option>
+                            <option value="cinema-series">🎬 Cinema e Séries</option>
+                            <option value="musica">🎵 Música</option>
+                            <option value="games">🎮 Mundo dos Games</option>
+                            <option value="mitos-verdades">🤔 Mitos ou Verdades</option>
+                            <option value="comidas-bebidas">🍔 Comidas e Bebidas</option>
+                            <option value="nostalgia">📼 Nostalgia</option>
+                            <option value="esportes">⚽ Esportes</option>
+                            <option value="curiosidades">💡 Curiosidades</option>
+                        </select>
+                    </div>
+
+                    <div class="perguntas-lista" id="perguntas-lista">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <p>Carregando perguntas...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { 
+            adicionarPergunta, 
+            adicionarPerguntasEmLote,
+            buscarTodasPerguntas, 
+            excluirPergunta,
+            buscarRanking,
+            TEMAS_DISPONIVEIS,
+            aguardarFirebase
+        } from './js/firebase-config.js';
+
+        // Estado
+        let perguntas = [];
+        let filtroAtual = '';
+
+        // Elementos
+        const form = document.getElementById('form-pergunta');
+        const mensagemForm = document.getElementById('mensagem-form');
+        const perguntasLista = document.getElementById('perguntas-lista');
+        const filtroTema = document.getElementById('filtro-tema');
+        const btnAtualizar = document.getElementById('btn-atualizar');
+        const btnExportar = document.getElementById('btn-exportar');
+        const inputImportar = document.getElementById('input-importar');
+        const totalPerguntasEl = document.getElementById('total-perguntas');
+        const totalPartidasEl = document.getElementById('total-partidas');
+
+        // Mapa de temas para ícones
+        const temasIcones = {};
+        TEMAS_DISPONIVEIS.forEach(t => {
+            temasIcones[t.id] = t.icone;
+        });
+
+        // Inicialização
+        async function init() {
+            await aguardarFirebase();
+            await carregarPerguntas();
+            await carregarStats();
+            
+            // Event listeners
+            form.addEventListener('submit', handleSubmit);
+            filtroTema.addEventListener('change', () => {
+                filtroAtual = filtroTema.value;
+                renderizarPerguntas();
+            });
+            btnAtualizar.addEventListener('click', carregarPerguntas);
+            btnExportar.addEventListener('click', exportarPerguntas);
+            inputImportar.addEventListener('change', importarPerguntas);
+        }
+
+        // Carrega perguntas do Firebase
+        async function carregarPerguntas() {
+            perguntasLista.innerHTML = '<div class="loading"><div class="spinner"></div><p>Carregando...</p></div>';
+            
+            try {
+                perguntas = await buscarTodasPerguntas();
+                totalPerguntasEl.textContent = perguntas.length;
+                renderizarPerguntas();
+            } catch (error) {
+                console.error('Erro ao carregar perguntas:', error);
+                perguntasLista.innerHTML = '<div class="empty-state"><span>❌</span><p>Erro ao carregar perguntas</p></div>';
+            }
+        }
+
+        // Carrega estatísticas
+        async function carregarStats() {
+            try {
+                const ranking = await buscarRanking(1000);
+                totalPartidasEl.textContent = ranking.length;
+            } catch (error) {
+                console.error('Erro ao carregar stats:', error);
+            }
+        }
+
+        // Renderiza lista de perguntas
+        function renderizarPerguntas() {
+            let perguntasFiltradas = perguntas;
+            
+            if (filtroAtual) {
+                perguntasFiltradas = perguntas.filter(p => p.tema === filtroAtual);
+            }
+
+            if (perguntasFiltradas.length === 0) {
+                perguntasLista.innerHTML = '<div class="empty-state"><span>📭</span><p>Nenhuma pergunta encontrada</p></div>';
+                return;
+            }
+
+            perguntasLista.innerHTML = perguntasFiltradas.map(p => `
+                <div class="pergunta-item" data-id="${p.id}">
+                    <span class="pergunta-tema">${temasIcones[p.tema] || '❓'} ${p.tema}</span>
+                    <div class="pergunta-enunciado">${p.enunciado}</div>
+                    <div class="pergunta-meta">
+                        <span>${p.alternativas?.length || 0} alternativas</span>
+                        <div class="pergunta-acoes">
+                            <button class="btn btn-small btn-danger" onclick="excluirPerguntaHandler('${p.id}')">
+                                🗑️ Excluir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Handler de submit do formulário
+        async function handleSubmit(e) {
+            e.preventDefault();
+            
+            const tema = document.getElementById('tema').value;
+            const enunciado = document.getElementById('enunciado').value;
+            const alternativasInputs = document.querySelectorAll('#alternativas-list input[type="text"]');
+            const corretaRadio = document.querySelector('input[name="correta"]:checked');
+            
+            const alternativas = Array.from(alternativasInputs).map(input => input.value.trim());
+            const correta = parseInt(corretaRadio.value);
+
+            // Validação
+            if (!tema || !enunciado || alternativas.some(a => !a)) {
+                mostrarMensagem('Preencha todos os campos!', 'erro');
+                return;
+            }
+
+            const btnSalvar = document.getElementById('btn-salvar');
+            btnSalvar.disabled = true;
+            btnSalvar.textContent = 'Salvando...';
+
+            try {
+                await adicionarPergunta({
+                    tema,
+                    enunciado,
+                    alternativas,
+                    correta
+                });
+
+                mostrarMensagem('Pergunta adicionada com sucesso!', 'sucesso');
+                form.reset();
+                await carregarPerguntas();
+            } catch (error) {
+                console.error('Erro ao salvar:', error);
+                mostrarMensagem('Erro ao salvar pergunta. Tente novamente.', 'erro');
+            } finally {
+                btnSalvar.disabled = false;
+                btnSalvar.textContent = '💾 Salvar Pergunta';
+            }
+        }
+
+        // Exclui pergunta
+        window.excluirPerguntaHandler = async function(id) {
+            if (!confirm('Tem certeza que deseja excluir esta pergunta?')) return;
+            
+            try {
+                await excluirPergunta(id);
+                await carregarPerguntas();
+                mostrarMensagem('Pergunta excluída!', 'sucesso');
+            } catch (error) {
+                console.error('Erro ao excluir:', error);
+                mostrarMensagem('Erro ao excluir pergunta.', 'erro');
+            }
+        };
+
+        // Exporta perguntas para JSON
+        function exportarPerguntas() {
+            const dados = {
+                exportadoEm: new Date().toISOString(),
+                totalPerguntas: perguntas.length,
+                perguntas: perguntas.map(p => ({
+                    tema: p.tema,
+                    enunciado: p.enunciado,
+                    alternativas: p.alternativas,
+                    correta: p.correta
+                }))
+            };
+
+            const blob = new Blob([JSON.stringify(dados, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `quiz-usa-perguntas-${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Importa perguntas de JSON
+        async function importarPerguntas(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            try {
+                const texto = await file.text();
+                const dados = JSON.parse(texto);
+                
+                let perguntasParaImportar = [];
+                
+                // Suporta diferentes formatos
+                if (Array.isArray(dados)) {
+                    perguntasParaImportar = dados;
+                } else if (dados.perguntas && Array.isArray(dados.perguntas)) {
+                    perguntasParaImportar = dados.perguntas;
+                } else {
+                    throw new Error('Formato inválido');
+                }
+
+                if (perguntasParaImportar.length === 0) {
+                    mostrarMensagem('Arquivo não contém perguntas válidas.', 'erro');
+                    return;
+                }
+
+                // Valida estrutura
+                const perguntasValidas = perguntasParaImportar.filter(p => 
+                    p.tema && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
+                );
+
+                if (perguntasValidas.length === 0) {
+                    mostrarMensagem('Nenhuma pergunta válida encontrada no arquivo.', 'erro');
+                    return;
+                }
+
+                if (!confirm(`Importar ${perguntasValidas.length} perguntas?`)) return;
+
+                await adicionarPerguntasEmLote(perguntasValidas);
+                await carregarPerguntas();
+                mostrarMensagem(`${perguntasValidas.length} perguntas importadas com sucesso!`, 'sucesso');
+                
+            } catch (error) {
+                console.error('Erro ao importar:', error);
+                mostrarMensagem('Erro ao importar arquivo. Verifique o formato.', 'erro');
+            }
+
+            // Limpa input
+            e.target.value = '';
+        }
+
+        // Mostra mensagem
+        function mostrarMensagem(texto, tipo) {
+            mensagemForm.textContent = texto;
+            mensagemForm.className = `mensagem ${tipo}`;
+            
+            setTimeout(() => {
+                mensagemForm.className = 'mensagem';
+            }, 3000);
+        }
+
+        // Inicia
+        init();
+    </script>
+</body>
+</html>

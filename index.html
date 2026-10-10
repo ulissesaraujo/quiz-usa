@@ -40,9 +40,9 @@
             </div>
         </section>
 
-        <!-- TELA 2: SELEÇÃO DE SALAS -->
-        <section id="tela-salas" class="tela">
-            <header class="header-salas">
+        <!-- TELA 2: SELEÇÃO DE TEMAS -->
+        <section id="tela-temas" class="tela">
+            <header class="header-temas">
                 <div class="header-info">
                     <span class="jogador-nome" id="display-jogador">Jogador</span>
                     <button class="btn btn-small btn-outline" id="btn-trocar-jogador">Trocar</button>
@@ -52,18 +52,33 @@
                 </button>
             </header>
 
-            <div class="salas-container">
-                <h2>Escolha uma Sala</h2>
-                <p class="salas-subtitle">Cada sala tem 10 perguntas. Responda rápido para ganhar bônus!</p>
+            <div class="temas-container">
+                <h2>Escolha os Temas</h2>
+                <p class="temas-subtitle">Selecione um ou mais temas. O sistema sorteará 10 perguntas para você!</p>
                 
-                <div class="salas-grid" id="salas-grid">
-                    <!-- Salas serão carregadas via JavaScript -->
+                <!-- Botão Aleatório -->
+                <div class="aleatorio-container">
+                    <button class="btn-aleatorio" id="btn-aleatorio">
+                        <span class="aleatorio-icone">🎲</span>
+                        <span class="aleatorio-texto">Temas Aleatórios</span>
+                        <span class="aleatorio-desc">Mistura perguntas de todos os temas</span>
+                    </button>
                 </div>
 
-                <div class="paginacao" id="paginacao">
-                    <button class="btn btn-small" id="btn-anterior" disabled>← Anterior</button>
-                    <span class="pagina-info" id="pagina-info">Página 1 de 1</span>
-                    <button class="btn btn-small" id="btn-proxima">Próxima →</button>
+                <div class="divisor">
+                    <span>ou escolha temas específicos</span>
+                </div>
+                
+                <div class="temas-grid" id="temas-grid">
+                    <!-- Temas serão carregados via JavaScript -->
+                </div>
+
+                <div class="selecao-footer">
+                    <p class="selecao-info" id="selecao-info">Selecione um ou mais temas para jogar</p>
+                    <button class="btn btn-primary btn-jogar" id="btn-jogar" disabled>
+                        Jogar
+                        <span class="btn-icon">→</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -72,7 +87,7 @@
         <section id="tela-quiz" class="tela">
             <header class="header-quiz">
                 <div class="quiz-info">
-                    <span class="sala-nome" id="quiz-sala-nome">Nome da Sala</span>
+                    <span class="tema-info" id="quiz-tema-info">Temas Selecionados</span>
                     <span class="pergunta-contador" id="pergunta-contador">1/10</span>
                 </div>
                 <div class="pontuacao-atual">
@@ -92,6 +107,7 @@
 
                 <!-- Pergunta -->
                 <div class="pergunta-container">
+                    <p class="pergunta-tema oculto" id="pergunta-tema">🗺️ Geografia</p>
                     <h2 class="pergunta-enunciado" id="pergunta-enunciado">
                         Carregando pergunta...
                     </h2>
@@ -125,7 +141,7 @@
             <div class="resultado-container">
                 <div class="resultado-header">
                     <h2>🎉 Partida Finalizada!</h2>
-                    <p class="sala-finalizada" id="sala-finalizada">Geografia dos EUA</p>
+                    <p class="resultado-temas" id="resultado-temas">Geografia, História</p>
                 </div>
 
                 <div class="resultado-resumo">
@@ -151,26 +167,26 @@
                 </div>
 
                 <div class="resultado-ranking">
-                    <h3>🏆 Ranking da Sala</h3>
-                    <table class="ranking-tabela" id="ranking-sala-tabela">
+                    <h3>🏆 Ranking</h3>
+                    <table class="ranking-tabela" id="ranking-partida-tabela">
                         <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Jogador</th>
+                                <th>Temas</th>
                                 <th>Pontos</th>
                                 <th>Acertos</th>
-                                <th>Tempo</th>
                             </tr>
                         </thead>
-                        <tbody id="ranking-sala-body">
+                        <tbody id="ranking-partida-body">
                             <!-- Ranking será carregado via JavaScript -->
                         </tbody>
                     </table>
                 </div>
 
                 <div class="resultado-acoes">
-                    <button class="btn btn-primary" id="btn-voltar-salas">
-                        Escolher Outra Sala
+                    <button class="btn btn-primary" id="btn-voltar-temas">
+                        Jogar Novamente
                     </button>
                     <button class="btn btn-secondary" id="btn-ranking-global">
                         🏆 Ver Ranking Global
@@ -192,7 +208,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>Jogador</th>
-                                <th>Sala</th>
+                                <th>Temas</th>
                                 <th>Pontos</th>
                                 <th>Acertos</th>
                                 <th>Tempo</th>

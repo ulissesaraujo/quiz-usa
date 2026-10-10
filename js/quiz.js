@@ -10,16 +10,17 @@ export class QuizEngine {
         this.perguntaAtual = 0;
         this.pontuacaoTotal = 0;
         this.perguntas = [];
-        this.salaAtual = null;
+        this.temasSelecionados = [];
+        this.temasNomes = [];
+        this.modoAleatorio = false;
+        this.descricaoTemas = '';
         this.respostas = []; // Armazena detalhes de cada resposta
         this.tempoInicio = null;
         this.timerLeitura = null;
         this.timerCronometro = null;
         this.cronometroSegundos = 0;
         this.respondeu = false;
-        
-        // Configurações
-        this.tempoLimite = 10; // 10 segundos para responder
+        this.sessaoId = null;
         
         // Callbacks
         this.onPerguntaCarregada = null;
@@ -28,7 +29,6 @@ export class QuizEngine {
         this.onRespostaProcessada = null;
         this.onQuizFinalizado = null;
         this.onPontuacaoAtualizada = null;
-        this.onTempoEsgotado = null;
     }
 
     /**
@@ -45,18 +45,35 @@ export class QuizEngine {
     }
 
     /**
-     * Inicia o quiz com uma sala específica
-     * @param {Object} sala - Objeto da sala com perguntas
+     * Inicia o quiz com perguntas e configuração de temas
+     * @param {Array} perguntas - Array de perguntas do Firebase
+     * @param {Object} configTemas - Configuração dos temas selecionados
      */
-    iniciar(sala) {
-        this.salaAtual = sala;
-        this.perguntas = [...sala.perguntas];
+    iniciar(perguntas, configTemas = {}) {
+        this.perguntas = [...perguntas];
+        this.temasSelecionados = configTemas.temas || [];
+        this.temasNomes = configTemas.temasNomes || [];
+        this.modoAleatorio = configTemas.modoAleatorio || false;
+        this.descricaoTemas = configTemas.descricao || 'Quiz';
+        this.sessaoId = this.gerarSessaoId();
+        
         this.perguntaAtual = 0;
         this.pontuacaoTotal = 0;
         this.respostas = [];
         this.respondeu = false;
         
+        console.log(`🎮 Quiz iniciado: ${this.descricaoTemas} (${this.perguntas.length} perguntas)`);
+        
         this.carregarPergunta();
+    }
+
+    /**
+     * Gera um ID único para a sessão
+     */
+    gerarSessaoId() {
+        const timestamp = Date.now();
+        const random = Math.random().toString(36).substring(2, 8);
+        return `quiz_${timestamp}_${random}`;
     }
 
     /**
@@ -76,7 +93,8 @@ export class QuizEngine {
             this.onPerguntaCarregada({
                 numero: this.perguntaAtual + 1,
                 total: this.perguntas.length,
-                pergunta: pergunta
+                pergunta: pergunta,
+                tema: pergunta.tema || null
             });
         }
 
@@ -109,88 +127,27 @@ export class QuizEngine {
     }
 
     /**
-     * Inicia a fase de resposta com cronômetro e limite de tempo
+     * Inicia a fase de resposta com cronômetro
      */
     iniciarFaseResposta() {
         this.tempoInicio = Date.now();
         this.cronometroSegundos = 0;
         
         if (this.onFaseResposta) {
-            this.onFaseResposta({ 
-                ativa: true, 
-                tempo: 0,
-                tempoRestante: this.tempoLimite 
-            });
+            this.onFaseResposta({ ativa: true, tempo: 0 });
         }
 
         // Inicia cronômetro que atualiza a cada 100ms
         this.timerCronometro = setInterval(() => {
             this.cronometroSegundos = (Date.now() - this.tempoInicio) / 1000;
-            const tempoRestante = Math.max(0, this.tempoLimite - this.cronometroSegundos);
             
             if (this.onFaseResposta) {
                 this.onFaseResposta({ 
                     ativa: true, 
-                    tempo: this.cronometroSegundos,
-                    tempoRestante: tempoRestante
+                    tempo: this.cronometroSegundos 
                 });
             }
-            
-            // Verifica se o tempo esgotou
-            if (this.cronometroSegundos >= this.tempoLimite && !this.respondeu) {
-                this.tempoEsgotado();
-            }
         }, 100);
-    }
-
-    /**
-     * Chamado quando o tempo de resposta esgota
-     */
-    tempoEsgotado() {
-        if (this.respondeu) return;
-        
-        this.respondeu = true;
-        clearInterval(this.timerCronometro);
-        
-        const pergunta = this.perguntas[this.perguntaAtual];
-        
-        // Registra como resposta errada (tempo esgotado)
-        const detalheResposta = {
-            perguntaId: pergunta.id,
-            tempo: this.tempoLimite,
-            correto: false,
-            pontosBase: 0,
-            bonus: 0,
-            pontosTotais: 0,
-            respostaEscolhida: -1, // -1 indica tempo esgotado
-            respostaCorreta: pergunta.correta,
-            tempoEsgotado: true
-        };
-        
-        this.respostas.push(detalheResposta);
-        
-        // Notifica que o tempo esgotou
-        if (this.onTempoEsgotado) {
-            this.onTempoEsgotado({
-                indiceCorreto: pergunta.correta,
-                pontuacaoTotal: this.pontuacaoTotal
-            });
-        }
-        
-        // Também notifica via onRespostaProcessada para manter compatibilidade
-        if (this.onRespostaProcessada) {
-            this.onRespostaProcessada({
-                correta: false,
-                indiceCorreto: pergunta.correta,
-                indiceEscolhido: -1,
-                tempo: this.tempoLimite,
-                pontosBase: 0,
-                bonus: 0,
-                pontosGanhos: 0,
-                pontuacaoTotal: this.pontuacaoTotal,
-                tempoEsgotado: true
-            });
-        }
     }
 
     /**
@@ -224,14 +181,14 @@ export class QuizEngine {
         // Registra a resposta
         const detalheResposta = {
             perguntaId: pergunta.id,
+            tema: pergunta.tema || null,
             tempo: Math.round(tempoResposta * 10) / 10, // Arredonda para 1 casa decimal
             correto: estaCorreta,
             pontosBase: pontosBase,
             bonus: bonus,
             pontosTotais: pontosGanhos,
             respostaEscolhida: indiceEscolhido,
-            respostaCorreta: pergunta.correta,
-            tempoEsgotado: false
+            respostaCorreta: pergunta.correta
         };
         
         this.respostas.push(detalheResposta);
@@ -251,8 +208,7 @@ export class QuizEngine {
                 pontosBase: pontosBase,
                 bonus: bonus,
                 pontosGanhos: pontosGanhos,
-                pontuacaoTotal: this.pontuacaoTotal,
-                tempoEsgotado: false
+                pontuacaoTotal: this.pontuacaoTotal
             });
         }
     }
@@ -277,14 +233,24 @@ export class QuizEngine {
         const acertos = this.respostas.filter(r => r.correto).length;
         const tempoTotal = this.respostas.reduce((acc, r) => acc + r.tempo, 0);
         
+        // Calcula temas das perguntas respondidas
+        const temasRespondidos = [...new Set(this.respostas.map(r => r.tema).filter(Boolean))];
+        
         const resultado = {
             jogador: '', // Será preenchido pelo app.js
-            salaId: this.salaAtual.id,
-            salaNome: this.salaAtual.nome,
+            sessaoId: this.sessaoId,
+            // Informações dos temas
+            temas: this.temasSelecionados,
+            temasNomes: this.temasNomes,
+            temasRespondidos: temasRespondidos,
+            modoAleatorio: this.modoAleatorio,
+            descricaoTemas: this.descricaoTemas,
+            // Pontuação
             pontuacaoTotal: this.pontuacaoTotal,
             acertos: acertos,
             totalPerguntas: this.perguntas.length,
             tempoTotal: Math.round(tempoTotal * 10) / 10,
+            // Detalhes
             detalhes: this.respostas
         };
         
@@ -305,10 +271,41 @@ export class QuizEngine {
         this.perguntaAtual = 0;
         this.pontuacaoTotal = 0;
         this.perguntas = [];
-        this.salaAtual = null;
+        this.temasSelecionados = [];
+        this.temasNomes = [];
+        this.modoAleatorio = false;
+        this.descricaoTemas = '';
         this.respostas = [];
         this.tempoInicio = null;
         this.cronometroSegundos = 0;
         this.respondeu = false;
+        this.sessaoId = null;
+    }
+
+    /**
+     * Retorna o progresso atual do quiz
+     */
+    obterProgresso() {
+        return {
+            atual: this.perguntaAtual + 1,
+            total: this.perguntas.length,
+            porcentagem: Math.round(((this.perguntaAtual + 1) / this.perguntas.length) * 100)
+        };
+    }
+
+    /**
+     * Retorna estatísticas parciais do quiz
+     */
+    obterEstatisticasParciais() {
+        const acertos = this.respostas.filter(r => r.correto).length;
+        const tempoTotal = this.respostas.reduce((acc, r) => acc + r.tempo, 0);
+        
+        return {
+            acertos: acertos,
+            erros: this.respostas.length - acertos,
+            pontuacaoTotal: this.pontuacaoTotal,
+            tempoTotal: tempoTotal,
+            tempoMedio: this.respostas.length > 0 ? tempoTotal / this.respostas.length : 0
+        };
     }
 }
