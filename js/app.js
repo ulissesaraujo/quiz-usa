@@ -200,10 +200,10 @@ function atualizarUITemas() {
 }
 
 function inicializarTemas() {
-    // Botão aleatório
-    elementos.btnAleatorio.addEventListener('click', () => {
-        temasManager.alternarModoAleatorio();
-        atualizarUITemas();
+    // Botão aleatório - já inicia o jogo direto
+    elementos.btnAleatorio.addEventListener('click', async () => {
+        temasManager.setModoAleatorio(true);
+        await iniciarQuiz();
     });
     
     // Botão jogar
