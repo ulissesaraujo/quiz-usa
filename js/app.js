@@ -539,17 +539,15 @@ async function carregarRankingPartida(temas) {
         // Determina se pode desafiar esta partida
         const sessaoId = item.sessaoOriginalId || item.sessaoId;
         const jaJogou = sessaoId ? rankingManager.jaJogouSessao(sessaoId) : true;
-        const podeDesafiar = !isJogadorAtual && item.perguntasIds && item.perguntasIds.length > 0;
+        const temPerguntasIds = item.perguntasIds && item.perguntasIds.length > 0;
         
         let btnDesafiarHtml = '';
-        if (podeDesafiar) {
+        if (temPerguntasIds) {
             if (jaJogou) {
                 btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
             } else {
                 btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;
             }
-        } else if (isJogadorAtual) {
-            btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
         } else {
             btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
         }
