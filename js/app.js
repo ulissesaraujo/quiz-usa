@@ -573,6 +573,55 @@ function inicializarResultado() {
 // ========================================
 // MODAL DE RANKING GLOBAL
 // ========================================
+
+/**
+ * Agrupa os resultados por sessão original
+ * @param {Array} ranking - Lista de resultados
+ * @returns {Array} - Array de grupos, cada um com sessaoId, info e resultados ordenados
+ */
+function agruparPorSessao(ranking) {
+    const grupos = new Map();
+    
+    ranking.forEach(item => {
+        const sessaoId = item.sessaoOriginalId || item.sessaoId || 'sem-sessao';
+        
+        if (!grupos.has(sessaoId)) {
+            grupos.set(sessaoId, {
+                sessaoId: sessaoId,
+                temas: item.temasNomes || item.temas || [],
+                descricao: item.descricaoTemas || rankingManager.formatarTemas(item.temasNomes || item.temas),
+                modoDesafio: item.modoDesafio || false,
+                perguntasIds: item.perguntasIds || [],
+                resultados: []
+            });
+        }
+        
+        grupos.get(sessaoId).resultados.push(item);
+    });
+    
+    // Converte para array e ordena cada grupo por pontuação
+    const gruposArray = Array.from(grupos.values());
+    gruposArray.forEach(grupo => {
+        grupo.resultados.sort((a, b) => {
+            // Primeiro por pontuação (maior primeiro)
+            if (b.pontuacaoTotal !== a.pontuacaoTotal) {
+                return b.pontuacaoTotal - a.pontuacaoTotal;
+            }
+            // Empate: menor tempo primeiro
+            return a.tempoTotal - b.tempoTotal;
+        });
+    });
+    
+    // Ordena grupos pela melhor pontuação do grupo
+    gruposArray.sort((a, b) => {
+        const melhorA = a.resultados[0]?.pontuacaoTotal || 0;
+        const melhorB = b.resultados[0]?.pontuacaoTotal || 0;
+        return melhorB - melhorA;
+    });
+    
+    return gruposArray;
+}
+
 async function mostrarRankingGlobal() {
     const ranking = await rankingManager.obterRankingGlobal();
     
@@ -581,54 +630,82 @@ async function mostrarRankingGlobal() {
     if (ranking.length === 0) {
         elementos.rankingGlobalBody.innerHTML = `
             <tr>
-                <td colspan="7" style="text-align: center; color: #9ca3af;">
+                <td colspan="6" style="text-align: center; color: #9ca3af;">
                     Nenhum resultado ainda
                 </td>
             </tr>
         `;
     } else {
-        ranking.forEach((item, index) => {
-            const isJogadorAtual = item.jogador === estado.jogador;
-            const tr = document.createElement('tr');
-            tr.className = isJogadorAtual ? 'destaque' : '';
+        // Agrupa por sessão
+        const grupos = agruparPorSessao(ranking);
+        
+        grupos.forEach((grupo, grupoIndex) => {
+            // Linha de cabeçalho do grupo (sessão)
+            const trHeader = document.createElement('tr');
+            trHeader.className = 'grupo-sessao-header';
             
-            const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
+            const temParticipantes = grupo.resultados.length > 1;
+            const icone = temParticipantes ? '⚔️' : '🎮';
+            const participantesText = temParticipantes 
+                ? `(${grupo.resultados.length} jogadores)` 
+                : '';
             
-            // Determina se pode desafiar esta partida
-            const sessaoId = item.sessaoOriginalId || item.sessaoId;
-            const jaJogou = sessaoId ? rankingManager.jaJogouSessao(sessaoId) : true;
-            const podeDesafiar = !isJogadorAtual && item.perguntasIds && item.perguntasIds.length > 0;
+            // Verifica se o jogador atual pode desafiar este grupo
+            const jaJogou = rankingManager.jaJogouSessao(grupo.sessaoId);
+            const jogadorNoGrupo = grupo.resultados.some(r => r.jogador === estado.jogador);
+            const podeDesafiar = !jogadorNoGrupo && grupo.perguntasIds && grupo.perguntasIds.length > 0;
             
-            let btnDesafiarHtml = '';
+            let btnDesafiarGrupoHtml = '';
             if (podeDesafiar) {
                 if (jaJogou) {
-                    btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
+                    btnDesafiarGrupoHtml = `<button class="btn-desafiar disabled" disabled>✓ Jogado</button>`;
                 } else {
-                    btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;
+                    btnDesafiarGrupoHtml = `<button class="btn-desafiar btn-desafiar-grupo" data-grupo="${grupoIndex}">⚔️ Entrar</button>`;
                 }
-            } else if (isJogadorAtual) {
-                btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
-            } else {
-                btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
             }
             
-            tr.innerHTML = `
-                <td>${index + 1}º</td>
-                <td>${item.jogador}${isJogadorAtual ? ' (você)' : ''}</td>
-                <td>${temasDisplay}</td>
-                <td>${item.pontuacaoTotal}</td>
-                <td>${item.acertos}/${item.totalPerguntas || 10}</td>
-                <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
-                <td class="td-desafiar">${btnDesafiarHtml}</td>
+            trHeader.innerHTML = `
+                <td colspan="5" class="grupo-sessao-titulo">
+                    <span class="grupo-icone">${icone}</span>
+                    <span class="grupo-nome">${grupo.descricao}</span>
+                    <span class="grupo-participantes">${participantesText}</span>
+                </td>
+                <td class="td-desafiar">${btnDesafiarGrupoHtml}</td>
             `;
-            elementos.rankingGlobalBody.appendChild(tr);
+            elementos.rankingGlobalBody.appendChild(trHeader);
+            
+            // Linhas dos resultados do grupo
+            grupo.resultados.forEach((item, posicao) => {
+                const isJogadorAtual = item.jogador === estado.jogador;
+                const tr = document.createElement('tr');
+                tr.className = `grupo-sessao-item${isJogadorAtual ? ' destaque' : ''}`;
+                
+                // Medalha para os 3 primeiros do grupo
+                let medalha = '';
+                if (posicao === 0) medalha = '🥇';
+                else if (posicao === 1) medalha = '🥈';
+                else if (posicao === 2) medalha = '🥉';
+                else medalha = `${posicao + 1}º`;
+                
+                tr.innerHTML = `
+                    <td class="posicao-grupo">${medalha}</td>
+                    <td>${item.jogador}${isJogadorAtual ? ' (você)' : ''}</td>
+                    <td>${item.pontuacaoTotal} pts</td>
+                    <td>${item.acertos}/${item.totalPerguntas || 10}</td>
+                    <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
+                    <td></td>
+                `;
+                elementos.rankingGlobalBody.appendChild(tr);
+            });
         });
         
-        // Adiciona event listeners para os botões de desafio
-        elementos.rankingGlobalBody.querySelectorAll('.btn-desafiar:not(.disabled)').forEach(btn => {
+        // Event listeners para botões de desafiar grupo
+        elementos.rankingGlobalBody.querySelectorAll('.btn-desafiar-grupo').forEach(btn => {
             btn.addEventListener('click', () => {
-                const index = parseInt(btn.dataset.index);
-                iniciarDesafio(ranking[index]);
+                const grupoIndex = parseInt(btn.dataset.grupo);
+                const grupo = grupos[grupoIndex];
+                // Usa o primeiro resultado do grupo como base para o desafio
+                iniciarDesafio(grupo.resultados[0]);
             });
         });
     }
