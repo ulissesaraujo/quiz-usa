@@ -68,8 +68,11 @@
                     <span class="jogador-nome" id="display-jogador">Jogador</span>
                     <button class="btn btn-small btn-outline" id="btn-trocar-jogador">Trocar</button>
                 </div>
-                <button class="btn btn-small btn-secondary" id="btn-ver-ranking">
-                    🏆 Ranking
+                <button class="btn btn-small btn-secondary" id="btn-ver-ranking-salas">
+                    🏆 Por Sala
+                </button>
+                <button class="btn btn-small btn-outline" id="btn-ver-ranking-geral">
+                    📊 Geral
                 </button>
             </header>
 
@@ -217,11 +220,11 @@
             </div>
         </section>
 
-        <!-- MODAL: RANKING GLOBAL -->
+        <!-- MODAL: RANKING POR SALA -->
         <div class="modal oculto" id="modal-ranking">
             <div class="modal-content modal-ranking-agrupado">
                 <div class="modal-header">
-                    <h2>🏆 Ranking Global</h2>
+                    <h2>🏆 Ranking por Sala</h2>
                     <button class="modal-fechar" id="modal-fechar">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -238,6 +241,35 @@
                             </tr>
                         </thead>
                         <tbody id="ranking-global-body">
+                            <!-- Ranking será carregado via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL: RANKING GERAL -->
+        <div class="modal oculto" id="modal-ranking-geral">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>📊 Ranking Geral</h2>
+                    <button class="modal-fechar" id="modal-fechar-geral">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="ranking-legenda">Todas as partidas ordenadas por pontuação</p>
+                    <table class="ranking-tabela">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Jogador</th>
+                                <th>Temas</th>
+                                <th>Pontos</th>
+                                <th>Acertos</th>
+                                <th>Tempo</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ranking-geral-body">
                             <!-- Ranking será carregado via JavaScript -->
                         </tbody>
                     </table>

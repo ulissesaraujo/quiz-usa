@@ -41,7 +41,8 @@ const elementos = {
     btnAleatorio: document.getElementById('btn-aleatorio'),
     btnJogar: document.getElementById('btn-jogar'),
     selecaoInfo: document.getElementById('selecao-info'),
-    btnVerRanking: document.getElementById('btn-ver-ranking'),
+    btnVerRankingSalas: document.getElementById('btn-ver-ranking-salas'),
+    btnVerRankingGeral: document.getElementById('btn-ver-ranking-geral'),
     
     // Quiz
     quizTemaInfo: document.getElementById('quiz-tema-info'),
@@ -70,10 +71,15 @@ const elementos = {
     btnVoltarTemas: document.getElementById('btn-voltar-temas'),
     btnRankingGlobal: document.getElementById('btn-ranking-global'),
     
-    // Modal
+    // Modal Ranking por Sala
     modalRanking: document.getElementById('modal-ranking'),
     modalFechar: document.getElementById('modal-fechar'),
-    rankingGlobalBody: document.getElementById('ranking-global-body')
+    rankingGlobalBody: document.getElementById('ranking-global-body'),
+    
+    // Modal Ranking Geral
+    modalRankingGeral: document.getElementById('modal-ranking-geral'),
+    modalFecharGeral: document.getElementById('modal-fechar-geral'),
+    rankingGeralBody: document.getElementById('ranking-geral-body')
 };
 
 // ========================================
@@ -218,9 +224,14 @@ function inicializarTemas() {
         mostrarTela('login');
     });
     
-    // Botão ver ranking
-    elementos.btnVerRanking.addEventListener('click', () => {
+    // Botão ver ranking por sala (agrupado)
+    elementos.btnVerRankingSalas.addEventListener('click', () => {
         mostrarRankingGlobal();
+    });
+    
+    // Botão ver ranking geral (lista simples)
+    elementos.btnVerRankingGeral.addEventListener('click', () => {
+        mostrarRankingGeral();
     });
     
     // Callback quando seleção muda
@@ -754,7 +765,90 @@ async function mostrarRankingGlobal() {
     elementos.modalRanking.classList.remove('oculto');
 }
 
+/**
+ * Mostra o ranking geral - lista simples ordenada por pontuação
+ */
+async function mostrarRankingGeral() {
+    const ranking = await rankingManager.obterRankingGlobal(100);
+    
+    elementos.rankingGeralBody.innerHTML = '';
+    
+    if (ranking.length === 0) {
+        elementos.rankingGeralBody.innerHTML = `
+            <tr>
+                <td colspan="7" style="text-align: center; color: #9ca3af;">
+                    Nenhum resultado ainda
+                </td>
+            </tr>
+        `;
+    } else {
+        // Ordena por pontuação (maior primeiro), desempate por tempo (menor primeiro)
+        const rankingOrdenado = [...ranking].sort((a, b) => {
+            if (b.pontuacaoTotal !== a.pontuacaoTotal) {
+                return b.pontuacaoTotal - a.pontuacaoTotal;
+            }
+            return a.tempoTotal - b.tempoTotal;
+        });
+        
+        rankingOrdenado.forEach((item, index) => {
+            const isJogadorAtual = item.jogador === estado.jogador;
+            const tr = document.createElement('tr');
+            tr.className = isJogadorAtual ? 'destaque' : '';
+            
+            const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
+            
+            // Medalhas para top 3
+            let posicao = '';
+            if (index === 0) posicao = '🥇';
+            else if (index === 1) posicao = '🥈';
+            else if (index === 2) posicao = '🥉';
+            else posicao = `${index + 1}º`;
+            
+            // Determina se pode desafiar esta partida
+            const sessaoId = item.sessaoOriginalId || item.sessaoId;
+            const jaJogou = sessaoId ? rankingManager.jaJogouSessao(sessaoId) : true;
+            const temPerguntasIds = item.perguntasIds && item.perguntasIds.length > 0;
+            
+            let btnDesafiarHtml = '';
+            if (temPerguntasIds) {
+                if (jaJogou) {
+                    btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
+                } else {
+                    btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;
+                }
+            } else {
+                btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
+            }
+            
+            tr.innerHTML = `
+                <td>${posicao}</td>
+                <td>${item.jogador}${isJogadorAtual ? ' <span class="tag-voce">(você)</span>' : ''}</td>
+                <td>${temasDisplay}</td>
+                <td>${item.pontuacaoTotal}</td>
+                <td>${item.acertos}/${item.totalPerguntas || 10}</td>
+                <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
+                <td class="td-desafiar">${btnDesafiarHtml}</td>
+            `;
+            
+            elementos.rankingGeralBody.appendChild(tr);
+        });
+        
+        // Adiciona event listeners para os botões de desafio
+        elementos.rankingGeralBody.querySelectorAll('.btn-desafiar:not(.disabled)').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const index = parseInt(btn.dataset.index);
+                // Fecha o modal geral
+                elementos.modalRankingGeral.classList.add('oculto');
+                iniciarDesafio(rankingOrdenado[index]);
+            });
+        });
+    }
+    
+    elementos.modalRankingGeral.classList.remove('oculto');
+}
+
 function inicializarModal() {
+    // Modal Ranking por Sala
     elementos.modalFechar.addEventListener('click', () => {
         elementos.modalRanking.classList.add('oculto');
     });
@@ -762,6 +856,17 @@ function inicializarModal() {
     elementos.modalRanking.addEventListener('click', (e) => {
         if (e.target === elementos.modalRanking) {
             elementos.modalRanking.classList.add('oculto');
+        }
+    });
+    
+    // Modal Ranking Geral
+    elementos.modalFecharGeral.addEventListener('click', () => {
+        elementos.modalRankingGeral.classList.add('oculto');
+    });
+    
+    elementos.modalRankingGeral.addEventListener('click', (e) => {
+        if (e.target === elementos.modalRankingGeral) {
+            elementos.modalRankingGeral.classList.add('oculto');
         }
     });
 }
