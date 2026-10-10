@@ -237,11 +237,23 @@ function configurarCallbacksQuiz() {
         }
     };
     
-    quizEngine.onFaseResposta = ({ ativa, tempo }) => {
+    quizEngine.onFaseResposta = ({ ativa, tempo, tempoRestante }) => {
         if (ativa) {
             elementos.faseLeitura.classList.add('oculto');
             elementos.alternativasContainer.classList.remove('oculto');
-            elementos.cronometroTempo.textContent = `${tempo.toFixed(1)}s`;
+            
+            // Mostra tempo restante (contagem regressiva)
+            const tempoRestanteFormatado = tempoRestante.toFixed(1);
+            elementos.cronometroTempo.textContent = `${tempoRestanteFormatado}s`;
+            
+            // Muda cor quando tempo está acabando
+            if (tempoRestante <= 3) {
+                elementos.cronometroTempo.style.color = '#ef4444'; // vermelho
+            } else if (tempoRestante <= 5) {
+                elementos.cronometroTempo.style.color = '#f59e0b'; // amarelo
+            } else {
+                elementos.cronometroTempo.style.color = '#374151'; // normal
+            }
             
             // Renderiza alternativas apenas uma vez
             if (elementos.alternativas.children.length === 0 || 
@@ -281,7 +293,7 @@ function renderizarAlternativas() {
 }
 
 function mostrarFeedback(resultado) {
-    const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus } = resultado;
+    const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus, tempoEsgotado } = resultado;
     
     // Destaca a alternativa correta/errada
     const botoes = elementos.alternativas.querySelectorAll('.alternativa-btn');
@@ -290,21 +302,28 @@ function mostrarFeedback(resultado) {
         if (i === indiceCorreto) {
             btn.classList.add('correta');
         }
-        if (i === indiceEscolhido && !correta) {
+        if (i === indiceEscolhido && indiceEscolhido >= 0 && !correta) {
             btn.classList.add('errada');
         }
     });
     
     // Mostra feedback
-    elementos.feedback.className = `feedback ${correta ? 'correto' : 'errado'}`;
-    elementos.feedbackIcon.textContent = correta ? '✓' : '✗';
-    elementos.feedbackTexto.textContent = correta ? 'Correto!' : 'Errado!';
-    
-    if (correta) {
-        const bonusTexto = bonus > 0 ? ` (+${bonus} bônus)` : '';
-        elementos.feedbackPontos.textContent = `+${pontosGanhos} pts${bonusTexto}`;
-    } else {
+    if (tempoEsgotado) {
+        elementos.feedback.className = 'feedback errado';
+        elementos.feedbackIcon.textContent = '⏱️';
+        elementos.feedbackTexto.textContent = 'Tempo Esgotado!';
         elementos.feedbackPontos.textContent = '0 pts';
+    } else {
+        elementos.feedback.className = `feedback ${correta ? 'correto' : 'errado'}`;
+        elementos.feedbackIcon.textContent = correta ? '✓' : '✗';
+        elementos.feedbackTexto.textContent = correta ? 'Correto!' : 'Errado!';
+    
+        if (correta) {
+            const bonusTexto = bonus > 0 ? ` (+${bonus} bônus)` : '';
+            elementos.feedbackPontos.textContent = `+${pontosGanhos} pts${bonusTexto}`;
+        } else {
+            elementos.feedbackPontos.textContent = '0 pts';
+        }
     }
     
     elementos.feedbackContainer.classList.remove('oculto');

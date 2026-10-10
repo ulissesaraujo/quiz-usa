@@ -18,6 +18,9 @@ export class QuizEngine {
         this.cronometroSegundos = 0;
         this.respondeu = false;
         
+        // Configurações
+        this.tempoLimite = 10; // 10 segundos para responder
+        
         // Callbacks
         this.onPerguntaCarregada = null;
         this.onFaseLeitura = null;
@@ -25,6 +28,7 @@ export class QuizEngine {
         this.onRespostaProcessada = null;
         this.onQuizFinalizado = null;
         this.onPontuacaoAtualizada = null;
+        this.onTempoEsgotado = null;
     }
 
     /**
@@ -105,27 +109,88 @@ export class QuizEngine {
     }
 
     /**
-     * Inicia a fase de resposta com cronômetro
+     * Inicia a fase de resposta com cronômetro e limite de tempo
      */
     iniciarFaseResposta() {
         this.tempoInicio = Date.now();
         this.cronometroSegundos = 0;
         
         if (this.onFaseResposta) {
-            this.onFaseResposta({ ativa: true, tempo: 0 });
+            this.onFaseResposta({ 
+                ativa: true, 
+                tempo: 0,
+                tempoRestante: this.tempoLimite 
+            });
         }
 
         // Inicia cronômetro que atualiza a cada 100ms
         this.timerCronometro = setInterval(() => {
             this.cronometroSegundos = (Date.now() - this.tempoInicio) / 1000;
+            const tempoRestante = Math.max(0, this.tempoLimite - this.cronometroSegundos);
             
             if (this.onFaseResposta) {
                 this.onFaseResposta({ 
                     ativa: true, 
-                    tempo: this.cronometroSegundos 
+                    tempo: this.cronometroSegundos,
+                    tempoRestante: tempoRestante
                 });
             }
+            
+            // Verifica se o tempo esgotou
+            if (this.cronometroSegundos >= this.tempoLimite && !this.respondeu) {
+                this.tempoEsgotado();
+            }
         }, 100);
+    }
+
+    /**
+     * Chamado quando o tempo de resposta esgota
+     */
+    tempoEsgotado() {
+        if (this.respondeu) return;
+        
+        this.respondeu = true;
+        clearInterval(this.timerCronometro);
+        
+        const pergunta = this.perguntas[this.perguntaAtual];
+        
+        // Registra como resposta errada (tempo esgotado)
+        const detalheResposta = {
+            perguntaId: pergunta.id,
+            tempo: this.tempoLimite,
+            correto: false,
+            pontosBase: 0,
+            bonus: 0,
+            pontosTotais: 0,
+            respostaEscolhida: -1, // -1 indica tempo esgotado
+            respostaCorreta: pergunta.correta,
+            tempoEsgotado: true
+        };
+        
+        this.respostas.push(detalheResposta);
+        
+        // Notifica que o tempo esgotou
+        if (this.onTempoEsgotado) {
+            this.onTempoEsgotado({
+                indiceCorreto: pergunta.correta,
+                pontuacaoTotal: this.pontuacaoTotal
+            });
+        }
+        
+        // Também notifica via onRespostaProcessada para manter compatibilidade
+        if (this.onRespostaProcessada) {
+            this.onRespostaProcessada({
+                correta: false,
+                indiceCorreto: pergunta.correta,
+                indiceEscolhido: -1,
+                tempo: this.tempoLimite,
+                pontosBase: 0,
+                bonus: 0,
+                pontosGanhos: 0,
+                pontuacaoTotal: this.pontuacaoTotal,
+                tempoEsgotado: true
+            });
+        }
     }
 
     /**
@@ -165,7 +230,8 @@ export class QuizEngine {
             bonus: bonus,
             pontosTotais: pontosGanhos,
             respostaEscolhida: indiceEscolhido,
-            respostaCorreta: pergunta.correta
+            respostaCorreta: pergunta.correta,
+            tempoEsgotado: false
         };
         
         this.respostas.push(detalheResposta);
@@ -185,7 +251,8 @@ export class QuizEngine {
                 pontosBase: pontosBase,
                 bonus: bonus,
                 pontosGanhos: pontosGanhos,
-                pontuacaoTotal: this.pontuacaoTotal
+                pontuacaoTotal: this.pontuacaoTotal,
+                tempoEsgotado: false
             });
         }
     }
