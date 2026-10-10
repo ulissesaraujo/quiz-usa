@@ -646,9 +646,7 @@ async function mostrarRankingGlobal() {
             
             const temParticipantes = grupo.resultados.length > 1;
             const icone = temParticipantes ? '⚔️' : '🎮';
-            const participantesText = temParticipantes 
-                ? `(${grupo.resultados.length} jogadores)` 
-                : '';
+            const participantesText = `${grupo.resultados.length} jogador${grupo.resultados.length > 1 ? 'es' : ''}`;
             
             // Verifica se o jogador atual pode desafiar este grupo
             const jaJogou = rankingManager.jaJogouSessao(grupo.sessaoId);
@@ -658,19 +656,22 @@ async function mostrarRankingGlobal() {
             let btnDesafiarGrupoHtml = '';
             if (podeDesafiar) {
                 if (jaJogou) {
-                    btnDesafiarGrupoHtml = `<button class="btn-desafiar disabled" disabled>✓ Jogado</button>`;
+                    btnDesafiarGrupoHtml = `<span class="badge-jogado">✓ Jogado</span>`;
                 } else {
                     btnDesafiarGrupoHtml = `<button class="btn-desafiar btn-desafiar-grupo" data-grupo="${grupoIndex}">⚔️ Entrar</button>`;
                 }
+            } else if (jogadorNoGrupo) {
+                btnDesafiarGrupoHtml = `<span class="badge-voce">Sua sessão</span>`;
             }
             
             trHeader.innerHTML = `
-                <td colspan="5" class="grupo-sessao-titulo">
-                    <span class="grupo-icone">${icone}</span>
-                    <span class="grupo-nome">${grupo.descricao}</span>
+                <td class="grupo-col-icone">${icone}</td>
+                <td class="grupo-col-info" colspan="3">
+                    <strong>${grupo.descricao}</strong>
                     <span class="grupo-participantes">${participantesText}</span>
                 </td>
-                <td class="td-desafiar">${btnDesafiarGrupoHtml}</td>
+                <td></td>
+                <td class="grupo-col-acao">${btnDesafiarGrupoHtml}</td>
             `;
             elementos.rankingGlobalBody.appendChild(trHeader);
             
@@ -689,7 +690,7 @@ async function mostrarRankingGlobal() {
                 
                 tr.innerHTML = `
                     <td class="posicao-grupo">${medalha}</td>
-                    <td>${item.jogador}${isJogadorAtual ? ' (você)' : ''}</td>
+                    <td>${item.jogador}${isJogadorAtual ? ' <span class="tag-voce">(você)</span>' : ''}</td>
                     <td>${item.pontuacaoTotal} pts</td>
                     <td>${item.acertos}/${item.totalPerguntas || 10}</td>
                     <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
