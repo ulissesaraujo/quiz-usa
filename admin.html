@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Quiz USA</title>
+    <title>Admin - Quizlândia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -410,7 +410,7 @@
     <div class="admin-container">
         <!-- Header -->
         <header class="admin-header">
-            <h1>🇺🇸 Quiz USA - Painel Admin</h1>
+            <h1>🏰 Quizlândia - Painel Admin</h1>
             <a href="index.html">← Voltar ao Quiz</a>
         </header>
 
@@ -717,7 +717,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `quiz-usa-perguntas-${new Date().toISOString().split('T')[0]}.json`;
+            a.download = `quizlandia-perguntas-${new Date().toISOString().split('T')[0]}.json`;
             a.click();
             URL.revokeObjectURL(url);
         }
