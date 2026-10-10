@@ -601,10 +601,17 @@ function agruparPorSessao(ranking) {
         const sessaoId = item.sessaoOriginalId || item.sessaoId || 'sem-sessao';
         
         if (!grupos.has(sessaoId)) {
+            // Usa temasNomes para descrição (ignora descricaoTemas que pode ser "Desafio: jogador")
+            const descricaoTemas = item.temasNomes && item.temasNomes.length > 0
+                ? rankingManager.formatarTemas(item.temasNomes)
+                : (item.temas && item.temas.length > 0 
+                    ? rankingManager.formatarTemas(item.temas)
+                    : 'Aleatório');
+            
             grupos.set(sessaoId, {
                 sessaoId: sessaoId,
                 temas: item.temasNomes || item.temas || [],
-                descricao: item.descricaoTemas || rankingManager.formatarTemas(item.temasNomes || item.temas),
+                descricao: descricaoTemas,
                 modoDesafio: item.modoDesafio || false,
                 perguntasIds: item.perguntasIds || [],
                 dataHora: item.dataHora || null, // Data da primeira partida do grupo
