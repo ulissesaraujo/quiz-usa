@@ -1,0 +1,1753 @@
+{
+  "perguntas": [
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Dom Quixote'?",
+      "alternativas": [
+        "William Shakespeare",
+        "Miguel de Cervantes",
+        "Dante Alighieri",
+        "Victor Hugo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor brasileiro escreveu 'Memórias Póstumas de Brás Cubas'?",
+      "alternativas": [
+        "José de Alencar",
+        "Machado de Assis",
+        "Jorge Amado",
+        "Graciliano Ramos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Hamlet'?",
+      "alternativas": [
+        "Charles Dickens",
+        "Oscar Wilde",
+        "William Shakespeare",
+        "Jane Austen"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o nome do protagonista de '1984' de George Orwell?",
+      "alternativas": [
+        "John Smith",
+        "Winston Smith",
+        "George Wilson",
+        "Arthur Dent"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Cem Anos de Solidão'?",
+      "alternativas": [
+        "Pablo Neruda",
+        "Gabriel García Márquez",
+        "Mario Vargas Llosa",
+        "Julio Cortázar"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Pequeno Príncipe'?",
+      "alternativas": [
+        "Victor Hugo",
+        "Jules Verne",
+        "Antoine de Saint-Exupéry",
+        "Albert Camus"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Em qual planeta o Pequeno Príncipe vivia?",
+      "alternativas": [
+        "Marte",
+        "Asteroide B-612",
+        "Lua",
+        "Vênus"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Divina Comédia'?",
+      "alternativas": [
+        "Petrarca",
+        "Boccaccio",
+        "Dante Alighieri",
+        "Maquiavel"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é a primeira parte de 'A Divina Comédia'?",
+      "alternativas": [
+        "Paraíso",
+        "Purgatório",
+        "Inferno",
+        "Limbo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Os Lusíadas'?",
+      "alternativas": [
+        "Fernando Pessoa",
+        "Luís de Camões",
+        "Eça de Queiroz",
+        "Gil Vicente"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual movimento literário Machado de Assis representa?",
+      "alternativas": [
+        "Romantismo",
+        "Realismo",
+        "Naturalismo",
+        "Modernismo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Grande Sertão: Veredas'?",
+      "alternativas": [
+        "Jorge Amado",
+        "Guimarães Rosa",
+        "Graciliano Ramos",
+        "Ã‰rico Veríssimo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o pseudônimo de Fernando Pessoa mais famoso?",
+      "alternativas": [
+        "Ricardo Reis",
+        "Álvaro de Campos",
+        "Alberto Caeiro",
+        "Todos são igualmente famosos"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Orgulho e Preconceito'?",
+      "alternativas": [
+        "Charlotte Brontë",
+        "Emily Brontë",
+        "Jane Austen",
+        "Virginia Woolf"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Crime e Castigo'?",
+      "alternativas": [
+        "Leon Tolstói",
+        "Fiódor Dostoiévski",
+        "Anton Tchekhov",
+        "Ivan Turguêniev"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Guerra e Paz'?",
+      "alternativas": [
+        "Fiódor Dostoiévski",
+        "Leon Tolstói",
+        "Nikolai Gogol",
+        "Mikhail Bulgakov"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor criou Sherlock Holmes?",
+      "alternativas": [
+        "Edgar Allan Poe",
+        "Arthur Conan Doyle",
+        "Agatha Christie",
+        "G.K. Chesterton"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem é o narrador de 'Dom Casmurro'?",
+      "alternativas": [
+        "Capitu",
+        "Bentinho",
+        "José Dias",
+        "Escobar"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Cortiço'?",
+      "alternativas": [
+        "Machado de Assis",
+        "Aluísio Azevedo",
+        "Raul Pompeia",
+        "Adolfo Caminha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "O que é o Naturalismo na literatura?",
+      "alternativas": [
+        "Exaltação da natureza",
+        "Análise científica do comportamento humano",
+        "Poesia sobre flores",
+        "Romance de aventura"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Metamorfose'?",
+      "alternativas": [
+        "Thomas Mann",
+        "Franz Kafka",
+        "Hermann Hesse",
+        "Robert Musil"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Em que animal Gregor Samsa se transforma?",
+      "alternativas": [
+        "Barata",
+        "Inseto monstruoso",
+        "Escaravelho",
+        "Aranha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Velho e o Mar'?",
+      "alternativas": [
+        "John Steinbeck",
+        "Ernest Hemingway",
+        "F. Scott Fitzgerald",
+        "William Faulkner"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autora escreveu 'Harry Potter'?",
+      "alternativas": [
+        "Stephenie Meyer",
+        "Suzanne Collins",
+        "J.K. Rowling",
+        "Veronica Roth"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quantos livros compõem a série Harry Potter?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Senhor dos Anéis'?",
+      "alternativas": [
+        "C.S. Lewis",
+        "J.R.R. Tolkien",
+        "George R.R. Martin",
+        "Terry Pratchett"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o nome do hobbit protagonista de 'O Senhor dos Anéis'?",
+      "alternativas": [
+        "Bilbo",
+        "Frodo",
+        "Sam",
+        "Merry"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'As Crônicas de Nárnia'?",
+      "alternativas": [
+        "J.R.R. Tolkien",
+        "C.S. Lewis",
+        "Ursula K. Le Guin",
+        "Philip Pullman"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor brasileiro escreveu 'Capitães da Areia'?",
+      "alternativas": [
+        "Ã‰rico Veríssimo",
+        "Jorge Amado",
+        "José Lins do Rego",
+        "Rachel de Queiroz"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Vidas Secas'?",
+      "alternativas": [
+        "Jorge Amado",
+        "Graciliano Ramos",
+        "José Lins do Rego",
+        "João Cabral de Melo Neto"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o nome do cachorro em 'Vidas Secas'?",
+      "alternativas": [
+        "Totó",
+        "Baleia",
+        "Rex",
+        "Fiel"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Alquimista'?",
+      "alternativas": [
+        "José Saramago",
+        "Paulo Coelho",
+        "Fernando Sabino",
+        "Rubem Fonseca"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor português ganhou o Nobel de Literatura?",
+      "alternativas": [
+        "Fernando Pessoa",
+        "Eça de Queiroz",
+        "José Saramago",
+        "Camilo Castelo Branco"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Ensaio sobre a Cegueira'?",
+      "alternativas": [
+        "António Lobo Antunes",
+        "José Saramago",
+        "Valter Hugo Mãe",
+        "Gonçalo M. Tavares"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Apanhador no Campo de Centeio'?",
+      "alternativas": [
+        "F. Scott Fitzgerald",
+        "J.D. Salinger",
+        "Jack Kerouac",
+        "William S. Burroughs"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Moby Dick'?",
+      "alternativas": [
+        "Mark Twain",
+        "Herman Melville",
+        "Nathaniel Hawthorne",
+        "Edgar Allan Poe"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o nome do capitão obcecado pela baleia branca?",
+      "alternativas": [
+        "Ismael",
+        "Ahab",
+        "Starbuck",
+        "Queequeg"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Os Miseráveis'?",
+      "alternativas": [
+        "Alexandre Dumas",
+        "Victor Hugo",
+        "Honoré de Balzac",
+        "Ã‰mile Zola"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o protagonista de 'Os Miseráveis'?",
+      "alternativas": [
+        "Javert",
+        "Jean Valjean",
+        "Marius",
+        "Enjolras"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Conde de Monte Cristo'?",
+      "alternativas": [
+        "Victor Hugo",
+        "Alexandre Dumas",
+        "Stendhal",
+        "Gustave Flaubert"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Madame Bovary'?",
+      "alternativas": [
+        "Ã‰mile Zola",
+        "Gustave Flaubert",
+        "Honoré de Balzac",
+        "Guy de Maupassant"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Revolução dos Bichos'?",
+      "alternativas": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "H.G. Wells"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o lema dos porcos em 'A Revolução dos Bichos'?",
+      "alternativas": [
+        "Liberdade para todos",
+        "Todos os animais são iguais",
+        "Trabalho é liberdade",
+        "Unidos venceremos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Admirável Mundo Novo'?",
+      "alternativas": [
+        "George Orwell",
+        "Aldous Huxley",
+        "Philip K. Dick",
+        "Isaac Asimov"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Fahrenheit 451'?",
+      "alternativas": [
+        "Isaac Asimov",
+        "Arthur C. Clarke",
+        "Ray Bradbury",
+        "Philip K. Dick"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "O que é queimado em 'Fahrenheit 451'?",
+      "alternativas": [
+        "Casas",
+        "Livros",
+        "Pessoas",
+        "Tecnologia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Retrato de Dorian Gray'?",
+      "alternativas": [
+        "Charles Dickens",
+        "Oscar Wilde",
+        "Thomas Hardy",
+        "Henry James"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Drácula'?",
+      "alternativas": [
+        "Mary Shelley",
+        "Bram Stoker",
+        "H.P. Lovecraft",
+        "Edgar Allan Poe"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Frankenstein'?",
+      "alternativas": [
+        "Bram Stoker",
+        "Mary Shelley",
+        "Edgar Allan Poe",
+        "H.G. Wells"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o nome completo do monstro de Frankenstein?",
+      "alternativas": [
+        "Frankenstein Jr.",
+        "A Criatura",
+        "Ele não tem nome",
+        "Adam"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Odisseia'?",
+      "alternativas": [
+        "Sófocles",
+        "Eurípides",
+        "Homero",
+        "Ã‰squilo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem é o protagonista de 'A Odisseia'?",
+      "alternativas": [
+        "Aquiles",
+        "Ulisses/Odisseu",
+        "Heitor",
+        "Páris"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Ilíada'?",
+      "alternativas": [
+        "Homero",
+        "Virgílio",
+        "Ovídio",
+        "Hesíodo"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Sobre qual guerra trata 'A Ilíada'?",
+      "alternativas": [
+        "Guerras Médicas",
+        "Guerra de Troia",
+        "Guerra do Peloponeso",
+        "Conquistas de Alexandre"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Romeu e Julieta'?",
+      "alternativas": [
+        "Christopher Marlowe",
+        "Ben Jonson",
+        "William Shakespeare",
+        "John Milton"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor brasileiro escreveu 'Iracema'?",
+      "alternativas": [
+        "Machado de Assis",
+        "José de Alencar",
+        "Gonçalves Dias",
+        "Castro Alves"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Guarani'?",
+      "alternativas": [
+        "Machado de Assis",
+        "José de Alencar",
+        "Bernardo Guimarães",
+        "Visconde de Taunay"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o nome do índio protagonista de 'O Guarani'?",
+      "alternativas": [
+        "Peri",
+        "Ubirajara",
+        "Araribóia",
+        "Tibiriçá"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Hora da Estrela'?",
+      "alternativas": [
+        "Rachel de Queiroz",
+        "Clarice Lispector",
+        "Lygia Fagundes Telles",
+        "Nélida Piñon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é a protagonista de 'A Hora da Estrela'?",
+      "alternativas": [
+        "Clarice",
+        "Macabéa",
+        "Olímpico",
+        "Glória"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Quarto de Despejo'?",
+      "alternativas": [
+        "Carolina Maria de Jesus",
+        "Conceição Evaristo",
+        "Ruth Guimarães",
+        "Zélia Gattai"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Tempo e o Vento'?",
+      "alternativas": [
+        "Jorge Amado",
+        "Ã‰rico Veríssimo",
+        "Mário Quintana",
+        "Dyonélio Machado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Quinze'?",
+      "alternativas": [
+        "Graciliano Ramos",
+        "Rachel de Queiroz",
+        "José Lins do Rego",
+        "Jorge Amado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Menino de Engenho'?",
+      "alternativas": [
+        "Graciliano Ramos",
+        "José Lins do Rego",
+        "Jorge Amado",
+        "Gilberto Freyre"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Macunaíma'?",
+      "alternativas": [
+        "Oswald de Andrade",
+        "Mário de Andrade",
+        "Manuel Bandeira",
+        "Carlos Drummond"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é a característica de Macunaíma?",
+      "alternativas": [
+        "Trabalhador",
+        "Herói sem nenhum caráter",
+        "Honesto",
+        "Corajoso"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu o 'Manifesto Antropófago'?",
+      "alternativas": [
+        "Mário de Andrade",
+        "Oswald de Andrade",
+        "Manuel Bandeira",
+        "Menotti Del Picchia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual poeta brasileiro escreveu 'A Rosa do Povo'?",
+      "alternativas": [
+        "Manuel Bandeira",
+        "Carlos Drummond de Andrade",
+        "Cecília Meireles",
+        "Vinícius de Moraes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'No Meio do Caminho'?",
+      "alternativas": [
+        "Vinícius de Moraes",
+        "Carlos Drummond de Andrade",
+        "Manuel Bandeira",
+        "João Cabral de Melo Neto"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual objeto está no meio do caminho no poema?",
+      "alternativas": [
+        "Uma flor",
+        "Uma pedra",
+        "Um rio",
+        "Uma árvore"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Morte e Vida Severina'?",
+      "alternativas": [
+        "Carlos Drummond",
+        "João Cabral de Melo Neto",
+        "Manuel Bandeira",
+        "Ferreira Gullar"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual poeta escreveu 'Soneto de Fidelidade'?",
+      "alternativas": [
+        "Carlos Drummond",
+        "Vinícius de Moraes",
+        "Manuel Bandeira",
+        "Cecília Meireles"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Ou Isto ou Aquilo'?",
+      "alternativas": [
+        "Vinícius de Moraes",
+        "Cecília Meireles",
+        "Henriqueta Lisboa",
+        "Mário Quintana"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Auto da Compadecida'?",
+      "alternativas": [
+        "Dias Gomes",
+        "Ariano Suassuna",
+        "Nelson Rodrigues",
+        "Gianfrancesco Guarnieri"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem são os protagonistas de 'O Auto da Compadecida'?",
+      "alternativas": [
+        "Pedro e Paulo",
+        "João Grilo e Chicó",
+        "Zé e Maria",
+        "Antônio e José"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual dramaturgo escreveu 'Vestido de Noiva'?",
+      "alternativas": [
+        "Ariano Suassuna",
+        "Nelson Rodrigues",
+        "Jorge Andrade",
+        "Plínio Marcos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Laços de Família'?",
+      "alternativas": [
+        "Lygia Fagundes Telles",
+        "Clarice Lispector",
+        "Rachel de Queiroz",
+        "Nélida Piñon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'A Moreninha'?",
+      "alternativas": [
+        "José de Alencar",
+        "Joaquim Manuel de Macedo",
+        "Manuel Antônio de Almeida",
+        "Bernardo Guimarães"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Memórias de um Sargento de Milícias'?",
+      "alternativas": [
+        "Joaquim Manuel de Macedo",
+        "Manuel Antônio de Almeida",
+        "José de Alencar",
+        "Machado de Assis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Ateneu'?",
+      "alternativas": [
+        "Aluísio Azevedo",
+        "Raul Pompeia",
+        "Adolfo Caminha",
+        "Machado de Assis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Escrava Isaura'?",
+      "alternativas": [
+        "José de Alencar",
+        "Bernardo Guimarães",
+        "Castro Alves",
+        "Gonçalves Dias"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual poeta é conhecido como 'Poeta dos Escravos'?",
+      "alternativas": [
+        "Gonçalves Dias",
+        "Castro Alves",
+        "Álvares de Azevedo",
+        "Casimiro de Abreu"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Navio Negreiro'?",
+      "alternativas": [
+        "Gonçalves Dias",
+        "Castro Alves",
+        "Álvares de Azevedo",
+        "Fagundes Varela"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual poeta romântico escreveu 'Canção do Exílio'?",
+      "alternativas": [
+        "Castro Alves",
+        "Gonçalves Dias",
+        "Álvares de Azevedo",
+        "Casimiro de Abreu"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Como começa 'Canção do Exílio'?",
+      "alternativas": [
+        "Minha terra tem palmeiras",
+        "Nossos bosques têm mais vida",
+        "Terra adorada",
+        "Pátria amada"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Primo Basílio'?",
+      "alternativas": [
+        "Machado de Assis",
+        "Eça de Queiroz",
+        "Camilo Castelo Branco",
+        "Almeida Garrett"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Os Maias'?",
+      "alternativas": [
+        "Camilo Castelo Branco",
+        "Eça de Queiroz",
+        "Almeida Garrett",
+        "Alexandre Herculano"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Crime do Padre Amaro'?",
+      "alternativas": [
+        "Machado de Assis",
+        "Eça de Queiroz",
+        "Aluísio Azevedo",
+        "Raul Pompeia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Mensagem'?",
+      "alternativas": [
+        "Fernando Pessoa",
+        "Mário de Sá-Carneiro",
+        "Florbela Espanca",
+        "Almada Negreiros"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'A Cidade e as Serras'?",
+      "alternativas": [
+        "Camilo Castelo Branco",
+        "Eça de Queiroz",
+        "Almeida Garrett",
+        "Júlio Dinis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Morro dos Ventos Uivantes'?",
+      "alternativas": [
+        "Jane Austen",
+        "Charlotte Brontë",
+        "Emily Brontë",
+        "George Eliot"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autora escreveu 'Jane Eyre'?",
+      "alternativas": [
+        "Emily Brontë",
+        "Charlotte Brontë",
+        "Anne Brontë",
+        "Jane Austen"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Grande Gatsby'?",
+      "alternativas": [
+        "Ernest Hemingway",
+        "F. Scott Fitzgerald",
+        "John Steinbeck",
+        "William Faulkner"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'As Vinhas da Ira'?",
+      "alternativas": [
+        "Ernest Hemingway",
+        "John Steinbeck",
+        "William Faulkner",
+        "Sinclair Lewis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Lolita'?",
+      "alternativas": [
+        "Truman Capote",
+        "Vladimir Nabokov",
+        "J.D. Salinger",
+        "Jack Kerouac"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Na Estrada'?",
+      "alternativas": [
+        "J.D. Salinger",
+        "Jack Kerouac",
+        "William S. Burroughs",
+        "Allen Ginsberg"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Nome da Rosa'?",
+      "alternativas": [
+        "Italo Calvino",
+        "Umberto Eco",
+        "Primo Levi",
+        "Alberto Moravia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Lobo da Estepe'?",
+      "alternativas": [
+        "Thomas Mann",
+        "Hermann Hesse",
+        "Franz Kafka",
+        "Robert Musil"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Sidarta'?",
+      "alternativas": [
+        "Thomas Mann",
+        "Hermann Hesse",
+        "Rainer Maria Rilke",
+        "Stefan Zweig"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'A Montanha Mágica'?",
+      "alternativas": [
+        "Hermann Hesse",
+        "Thomas Mann",
+        "Franz Kafka",
+        "Günter Grass"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Estrangeiro'?",
+      "alternativas": [
+        "Jean-Paul Sartre",
+        "Albert Camus",
+        "Simone de Beauvoir",
+        "André Gide"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'A Náusea'?",
+      "alternativas": [
+        "Albert Camus",
+        "Jean-Paul Sartre",
+        "André Malraux",
+        "André Gide"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Segundo Sexo'?",
+      "alternativas": [
+        "Virginia Woolf",
+        "Simone de Beauvoir",
+        "Marguerite Duras",
+        "Colette"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autora escreveu 'Mrs. Dalloway'?",
+      "alternativas": [
+        "Jane Austen",
+        "Virginia Woolf",
+        "George Eliot",
+        "Charlotte Brontë"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Ulisses'?",
+      "alternativas": [
+        "Samuel Beckett",
+        "James Joyce",
+        "W.B. Yeats",
+        "Oscar Wilde"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Esperando Godot'?",
+      "alternativas": [
+        "James Joyce",
+        "Samuel Beckett",
+        "Harold Pinter",
+        "Tom Stoppard"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Cem Sonetos de Amor'?",
+      "alternativas": [
+        "Federico García Lorca",
+        "Pablo Neruda",
+        "Octavio Paz",
+        "César Vallejo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual poeta chileno ganhou o Nobel de Literatura?",
+      "alternativas": [
+        "Gabriela Mistral",
+        "Pablo Neruda",
+        "Ambos ganharam",
+        "Nenhum dos dois"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Romancero Gitano'?",
+      "alternativas": [
+        "Pablo Neruda",
+        "Federico García Lorca",
+        "Rafael Alberti",
+        "Luis Cernuda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'A Casa dos Espíritos'?",
+      "alternativas": [
+        "Gabriel García Márquez",
+        "Isabel Allende",
+        "Mario Vargas Llosa",
+        "Laura Esquivel"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Amor nos Tempos do Cólera'?",
+      "alternativas": [
+        "Mario Vargas Llosa",
+        "Gabriel García Márquez",
+        "Julio Cortázar",
+        "Carlos Fuentes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Rayuela'?",
+      "alternativas": [
+        "Gabriel García Márquez",
+        "Julio Cortázar",
+        "Jorge Luis Borges",
+        "Ernesto Sabato"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Ficciones'?",
+      "alternativas": [
+        "Julio Cortázar",
+        "Jorge Luis Borges",
+        "Adolfo Bioy Casares",
+        "Ernesto Sabato"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor argentino é famoso por labirintos e bibliotecas?",
+      "alternativas": [
+        "Julio Cortázar",
+        "Jorge Luis Borges",
+        "Ernesto Sabato",
+        "Manuel Puig"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Cidade e os Cachorros'?",
+      "alternativas": [
+        "Gabriel García Márquez",
+        "Mario Vargas Llosa",
+        "Carlos Fuentes",
+        "Julio Cortázar"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor peruano ganhou o Nobel de Literatura?",
+      "alternativas": [
+        "César Vallejo",
+        "Mario Vargas Llosa",
+        "Julio Ramón Ribeyro",
+        "Alfredo Bryce Echenique"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Como Água para Chocolate'?",
+      "alternativas": [
+        "Isabel Allende",
+        "Laura Esquivel",
+        "Elena Poniatowska",
+        "Ángeles Mastretta"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Pedro Páramo'?",
+      "alternativas": [
+        "Carlos Fuentes",
+        "Juan Rulfo",
+        "Octavio Paz",
+        "José Emilio Pacheco"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Labirinto da Solidão'?",
+      "alternativas": [
+        "Carlos Fuentes",
+        "Octavio Paz",
+        "Juan Rulfo",
+        "Alfonso Reyes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autora ganhou o Nobel de Literatura em 2022?",
+      "alternativas": [
+        "Margaret Atwood",
+        "Annie Ernaux",
+        "Elena Ferrante",
+        "Chimamanda Ngozi Adichie"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Conto da Aia'?",
+      "alternativas": [
+        "Ursula K. Le Guin",
+        "Margaret Atwood",
+        "Octavia Butler",
+        "N.K. Jemisin"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'A Sangue Frio'?",
+      "alternativas": [
+        "Norman Mailer",
+        "Truman Capote",
+        "Tom Wolfe",
+        "Hunter S. Thompson"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Cem Dias Entre Céu e Mar'?",
+      "alternativas": [
+        "Rubem Fonseca",
+        "Amyr Klink",
+        "Fernando Gabeira",
+        "Paulo Francis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor brasileiro escreveu 'Feliz Ano Velho'?",
+      "alternativas": [
+        "Caio Fernando Abreu",
+        "Marcelo Rubens Paiva",
+        "Fernando Bonassi",
+        "Marçal Aquino"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Morangos Mofados'?",
+      "alternativas": [
+        "Marcelo Rubens Paiva",
+        "Caio Fernando Abreu",
+        "João Gilberto Noll",
+        "Sérgio Sant'Anna"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autora escreveu 'Ciranda de Pedra'?",
+      "alternativas": [
+        "Clarice Lispector",
+        "Lygia Fagundes Telles",
+        "Nélida Piñon",
+        "Hilda Hilst"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Xangô de Baker Street'?",
+      "alternativas": [
+        "Rubem Fonseca",
+        "Jô Soares",
+        "Luis Fernando Verissimo",
+        "Millôr Fernandes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu crônicas famosas como 'A Eterna Privação do Zagueiro Absoluto'?",
+      "alternativas": [
+        "Rubem Braga",
+        "Luis Fernando Verissimo",
+        "Fernando Sabino",
+        "Paulo Mendes Campos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem é considerado o maior cronista brasileiro?",
+      "alternativas": [
+        "Fernando Sabino",
+        "Rubem Braga",
+        "Carlos Drummond de Andrade",
+        "Rachel de Queiroz"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Encontro Marcado'?",
+      "alternativas": [
+        "Rubem Braga",
+        "Fernando Sabino",
+        "Paulo Mendes Campos",
+        "Otto Lara Resende"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Resistência'?",
+      "alternativas": [
+        "Chico Buarque",
+        "Milton Hatoum",
+        "Julián Fuks",
+        "Bernardo Carvalho"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor brasileiro escreveu 'Dois Irmãos'?",
+      "alternativas": [
+        "Raduan Nassar",
+        "Milton Hatoum",
+        "Bernardo Carvalho",
+        "Luiz Ruffato"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Lavoura Arcaica'?",
+      "alternativas": [
+        "Milton Hatoum",
+        "Raduan Nassar",
+        "Hilda Hilst",
+        "Osman Lins"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Budapeste'?",
+      "alternativas": [
+        "Milton Hatoum",
+        "Chico Buarque",
+        "Rubem Fonseca",
+        "João Ubaldo Ribeiro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Leite Derramado'?",
+      "alternativas": [
+        "Chico Buarque",
+        "Milton Hatoum",
+        "Raduan Nassar",
+        "Bernardo Carvalho"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor brasileiro escreveu 'Viva o Povo Brasileiro'?",
+      "alternativas": [
+        "Jorge Amado",
+        "João Ubaldo Ribeiro",
+        "Darcy Ribeiro",
+        "Antonio Callado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Quarup'?",
+      "alternativas": [
+        "Darcy Ribeiro",
+        "Antonio Callado",
+        "Jorge Amado",
+        "Ã‰rico Veríssimo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Continente'?",
+      "alternativas": [
+        "Jorge Amado",
+        "Ã‰rico Veríssimo",
+        "José Lins do Rego",
+        "Graciliano Ramos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Sagarana'?",
+      "alternativas": [
+        "Jorge Amado",
+        "Guimarães Rosa",
+        "Graciliano Ramos",
+        "José Lins do Rego"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual poeta escreveu 'Poema Sujo'?",
+      "alternativas": [
+        "Carlos Drummond de Andrade",
+        "Ferreira Gullar",
+        "João Cabral de Melo Neto",
+        "Manoel de Barros"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem é conhecido como o 'poeta das coisas'?",
+      "alternativas": [
+        "Carlos Drummond de Andrade",
+        "Manoel de Barros",
+        "João Cabral de Melo Neto",
+        "Mário Quintana"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual poeta gaúcho escreveu 'Quintana de Bolso'?",
+      "alternativas": [
+        "Carlos Drummond de Andrade",
+        "Mário Quintana",
+        "Ferreira Gullar",
+        "Vinícius de Moraes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Torto Arado'?",
+      "alternativas": [
+        "Itamar Vieira Junior",
+        "Jeferson Tenório",
+        "Geovani Martins",
+        "Paulo Scott"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'O Avesso da Pele'?",
+      "alternativas": [
+        "Itamar Vieira Junior",
+        "Jeferson Tenório",
+        "Geovani Martins",
+        "Mailson Furtado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Sol na Cabeça'?",
+      "alternativas": [
+        "Jeferson Tenório",
+        "Geovani Martins",
+        "Itamar Vieira Junior",
+        "Luiz Ruffato"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autora escreveu 'Ponciá Vicêncio'?",
+      "alternativas": [
+        "Carolina Maria de Jesus",
+        "Conceição Evaristo",
+        "Ana Maria Gonçalves",
+        "Miriam Alves"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Um Defeito de Cor'?",
+      "alternativas": [
+        "Conceição Evaristo",
+        "Ana Maria Gonçalves",
+        "Carolina Maria de Jesus",
+        "Eliana Alves Cruz"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual gênero literário 'O Senhor dos Anéis' representa?",
+      "alternativas": [
+        "Ficção científica",
+        "Fantasia épica",
+        "Terror",
+        "Suspense"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "O que é realismo mágico?",
+      "alternativas": [
+        "Apenas magia em histórias",
+        "Elementos mágicos em contexto realista",
+        "Contos de fadas",
+        "Ficção científica"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual movimento literário brasileiro ocorreu em 1922?",
+      "alternativas": [
+        "Romantismo",
+        "Realismo",
+        "Modernismo",
+        "Parnasianismo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Onde ocorreu a Semana de Arte Moderna de 1922?",
+      "alternativas": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Belo Horizonte",
+        "Salvador"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Angústia'?",
+      "alternativas": [
+        "José Lins do Rego",
+        "Graciliano Ramos",
+        "Jorge Amado",
+        "Rachel de Queiroz"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'São Bernardo'?",
+      "alternativas": [
+        "Jorge Amado",
+        "José Lins do Rego",
+        "Graciliano Ramos",
+        "Ã‰rico Veríssimo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Gabriela, Cravo e Canela'?",
+      "alternativas": [
+        "Graciliano Ramos",
+        "José Lins do Rego",
+        "Jorge Amado",
+        "Ã‰rico Veríssimo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor escreveu 'Dona Flor e Seus Dois Maridos'?",
+      "alternativas": [
+        "Ã‰rico Veríssimo",
+        "Jorge Amado",
+        "João Ubaldo Ribeiro",
+        "Rubem Fonseca"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Tenda dos Milagres'?",
+      "alternativas": [
+        "João Ubaldo Ribeiro",
+        "Jorge Amado",
+        "Darcy Ribeiro",
+        "Antonio Callado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor é famoso por romances ambientados na Bahia?",
+      "alternativas": [
+        "Graciliano Ramos",
+        "Jorge Amado",
+        "José Lins do Rego",
+        "Ã‰rico Veríssimo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "O que significa a sigla ABL?",
+      "alternativas": [
+        "Associação Brasileira de Leitura",
+        "Academia Brasileira de Letras",
+        "Arquivo Brasileiro Literário",
+        "Aliança Brasileira de Literatura"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem foi o primeiro presidente da Academia Brasileira de Letras?",
+      "alternativas": [
+        "Machado de Assis",
+        "José de Alencar",
+        "Joaquim Nabuco",
+        "Olavo Bilac"
+      ],
+      "correta": 0
+    }
+  ]
+}

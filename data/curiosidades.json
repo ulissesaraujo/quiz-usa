@@ -1,0 +1,2006 @@
+{
+  "perguntas": [
+    {
+      "enunciado": "Qual é o maior órgão do corpo humano?",
+      "alternativas": [
+        "Fígado",
+        "Cérebro",
+        "Pele",
+        "Intestino"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos ossos tem um bebê recém-nascido?",
+      "alternativas": [
+        "206",
+        "270",
+        "300",
+        "350"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal mais rápido do mundo?",
+      "alternativas": [
+        "Leão",
+        "Guepardo",
+        "Águia",
+        "Tubarão"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a única fruta que tem sementes por fora?",
+      "alternativas": [
+        "Kiwi",
+        "Maracujá",
+        "Morango",
+        "Framboesa"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos corações tem um polvo?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país com mais fusos horários do mundo?",
+      "alternativas": [
+        "Rússia",
+        "Estados Unidos",
+        "França",
+        "China"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o osso mais longo do corpo humano?",
+      "alternativas": [
+        "Tíbia",
+        "Fêmur",
+        "Ãšmero",
+        "Rádio"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos dentes tem um adulto normalmente?",
+      "alternativas": [
+        "28",
+        "30",
+        "32",
+        "36"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual animal dorme em média 22 horas por dia?",
+      "alternativas": [
+        "Preguiça",
+        "Coala",
+        "Gato",
+        "Morcego"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o menor país do mundo em área?",
+      "alternativas": [
+        "Mônaco",
+        "San Marino",
+        "Vaticano",
+        "Liechtenstein"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas patas tem uma aranha?",
+      "alternativas": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o elemento químico mais abundante no universo?",
+      "alternativas": [
+        "Oxigênio",
+        "Carbono",
+        "Hidrogênio",
+        "Hélio"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal terrestre mais pesado?",
+      "alternativas": [
+        "Rinoceronte",
+        "Hipopótamo",
+        "Elefante africano",
+        "Girafa"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos litros de sangue tem o corpo humano adulto em média?",
+      "alternativas": [
+        "3 litros",
+        "5 litros",
+        "7 litros",
+        "10 litros"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a cor do sangue de uma lagosta?",
+      "alternativas": [
+        "Vermelho",
+        "Azul",
+        "Verde",
+        "Transparente"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas vezes por minuto o coração humano bate em média?",
+      "alternativas": [
+        "40-50",
+        "60-80",
+        "100-120",
+        "120-140"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único mamífero que pode voar?",
+      "alternativas": [
+        "Esquilo voador",
+        "Morcego",
+        "Lêmure",
+        "Colugos"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o metal mais precioso do mundo?",
+      "alternativas": [
+        "Ouro",
+        "Platina",
+        "Ródio",
+        "Prata"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas vértebras tem a coluna vertebral humana?",
+      "alternativas": [
+        "24",
+        "30",
+        "33",
+        "36"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único continente sem desertos?",
+      "alternativas": [
+        "Oceania",
+        "Europa",
+        "América do Sul",
+        "Ásia"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quanto tempo dura um dia em Mercúrio?",
+      "alternativas": [
+        "24 horas",
+        "59 dias terrestres",
+        "88 dias terrestres",
+        "365 dias terrestres"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal com o maior cérebro do mundo?",
+      "alternativas": [
+        "Elefante",
+        "Golfinho",
+        "Cachalote",
+        "Humano"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas costelas tem o corpo humano?",
+      "alternativas": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o oceano mais profundo do mundo?",
+      "alternativas": [
+        "Atlântico",
+        "Índico",
+        "Pacífico",
+        "Ártico"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual animal pode girar a cabeça até 270 graus?",
+      "alternativas": [
+        "Camaleão",
+        "Coruja",
+        "Gato",
+        "Serpente"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o gás mais abundante na atmosfera terrestre?",
+      "alternativas": [
+        "Oxigênio",
+        "Dióxido de carbono",
+        "Nitrogênio",
+        "Argônio"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos anos dura um século?",
+      "alternativas": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior animal do mundo?",
+      "alternativas": [
+        "Elefante africano",
+        "Tubarão-baleia",
+        "Baleia-azul",
+        "Lula-gigante"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos músculos são necessários para dar um passo?",
+      "alternativas": [
+        "50",
+        "100",
+        "200",
+        "300"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país com mais vulcões ativos?",
+      "alternativas": [
+        "Japão",
+        "Indonésia",
+        "Islândia",
+        "Estados Unidos"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas horas dorme um golfinho por dia?",
+      "alternativas": [
+        "0 horas",
+        "2 horas",
+        "8 horas",
+        "12 horas"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o planeta mais quente do Sistema Solar?",
+      "alternativas": [
+        "Mercúrio",
+        "Vênus",
+        "Marte",
+        "Júpiter"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas línguas existem no mundo aproximadamente?",
+      "alternativas": [
+        "1.000",
+        "3.000",
+        "7.000",
+        "10.000"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal mais venenoso do mundo?",
+      "alternativas": [
+        "Cobra rei",
+        "Aranha-armadeira",
+        "Água-viva-caixa",
+        "Escorpião"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos ossos tem o corpo humano adulto?",
+      "alternativas": [
+        "186",
+        "196",
+        "206",
+        "216"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o rio mais longo do mundo?",
+      "alternativas": [
+        "Amazonas",
+        "Nilo",
+        "Yangtzé",
+        "Mississippi"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos planetas tem o Sistema Solar?",
+      "alternativas": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que nunca dorme?",
+      "alternativas": [
+        "Tubarão",
+        "Formiga",
+        "Rã-touro",
+        "Abelha"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país mais populoso do mundo?",
+      "alternativas": [
+        "Estados Unidos",
+        "Índia",
+        "China",
+        "Indonésia"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos cromossomos tem o ser humano?",
+      "alternativas": [
+        "23",
+        "46",
+        "48",
+        "52"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal mais alto do mundo?",
+      "alternativas": [
+        "Elefante",
+        "Avestruz",
+        "Girafa",
+        "Camelo"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas cores tem o arco-íris?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o metal líquido em temperatura ambiente?",
+      "alternativas": [
+        "Chumbo",
+        "Mercúrio",
+        "Estanho",
+        "Zinco"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas vezes pisca um ser humano por dia em média?",
+      "alternativas": [
+        "5.000",
+        "10.000",
+        "15.000",
+        "20.000"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior deserto do mundo?",
+      "alternativas": [
+        "Saara",
+        "Antártida",
+        "Gobi",
+        "Kalahari"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos sentidos tem o ser humano tradicionalmente?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual animal produz a seda?",
+      "alternativas": [
+        "Aranha",
+        "Bicho-da-seda",
+        "Lagarta",
+        "Mariposa"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o ponto mais profundo dos oceanos?",
+      "alternativas": [
+        "Fossa de Porto Rico",
+        "Fossa das Marianas",
+        "Fossa de Java",
+        "Fossa de Tonga"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas pálpebras tem um camelo?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único mamífero que bota ovos?",
+      "alternativas": [
+        "Tatu",
+        "Ornitorrinco",
+        "Morcego",
+        "Pangolim"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos lados tem um heptágono?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a velocidade da luz?",
+      "alternativas": [
+        "150.000 km/s",
+        "300.000 km/s",
+        "450.000 km/s",
+        "600.000 km/s"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas patas tem uma centopeia comum?",
+      "alternativas": [
+        "30",
+        "42",
+        "100",
+        "200"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o instrumento musical mais antigo já descoberto?",
+      "alternativas": [
+        "Tambor",
+        "Flauta",
+        "Harpa",
+        "Lira"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos dentes de leite uma criança tem?",
+      "alternativas": [
+        "16",
+        "18",
+        "20",
+        "24"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal com a gestação mais longa?",
+      "alternativas": [
+        "Baleia-azul",
+        "Rinoceronte",
+        "Elefante",
+        "Girafa"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas oitavas tem um piano padrão?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o elemento químico representado pelo símbolo 'Au'?",
+      "alternativas": [
+        "Prata",
+        "Alumínio",
+        "Ouro",
+        "Cobre"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos átomos de oxigênio tem uma molécula de água?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 0,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual animal tem a língua mais comprida em relação ao corpo?",
+      "alternativas": [
+        "Tamanduá",
+        "Camaleão",
+        "Cobra",
+        "Sapo"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos anos de azar dá quebrar um espelho segundo a superstição?",
+      "alternativas": [
+        "3",
+        "5",
+        "7",
+        "13"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país com mais ilhas do mundo?",
+      "alternativas": [
+        "Indonésia",
+        "Filipinas",
+        "Suécia",
+        "Japão"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas faces tem um cubo?",
+      "alternativas": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único continente sem países?",
+      "alternativas": [
+        "Ártico",
+        "Antártida",
+        "Oceania",
+        "Nenhum"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos zeros tem um bilhão?",
+      "alternativas": [
+        "6",
+        "9",
+        "12",
+        "15"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal símbolo da Austrália?",
+      "alternativas": [
+        "Koala",
+        "Canguru",
+        "Ornitorrinco",
+        "Emu"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas letras tem o alfabeto grego?",
+      "alternativas": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior órgão interno do corpo humano?",
+      "alternativas": [
+        "Coração",
+        "Pulmões",
+        "Fígado",
+        "Intestino"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas luas tem Marte?",
+      "alternativas": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o alimento mais consumido no mundo?",
+      "alternativas": [
+        "Trigo",
+        "Arroz",
+        "Milho",
+        "Batata"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos músculos tem o corpo humano aproximadamente?",
+      "alternativas": [
+        "400",
+        "500",
+        "600",
+        "700"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a unidade de medida de temperatura mais usada no mundo?",
+      "alternativas": [
+        "Fahrenheit",
+        "Kelvin",
+        "Celsius",
+        "Rankine"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos anos tem um milênio?",
+      "alternativas": [
+        "100",
+        "500",
+        "1.000",
+        "10.000"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o gás que as plantas absorvem durante a fotossíntese?",
+      "alternativas": [
+        "Oxigênio",
+        "Nitrogênio",
+        "Dióxido de carbono",
+        "Hélio"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas horas tem uma semana?",
+      "alternativas": [
+        "140",
+        "156",
+        "168",
+        "180"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal com o pescoço mais longo?",
+      "alternativas": [
+        "Cisne",
+        "Avestruz",
+        "Girafa",
+        "Flamingo"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos graus tem um ângulo reto?",
+      "alternativas": [
+        "45",
+        "60",
+        "90",
+        "180"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o planeta conhecido como 'Planeta Vermelho'?",
+      "alternativas": [
+        "Vênus",
+        "Marte",
+        "Júpiter",
+        "Saturno"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas semanas tem um ano?",
+      "alternativas": [
+        "48",
+        "50",
+        "52",
+        "54"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que pode regenerar membros perdidos?",
+      "alternativas": [
+        "Lagarto",
+        "Estrela-do-mar",
+        "Salamandra",
+        "Todas as anteriores"
+      ],
+      "correta": 3,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos segundos tem uma hora?",
+      "alternativas": [
+        "1.800",
+        "3.600",
+        "5.400",
+        "7.200"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior felino do mundo?",
+      "alternativas": [
+        "Leão",
+        "Tigre",
+        "Onça-pintada",
+        "Leopardo"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos jogadores tem um time de futebol em campo?",
+      "alternativas": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o nome científico do sal de cozinha?",
+      "alternativas": [
+        "Bicarbonato de sódio",
+        "Cloreto de sódio",
+        "Nitrato de sódio",
+        "Sulfato de sódio"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos dias tem um ano bissexto?",
+      "alternativas": [
+        "364",
+        "365",
+        "366",
+        "367"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o inseto que produz mel?",
+      "alternativas": [
+        "Formiga",
+        "Vespa",
+        "Abelha",
+        "Mariposa"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas notas musicais existem?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "12"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a capital do Brasil?",
+      "alternativas": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Brasília",
+        "Salvador"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos lados tem um triângulo?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior primata do mundo?",
+      "alternativas": [
+        "Chimpanzé",
+        "Orangotango",
+        "Gorila",
+        "Humano"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos continentes existem no mundo?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o elemento químico mais leve?",
+      "alternativas": [
+        "Hélio",
+        "Hidrogênio",
+        "Lítio",
+        "Oxigênio"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas pernas tem um inseto?",
+      "alternativas": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal mais lento do mundo?",
+      "alternativas": [
+        "Tartaruga",
+        "Caracol",
+        "Preguiça",
+        "Lesma"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos dias tem o mês de fevereiro em anos não bissextos?",
+      "alternativas": [
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a montanha mais alta do mundo?",
+      "alternativas": [
+        "K2",
+        "Monte Everest",
+        "Monte Kilimanjaro",
+        "Monte Aconcágua"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas estrelas tem a bandeira dos Estados Unidos?",
+      "alternativas": [
+        "48",
+        "50",
+        "51",
+        "52"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único metal líquido em temperatura ambiente?",
+      "alternativas": [
+        "Ferro",
+        "Cobre",
+        "Mercúrio",
+        "Ouro"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos graus tem um círculo completo?",
+      "alternativas": [
+        "180",
+        "270",
+        "360",
+        "400"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior país do mundo em área?",
+      "alternativas": [
+        "Canadá",
+        "China",
+        "Estados Unidos",
+        "Rússia"
+      ],
+      "correta": 3,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas estações do ano existem?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que muda de cor conforme o ambiente?",
+      "alternativas": [
+        "Lagarto",
+        "Camaleão",
+        "Iguana",
+        "Salamandra"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos minutos tem uma hora?",
+      "alternativas": [
+        "30",
+        "45",
+        "60",
+        "90"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país que deu origem à pizza?",
+      "alternativas": [
+        "França",
+        "Espanha",
+        "Itália",
+        "Grécia"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas patas tem uma minhoca?",
+      "alternativas": [
+        "0",
+        "2",
+        "4",
+        "6"
+      ],
+      "correta": 0,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a maior célula do corpo humano?",
+      "alternativas": [
+        "Neurônio",
+        "Ã“vulo",
+        "Hemácia",
+        "Adipócito"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos pulmões tem o ser humano?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal símbolo da paz?",
+      "alternativas": [
+        "Águia",
+        "Pomba",
+        "Coruja",
+        "Cisne"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas teclas tem um piano padrão?",
+      "alternativas": [
+        "66",
+        "76",
+        "88",
+        "96"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o gás que respiramos e é essencial para a vida?",
+      "alternativas": [
+        "Nitrogênio",
+        "Dióxido de carbono",
+        "Oxigênio",
+        "Argônio"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas cordas tem um violão clássico?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que simboliza a sabedoria?",
+      "alternativas": [
+        "Águia",
+        "Leão",
+        "Coruja",
+        "Serpente"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos dias têm os meses de 31 dias?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o estado físico do gelo?",
+      "alternativas": [
+        "Líquido",
+        "Gasoso",
+        "Sólido",
+        "Plasma"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas patas tem um cachorro?",
+      "alternativas": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país de origem do sushi?",
+      "alternativas": [
+        "China",
+        "Coreia",
+        "Japão",
+        "Tailândia"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas camadas tem a atmosfera terrestre?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que representa o signo de Áries?",
+      "alternativas": [
+        "Touro",
+        "Carneiro",
+        "Leão",
+        "Cabra"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos tentáculos tem um polvo?",
+      "alternativas": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior vulcão do Sistema Solar?",
+      "alternativas": [
+        "Krakatoa",
+        "Vesúvio",
+        "Olympus Mons",
+        "Monte Fuji"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos zeros tem um milhão?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único osso do corpo humano que não se articula com nenhum outro?",
+      "alternativas": [
+        "Patela",
+        "Hioide",
+        "Estribo",
+        "Clavícula"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos meridianos tem o planeta Terra?",
+      "alternativas": [
+        "180",
+        "360",
+        "Infinitos",
+        "24"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior roedor do mundo?",
+      "alternativas": [
+        "Castor",
+        "Capivara",
+        "Porco-espinho",
+        "Ratazana"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas fazes tem a Lua?",
+      "alternativas": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o gás produzido durante a respiração celular?",
+      "alternativas": [
+        "Oxigênio",
+        "Nitrogênio",
+        "Dióxido de carbono",
+        "Hélio"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos hemisférios tem o cérebro humano?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o nome do fenômeno que causa as marés?",
+      "alternativas": [
+        "Rotação da Terra",
+        "Atração gravitacional da Lua",
+        "Ventos",
+        "Correntes marítimas"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas calorias tem um grama de gordura?",
+      "alternativas": [
+        "4",
+        "7",
+        "9",
+        "12"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior satélite natural do Sistema Solar?",
+      "alternativas": [
+        "Lua",
+        "Titã",
+        "Ganimedes",
+        "Europa"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos meses tem um ano?",
+      "alternativas": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal mais forte em proporção ao seu tamanho?",
+      "alternativas": [
+        "Formiga",
+        "Besouro-rinoceronte",
+        "Abelha",
+        "Aranha"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas cavidades tem o coração humano?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o planeta mais próximo do Sol?",
+      "alternativas": [
+        "Vênus",
+        "Marte",
+        "Mercúrio",
+        "Terra"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos fusos horários tem o Brasil?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que consegue ver radiação ultravioleta?",
+      "alternativas": [
+        "Gato",
+        "Cão",
+        "Abelha",
+        "Tubarão"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas horas leva a luz do Sol para chegar à Terra?",
+      "alternativas": [
+        "4 segundos",
+        "8 minutos",
+        "1 hora",
+        "24 horas"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único animal que pode voar para trás?",
+      "alternativas": [
+        "Morcego",
+        "Beija-flor",
+        "Andorinha",
+        "Libélula"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos países fazem fronteira com o Brasil?",
+      "alternativas": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a substância mais dura encontrada na natureza?",
+      "alternativas": [
+        "Quartzo",
+        "Diamante",
+        "Safira",
+        "Rubi"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas patas tem uma lagosta?",
+      "alternativas": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país com mais fronteiras terrestres?",
+      "alternativas": [
+        "Brasil",
+        "Rússia",
+        "China",
+        "Índia"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos naipes tem um baralho tradicional?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que tem impressões digitais semelhantes às humanas?",
+      "alternativas": [
+        "Chimpanzé",
+        "Gorila",
+        "Coala",
+        "Orangotango"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos países existem no mundo atualmente (aproximadamente)?",
+      "alternativas": [
+        "150",
+        "175",
+        "195",
+        "220"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único país da América do Sul que fala holandês?",
+      "alternativas": [
+        "Guiana",
+        "Suriname",
+        "Guiana Francesa",
+        "Belize"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos dentes tem um tubarão ao mesmo tempo?",
+      "alternativas": [
+        "30",
+        "100",
+        "300",
+        "Mais de 3.000"
+      ],
+      "correta": 3,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único mamífero com escamas?",
+      "alternativas": [
+        "Tatu",
+        "Pangolim",
+        "Porco-espinho",
+        "Equidna"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas cartas tem um baralho tradicional completo?",
+      "alternativas": [
+        "40",
+        "48",
+        "52",
+        "54"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a vitamina produzida quando tomamos sol?",
+      "alternativas": [
+        "Vitamina A",
+        "Vitamina C",
+        "Vitamina D",
+        "Vitamina E"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos anos luz está a estrela mais próxima do Sol?",
+      "alternativas": [
+        "0,5",
+        "2,2",
+        "4,2",
+        "10"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que pode viver mais de 200 anos?",
+      "alternativas": [
+        "Elefante",
+        "Baleia-da-groenlândia",
+        "Tartaruga-gigante",
+        "Carpa"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas vértebras tem o pescoço de uma girafa?",
+      "alternativas": [
+        "7",
+        "14",
+        "21",
+        "28"
+      ],
+      "correta": 0,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país que consome mais café per capita?",
+      "alternativas": [
+        "Brasil",
+        "Estados Unidos",
+        "Finlândia",
+        "Itália"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos Estados tem os Estados Unidos?",
+      "alternativas": [
+        "48",
+        "50",
+        "51",
+        "52"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior arquipélago do mundo?",
+      "alternativas": [
+        "Japão",
+        "Filipinas",
+        "Indonésia",
+        "Havaí"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas olimpíadas de verão o Brasil sediou?",
+      "alternativas": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal com maior expectativa de vida?",
+      "alternativas": [
+        "Elefante",
+        "Tartaruga-gigante",
+        "Tubarão-da-groenlândia",
+        "Baleia-azul"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos dias a Terra leva para dar uma volta ao redor do Sol?",
+      "alternativas": [
+        "360",
+        "365",
+        "366",
+        "400"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o nome do maior órgão do sistema digestivo?",
+      "alternativas": [
+        "Estômago",
+        "Intestino delgado",
+        "Intestino grosso",
+        "Fígado"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas asas tem uma libélula?",
+      "alternativas": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único continente onde não existem répteis?",
+      "alternativas": [
+        "Europa",
+        "Oceania",
+        "Antártida",
+        "Ártico"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos planetas anões foram classificados no Sistema Solar até 2023?",
+      "alternativas": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que tem o período de gestação mais curto?",
+      "alternativas": [
+        "Hamster",
+        "Gambá",
+        "Coelho",
+        "Rato"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos neurônios tem o cérebro humano aproximadamente?",
+      "alternativas": [
+        "10 milhões",
+        "100 milhões",
+        "86 bilhões",
+        "1 trilhão"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é a bebida mais consumida no mundo depois da água?",
+      "alternativas": [
+        "Café",
+        "Chá",
+        "Cerveja",
+        "Refrigerante"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas espécies de pinguins existem?",
+      "alternativas": [
+        "8",
+        "12",
+        "18",
+        "24"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior lago de água doce do mundo em área?",
+      "alternativas": [
+        "Lago Baikal",
+        "Lago Superior",
+        "Lago Vitória",
+        "Lago Titicaca"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos tipos sanguíneos existem no sistema ABO?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país que mais produz café no mundo?",
+      "alternativas": [
+        "Colômbia",
+        "Vietnã",
+        "Brasil",
+        "Etiópia"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos graus Celsius é a temperatura de ebulição da água ao nível do mar?",
+      "alternativas": [
+        "90°C",
+        "95°C",
+        "100°C",
+        "110°C"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal terrestre mais rápido da América do Sul?",
+      "alternativas": [
+        "Onça-pintada",
+        "Lobo-guará",
+        "Veado-campeiro",
+        "Tamanduá-bandeira"
+      ],
+      "correta": 0,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos dígitos tem um CPF brasileiro?",
+      "alternativas": [
+        "9",
+        "10",
+        "11",
+        "14"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o planeta com mais luas conhecidas?",
+      "alternativas": [
+        "Júpiter",
+        "Saturno",
+        "Urano",
+        "Netuno"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas calorias tem um grama de proteína?",
+      "alternativas": [
+        "2",
+        "4",
+        "7",
+        "9"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o animal que não pode pular?",
+      "alternativas": [
+        "Hipopótamo",
+        "Elefante",
+        "Rinoceronte",
+        "Todos os anteriores"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas vezes o coração humano bate por dia em média?",
+      "alternativas": [
+        "50.000",
+        "75.000",
+        "100.000",
+        "150.000"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o maior peixe do mundo?",
+      "alternativas": [
+        "Baleia-azul",
+        "Tubarão-branco",
+        "Tubarão-baleia",
+        "Marlim-azul"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantos litros de ar um adulto respira por dia em média?",
+      "alternativas": [
+        "5.000",
+        "10.000",
+        "15.000",
+        "20.000"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o país com a maior biodiversidade do mundo?",
+      "alternativas": [
+        "Indonésia",
+        "Colômbia",
+        "Brasil",
+        "Austrália"
+      ],
+      "correta": 2,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Quantas letras tem o maior alfabeto do mundo (Khmer)?",
+      "alternativas": [
+        "46",
+        "56",
+        "66",
+        "74"
+      ],
+      "correta": 3,
+      "tema": "curiosidades"
+    },
+    {
+      "enunciado": "Qual é o único planeta do Sistema Solar que gira no sentido horário?",
+      "alternativas": [
+        "Mercúrio",
+        "Vênus",
+        "Urano",
+        "Netuno"
+      ],
+      "correta": 1,
+      "tema": "curiosidades"
+    }
+  ]
+}

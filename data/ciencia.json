@@ -1,0 +1,2083 @@
+{
+  "perguntas": [
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o elemento químico mais abundante no universo?",
+      "alternativas": [
+        "Oxigênio",
+        "Carbono",
+        "Hidrogênio",
+        "Hélio"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quantos ossos tem o corpo humano adulto?",
+      "alternativas": [
+        "206",
+        "208",
+        "212",
+        "198"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a velocidade da luz no vácuo (aproximadamente)?",
+      "alternativas": [
+        "150.000 km/s",
+        "300.000 km/s",
+        "450.000 km/s",
+        "200.000 km/s"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta do Sistema Solar é conhecido como 'Planeta Vermelho'?",
+      "alternativas": [
+        "Vênus",
+        "Júpiter",
+        "Marte",
+        "Saturno"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a mitocôndria?",
+      "alternativas": [
+        "Organela responsável pela digestão",
+        "Organela responsável pela produção de energia",
+        "Organela responsável pela síntese de proteínas",
+        "Organela responsável pelo armazenamento"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o maior órgão do corpo humano?",
+      "alternativas": [
+        "Fígado",
+        "Cérebro",
+        "Pele",
+        "Intestino"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a fórmula química da água?",
+      "alternativas": [
+        "CO2",
+        "H2O",
+        "NaCl",
+        "O2"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quem propôs a Teoria da Relatividade?",
+      "alternativas": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Niels Bohr",
+        "Stephen Hawking"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o planeta mais próximo do Sol?",
+      "alternativas": [
+        "Vênus",
+        "Terra",
+        "Mercúrio",
+        "Marte"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é o DNA?",
+      "alternativas": [
+        "Uma proteína",
+        "Um carboidrato",
+        "Um ácido nucleico",
+        "Um lipídio"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quantos planetas existem no Sistema Solar?",
+      "alternativas": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o gás mais abundante na atmosfera terrestre?",
+      "alternativas": [
+        "Oxigênio",
+        "Nitrogênio",
+        "Dióxido de carbono",
+        "Argônio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é fotossíntese?",
+      "alternativas": [
+        "Processo de respiração das plantas",
+        "Processo de produção de alimento pelas plantas usando luz",
+        "Processo de reprodução vegetal",
+        "Processo de absorção de água"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a unidade de medida de força no Sistema Internacional?",
+      "alternativas": [
+        "Joule",
+        "Watt",
+        "Newton",
+        "Pascal"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual cientista é conhecido como o 'pai da genética'?",
+      "alternativas": [
+        "Charles Darwin",
+        "Gregor Mendel",
+        "Louis Pasteur",
+        "James Watson"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um átomo?",
+      "alternativas": [
+        "A menor partícula de um elemento",
+        "Uma molécula complexa",
+        "Um tipo de célula",
+        "Uma forma de energia"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a temperatura de ebulição da água ao nível do mar?",
+      "alternativas": [
+        "90°C",
+        "100°C",
+        "110°C",
+        "120°C"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a gravidade?",
+      "alternativas": [
+        "Força de repulsão entre corpos",
+        "Força de atração entre corpos com massa",
+        "Força magnética",
+        "Força elétrica"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o símbolo químico do ouro?",
+      "alternativas": [
+        "Ag",
+        "Au",
+        "Fe",
+        "Cu"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quantos cromossomos tem uma célula humana normal?",
+      "alternativas": [
+        "23",
+        "46",
+        "48",
+        "44"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um buraco negro?",
+      "alternativas": [
+        "Uma estrela muito brilhante",
+        "Uma região do espaço com gravidade extrema",
+        "Um planeta escuro",
+        "Uma galáxia distante"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função dos glóbulos brancos?",
+      "alternativas": [
+        "Transportar oxigênio",
+        "Defender o corpo contra infecções",
+        "Coagular o sangue",
+        "Transportar nutrientes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a camada de ozônio?",
+      "alternativas": [
+        "Camada de gás na troposfera",
+        "Camada que protege contra radiação UV",
+        "Camada de nuvens",
+        "Camada de poeira cósmica"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o maior planeta do Sistema Solar?",
+      "alternativas": [
+        "Saturno",
+        "Urano",
+        "Júpiter",
+        "Netuno"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é evaporação?",
+      "alternativas": [
+        "Passagem de sólido para líquido",
+        "Passagem de líquido para gasoso",
+        "Passagem de gasoso para líquido",
+        "Passagem de sólido para gasoso"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quem descobriu a penicilina?",
+      "alternativas": [
+        "Louis Pasteur",
+        "Alexander Fleming",
+        "Robert Koch",
+        "Joseph Lister"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a principal função do coração?",
+      "alternativas": [
+        "Produzir sangue",
+        "Bombear sangue pelo corpo",
+        "Filtrar toxinas",
+        "Armazenar oxigênio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um ecossistema?",
+      "alternativas": [
+        "Apenas os animais de uma região",
+        "Apenas as plantas de uma região",
+        "Conjunto de seres vivos e ambiente interagindo",
+        "O clima de uma região"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o processo pelo qual as células se dividem?",
+      "alternativas": [
+        "Fotossíntese",
+        "Mitose",
+        "Osmose",
+        "Difusão"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a Tabela Periódica?",
+      "alternativas": [
+        "Tabela de vitaminas",
+        "Organização dos elementos químicos",
+        "Tabela de planetas",
+        "Organização de espécies"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o satélite natural da Terra?",
+      "alternativas": [
+        "Sol",
+        "Lua",
+        "Marte",
+        "Vênus"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que são vírus?",
+      "alternativas": [
+        "Seres vivos unicelulares",
+        "Agentes infecciosos que precisam de hospedeiro",
+        "Bactérias pequenas",
+        "Fungos microscópicos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função do sistema nervoso?",
+      "alternativas": [
+        "Digestão",
+        "Respiração",
+        "Controle e coordenação do corpo",
+        "Circulação sanguínea"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é energia cinética?",
+      "alternativas": [
+        "Energia armazenada",
+        "Energia do movimento",
+        "Energia térmica",
+        "Energia luminosa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o número atômico do carbono?",
+      "alternativas": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é biodiversidade?",
+      "alternativas": [
+        "Variedade de formas de vida",
+        "Apenas espécies de animais",
+        "Apenas espécies de plantas",
+        "Diversidade de rochas"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta tem anéis mais visíveis?",
+      "alternativas": [
+        "Júpiter",
+        "Urano",
+        "Saturno",
+        "Netuno"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é condensação?",
+      "alternativas": [
+        "Passagem de líquido para sólido",
+        "Passagem de gás para líquido",
+        "Passagem de sólido para gás",
+        "Passagem de líquido para gás"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função dos rins?",
+      "alternativas": [
+        "Produzir hormônios",
+        "Filtrar o sangue e produzir urina",
+        "Bombear sangue",
+        "Digerir alimentos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um elétron?",
+      "alternativas": [
+        "Partícula positiva",
+        "Partícula negativa",
+        "Partícula neutra",
+        "Um tipo de átomo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a Lei de Newton que fala sobre ação e reação?",
+      "alternativas": [
+        "Primeira Lei",
+        "Segunda Lei",
+        "Terceira Lei",
+        "Quarta Lei"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é o efeito estufa?",
+      "alternativas": [
+        "Resfriamento da atmosfera",
+        "Aquecimento causado por gases na atmosfera",
+        "Formação de nuvens",
+        "Chuva ácida"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o órgão responsável pela produção de insulina?",
+      "alternativas": [
+        "Fígado",
+        "Rim",
+        "Pâncreas",
+        "Estômago"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é matéria?",
+      "alternativas": [
+        "Apenas sólidos",
+        "Tudo que ocupa espaço e tem massa",
+        "Apenas líquidos e gases",
+        "Energia condensada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quantos estados físicos da matéria existem classicamente?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a cadeia alimentar?",
+      "alternativas": [
+        "Produção industrial de alimentos",
+        "Sequência de quem come quem na natureza",
+        "Rede de supermercados",
+        "Digestão dos alimentos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual vitamina é produzida pela exposição ao sol?",
+      "alternativas": [
+        "Vitamina A",
+        "Vitamina C",
+        "Vitamina D",
+        "Vitamina E"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um próton?",
+      "alternativas": [
+        "Partícula negativa",
+        "Partícula neutra",
+        "Partícula positiva",
+        "Um tipo de elétron"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a estrela mais próxima da Terra?",
+      "alternativas": [
+        "Alpha Centauri",
+        "Sirius",
+        "Sol",
+        "Proxima Centauri"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é inércia?",
+      "alternativas": [
+        "Tendência de um corpo manter seu estado de movimento",
+        "Força de atrito",
+        "Aceleração constante",
+        "Velocidade variável"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o símbolo químico da prata?",
+      "alternativas": [
+        "Au",
+        "Ag",
+        "Pt",
+        "Pb"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que são combustíveis fósseis?",
+      "alternativas": [
+        "Combustíveis de origem vegetal recente",
+        "Combustíveis derivados de restos orgânicos antigos",
+        "Combustíveis sintéticos",
+        "Combustíveis nucleares"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função do estômago?",
+      "alternativas": [
+        "Absorver nutrientes",
+        "Digerir alimentos com suco gástrico",
+        "Produzir enzimas pancreáticas",
+        "Armazenar bile"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é uma molécula?",
+      "alternativas": [
+        "Um átomo isolado",
+        "União de dois ou mais átomos",
+        "Uma partícula subatômica",
+        "Um íon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual gás as plantas absorvem na fotossíntese?",
+      "alternativas": [
+        "Oxigênio",
+        "Nitrogênio",
+        "Dióxido de carbono",
+        "Hidrogênio"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é termodinâmica?",
+      "alternativas": [
+        "Estudo da luz",
+        "Estudo do calor e energia",
+        "Estudo do som",
+        "Estudo da eletricidade"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o metal mais abundante na crosta terrestre?",
+      "alternativas": [
+        "Ferro",
+        "Alumínio",
+        "Cobre",
+        "Zinco"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é eletricidade estática?",
+      "alternativas": [
+        "Corrente elétrica contínua",
+        "Acúmulo de cargas elétricas em repouso",
+        "Energia magnética",
+        "Calor elétrico"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o planeta mais quente do Sistema Solar?",
+      "alternativas": [
+        "Mercúrio",
+        "Vênus",
+        "Marte",
+        "Júpiter"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é erosão?",
+      "alternativas": [
+        "Formação de montanhas",
+        "Desgaste do solo por agentes naturais",
+        "Crescimento de plantas",
+        "Movimento das placas tectônicas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função da hemoglobina?",
+      "alternativas": [
+        "Coagular o sangue",
+        "Transportar oxigênio",
+        "Combater infecções",
+        "Produzir anticorpos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um isótopo?",
+      "alternativas": [
+        "Átomos de elementos diferentes",
+        "Átomos do mesmo elemento com nêutrons diferentes",
+        "Moléculas iguais",
+        "Íons positivos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a unidade de medida de energia?",
+      "alternativas": [
+        "Newton",
+        "Watt",
+        "Joule",
+        "Volt"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a teoria da evolução?",
+      "alternativas": [
+        "Criação instantânea das espécies",
+        "Mudança gradual das espécies ao longo do tempo",
+        "Extinção de todas as espécies",
+        "Clonagem natural"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual órgão produz a bile?",
+      "alternativas": [
+        "Pâncreas",
+        "Estômago",
+        "Fígado",
+        "Vesícula biliar"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um vulcão?",
+      "alternativas": [
+        "Montanha formada por erosão",
+        "Abertura na crosta que expele magma",
+        "Depressão no solo",
+        "Formação de gelo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a velocidade do som no ar (aproximadamente)?",
+      "alternativas": [
+        "100 m/s",
+        "343 m/s",
+        "500 m/s",
+        "1000 m/s"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a clorofila?",
+      "alternativas": [
+        "Pigmento que dá cor verde às plantas",
+        "Vitamina das plantas",
+        "Hormônio vegetal",
+        "Açúcar das plantas"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o menor planeta do Sistema Solar?",
+      "alternativas": [
+        "Marte",
+        "Vênus",
+        "Mercúrio",
+        "Plutão"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um terremoto?",
+      "alternativas": [
+        "Movimento das nuvens",
+        "Tremor causado por movimentos tectônicos",
+        "Erupção vulcânica",
+        "Deslizamento de terra"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função do intestino grosso?",
+      "alternativas": [
+        "Digerir proteínas",
+        "Absorver água e formar fezes",
+        "Produzir enzimas",
+        "Absorver gorduras"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é fissão nuclear?",
+      "alternativas": [
+        "União de núcleos atômicos",
+        "Divisão de núcleos atômicos",
+        "Reação química comum",
+        "Decomposição radioativa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o nome da galáxia onde está a Terra?",
+      "alternativas": [
+        "Andrômeda",
+        "Via Láctea",
+        "Magalhães",
+        "Sombrero"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um condutor elétrico?",
+      "alternativas": [
+        "Material que não permite passagem de corrente",
+        "Material que permite passagem de corrente",
+        "Material isolante",
+        "Material magnético"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a fórmula do sal de cozinha?",
+      "alternativas": [
+        "H2O",
+        "NaCl",
+        "CO2",
+        "CaCO3"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é metamorfose?",
+      "alternativas": [
+        "Reprodução assexuada",
+        "Transformação física durante o desenvolvimento",
+        "Migração de animais",
+        "Hibernação"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o órgão responsável pela visão?",
+      "alternativas": [
+        "Ouvido",
+        "Nariz",
+        "Olho",
+        "Pele"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é pressão atmosférica?",
+      "alternativas": [
+        "Peso da água sobre objetos",
+        "Peso do ar sobre a superfície",
+        "Força do vento",
+        "Temperatura do ar"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual cientista formulou as leis do movimento?",
+      "alternativas": [
+        "Galileu Galilei",
+        "Isaac Newton",
+        "Albert Einstein",
+        "Nicolau Copérnico"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um tsunami?",
+      "alternativas": [
+        "Tempestade de areia",
+        "Onda gigante causada por terremoto submarino",
+        "Furacão marítimo",
+        "Maré alta"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função das plaquetas no sangue?",
+      "alternativas": [
+        "Transportar oxigênio",
+        "Combater infecções",
+        "Auxiliar na coagulação",
+        "Transportar nutrientes"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é fusão nuclear?",
+      "alternativas": [
+        "Divisão de núcleos",
+        "União de núcleos atômicos",
+        "Decaimento radioativo",
+        "Reação química"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o principal componente do ar que respiramos?",
+      "alternativas": [
+        "Oxigênio",
+        "Dióxido de carbono",
+        "Nitrogênio",
+        "Hélio"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um gene?",
+      "alternativas": [
+        "Uma célula",
+        "Uma proteína",
+        "Unidade de informação hereditária",
+        "Um vírus"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta tem a Grande Mancha Vermelha?",
+      "alternativas": [
+        "Marte",
+        "Júpiter",
+        "Saturno",
+        "Netuno"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é sublimação?",
+      "alternativas": [
+        "Passagem de líquido para gás",
+        "Passagem de sólido para gás diretamente",
+        "Passagem de gás para líquido",
+        "Passagem de sólido para líquido"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função do cerebelo?",
+      "alternativas": [
+        "Controlar emoções",
+        "Coordenar movimentos e equilíbrio",
+        "Processar a visão",
+        "Regular a temperatura"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um ímã?",
+      "alternativas": [
+        "Material que conduz eletricidade",
+        "Material que atrai ferro e outros metais",
+        "Material isolante",
+        "Material radioativo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a unidade de medida de potência?",
+      "alternativas": [
+        "Joule",
+        "Newton",
+        "Watt",
+        "Ampere"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que são bactérias?",
+      "alternativas": [
+        "Vírus grandes",
+        "Organismos unicelulares procariontes",
+        "Fungos microscópicos",
+        "Células animais"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o símbolo químico do ferro?",
+      "alternativas": [
+        "Fr",
+        "Fe",
+        "Fi",
+        "Fo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é refração da luz?",
+      "alternativas": [
+        "Reflexão da luz",
+        "Desvio da luz ao mudar de meio",
+        "Absorção da luz",
+        "Dispersão da luz"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quantos sentidos o ser humano possui tradicionalmente?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é o ciclo da água?",
+      "alternativas": [
+        "Apenas a chuva",
+        "Circulação contínua da água na natureza",
+        "Tratamento de água",
+        "Consumo de água"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a partícula responsável pela carga elétrica positiva?",
+      "alternativas": [
+        "Elétron",
+        "Nêutron",
+        "Próton",
+        "Fóton"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é o Sistema Solar?",
+      "alternativas": [
+        "Uma galáxia",
+        "O Sol e os corpos que o orbitam",
+        "Apenas os planetas",
+        "O universo inteiro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função do diafragma na respiração?",
+      "alternativas": [
+        "Filtrar o ar",
+        "Aquecer o ar",
+        "Contrair e expandir os pulmões",
+        "Produzir muco"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um polímero?",
+      "alternativas": [
+        "Molécula pequena",
+        "Grande molécula formada por unidades repetidas",
+        "Um tipo de metal",
+        "Um gás nobre"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual instrumento mede a temperatura?",
+      "alternativas": [
+        "Barômetro",
+        "Termômetro",
+        "Higrômetro",
+        "Anemômetro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é clone?",
+      "alternativas": [
+        "Gêmeo natural",
+        "Cópia geneticamente idêntica",
+        "Híbrido de espécies",
+        "Mutação genética"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o órgão central do sistema circulatório?",
+      "alternativas": [
+        "Pulmão",
+        "Fígado",
+        "Coração",
+        "Rim"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é energia potencial?",
+      "alternativas": [
+        "Energia do movimento",
+        "Energia armazenada devido à posição",
+        "Energia térmica",
+        "Energia sonora"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta gira de lado em relação à sua órbita?",
+      "alternativas": [
+        "Marte",
+        "Vênus",
+        "Urano",
+        "Netuno"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é pH?",
+      "alternativas": [
+        "Medida de temperatura",
+        "Medida de acidez ou basicidade",
+        "Medida de pressão",
+        "Medida de peso"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função da medula óssea?",
+      "alternativas": [
+        "Produzir hormônios",
+        "Produzir células sanguíneas",
+        "Armazenar cálcio",
+        "Transmitir impulsos nervosos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é radioatividade?",
+      "alternativas": [
+        "Emissão de luz visível",
+        "Emissão de radiação por núcleos instáveis",
+        "Condução de eletricidade",
+        "Reflexão de ondas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o número atômico do oxigênio?",
+      "alternativas": [
+        "6",
+        "8",
+        "10",
+        "16"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é simbiose?",
+      "alternativas": [
+        "Competição entre espécies",
+        "Relação benéfica entre espécies diferentes",
+        "Predação",
+        "Parasitismo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a unidade de medida de corrente elétrica?",
+      "alternativas": [
+        "Volt",
+        "Ohm",
+        "Ampere",
+        "Watt"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que são células-tronco?",
+      "alternativas": [
+        "Células mortas",
+        "Células que podem se transformar em outros tipos",
+        "Células cancerosas",
+        "Células vegetais"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta é conhecido como o 'Gigante Gasoso'?",
+      "alternativas": [
+        "Marte",
+        "Saturno",
+        "Júpiter",
+        "Terra"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a Lei da Gravidade Universal?",
+      "alternativas": [
+        "Corpos se repelem",
+        "Corpos com massa se atraem proporcionalmente",
+        "Apenas a Terra tem gravidade",
+        "Gravidade só existe no espaço"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função das enzimas?",
+      "alternativas": [
+        "Armazenar energia",
+        "Acelerar reações químicas",
+        "Transportar oxigênio",
+        "Produzir hormônios"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um ano-luz?",
+      "alternativas": [
+        "Unidade de tempo",
+        "Distância que a luz percorre em um ano",
+        "Velocidade da luz",
+        "Tempo de vida de uma estrela"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o processo de transformação de larva em adulto?",
+      "alternativas": [
+        "Mutação",
+        "Metamorfose",
+        "Reprodução",
+        "Regeneração"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um semicondutor?",
+      "alternativas": [
+        "Material que sempre conduz eletricidade",
+        "Material que nunca conduz eletricidade",
+        "Material com condutividade intermediária",
+        "Material magnético"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a temperatura do zero absoluto?",
+      "alternativas": [
+        "0°C",
+        "-100°C",
+        "-273,15°C",
+        "-373°C"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um herbívoro?",
+      "alternativas": [
+        "Animal que come carne",
+        "Animal que come plantas",
+        "Animal que come de tudo",
+        "Animal que não come"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o símbolo químico do sódio?",
+      "alternativas": [
+        "So",
+        "Na",
+        "Sd",
+        "S"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a Primeira Lei da Termodinâmica?",
+      "alternativas": [
+        "Energia pode ser criada",
+        "Energia pode ser destruída",
+        "Energia se conserva, apenas se transforma",
+        "Energia desaparece com o tempo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função do baço?",
+      "alternativas": [
+        "Produzir bile",
+        "Filtrar sangue e reciclar células velhas",
+        "Digerir alimentos",
+        "Produzir insulina"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um cometa?",
+      "alternativas": [
+        "Estrela cadente",
+        "Corpo de gelo e rocha que orbita o Sol",
+        "Planeta anão",
+        "Satélite artificial"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a diferença entre massa e peso?",
+      "alternativas": [
+        "São a mesma coisa",
+        "Massa é quantidade de matéria, peso é força gravitacional",
+        "Peso é quantidade de matéria, massa é força",
+        "Massa varia com a gravidade"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é polinização?",
+      "alternativas": [
+        "Germinação de sementes",
+        "Transferência de pólen para reprodução",
+        "Crescimento da planta",
+        "Queda das folhas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o elemento químico representado pela letra 'O'?",
+      "alternativas": [
+        "Ouro",
+        "Ã“smio",
+        "Oxigênio",
+        "Oganessônio"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um carnívoro?",
+      "alternativas": [
+        "Animal que come plantas",
+        "Animal que come carne",
+        "Animal que come de tudo",
+        "Animal que come insetos apenas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual instrumento mede a pressão atmosférica?",
+      "alternativas": [
+        "Termômetro",
+        "Barômetro",
+        "Anemômetro",
+        "Pluviômetro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a estratosfera?",
+      "alternativas": [
+        "Camada mais baixa da atmosfera",
+        "Camada onde está a camada de ozônio",
+        "Camada mais externa da atmosfera",
+        "O espaço sideral"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função dos ribossomos?",
+      "alternativas": [
+        "Produzir energia",
+        "Sintetizar proteínas",
+        "Armazenar DNA",
+        "Digerir substâncias"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é frequência de uma onda?",
+      "alternativas": [
+        "Altura da onda",
+        "Número de oscilações por segundo",
+        "Velocidade da onda",
+        "Comprimento da onda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta tem o dia mais longo do Sistema Solar?",
+      "alternativas": [
+        "Mercúrio",
+        "Vênus",
+        "Júpiter",
+        "Terra"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é alelo?",
+      "alternativas": [
+        "Um cromossomo inteiro",
+        "Versões diferentes de um gene",
+        "Uma célula especial",
+        "Um tipo de proteína"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a unidade de medida de tensão elétrica?",
+      "alternativas": [
+        "Ampere",
+        "Watt",
+        "Volt",
+        "Ohm"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um onívoro?",
+      "alternativas": [
+        "Animal que come apenas plantas",
+        "Animal que come apenas carne",
+        "Animal que come plantas e carne",
+        "Animal que não come"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a camada mais externa da Terra?",
+      "alternativas": [
+        "Manto",
+        "Núcleo",
+        "Crosta",
+        "Astenosfera"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um laser?",
+      "alternativas": [
+        "Luz comum amplificada",
+        "Luz coerente e concentrada",
+        "Raio X colorido",
+        "Onda de rádio visível"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual cientista descobriu as leis do movimento planetário?",
+      "alternativas": [
+        "Copérnico",
+        "Galileu",
+        "Kepler",
+        "Newton"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a biosfera?",
+      "alternativas": [
+        "Apenas os oceanos",
+        "Região da Terra onde existe vida",
+        "Apenas as florestas",
+        "A atmosfera inteira"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função do esôfago?",
+      "alternativas": [
+        "Digerir alimentos",
+        "Transportar alimentos ao estômago",
+        "Absorver nutrientes",
+        "Produzir enzimas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um nêutron?",
+      "alternativas": [
+        "Partícula positiva",
+        "Partícula negativa",
+        "Partícula sem carga",
+        "Um tipo de elétron"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o ciclo de vida de uma borboleta?",
+      "alternativas": [
+        "Ovo, larva, adulto",
+        "Ovo, larva, pupa, adulto",
+        "Ovo, ninfa, adulto",
+        "Larva, pupa, adulto"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é densidade?",
+      "alternativas": [
+        "Massa dividida por volume",
+        "Volume dividido por massa",
+        "Peso dividido por altura",
+        "Área dividida por tempo"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o planeta mais distante do Sol?",
+      "alternativas": [
+        "Urano",
+        "Plutão",
+        "Netuno",
+        "Saturno"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é o RNA?",
+      "alternativas": [
+        "Ácido nucleico que copia informação do DNA",
+        "Um tipo de proteína",
+        "Um carboidrato",
+        "Um lipídio"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a Lei de Ohm?",
+      "alternativas": [
+        "F = m Ã— a",
+        "V = R Ã— I",
+        "E = m Ã— cÂ²",
+        "P = V Ã— I"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que são fungos?",
+      "alternativas": [
+        "Plantas sem clorofila",
+        "Organismos heterotróficos com parede celular",
+        "Bactérias grandes",
+        "Vírus complexos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a estrela mais brilhante no céu noturno?",
+      "alternativas": [
+        "Polaris",
+        "Betelgeuse",
+        "Sirius",
+        "Alpha Centauri"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é aceleração?",
+      "alternativas": [
+        "Velocidade constante",
+        "Variação da velocidade no tempo",
+        "Distância percorrida",
+        "Força aplicada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função das brânquias?",
+      "alternativas": [
+        "Locomoção",
+        "Respiração aquática",
+        "Reprodução",
+        "Digestão"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um átomo neutro?",
+      "alternativas": [
+        "Átomo com mais prótons que elétrons",
+        "Átomo com igual número de prótons e elétrons",
+        "Átomo sem elétrons",
+        "Átomo sem prótons"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta tem ventos mais rápidos do Sistema Solar?",
+      "alternativas": [
+        "Júpiter",
+        "Saturno",
+        "Urano",
+        "Netuno"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a teoria do Big Bang?",
+      "alternativas": [
+        "Teoria sobre o fim do universo",
+        "Teoria sobre a origem do universo",
+        "Teoria sobre buracos negros",
+        "Teoria sobre galáxias"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função da tireóide?",
+      "alternativas": [
+        "Filtrar sangue",
+        "Produzir hormônios metabólicos",
+        "Produzir insulina",
+        "Armazenar bile"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um ecossistema aquático?",
+      "alternativas": [
+        "Apenas os oceanos",
+        "Ambiente aquático com seres vivos interagindo",
+        "Apenas rios",
+        "Água sem vida"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o símbolo químico do cálcio?",
+      "alternativas": [
+        "C",
+        "Ca",
+        "Cl",
+        "Co"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é resistência elétrica?",
+      "alternativas": [
+        "Facilidade de passagem de corrente",
+        "Oposição à passagem de corrente",
+        "Armazenamento de carga",
+        "Produção de energia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a diferença entre célula animal e vegetal?",
+      "alternativas": [
+        "Apenas o tamanho",
+        "Célula vegetal tem parede celular e cloroplastos",
+        "Célula animal tem cloroplastos",
+        "Não há diferença"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um asteroide?",
+      "alternativas": [
+        "Estrela pequena",
+        "Corpo rochoso que orbita o Sol",
+        "Satélite natural",
+        "Cometa sem cauda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a unidade de medida de resistência elétrica?",
+      "alternativas": [
+        "Volt",
+        "Ampere",
+        "Watt",
+        "Ohm"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é o núcleo de uma célula?",
+      "alternativas": [
+        "Parte que produz energia",
+        "Parte que contém o material genético",
+        "Parte que faz digestão",
+        "Parede externa da célula"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a velocidade de escape da Terra?",
+      "alternativas": [
+        "5 km/s",
+        "7,9 km/s",
+        "11,2 km/s",
+        "15 km/s"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é difusão?",
+      "alternativas": [
+        "Movimento de partículas do mais concentrado para o menos",
+        "Movimento de partículas do menos para o mais concentrado",
+        "Separação de substâncias",
+        "Reação química"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual cientista propôs o modelo heliocêntrico?",
+      "alternativas": [
+        "Ptolomeu",
+        "Copérnico",
+        "Aristóteles",
+        "Tycho Brahe"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a hipófise?",
+      "alternativas": [
+        "Glândula que controla outras glândulas",
+        "Parte do estômago",
+        "Osso do crânio",
+        "Válvula do coração"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o processo de produção de gametas?",
+      "alternativas": [
+        "Mitose",
+        "Meiose",
+        "Fissão",
+        "Brotamento"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um campo magnético?",
+      "alternativas": [
+        "Área de influência gravitacional",
+        "Região onde forças magnéticas atuam",
+        "Campo elétrico estático",
+        "Área de pressão atmosférica"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta tem mais luas conhecidas?",
+      "alternativas": [
+        "Júpiter",
+        "Saturno",
+        "Urano",
+        "Netuno"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é homeostase?",
+      "alternativas": [
+        "Aumento de temperatura",
+        "Manutenção do equilíbrio interno",
+        "Processo de digestão",
+        "Formação de anticorpos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a fórmula da velocidade média?",
+      "alternativas": [
+        "v = d Ã— t",
+        "v = d / t",
+        "v = t / d",
+        "v = d + t"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que são protozoários?",
+      "alternativas": [
+        "Vírus grandes",
+        "Organismos unicelulares eucariontes",
+        "Bactérias especiais",
+        "Fungos microscópicos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o osso mais longo do corpo humano?",
+      "alternativas": [
+        "Tíbia",
+        "Ãšmero",
+        "Fêmur",
+        "Rádio"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é espectro eletromagnético?",
+      "alternativas": [
+        "Apenas luz visível",
+        "Todas as formas de radiação eletromagnética",
+        "Apenas raios X",
+        "Som em frequências altas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a maior lua do Sistema Solar?",
+      "alternativas": [
+        "Lua (Terra)",
+        "Europa (Júpiter)",
+        "Ganimedes (Júpiter)",
+        "Titã (Saturno)"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é o genoma?",
+      "alternativas": [
+        "Uma proteína",
+        "Conjunto completo de genes de um organismo",
+        "Um tipo de célula",
+        "Uma enzima"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função do complexo de Golgi?",
+      "alternativas": [
+        "Produzir energia",
+        "Processar e empacotar proteínas",
+        "Armazenar DNA",
+        "Realizar fotossíntese"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é momento linear?",
+      "alternativas": [
+        "Energia de rotação",
+        "Produto de massa por velocidade",
+        "Força gravitacional",
+        "Aceleração centrípeta"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o planeta com maior inclinação axial?",
+      "alternativas": [
+        "Marte",
+        "Vênus",
+        "Urano",
+        "Plutão"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é uma vacina?",
+      "alternativas": [
+        "Medicamento que cura doenças",
+        "Substância que estimula o sistema imunológico",
+        "Antibiótico natural",
+        "Vitamina concentrada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a fórmula da energia cinética?",
+      "alternativas": [
+        "E = mgh",
+        "E = Â½mvÂ²",
+        "E = mcÂ²",
+        "E = Fd"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que são anfíbios?",
+      "alternativas": [
+        "Animais que vivem só na água",
+        "Animais que vivem só na terra",
+        "Animais que vivem na água e na terra",
+        "Animais voadores"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual elemento químico é essencial para os ossos?",
+      "alternativas": [
+        "Ferro",
+        "Potássio",
+        "Cálcio",
+        "Sódio"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é a ionosfera?",
+      "alternativas": [
+        "Camada com partículas carregadas na atmosfera",
+        "O núcleo da Terra",
+        "Camada de gelo polar",
+        "Zona profunda do oceano"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a Segunda Lei de Newton?",
+      "alternativas": [
+        "Lei da inércia",
+        "F = m Ã— a",
+        "Ação e reação",
+        "Lei da gravidade"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que são lipídios?",
+      "alternativas": [
+        "Açúcares complexos",
+        "Proteínas especiais",
+        "Gorduras e óleos",
+        "Ácidos nucleicos"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual planeta gira no sentido contrário aos demais?",
+      "alternativas": [
+        "Marte",
+        "Vênus",
+        "Urano",
+        "Netuno"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é um fóssil?",
+      "alternativas": [
+        "Rocha vulcânica",
+        "Resto preservado de organismo antigo",
+        "Mineral precioso",
+        "Cristal de gelo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a função da insulina?",
+      "alternativas": [
+        "Aumentar a glicose no sangue",
+        "Regular a glicose no sangue",
+        "Produzir energia",
+        "Combater infecções"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "O que é trabalho em física?",
+      "alternativas": [
+        "Força vezes distância",
+        "Massa vezes aceleração",
+        "Velocidade vezes tempo",
+        "Energia vezes potência"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a maior estrutura do corpo humano?",
+      "alternativas": [
+        "Intestino delgado",
+        "Sistema circulatório",
+        "Sistema nervoso",
+        "Pele"
+      ],
+      "correta": 3
+    }
+  ]
+}

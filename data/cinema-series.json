@@ -1,0 +1,1852 @@
+{
+  "perguntas": [
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme ganhou o Oscar de Melhor Filme em 2024?",
+      "alternativas": [
+        "Barbie",
+        "Oppenheimer",
+        "Pobres Criaturas",
+        "Os Rejeitados"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'O Poderoso Chefão'?",
+      "alternativas": [
+        "Martin Scorsese",
+        "Francis Ford Coppola",
+        "Steven Spielberg",
+        "Brian De Palma"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Batman em 'O Cavaleiro das Trevas'?",
+      "alternativas": [
+        "Ben Affleck",
+        "Christian Bale",
+        "Robert Pattinson",
+        "Michael Keaton"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Em qual filme Marlon Brando faz a famosa cena com algodão na boca?",
+      "alternativas": [
+        "Apocalypse Now",
+        "O Ãšltimo Tango em Paris",
+        "O Poderoso Chefão",
+        "Um Bonde Chamado Desejo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor é conhecido por 'Pulp Fiction'?",
+      "alternativas": [
+        "Martin Scorsese",
+        "Quentin Tarantino",
+        "David Fincher",
+        "Christopher Nolan"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantos filmes compõem a trilogia original de Star Wars?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Jack Sparrow em 'Piratas do Caribe'?",
+      "alternativas": [
+        "Orlando Bloom",
+        "Johnny Depp",
+        "Geoffrey Rush",
+        "Javier Bardem"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o nome do vilão principal de 'O Senhor dos Anéis'?",
+      "alternativas": [
+        "Saruman",
+        "Sauron",
+        "Gollum",
+        "Morgoth"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'Titanic'?",
+      "alternativas": [
+        "Steven Spielberg",
+        "James Cameron",
+        "Ridley Scott",
+        "Peter Jackson"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme tem a fala 'Aqui está o Johnny!'?",
+      "alternativas": [
+        "Psicose",
+        "O Iluminado",
+        "Halloween",
+        "Sexta-Feira 13"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Forrest Gump?",
+      "alternativas": [
+        "Brad Pitt",
+        "Tom Hanks",
+        "Kevin Costner",
+        "Dustin Hoffman"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de animação da Pixar foi lançado primeiro?",
+      "alternativas": [
+        "Vida de Inseto",
+        "Toy Story",
+        "Monstros S.A.",
+        "Procurando Nemo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Em qual ano foi lançado 'Matrix'?",
+      "alternativas": [
+        "1997",
+        "1998",
+        "1999",
+        "2000"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Neo em 'Matrix'?",
+      "alternativas": [
+        "Brad Pitt",
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Hugo Weaving"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor criou 'Cidade de Deus'?",
+      "alternativas": [
+        "Walter Salles",
+        "Fernando Meirelles",
+        "José Padilha",
+        "Cláudio Torres"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da HBO se passa em Westeros?",
+      "alternativas": [
+        "The Witcher",
+        "Game of Thrones",
+        "Vikings",
+        "The Last Kingdom"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantas temporadas tem 'Breaking Bad'?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem é o protagonista de 'Breaking Bad'?",
+      "alternativas": [
+        "Jesse Pinkman",
+        "Walter White",
+        "Saul Goodman",
+        "Hank Schrader"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Walter White?",
+      "alternativas": [
+        "Aaron Paul",
+        "Bryan Cranston",
+        "Bob Odenkirk",
+        "Dean Norris"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série é spin-off de 'Breaking Bad'?",
+      "alternativas": [
+        "The Wire",
+        "Better Call Saul",
+        "Ozark",
+        "Narcos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Em qual cidade se passa 'Friends'?",
+      "alternativas": [
+        "Los Angeles",
+        "Chicago",
+        "Nova York",
+        "Boston"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantos amigos principais tem em 'Friends'?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o bordão de Joey em 'Friends'?",
+      "alternativas": [
+        "Pivot!",
+        "How you doin'?",
+        "We were on a break!",
+        "Oh my God!"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem criou 'The Office' americano?",
+      "alternativas": [
+        "Ricky Gervais",
+        "Greg Daniels",
+        "Michael Schur",
+        "Dan Harmon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Michael Scott em 'The Office'?",
+      "alternativas": [
+        "Rainn Wilson",
+        "Steve Carell",
+        "John Krasinski",
+        "Ed Helms"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série brasileira se passa em uma favela carioca?",
+      "alternativas": [
+        "3%",
+        "Irmandade",
+        "Cidade dos Homens",
+        "Supermax"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'A Lista de Schindler'?",
+      "alternativas": [
+        "Martin Scorsese",
+        "Steven Spielberg",
+        "Roman Polanski",
+        "Ridley Scott"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Coringa em 'O Cavaleiro das Trevas'?",
+      "alternativas": [
+        "Jared Leto",
+        "Joaquin Phoenix",
+        "Heath Ledger",
+        "Jack Nicholson"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme mostra a história de Chris Gardner?",
+      "alternativas": [
+        "Ã€ Procura da Felicidade",
+        "Coach Carter",
+        "Homens de Honra",
+        "Ray"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Tony Stark/Homem de Ferro?",
+      "alternativas": [
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Robert Downey Jr.",
+        "Mark Ruffalo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o primeiro filme do MCU (Universo Cinematográfico Marvel)?",
+      "alternativas": [
+        "Capitão América",
+        "Thor",
+        "Homem de Ferro",
+        "Os Vingadores"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual vilão é interpretado por Josh Brolin no MCU?",
+      "alternativas": [
+        "Ultron",
+        "Loki",
+        "Thanos",
+        "Hela"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantas Joias do Infinito existem no MCU?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor criou o conceito de 'suspense cinematográfico'?",
+      "alternativas": [
+        "Stanley Kubrick",
+        "Alfred Hitchcock",
+        "Orson Welles",
+        "Billy Wilder"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Hitchcock se passa em um motel?",
+      "alternativas": [
+        "Os Pássaros",
+        "Psicose",
+        "Janela Indiscreta",
+        "Um Corpo que Cai"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Hannibal Lecter em 'O Silêncio dos Inocentes'?",
+      "alternativas": [
+        "Anthony Hopkins",
+        "Mads Mikkelsen",
+        "Brian Cox",
+        "Gaspard Ulliel"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme tem a frase 'A vida é como uma caixa de chocolates'?",
+      "alternativas": [
+        "Rain Man",
+        "Forrest Gump",
+        "O Show de Truman",
+        "Big Fish"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'E.T. - O Extraterrestre'?",
+      "alternativas": [
+        "George Lucas",
+        "Steven Spielberg",
+        "James Cameron",
+        "Robert Zemeckis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Indiana Jones?",
+      "alternativas": [
+        "Mel Gibson",
+        "Harrison Ford",
+        "Bruce Willis",
+        "Kurt Russell"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Em qual filme Audrey Hepburn toma café da manhã olhando uma vitrine?",
+      "alternativas": [
+        "Sabrina",
+        "Bonequinha de Luxo",
+        "Minha Bela Dama",
+        "Cinderela em Paris"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor japonês criou 'Os Sete Samurais'?",
+      "alternativas": [
+        "Yasujiro Ozu",
+        "Akira Kurosawa",
+        "Kenji Mizoguchi",
+        "Hayao Miyazaki"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'A Viagem de Chihiro'?",
+      "alternativas": [
+        "Isao Takahata",
+        "Hayao Miyazaki",
+        "Makoto Shinkai",
+        "Mamoru Hosoda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual estúdio de animação japonês criou 'Meu Amigo Totoro'?",
+      "alternativas": [
+        "Toei Animation",
+        "Studio Ghibli",
+        "Madhouse",
+        "Sunrise"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Miyazaki ganhou o Oscar de Melhor Animação?",
+      "alternativas": [
+        "Meu Amigo Totoro",
+        "Princesa Mononoke",
+        "A Viagem de Chihiro",
+        "O Castelo Animado"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série coreana popularizou o jogo 'Red Light, Green Light'?",
+      "alternativas": [
+        "All of Us Are Dead",
+        "Round 6 (Squid Game)",
+        "Sweet Home",
+        "Hellbound"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme coreano ganhou o Oscar de Melhor Filme em 2020?",
+      "alternativas": [
+        "Oldboy",
+        "Parasita",
+        "A Criada",
+        "Memories of Murder"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'Parasita'?",
+      "alternativas": [
+        "Park Chan-wook",
+        "Bong Joon-ho",
+        "Kim Jee-woon",
+        "Hong Sang-soo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor é conhecido pela 'Trilogia da Vingança' coreana?",
+      "alternativas": [
+        "Bong Joon-ho",
+        "Park Chan-wook",
+        "Kim Ki-duk",
+        "Lee Chang-dong"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme faz parte da 'Trilogia da Vingança'?",
+      "alternativas": [
+        "Train to Busan",
+        "Oldboy",
+        "Memórias de um Assassino",
+        "A Criada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta o Coringa no filme de 2019?",
+      "alternativas": [
+        "Jared Leto",
+        "Heath Ledger",
+        "Joaquin Phoenix",
+        "Barry Keoghan"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual atriz interpreta Barbie no filme de 2023?",
+      "alternativas": [
+        "Emma Stone",
+        "Margot Robbie",
+        "Scarlett Johansson",
+        "Emma Watson"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'Barbie' (2023)?",
+      "alternativas": [
+        "Sofia Coppola",
+        "Greta Gerwig",
+        "Patty Jenkins",
+        "Chloe Zhao"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Ken em 'Barbie' (2023)?",
+      "alternativas": [
+        "Timothée Chalamet",
+        "Ryan Gosling",
+        "Austin Butler",
+        "Tom Holland"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'Oppenheimer'?",
+      "alternativas": [
+        "Denis Villeneuve",
+        "Christopher Nolan",
+        "David Fincher",
+        "Ridley Scott"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta J. Robert Oppenheimer?",
+      "alternativas": [
+        "Benedict Cumberbatch",
+        "Cillian Murphy",
+        "Eddie Redmayne",
+        "Tom Hiddleston"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da Netflix é sobre xadrez?",
+      "alternativas": [
+        "The Crown",
+        "O Gambito da Rainha",
+        "Ozark",
+        "Stranger Things"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Beth Harmon em 'O Gambito da Rainha'?",
+      "alternativas": [
+        "Emma Stone",
+        "Anya Taylor-Joy",
+        "Saoirse Ronan",
+        "Florence Pugh"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série mostra a história da família real britânica?",
+      "alternativas": [
+        "Downton Abbey",
+        "The Crown",
+        "Victoria",
+        "Bridgerton"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantas temporadas tem 'Stranger Things'?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Em qual década se passa 'Stranger Things'?",
+      "alternativas": [
+        "1970",
+        "1980",
+        "1990",
+        "2000"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o nome do mundo invertido em 'Stranger Things'?",
+      "alternativas": [
+        "The Upside Down",
+        "The Other Side",
+        "The Dark World",
+        "The Mirror Realm"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem criou 'Stranger Things'?",
+      "alternativas": [
+        "J.J. Abrams",
+        "Os Irmãos Duffer",
+        "Jordan Peele",
+        "Mike Flanagan"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série espanhola se passa em uma casa da moeda?",
+      "alternativas": [
+        "Elite",
+        "La Casa de Papel",
+        "Vis a Vis",
+        "O Pier"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o codinome do líder em 'La Casa de Papel'?",
+      "alternativas": [
+        "Tokyo",
+        "Berlin",
+        "O Professor",
+        "Denver"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Christopher Nolan se passa em sonhos?",
+      "alternativas": [
+        "Tenet",
+        "A Origem",
+        "Interestelar",
+        "O Grande Truque"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Dom Cobb em 'A Origem'?",
+      "alternativas": [
+        "Christian Bale",
+        "Leonardo DiCaprio",
+        "Tom Hardy",
+        "Joseph Gordon-Levitt"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Nolan viaja pelo espaço e tempo?",
+      "alternativas": [
+        "A Origem",
+        "Tenet",
+        "Interestelar",
+        "Dunkirk"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Cooper em 'Interestelar'?",
+      "alternativas": [
+        "Matt Damon",
+        "Matthew McConaughey",
+        "Michael Caine",
+        "Casey Affleck"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor é conhecido por 'Clube da Luta'?",
+      "alternativas": [
+        "Christopher Nolan",
+        "David Fincher",
+        "Darren Aronofsky",
+        "Denis Villeneuve"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Tyler Durden em 'Clube da Luta'?",
+      "alternativas": [
+        "Edward Norton",
+        "Brad Pitt",
+        "Jared Leto",
+        "Meat Loaf"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é a primeira regra do Clube da Luta?",
+      "alternativas": [
+        "Lutar até o fim",
+        "Não falar sobre o Clube da Luta",
+        "Só homens podem participar",
+        "Sem armas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Fincher é sobre um serial killer baseado nos pecados capitais?",
+      "alternativas": [
+        "Zodíaco",
+        "Se7en - Os Sete Crimes Capitais",
+        "A Rede Social",
+        "O Quarto do Pânico"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta o detetive Somerset em 'Se7en'?",
+      "alternativas": [
+        "Brad Pitt",
+        "Morgan Freeman",
+        "Kevin Spacey",
+        "Denzel Washington"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor criou 'O Labirinto do Fauno'?",
+      "alternativas": [
+        "Alfonso Cuarón",
+        "Alejandro González Iñárritu",
+        "Guillermo del Toro",
+        "Robert Rodriguez"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Guillermo del Toro ganhou Oscar de Melhor Filme?",
+      "alternativas": [
+        "O Labirinto do Fauno",
+        "A Forma da Água",
+        "Círculo de Fogo",
+        "Beco do Pesadelo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'Birdman'?",
+      "alternativas": [
+        "Alfonso Cuarón",
+        "Alejandro González Iñárritu",
+        "Guillermo del Toro",
+        "Denis Villeneuve"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Riggan Thomson em 'Birdman'?",
+      "alternativas": [
+        "Jake Gyllenhaal",
+        "Michael Keaton",
+        "Edward Norton",
+        "Zach Galifianakis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'Gravidade'?",
+      "alternativas": [
+        "Christopher Nolan",
+        "Alfonso Cuarón",
+        "Denis Villeneuve",
+        "Ridley Scott"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual atriz protagoniza 'Gravidade'?",
+      "alternativas": [
+        "Anne Hathaway",
+        "Sandra Bullock",
+        "Natalie Portman",
+        "Jessica Chastain"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor criou 'Duna' (2021)?",
+      "alternativas": [
+        "Christopher Nolan",
+        "Denis Villeneuve",
+        "Ridley Scott",
+        "James Cameron"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Paul Atreides em 'Duna'?",
+      "alternativas": [
+        "Tom Holland",
+        "Timothée Chalamet",
+        "Austin Butler",
+        "Barry Keoghan"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor é conhecido por 'Blade Runner 2049'?",
+      "alternativas": [
+        "Ridley Scott",
+        "Denis Villeneuve",
+        "Christopher Nolan",
+        "James Cameron"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu o 'Blade Runner' original (1982)?",
+      "alternativas": [
+        "Steven Spielberg",
+        "Ridley Scott",
+        "James Cameron",
+        "George Lucas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da HBO mostra um apocalipse zumbi?",
+      "alternativas": [
+        "The Walking Dead",
+        "The Last of Us",
+        "Fear the Walking Dead",
+        "Z Nation"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Em qual jogo é baseada a série 'The Last of Us'?",
+      "alternativas": [
+        "Resident Evil",
+        "The Last of Us (PlayStation)",
+        "Days Gone",
+        "Left 4 Dead"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Joel em 'The Last of Us' (série)?",
+      "alternativas": [
+        "Pedro Pascal",
+        "Oscar Isaac",
+        "Troy Baker",
+        "Josh Brolin"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da Disney+ é sobre um Mandaloriano?",
+      "alternativas": [
+        "Obi-Wan Kenobi",
+        "The Mandalorian",
+        "Andor",
+        "Ahsoka"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o nome do personagem 'Baby Yoda' em 'The Mandalorian'?",
+      "alternativas": [
+        "Yoda Jr.",
+        "Grogu",
+        "Yaddle",
+        "Minch"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série é spin-off de 'Game of Thrones'?",
+      "alternativas": [
+        "The Witcher",
+        "House of the Dragon",
+        "Wheel of Time",
+        "Shadow and Bone"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual família é protagonista de 'House of the Dragon'?",
+      "alternativas": [
+        "Stark",
+        "Lannister",
+        "Targaryen",
+        "Baratheon"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série britânica mostra tecnologia distópica em episódios independentes?",
+      "alternativas": [
+        "Doctor Who",
+        "Black Mirror",
+        "Years and Years",
+        "Utopia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem criou 'Black Mirror'?",
+      "alternativas": [
+        "Steven Moffat",
+        "Charlie Brooker",
+        "Russell T Davies",
+        "Mark Gatiss"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da Netflix é sobre uma escola de elite espanhola?",
+      "alternativas": [
+        "La Casa de Papel",
+        "Elite",
+        "Vis a Vis",
+        "O Pier"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Eleven em 'Stranger Things'?",
+      "alternativas": [
+        "Sadie Sink",
+        "Millie Bobby Brown",
+        "Maya Hawke",
+        "Winona Ryder"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme ganhou 11 Oscars em 2004?",
+      "alternativas": [
+        "Avatar",
+        "Titanic",
+        "O Senhor dos Anéis: O Retorno do Rei",
+        "Ben-Hur"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu a trilogia 'O Senhor dos Anéis'?",
+      "alternativas": [
+        "Guillermo del Toro",
+        "Peter Jackson",
+        "Ridley Scott",
+        "James Cameron"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Martin Scorsese é sobre a máfia irlandesa?",
+      "alternativas": [
+        "Os Bons Companheiros",
+        "O Irlandês",
+        "Cassino",
+        "Os Infiltrados"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Frank Sheeran em 'O Irlandês'?",
+      "alternativas": [
+        "Joe Pesci",
+        "Robert De Niro",
+        "Al Pacino",
+        "Harvey Keitel"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Scorsese é sobre Jordan Belfort?",
+      "alternativas": [
+        "Os Infiltrados",
+        "O Lobo de Wall Street",
+        "A Invenção de Hugo Cabret",
+        "Cassino"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Jordan Belfort em 'O Lobo de Wall Street'?",
+      "alternativas": [
+        "Brad Pitt",
+        "Leonardo DiCaprio",
+        "Matthew McConaughey",
+        "Jonah Hill"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator ganhou seu primeiro Oscar por 'O Regresso'?",
+      "alternativas": [
+        "Tom Hardy",
+        "Leonardo DiCaprio",
+        "Will Poulter",
+        "Domhnall Gleeson"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'O Regresso'?",
+      "alternativas": [
+        "Christopher Nolan",
+        "Alejandro González Iñárritu",
+        "Denis Villeneuve",
+        "Ridley Scott"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor é conhecido por filmes de terror como 'Corra!' e 'Nós'?",
+      "alternativas": [
+        "Ari Aster",
+        "Jordan Peele",
+        "Mike Flanagan",
+        "James Wan"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Jordan Peele ganhou Oscar de Melhor Roteiro Original?",
+      "alternativas": [
+        "Nós",
+        "Corra!",
+        "Não! Não Olhe!",
+        "Candyman"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor criou 'Hereditário' e 'Midsommar'?",
+      "alternativas": [
+        "Jordan Peele",
+        "Ari Aster",
+        "Robert Eggers",
+        "Mike Flanagan"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual atriz protagoniza 'Hereditário'?",
+      "alternativas": [
+        "Florence Pugh",
+        "Toni Collette",
+        "Lupita Nyong'o",
+        "Elisabeth Moss"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'A Bruxa' e 'O Farol'?",
+      "alternativas": [
+        "Ari Aster",
+        "Jordan Peele",
+        "Robert Eggers",
+        "David Lowery"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da Netflix é sobre um serial killer simpático?",
+      "alternativas": [
+        "Mindhunter",
+        "You",
+        "Dexter",
+        "The Fall"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Joe Goldberg em 'You'?",
+      "alternativas": [
+        "Evan Peters",
+        "Penn Badgley",
+        "Darren Criss",
+        "Freddie Highmore"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da Apple TV+ é sobre um time de futebol americano?",
+      "alternativas": [
+        "Friday Night Lights",
+        "Ted Lasso",
+        "All American",
+        "The Game"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Ted Lasso?",
+      "alternativas": [
+        "Will Forte",
+        "Jason Sudeikis",
+        "Will Ferrell",
+        "Adam Scott"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da Apple TV+ é um thriller psicológico com funcionários de escritório?",
+      "alternativas": [
+        "The Morning Show",
+        "Severance",
+        "Foundation",
+        "For All Mankind"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme da Pixar se passa na mente de uma menina?",
+      "alternativas": [
+        "Soul",
+        "Divertida Mente",
+        "Viva - A Vida é uma Festa",
+        "Luca"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantas emoções principais aparecem em 'Divertida Mente'?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme da Pixar se passa no México durante o Dia dos Mortos?",
+      "alternativas": [
+        "Divertida Mente",
+        "Soul",
+        "Viva - A Vida é uma Festa",
+        "Luca"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme mostra um robô chamado WALL-E?",
+      "alternativas": [
+        "Robôs",
+        "WALL-E",
+        "O Gigante de Ferro",
+        "Big Hero 6"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o nome do rato chef em 'Ratatouille'?",
+      "alternativas": [
+        "Emile",
+        "Remy",
+        "Alfredo",
+        "Gusteau"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme da Disney conta a história de Simba?",
+      "alternativas": [
+        "Mogli",
+        "O Rei Leão",
+        "Tarzan",
+        "Irmão Urso"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dublou Buzz Lightyear na versão original?",
+      "alternativas": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Billy Crystal",
+        "John Goodman"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dublou Woody na versão original de 'Toy Story'?",
+      "alternativas": [
+        "Tim Allen",
+        "Tom Hanks",
+        "Billy Crystal",
+        "John Ratzenberger"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme da Disney conta a história de uma princesa com poderes de gelo?",
+      "alternativas": [
+        "Enrolados",
+        "Valente",
+        "Frozen",
+        "Moana"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o nome da princesa de 'Frozen'?",
+      "alternativas": [
+        "Anna e Elsa",
+        "Elsa apenas",
+        "Anna apenas",
+        "Aurora"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme do Studio Ghibli mostra uma casa de banho para espíritos?",
+      "alternativas": [
+        "O Castelo Animado",
+        "A Viagem de Chihiro",
+        "Ponyo",
+        "Princesa Mononoke"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o nome da protagonista de 'A Viagem de Chihiro'?",
+      "alternativas": [
+        "Ponyo",
+        "Chihiro",
+        "San",
+        "Sophie"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme do Studio Ghibli tem um castelo que anda?",
+      "alternativas": [
+        "A Viagem de Chihiro",
+        "Princesa Mononoke",
+        "O Castelo Animado",
+        "Nausicaä"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série documental da Netflix é sobre um criador de tigres?",
+      "alternativas": [
+        "Making a Murderer",
+        "A Máfia dos Tigres",
+        "Wild Wild Country",
+        "The Staircase"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual documentário investiga o desaparecimento de Madeleine McCann?",
+      "alternativas": [
+        "Making a Murderer",
+        "The Keepers",
+        "O Desaparecimento de Madeleine McCann",
+        "Don't F**k with Cats"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série brasileira de ficção científica se passa em um futuro distópico?",
+      "alternativas": [
+        "Cidade Invisível",
+        "3%",
+        "Irmandade",
+        "Bom Dia, Verônica"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme brasileiro foi indicado ao Oscar de Melhor Filme Internacional em 2023?",
+      "alternativas": [
+        "Bacurau",
+        "Marte Um",
+        "Central do Brasil",
+        "Cidade de Deus"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu 'Bacurau'?",
+      "alternativas": [
+        "Fernando Meirelles",
+        "Kleber Mendonça Filho",
+        "José Padilha",
+        "Walter Salles"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Walter Salles foi indicado ao Oscar?",
+      "alternativas": [
+        "Abril Despedaçado",
+        "Central do Brasil",
+        "Na Estrada",
+        "Linha de Passe"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Dora em 'Central do Brasil'?",
+      "alternativas": [
+        "Sonia Braga",
+        "Fernanda Montenegro",
+        "Fernanda Torres",
+        "Regina Casé"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual atriz brasileira foi indicada ao Oscar por 'Central do Brasil'?",
+      "alternativas": [
+        "Sonia Braga",
+        "Fernanda Torres",
+        "Fernanda Montenegro",
+        "Marília Pêra"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série americana se passa em uma prisão feminina?",
+      "alternativas": [
+        "Wentworth",
+        "Orange Is the New Black",
+        "Vis a Vis",
+        "Bad Girls"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série de fantasia da Amazon é baseada nos livros de Robert Jordan?",
+      "alternativas": [
+        "The Witcher",
+        "Shadow and Bone",
+        "Wheel of Time",
+        "House of the Dragon"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da Amazon é prequela de 'O Senhor dos Anéis'?",
+      "alternativas": [
+        "The Witcher",
+        "House of the Dragon",
+        "Os Anéis de Poder",
+        "Wheel of Time"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Geralt de Rívia em 'The Witcher'?",
+      "alternativas": [
+        "Chris Hemsworth",
+        "Henry Cavill",
+        "Liam Hemsworth",
+        "Jason Momoa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série baseada em quadrinhos mostra super-heróis corruptos?",
+      "alternativas": [
+        "Invincible",
+        "The Boys",
+        "Doom Patrol",
+        "Umbrella Academy"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual streaming produz 'The Boys'?",
+      "alternativas": [
+        "Netflix",
+        "HBO Max",
+        "Amazon Prime Video",
+        "Disney+"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série é sobre uma família de super-heróis disfuncional?",
+      "alternativas": [
+        "The Boys",
+        "Umbrella Academy",
+        "Doom Patrol",
+        "Titans"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Em qual streaming está 'Umbrella Academy'?",
+      "alternativas": [
+        "Amazon Prime",
+        "HBO Max",
+        "Netflix",
+        "Disney+"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de super-herói se passa em Wakanda?",
+      "alternativas": [
+        "Aquaman",
+        "Pantera Negra",
+        "Capitã Marvel",
+        "Shang-Chi"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta T'Challa em 'Pantera Negra'?",
+      "alternativas": [
+        "Michael B. Jordan",
+        "Chadwick Boseman",
+        "Daniel Kaluuya",
+        "Winston Duke"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme do MCU introduziu o multiverso de forma central?",
+      "alternativas": [
+        "Loki (série)",
+        "Doutor Estranho no Multiverso da Loucura",
+        "Homem-Aranha: Sem Volta para Casa",
+        "Todos os anteriores contribuíram"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantos Homens-Aranha aparecem em 'Sem Volta para Casa'?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta o Homem-Aranha do MCU?",
+      "alternativas": [
+        "Andrew Garfield",
+        "Tobey Maguire",
+        "Tom Holland",
+        "Miles Morales"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de animação mostra o Homem-Aranha em versão 'Aranhaverso'?",
+      "alternativas": [
+        "Homem-Aranha: No Aranhaverso",
+        "Homem-Aranha: De Volta ao Lar",
+        "Venom",
+        "Morbius"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem é o protagonista de 'Homem-Aranha: No Aranhaverso'?",
+      "alternativas": [
+        "Peter Parker",
+        "Miles Morales",
+        "Gwen Stacy",
+        "Miguel O'Hara"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor fez 'Parasita' e 'Memórias de um Assassino'?",
+      "alternativas": [
+        "Park Chan-wook",
+        "Bong Joon-ho",
+        "Kim Jee-woon",
+        "Lee Chang-dong"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de Bong Joon-ho é uma ficção científica em um trem?",
+      "alternativas": [
+        "O Hospedeiro",
+        "Expresso do Amanhã",
+        "Okja",
+        "Memórias de um Assassino"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da HBO é sobre sucessão em uma família de mídia?",
+      "alternativas": [
+        "Billions",
+        "Succession",
+        "Industry",
+        "The Morning Show"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantas temporadas tem 'Succession'?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da HBO é sobre uma pandemia zumbi baseada em videogame?",
+      "alternativas": [
+        "The Walking Dead",
+        "The Last of Us",
+        "Fear the Walking Dead",
+        "Black Summer"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual atriz brasileira está em 'The Last of Us'?",
+      "alternativas": [
+        "Sonia Braga",
+        "Alice Braga",
+        "Morena Baccarin",
+        "Camila Pitanga"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série mostra a criação do Facebook?",
+      "alternativas": [
+        "A Rede Social (filme)",
+        "Silicon Valley",
+        "The Social Network (filme)",
+        "WeCrashed"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Mark Zuckerberg em 'A Rede Social'?",
+      "alternativas": [
+        "Andrew Garfield",
+        "Jesse Eisenberg",
+        "Armie Hammer",
+        "Justin Timberlake"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator é conhecido por interpretar agentes secretos em múltiplos filmes?",
+      "alternativas": [
+        "Matt Damon",
+        "Tom Cruise",
+        "Daniel Craig",
+        "Todos os anteriores"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantos filmes de 'Missão Impossível' foram feitos até 2024?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Ethan Hunt em 'Missão Impossível'?",
+      "alternativas": [
+        "Matt Damon",
+        "Tom Cruise",
+        "Chris Pine",
+        "Jeremy Renner"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpretou James Bond por mais tempo?",
+      "alternativas": [
+        "Sean Connery",
+        "Roger Moore",
+        "Daniel Craig",
+        "Pierce Brosnan"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual foi o último filme de Daniel Craig como James Bond?",
+      "alternativas": [
+        "Spectre",
+        "Skyfall",
+        "007: Sem Tempo Para Morrer",
+        "Cassino Royale"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de ação mostra John Wick?",
+      "alternativas": [
+        "John Wick",
+        "O Protetor",
+        "Busca Implacável",
+        "Jack Reacher"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta John Wick?",
+      "alternativas": [
+        "Liam Neeson",
+        "Keanu Reeves",
+        "Denzel Washington",
+        "Jason Statham"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual franquia de filmes é conhecida por corridas de carros e família?",
+      "alternativas": [
+        "Need for Speed",
+        "Velozes e Furiosos",
+        "Transformers",
+        "Mad Max"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator principal de 'Velozes e Furiosos' faleceu em 2013?",
+      "alternativas": [
+        "Vin Diesel",
+        "Paul Walker",
+        "Tyrese Gibson",
+        "Ludacris"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual diretor é conhecido por 'Mad Max: Estrada da Fúria'?",
+      "alternativas": [
+        "Ridley Scott",
+        "George Miller",
+        "James Cameron",
+        "Michael Bay"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem interpreta Furiosa no filme de 2024?",
+      "alternativas": [
+        "Charlize Theron",
+        "Anya Taylor-Joy",
+        "Chris Hemsworth",
+        "Tom Burke"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme de 2023 é sobre o criador da bomba atômica?",
+      "alternativas": [
+        "Napoleão",
+        "Oppenheimer",
+        "Maestro",
+        "Killers of the Flower Moon"
+      ],
+      "correta": 1
+    }
+  ]
+}

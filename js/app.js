@@ -554,7 +554,8 @@ async function carregarRankingPartida(temas) {
         
         let btnDesafiarHtml = '';
         if (temPerguntasIds) {
-            if (jaJogou) {
+            // Se é o próprio jogador OU já jogou essa sessão, mostra "Jogado"
+            if (isJogadorAtual || jaJogou) {
                 btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
             } else {
                 btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;

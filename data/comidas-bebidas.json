@@ -1,0 +1,1841 @@
+{
+  "perguntas": [
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o ingrediente principal do guacamole?",
+      "alternativas": [
+        "Tomate",
+        "Abacate",
+        "Pimenta",
+        "Cebola"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o sushi?",
+      "alternativas": [
+        "China",
+        "Coreia",
+        "Japão",
+        "Tailândia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é feita de uvas fermentadas?",
+      "alternativas": [
+        "Cerveja",
+        "Vinho",
+        "Whisky",
+        "Vodka"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originária a pizza?",
+      "alternativas": [
+        "França",
+        "Grécia",
+        "Itália",
+        "Espanha"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o prato nacional do Brasil?",
+      "alternativas": [
+        "Coxinha",
+        "Feijoada",
+        "Pão de queijo",
+        "Açaí"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual tempero dá a cor amarela ao curry?",
+      "alternativas": [
+        "Páprica",
+        "Açafrão/Cúrcuma",
+        "Cominho",
+        "Coentro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é wasabi?",
+      "alternativas": [
+        "Molho de soja",
+        "Raiz forte japonesa",
+        "Alga marinha",
+        "Gengibre"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual queijo é usado tradicionalmente em pizza Margherita?",
+      "alternativas": [
+        "Parmesão",
+        "Cheddar",
+        "Mozzarella",
+        "Provolone"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o croissant originalmente?",
+      "alternativas": [
+        "França",
+        "Áustria",
+        "Bélgica",
+        "Suíça"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o principal ingrediente do hummus?",
+      "alternativas": [
+        "Lentilhas",
+        "Grão-de-bico",
+        "Feijão",
+        "Ervilhas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida alcoólica é destilada de agave?",
+      "alternativas": [
+        "Rum",
+        "Tequila",
+        "Vodka",
+        "Gin"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o kebab?",
+      "alternativas": [
+        "Grécia",
+        "Índia",
+        "Turquia",
+        "Líbano"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a bebida nacional da Argentina?",
+      "alternativas": [
+        "Café",
+        "Mate",
+        "Vinho",
+        "Fernet"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é tahine?",
+      "alternativas": [
+        "Molho de pimenta",
+        "Pasta de gergelim",
+        "Queijo árabe",
+        "Pão sírio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso pelo chocolate?",
+      "alternativas": [
+        "Alemanha",
+        "Suíça",
+        "Itália",
+        "França"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o ingrediente principal do pesto genovês?",
+      "alternativas": [
+        "Salsa",
+        "Manjericão",
+        "Orégano",
+        "Alecrim"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o ceviche?",
+      "alternativas": [
+        "México",
+        "Peru",
+        "Chile",
+        "Equador"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é feita de cevada maltada?",
+      "alternativas": [
+        "Vinho",
+        "Cerveja",
+        "Saquê",
+        "Cidra"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual queijo francês tem um cheiro forte e é macio?",
+      "alternativas": [
+        "Gruyère",
+        "Camembert",
+        "Emmental",
+        "Roquefort"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que significa 'al dente' na culinária italiana?",
+      "alternativas": [
+        "Bem cozido",
+        "Firme ao morder",
+        "Macio",
+        "Cremoso"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a especiaria mais cara do mundo?",
+      "alternativas": [
+        "Baunilha",
+        "Açafrão",
+        "Cardamomo",
+        "Canela"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o paella?",
+      "alternativas": [
+        "Portugal",
+        "Espanha",
+        "Itália",
+        "Grécia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o principal ingrediente do risoto?",
+      "alternativas": [
+        "Macarrão",
+        "Arroz arbóreo",
+        "Cuscuz",
+        "Quinoa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é tempura na culinária japonesa?",
+      "alternativas": [
+        "Sopa de missô",
+        "Fritura empanada leve",
+        "Arroz temperado",
+        "Peixe cru"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida destilada é feita de batata ou grãos na Rússia?",
+      "alternativas": [
+        "Gin",
+        "Rum",
+        "Vodka",
+        "Whisky"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o dim sum?",
+      "alternativas": [
+        "Japão",
+        "Coreia",
+        "China",
+        "Vietnã"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual queijo italiano é tradicionalmente ralado sobre massas?",
+      "alternativas": [
+        "Mozzarella",
+        "Parmesão",
+        "Ricota",
+        "Gorgonzola"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é naan?",
+      "alternativas": [
+        "Arroz indiano",
+        "Pão indiano",
+        "Curry",
+        "Sobremesa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso por seus waffles?",
+      "alternativas": [
+        "Holanda",
+        "Bélgica",
+        "Alemanha",
+        "França"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o ingrediente principal do tzatziki grego?",
+      "alternativas": [
+        "Tomate",
+        "Iogurte e pepino",
+        "Berinjela",
+        "Grão-de-bico"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual bebida o espresso é a base?",
+      "alternativas": [
+        "Chá",
+        "Café",
+        "Chocolate",
+        "Mate"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país produz mais café no mundo?",
+      "alternativas": [
+        "Colômbia",
+        "Vietnã",
+        "Brasil",
+        "Etiópia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é foie gras?",
+      "alternativas": [
+        "Queijo francês",
+        "Fígado de pato ou ganso",
+        "Patê de porco",
+        "Presunto curado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a bebida nacional do Japão?",
+      "alternativas": [
+        "Cerveja",
+        "Saquê",
+        "Chá verde",
+        "Whisky"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o tacos?",
+      "alternativas": [
+        "Espanha",
+        "México",
+        "Estados Unidos",
+        "Guatemala"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual fruta é usada para fazer vinho do Porto?",
+      "alternativas": [
+        "Maçã",
+        "Uva",
+        "Pera",
+        "Cereja"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é kimchi?",
+      "alternativas": [
+        "Sopa coreana",
+        "Vegetais fermentados coreanos",
+        "Arroz coreano",
+        "Carne coreana"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso pelo fish and chips?",
+      "alternativas": [
+        "Estados Unidos",
+        "Austrália",
+        "Reino Unido",
+        "Irlanda"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é carpaccio?",
+      "alternativas": [
+        "Massa italiana",
+        "Carne ou peixe cru fatiado fino",
+        "Sopa de tomate",
+        "Sobremesa italiana"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é feita de maçãs fermentadas?",
+      "alternativas": [
+        "Vinho",
+        "Cidra",
+        "Cerveja",
+        "Hidromel"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o cronut?",
+      "alternativas": [
+        "França",
+        "Estados Unidos",
+        "Canadá",
+        "Austrália"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o ingrediente principal do falafel?",
+      "alternativas": [
+        "Carne moída",
+        "Grão-de-bico ou fava",
+        "Lentilhas",
+        "Batata"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é miso?",
+      "alternativas": [
+        "Arroz japonês",
+        "Pasta de soja fermentada",
+        "Alga marinha",
+        "Peixe curado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é conhecida como 'água ardente' em português?",
+      "alternativas": [
+        "Cerveja",
+        "Vinho",
+        "Cachaça/Aguardente",
+        "Licor"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o pho?",
+      "alternativas": [
+        "China",
+        "Tailândia",
+        "Vietnã",
+        "Japão"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual queijo tem buracos característicos?",
+      "alternativas": [
+        "Cheddar",
+        "Emmental/Suíço",
+        "Brie",
+        "Gouda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é gnocchi?",
+      "alternativas": [
+        "Massa de ovo",
+        "Bolinho de batata italiano",
+        "Arroz italiano",
+        "Pão italiano"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é feita de mel fermentado?",
+      "alternativas": [
+        "Cerveja",
+        "Vinho",
+        "Hidromel",
+        "Cidra"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o currywurst?",
+      "alternativas": [
+        "Áustria",
+        "Alemanha",
+        "Holanda",
+        "Polônia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o principal ingrediente do pad thai?",
+      "alternativas": [
+        "Arroz",
+        "Macarrão de arroz",
+        "Vegetais",
+        "Frango"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é bruschetta?",
+      "alternativas": [
+        "Massa italiana",
+        "Pão torrado com coberturas",
+        "Sopa italiana",
+        "Sobremesa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é tradicionalmente servida na caipirinha?",
+      "alternativas": [
+        "Vodka",
+        "Rum",
+        "Cachaça",
+        "Tequila"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o biryani?",
+      "alternativas": [
+        "Paquistão/Índia",
+        "Irã",
+        "Turquia",
+        "Arábia Saudita"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a diferença entre cappuccino e latte?",
+      "alternativas": [
+        "São iguais",
+        "Cappuccino tem mais espuma",
+        "Latte tem mais espuma",
+        "Latte não tem leite"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é paneer?",
+      "alternativas": [
+        "Pão indiano",
+        "Queijo fresco indiano",
+        "Curry",
+        "Arroz temperado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso pela vodka?",
+      "alternativas": [
+        "França",
+        "Rússia/Polônia",
+        "Alemanha",
+        "Itália"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o churrasco (estilo gaúcho)?",
+      "alternativas": [
+        "México",
+        "Argentina",
+        "Brasil",
+        "Uruguai"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é tiramisu?",
+      "alternativas": [
+        "Sorvete italiano",
+        "Sobremesa de café e mascarpone",
+        "Bolo de chocolate",
+        "Pudim de leite"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual ingrediente dá sabor ao gin?",
+      "alternativas": [
+        "Laranja",
+        "Zimbro",
+        "Limão",
+        "Hortelã"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o pierogi?",
+      "alternativas": [
+        "Rússia",
+        "Ucrânia",
+        "Polônia",
+        "Hungria"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o corte mais nobre do boi para churrasco brasileiro?",
+      "alternativas": [
+        "Fraldinha",
+        "Picanha",
+        "Maminha",
+        "Costela"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é edamame?",
+      "alternativas": [
+        "Alga marinha",
+        "Soja verde em vagem",
+        "Tofu frito",
+        "Cogumelo japonês"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida mexicana é feita de cacau?",
+      "alternativas": [
+        "Tequila",
+        "Mezcal",
+        "Chocolate quente/Champurrado",
+        "Horchata"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é o baklava?",
+      "alternativas": [
+        "Grécia/Turquia",
+        "Egito",
+        "Índia",
+        "Marrocos"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é gazpacho?",
+      "alternativas": [
+        "Sopa quente espanhola",
+        "Sopa fria de tomate",
+        "Ensopado de carne",
+        "Salada de frutos do mar"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a base do molho bechamel?",
+      "alternativas": [
+        "Tomate",
+        "Manteiga, farinha e leite",
+        "Creme de leite",
+        "Queijo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a salsa chimichurri?",
+      "alternativas": [
+        "México",
+        "Argentina",
+        "Brasil",
+        "Chile"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é sriracha?",
+      "alternativas": [
+        "Molho de soja",
+        "Molho de pimenta tailandês",
+        "Curry em pó",
+        "Pasta de amendoim"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é feita de arroz fermentado no Japão?",
+      "alternativas": [
+        "Soju",
+        "Saquê",
+        "Shochu",
+        "Makgeolli"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o macarrão?",
+      "alternativas": [
+        "Itália",
+        "China",
+        "Disputado entre China e Itália",
+        "Grécia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é fondue?",
+      "alternativas": [
+        "Sopa suíça",
+        "Queijo derretido para mergulhar alimentos",
+        "Chocolate quente",
+        "Carne grelhada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso pelo fondue de queijo?",
+      "alternativas": [
+        "França",
+        "Suíça",
+        "Itália",
+        "Alemanha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é ramen?",
+      "alternativas": [
+        "Sushi especial",
+        "Macarrão japonês em caldo",
+        "Arroz frito",
+        "Bolinho de peixe"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual especiaria é usada no masala chai indiano?",
+      "alternativas": [
+        "Só canela",
+        "Cardamomo, canela, gengibre e mais",
+        "Apenas gengibre",
+        "Nenhuma especiaria"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a empanada?",
+      "alternativas": [
+        "México",
+        "Espanha/América Latina",
+        "Portugal",
+        "Filipinas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é acarajé?",
+      "alternativas": [
+        "Bebida baiana",
+        "Bolinho de feijão frito",
+        "Doce de coco",
+        "Peixe assado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o estado brasileiro famoso pelo acarajé?",
+      "alternativas": [
+        "Rio de Janeiro",
+        "Minas Gerais",
+        "Bahia",
+        "Pernambuco"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o schnitzel?",
+      "alternativas": [
+        "Alemanha",
+        "Áustria",
+        "Suíça",
+        "Holanda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é creme brûlée?",
+      "alternativas": [
+        "Sorvete francês",
+        "Creme com açúcar caramelizado",
+        "Mousse de chocolate",
+        "Torta de maçã"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é típica de Cuba?",
+      "alternativas": [
+        "Caipirinha",
+        "Mojito",
+        "Margarita",
+        "Pisco Sour"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é jamón ibérico?",
+      "alternativas": [
+        "Queijo espanhol",
+        "Presunto curado espanhol",
+        "Linguiça portuguesa",
+        "Bacon italiano"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a sopa de cebola gratinada?",
+      "alternativas": [
+        "Itália",
+        "França",
+        "Suíça",
+        "Bélgica"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o principal ingrediente do molho teriyaki?",
+      "alternativas": [
+        "Molho de ostra",
+        "Molho de soja, saquê e açúcar",
+        "Pasta de missô",
+        "Vinagre de arroz"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é tapenade?",
+      "alternativas": [
+        "Salada francesa",
+        "Pasta de azeitonas",
+        "Queijo de cabra",
+        "Pão francês"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a bobotie?",
+      "alternativas": [
+        "Índia",
+        "África do Sul",
+        "Marrocos",
+        "Jamaica"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a principal diferença entre bourbon e whisky escocês?",
+      "alternativas": [
+        "São iguais",
+        "Bourbon usa milho, escocês usa cevada",
+        "Bourbon é mais velho",
+        "Escocês não é envelhecido"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é molho beurre blanc?",
+      "alternativas": [
+        "Molho de tomate",
+        "Molho de manteiga branca",
+        "Molho de queijo",
+        "Molho de mostarda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o tagine?",
+      "alternativas": [
+        "Egito",
+        "Marrocos",
+        "Tunísia",
+        "Líbia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é polenta?",
+      "alternativas": [
+        "Massa de trigo",
+        "Mingau de fubá de milho",
+        "Arroz italiano",
+        "Purê de batata"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é feita com gema de ovo e açúcar?",
+      "alternativas": [
+        "Cappuccino",
+        "Advocaat/Gemada",
+        "Latte",
+        "Mocha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o rendang?",
+      "alternativas": [
+        "Tailândia",
+        "Indonésia",
+        "Malásia",
+        "Filipinas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é baba ganoush?",
+      "alternativas": [
+        "Pasta de grão-de-bico",
+        "Pasta de berinjela",
+        "Salada de tabule",
+        "Pão árabe"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual queijo é usado na salada Caprese?",
+      "alternativas": [
+        "Parmesão",
+        "Mozzarella de búfala",
+        "Ricota",
+        "Provolone"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a sobremesa pavlova?",
+      "alternativas": [
+        "Rússia",
+        "Austrália/Nova Zelândia",
+        "França",
+        "Itália"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é tofu?",
+      "alternativas": [
+        "Carne de porco",
+        "Queijo de soja",
+        "Cogumelo processado",
+        "Alga prensada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual vinho é servido frio?",
+      "alternativas": [
+        "Apenas tintos",
+        "Brancos e espumantes",
+        "Apenas rosés",
+        "Nenhum vinho"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o bacalhau à Gomes de Sá?",
+      "alternativas": [
+        "Espanha",
+        "Brasil",
+        "Portugal",
+        "Noruega"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é confit?",
+      "alternativas": [
+        "Fritura rápida",
+        "Cozimento lento em gordura",
+        "Defumação",
+        "Grelhado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a origem do açaí?",
+      "alternativas": [
+        "México",
+        "Brasil (Amazônia)",
+        "Colômbia",
+        "Peru"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é mezcal?",
+      "alternativas": [
+        "Vinho mexicano",
+        "Destilado de agave",
+        "Cerveja mexicana",
+        "Licor de café"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a salada niçoise?",
+      "alternativas": [
+        "Itália",
+        "França",
+        "Espanha",
+        "Grécia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é molho aioli?",
+      "alternativas": [
+        "Molho de tomate",
+        "Maionese com alho",
+        "Molho de mostarda",
+        "Molho agridoce"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é típica do Peru?",
+      "alternativas": [
+        "Mojito",
+        "Caipirinha",
+        "Pisco Sour",
+        "Tequila"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o jerk chicken?",
+      "alternativas": [
+        "Cuba",
+        "Porto Rico",
+        "Jamaica",
+        "Trinidad"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é sashimi?",
+      "alternativas": [
+        "Peixe cru fatiado",
+        "Arroz com peixe",
+        "Sopa de peixe",
+        "Peixe frito"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a diferença entre sushi e sashimi?",
+      "alternativas": [
+        "São iguais",
+        "Sushi tem arroz, sashimi não",
+        "Sashimi é cozido",
+        "Sushi é frito"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o goulash?",
+      "alternativas": [
+        "Alemanha",
+        "Hungria",
+        "Áustria",
+        "Polônia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é pancetta?",
+      "alternativas": [
+        "Queijo italiano",
+        "Bacon italiano não defumado",
+        "Presunto",
+        "Linguiça"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o ingrediente principal do gulab jamun?",
+      "alternativas": [
+        "Farinha de trigo",
+        "Leite em pó/Khoya",
+        "Arroz",
+        "Semolina"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a sobremesa gulab jamun?",
+      "alternativas": [
+        "Paquistão",
+        "Índia",
+        "Bangladesh",
+        "Todos os anteriores"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é escargot?",
+      "alternativas": [
+        "Peixe francês",
+        "Caracol cozido",
+        "Lagosta",
+        "Ostra"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso pelo azeite de oliva?",
+      "alternativas": [
+        "Brasil",
+        "Espanha/Itália/Grécia",
+        "França",
+        "Portugal apenas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o haggis?",
+      "alternativas": [
+        "Irlanda",
+        "Escócia",
+        "País de Gales",
+        "Inglaterra"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é porridge?",
+      "alternativas": [
+        "Sopa inglesa",
+        "Mingau de aveia",
+        "Torta salgada",
+        "Pudim"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida espumante é feita na região de Champagne?",
+      "alternativas": [
+        "Prosecco",
+        "Cava",
+        "Champagne",
+        "Espumante"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o prosecco?",
+      "alternativas": [
+        "França",
+        "Espanha",
+        "Itália",
+        "Portugal"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é um sommelier?",
+      "alternativas": [
+        "Chef de cozinha",
+        "Especialista em vinhos",
+        "Padeiro",
+        "Barista"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a principal característica do queijo azul?",
+      "alternativas": [
+        "Cor azul externa",
+        "Veios de mofo azul interno",
+        "Sabor azedo",
+        "Textura líquida"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o doner kebab moderno?",
+      "alternativas": [
+        "Grécia",
+        "Alemanha/Turquia",
+        "Líbano",
+        "Irã"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é shawarma?",
+      "alternativas": [
+        "Salada árabe",
+        "Carne assada em espeto vertical",
+        "Pão recheado",
+        "Sopa de lentilhas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a diferença entre gelato e sorvete?",
+      "alternativas": [
+        "São iguais",
+        "Gelato tem menos gordura e ar",
+        "Sorvete é italiano",
+        "Gelato é mais doce"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o bibimbap?",
+      "alternativas": [
+        "Japão",
+        "China",
+        "Coreia do Sul",
+        "Vietnã"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é dulce de leche?",
+      "alternativas": [
+        "Chocolate",
+        "Doce de leite",
+        "Pudim",
+        "Sorvete"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso pelo dulce de leche?",
+      "alternativas": [
+        "México",
+        "Argentina",
+        "Brasil",
+        "Chile"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o borscht?",
+      "alternativas": [
+        "Polônia",
+        "Rússia/Ucrânia",
+        "Hungria",
+        "Romênia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o ingrediente que dá cor ao borscht?",
+      "alternativas": [
+        "Tomate",
+        "Beterraba",
+        "Pimentão",
+        "Cenoura"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é brioche?",
+      "alternativas": [
+        "Bolo francês",
+        "Pão amanteigado francês",
+        "Croissant recheado",
+        "Torta de frutas"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o croque-monsieur?",
+      "alternativas": [
+        "Bélgica",
+        "França",
+        "Suíça",
+        "Luxemburgo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é diferente no croque-madame?",
+      "alternativas": [
+        "Tem bacon",
+        "Tem ovo por cima",
+        "Ã‰ vegetariano",
+        "Ã‰ frito"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida quente é feita com chocolate e leite?",
+      "alternativas": [
+        "Café",
+        "Chocolate quente",
+        "Chai",
+        "Matcha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a sobremesa churros?",
+      "alternativas": [
+        "México",
+        "Espanha/Portugal",
+        "Argentina",
+        "Brasil"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é um brigadeiro?",
+      "alternativas": [
+        "Bebida brasileira",
+        "Doce de chocolate brasileiro",
+        "Salgado brasileiro",
+        "Sorvete brasileiro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o principal ingrediente do brigadeiro?",
+      "alternativas": [
+        "Chocolate em pó",
+        "Leite condensado e chocolate",
+        "Creme de leite",
+        "Manteiga"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual estado brasileiro é o pão de queijo?",
+      "alternativas": [
+        "São Paulo",
+        "Minas Gerais",
+        "Goiás",
+        "Bahia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é moqueca?",
+      "alternativas": [
+        "Bebida baiana",
+        "Ensopado de peixe brasileiro",
+        "Doce de coco",
+        "Salada tropical"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual ingrediente diferencia a moqueca capixaba da baiana?",
+      "alternativas": [
+        "Peixe",
+        "A baiana usa dendê, a capixaba não",
+        "Cebola",
+        "Pimentão"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual região brasileira é o vatapá?",
+      "alternativas": [
+        "Sul",
+        "Sudeste",
+        "Nordeste",
+        "Norte"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é quibe?",
+      "alternativas": [
+        "Pão árabe",
+        "Bolinho de trigo e carne",
+        "Pasta de grão-de-bico",
+        "Sobremesa síria"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a bebida típica do chimarrão?",
+      "alternativas": [
+        "Café",
+        "Mate quente",
+        "Chá verde",
+        "Guaraná"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual região brasileira é típico o chimarrão?",
+      "alternativas": [
+        "Nordeste",
+        "Norte",
+        "Sul",
+        "Sudeste"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é tacacá?",
+      "alternativas": [
+        "Peixe amazônico",
+        "Caldo com tucupi e jambu",
+        "Fruta tropical",
+        "Bebida fermentada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a fruta típica da Amazônia usada em sucos e sorvetes?",
+      "alternativas": [
+        "Açaí e cupuaçu",
+        "Maçã",
+        "Uva",
+        "Pera"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a sobremesa profiterole?",
+      "alternativas": [
+        "Itália",
+        "França",
+        "Bélgica",
+        "Suíça"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é um éclair?",
+      "alternativas": [
+        "Sorvete francês",
+        "Bomba de massa choux com recheio",
+        "Torta de frutas",
+        "Pudim"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a base da massa choux?",
+      "alternativas": [
+        "Farinha e água",
+        "Manteiga, água, farinha e ovos",
+        "Só ovos",
+        "Leite e açúcar"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o coxinha?",
+      "alternativas": [
+        "Portugal",
+        "Brasil",
+        "Argentina",
+        "México"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é pastel de feira?",
+      "alternativas": [
+        "Doce português",
+        "Salgado frito brasileiro",
+        "Bolo de aniversário",
+        "Torta salgada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a massa do pastel de feira?",
+      "alternativas": [
+        "Massa folhada",
+        "Massa de água e farinha frita",
+        "Massa de pão",
+        "Massa de pizza"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a esfiha?",
+      "alternativas": [
+        "Brasil",
+        "Líbano/Síria",
+        "Turquia",
+        "Irã"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é um shot de bebida?",
+      "alternativas": [
+        "Drink grande",
+        "Dose pequena concentrada",
+        "Coquetel",
+        "Cerveja especial"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é base do White Russian?",
+      "alternativas": [
+        "Rum",
+        "Vodka",
+        "Gin",
+        "Whisky"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o pastel de nata?",
+      "alternativas": [
+        "Brasil",
+        "Portugal",
+        "Espanha",
+        "França"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é clotted cream?",
+      "alternativas": [
+        "Queijo inglês",
+        "Creme de leite espesso britânico",
+        "Manteiga batida",
+        "Chantilly"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o acompanhamento tradicional do scone inglês?",
+      "alternativas": [
+        "Chocolate",
+        "Clotted cream e geleia",
+        "Queijo",
+        "Manteiga de amendoim"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem o banoffee pie?",
+      "alternativas": [
+        "Estados Unidos",
+        "Reino Unido",
+        "Austrália",
+        "Canadá"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que significa 'umami'?",
+      "alternativas": [
+        "Doce",
+        "Salgado",
+        "Quinto sabor básico (saboroso)",
+        "Amargo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual alimento é rico em umami?",
+      "alternativas": [
+        "Açúcar",
+        "Queijo parmesão e cogumelos",
+        "Limão",
+        "Sal"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a técnica culinária sous-vide?",
+      "alternativas": [
+        "Estados Unidos",
+        "França",
+        "Japão",
+        "Espanha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que significa 'sous-vide'?",
+      "alternativas": [
+        "Fritura rápida",
+        "Cozimento a vácuo em baixa temperatura",
+        "Grelhado",
+        "Defumação"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso pelo whisky single malt?",
+      "alternativas": [
+        "Estados Unidos",
+        "Irlanda",
+        "Escócia",
+        "Japão"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é um IPA na cerveja?",
+      "alternativas": [
+        "Cerveja leve",
+        "India Pale Ale - cerveja lupulada",
+        "Cerveja preta",
+        "Cerveja sem álcool"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país vem a cerveja pilsner originalmente?",
+      "alternativas": [
+        "Alemanha",
+        "República Tcheca",
+        "Bélgica",
+        "Holanda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que é lambic?",
+      "alternativas": [
+        "Vinho belga",
+        "Cerveja de fermentação espontânea",
+        "Licor de frutas",
+        "Destilado de grãos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é famoso pelas cervejas trapistas?",
+      "alternativas": [
+        "Alemanha",
+        "Bélgica",
+        "Holanda",
+        "França"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "O que significa 'DOC' em vinhos italianos?",
+      "alternativas": [
+        "Doce Original Certificado",
+        "Denominação de Origem Controlada",
+        "Delicioso e Original",
+        "Destilado de Qualidade"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual região francesa vem o Bordeaux?",
+      "alternativas": [
+        "Borgonha",
+        "Bordeaux (sudoeste)",
+        "Champagne",
+        "Provença"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual uva é usada no vinho Chianti?",
+      "alternativas": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Sangiovese",
+        "Pinot Noir"
+      ],
+      "correta": 2
+    }
+  ]
+}
