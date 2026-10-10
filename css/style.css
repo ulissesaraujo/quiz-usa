@@ -793,6 +793,11 @@ body {
     background: var(--gray-50);
 }
 
+/* Não aplica hover no cabeçalho de grupo */
+.ranking-tabela tbody tr.grupo-sessao-header:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 .ranking-tabela tbody tr.destaque {
     background: rgba(59, 130, 246, 0.1);
     font-weight: 600;
