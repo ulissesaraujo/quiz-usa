@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ulissesaraujo.github.io/quiz-usa/sitemap.xml
+Sitemap: https://ulissesaraujo.github.io/quizlandia/sitemap.xml
