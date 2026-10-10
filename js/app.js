@@ -665,17 +665,17 @@ async function mostrarRankingGlobal() {
             // Verifica se o jogador atual pode desafiar este grupo
             const jaJogou = rankingManager.jaJogouSessao(grupo.sessaoId);
             const jogadorNoGrupo = grupo.resultados.some(r => r.jogador === estado.jogador);
-            const podeDesafiar = !jogadorNoGrupo && grupo.perguntasIds && grupo.perguntasIds.length > 0;
+            const podeDesafiar = !jaJogou && !jogadorNoGrupo && grupo.perguntasIds && grupo.perguntasIds.length > 0;
             
             let btnDesafiarGrupoHtml = '';
-            if (podeDesafiar) {
-                if (jaJogou) {
-                    btnDesafiarGrupoHtml = `<span class="badge-jogado">✓ Jogado</span>`;
-                } else {
-                    btnDesafiarGrupoHtml = `<button class="btn-desafiar btn-desafiar-grupo" data-grupo="${grupoIndex}">⚔️ Entrar</button>`;
-                }
-            } else if (jogadorNoGrupo) {
-                btnDesafiarGrupoHtml = `<span class="badge-voce">Sua sessão</span>`;
+            if (jaJogou || jogadorNoGrupo) {
+                // Já jogou esta sessão (seja como criador ou desafiante)
+                btnDesafiarGrupoHtml = `<span class="badge-jogado">✓ Jogado</span>`;
+            } else if (podeDesafiar) {
+                btnDesafiarGrupoHtml = `<button class="btn-desafiar btn-desafiar-grupo" data-grupo="${grupoIndex}">⚔️ Entrar</button>`;
+            } else {
+                // Sessão antiga sem perguntasIds
+                btnDesafiarGrupoHtml = `<span class="badge-antigo">—</span>`;
             }
             
             trHeader.innerHTML = `
