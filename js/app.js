@@ -637,8 +637,9 @@ async function carregarRankingPartida(temas) {
         
         // Formata a data
         let dataDisplay = '—';
-        if (item.timestamp) {
-            const data = item.timestamp.toDate ? item.timestamp.toDate() : new Date(item.timestamp);
+        const dataHora = item.dataHora || item.timestamp;
+        if (dataHora) {
+            const data = dataHora.toDate ? dataHora.toDate() : new Date(dataHora);
             dataDisplay = data.toLocaleDateString('pt-BR', { 
                 day: '2-digit', 
                 month: '2-digit',
