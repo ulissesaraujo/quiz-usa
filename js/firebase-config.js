@@ -6,21 +6,21 @@
 let firebaseDisponivel = false;
 let db = null;
 
-// Temas disponíveis no quiz
+// Temas disponíveis no quiz (ordem alfabética)
 export const TEMAS_DISPONIVEIS = [
+    { id: 'arte', nome: 'Arte', icone: '🎨' },
+    { id: 'ciencia', nome: 'Ciência', icone: '🔬' },
+    { id: 'cinema-series', nome: 'Cinema e Séries', icone: '🎬' },
+    { id: 'comidas-bebidas', nome: 'Comidas e Bebidas', icone: '🍔' },
+    { id: 'curiosidades', nome: 'Curiosidades', icone: '💡' },
+    { id: 'esportes', nome: 'Esportes', icone: '⚽' },
     { id: 'geografia', nome: 'Geografia', icone: '🗺️' },
     { id: 'historia', nome: 'História', icone: '📜' },
-    { id: 'ciencia', nome: 'Ciência', icone: '🔬' },
-    { id: 'arte', nome: 'Arte', icone: '🎨' },
     { id: 'literatura', nome: 'Literatura', icone: '📚' },
-    { id: 'cinema-series', nome: 'Cinema e Séries', icone: '🎬' },
-    { id: 'musica', nome: 'Música', icone: '🎵' },
-    { id: 'games', nome: 'Mundo dos Games', icone: '🎮' },
     { id: 'mitos-verdades', nome: 'Mitos ou Verdades', icone: '🤔' },
-    { id: 'comidas-bebidas', nome: 'Comidas e Bebidas', icone: '🍔' },
-    { id: 'nostalgia', nome: 'Nostalgia', icone: '📼' },
-    { id: 'esportes', nome: 'Esportes', icone: '⚽' },
-    { id: 'curiosidades', nome: 'Curiosidades', icone: '💡' }
+    { id: 'games', nome: 'Mundo dos Games', icone: '🎮' },
+    { id: 'musica', nome: 'Música', icone: '🎵' },
+    { id: 'nostalgia', nome: 'Nostalgia', icone: '📼' }
 ];
 
 // Tenta inicializar o Firebase
