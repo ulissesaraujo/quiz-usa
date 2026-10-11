@@ -10,3 +10,8 @@
 
 - Prefira mensagens curtas e diretas
 - Descreva O QUE foi feito, não COMO
+
+## Build/Versão
+
+- Após cada commit, atualize o timestamp de build em index.html na classe "versao-debug"
+- Formato: HH:mm:ss dd/MM/yyyy (horário atual)
