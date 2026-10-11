@@ -273,6 +273,15 @@ body {
     display: flex;
     gap: 12px;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--white);
+    padding: 12px 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btn-acao {
@@ -350,6 +359,28 @@ body {
     background: var(--gray-300);
     color: var(--gray-500);
     cursor: not-allowed;
+}
+
+.btn-jogar-principal:disabled::after {
+    content: 'Escolha um tema primeiro';
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gray-700);
+    color: white;
+    padding: 4px 10px;
+    border-radius: var(--radius);
+    font-size: 0.7rem;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+
+.btn-jogar-principal:disabled:hover::after {
+    opacity: 1;
 }
 
 /* Divisor */
