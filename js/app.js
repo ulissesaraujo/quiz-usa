@@ -69,6 +69,7 @@ const elementos = {
     resultadoPontuacao: document.getElementById('resultado-pontuacao'),
     resultadoAcertos: document.getElementById('resultado-acertos'),
     resultadoTempo: document.getElementById('resultado-tempo'),
+    resultadoMensagem: document.getElementById('resultado-mensagem'),
     detalhesLista: document.getElementById('detalhes-lista'),
     rankingPartidaBody: document.getElementById('ranking-partida-body'),
     btnVoltarTemas: document.getElementById('btn-voltar-temas'),
@@ -574,6 +575,10 @@ async function mostrarResultado(resultado) {
     elementos.resultadoAcertos.textContent = `${resultado.acertos}/${resultado.totalPerguntas}`;
     elementos.resultadoTempo.textContent = rankingManager.formatarTempo(resultado.tempoTotal);
     
+    // Calcula percentual de acerto e mostra mensagem motivacional
+    const percentualAcerto = (resultado.acertos / resultado.totalPerguntas) * 100;
+    elementos.resultadoMensagem.innerHTML = obterMensagemMotivacional(percentualAcerto);
+    
     // Renderiza detalhes por pergunta
     elementos.detalhesLista.innerHTML = '';
     resultado.detalhes.forEach((detalhe, index) => {
@@ -657,6 +662,25 @@ async function carregarRankingPartida(temas) {
             tr.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     });
+}
+
+/**
+ * Retorna mensagem motivacional baseada no percentual de acerto
+ */
+function obterMensagemMotivacional(percentual) {
+    if (percentual === 100) {
+        return '<span class="mensagem-icone">🏆</span> <strong>Perfeito!</strong> Você é um mestre!';
+    } else if (percentual >= 80) {
+        return '<span class="mensagem-icone">🎉</span> <strong>Parabéns!</strong> Excelente desempenho!';
+    } else if (percentual >= 60) {
+        return '<span class="mensagem-icone">👍</span> <strong>Muito bem!</strong> Continue assim!';
+    } else if (percentual >= 40) {
+        return '<span class="mensagem-icone">💪</span> <strong>Bom esforço!</strong> Quase lá!';
+    } else if (percentual >= 30) {
+        return '<span class="mensagem-icone">📚</span> <strong>Continue praticando!</strong>';
+    } else {
+        return '<span class="mensagem-icone">🎯</span> <strong>Você pode melhorar!</strong> Tente novamente!';
+    }
 }
 
 function inicializarResultado() {

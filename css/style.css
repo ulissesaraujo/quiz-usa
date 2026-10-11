@@ -764,7 +764,26 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
+}
+
+.resultado-mensagem {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+    border-radius: var(--radius);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.resultado-mensagem .mensagem-icone {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.resultado-mensagem strong {
+    color: var(--primary);
 }
 
 .resultado-card {
