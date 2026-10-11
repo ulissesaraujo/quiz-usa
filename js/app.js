@@ -606,63 +606,56 @@ async function mostrarResultado(resultado) {
 }
 
 async function carregarRankingPartida(temas) {
-    const ranking = await rankingManager.obterRankingGlobal(20);
+    // Busca histórico de partidas do jogador atual
+    const historico = await rankingManager.obterHistoricoJogador(20);
     
     elementos.rankingPartidaBody.innerHTML = '';
     
-    if (ranking.length === 0) {
+    if (historico.length === 0) {
         elementos.rankingPartidaBody.innerHTML = `
             <tr>
-                <td colspan="6" style="text-align: center; color: #9ca3af;">
-                    Nenhum resultado ainda
+                <td colspan="5" style="text-align: center; color: #9ca3af;">
+                    Nenhuma partida ainda
                 </td>
             </tr>
         `;
         return;
     }
     
-    ranking.forEach((item, index) => {
-        const isJogadorAtual = item.jogador === estado.jogador;
+    // A primeira partida (mais recente) é a que acabou de jogar
+    historico.forEach((item, index) => {
+        const isPartidaAtual = index === 0; // Primeira é a mais recente
         const tr = document.createElement('tr');
-        tr.className = isJogadorAtual ? 'destaque' : '';
+        tr.className = isPartidaAtual ? 'destaque partida-atual' : '';
         
         const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
         
-        // Determina se pode desafiar esta partida
-        const sessaoId = item.sessaoOriginalId || item.sessaoId;
-        const jaJogou = sessaoId ? rankingManager.jaJogouSessao(sessaoId) : true;
-        const temPerguntasIds = item.perguntasIds && item.perguntasIds.length > 0;
-        
-        let btnDesafiarHtml = '';
-        if (temPerguntasIds) {
-            // Se é o próprio jogador OU já jogou essa sessão, mostra "Jogado"
-            if (isJogadorAtual || jaJogou) {
-                btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
-            } else {
-                btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;
-            }
-        } else {
-            btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
+        // Formata a data
+        let dataDisplay = '—';
+        if (item.timestamp) {
+            const data = item.timestamp.toDate ? item.timestamp.toDate() : new Date(item.timestamp);
+            dataDisplay = data.toLocaleDateString('pt-BR', { 
+                day: '2-digit', 
+                month: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
         }
         
         tr.innerHTML = `
             <td>${index + 1}º</td>
-            <td>${item.jogador}${isJogadorAtual ? ' (você)' : ''}</td>
             <td>${temasDisplay}</td>
             <td>${item.pontuacaoTotal}</td>
             <td>${item.acertos}/${item.totalPerguntas || 10}</td>
-            <td class="td-desafiar">${btnDesafiarHtml}</td>
+            <td>${dataDisplay}</td>
         `;
         
         elementos.rankingPartidaBody.appendChild(tr);
-    });
-    
-    // Adiciona event listeners para os botões de desafio
-    elementos.rankingPartidaBody.querySelectorAll('.btn-desafiar:not(.disabled)').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const index = parseInt(btn.dataset.index);
-            iniciarDesafio(ranking[index]);
-        });
+        
+        // Scroll para a partida atual (primeira linha)
+        if (isPartidaAtual) {
+            tr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     });
 }
 
