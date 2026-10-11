@@ -189,14 +189,7 @@ export class QuizEngine {
         this.cronometroSegundos = 0;
         this._ultimoAnuncioTempo = 10; // Para controlar anúncios de tempo
         
-        // Anuncia que alternativas estão disponíveis
-        const pergunta = this.perguntas[this.perguntaAtual];
-        try {
-            Anunciador.anunciarAlternativasDisponiveis(pergunta.alternativas.length);
-        } catch (e) {
-            // Silencia erros de acessibilidade
-        }
-        
+        // Notifica início da fase de resposta
         if (this.onFaseResposta) {
             this.onFaseResposta({ ativa: true, tempo: 0 });
         }
@@ -213,7 +206,7 @@ export class QuizEngine {
                     try {
                         Anunciador.anunciarTempoRestante(tempoRestante);
                     } catch (e) {
-                        // Silencia erros de acessibilidade para não afetar o jogo
+                        // Silencia erros de acessibilidade
                     }
                 }
                 
@@ -232,6 +225,14 @@ export class QuizEngine {
                 console.error('Erro no cronômetro:', error);
             }
         }, 100);
+        
+        // Anuncia que alternativas estão disponíveis (após iniciar o timer)
+        try {
+            const pergunta = this.perguntas[this.perguntaAtual];
+            Anunciador.anunciarAlternativasDisponiveis(pergunta.alternativas.length);
+        } catch (e) {
+            // Silencia erros de acessibilidade
+        }
     }
 
     /**
