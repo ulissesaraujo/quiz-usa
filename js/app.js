@@ -41,6 +41,7 @@ const elementos = {
     temasGrid: document.getElementById('temas-grid'),
     btnAleatorio: document.getElementById('btn-aleatorio'),
     btnJogar: document.getElementById('btn-jogar'),
+    badgeSelecionados: document.getElementById('badge-selecionados'),
     selecaoInfo: document.getElementById('selecao-info'),
     btnVerRankingSalas: document.getElementById('btn-ver-ranking-salas'),
     btnVerRankingGeral: document.getElementById('btn-ver-ranking-geral'),
@@ -210,6 +211,9 @@ function renderizarTemas() {
 
 function atualizarUITemas() {
     const temas = temasManager.obterTemas();
+    const temasSelecionados = temasManager.obterTemasSelecionados();
+    const numSelecionados = temasSelecionados.length;
+    const modoAleatorio = temasManager.isModoAleatorio();
     
     // Atualiza cards de temas
     document.querySelectorAll('.tema-card').forEach(card => {
@@ -231,7 +235,7 @@ function atualizarUITemas() {
     });
     
     // Atualiza botão aleatório
-    if (temasManager.isModoAleatorio()) {
+    if (modoAleatorio) {
         elementos.btnAleatorio.classList.add('ativo');
         elementos.btnAleatorio.setAttribute('aria-pressed', 'true');
     } else {
@@ -239,27 +243,35 @@ function atualizarUITemas() {
         elementos.btnAleatorio.setAttribute('aria-pressed', 'false');
     }
     
-    // Atualiza info de seleção
-    const descricao = temasManager.gerarDescricaoSelecao();
-    const totalPerguntas = temasManager.totalPerguntasDisponiveis();
-    
-    if (temasManager.podeIniciar()) {
-        const infoTexto = `${descricao} (${totalPerguntas} perguntas disponíveis)`;
-        elementos.selecaoInfo.textContent = infoTexto;
-        elementos.btnJogar.disabled = false;
-        elementos.btnJogar.setAttribute('aria-disabled', 'false');
+    // Atualiza badge do botão jogar
+    if (numSelecionados > 0 && !modoAleatorio) {
+        elementos.badgeSelecionados.textContent = numSelecionados;
+        elementos.badgeSelecionados.classList.remove('oculto');
     } else {
-        elementos.selecaoInfo.textContent = 'Selecione um ou mais temas para jogar';
-        elementos.btnJogar.disabled = true;
-        elementos.btnJogar.setAttribute('aria-disabled', 'true');
+        elementos.badgeSelecionados.classList.add('oculto');
+    }
+    
+    // Atualiza estado do botão jogar
+    const podeIniciar = temasManager.podeIniciar();
+    elementos.btnJogar.disabled = !podeIniciar;
+    elementos.btnJogar.setAttribute('aria-disabled', !podeIniciar ? 'true' : 'false');
+    
+    // Atualiza info de seleção (mais discreto)
+    const totalPerguntas = temasManager.totalPerguntasDisponiveis();
+    if (podeIniciar) {
+        const descricao = temasManager.gerarDescricaoSelecao();
+        elementos.selecaoInfo.textContent = `${descricao} • ${totalPerguntas} perguntas`;
+    } else {
+        elementos.selecaoInfo.textContent = '';
     }
 }
 
 function inicializarTemas() {
-    // Botão aleatório - já inicia o jogo direto
-    elementos.btnAleatorio.addEventListener('click', async () => {
-        temasManager.setModoAleatorio(true);
-        await iniciarQuiz();
+    // Botão aleatório - toggle do modo aleatório
+    elementos.btnAleatorio.addEventListener('click', () => {
+        const novoEstado = !temasManager.isModoAleatorio();
+        temasManager.setModoAleatorio(novoEstado);
+        atualizarUITemas();
     });
     
     // Botão jogar

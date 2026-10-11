@@ -125,23 +125,27 @@
                     Selecione um ou mais temas. O sistema sorteará 10 perguntas para você!
                 </p>
                 
-                <!-- Botão Aleatório -->
-                <div class="aleatorio-container">
-                    <button class="btn-aleatorio" 
+                <!-- Botões de Ação -->
+                <div class="acoes-container">
+                    <button class="btn-acao btn-aleatorio" 
                             id="btn-aleatorio"
                             role="switch"
-                            aria-checked="false"
-                            aria-describedby="aleatorio-desc">
-                        <span class="aleatorio-icone" aria-hidden="true">🎲</span>
-                        <span class="aleatorio-texto">Temas Aleatórios</span>
-                        <span class="aleatorio-desc" id="aleatorio-desc">
-                            Mistura perguntas de todos os temas
-                        </span>
+                            aria-checked="false">
+                        <span class="btn-acao-icone" aria-hidden="true">🎲</span>
+                        <span class="btn-acao-texto">Aleatório</span>
+                    </button>
+                    <button class="btn-acao btn-jogar-principal" 
+                            id="btn-jogar" 
+                            disabled
+                            aria-disabled="true">
+                        <span class="btn-acao-icone" aria-hidden="true">▶</span>
+                        <span class="btn-acao-texto">Jogar</span>
+                        <span class="btn-acao-badge oculto" id="badge-selecionados">0</span>
                     </button>
                 </div>
 
                 <div class="divisor" role="separator">
-                    <span>ou escolha temas específicos</span>
+                    <span>escolha temas específicos</span>
                 </div>
                 
                 <div class="temas-grid" 
@@ -152,22 +156,11 @@
                     <!-- Temas serão carregados via JavaScript -->
                 </div>
 
-                <div class="selecao-footer">
-                    <p class="selecao-info" 
-                       id="selecao-info" 
-                       role="status" 
-                       aria-live="polite">
-                        Selecione um ou mais temas para jogar
-                    </p>
-                    <button class="btn btn-primary btn-jogar" 
-                            id="btn-jogar" 
-                            disabled
-                            aria-disabled="true"
-                            aria-describedby="selecao-info">
-                        Jogar
-                        <span class="btn-icon" aria-hidden="true">→</span>
-                    </button>
-                </div>
+                <p class="selecao-info" 
+                   id="selecao-info" 
+                   role="status" 
+                   aria-live="polite">
+                </p>
             </div>
         </section>
 
