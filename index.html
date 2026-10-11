@@ -91,7 +91,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build: 03:33:18 08/10/2026</p>
+                <p class="versao-debug">Build: 03:37:45 08/10/2026</p>
             </div>
         </section>
 
@@ -294,15 +294,17 @@
                     <!-- Mensagem motivacional será carregada via JavaScript -->
                 </div>
 
-                <section class="resultado-detalhes" aria-labelledby="detalhes-titulo">
-                    <h3 id="detalhes-titulo">Detalhes por Pergunta</h3>
+                <details class="resultado-detalhes" id="detalhes-section">
+                    <summary id="detalhes-titulo">
+                        <span class="detalhes-icone">📋</span> Ver detalhes por pergunta
+                    </summary>
                     <div class="detalhes-lista" 
                          id="detalhes-lista"
                          role="list"
                          aria-label="Lista de resultados por pergunta">
                         <!-- Detalhes serão carregados via JavaScript -->
                     </div>
-                </section>
+                </details>
 
                 <div class="resultado-acoes" role="group" aria-label="Ações pós-partida">
                     <button class="btn btn-primary" id="btn-voltar-temas">
