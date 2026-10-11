@@ -508,11 +508,18 @@ body {
     border-radius: var(--radius-full);
     font-size: 0.85rem;
     color: var(--gray-600);
-    margin-bottom: 16px;
 }
 
 .pergunta-tema.oculto {
     display: none;
+}
+
+.pergunta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 12px;
 }
 
 .pergunta-enunciado {
@@ -535,26 +542,26 @@ body {
 .cronometro {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 20px;
-    padding: 8px 16px;
+    gap: 4px;
+    padding: 4px 10px;
     background: var(--gray-100);
     border-radius: var(--radius-full);
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 0.8rem;
+}
+
+.cronometro.oculto {
+    display: none;
 }
 
 .cronometro-icon {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .cronometro-tempo {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     color: var(--gray-700);
-    min-width: 50px;
+    min-width: 40px;
     transition: color 0.3s ease;
 }
 

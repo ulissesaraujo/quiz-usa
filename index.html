@@ -216,11 +216,22 @@
 
                 <!-- Pergunta -->
                 <div class="pergunta-container" role="article">
-                    <p class="pergunta-tema oculto" 
-                       id="pergunta-tema" 
-                       aria-hidden="true">
-                        🗺️ Geografia
-                    </p>
+                    <div class="pergunta-header">
+                        <p class="pergunta-tema oculto" 
+                           id="pergunta-tema" 
+                           aria-hidden="true">
+                            🗺️ Geografia
+                        </p>
+                        <div class="cronometro oculto" 
+                             id="cronometro"
+                             role="timer" 
+                             aria-label="Tempo restante para responder">
+                            <span class="cronometro-icon" aria-hidden="true">⏱️</span>
+                            <span class="cronometro-tempo" 
+                                  id="cronometro-tempo"
+                                  aria-live="off">10.0s</span>
+                        </div>
+                    </div>
                     <h2 class="pergunta-enunciado" 
                         id="pergunta-enunciado"
                         tabindex="-1">
@@ -232,16 +243,6 @@
                 <div class="alternativas-container oculto" 
                      id="alternativas-container"
                      aria-hidden="true">
-                    <div class="cronometro" 
-                         role="timer" 
-                         aria-label="Tempo restante para responder">
-                        <span class="cronometro-icon" aria-hidden="true">⏱️</span>
-                        <span class="cronometro-tempo" 
-                              id="cronometro-tempo"
-                              aria-live="off">
-                            10.0s
-                        </span>
-                    </div>
                     
                     <div class="alternativas" 
                          id="alternativas" 

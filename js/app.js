@@ -54,6 +54,7 @@ const elementos = {
     perguntaEnunciado: document.getElementById('pergunta-enunciado'),
     perguntaTema: document.getElementById('pergunta-tema'),
     alternativasContainer: document.getElementById('alternativas-container'),
+    cronometro: document.getElementById('cronometro'),
     cronometroTempo: document.getElementById('cronometro-tempo'),
     alternativas: document.getElementById('alternativas'),
     feedbackContainer: document.getElementById('feedback-container'),
@@ -433,6 +434,7 @@ function configurarCallbacksQuiz() {
         if (ativa) {
             elementos.faseLeitura.classList.add('oculto');
             elementos.alternativasContainer.classList.remove('oculto');
+            elementos.cronometro.classList.remove('oculto');
             elementos.cronometroTempo.textContent = `${tempo.toFixed(1)}s`;
             
             // Muda cor do cronômetro conforme o tempo
@@ -499,6 +501,9 @@ function renderizarAlternativas() {
 
 function mostrarFeedback(resultado) {
     const { correta, indiceCorreto, indiceEscolhido, pontosGanhos, bonus, tempoEsgotado, tempo } = resultado;
+    
+    // Oculta o cronômetro durante o feedback
+    elementos.cronometro.classList.add('oculto');
     
     // Destaca a alternativa correta/errada
     const botoes = elementos.alternativas.querySelectorAll('.alternativa-btn');
