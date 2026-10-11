@@ -217,6 +217,13 @@ body {
     width: 100%;
 }
 
+.versao-debug {
+    margin-top: 24px;
+    font-size: 0.7rem;
+    color: var(--gray-400);
+    text-align: center;
+}
+
 /* ========================================
    TELA 2: SELEÇÃO DE TEMAS
    ======================================== */
