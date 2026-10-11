@@ -492,7 +492,7 @@
                 <div class="stat-label">Total de Perguntas</div>
             </div>
             <div class="stat-card">
-                <div class="stat-valor" id="total-temas">13</div>
+                <div class="stat-valor" id="total-temas">-</div>
                 <div class="stat-label">Temas</div>
             </div>
             <div class="stat-card">
@@ -604,6 +604,7 @@
                             <option value="musica">🎵 Música</option>
                             <option value="musica-pop">🎤 Música Pop</option>
                             <option value="nostalgia">📼 Nostalgia</option>
+                            <option value="z-testes">🧪 Z-Testes</option>
                         </select>
                         <span class="filtro-contador" id="filtro-contador">0 perguntas</span>
                     </div>
@@ -645,12 +646,16 @@
         const inputImportar = document.getElementById('input-importar');
         const totalPerguntasEl = document.getElementById('total-perguntas');
         const totalPartidasEl = document.getElementById('total-partidas');
+        const totalTemasEl = document.getElementById('total-temas');
 
         // Mapa de temas para ícones
         const temasIcones = {};
         TEMAS_DISPONIVEIS.forEach(t => {
             temasIcones[t.id] = t.icone;
         });
+        
+        // Atualiza total de temas
+        totalTemasEl.textContent = TEMAS_DISPONIVEIS.length;
 
         // Inicialização
         async function init() {
