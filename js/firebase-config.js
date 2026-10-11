@@ -22,7 +22,8 @@ export const TEMAS_DISPONIVEIS = [
     { id: 'games', nome: 'Mundo dos Games', icone: '🎮' },
     { id: 'musica', nome: 'Música', icone: '🎵' },
     { id: 'musica-pop', nome: 'Música Pop', icone: '🎤' },
-    { id: 'nostalgia', nome: 'Nostalgia', icone: '📼' }
+    { id: 'nostalgia', nome: 'Nostalgia', icone: '📼' },
+    { id: 'z-testes', nome: 'Z-Testes', icone: '🧪' }
 ];
 
 // Tenta inicializar o Firebase
