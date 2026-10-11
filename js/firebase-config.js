@@ -191,6 +191,9 @@ export async function buscarPerguntasAleatorias(quantidade = 10) {
         return [];
     }
     
+    // Temas excluídos do modo aleatório (não afetam ranking geral)
+    const temasExcluidos = ['criancas', 'z-testes'];
+    
     try {
         const { collection, getDocs, db } = window._firestore;
         const perguntasCollection = collection(db, "perguntas");
@@ -199,16 +202,17 @@ export async function buscarPerguntasAleatorias(quantidade = 10) {
         const todasPerguntas = [];
         
         snapshot.forEach((doc) => {
-            todasPerguntas.push({
-                id: doc.id,
-                ...doc.data()
-            });
+            const pergunta = { id: doc.id, ...doc.data() };
+            // Filtra temas excluídos
+            if (!temasExcluidos.includes(pergunta.tema)) {
+                todasPerguntas.push(pergunta);
+            }
         });
         
         // Embaralha e seleciona
         const perguntasSorteadas = embaralharArray(todasPerguntas).slice(0, quantidade);
         
-        console.log(`✅ ${perguntasSorteadas.length} perguntas aleatórias sorteadas`);
+        console.log(`✅ ${perguntasSorteadas.length} perguntas aleatórias sorteadas (excluídos: ${temasExcluidos.join(', ')})`);
         return perguntasSorteadas;
     } catch (error) {
         console.error("Erro ao buscar perguntas aleatórias:", error);
