@@ -446,7 +446,7 @@
       "alternativas": [
         "Verdade",
         "Mito - é plasma e fusão nuclear",
-        "Ã‰ lava",
+        "É lava",
         "Apenas gás quente"
       ],
       "correta": 1
@@ -798,7 +798,7 @@
       "alternativas": [
         "Verdade (ou Amazonas, dependendo da medição)",
         "Mito claro",
-        "Ã‰ o mais largo",
+        "É o mais largo",
         "Terceiro maior"
       ],
       "correta": 0
@@ -1524,7 +1524,7 @@
       "alternativas": [
         "Verdade aproximada",
         "Mito total",
-        "Ã‰ 90%",
+        "É 90%",
         "Apenas 30%"
       ],
       "correta": 0
@@ -1590,7 +1590,7 @@
       "alternativas": [
         "Verdade botânica",
         "Mito",
-        "Ã‰ um legume",
+        "É um legume",
         "Nenhum dos dois"
       ],
       "correta": 0
@@ -1612,7 +1612,7 @@
       "alternativas": [
         "Verdade",
         "Mito - bananeira é uma planta herbácea",
-        "Ã‰ um arbusto",
+        "É um arbusto",
         "Cresce no solo"
       ],
       "correta": 1
@@ -1623,8 +1623,8 @@
       "alternativas": [
         "Verdade",
         "Mito - é uma leguminosa",
-        "Ã‰ semente",
-        "Ã‰ castanha"
+        "É semente",
+        "É castanha"
       ],
       "correta": 1
     },
@@ -1656,7 +1656,7 @@
       "alternativas": [
         "Verdade entre os quentes",
         "Mito - Antártida é maior (deserto frio)",
-        "Ã‰ o único deserto",
+        "É o único deserto",
         "Gobi é maior"
       ],
       "correta": 1

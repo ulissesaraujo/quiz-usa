@@ -11,3 +11,34 @@ Comidas e Bebidas
 Nostalgia
 Esportes
 Curiosidades
+
+
+Queria fazer uma lista de quiz com o "tema": "musica-=pop" que vai tratar o estilo pop, fortemente combinado com o pop punk e o rock alternativo.
+{
+  "perguntas": [
+    {
+      "tema": "nome-do-tema",
+      "enunciado": "Texto da pergunta?",
+      "alternativas": [
+        "Alternativa A",
+        "Alternativa B",
+        "Alternativa C",
+        "Alternativa D"
+      ],
+      "correta": 0
+    }
+  ]
+}
+Regras importantes para informar ao Gemini:
+
+correta: número de 0 a 3 indicando o índice da alternativa correta (0 = primeira, 1 = segunda, etc.)
+alternativas: sempre 4 opções
+Encoding: UTF-8 (para os acentos funcionarem)
+Exemplo de prompt para o Gemini:
+
+Crie 50 perguntas de quiz sobre [TEMA] no formato JSON. Use este formato exato:
+
+json
+
+{"perguntas": [{"tema": "nome-do-tema", "enunciado": "Pergunta?", "alternativas": ["A", "B", "C", "D"], "correta": 0}]}
+O campo "correta" deve ser o índice (0-3) da alternativa correta. Use encoding UTF-8.

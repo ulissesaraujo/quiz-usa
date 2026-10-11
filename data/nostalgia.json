@@ -422,7 +422,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual cantor/grupo fez sucesso com 'Florentina'?",
       "alternativas": [
-        "Ã‰ o Tchan",
+        "É o Tchan",
         "Mamonas Assassinas",
         "Dominó",
         "Trem da Alegria"
@@ -433,7 +433,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual grupo brasileiro dos anos 90 cantava 'Pelados em Santos'?",
       "alternativas": [
-        "Ã‰ o Tchan",
+        "É o Tchan",
         "Mamonas Assassinas",
         "Raimundos",
         "Skank"
@@ -1159,7 +1159,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual programa de humor tinha os 'Cassetas'?",
       "alternativas": [
-        "A Praça Ã‰ Nossa",
+        "A Praça É Nossa",
         "Casseta & Planeta",
         "Zorra Total",
         "Sai de Baixo"
@@ -1447,7 +1447,7 @@
       "alternativas": [
         "Capricho",
         "Veja",
-        "Isto Ã‰",
+        "Isto É",
         "Super Interessante"
       ],
       "correta": 0
@@ -1586,7 +1586,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o bordão 'Ã‰ mentira, Terta!'?",
+      "enunciado": "Qual era o bordão 'É mentira, Terta!'?",
       "alternativas": [
         "A Praça é Nossa",
         "Escolinha do Professor Raimundo",

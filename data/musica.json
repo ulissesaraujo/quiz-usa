@@ -1071,7 +1071,7 @@
       "tema": "musica",
       "enunciado": "Qual DJ brasileiro é conhecido mundialmente como Alok?",
       "alternativas": [
-        "Ã‰ o próprio nome artístico",
+        "É o próprio nome artístico",
         "Alok Achkar Peres Petrillo",
         "Alex Petrillo",
         "Alan Walker"
@@ -1305,7 +1305,7 @@
         "Velha Infância",
         "Já Sei Namorar",
         "Passe em Casa",
-        "Ã‰ Você"
+        "É Você"
       ],
       "correta": 1
     },
@@ -1326,7 +1326,7 @@
       "alternativas": [
         "As Meninas",
         "Rouge",
-        "Ã‰ o Tchan",
+        "É o Tchan",
         "Babado Novo"
       ],
       "correta": 1
@@ -1355,7 +1355,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual dupla sertaneja lançou 'Ã‰ o Amor'?",
+      "enunciado": "Qual dupla sertaneja lançou 'É o Amor'?",
       "alternativas": [
         "Chitãozinho & Xororó",
         "Leandro & Leonardo",
@@ -1410,7 +1410,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Quem compôs 'O Que Ã‰ O Que Ã‰'?",
+      "enunciado": "Quem compôs 'O Que É O Que É'?",
       "alternativas": [
         "Gilberto Gil",
         "Gonzaguinha",
