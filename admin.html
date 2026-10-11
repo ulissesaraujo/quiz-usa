@@ -312,6 +312,67 @@
             font-weight: 500;
             margin-bottom: 8px;
             line-height: 1.4;
+            cursor: pointer;
+        }
+
+        .pergunta-enunciado:hover {
+            color: var(--primary);
+        }
+
+        /* Alternativas na lista */
+        .pergunta-alternativas {
+            display: none;
+            margin: 12px 0;
+            padding: 12px;
+            background: var(--gray-50);
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .pergunta-alternativas.visivel {
+            display: block;
+        }
+
+        .pergunta-alternativas ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pergunta-alternativas li {
+            padding: 6px 10px;
+            margin-bottom: 4px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .pergunta-alternativas li:last-child {
+            margin-bottom: 0;
+        }
+
+        .pergunta-alternativas li.correta {
+            background: rgba(34, 197, 94, 0.15);
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .pergunta-alternativas li.correta::before {
+            content: '✓ ';
+        }
+
+        .btn-expandir {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .btn-expandir:hover {
+            background: var(--gray-100);
         }
 
         .pergunta-meta {
@@ -333,6 +394,7 @@
             gap: 12px;
             margin-bottom: 16px;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         .filtros select {
@@ -340,6 +402,15 @@
             border: 2px solid var(--gray-200);
             border-radius: 6px;
             font-family: inherit;
+        }
+
+        .filtro-contador {
+            padding: 6px 12px;
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
 
         /* Mensagens */
@@ -529,6 +600,7 @@
                             <option value="esportes">⚽ Esportes</option>
                             <option value="curiosidades">💡 Curiosidades</option>
                         </select>
+                        <span class="filtro-contador" id="filtro-contador">0 perguntas</span>
                     </div>
 
                     <div class="perguntas-lista" id="perguntas-lista">
@@ -562,6 +634,7 @@
         const mensagemForm = document.getElementById('mensagem-form');
         const perguntasLista = document.getElementById('perguntas-lista');
         const filtroTema = document.getElementById('filtro-tema');
+        const filtroContador = document.getElementById('filtro-contador');
         const btnAtualizar = document.getElementById('btn-atualizar');
         const btnExportar = document.getElementById('btn-exportar');
         const inputImportar = document.getElementById('input-importar');
@@ -623,26 +696,49 @@
                 perguntasFiltradas = perguntas.filter(p => p.tema === filtroAtual);
             }
 
+            // Atualiza contador
+            const total = perguntasFiltradas.length;
+            filtroContador.textContent = `${total} pergunta${total !== 1 ? 's' : ''}`;
+
             if (perguntasFiltradas.length === 0) {
                 perguntasLista.innerHTML = '<div class="empty-state"><span>📭</span><p>Nenhuma pergunta encontrada</p></div>';
                 return;
             }
 
-            perguntasLista.innerHTML = perguntasFiltradas.map(p => `
-                <div class="pergunta-item" data-id="${p.id}">
-                    <span class="pergunta-tema">${temasIcones[p.tema] || '❓'} ${p.tema}</span>
-                    <div class="pergunta-enunciado">${p.enunciado}</div>
-                    <div class="pergunta-meta">
-                        <span>${p.alternativas?.length || 0} alternativas</span>
-                        <div class="pergunta-acoes">
-                            <button class="btn btn-small btn-danger" onclick="excluirPerguntaHandler('${p.id}')">
-                                🗑️ Excluir
+            perguntasLista.innerHTML = perguntasFiltradas.map((p, index) => {
+                const alternativasHtml = (p.alternativas || []).map((alt, i) => 
+                    `<li class="${i === p.correta ? 'correta' : ''}">${alt}</li>`
+                ).join('');
+
+                return `
+                    <div class="pergunta-item" data-id="${p.id}">
+                        <span class="pergunta-tema">${temasIcones[p.tema] || '❓'} ${p.tema}</span>
+                        <div class="pergunta-enunciado" onclick="toggleAlternativas('alt-${index}')">${p.enunciado}</div>
+                        <div class="pergunta-alternativas" id="alt-${index}">
+                            <ul>${alternativasHtml}</ul>
+                        </div>
+                        <div class="pergunta-meta">
+                            <button class="btn-expandir" onclick="toggleAlternativas('alt-${index}')">
+                                👁️ Ver alternativas
                             </button>
+                            <div class="pergunta-acoes">
+                                <button class="btn btn-small btn-danger" onclick="excluirPerguntaHandler('${p.id}')">
+                                    🗑️ Excluir
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
+
+        // Toggle alternativas
+        window.toggleAlternativas = function(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.classList.toggle('visivel');
+            }
+        };
 
         // Handler de submit do formulário
         async function handleSubmit(e) {
