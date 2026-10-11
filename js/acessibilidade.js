@@ -286,6 +286,9 @@ const GerenciadorFoco = {
 
 const NavegacaoTeclado = {
     _callbacks: {},
+    _escCallback: null,
+    _atalhosContainer: null,
+    _atalhosCallback: null,
 
     /**
      * Inicializa atalhos de teclado
@@ -306,6 +309,14 @@ const NavegacaoTeclado = {
         // Atalhos numéricos para alternativas (1-4)
         if (['1', '2', '3', '4'].includes(e.key)) {
             const indice = parseInt(e.key) - 1;
+            
+            // Usa callback personalizado se definido
+            if (this._atalhosCallback) {
+                this._atalhosCallback(indice);
+                e.preventDefault();
+                return;
+            }
+            
             const alternativa = document.querySelector(
                 `#alternativas .alternativa-btn:nth-child(${indice + 1}):not(:disabled)`
             );
@@ -317,6 +328,13 @@ const NavegacaoTeclado = {
 
         // ESC para fechar modais
         if (e.key === 'Escape') {
+            // Usa callback personalizado se definido
+            if (this._escCallback) {
+                this._escCallback(e);
+                e.preventDefault();
+                return;
+            }
+            
             const modalAberto = document.querySelector('.modal:not(.oculto)');
             if (modalAberto) {
                 const btnFechar = modalAberto.querySelector('.modal-fechar');
@@ -329,6 +347,21 @@ const NavegacaoTeclado = {
         if (this._callbacks[e.key]) {
             this._callbacks[e.key](e);
         }
+    },
+
+    /**
+     * Ativa ESC para fechar com callback personalizado
+     */
+    ativarEscParaFechar(callback) {
+        this._escCallback = callback;
+    },
+
+    /**
+     * Ativa atalhos numéricos (1-4) para um container
+     */
+    ativarAtalhos(container, callback) {
+        this._atalhosContainer = container;
+        this._atalhosCallback = callback;
     },
 
     /**
