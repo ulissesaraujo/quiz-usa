@@ -103,12 +103,16 @@ export class QuizEngine {
         
         // Anuncia a pergunta para leitores de tela
         const temaNome = this.obterNomeTema(pergunta.tema);
-        Anunciador.anunciarPergunta(
-            this.perguntaAtual + 1, 
-            this.perguntas.length, 
-            pergunta.enunciado,
-            temaNome
-        );
+        try {
+            Anunciador.anunciarPergunta(
+                this.perguntaAtual + 1, 
+                this.perguntas.length, 
+                pergunta.enunciado,
+                temaNome
+            );
+        } catch (e) {
+            // Silencia erros de acessibilidade
+        }
         
         // Notifica que uma pergunta foi carregada
         if (this.onPerguntaCarregada) {
@@ -153,7 +157,11 @@ export class QuizEngine {
         let contador = 3;
         
         // Anuncia início da contagem
-        Anunciador.anunciarInicioContagem(10);
+        try {
+            Anunciador.anunciarInicioContagem(10);
+        } catch (e) {
+            // Silencia erros de acessibilidade
+        }
         
         if (this.onFaseLeitura) {
             this.onFaseLeitura({ segundos: contador, ativa: true });
@@ -183,7 +191,11 @@ export class QuizEngine {
         
         // Anuncia que alternativas estão disponíveis
         const pergunta = this.perguntas[this.perguntaAtual];
-        Anunciador.anunciarAlternativasDisponiveis(pergunta.alternativas.length);
+        try {
+            Anunciador.anunciarAlternativasDisponiveis(pergunta.alternativas.length);
+        } catch (e) {
+            // Silencia erros de acessibilidade
+        }
         
         if (this.onFaseResposta) {
             this.onFaseResposta({ ativa: true, tempo: 0 });
@@ -191,25 +203,33 @@ export class QuizEngine {
 
         // Inicia cronômetro que atualiza a cada 100ms
         this.timerCronometro = setInterval(() => {
-            this.cronometroSegundos = (Date.now() - this.tempoInicio) / 1000;
-            
-            // Anuncia tempo restante em momentos críticos
-            const tempoRestante = Math.ceil(10 - this.cronometroSegundos);
-            if (tempoRestante !== this._ultimoAnuncioTempo && tempoRestante > 0) {
-                this._ultimoAnuncioTempo = tempoRestante;
-                Anunciador.anunciarTempoRestante(tempoRestante);
-            }
-            
-            if (this.onFaseResposta) {
-                this.onFaseResposta({ 
-                    ativa: true, 
-                    tempo: this.cronometroSegundos 
-                });
-            }
-            
-            // Tempo esgotado após 10 segundos
-            if (this.cronometroSegundos >= 10 && !this.respondeu) {
-                this.tempoEsgotado();
+            try {
+                this.cronometroSegundos = (Date.now() - this.tempoInicio) / 1000;
+                
+                // Anuncia tempo restante em momentos críticos
+                const tempoRestante = Math.ceil(10 - this.cronometroSegundos);
+                if (tempoRestante !== this._ultimoAnuncioTempo && tempoRestante > 0) {
+                    this._ultimoAnuncioTempo = tempoRestante;
+                    try {
+                        Anunciador.anunciarTempoRestante(tempoRestante);
+                    } catch (e) {
+                        // Silencia erros de acessibilidade para não afetar o jogo
+                    }
+                }
+                
+                if (this.onFaseResposta) {
+                    this.onFaseResposta({ 
+                        ativa: true, 
+                        tempo: this.cronometroSegundos 
+                    });
+                }
+                
+                // Tempo esgotado após 10 segundos
+                if (this.cronometroSegundos >= 10 && !this.respondeu) {
+                    this.tempoEsgotado();
+                }
+            } catch (error) {
+                console.error('Erro no cronômetro:', error);
             }
         }, 100);
     }
@@ -230,7 +250,11 @@ export class QuizEngine {
         
         // Anuncia tempo esgotado com resposta correta
         const respostaCorreta = pergunta.alternativas[pergunta.correta];
-        Anunciador.anunciarTempoEsgotado(respostaCorreta);
+        try {
+            Anunciador.anunciarTempoEsgotado(respostaCorreta);
+        } catch (e) {
+            // Silencia erros de acessibilidade
+        }
         
         // Registra a resposta como erro (sem resposta)
         const detalheResposta = {
@@ -288,11 +312,19 @@ export class QuizEngine {
             pontosBase = 10;
             bonus = this.calcularBonus(tempoResposta);
             // Anuncia resposta correta
-            Anunciador.anunciarRespostaCorreta(pontosBase + bonus, bonus);
+            try {
+                Anunciador.anunciarRespostaCorreta(pontosBase + bonus, bonus);
+            } catch (e) {
+                // Silencia erros de acessibilidade
+            }
         } else {
             // Anuncia resposta errada com a alternativa correta
             const respostaCorreta = pergunta.alternativas[pergunta.correta];
-            Anunciador.anunciarRespostaErrada(respostaCorreta);
+            try {
+                Anunciador.anunciarRespostaErrada(respostaCorreta);
+            } catch (e) {
+                // Silencia erros de acessibilidade
+            }
         }
         
         const pontosGanhos = pontosBase + bonus;
@@ -354,7 +386,11 @@ export class QuizEngine {
         const tempoTotal = this.respostas.reduce((acc, r) => acc + r.tempo, 0);
         
         // Anuncia fim da partida
-        Anunciador.anunciarFimPartida(this.pontuacaoTotal, acertos, this.perguntas.length);
+        try {
+            Anunciador.anunciarFimPartida(this.pontuacaoTotal, acertos, this.perguntas.length);
+        } catch (e) {
+            // Silencia erros de acessibilidade
+        }
         
         // Calcula temas das perguntas respondidas
         const temasRespondidos = [...new Set(this.respostas.map(r => r.tema).filter(Boolean))];
