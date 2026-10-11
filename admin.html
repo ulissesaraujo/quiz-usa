@@ -570,7 +570,7 @@
                         </button>
                         <label class="btn btn-outline btn-small">
                             📤 Importar JSON
-                            <input type="file" id="input-importar" accept=".json" style="display: none;">
+                            <input type="file" id="input-importar" accept=".json" multiple style="display: none;">
                         </label>
                     </div>
                 </div>
@@ -818,50 +818,72 @@
             URL.revokeObjectURL(url);
         }
 
-        // Importa perguntas de JSON
+        // Importa perguntas de JSON (suporta múltiplos arquivos)
         async function importarPerguntas(e) {
-            const file = e.target.files[0];
-            if (!file) return;
+            const files = e.target.files;
+            if (!files || files.length === 0) return;
+
+            let totalImportadas = 0;
+            let totalErros = 0;
+            let todasPerguntas = [];
 
             try {
-                const texto = await file.text();
-                const dados = JSON.parse(texto);
-                
-                let perguntasParaImportar = [];
-                
-                // Suporta diferentes formatos
-                if (Array.isArray(dados)) {
-                    perguntasParaImportar = dados;
-                } else if (dados.perguntas && Array.isArray(dados.perguntas)) {
-                    perguntasParaImportar = dados.perguntas;
-                } else {
-                    throw new Error('Formato inválido');
+                // Processa cada arquivo
+                for (const file of files) {
+                    try {
+                        const texto = await file.text();
+                        const dados = JSON.parse(texto);
+                        
+                        let perguntasDoArquivo = [];
+                        
+                        // Suporta diferentes formatos
+                        if (Array.isArray(dados)) {
+                            perguntasDoArquivo = dados;
+                        } else if (dados.perguntas && Array.isArray(dados.perguntas)) {
+                            perguntasDoArquivo = dados.perguntas;
+                        } else {
+                            console.warn(`Arquivo ${file.name}: formato inválido`);
+                            totalErros++;
+                            continue;
+                        }
+
+                        // Valida estrutura
+                        const perguntasValidas = perguntasDoArquivo.filter(p => 
+                            p.tema && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
+                        );
+
+                        todasPerguntas.push(...perguntasValidas);
+                        console.log(`Arquivo ${file.name}: ${perguntasValidas.length} perguntas válidas`);
+                        
+                    } catch (err) {
+                        console.error(`Erro no arquivo ${file.name}:`, err);
+                        totalErros++;
+                    }
                 }
 
-                if (perguntasParaImportar.length === 0) {
-                    mostrarMensagem('Arquivo não contém perguntas válidas.', 'erro');
+                if (todasPerguntas.length === 0) {
+                    mostrarMensagem('Nenhuma pergunta válida encontrada nos arquivos.', 'erro');
                     return;
                 }
 
-                // Valida estrutura
-                const perguntasValidas = perguntasParaImportar.filter(p => 
-                    p.tema && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
-                );
+                const msgConfirm = files.length > 1 
+                    ? `Importar ${todasPerguntas.length} perguntas de ${files.length} arquivos?`
+                    : `Importar ${todasPerguntas.length} perguntas?`;
+                    
+                if (!confirm(msgConfirm)) return;
 
-                if (perguntasValidas.length === 0) {
-                    mostrarMensagem('Nenhuma pergunta válida encontrada no arquivo.', 'erro');
-                    return;
-                }
-
-                if (!confirm(`Importar ${perguntasValidas.length} perguntas?`)) return;
-
-                await adicionarPerguntasEmLote(perguntasValidas);
+                await adicionarPerguntasEmLote(todasPerguntas);
                 await carregarPerguntas();
-                mostrarMensagem(`${perguntasValidas.length} perguntas importadas com sucesso!`, 'sucesso');
+                
+                let msgSucesso = `${todasPerguntas.length} perguntas importadas com sucesso!`;
+                if (totalErros > 0) {
+                    msgSucesso += ` (${totalErros} arquivo(s) com erro)`;
+                }
+                mostrarMensagem(msgSucesso, 'sucesso');
                 
             } catch (error) {
                 console.error('Erro ao importar:', error);
-                mostrarMensagem('Erro ao importar arquivo. Verifique o formato.', 'erro');
+                mostrarMensagem('Erro ao importar arquivos. Verifique o formato.', 'erro');
             }
 
             // Limpa input
