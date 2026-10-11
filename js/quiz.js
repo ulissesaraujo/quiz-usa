@@ -156,7 +156,7 @@ export class QuizEngine {
 
     /**
      * Inicia a fase de leitura com countdown dinâmico
-     * Perguntas grandes (>100 caracteres) = 5 segundos
+     * Perguntas grandes (>90 caracteres) = 5 segundos
      * Perguntas normais = 3 segundos
      */
     iniciarFaseLeitura() {
@@ -164,7 +164,7 @@ export class QuizEngine {
         const tamanhoEnunciado = pergunta.enunciado ? pergunta.enunciado.length : 0;
         
         // Perguntas grandes têm mais tempo para leitura
-        let contador = tamanhoEnunciado > 100 ? 5 : 3;
+        let contador = tamanhoEnunciado > 90 ? 5 : 3;
         
         // Anuncia início da contagem
         try {
