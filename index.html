@@ -91,7 +91,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build: 03:12:45 08/10/2026</p>
+                <p class="versao-debug">Build: 03:18:22 08/10/2026</p>
             </div>
         </section>
 
@@ -197,18 +197,6 @@
             </header>
 
             <div class="quiz-container">
-                <!-- Fase de Leitura -->
-                <div class="fase-leitura" 
-                     id="fase-leitura"
-                     role="status"
-                     aria-live="assertive"
-                     aria-label="Contagem regressiva para responder">
-                    <div class="countdown-circle" id="countdown-circle" aria-hidden="true">
-                        <span class="countdown-numero" id="countdown-numero">3</span>
-                    </div>
-                    <p class="leitura-texto">Leia a pergunta...</p>
-                </div>
-
                 <!-- Pergunta -->
                 <div class="pergunta-container" role="article">
                     <div class="pergunta-header">
@@ -232,6 +220,18 @@
                         tabindex="-1">
                         Carregando pergunta...
                     </h2>
+                </div>
+
+                <!-- Fase de Leitura (countdown abaixo da pergunta) -->
+                <div class="fase-leitura" 
+                     id="fase-leitura"
+                     role="status"
+                     aria-live="assertive"
+                     aria-label="Contagem regressiva para responder">
+                    <div class="countdown-circle" id="countdown-circle" aria-hidden="true">
+                        <span class="countdown-numero" id="countdown-numero">3</span>
+                    </div>
+                    <p class="leitura-texto">Leia a pergunta...</p>
                 </div>
 
                 <!-- Alternativas (ocultas durante fase de leitura) -->

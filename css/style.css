@@ -519,12 +519,9 @@ body {
 
 /* Fase de Leitura */
 .fase-leitura {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 10;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .fase-leitura.oculto {
