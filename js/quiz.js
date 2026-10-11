@@ -98,6 +98,10 @@ export class QuizEngine {
             return;
         }
 
+        // Limpa timers anteriores antes de iniciar nova pergunta
+        clearInterval(this.timerLeitura);
+        clearInterval(this.timerCronometro);
+
         const pergunta = this.perguntas[this.perguntaAtual];
         this.respondeu = false;
         
@@ -185,6 +189,9 @@ export class QuizEngine {
      * Inicia a fase de resposta com cronômetro
      */
     iniciarFaseResposta() {
+        // Limpa timer anterior se existir
+        clearInterval(this.timerCronometro);
+        
         this.tempoInicio = Date.now();
         this.cronometroSegundos = 0;
         this._ultimoAnuncioTempo = 10; // Para controlar anúncios de tempo
