@@ -1041,6 +1041,7 @@ async function init() {
     inicializarTemas();
     inicializarResultado();
     inicializarModal();
+    inicializarFaseLeitura();
     
     // Verifica se existe jogador salvo
     const jogadorSalvo = localStorage.getItem('quiz_jogador');
@@ -1053,6 +1054,20 @@ async function init() {
     }
     
     console.log('✅ Quizlândia - Pronto!');
+}
+
+/**
+ * Inicializa evento de clique para pular fase de leitura
+ */
+function inicializarFaseLeitura() {
+    elementos.faseLeitura.addEventListener('click', () => {
+        if (quizEngine) {
+            quizEngine.pularLeitura();
+        }
+    });
+    
+    // Adiciona cursor pointer para indicar que é clicável
+    elementos.faseLeitura.style.cursor = 'pointer';
 }
 
 // Inicia a aplicação quando o DOM estiver pronto

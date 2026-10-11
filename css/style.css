@@ -551,6 +551,23 @@ body {
     font-size: 1.1rem;
 }
 
+.leitura-dica {
+    color: var(--gray-400);
+    font-size: 0.85rem;
+    margin-top: 12px;
+    opacity: 0.8;
+}
+
+.fase-leitura:hover .leitura-dica {
+    color: var(--primary);
+    opacity: 1;
+}
+
+.fase-leitura:hover .countdown-circle {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }

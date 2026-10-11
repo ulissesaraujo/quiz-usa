@@ -155,10 +155,16 @@ export class QuizEngine {
     }
 
     /**
-     * Inicia a fase de leitura com countdown de 3 segundos
+     * Inicia a fase de leitura com countdown dinâmico
+     * Perguntas grandes (>150 caracteres) = 5 segundos
+     * Perguntas normais = 3 segundos
      */
     iniciarFaseLeitura() {
-        let contador = 3;
+        const pergunta = this.perguntas[this.perguntaAtual];
+        const tamanhoEnunciado = pergunta.enunciado ? pergunta.enunciado.length : 0;
+        
+        // Perguntas grandes têm mais tempo para leitura
+        let contador = tamanhoEnunciado > 150 ? 5 : 3;
         
         // Anuncia início da contagem
         try {
@@ -183,6 +189,17 @@ export class QuizEngine {
                 this.iniciarFaseResposta();
             }
         }, 1000);
+    }
+
+    /**
+     * Pula a fase de leitura e vai direto para responder
+     */
+    pularLeitura() {
+        if (this.timerLeitura) {
+            clearInterval(this.timerLeitura);
+            this.timerLeitura = null;
+            this.iniciarFaseResposta();
+        }
     }
 
     /**
