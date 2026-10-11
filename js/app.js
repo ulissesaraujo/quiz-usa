@@ -6,6 +6,7 @@ import { QuizEngine } from './quiz.js';
 import { RankingManager } from './ranking.js';
 import { TemasManager } from './temas.js';
 import { buscarPerguntasPorIds } from './firebase-config.js';
+import { Anunciador, GerenciadorFoco, NavegacaoTeclado } from './acessibilidade.js';
 
 // ========================================
 // ESTADO DA APLICAÇÃO
@@ -95,6 +96,21 @@ function mostrarTela(telaNome) {
     const tela = document.getElementById(`tela-${telaNome}`);
     if (tela) {
         tela.classList.add('ativa');
+        
+        // Gerencia foco para acessibilidade
+        GerenciadorFoco.moverFoco(`tela-${telaNome}`);
+        
+        // Anuncia mudança de tela para leitores de tela
+        const titulosTelas = {
+            'login': 'Tela de login',
+            'temas': 'Seleção de temas',
+            'quiz': 'Quiz iniciado',
+            'resultado': 'Resultado da partida'
+        };
+        
+        if (titulosTelas[telaNome]) {
+            Anunciador.anunciar(titulosTelas[telaNome]);
+        }
     }
 }
 
@@ -151,22 +167,38 @@ function renderizarTemas() {
     
     elementos.temasGrid.innerHTML = '';
     
-    temas.forEach(tema => {
+    temas.forEach((tema, index) => {
         const selecionado = temasManager.temaSelecionado(tema.id);
         
         const card = document.createElement('div');
         card.className = `tema-card${selecionado ? ' selecionado' : ''}`;
         card.dataset.temaId = tema.id;
         
+        // Atributos de acessibilidade
+        card.setAttribute('role', 'checkbox');
+        card.setAttribute('aria-checked', selecionado ? 'true' : 'false');
+        card.setAttribute('aria-label', `${tema.nome}, ${tema.totalPerguntas || 0} perguntas${selecionado ? ', selecionado' : ''}`);
+        card.setAttribute('tabindex', '0');
+        
         card.innerHTML = `
-            <span class="tema-icone">${tema.icone}</span>
+            <span class="tema-icone" aria-hidden="true">${tema.icone}</span>
             <h3 class="tema-nome">${tema.nome}</h3>
             <span class="tema-contador">${tema.totalPerguntas || 0} perguntas</span>
         `;
         
+        // Click handler
         card.addEventListener('click', () => {
             temasManager.alternarTema(tema.id);
             atualizarUITemas();
+        });
+        
+        // Keyboard handler para ativar com Enter ou Space
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                temasManager.alternarTema(tema.id);
+                atualizarUITemas();
+            }
         });
         
         elementos.temasGrid.appendChild(card);
@@ -176,21 +208,34 @@ function renderizarTemas() {
 }
 
 function atualizarUITemas() {
+    const temas = temasManager.obterTemas();
+    
     // Atualiza cards de temas
     document.querySelectorAll('.tema-card').forEach(card => {
         const temaId = card.dataset.temaId;
-        if (temasManager.temaSelecionado(temaId)) {
+        const selecionado = temasManager.temaSelecionado(temaId);
+        const tema = temas.find(t => t.id === temaId);
+        
+        if (selecionado) {
             card.classList.add('selecionado');
         } else {
             card.classList.remove('selecionado');
+        }
+        
+        // Atualiza ARIA
+        card.setAttribute('aria-checked', selecionado ? 'true' : 'false');
+        if (tema) {
+            card.setAttribute('aria-label', `${tema.nome}, ${tema.totalPerguntas || 0} perguntas${selecionado ? ', selecionado' : ''}`);
         }
     });
     
     // Atualiza botão aleatório
     if (temasManager.isModoAleatorio()) {
         elementos.btnAleatorio.classList.add('ativo');
+        elementos.btnAleatorio.setAttribute('aria-pressed', 'true');
     } else {
         elementos.btnAleatorio.classList.remove('ativo');
+        elementos.btnAleatorio.setAttribute('aria-pressed', 'false');
     }
     
     // Atualiza info de seleção
@@ -198,11 +243,14 @@ function atualizarUITemas() {
     const totalPerguntas = temasManager.totalPerguntasDisponiveis();
     
     if (temasManager.podeIniciar()) {
-        elementos.selecaoInfo.textContent = `${descricao} (${totalPerguntas} perguntas disponíveis)`;
+        const infoTexto = `${descricao} (${totalPerguntas} perguntas disponíveis)`;
+        elementos.selecaoInfo.textContent = infoTexto;
         elementos.btnJogar.disabled = false;
+        elementos.btnJogar.setAttribute('aria-disabled', 'false');
     } else {
         elementos.selecaoInfo.textContent = 'Selecione um ou mais temas para jogar';
         elementos.btnJogar.disabled = true;
+        elementos.btnJogar.setAttribute('aria-disabled', 'true');
     }
 }
 
@@ -422,14 +470,30 @@ function renderizarAlternativas() {
     elementos.alternativas.innerHTML = '';
     elementos.alternativas.dataset.perguntaId = pergunta.id;
     
+    // Letras das alternativas para anúncios
+    const letras = ['A', 'B', 'C', 'D'];
+    
     pergunta.alternativas.forEach((texto, indice) => {
         const btn = document.createElement('button');
         btn.className = 'alternativa-btn';
         btn.textContent = texto;
+        
+        // Atributos de acessibilidade
+        btn.setAttribute('aria-label', `Alternativa ${letras[indice]}: ${texto}. Pressione ${indice + 1} para selecionar.`);
+        btn.setAttribute('data-indice', indice);
+        
         btn.addEventListener('click', () => {
             quizEngine.responder(indice);
         });
         elementos.alternativas.appendChild(btn);
+    });
+    
+    // Ativa navegação por teclado (1-4) para alternativas
+    NavegacaoTeclado.ativarAtalhos(elementos.alternativas, (indice) => {
+        const btn = elementos.alternativas.querySelector(`[data-indice="${indice}"]`);
+        if (btn && !btn.disabled) {
+            quizEngine.responder(indice);
+        }
     });
 }
 
@@ -763,7 +827,7 @@ async function mostrarRankingGlobal() {
         });
     }
     
-    elementos.modalRanking.classList.remove('oculto');
+    abrirModal(elementos.modalRanking, elementos.btnVerRankingSalas);
 }
 
 /**
@@ -840,37 +904,95 @@ async function mostrarRankingGeral() {
             btn.addEventListener('click', () => {
                 const index = parseInt(btn.dataset.index);
                 // Fecha o modal geral
-                elementos.modalRankingGeral.classList.add('oculto');
+                fecharModal(elementos.modalRankingGeral);
                 iniciarDesafio(rankingOrdenado[index]);
             });
         });
     }
     
-    elementos.modalRankingGeral.classList.remove('oculto');
+    abrirModal(elementos.modalRankingGeral, elementos.btnVerRankingGeral);
 }
 
 function inicializarModal() {
     // Modal Ranking por Sala
     elementos.modalFechar.addEventListener('click', () => {
-        elementos.modalRanking.classList.add('oculto');
+        fecharModal(elementos.modalRanking);
     });
     
     elementos.modalRanking.addEventListener('click', (e) => {
         if (e.target === elementos.modalRanking) {
-            elementos.modalRanking.classList.add('oculto');
+            fecharModal(elementos.modalRanking);
         }
     });
     
     // Modal Ranking Geral
     elementos.modalFecharGeral.addEventListener('click', () => {
-        elementos.modalRankingGeral.classList.add('oculto');
+        fecharModal(elementos.modalRankingGeral);
     });
     
     elementos.modalRankingGeral.addEventListener('click', (e) => {
         if (e.target === elementos.modalRankingGeral) {
-            elementos.modalRankingGeral.classList.add('oculto');
+            fecharModal(elementos.modalRankingGeral);
         }
     });
+    
+    // Ativa ESC para fechar modais
+    NavegacaoTeclado.ativarEscParaFechar(() => {
+        if (!elementos.modalRanking.classList.contains('oculto')) {
+            fecharModal(elementos.modalRanking);
+            return true;
+        }
+        if (!elementos.modalRankingGeral.classList.contains('oculto')) {
+            fecharModal(elementos.modalRankingGeral);
+            return true;
+        }
+        return false;
+    });
+}
+
+/**
+ * Abre um modal com focus trap para acessibilidade
+ * @param {HTMLElement} modal - Elemento do modal
+ * @param {HTMLElement} botaoAbertura - Botão que abriu o modal (para retorno do foco)
+ */
+function abrirModal(modal, botaoAbertura) {
+    modal.classList.remove('oculto');
+    
+    // Ativa focus trap
+    GerenciadorFoco.ativarFocusTrap(modal);
+    
+    // Move foco para o modal
+    const modalContent = modal.querySelector('.modal-content');
+    if (modalContent) {
+        modalContent.focus();
+    }
+    
+    // Salva referência do botão para retornar foco ao fechar
+    modal.dataset.botaoOrigem = botaoAbertura ? botaoAbertura.id : '';
+    
+    Anunciador.anunciar('Modal de ranking aberto. Pressione Escape para fechar.');
+}
+
+/**
+ * Fecha um modal e retorna o foco
+ * @param {HTMLElement} modal - Elemento do modal
+ */
+function fecharModal(modal) {
+    modal.classList.add('oculto');
+    
+    // Desativa focus trap
+    GerenciadorFoco.desativarFocusTrap();
+    
+    // Retorna foco ao botão que abriu
+    const botaoOrigemId = modal.dataset.botaoOrigem;
+    if (botaoOrigemId) {
+        const botaoOrigem = document.getElementById(botaoOrigemId);
+        if (botaoOrigem) {
+            botaoOrigem.focus();
+        }
+    }
+    
+    Anunciador.anunciar('Modal fechado.');
 }
 
 // ========================================

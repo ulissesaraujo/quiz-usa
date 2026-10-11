@@ -2,6 +2,8 @@
 // QUIZ.JS - Mecânica do Jogo
 // ========================================
 
+import { Anunciador } from './acessibilidade.js';
+
 /**
  * Classe que gerencia a mecânica do quiz
  */
@@ -99,6 +101,15 @@ export class QuizEngine {
         const pergunta = this.perguntas[this.perguntaAtual];
         this.respondeu = false;
         
+        // Anuncia a pergunta para leitores de tela
+        const temaNome = this.obterNomeTema(pergunta.tema);
+        Anunciador.anunciarPergunta(
+            this.perguntaAtual + 1, 
+            this.perguntas.length, 
+            pergunta.enunciado,
+            temaNome
+        );
+        
         // Notifica que uma pergunta foi carregada
         if (this.onPerguntaCarregada) {
             this.onPerguntaCarregada({
@@ -112,12 +123,37 @@ export class QuizEngine {
         // Inicia a fase de leitura (3 segundos)
         this.iniciarFaseLeitura();
     }
+    
+    /**
+     * Obtém o nome legível do tema
+     */
+    obterNomeTema(temaId) {
+        const nomes = {
+            'geografia': 'Geografia',
+            'historia': 'História',
+            'ciencia': 'Ciência',
+            'arte': 'Arte',
+            'literatura': 'Literatura',
+            'cinema-series': 'Cinema e Séries',
+            'musica': 'Música',
+            'games': 'Games',
+            'mitos-verdades': 'Mitos e Verdades',
+            'comidas-bebidas': 'Comidas e Bebidas',
+            'nostalgia': 'Nostalgia',
+            'esportes': 'Esportes',
+            'curiosidades': 'Curiosidades'
+        };
+        return nomes[temaId] || temaId || 'Geral';
+    }
 
     /**
      * Inicia a fase de leitura com countdown de 3 segundos
      */
     iniciarFaseLeitura() {
         let contador = 3;
+        
+        // Anuncia início da contagem
+        Anunciador.anunciarInicioContagem(10);
         
         if (this.onFaseLeitura) {
             this.onFaseLeitura({ segundos: contador, ativa: true });
@@ -143,6 +179,11 @@ export class QuizEngine {
     iniciarFaseResposta() {
         this.tempoInicio = Date.now();
         this.cronometroSegundos = 0;
+        this._ultimoAnuncioTempo = 10; // Para controlar anúncios de tempo
+        
+        // Anuncia que alternativas estão disponíveis
+        const pergunta = this.perguntas[this.perguntaAtual];
+        Anunciador.anunciarAlternativasDisponiveis(pergunta.alternativas.length);
         
         if (this.onFaseResposta) {
             this.onFaseResposta({ ativa: true, tempo: 0 });
@@ -151,6 +192,13 @@ export class QuizEngine {
         // Inicia cronômetro que atualiza a cada 100ms
         this.timerCronometro = setInterval(() => {
             this.cronometroSegundos = (Date.now() - this.tempoInicio) / 1000;
+            
+            // Anuncia tempo restante em momentos críticos
+            const tempoRestante = Math.ceil(10 - this.cronometroSegundos);
+            if (tempoRestante !== this._ultimoAnuncioTempo && tempoRestante > 0) {
+                this._ultimoAnuncioTempo = tempoRestante;
+                Anunciador.anunciarTempoRestante(tempoRestante);
+            }
             
             if (this.onFaseResposta) {
                 this.onFaseResposta({ 
@@ -179,6 +227,10 @@ export class QuizEngine {
         
         const tempoResposta = 10; // Tempo máximo
         const pergunta = this.perguntas[this.perguntaAtual];
+        
+        // Anuncia tempo esgotado com resposta correta
+        const respostaCorreta = pergunta.alternativas[pergunta.correta];
+        Anunciador.anunciarTempoEsgotado(respostaCorreta);
         
         // Registra a resposta como erro (sem resposta)
         const detalheResposta = {
@@ -235,6 +287,12 @@ export class QuizEngine {
         if (estaCorreta) {
             pontosBase = 10;
             bonus = this.calcularBonus(tempoResposta);
+            // Anuncia resposta correta
+            Anunciador.anunciarRespostaCorreta(pontosBase + bonus, bonus);
+        } else {
+            // Anuncia resposta errada com a alternativa correta
+            const respostaCorreta = pergunta.alternativas[pergunta.correta];
+            Anunciador.anunciarRespostaErrada(respostaCorreta);
         }
         
         const pontosGanhos = pontosBase + bonus;
@@ -294,6 +352,9 @@ export class QuizEngine {
         // Calcula estatísticas finais
         const acertos = this.respostas.filter(r => r.correto).length;
         const tempoTotal = this.respostas.reduce((acc, r) => acc + r.tempo, 0);
+        
+        // Anuncia fim da partida
+        Anunciador.anunciarFimPartida(this.pontuacaoTotal, acertos, this.perguntas.length);
         
         // Calcula temas das perguntas respondidas
         const temasRespondidos = [...new Set(this.respostas.map(r => r.tema).filter(Boolean))];

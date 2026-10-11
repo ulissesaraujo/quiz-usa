@@ -1187,3 +1187,213 @@ body {
         padding: 3px 6px;
     }
 }
+
+
+/* ========================================
+   ACESSIBILIDADE
+   ======================================== */
+
+/* Classe sr-only - Esconde visualmente mas mantém acessível para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Skip Links - Links para pular navegação */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gray-900);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    text-decoration: none;
+    z-index: 9999;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 10px;
+    outline: 3px solid var(--warning);
+    outline-offset: 2px;
+}
+
+/* Focus Visible - Estilos de foco melhorados para navegação por teclado */
+:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Remove outline padrão e usa apenas focus-visible */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Foco específico para botões */
+.btn:focus-visible,
+.alternativa-btn:focus-visible {
+    outline: 3px solid var(--warning);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.2);
+}
+
+/* Foco para cards de tema */
+.tema-card:focus-visible {
+    outline: 3px solid var(--warning);
+    outline-offset: 2px;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.2);
+}
+
+/* Foco para inputs */
+.input-group input:focus-visible {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    outline: none;
+}
+
+/* Foco para botão de fechar modal */
+.modal-fechar:focus-visible {
+    outline: 3px solid var(--warning);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* Foco para links */
+a:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Foco dentro de modais */
+.modal-content:focus-visible {
+    outline: none;
+}
+
+/* Indicador visual de teclas de atalho nas alternativas */
+.alternativa-btn::before {
+    content: attr(data-tecla);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: var(--gray-200);
+    color: var(--gray-600);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.alternativa-btn:nth-child(1)::before { content: '1'; }
+.alternativa-btn:nth-child(2)::before { content: '2'; }
+.alternativa-btn:nth-child(3)::before { content: '3'; }
+.alternativa-btn:nth-child(4)::before { content: '4'; }
+
+/* Cores de alto contraste para alternativas quando selecionadas */
+.alternativa-btn.correta::before {
+    background: var(--success);
+    color: var(--white);
+}
+
+.alternativa-btn.errada::before {
+    background: var(--danger);
+    color: var(--white);
+}
+
+/* Aumenta área de toque para mobile acessível */
+@media (pointer: coarse) {
+    .btn,
+    .alternativa-btn,
+    .tema-card,
+    .modal-fechar {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* Reduz movimento para usuários com preferência */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .tela {
+        animation: none;
+    }
+    
+    .countdown-circle {
+        animation: none;
+    }
+    
+    .cronometro-tempo.critico {
+        animation: none;
+    }
+    
+    .feedback {
+        animation: none;
+    }
+    
+    .modal-content {
+        animation: none;
+    }
+}
+
+/* Alto contraste para usuários que preferem */
+@media (prefers-contrast: more) {
+    :root {
+        --gray-500: #4b5563;
+        --gray-600: #374151;
+    }
+    
+    .btn,
+    .alternativa-btn,
+    .tema-card {
+        border-width: 3px;
+    }
+    
+    .alternativa-btn.correta {
+        border-width: 4px;
+    }
+    
+    .alternativa-btn.errada {
+        border-width: 4px;
+    }
+}
+
+/* Indicação visual para elementos focáveis nas telas */
+.tela:focus {
+    outline: none;
+}
+
+/* Estilos para área de anúncios (aria-live) */
+#anunciador-principal,
+#anunciador-urgente {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

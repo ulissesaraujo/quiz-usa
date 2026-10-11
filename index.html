@@ -32,18 +32,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="app-container">
+    <!-- Skip Links para navegação por teclado -->
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+    <a href="#temas-grid" class="skip-link">Pular para seleção de temas</a>
+
+    <!-- Região de anúncios para leitores de tela -->
+    <div id="aria-announcer" 
+         class="sr-only" 
+         role="status" 
+         aria-live="polite" 
+         aria-atomic="true">
+    </div>
+    
+    <!-- Região de anúncios urgentes (tempo, alertas) -->
+    <div id="aria-announcer-urgent" 
+         class="sr-only" 
+         role="alert" 
+         aria-live="assertive" 
+         aria-atomic="true">
+    </div>
+
+    <div class="app-container" id="main-content" role="main">
         
         <!-- TELA 1: LOGIN -->
-        <section id="tela-login" class="tela ativa">
+        <section id="tela-login" 
+                 class="tela ativa" 
+                 role="region" 
+                 aria-label="Tela de entrada">
             <div class="login-container">
-                <div class="logo">
-                    <span class="logo-icon">🏰</span>
+                <header class="logo">
+                    <span class="logo-icon" aria-hidden="true">🏰</span>
                     <h1>Quizlândia</h1>
                     <p class="tagline">Desafie seus conhecimentos e compita com amigos!</p>
-                </div>
+                </header>
                 
-                <form id="form-login" class="form-login">
+                <form id="form-login" 
+                      class="form-login" 
+                      aria-label="Formulário de entrada">
                     <div class="input-group">
                         <label for="nome-jogador">Como você quer ser chamado?</label>
                         <input 
@@ -52,108 +77,187 @@
                             placeholder="Digite seu nome ou apelido"
                             maxlength="20"
                             required
+                            autocomplete="name"
+                            aria-required="true"
+                            aria-describedby="nome-ajuda"
                         >
+                        <span id="nome-ajuda" class="sr-only">
+                            Digite seu nome ou apelido para identificação no jogo. Máximo 20 caracteres.
+                        </span>
                     </div>
                     <button type="submit" class="btn btn-primary">
                         Começar a Jogar
-                        <span class="btn-icon">→</span>
+                        <span class="btn-icon" aria-hidden="true">→</span>
                     </button>
                 </form>
             </div>
         </section>
 
         <!-- TELA 2: SELEÇÃO DE TEMAS -->
-        <section id="tela-temas" class="tela">
+        <section id="tela-temas" 
+                 class="tela" 
+                 role="region" 
+                 aria-label="Seleção de temas">
             <header class="header-temas">
                 <div class="header-info">
-                    <span class="jogador-nome" id="display-jogador">Jogador</span>
-                    <button class="btn btn-small btn-outline" id="btn-trocar-jogador">Trocar</button>
+                    <span class="jogador-nome" id="display-jogador" aria-live="polite">Jogador</span>
+                    <button class="btn btn-small btn-outline" 
+                            id="btn-trocar-jogador"
+                            aria-label="Trocar de jogador">
+                        Trocar
+                    </button>
                 </div>
-                <button class="btn btn-small btn-secondary" id="btn-ver-ranking-salas">
-                    🏆 Ranking por Sala
+                <button class="btn btn-small btn-secondary" 
+                        id="btn-ver-ranking-salas"
+                        aria-label="Ver ranking por sala de jogo">
+                    <span aria-hidden="true">🏆</span> Ranking por Sala
                 </button>
-                <button class="btn btn-small btn-outline" id="btn-ver-ranking-geral">
-                    📊 Ranking Geral
+                <button class="btn btn-small btn-outline" 
+                        id="btn-ver-ranking-geral"
+                        aria-label="Ver ranking geral de todos os jogadores">
+                    <span aria-hidden="true">📊</span> Ranking Geral
                 </button>
             </header>
 
             <div class="temas-container">
-                <h2>Escolha os Temas</h2>
-                <p class="temas-subtitle">Selecione um ou mais temas. O sistema sorteará 10 perguntas para você!</p>
+                <h2 id="temas-titulo">Escolha os Temas</h2>
+                <p class="temas-subtitle" id="temas-instrucoes">
+                    Selecione um ou mais temas. O sistema sorteará 10 perguntas para você!
+                </p>
                 
                 <!-- Botão Aleatório -->
                 <div class="aleatorio-container">
-                    <button class="btn-aleatorio" id="btn-aleatorio">
-                        <span class="aleatorio-icone">🎲</span>
+                    <button class="btn-aleatorio" 
+                            id="btn-aleatorio"
+                            role="switch"
+                            aria-checked="false"
+                            aria-describedby="aleatorio-desc">
+                        <span class="aleatorio-icone" aria-hidden="true">🎲</span>
                         <span class="aleatorio-texto">Temas Aleatórios</span>
-                        <span class="aleatorio-desc">Mistura perguntas de todos os temas</span>
+                        <span class="aleatorio-desc" id="aleatorio-desc">
+                            Mistura perguntas de todos os temas
+                        </span>
                     </button>
                 </div>
 
-                <div class="divisor">
+                <div class="divisor" role="separator">
                     <span>ou escolha temas específicos</span>
                 </div>
                 
-                <div class="temas-grid" id="temas-grid">
+                <div class="temas-grid" 
+                     id="temas-grid" 
+                     role="group" 
+                     aria-labelledby="temas-titulo"
+                     aria-describedby="temas-instrucoes">
                     <!-- Temas serão carregados via JavaScript -->
                 </div>
 
                 <div class="selecao-footer">
-                    <p class="selecao-info" id="selecao-info">Selecione um ou mais temas para jogar</p>
-                    <button class="btn btn-primary btn-jogar" id="btn-jogar" disabled>
+                    <p class="selecao-info" 
+                       id="selecao-info" 
+                       role="status" 
+                       aria-live="polite">
+                        Selecione um ou mais temas para jogar
+                    </p>
+                    <button class="btn btn-primary btn-jogar" 
+                            id="btn-jogar" 
+                            disabled
+                            aria-disabled="true"
+                            aria-describedby="selecao-info">
                         Jogar
-                        <span class="btn-icon">→</span>
+                        <span class="btn-icon" aria-hidden="true">→</span>
                     </button>
                 </div>
             </div>
         </section>
 
         <!-- TELA 3: QUIZ -->
-        <section id="tela-quiz" class="tela">
+        <section id="tela-quiz" 
+                 class="tela" 
+                 role="region" 
+                 aria-label="Tela do quiz">
             <header class="header-quiz">
                 <div class="quiz-info">
-                    <span class="tema-info" id="quiz-tema-info">Temas Selecionados</span>
-                    <span class="pergunta-contador" id="pergunta-contador">1/10</span>
+                    <span class="tema-info" 
+                          id="quiz-tema-info"
+                          aria-label="Temas selecionados">
+                        Temas Selecionados
+                    </span>
+                    <span class="pergunta-contador" 
+                          id="pergunta-contador"
+                          role="status"
+                          aria-live="polite"
+                          aria-label="Progresso das perguntas">
+                        1/10
+                    </span>
                 </div>
-                <div class="pontuacao-atual">
-                    <span class="pontos" id="pontos-atuais">0</span>
+                <div class="pontuacao-atual" aria-label="Pontuação atual">
+                    <span class="pontos" 
+                          id="pontos-atuais" 
+                          aria-live="polite">
+                        0
+                    </span>
                     <span class="label">pontos</span>
                 </div>
             </header>
 
             <div class="quiz-container">
                 <!-- Fase de Leitura -->
-                <div class="fase-leitura" id="fase-leitura">
-                    <div class="countdown-circle" id="countdown-circle">
+                <div class="fase-leitura" 
+                     id="fase-leitura"
+                     role="status"
+                     aria-live="assertive"
+                     aria-label="Contagem regressiva para responder">
+                    <div class="countdown-circle" id="countdown-circle" aria-hidden="true">
                         <span class="countdown-numero" id="countdown-numero">3</span>
                     </div>
                     <p class="leitura-texto">Leia a pergunta...</p>
                 </div>
 
                 <!-- Pergunta -->
-                <div class="pergunta-container">
-                    <p class="pergunta-tema oculto" id="pergunta-tema">🗺️ Geografia</p>
-                    <h2 class="pergunta-enunciado" id="pergunta-enunciado">
+                <div class="pergunta-container" role="article">
+                    <p class="pergunta-tema oculto" 
+                       id="pergunta-tema" 
+                       aria-hidden="true">
+                        🗺️ Geografia
+                    </p>
+                    <h2 class="pergunta-enunciado" 
+                        id="pergunta-enunciado"
+                        tabindex="-1">
                         Carregando pergunta...
                     </h2>
                 </div>
 
                 <!-- Alternativas (ocultas durante fase de leitura) -->
-                <div class="alternativas-container oculto" id="alternativas-container">
-                    <div class="cronometro">
-                        <span class="cronometro-icon">⏱️</span>
-                        <span class="cronometro-tempo" id="cronometro-tempo">0.0s</span>
+                <div class="alternativas-container oculto" 
+                     id="alternativas-container"
+                     aria-hidden="true">
+                    <div class="cronometro" 
+                         role="timer" 
+                         aria-label="Tempo restante para responder">
+                        <span class="cronometro-icon" aria-hidden="true">⏱️</span>
+                        <span class="cronometro-tempo" 
+                              id="cronometro-tempo"
+                              aria-live="off">
+                            10.0s
+                        </span>
                     </div>
                     
-                    <div class="alternativas" id="alternativas">
+                    <div class="alternativas" 
+                         id="alternativas" 
+                         role="radiogroup"
+                         aria-label="Escolha uma alternativa">
                         <!-- Alternativas serão carregadas via JavaScript -->
                     </div>
                 </div>
 
                 <!-- Feedback da resposta -->
-                <div class="feedback-container oculto" id="feedback-container">
+                <div class="feedback-container oculto" 
+                     id="feedback-container"
+                     role="alert"
+                     aria-live="assertive">
                     <div class="feedback" id="feedback">
-                        <span class="feedback-icon" id="feedback-icon">✓</span>
+                        <span class="feedback-icon" id="feedback-icon" aria-hidden="true">✓</span>
                         <span class="feedback-texto" id="feedback-texto">Correto!</span>
                         <span class="feedback-pontos" id="feedback-pontos">+15 pts</span>
                     </div>
@@ -162,14 +266,20 @@
         </section>
 
         <!-- TELA 4: RESULTADO -->
-        <section id="tela-resultado" class="tela">
+        <section id="tela-resultado" 
+                 class="tela" 
+                 role="region" 
+                 aria-label="Resultado da partida">
             <div class="resultado-container">
-                <div class="resultado-header">
-                    <h2>🎉 Partida Finalizada!</h2>
+                <header class="resultado-header">
+                    <h2 tabindex="-1">
+                        <span aria-hidden="true">🎉</span> 
+                        Partida Finalizada!
+                    </h2>
                     <p class="resultado-temas" id="resultado-temas">Geografia, História</p>
-                </div>
+                </header>
 
-                <div class="resultado-resumo">
+                <div class="resultado-resumo" role="group" aria-label="Resumo da partida">
                     <div class="resultado-card destaque">
                         <span class="resultado-valor" id="resultado-pontuacao">0</span>
                         <span class="resultado-label">Pontuação Total</span>
@@ -184,61 +294,79 @@
                     </div>
                 </div>
 
-                <div class="resultado-detalhes">
-                    <h3>Detalhes por Pergunta</h3>
-                    <div class="detalhes-lista" id="detalhes-lista">
+                <section class="resultado-detalhes" aria-labelledby="detalhes-titulo">
+                    <h3 id="detalhes-titulo">Detalhes por Pergunta</h3>
+                    <div class="detalhes-lista" 
+                         id="detalhes-lista"
+                         role="list"
+                         aria-label="Lista de resultados por pergunta">
                         <!-- Detalhes serão carregados via JavaScript -->
                     </div>
-                </div>
+                </section>
 
-                <div class="resultado-ranking">
-                    <h3>🏆 Ranking</h3>
-                    <table class="ranking-tabela" id="ranking-partida-tabela">
+                <section class="resultado-ranking" aria-labelledby="ranking-titulo">
+                    <h3 id="ranking-titulo">
+                        <span aria-hidden="true">🏆</span> Ranking
+                    </h3>
+                    <table class="ranking-tabela" 
+                           id="ranking-partida-tabela"
+                           aria-label="Ranking da partida">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Jogador</th>
-                                <th>Temas</th>
-                                <th>Pontos</th>
-                                <th>Acertos</th>
-                                <th>Desafiar</th>
+                                <th scope="col" abbr="Posição">#</th>
+                                <th scope="col">Jogador</th>
+                                <th scope="col">Temas</th>
+                                <th scope="col">Pontos</th>
+                                <th scope="col">Acertos</th>
+                                <th scope="col">Ação</th>
                             </tr>
                         </thead>
                         <tbody id="ranking-partida-body">
                             <!-- Ranking será carregado via JavaScript -->
                         </tbody>
                     </table>
-                </div>
+                </section>
 
-                <div class="resultado-acoes">
+                <div class="resultado-acoes" role="group" aria-label="Ações pós-partida">
                     <button class="btn btn-primary" id="btn-voltar-temas">
                         Jogar Novamente
                     </button>
                     <button class="btn btn-secondary" id="btn-ranking-global">
-                        🏆 Ver Ranking Global
+                        <span aria-hidden="true">🏆</span> Ver Ranking Global
                     </button>
                 </div>
             </div>
         </section>
 
         <!-- MODAL: RANKING POR SALA -->
-        <div class="modal oculto" id="modal-ranking">
+        <div class="modal oculto" 
+             id="modal-ranking"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modal-ranking-titulo">
             <div class="modal-content modal-ranking-agrupado">
                 <div class="modal-header">
-                    <h2>🏆 Ranking por Sala</h2>
-                    <button class="modal-fechar" id="modal-fechar">&times;</button>
+                    <h2 id="modal-ranking-titulo">
+                        <span aria-hidden="true">🏆</span> Ranking por Sala
+                    </h2>
+                    <button class="modal-fechar" 
+                            id="modal-fechar"
+                            aria-label="Fechar modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <p class="ranking-legenda">Resultados agrupados por sessão de perguntas</p>
-                    <table class="ranking-tabela ranking-agrupado">
+                    <table class="ranking-tabela ranking-agrupado"
+                           aria-label="Ranking agrupado por sala">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Jogador</th>
-                                <th>Pontos</th>
-                                <th>Acertos</th>
-                                <th>Tempo</th>
-                                <th>Ação</th>
+                                <th scope="col" abbr="Posição">#</th>
+                                <th scope="col">Jogador</th>
+                                <th scope="col">Pontos</th>
+                                <th scope="col">Acertos</th>
+                                <th scope="col">Tempo</th>
+                                <th scope="col">Ação</th>
                             </tr>
                         </thead>
                         <tbody id="ranking-global-body">
@@ -250,24 +378,35 @@
         </div>
 
         <!-- MODAL: RANKING GERAL -->
-        <div class="modal oculto" id="modal-ranking-geral">
+        <div class="modal oculto" 
+             id="modal-ranking-geral"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modal-ranking-geral-titulo">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>📊 Ranking Geral</h2>
-                    <button class="modal-fechar" id="modal-fechar-geral">&times;</button>
+                    <h2 id="modal-ranking-geral-titulo">
+                        <span aria-hidden="true">📊</span> Ranking Geral
+                    </h2>
+                    <button class="modal-fechar" 
+                            id="modal-fechar-geral"
+                            aria-label="Fechar modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <p class="ranking-legenda">Todas as partidas ordenadas por pontuação</p>
-                    <table class="ranking-tabela">
+                    <table class="ranking-tabela"
+                           aria-label="Ranking geral de todas as partidas">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Jogador</th>
-                                <th>Temas</th>
-                                <th>Pontos</th>
-                                <th>Acertos</th>
-                                <th>Tempo</th>
-                                <th>Ação</th>
+                                <th scope="col" abbr="Posição">#</th>
+                                <th scope="col">Jogador</th>
+                                <th scope="col">Temas</th>
+                                <th scope="col">Pontos</th>
+                                <th scope="col">Acertos</th>
+                                <th scope="col">Tempo</th>
+                                <th scope="col">Ação</th>
                             </tr>
                         </thead>
                         <tbody id="ranking-geral-body">
