@@ -1,4 +1,4 @@
-﻿{
+{
   "perguntas": [
     {
       "tema": "nostalgia",
@@ -13,21 +13,21 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual programa infantil tinha o bordÁo 'Xou da Xuxa'?",
+      "enunciado": "Qual programa infantil tinha o bordão 'Xou da Xuxa'?",
       "alternativas": [
         "Clube da Criança",
         "Xou da Xuxa",
-        "BalÁo Mágico",
+        "Balão Mágico",
         "TV Colosso"
       ],
       "correta": 1
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o nome do palhaço do programa 'BalÁo Mágico'?",
+      "enunciado": "Qual era o nome do palhaço do programa 'Balão Mágico'?",
       "alternativas": [
         "Bozo",
-        "FofÁo",
+        "Fofão",
         "Patati",
         "Carequinha"
       ],
@@ -81,10 +81,10 @@
       "tema": "nostalgia",
       "enunciado": "Qual brinquedo era uma bolinha de vidro para jogar?",
       "alternativas": [
-        "PiÁo",
+        "Pião",
         "Bolinha de gude",
         "Ioiô",
-        "PeÁo"
+        "Peão"
       ],
       "correta": 1
     },
@@ -95,7 +95,7 @@
         "Chapolin Colorado",
         "Chaves",
         "El Chavo del Ocho",
-        "Todos sÁo o mesmo"
+        "Todos são o mesmo"
       ],
       "correta": 3
     },
@@ -125,7 +125,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual programa tinha o cachorro 'Preto' e era apresentado por cachorros?",
       "alternativas": [
-        "BalÁo Mágico",
+        "Balão Mágico",
         "TV Colosso",
         "TV Globinho",
         "Xou da Xuxa"
@@ -200,7 +200,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o nome da irmÁ de He-Man?",
+      "enunciado": "Qual era o nome da irmã de He-Man?",
       "alternativas": [
         "Teela",
         "She-Ra",
@@ -302,7 +302,7 @@
       "enunciado": "Qual personagem do Cartoon Network era um cachorro cor-de-rosa covarde?",
       "alternativas": [
         "Scooby-Doo",
-        "Coragem, o CÁo Covarde",
+        "Coragem, o Cão Covarde",
         "Bloo",
         "Eduardo"
       ],
@@ -312,7 +312,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual desenho tinha três meninas com superpoderes criadas em laboratório?",
       "alternativas": [
-        "Três EspiÁs Demais",
+        "Três Espiãs Demais",
         "As Meninas Superpoderosas",
         "W.I.T.C.H.",
         "Winx Club"
@@ -332,7 +332,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o nome do vilÁo de Caverna do DragÁo?",
+      "enunciado": "Qual era o nome do vilão de Caverna do Dragão?",
       "alternativas": [
         "Tiamat",
         "Vingador",
@@ -343,7 +343,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o item mágico de Hank em Caverna do DragÁo?",
+      "enunciado": "Qual era o item mágico de Hank em Caverna do Dragão?",
       "alternativas": [
         "Escudo",
         "Arco",
@@ -376,7 +376,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o nome da irmÁ irritante de Dexter?",
+      "enunciado": "Qual era o nome da irmã irritante de Dexter?",
       "alternativas": [
         "Mandark",
         "Dee Dee",
@@ -402,8 +402,8 @@
       "alternativas": [
         "Passa ou Repassa",
         "Programa Silvio Santos",
-        "Show do MilhÁo",
-        "DomingÁo do FaustÁo"
+        "Show do Milhão",
+        "Domingão do Faustão"
       ],
       "correta": 0
     },
@@ -422,7 +422,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual cantor/grupo fez sucesso com 'Florentina'?",
       "alternativas": [
-        "É o Tchan",
+        "Ã‰ o Tchan",
         "Mamonas Assassinas",
         "Dominó",
         "Trem da Alegria"
@@ -433,7 +433,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual grupo brasileiro dos anos 90 cantava 'Pelados em Santos'?",
       "alternativas": [
-        "É o Tchan",
+        "Ã‰ o Tchan",
         "Mamonas Assassinas",
         "Raimundos",
         "Skank"
@@ -453,7 +453,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o nome do boneco de açÁo dos anos 80 com acessórios militares?",
+      "enunciado": "Qual era o nome do boneco de ação dos anos 80 com acessórios militares?",
       "alternativas": [
         "Action Man",
         "G.I. Joe",
@@ -497,7 +497,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual personagem dizia 'NÁo contavam com minha astúcia'?",
+      "enunciado": "Qual personagem dizia 'Não contavam com minha astúcia'?",
       "alternativas": [
         "Chaves",
         "Chapolin Colorado",
@@ -519,7 +519,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual programa exibia 'Mundo da Lua' nas manhÁs?",
+      "enunciado": "Qual programa exibia 'Mundo da Lua' nas manhãs?",
       "alternativas": [
         "TV Cultura",
         "Globo",
@@ -546,7 +546,7 @@
         "Cocoricó",
         "Castelo Rá-Tim-Bum",
         "Vila Sésamo",
-        "BambalalÁo"
+        "Bambalalão"
       ],
       "correta": 1
     },
@@ -618,7 +618,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era a vilÁ que virava jacaré no Sítio do Picapau Amarelo?",
+      "enunciado": "Qual era a vilã que virava jacaré no Sítio do Picapau Amarelo?",
       "alternativas": [
         "Emília",
         "Dona Benta",
@@ -676,7 +676,7 @@
       "enunciado": "Qual programa de TV tinha o palhaço Bozo?",
       "alternativas": [
         "Programa do Bozo",
-        "Show do MilhÁo",
+        "Show do Milhão",
         "Domingo Legal",
         "Fantástico"
       ],
@@ -884,9 +884,9 @@
       "tema": "nostalgia",
       "enunciado": "Qual programa de auditório tinha 'Qual é a música?'?",
       "alternativas": [
-        "DomingÁo do FaustÁo",
+        "Domingão do Faustão",
         "Programa Silvio Santos",
-        "CaldeirÁo do Huck",
+        "Caldeirão do Huck",
         "Fantástico"
       ],
       "correta": 1
@@ -896,7 +896,7 @@
       "enunciado": "Qual programa tinha o quadro 'Porta da Esperança'?",
       "alternativas": [
         "Programa Silvio Santos",
-        "DomingÁo do FaustÁo",
+        "Domingão do Faustão",
         "Xuxa Hits",
         "Fantástico"
       ],
@@ -906,7 +906,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual novela infantil tinha bruxas na trama?",
       "alternativas": [
-        "MalhaçÁo",
+        "Malhação",
         "Chiquititas",
         "Sandy & Junior",
         "Era uma Vez..."
@@ -915,9 +915,9 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual dupla de irmÁos fez sucesso nos anos 90 com músicas e novela?",
+      "enunciado": "Qual dupla de irmãos fez sucesso nos anos 90 com músicas e novela?",
       "alternativas": [
-        "ChitÁozinho & Xororó",
+        "Chitãozinho & Xororó",
         "Sandy & Junior",
         "Leandro & Leonardo",
         "Bruno & Marrone"
@@ -1018,7 +1018,7 @@
       "alternativas": [
         "Cebolinha",
         "Mônica",
-        "CascÁo",
+        "Cascão",
         "Magali"
       ],
       "correta": 1
@@ -1029,7 +1029,7 @@
       "alternativas": [
         "Cebolinha",
         "Magali",
-        "CascÁo",
+        "Cascão",
         "Mônica"
       ],
       "correta": 2
@@ -1038,7 +1038,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual personagem da Turma da Mônica trocava o 'R' por 'L'?",
       "alternativas": [
-        "CascÁo",
+        "Cascão",
         "Mônica",
         "Cebolinha",
         "Magali"
@@ -1051,7 +1051,7 @@
       "alternativas": [
         "Bidu",
         "Floquinho",
-        "SansÁo",
+        "Sansão",
         "Mingau"
       ],
       "correta": 2
@@ -1060,7 +1060,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual personagem da Turma da Mônica comia muito?",
       "alternativas": [
-        "CascÁo",
+        "Cascão",
         "Cebolinha",
         "Mônica",
         "Magali"
@@ -1072,7 +1072,7 @@
       "enunciado": "Qual era a fruta favorita da Magali?",
       "alternativas": [
         "Banana",
-        "MaçÁ",
+        "Maçã",
         "Melancia",
         "Todas as frutas"
       ],
@@ -1093,7 +1093,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual era o nome do cientista mirim da Turma da Mônica?",
       "alternativas": [
-        "CascÁo",
+        "Cascão",
         "Franjinha",
         "Cebolinha",
         "Xaveco"
@@ -1137,7 +1137,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual era o programa do Gugu Liberato aos domingos?",
       "alternativas": [
-        "DomingÁo do FaustÁo",
+        "Domingão do Faustão",
         "Domingo Legal",
         "Fantástico",
         "Programa Silvio Santos"
@@ -1148,8 +1148,8 @@
       "tema": "nostalgia",
       "enunciado": "Qual programa tinha a 'Banheira do Gugu'?",
       "alternativas": [
-        "CaldeirÁo do Huck",
-        "DomingÁo do FaustÁo",
+        "Caldeirão do Huck",
+        "Domingão do Faustão",
         "Domingo Legal",
         "Pânico na TV"
       ],
@@ -1159,7 +1159,7 @@
       "tema": "nostalgia",
       "enunciado": "Qual programa de humor tinha os 'Cassetas'?",
       "alternativas": [
-        "A Praça É Nossa",
+        "A Praça Ã‰ Nossa",
         "Casseta & Planeta",
         "Zorra Total",
         "Sai de Baixo"
@@ -1195,13 +1195,13 @@
         "O Beijo do Vampiro",
         "Vamp",
         "O Rei do Gado",
-        "Explode CoraçÁo"
+        "Explode Coração"
       ],
       "correta": 1
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o apelido carinhoso dado às fÁs de Xuxa?",
+      "enunciado": "Qual era o apelido carinhoso dado às fãs de Xuxa?",
       "alternativas": [
         "Paquitas",
         "Baixinhas",
@@ -1289,7 +1289,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual jogo de PlayStation tinha um dragÁo roxo?",
+      "enunciado": "Qual jogo de PlayStation tinha um dragão roxo?",
       "alternativas": [
         "Crash Bandicoot",
         "Spyro the Dragon",
@@ -1355,7 +1355,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era a transformaçÁo de Goku com cabelo loiro?",
+      "enunciado": "Qual era a transformação de Goku com cabelo loiro?",
       "alternativas": [
         "Super Saiyajin",
         "Kaioken",
@@ -1447,7 +1447,7 @@
       "alternativas": [
         "Capricho",
         "Veja",
-        "Isto É",
+        "Isto Ã‰",
         "Super Interessante"
       ],
       "correta": 0
@@ -1580,13 +1580,13 @@
         "Silvio Santos",
         "Carlos Alberto de Nóbrega",
         "Gugu",
-        "FaustÁo"
+        "Faustão"
       ],
       "correta": 1
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual era o bordÁo 'É mentira, Terta!'?",
+      "enunciado": "Qual era o bordão 'Ã‰ mentira, Terta!'?",
       "alternativas": [
         "A Praça é Nossa",
         "Escolinha do Professor Raimundo",
@@ -1608,7 +1608,7 @@
     },
     {
       "tema": "nostalgia",
-      "enunciado": "Qual novela tinha a música 'Você nÁo soube me amar'?",
+      "enunciado": "Qual novela tinha a música 'Você não soube me amar'?",
       "alternativas": [
         "Por Amor",
         "Laços de Família",

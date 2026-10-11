@@ -1,4 +1,4 @@
-﻿{
+{
   "perguntas": [
     {
       "tema": "games",
@@ -13,7 +13,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual é o nome do irmÁo de Mario?",
+      "enunciado": "Qual é o nome do irmão de Mario?",
       "alternativas": [
         "Wario",
         "Luigi",
@@ -35,7 +35,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual é o vilÁo principal da série Mario?",
+      "enunciado": "Qual é o vilão principal da série Mario?",
       "alternativas": [
         "Wario",
         "Donkey Kong",
@@ -134,7 +134,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Quantos Pokémon existiam na primeira geraçÁo?",
+      "enunciado": "Quantos Pokémon existiam na primeira geração?",
       "alternativas": [
         "100",
         "150",
@@ -244,7 +244,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual personagem de Mortal Kombat usa um arpÁo e diz 'Get over here!'?",
+      "enunciado": "Qual personagem de Mortal Kombat usa um arpão e diz 'Get over here!'?",
       "alternativas": [
         "Sub-Zero",
         "Scorpion",
@@ -368,7 +368,7 @@
       "enunciado": "Qual é a mecânica distintiva de Fortnite além do combate?",
       "alternativas": [
         "Pesca",
-        "ConstruçÁo",
+        "Construção",
         "Corrida de carros",
         "Agricultura"
       ],
@@ -475,7 +475,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de açÁo da Sony tem Kratos como protagonista?",
+      "enunciado": "Qual jogo de ação da Sony tem Kratos como protagonista?",
       "alternativas": [
         "Uncharted",
         "The Last of Us",
@@ -640,7 +640,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de construçÁo de cidades foi criado pela Maxis?",
+      "enunciado": "Qual jogo de construção de cidades foi criado pela Maxis?",
       "alternativas": [
         "Cities: Skylines",
         "SimCity",
@@ -651,7 +651,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de simulaçÁo de vida foi criado por Will Wright?",
+      "enunciado": "Qual jogo de simulação de vida foi criado por Will Wright?",
       "alternativas": [
         "Animal Crossing",
         "The Sims",
@@ -717,7 +717,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo da FromSoftware se passa no JapÁo feudal?",
+      "enunciado": "Qual jogo da FromSoftware se passa no Japão feudal?",
       "alternativas": [
         "Dark Souls",
         "Bloodborne",
@@ -937,7 +937,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de açÁo subaquática tem Big Daddy e Little Sister?",
+      "enunciado": "Qual jogo de ação subaquática tem Big Daddy e Little Sister?",
       "alternativas": [
         "Subnautica",
         "BioShock",
@@ -959,7 +959,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de simulaçÁo de futebol é produzido pela EA Sports?",
+      "enunciado": "Qual jogo de simulação de futebol é produzido pela EA Sports?",
       "alternativas": [
         "PES",
         "eFootball",
@@ -1036,7 +1036,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de construçÁo de parques temáticos foi lançado pela Frontier?",
+      "enunciado": "Qual jogo de construção de parques temáticos foi lançado pela Frontier?",
       "alternativas": [
         "RollerCoaster Tycoon",
         "Planet Coaster",
@@ -1058,7 +1058,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de terror da Capcom tem os irmÁos Redfield?",
+      "enunciado": "Qual jogo de terror da Capcom tem os irmãos Redfield?",
       "alternativas": [
         "Silent Hill",
         "Resident Evil",
@@ -1069,7 +1069,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo indie de terror tem um monstro que se move quando você nÁo olha?",
+      "enunciado": "Qual jogo indie de terror tem um monstro que se move quando você não olha?",
       "alternativas": [
         "Amnesia",
         "Outlast",
@@ -1102,7 +1102,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de deduçÁo social se tornou viral em 2020?",
+      "enunciado": "Qual jogo de dedução social se tornou viral em 2020?",
       "alternativas": [
         "Town of Salem",
         "Werewolf",
@@ -1135,7 +1135,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo mobile da Supercell tem clÁs e construçÁo de vilas?",
+      "enunciado": "Qual jogo mobile da Supercell tem clãs e construção de vilas?",
       "alternativas": [
         "Clash of Clans",
         "Brawl Stars",
@@ -1157,7 +1157,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo de tiro da Krafton é a versÁo mobile de PUBG?",
+      "enunciado": "Qual jogo de tiro da Krafton é a versão mobile de PUBG?",
       "alternativas": [
         "Call of Duty Mobile",
         "PUBG Mobile",
@@ -1179,7 +1179,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual plataforma de distribuiçÁo digital de jogos da Valve é a mais popular?",
+      "enunciado": "Qual plataforma de distribuição digital de jogos da Valve é a mais popular?",
       "alternativas": [
         "Epic Games Store",
         "GOG",
@@ -1278,7 +1278,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual vilÁo icônico aparece em Far Cry 3?",
+      "enunciado": "Qual vilão icônico aparece em Far Cry 3?",
       "alternativas": [
         "Pagan Min",
         "Vaas Montenegro",
@@ -1366,7 +1366,7 @@
     },
     {
       "tema": "games",
-      "enunciado": "Qual jogo indie de exploraçÁo subaquática se chama Subnautica?",
+      "enunciado": "Qual jogo indie de exploração subaquática se chama Subnautica?",
       "alternativas": [
         "Abzû",
         "Subnautica",

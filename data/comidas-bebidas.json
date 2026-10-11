@@ -1,4 +1,4 @@
-﻿{
+{
   "perguntas": [
     {
       "tema": "comidas-bebidas",
@@ -17,7 +17,7 @@
       "alternativas": [
         "China",
         "Coreia",
-        "JapÁo",
+        "Japão",
         "Tailândia"
       ],
       "correta": 2
@@ -50,7 +50,7 @@
       "alternativas": [
         "Coxinha",
         "Feijoada",
-        "PÁo de queijo",
+        "Pão de queijo",
         "Açaí"
       ],
       "correta": 1
@@ -60,7 +60,7 @@
       "enunciado": "Qual tempero dá a cor amarela ao curry?",
       "alternativas": [
         "Páprica",
-        "AçafrÁo/Cúrcuma",
+        "Açafrão/Cúrcuma",
         "Cominho",
         "Coentro"
       ],
@@ -81,7 +81,7 @@
       "tema": "comidas-bebidas",
       "enunciado": "Qual queijo é usado tradicionalmente em pizza Margherita?",
       "alternativas": [
-        "ParmesÁo",
+        "Parmesão",
         "Cheddar",
         "Mozzarella",
         "Provolone"
@@ -104,8 +104,8 @@
       "enunciado": "Qual é o principal ingrediente do hummus?",
       "alternativas": [
         "Lentilhas",
-        "GrÁo-de-bico",
-        "FeijÁo",
+        "Grão-de-bico",
+        "Feijão",
         "Ervilhas"
       ],
       "correta": 1
@@ -150,7 +150,7 @@
         "Molho de pimenta",
         "Pasta de gergelim",
         "Queijo árabe",
-        "PÁo sírio"
+        "Pão sírio"
       ],
       "correta": 1
     },
@@ -170,7 +170,7 @@
       "enunciado": "Qual é o ingrediente principal do pesto genovês?",
       "alternativas": [
         "Salsa",
-        "ManjericÁo",
+        "Manjericão",
         "Orégano",
         "Alecrim"
       ],
@@ -225,7 +225,7 @@
       "enunciado": "Qual é a especiaria mais cara do mundo?",
       "alternativas": [
         "Baunilha",
-        "AçafrÁo",
+        "Açafrão",
         "Cardamomo",
         "Canela"
       ],
@@ -246,7 +246,7 @@
       "tema": "comidas-bebidas",
       "enunciado": "Qual é o principal ingrediente do risoto?",
       "alternativas": [
-        "MacarrÁo",
+        "Macarrão",
         "Arroz arbóreo",
         "Cuscuz",
         "Quinoa"
@@ -266,7 +266,7 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "Qual bebida destilada é feita de batata ou grÁos na Rússia?",
+      "enunciado": "Qual bebida destilada é feita de batata ou grãos na Rússia?",
       "alternativas": [
         "Gin",
         "Rum",
@@ -279,10 +279,10 @@
       "tema": "comidas-bebidas",
       "enunciado": "De qual país vem o dim sum?",
       "alternativas": [
-        "JapÁo",
+        "Japão",
         "Coreia",
         "China",
-        "VietnÁ"
+        "Vietnã"
       ],
       "correta": 2
     },
@@ -291,7 +291,7 @@
       "enunciado": "Qual queijo italiano é tradicionalmente ralado sobre massas?",
       "alternativas": [
         "Mozzarella",
-        "ParmesÁo",
+        "Parmesão",
         "Ricota",
         "Gorgonzola"
       ],
@@ -302,7 +302,7 @@
       "enunciado": "O que é naan?",
       "alternativas": [
         "Arroz indiano",
-        "PÁo indiano",
+        "Pão indiano",
         "Curry",
         "Sobremesa"
       ],
@@ -326,7 +326,7 @@
         "Tomate",
         "Iogurte e pepino",
         "Berinjela",
-        "GrÁo-de-bico"
+        "Grão-de-bico"
       ],
       "correta": 1
     },
@@ -346,7 +346,7 @@
       "enunciado": "Qual país produz mais café no mundo?",
       "alternativas": [
         "Colômbia",
-        "VietnÁ",
+        "Vietnã",
         "Brasil",
         "Etiópia"
       ],
@@ -365,7 +365,7 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "Qual é a bebida nacional do JapÁo?",
+      "enunciado": "Qual é a bebida nacional do Japão?",
       "alternativas": [
         "Cerveja",
         "Saquê",
@@ -389,7 +389,7 @@
       "tema": "comidas-bebidas",
       "enunciado": "Qual fruta é usada para fazer vinho do Porto?",
       "alternativas": [
-        "MaçÁ",
+        "Maçã",
         "Uva",
         "Pera",
         "Cereja"
@@ -431,7 +431,7 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "Qual bebida é feita de maçÁs fermentadas?",
+      "enunciado": "Qual bebida é feita de maçãs fermentadas?",
       "alternativas": [
         "Vinho",
         "Cidra",
@@ -456,7 +456,7 @@
       "enunciado": "Qual é o ingrediente principal do falafel?",
       "alternativas": [
         "Carne moída",
-        "GrÁo-de-bico ou fava",
+        "Grão-de-bico ou fava",
         "Lentilhas",
         "Batata"
       ],
@@ -490,8 +490,8 @@
       "alternativas": [
         "China",
         "Tailândia",
-        "VietnÁ",
-        "JapÁo"
+        "Vietnã",
+        "Japão"
       ],
       "correta": 2
     },
@@ -513,7 +513,7 @@
         "Massa de ovo",
         "Bolinho de batata italiano",
         "Arroz italiano",
-        "PÁo italiano"
+        "Pão italiano"
       ],
       "correta": 1
     },
@@ -544,7 +544,7 @@
       "enunciado": "Qual é o principal ingrediente do pad thai?",
       "alternativas": [
         "Arroz",
-        "MacarrÁo de arroz",
+        "Macarrão de arroz",
         "Vegetais",
         "Frango"
       ],
@@ -555,7 +555,7 @@
       "enunciado": "O que é bruschetta?",
       "alternativas": [
         "Massa italiana",
-        "PÁo torrado com coberturas",
+        "Pão torrado com coberturas",
         "Sopa italiana",
         "Sobremesa"
       ],
@@ -576,8 +576,8 @@
       "tema": "comidas-bebidas",
       "enunciado": "De qual país vem o biryani?",
       "alternativas": [
-        "PaquistÁo/Índia",
-        "IrÁ",
+        "Paquistão/Índia",
+        "Irã",
         "Turquia",
         "Arábia Saudita"
       ],
@@ -587,10 +587,10 @@
       "tema": "comidas-bebidas",
       "enunciado": "Qual é a diferença entre cappuccino e latte?",
       "alternativas": [
-        "SÁo iguais",
+        "São iguais",
         "Cappuccino tem mais espuma",
         "Latte tem mais espuma",
-        "Latte nÁo tem leite"
+        "Latte não tem leite"
       ],
       "correta": 1
     },
@@ -598,7 +598,7 @@
       "tema": "comidas-bebidas",
       "enunciado": "O que é paneer?",
       "alternativas": [
-        "PÁo indiano",
+        "Pão indiano",
         "Queijo fresco indiano",
         "Curry",
         "Arroz temperado"
@@ -644,8 +644,8 @@
       "alternativas": [
         "Laranja",
         "Zimbro",
-        "LimÁo",
-        "HortelÁ"
+        "Limão",
+        "Hortelã"
       ],
       "correta": 1
     },
@@ -750,7 +750,7 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "Qual bebida é feita de arroz fermentado no JapÁo?",
+      "enunciado": "Qual bebida é feita de arroz fermentado no Japão?",
       "alternativas": [
         "Soju",
         "Saquê",
@@ -761,7 +761,7 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "De qual país é originário o macarrÁo?",
+      "enunciado": "De qual país é originário o macarrão?",
       "alternativas": [
         "Itália",
         "China",
@@ -797,7 +797,7 @@
       "enunciado": "O que é ramen?",
       "alternativas": [
         "Sushi especial",
-        "MacarrÁo japonês em caldo",
+        "Macarrão japonês em caldo",
         "Arroz frito",
         "Bolinho de peixe"
       ],
@@ -830,7 +830,7 @@
       "enunciado": "O que é acarajé?",
       "alternativas": [
         "Bebida baiana",
-        "Bolinho de feijÁo frito",
+        "Bolinho de feijão frito",
         "Doce de coco",
         "Peixe assado"
       ],
@@ -865,7 +865,7 @@
         "Sorvete francês",
         "Creme com açúcar caramelizado",
         "Mousse de chocolate",
-        "Torta de maçÁ"
+        "Torta de maçã"
       ],
       "correta": 1
     },
@@ -920,7 +920,7 @@
         "Salada francesa",
         "Pasta de azeitonas",
         "Queijo de cabra",
-        "PÁo francês"
+        "Pão francês"
       ],
       "correta": 1
     },
@@ -939,10 +939,10 @@
       "tema": "comidas-bebidas",
       "enunciado": "Qual é a principal diferença entre bourbon e whisky escocês?",
       "alternativas": [
-        "SÁo iguais",
+        "São iguais",
         "Bourbon usa milho, escocês usa cevada",
         "Bourbon é mais velho",
-        "Escocês nÁo é envelhecido"
+        "Escocês não é envelhecido"
       ],
       "correta": 1
     },
@@ -1005,10 +1005,10 @@
       "tema": "comidas-bebidas",
       "enunciado": "O que é baba ganoush?",
       "alternativas": [
-        "Pasta de grÁo-de-bico",
+        "Pasta de grão-de-bico",
         "Pasta de berinjela",
         "Salada de tabule",
-        "PÁo árabe"
+        "Pão árabe"
       ],
       "correta": 1
     },
@@ -1016,7 +1016,7 @@
       "tema": "comidas-bebidas",
       "enunciado": "Qual queijo é usado na salada Caprese?",
       "alternativas": [
-        "ParmesÁo",
+        "Parmesão",
         "Mozzarella de búfala",
         "Ricota",
         "Provolone"
@@ -1073,7 +1073,7 @@
       "alternativas": [
         "Fritura rápida",
         "Cozimento lento em gordura",
-        "DefumaçÁo",
+        "Defumação",
         "Grelhado"
       ],
       "correta": 1
@@ -1159,8 +1159,8 @@
       "tema": "comidas-bebidas",
       "enunciado": "Qual é a diferença entre sushi e sashimi?",
       "alternativas": [
-        "SÁo iguais",
-        "Sushi tem arroz, sashimi nÁo",
+        "São iguais",
+        "Sushi tem arroz, sashimi não",
         "Sashimi é cozido",
         "Sushi é frito"
       ],
@@ -1182,7 +1182,7 @@
       "enunciado": "O que é pancetta?",
       "alternativas": [
         "Queijo italiano",
-        "Bacon italiano nÁo defumado",
+        "Bacon italiano não defumado",
         "Presunto",
         "Linguiça"
       ],
@@ -1203,7 +1203,7 @@
       "tema": "comidas-bebidas",
       "enunciado": "De qual país vem a sobremesa gulab jamun?",
       "alternativas": [
-        "PaquistÁo",
+        "Paquistão",
         "Índia",
         "Bangladesh",
         "Todos os anteriores"
@@ -1256,7 +1256,7 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "Qual bebida espumante é feita na regiÁo de Champagne?",
+      "enunciado": "Qual bebida espumante é feita na região de Champagne?",
       "alternativas": [
         "Prosecco",
         "Cava",
@@ -1305,7 +1305,7 @@
         "Grécia",
         "Alemanha/Turquia",
         "Líbano",
-        "IrÁ"
+        "Irã"
       ],
       "correta": 1
     },
@@ -1315,7 +1315,7 @@
       "alternativas": [
         "Salada árabe",
         "Carne assada em espeto vertical",
-        "PÁo recheado",
+        "Pão recheado",
         "Sopa de lentilhas"
       ],
       "correta": 1
@@ -1324,7 +1324,7 @@
       "tema": "comidas-bebidas",
       "enunciado": "Qual é a diferença entre gelato e sorvete?",
       "alternativas": [
-        "SÁo iguais",
+        "São iguais",
         "Gelato tem menos gordura e ar",
         "Sorvete é italiano",
         "Gelato é mais doce"
@@ -1335,10 +1335,10 @@
       "tema": "comidas-bebidas",
       "enunciado": "De qual país vem o bibimbap?",
       "alternativas": [
-        "JapÁo",
+        "Japão",
         "China",
         "Coreia do Sul",
-        "VietnÁ"
+        "Vietnã"
       ],
       "correta": 2
     },
@@ -1381,7 +1381,7 @@
       "alternativas": [
         "Tomate",
         "Beterraba",
-        "PimentÁo",
+        "Pimentão",
         "Cenoura"
       ],
       "correta": 1
@@ -1391,7 +1391,7 @@
       "enunciado": "O que é brioche?",
       "alternativas": [
         "Bolo francês",
-        "PÁo amanteigado francês",
+        "Pão amanteigado francês",
         "Croissant recheado",
         "Torta de frutas"
       ],
@@ -1414,8 +1414,8 @@
       "alternativas": [
         "Tem bacon",
         "Tem ovo por cima",
-        "É vegetariano",
-        "É frito"
+        "Ã‰ vegetariano",
+        "Ã‰ frito"
       ],
       "correta": 1
     },
@@ -1465,9 +1465,9 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "De qual estado brasileiro é o pÁo de queijo?",
+      "enunciado": "De qual estado brasileiro é o pão de queijo?",
       "alternativas": [
-        "SÁo Paulo",
+        "São Paulo",
         "Minas Gerais",
         "Goiás",
         "Bahia"
@@ -1490,15 +1490,15 @@
       "enunciado": "Qual ingrediente diferencia a moqueca capixaba da baiana?",
       "alternativas": [
         "Peixe",
-        "A baiana usa dendê, a capixaba nÁo",
+        "A baiana usa dendê, a capixaba não",
         "Cebola",
-        "PimentÁo"
+        "Pimentão"
       ],
       "correta": 1
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "De qual regiÁo brasileira é o vatapá?",
+      "enunciado": "De qual região brasileira é o vatapá?",
       "alternativas": [
         "Sul",
         "Sudeste",
@@ -1511,16 +1511,16 @@
       "tema": "comidas-bebidas",
       "enunciado": "O que é quibe?",
       "alternativas": [
-        "PÁo árabe",
+        "Pão árabe",
         "Bolinho de trigo e carne",
-        "Pasta de grÁo-de-bico",
+        "Pasta de grão-de-bico",
         "Sobremesa síria"
       ],
       "correta": 1
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "Qual é a bebida típica do chimarrÁo?",
+      "enunciado": "Qual é a bebida típica do chimarrão?",
       "alternativas": [
         "Café",
         "Mate quente",
@@ -1531,7 +1531,7 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "De qual regiÁo brasileira é típico o chimarrÁo?",
+      "enunciado": "De qual região brasileira é típico o chimarrão?",
       "alternativas": [
         "Nordeste",
         "Norte",
@@ -1556,7 +1556,7 @@
       "enunciado": "Qual é a fruta típica da Amazônia usada em sucos e sorvetes?",
       "alternativas": [
         "Açaí e cupuaçu",
-        "MaçÁ",
+        "Maçã",
         "Uva",
         "Pera"
       ],
@@ -1623,7 +1623,7 @@
       "alternativas": [
         "Massa folhada",
         "Massa de água e farinha frita",
-        "Massa de pÁo",
+        "Massa de pão",
         "Massa de pizza"
       ],
       "correta": 1
@@ -1635,7 +1635,7 @@
         "Brasil",
         "Líbano/Síria",
         "Turquia",
-        "IrÁ"
+        "Irã"
       ],
       "correta": 1
     },
@@ -1721,8 +1721,8 @@
       "enunciado": "Qual alimento é rico em umami?",
       "alternativas": [
         "Açúcar",
-        "Queijo parmesÁo e cogumelos",
-        "LimÁo",
+        "Queijo parmesão e cogumelos",
+        "Limão",
         "Sal"
       ],
       "correta": 1
@@ -1733,7 +1733,7 @@
       "alternativas": [
         "Estados Unidos",
         "França",
-        "JapÁo",
+        "Japão",
         "Espanha"
       ],
       "correta": 1
@@ -1745,7 +1745,7 @@
         "Fritura rápida",
         "Cozimento a vácuo em baixa temperatura",
         "Grelhado",
-        "DefumaçÁo"
+        "Defumação"
       ],
       "correta": 1
     },
@@ -1756,7 +1756,7 @@
         "Estados Unidos",
         "Irlanda",
         "Escócia",
-        "JapÁo"
+        "Japão"
       ],
       "correta": 2
     },
@@ -1787,9 +1787,9 @@
       "enunciado": "O que é lambic?",
       "alternativas": [
         "Vinho belga",
-        "Cerveja de fermentaçÁo espontânea",
+        "Cerveja de fermentação espontânea",
         "Licor de frutas",
-        "Destilado de grÁos"
+        "Destilado de grãos"
       ],
       "correta": 1
     },
@@ -1809,7 +1809,7 @@
       "enunciado": "O que significa 'DOC' em vinhos italianos?",
       "alternativas": [
         "Doce Original Certificado",
-        "DenominaçÁo de Origem Controlada",
+        "Denominação de Origem Controlada",
         "Delicioso e Original",
         "Destilado de Qualidade"
       ],
@@ -1817,7 +1817,7 @@
     },
     {
       "tema": "comidas-bebidas",
-      "enunciado": "De qual regiÁo francesa vem o Bordeaux?",
+      "enunciado": "De qual região francesa vem o Bordeaux?",
       "alternativas": [
         "Borgonha",
         "Bordeaux (sudoeste)",

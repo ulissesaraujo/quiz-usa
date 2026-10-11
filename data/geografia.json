@@ -1,8 +1,8 @@
-﻿{
+{
   "perguntas": [
     {
       "tema": "geografia",
-      "enunciado": "Qual é o maior país do mundo em extensÁo territorial?",
+      "enunciado": "Qual é o maior país do mundo em extensão territorial?",
       "alternativas": [
         "China",
         "Estados Unidos",
@@ -101,7 +101,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é a capital do JapÁo?",
+      "enunciado": "Qual é a capital do Japão?",
       "alternativas": [
         "Osaka",
         "Kyoto",
@@ -138,7 +138,7 @@
       "alternativas": [
         "China",
         "Coreia do Sul",
-        "JapÁo",
+        "Japão",
         "Tailândia"
       ],
       "correta": 2
@@ -171,7 +171,7 @@
       "alternativas": [
         "Estreito de Bering",
         "Estreito de Gibraltar",
-        "Estreito de MagalhÁes",
+        "Estreito de Magalhães",
         "Estreito de Ormuz"
       ],
       "correta": 1
@@ -202,7 +202,7 @@
       "tema": "geografia",
       "enunciado": "Qual é a capital da Rússia?",
       "alternativas": [
-        "SÁo Petersburgo",
+        "São Petersburgo",
         "Moscou",
         "Kiev",
         "Minsk"
@@ -227,7 +227,7 @@
         "Marrocos",
         "Egito",
         "Líbia",
-        "SudÁo"
+        "Sudão"
       ],
       "correta": 1
     },
@@ -236,7 +236,7 @@
       "enunciado": "Qual é o maior arquipélago do mundo?",
       "alternativas": [
         "Filipinas",
-        "JapÁo",
+        "Japão",
         "Indonésia",
         "Maldivas"
       ],
@@ -288,7 +288,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é o segundo maior país do mundo em extensÁo?",
+      "enunciado": "Qual é o segundo maior país do mundo em extensão?",
       "alternativas": [
         "Estados Unidos",
         "China",
@@ -326,7 +326,7 @@
         "Egito",
         "Turquia",
         "Israel",
-        "IrÁ"
+        "Irã"
       ],
       "correta": 2
     },
@@ -343,7 +343,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é o vulcÁo mais ativo da Europa?",
+      "enunciado": "Qual é o vulcão mais ativo da Europa?",
       "alternativas": [
         "Vesúvio",
         "Etna",
@@ -402,7 +402,7 @@
       "alternativas": [
         "Rio de Janeiro",
         "Brasília",
-        "SÁo Paulo",
+        "São Paulo",
         "Salvador"
       ],
       "correta": 2
@@ -422,7 +422,7 @@
       "tema": "geografia",
       "enunciado": "Qual é a capital da Itália?",
       "alternativas": [
-        "MilÁo",
+        "Milão",
         "Roma",
         "Nápoles",
         "Florença"
@@ -480,7 +480,7 @@
         "Egito",
         "Nigéria",
         "Argélia",
-        "SudÁo"
+        "Sudão"
       ],
       "correta": 2
     },
@@ -522,7 +522,7 @@
       "enunciado": "Qual país está localizado tanto na Europa quanto na Ásia?",
       "alternativas": [
         "Rússia",
-        "CazaquistÁo",
+        "Cazaquistão",
         "Turquia",
         "Todas as anteriores"
       ],
@@ -530,7 +530,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é o maior estado brasileiro em extensÁo?",
+      "enunciado": "Qual é o maior estado brasileiro em extensão?",
       "alternativas": [
         "Mato Grosso",
         "Pará",
@@ -631,7 +631,7 @@
       "tema": "geografia",
       "enunciado": "Qual país é formado por mais de 7.000 ilhas?",
       "alternativas": [
-        "JapÁo",
+        "Japão",
         "Indonésia",
         "Filipinas",
         "Maldivas"
@@ -667,13 +667,13 @@
         "Tessalônica",
         "Atenas",
         "Patras",
-        "HeracliÁo"
+        "Heraclião"
       ],
       "correta": 1
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual país tem a maior populaçÁo da América do Sul?",
+      "enunciado": "Qual país tem a maior população da América do Sul?",
       "alternativas": [
         "Argentina",
         "Colômbia",
@@ -763,9 +763,9 @@
       "tema": "geografia",
       "enunciado": "Qual é a capital da Holanda?",
       "alternativas": [
-        "RoterdÁ",
+        "Roterdã",
         "Haia",
-        "AmsterdÁ",
+        "Amsterdã",
         "Utrecht"
       ],
       "correta": 2
@@ -807,7 +807,7 @@
       "tema": "geografia",
       "enunciado": "Qual país é dividido entre duas ilhas principais: Norte e Sul?",
       "alternativas": [
-        "JapÁo",
+        "Japão",
         "Filipinas",
         "Nova Zelândia",
         "Indonésia"
@@ -904,7 +904,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual país asiático era conhecido como CeilÁo?",
+      "enunciado": "Qual país asiático era conhecido como Ceilão?",
       "alternativas": [
         "Tailândia",
         "Myanmar",
@@ -984,7 +984,7 @@
       "enunciado": "Qual é o único país que faz fronteira com a Coreia do Sul?",
       "alternativas": [
         "China",
-        "JapÁo",
+        "Japão",
         "Coreia do Norte",
         "Rússia"
       ],
@@ -1005,7 +1005,7 @@
       "tema": "geografia",
       "enunciado": "Qual é o maior país do Oriente Médio?",
       "alternativas": [
-        "IrÁ",
+        "Irã",
         "Arábia Saudita",
         "Iraque",
         "Turquia"
@@ -1058,7 +1058,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é a capital do VietnÁ?",
+      "enunciado": "Qual é a capital do Vietnã?",
       "alternativas": [
         "Ho Chi Minh",
         "Da Nang",
@@ -1113,7 +1113,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual país sul-americano nÁo faz fronteira com o Brasil?",
+      "enunciado": "Qual país sul-americano não faz fronteira com o Brasil?",
       "alternativas": [
         "Paraguai",
         "Equador",
@@ -1138,7 +1138,7 @@
       "enunciado": "Qual é o maior país sem litoral do mundo?",
       "alternativas": [
         "Mongólia",
-        "CazaquistÁo",
+        "Cazaquistão",
         "Bolívia",
         "Chade"
       ],
@@ -1160,7 +1160,7 @@
       "enunciado": "Qual país tem a maior reserva de petróleo do mundo?",
       "alternativas": [
         "Arábia Saudita",
-        "IrÁ",
+        "Irã",
         "Venezuela",
         "Rússia"
       ],
@@ -1190,7 +1190,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é a capital do PaquistÁo?",
+      "enunciado": "Qual é a capital do Paquistão?",
       "alternativas": [
         "Karachi",
         "Lahore",
@@ -1280,7 +1280,7 @@
       "tema": "geografia",
       "enunciado": "Qual país tem a maior quantidade de vulcões ativos?",
       "alternativas": [
-        "JapÁo",
+        "Japão",
         "Chile",
         "Indonésia",
         "Filipinas"
@@ -1305,7 +1305,7 @@
         "Estreito de Gibraltar",
         "Estreito de Bering",
         "Estreito de Malaca",
-        "Estreito de MagalhÁes"
+        "Estreito de Magalhães"
       ],
       "correta": 1
     },
@@ -1371,7 +1371,7 @@
         "Golfo do México",
         "Golfo Pérsico",
         "Golfo de Bengala",
-        "Golfo de OmÁ"
+        "Golfo de Omã"
       ],
       "correta": 0
     },
@@ -1410,12 +1410,12 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é a maior cidade do mundo em populaçÁo?",
+      "enunciado": "Qual é a maior cidade do mundo em população?",
       "alternativas": [
         "Nova York",
         "Xangai",
         "Tóquio",
-        "SÁo Paulo"
+        "São Paulo"
       ],
       "correta": 2
     },
@@ -1425,7 +1425,7 @@
       "alternativas": [
         "Ciudad del Este",
         "Encarnación",
-        "AssunçÁo",
+        "Assunção",
         "Pedro Juan Caballero"
       ],
       "correta": 2
@@ -1487,11 +1487,11 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é a capital do IrÁ?",
+      "enunciado": "Qual é a capital do Irã?",
       "alternativas": [
         "Isfahan",
         "Shiraz",
-        "TeerÁ",
+        "Teerã",
         "Tabriz"
       ],
       "correta": 2
@@ -1520,7 +1520,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual país tem a maior extensÁo de fronteira terrestre?",
+      "enunciado": "Qual país tem a maior extensão de fronteira terrestre?",
       "alternativas": [
         "China",
         "Rússia",
@@ -1547,7 +1547,7 @@
         "Vale da Morte",
         "Mar Morto",
         "Lago Assal",
-        "DepressÁo de Turpan"
+        "Depressão de Turpan"
       ],
       "correta": 1
     },
@@ -1567,7 +1567,7 @@
       "enunciado": "Qual é a ilha mais populosa do mundo?",
       "alternativas": [
         "Honshu",
-        "GrÁ-Bretanha",
+        "Grã-Bretanha",
         "Java",
         "Sumatra"
       ],
@@ -1677,7 +1677,7 @@
       "enunciado": "Qual país é o maior produtor de café do mundo?",
       "alternativas": [
         "Colômbia",
-        "VietnÁ",
+        "Vietnã",
         "Brasil",
         "Etiópia"
       ],
@@ -1689,7 +1689,7 @@
       "alternativas": [
         "Petra",
         "Aqaba",
-        "AmÁ",
+        "Amã",
         "Irbid"
       ],
       "correta": 2
@@ -1740,7 +1740,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual país tem a maior extensÁo de florestas do mundo?",
+      "enunciado": "Qual país tem a maior extensão de florestas do mundo?",
       "alternativas": [
         "Brasil",
         "Canadá",
@@ -1784,7 +1784,7 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual é o maior país da UniÁo Europeia em área?",
+      "enunciado": "Qual é o maior país da União Europeia em área?",
       "alternativas": [
         "Alemanha",
         "França",
@@ -1916,12 +1916,12 @@
     },
     {
       "tema": "geografia",
-      "enunciado": "Qual país tem a maior produçÁo de arroz do mundo?",
+      "enunciado": "Qual país tem a maior produção de arroz do mundo?",
       "alternativas": [
         "Índia",
         "Tailândia",
         "China",
-        "VietnÁ"
+        "Vietnã"
       ],
       "correta": 2
     },
@@ -2050,7 +2050,7 @@
       "tema": "geografia",
       "enunciado": "Qual é o maior país insular do mundo?",
       "alternativas": [
-        "JapÁo",
+        "Japão",
         "Filipinas",
         "Indonésia",
         "Madagascar"

@@ -1,4 +1,4 @@
-﻿{
+{
   "perguntas": [
     {
       "tema": "arte",
@@ -230,7 +230,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual artista criou o 'BalÁo Dog'?",
+      "enunciado": "Qual artista criou o 'Balão Dog'?",
       "alternativas": ["Damien Hirst", "Jeff Koons", "Banksy", "Ai Weiwei"],
       "correta": 1
     },
@@ -242,7 +242,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Quem pintou 'ImpressÁo, Sol Nascente'?",
+      "enunciado": "Quem pintou 'Impressão, Sol Nascente'?",
       "alternativas": ["Renoir", "Degas", "Monet", "Pissarro"],
       "correta": 2
     },
@@ -314,7 +314,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Quem pintou 'ComposiçÁo com Vermelho, Amarelo e Azul'?",
+      "enunciado": "Quem pintou 'Composição com Vermelho, Amarelo e Azul'?",
       "alternativas": ["Kandinsky", "Mondrian", "Malevich", "Klee"],
       "correta": 1
     },
@@ -380,13 +380,13 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual é a cor primária que nÁo é vermelho nem azul?",
+      "enunciado": "Qual é a cor primária que não é vermelho nem azul?",
       "alternativas": ["Verde", "Amarelo", "Laranja", "Roxo"],
       "correta": 1
     },
     {
       "tema": "arte",
-      "enunciado": "Quem pintou 'A CriaçÁo de AdÁo'?",
+      "enunciado": "Quem pintou 'A Criação de Adão'?",
       "alternativas": ["Leonardo da Vinci", "Rafael", "Michelangelo", "Botticelli"],
       "correta": 2
     },
@@ -398,7 +398,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual técnica japonesa usa blocos de madeira para impressÁo?",
+      "enunciado": "Qual técnica japonesa usa blocos de madeira para impressão?",
       "alternativas": ["Sumi-e", "Ukiyo-e", "Origami", "Ikebana"],
       "correta": 1
     },
@@ -560,7 +560,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Quem pintou 'O Filho do Homem' com a maçÁ verde?",
+      "enunciado": "Quem pintou 'O Filho do Homem' com a maçã verde?",
       "alternativas": ["Dalí", "Magritte", "Ernst", "Tanguy"],
       "correta": 1
     },
@@ -638,7 +638,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual é o nome da técnica de impressÁo usando tela de seda?",
+      "enunciado": "Qual é o nome da técnica de impressão usando tela de seda?",
       "alternativas": ["Litografia", "Xilogravura", "Água-forte", "Serigrafia"],
       "correta": 3
     },
@@ -698,7 +698,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual estilo artístico valoriza a emoçÁo sobre a razÁo?",
+      "enunciado": "Qual estilo artístico valoriza a emoção sobre a razão?",
       "alternativas": ["Neoclassicismo", "Romantismo", "Realismo", "Academicismo"],
       "correta": 1
     },
@@ -806,7 +806,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual movimento artístico surgiu como reaçÁo ao Impressionismo?",
+      "enunciado": "Qual movimento artístico surgiu como reação ao Impressionismo?",
       "alternativas": ["Fauvismo", "Pós-Impressionismo", "Expressionismo", "Simbolismo"],
       "correta": 1
     },
@@ -914,7 +914,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual movimento artístico surgiu em resposta à industrializaçÁo?",
+      "enunciado": "Qual movimento artístico surgiu em resposta à industrialização?",
       "alternativas": ["Art Nouveau", "Arts and Crafts", "Art Déco", "Bauhaus"],
       "correta": 1
     },
@@ -986,7 +986,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual escola de arte e design alemÁ influenciou a arquitetura moderna?",
+      "enunciado": "Qual escola de arte e design alemã influenciou a arquitetura moderna?",
       "alternativas": ["Art Nouveau", "Art Déco", "Bauhaus", "De Stijl"],
       "correta": 2
     },
@@ -1064,7 +1064,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Quem pintou 'A LiçÁo de Anatomia do Dr. Tulp'?",
+      "enunciado": "Quem pintou 'A Lição de Anatomia do Dr. Tulp'?",
       "alternativas": ["Vermeer", "Rembrandt", "Hals", "Rubens"],
       "correta": 1
     },
@@ -1130,7 +1130,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual movimento artístico alemÁo do início do séc. XX usava cores fortes e formas distorcidas?",
+      "enunciado": "Qual movimento artístico alemão do início do séc. XX usava cores fortes e formas distorcidas?",
       "alternativas": ["Impressionismo", "Expressionismo", "Fauvismo", "Cubismo"],
       "correta": 1
     },
@@ -1160,7 +1160,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual movimento artístico é caracterizado por pinturas de açÁo e gestuais?",
+      "enunciado": "Qual movimento artístico é caracterizado por pinturas de ação e gestuais?",
       "alternativas": ["Pop Art", "Expressionismo Abstrato", "Minimalismo", "Arte Conceitual"],
       "correta": 1
     },
@@ -1178,7 +1178,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Quem pintou 'O VagÁo de Terceira Classe'?",
+      "enunciado": "Quem pintou 'O Vagão de Terceira Classe'?",
       "alternativas": ["Courbet", "Millet", "Daumier", "Corot"],
       "correta": 2
     },
@@ -1196,7 +1196,7 @@
     },
     {
       "tema": "arte",
-      "enunciado": "Qual artista criou a série 'Quadrados' explorando a interaçÁo de cores?",
+      "enunciado": "Qual artista criou a série 'Quadrados' explorando a interação de cores?",
       "alternativas": ["Mondrian", "Malevich", "Josef Albers", "Kandinsky"],
       "correta": 2
     }

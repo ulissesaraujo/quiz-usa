@@ -1,4 +1,4 @@
-﻿{
+{
   "perguntas": [
     {
       "tema": "musica",
@@ -127,7 +127,7 @@
       "alternativas": [
         "Vinícius de Moraes",
         "Tom Jobim",
-        "JoÁo Gilberto",
+        "João Gilberto",
         "Baden Powell"
       ],
       "correta": 2
@@ -180,7 +180,7 @@
       "tema": "musica",
       "enunciado": "Qual banda brasileira lançou 'Dois Rios'?",
       "alternativas": [
-        "LegiÁo Urbana",
+        "Legião Urbana",
         "Skank",
         "Jota Quest",
         "O Rappa"
@@ -189,7 +189,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Quem foi o líder da LegiÁo Urbana?",
+      "enunciado": "Quem foi o líder da Legião Urbana?",
       "alternativas": [
         "Dado Villa-Lobos",
         "Renato Russo",
@@ -200,7 +200,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual música da LegiÁo Urbana fala sobre tempo?",
+      "enunciado": "Qual música da Legião Urbana fala sobre tempo?",
       "alternativas": [
         "Será",
         "Faroeste Caboclo",
@@ -260,7 +260,7 @@
         "Cazuza",
         "Raul Seixas",
         "Rita Lee",
-        "LobÁo"
+        "Lobão"
       ],
       "correta": 1
     },
@@ -321,7 +321,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Quem sÁo os irmÁos que formaram o Oasis?",
+      "enunciado": "Quem são os irmãos que formaram o Oasis?",
       "alternativas": [
         "Ray e Dave Davies",
         "Liam e Noel Gallagher",
@@ -530,7 +530,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual cantor brasileiro lançou 'NÁo Quero Dinheiro (Só Quero Amar)'?",
+      "enunciado": "Qual cantor brasileiro lançou 'Não Quero Dinheiro (Só Quero Amar)'?",
       "alternativas": [
         "Raul Seixas",
         "Tim Maia",
@@ -552,7 +552,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Quem compôs 'ConstruçÁo'?",
+      "enunciado": "Quem compôs 'Construção'?",
       "alternativas": [
         "Caetano Veloso",
         "Gilberto Gil",
@@ -568,7 +568,7 @@
         "Gal Costa",
         "Elis Regina",
         "Maria Bethânia",
-        "Nara LeÁo"
+        "Nara Leão"
       ],
       "correta": 1
     },
@@ -609,10 +609,10 @@
       "tema": "musica",
       "enunciado": "Qual banda lançou 'Alagados'?",
       "alternativas": [
-        "LegiÁo Urbana",
-        "BarÁo Vermelho",
+        "Legião Urbana",
+        "Barão Vermelho",
         "Paralamas do Sucesso",
-        "TitÁs"
+        "Titãs"
       ],
       "correta": 2
     },
@@ -623,7 +623,7 @@
         "Dado Villa-Lobos",
         "Herbert Vianna",
         "Bi Ribeiro",
-        "JoÁo Barone"
+        "João Barone"
       ],
       "correta": 1
     },
@@ -631,16 +631,16 @@
       "tema": "musica",
       "enunciado": "Qual banda lançou 'Pro Dia Nascer Feliz'?",
       "alternativas": [
-        "LegiÁo Urbana",
-        "BarÁo Vermelho",
-        "TitÁs",
+        "Legião Urbana",
+        "Barão Vermelho",
+        "Titãs",
         "Paralamas do Sucesso"
       ],
       "correta": 1
     },
     {
       "tema": "musica",
-      "enunciado": "Quem foi o primeiro vocalista do BarÁo Vermelho?",
+      "enunciado": "Quem foi o primeiro vocalista do Barão Vermelho?",
       "alternativas": [
         "Frejat",
         "Cazuza",
@@ -666,7 +666,7 @@
       "alternativas": [
         "Skank",
         "Jota Quest",
-        "TitÁs",
+        "Titãs",
         "O Rappa"
       ],
       "correta": 2
@@ -698,8 +698,8 @@
       "enunciado": "Quem foi o vocalista do Charlie Brown Jr.?",
       "alternativas": [
         "Champignon",
-        "ChorÁo",
-        "MarcÁo",
+        "Chorão",
+        "Marcão",
         "Thiago Castanho"
       ],
       "correta": 1
@@ -816,7 +816,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual cantora lançou 'Evidências' com ChitÁozinho & Xororó?",
+      "enunciado": "Qual cantora lançou 'Evidências' com Chitãozinho & Xororó?",
       "alternativas": [
         "Roberta Miranda",
         "Nenhuma, é duo masculino",
@@ -830,7 +830,7 @@
       "enunciado": "Qual dupla sertaneja gravou 'Evidências'?",
       "alternativas": [
         "Leandro & Leonardo",
-        "ChitÁozinho & Xororó",
+        "Chitãozinho & Xororó",
         "Zezé Di Camargo & Luciano",
         "Bruno & Marrone"
       ],
@@ -849,7 +849,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual é o gênero musical de origem baiana com guitarras e percussÁo?",
+      "enunciado": "Qual é o gênero musical de origem baiana com guitarras e percussão?",
       "alternativas": [
         "Forró",
         "Axé",
@@ -885,7 +885,7 @@
       "enunciado": "Qual grupo de pagode lançou 'A Cor do Sol'?",
       "alternativas": [
         "Exaltasamba",
-        "RevelaçÁo",
+        "Revelação",
         "Raça Negra",
         "Soweto"
       ],
@@ -928,7 +928,7 @@
       "tema": "musica",
       "enunciado": "Qual é o nome artístico de Roberta Medina como produtora musical?",
       "alternativas": [
-        "Ela nÁo é cantora, é produtora do Rock in Rio",
+        "Ela não é cantora, é produtora do Rock in Rio",
         "Roberta Gil",
         "Bela Gil",
         "Preta Gil"
@@ -1058,7 +1058,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual cantora lançou 'PesadÁo' com Marcelo FalcÁo?",
+      "enunciado": "Qual cantora lançou 'Pesadão' com Marcelo Falcão?",
       "alternativas": [
         "Anitta",
         "IZA",
@@ -1071,7 +1071,7 @@
       "tema": "musica",
       "enunciado": "Qual DJ brasileiro é conhecido mundialmente como Alok?",
       "alternativas": [
-        "É o próprio nome artístico",
+        "Ã‰ o próprio nome artístico",
         "Alok Achkar Peres Petrillo",
         "Alex Petrillo",
         "Alan Walker"
@@ -1260,7 +1260,7 @@
       "alternativas": [
         "Renato Russo",
         "Cazuza",
-        "LobÁo",
+        "Lobão",
         "Lulu Santos"
       ],
       "correta": 1
@@ -1293,7 +1293,7 @@
       "alternativas": [
         "Marisa Monte, Arnaldo Antunes e Carlinhos Brown",
         "Gilberto Gil, Caetano e Bethânia",
-        "Cazuza, LobÁo e Lulu",
+        "Cazuza, Lobão e Lulu",
         "Djavan, Ivan Lins e Gonzaguinha"
       ],
       "correta": 0
@@ -1305,7 +1305,7 @@
         "Velha Infância",
         "Já Sei Namorar",
         "Passe em Casa",
-        "É Você"
+        "Ã‰ Você"
       ],
       "correta": 1
     },
@@ -1326,7 +1326,7 @@
       "alternativas": [
         "As Meninas",
         "Rouge",
-        "É o Tchan",
+        "Ã‰ o Tchan",
         "Babado Novo"
       ],
       "correta": 1
@@ -1344,7 +1344,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual cantor lançou 'Você NÁo Me Conhece'?",
+      "enunciado": "Qual cantor lançou 'Você Não Me Conhece'?",
       "alternativas": [
         "Daniel",
         "Leonardo",
@@ -1355,9 +1355,9 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual dupla sertaneja lançou 'É o Amor'?",
+      "enunciado": "Qual dupla sertaneja lançou 'Ã‰ o Amor'?",
       "alternativas": [
-        "ChitÁozinho & Xororó",
+        "Chitãozinho & Xororó",
         "Leandro & Leonardo",
         "Zezé Di Camargo & Luciano",
         "Bruno & Marrone"
@@ -1370,7 +1370,7 @@
       "alternativas": [
         "Leandro",
         "Leonardo",
-        "JoÁo Paulo",
+        "João Paulo",
         "Chrystian"
       ],
       "correta": 0
@@ -1381,7 +1381,7 @@
       "alternativas": [
         "Gal Costa",
         "Elis Regina",
-        "Nara LeÁo",
+        "Nara Leão",
         "Todas as anteriores e outras"
       ],
       "correta": 3
@@ -1390,7 +1390,7 @@
       "tema": "musica",
       "enunciado": "Qual instrumento Tom Jobim tocava principalmente?",
       "alternativas": [
-        "ViolÁo",
+        "Violão",
         "Piano",
         "Saxofone",
         "Bateria"
@@ -1410,7 +1410,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Quem compôs 'O Que É O Que É'?",
+      "enunciado": "Quem compôs 'O Que Ã‰ O Que Ã‰'?",
       "alternativas": [
         "Gilberto Gil",
         "Gonzaguinha",
@@ -1454,7 +1454,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Quem é conhecido como o 'Rei do BaiÁo'?",
+      "enunciado": "Quem é conhecido como o 'Rei do Baião'?",
       "alternativas": [
         "Dominguinhos",
         "Luiz Gonzaga",
@@ -1502,7 +1502,7 @@
       "alternativas": [
         "Angra",
         "Sepultura",
-        "Ratos de PorÁo",
+        "Ratos de Porão",
         "Korzus"
       ],
       "correta": 1
@@ -1522,7 +1522,7 @@
       "tema": "musica",
       "enunciado": "Em qual cidade começou o Rock in Rio?",
       "alternativas": [
-        "SÁo Paulo",
+        "São Paulo",
         "Rio de Janeiro",
         "Belo Horizonte",
         "Salvador"
@@ -1542,10 +1542,10 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual cantora brasileira é conhecida por 'Comida' com TitÁs?",
+      "enunciado": "Qual cantora brasileira é conhecida por 'Comida' com Titãs?",
       "alternativas": [
         "Marina Lima",
-        "NÁo tem cantora, só os TitÁs",
+        "Não tem cantora, só os Titãs",
         "Marisa Monte",
         "Cássia Eller"
       ],
@@ -1555,16 +1555,16 @@
       "tema": "musica",
       "enunciado": "Qual banda lançou 'Comida'?",
       "alternativas": [
-        "LegiÁo Urbana",
-        "TitÁs",
+        "Legião Urbana",
+        "Titãs",
         "Paralamas do Sucesso",
-        "BarÁo Vermelho"
+        "Barão Vermelho"
       ],
       "correta": 1
     },
     {
       "tema": "musica",
-      "enunciado": "Quantos integrantes originais os TitÁs tinham?",
+      "enunciado": "Quantos integrantes originais os Titãs tinham?",
       "alternativas": [
         "5",
         "6",
@@ -1575,7 +1575,7 @@
     },
     {
       "tema": "musica",
-      "enunciado": "Qual instrumento Nando Reis toca nos TitÁs?",
+      "enunciado": "Qual instrumento Nando Reis toca nos Titãs?",
       "alternativas": [
         "Guitarra",
         "Baixo",
@@ -1643,7 +1643,7 @@
       "tema": "musica",
       "enunciado": "Qual cantora brasileira lançou 'Dias de Luta, Dias de Glória'?",
       "alternativas": [
-        "NÁo é cantora, é cantor: Charlie Brown Jr.",
+        "Não é cantora, é cantor: Charlie Brown Jr.",
         "Pitty",
         "Cássia Eller",
         "Ana Carolina"
@@ -1668,7 +1668,7 @@
         "Piano/Teclado",
         "Saxofone",
         "Vários instrumentos",
-        "ViolÁo"
+        "Violão"
       ],
       "correta": 2
     },
@@ -1678,7 +1678,7 @@
       "alternativas": [
         "Egberto Gismonti",
         "Hermeto Pascoal",
-        "JoÁo Donato",
+        "João Donato",
         "Airto Moreira"
       ],
       "correta": 1

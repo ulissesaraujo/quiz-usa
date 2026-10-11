@@ -1,4 +1,4 @@
-﻿{
+{
   "perguntas": [
     {
       "tema": "literatura",
@@ -46,7 +46,7 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Quem escreveu 'Cem Anos de SolidÁo'?",
+      "enunciado": "Quem escreveu 'Cem Anos de Solidão'?",
       "alternativas": [
         "Pablo Neruda",
         "Gabriel García Márquez",
@@ -123,12 +123,12 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Quem escreveu 'Grande SertÁo: Veredas'?",
+      "enunciado": "Quem escreveu 'Grande Sertão: Veredas'?",
       "alternativas": [
         "Jorge Amado",
-        "GuimarÁes Rosa",
+        "Guimarães Rosa",
         "Graciliano Ramos",
-        "Érico Veríssimo"
+        "Ã‰rico Veríssimo"
       ],
       "correta": 1
     },
@@ -139,7 +139,7 @@
         "Ricardo Reis",
         "Álvaro de Campos",
         "Alberto Caeiro",
-        "Todos sÁo igualmente famosos"
+        "Todos são igualmente famosos"
       ],
       "correta": 3
     },
@@ -213,7 +213,7 @@
       "tema": "literatura",
       "enunciado": "O que é o Naturalismo na literatura?",
       "alternativas": [
-        "ExaltaçÁo da natureza",
+        "Exaltação da natureza",
         "Análise científica do comportamento humano",
         "Poesia sobre flores",
         "Romance de aventura"
@@ -310,9 +310,9 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Qual autor brasileiro escreveu 'CapitÁes da Areia'?",
+      "enunciado": "Qual autor brasileiro escreveu 'Capitães da Areia'?",
       "alternativas": [
-        "Érico Veríssimo",
+        "Ã‰rico Veríssimo",
         "Jorge Amado",
         "José Lins do Rego",
         "Rachel de Queiroz"
@@ -326,7 +326,7 @@
         "Jorge Amado",
         "Graciliano Ramos",
         "José Lins do Rego",
-        "JoÁo Cabral de Melo Neto"
+        "João Cabral de Melo Neto"
       ],
       "correta": 1
     },
@@ -369,7 +369,7 @@
       "alternativas": [
         "António Lobo Antunes",
         "José Saramago",
-        "Valter Hugo MÁe",
+        "Valter Hugo Mãe",
         "Gonçalo M. Tavares"
       ],
       "correta": 1
@@ -398,7 +398,7 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Qual é o nome do capitÁo obcecado pela baleia branca?",
+      "enunciado": "Qual é o nome do capitão obcecado pela baleia branca?",
       "alternativas": [
         "Ismael",
         "Ahab",
@@ -414,7 +414,7 @@
         "Alexandre Dumas",
         "Victor Hugo",
         "Honoré de Balzac",
-        "Émile Zola"
+        "Ã‰mile Zola"
       ],
       "correta": 1
     },
@@ -444,7 +444,7 @@
       "tema": "literatura",
       "enunciado": "Qual autor escreveu 'Madame Bovary'?",
       "alternativas": [
-        "Émile Zola",
+        "Ã‰mile Zola",
         "Gustave Flaubert",
         "Honoré de Balzac",
         "Guy de Maupassant"
@@ -453,7 +453,7 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Quem escreveu 'A RevoluçÁo dos Bichos'?",
+      "enunciado": "Quem escreveu 'A Revolução dos Bichos'?",
       "alternativas": [
         "Aldous Huxley",
         "George Orwell",
@@ -464,10 +464,10 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Qual é o lema dos porcos em 'A RevoluçÁo dos Bichos'?",
+      "enunciado": "Qual é o lema dos porcos em 'A Revolução dos Bichos'?",
       "alternativas": [
         "Liberdade para todos",
-        "Todos os animais sÁo iguais",
+        "Todos os animais são iguais",
         "Trabalho é liberdade",
         "Unidos venceremos"
       ],
@@ -545,7 +545,7 @@
       "alternativas": [
         "Frankenstein Jr.",
         "A Criatura",
-        "Ele nÁo tem nome",
+        "Ele não tem nome",
         "Adam"
       ],
       "correta": 2
@@ -557,7 +557,7 @@
         "Sófocles",
         "Eurípides",
         "Homero",
-        "Ésquilo"
+        "Ã‰squilo"
       ],
       "correta": 2
     },
@@ -622,7 +622,7 @@
       "alternativas": [
         "Machado de Assis",
         "José de Alencar",
-        "Bernardo GuimarÁes",
+        "Bernardo Guimarães",
         "Visconde de Taunay"
       ],
       "correta": 1
@@ -665,8 +665,8 @@
       "enunciado": "Quem escreveu 'Quarto de Despejo'?",
       "alternativas": [
         "Carolina Maria de Jesus",
-        "ConceiçÁo Evaristo",
-        "Ruth GuimarÁes",
+        "Conceição Evaristo",
+        "Ruth Guimarães",
         "Zélia Gattai"
       ],
       "correta": 0
@@ -676,7 +676,7 @@
       "enunciado": "Qual autor escreveu 'O Tempo e o Vento'?",
       "alternativas": [
         "Jorge Amado",
-        "Érico Veríssimo",
+        "Ã‰rico Veríssimo",
         "Mário Quintana",
         "Dyonélio Machado"
       ],
@@ -755,7 +755,7 @@
         "Vinícius de Moraes",
         "Carlos Drummond de Andrade",
         "Manuel Bandeira",
-        "JoÁo Cabral de Melo Neto"
+        "João Cabral de Melo Neto"
       ],
       "correta": 1
     },
@@ -775,7 +775,7 @@
       "enunciado": "Quem escreveu 'Morte e Vida Severina'?",
       "alternativas": [
         "Carlos Drummond",
-        "JoÁo Cabral de Melo Neto",
+        "João Cabral de Melo Neto",
         "Manuel Bandeira",
         "Ferreira Gullar"
       ],
@@ -816,10 +816,10 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Quem sÁo os protagonistas de 'O Auto da Compadecida'?",
+      "enunciado": "Quem são os protagonistas de 'O Auto da Compadecida'?",
       "alternativas": [
         "Pedro e Paulo",
-        "JoÁo Grilo e Chicó",
+        "João Grilo e Chicó",
         "Zé e Maria",
         "Antônio e José"
       ],
@@ -854,7 +854,7 @@
         "José de Alencar",
         "Joaquim Manuel de Macedo",
         "Manuel Antônio de Almeida",
-        "Bernardo GuimarÁes"
+        "Bernardo Guimarães"
       ],
       "correta": 1
     },
@@ -885,7 +885,7 @@
       "enunciado": "Quem escreveu 'A Escrava Isaura'?",
       "alternativas": [
         "José de Alencar",
-        "Bernardo GuimarÁes",
+        "Bernardo Guimarães",
         "Castro Alves",
         "Gonçalves Dias"
       ],
@@ -915,7 +915,7 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Qual poeta romântico escreveu 'CançÁo do Exílio'?",
+      "enunciado": "Qual poeta romântico escreveu 'Canção do Exílio'?",
       "alternativas": [
         "Castro Alves",
         "Gonçalves Dias",
@@ -926,7 +926,7 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Como começa 'CançÁo do Exílio'?",
+      "enunciado": "Como começa 'Canção do Exílio'?",
       "alternativas": [
         "Minha terra tem palmeiras",
         "Nossos bosques têm mais vida",
@@ -1300,7 +1300,7 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Quem escreveu 'O Labirinto da SolidÁo'?",
+      "enunciado": "Quem escreveu 'O Labirinto da Solidão'?",
       "alternativas": [
         "Carlos Fuentes",
         "Octavio Paz",
@@ -1370,7 +1370,7 @@
       "alternativas": [
         "Marcelo Rubens Paiva",
         "Caio Fernando Abreu",
-        "JoÁo Gilberto Noll",
+        "João Gilberto Noll",
         "Sérgio Sant'Anna"
       ],
       "correta": 1
@@ -1399,7 +1399,7 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Qual autor escreveu crônicas famosas como 'A Eterna PrivaçÁo do Zagueiro Absoluto'?",
+      "enunciado": "Qual autor escreveu crônicas famosas como 'A Eterna Privação do Zagueiro Absoluto'?",
       "alternativas": [
         "Rubem Braga",
         "Luis Fernando Verissimo",
@@ -1443,7 +1443,7 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Qual autor brasileiro escreveu 'Dois IrmÁos'?",
+      "enunciado": "Qual autor brasileiro escreveu 'Dois Irmãos'?",
       "alternativas": [
         "Raduan Nassar",
         "Milton Hatoum",
@@ -1470,7 +1470,7 @@
         "Milton Hatoum",
         "Chico Buarque",
         "Rubem Fonseca",
-        "JoÁo Ubaldo Ribeiro"
+        "João Ubaldo Ribeiro"
       ],
       "correta": 1
     },
@@ -1490,7 +1490,7 @@
       "enunciado": "Qual autor brasileiro escreveu 'Viva o Povo Brasileiro'?",
       "alternativas": [
         "Jorge Amado",
-        "JoÁo Ubaldo Ribeiro",
+        "João Ubaldo Ribeiro",
         "Darcy Ribeiro",
         "Antonio Callado"
       ],
@@ -1503,7 +1503,7 @@
         "Darcy Ribeiro",
         "Antonio Callado",
         "Jorge Amado",
-        "Érico Veríssimo"
+        "Ã‰rico Veríssimo"
       ],
       "correta": 1
     },
@@ -1512,7 +1512,7 @@
       "enunciado": "Qual autor escreveu 'O Continente'?",
       "alternativas": [
         "Jorge Amado",
-        "Érico Veríssimo",
+        "Ã‰rico Veríssimo",
         "José Lins do Rego",
         "Graciliano Ramos"
       ],
@@ -1523,7 +1523,7 @@
       "enunciado": "Quem escreveu 'Sagarana'?",
       "alternativas": [
         "Jorge Amado",
-        "GuimarÁes Rosa",
+        "Guimarães Rosa",
         "Graciliano Ramos",
         "José Lins do Rego"
       ],
@@ -1535,7 +1535,7 @@
       "alternativas": [
         "Carlos Drummond de Andrade",
         "Ferreira Gullar",
-        "JoÁo Cabral de Melo Neto",
+        "João Cabral de Melo Neto",
         "Manoel de Barros"
       ],
       "correta": 1
@@ -1546,7 +1546,7 @@
       "alternativas": [
         "Carlos Drummond de Andrade",
         "Manoel de Barros",
-        "JoÁo Cabral de Melo Neto",
+        "João Cabral de Melo Neto",
         "Mário Quintana"
       ],
       "correta": 1
@@ -1600,7 +1600,7 @@
       "enunciado": "Qual autora escreveu 'Ponciá Vicêncio'?",
       "alternativas": [
         "Carolina Maria de Jesus",
-        "ConceiçÁo Evaristo",
+        "Conceição Evaristo",
         "Ana Maria Gonçalves",
         "Miriam Alves"
       ],
@@ -1610,7 +1610,7 @@
       "tema": "literatura",
       "enunciado": "Quem escreveu 'Um Defeito de Cor'?",
       "alternativas": [
-        "ConceiçÁo Evaristo",
+        "Conceição Evaristo",
         "Ana Maria Gonçalves",
         "Carolina Maria de Jesus",
         "Eliana Alves Cruz"
@@ -1621,7 +1621,7 @@
       "tema": "literatura",
       "enunciado": "Qual gênero literário 'O Senhor dos Anéis' representa?",
       "alternativas": [
-        "FicçÁo científica",
+        "Ficção científica",
         "Fantasia épica",
         "Terror",
         "Suspense"
@@ -1635,7 +1635,7 @@
         "Apenas magia em histórias",
         "Elementos mágicos em contexto realista",
         "Contos de fadas",
-        "FicçÁo científica"
+        "Ficção científica"
       ],
       "correta": 1
     },
@@ -1655,7 +1655,7 @@
       "enunciado": "Onde ocorreu a Semana de Arte Moderna de 1922?",
       "alternativas": [
         "Rio de Janeiro",
-        "SÁo Paulo",
+        "São Paulo",
         "Belo Horizonte",
         "Salvador"
       ],
@@ -1674,12 +1674,12 @@
     },
     {
       "tema": "literatura",
-      "enunciado": "Qual autor escreveu 'SÁo Bernardo'?",
+      "enunciado": "Qual autor escreveu 'São Bernardo'?",
       "alternativas": [
         "Jorge Amado",
         "José Lins do Rego",
         "Graciliano Ramos",
-        "Érico Veríssimo"
+        "Ã‰rico Veríssimo"
       ],
       "correta": 2
     },
@@ -1690,7 +1690,7 @@
         "Graciliano Ramos",
         "José Lins do Rego",
         "Jorge Amado",
-        "Érico Veríssimo"
+        "Ã‰rico Veríssimo"
       ],
       "correta": 2
     },
@@ -1698,9 +1698,9 @@
       "tema": "literatura",
       "enunciado": "Qual autor escreveu 'Dona Flor e Seus Dois Maridos'?",
       "alternativas": [
-        "Érico Veríssimo",
+        "Ã‰rico Veríssimo",
         "Jorge Amado",
-        "JoÁo Ubaldo Ribeiro",
+        "João Ubaldo Ribeiro",
         "Rubem Fonseca"
       ],
       "correta": 1
@@ -1709,7 +1709,7 @@
       "tema": "literatura",
       "enunciado": "Quem escreveu 'Tenda dos Milagres'?",
       "alternativas": [
-        "JoÁo Ubaldo Ribeiro",
+        "João Ubaldo Ribeiro",
         "Jorge Amado",
         "Darcy Ribeiro",
         "Antonio Callado"
@@ -1723,7 +1723,7 @@
         "Graciliano Ramos",
         "Jorge Amado",
         "José Lins do Rego",
-        "Érico Veríssimo"
+        "Ã‰rico Veríssimo"
       ],
       "correta": 1
     },
@@ -1731,7 +1731,7 @@
       "tema": "literatura",
       "enunciado": "O que significa a sigla ABL?",
       "alternativas": [
-        "AssociaçÁo Brasileira de Leitura",
+        "Associação Brasileira de Leitura",
         "Academia Brasileira de Letras",
         "Arquivo Brasileiro Literário",
         "Aliança Brasileira de Literatura"

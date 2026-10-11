@@ -20,6 +20,7 @@ export const TEMAS_DISPONIVEIS = [
     { id: 'mitos-verdades', nome: 'Mitos ou Verdades', icone: '🤔' },
     { id: 'games', nome: 'Mundo dos Games', icone: '🎮' },
     { id: 'musica', nome: 'Música', icone: '🎵' },
+    { id: 'musica-pop', nome: 'Música Pop', icone: '🎤' },
     { id: 'nostalgia', nome: 'Nostalgia', icone: '📼' }
 ];
 
