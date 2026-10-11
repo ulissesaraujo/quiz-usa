@@ -1,4 +1,4 @@
-{
+﻿{
   "perguntas": [
     {
       "tema": "geografia",
@@ -62,7 +62,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual presidente aboliu a escravidão nos EUA?",
+      "enunciado": "Qual presidente aboliu a escravidÁo nos EUA?",
       "alternativas": ["Abraham Lincoln", "Andrew Johnson", "Ulysses Grant", "Theodore Roosevelt"],
       "correta": 0
     },
@@ -75,7 +75,7 @@
     {
       "tema": "historia",
       "enunciado": "Qual evento levou os EUA a entrarem na Segunda Guerra Mundial?",
-      "alternativas": ["Invasão da Polônia", "Ataque a Pearl Harbor", "Batalha da Inglaterra", "Invasão da França"],
+      "alternativas": ["InvasÁo da Polônia", "Ataque a Pearl Harbor", "Batalha da Inglaterra", "InvasÁo da França"],
       "correta": 1
     },
     {
@@ -128,8 +128,8 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é o maior órgão do corpo humano?",
-      "alternativas": ["Coração", "Fígado", "Pele", "Pulmão"],
+      "enunciado": "Qual é o maior órgÁo do corpo humano?",
+      "alternativas": ["CoraçÁo", "Fígado", "Pele", "PulmÁo"],
       "correta": 2
     },
     {
@@ -147,7 +147,7 @@
     {
       "tema": "cinema-series",
       "enunciado": "Qual filme ganhou o Oscar de Melhor Filme em 1994?",
-      "alternativas": ["Pulp Fiction", "Forrest Gump", "O Rei Leão", "Um Sonho de Liberdade"],
+      "alternativas": ["Pulp Fiction", "Forrest Gump", "O Rei LeÁo", "Um Sonho de Liberdade"],
       "correta": 1
     },
     {
@@ -435,13 +435,13 @@
     {
       "tema": "comidas-bebidas",
       "enunciado": "Qual país é o maior produtor de café do mundo?",
-      "alternativas": ["Colômbia", "Vietnã", "Brasil", "Etiópia"],
+      "alternativas": ["Colômbia", "VietnÁ", "Brasil", "Etiópia"],
       "correta": 2
     },
     {
       "tema": "comidas-bebidas",
       "enunciado": "Qual é o ingrediente principal do guacamole?",
-      "alternativas": ["Tomate", "Abacate", "Pimentão", "Cebola"],
+      "alternativas": ["Tomate", "Abacate", "PimentÁo", "Cebola"],
       "correta": 1
     },
     {
@@ -459,19 +459,19 @@
     {
       "tema": "comidas-bebidas",
       "enunciado": "Qual é a especiaria mais cara do mundo?",
-      "alternativas": ["Baunilha", "Cardamomo", "Açafrão", "Canela"],
+      "alternativas": ["Baunilha", "Cardamomo", "AçafrÁo", "Canela"],
       "correta": 2
     },
     {
       "tema": "comidas-bebidas",
       "enunciado": "De qual país é originário o sushi?",
-      "alternativas": ["China", "Coreia", "Tailândia", "Japão"],
+      "alternativas": ["China", "Coreia", "Tailândia", "JapÁo"],
       "correta": 3
     },
     {
       "tema": "comidas-bebidas",
       "enunciado": "Qual fruta é conhecida como 'rei das frutas'?",
-      "alternativas": ["Manga", "Durian", "Abacaxi", "Mamão"],
+      "alternativas": ["Manga", "Durian", "Abacaxi", "MamÁo"],
       "correta": 1
     },
     {
@@ -513,19 +513,19 @@
     {
       "tema": "mitos-verdades",
       "enunciado": "O Monte Everest é a montanha mais alta do mundo?",
-      "alternativas": ["Verdade", "Mito", "Depende da medição", "Só acima do nível do mar"],
+      "alternativas": ["Verdade", "Mito", "Depende da mediçÁo", "Só acima do nível do mar"],
       "correta": 0
     },
     {
       "tema": "mitos-verdades",
       "enunciado": "Camaleões mudam de cor para se camuflar?",
-      "alternativas": ["Verdade", "Mito (é para comunicação)", "Só algumas espécies", "Depende do ambiente"],
+      "alternativas": ["Verdade", "Mito (é para comunicaçÁo)", "Só algumas espécies", "Depende do ambiente"],
       "correta": 1
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Napoleão Bonaparte era baixo?",
-      "alternativas": ["Verdade", "Mito (tinha altura média)", "Só quando jovem", "Depende do padrão"],
+      "enunciado": "NapoleÁo Bonaparte era baixo?",
+      "alternativas": ["Verdade", "Mito (tinha altura média)", "Só quando jovem", "Depende do padrÁo"],
       "correta": 1
     },
     {
@@ -579,7 +579,7 @@
     {
       "tema": "curiosidades",
       "enunciado": "Qual é o animal mais rápido do mundo?",
-      "alternativas": ["Leopardo", "Guepardo", "Leão", "Tigre"],
+      "alternativas": ["Leopardo", "Guepardo", "LeÁo", "Tigre"],
       "correta": 1
     },
     {

@@ -1,4 +1,4 @@
-{
+﻿{
     "salas": [
         {
             "id": "sala_001",
@@ -62,7 +62,7 @@
                 },
                 {
                     "id": 10,
-                    "enunciado": "Em qual região dos EUA fica a Flórida?",
+                    "enunciado": "Em qual regiÁo dos EUA fica a Flórida?",
                     "alternativas": ["Nordeste", "Centro-Oeste", "Sudeste", "Sudoeste"],
                     "correta": 2
                 }
@@ -88,7 +88,7 @@
                 },
                 {
                     "id": 3,
-                    "enunciado": "Qual presidente aboliu a escravidão nos EUA?",
+                    "enunciado": "Qual presidente aboliu a escravidÁo nos EUA?",
                     "alternativas": ["Abraham Lincoln", "Andrew Johnson", "Ulysses Grant", "Theodore Roosevelt"],
                     "correta": 0
                 },
@@ -101,7 +101,7 @@
                 {
                     "id": 5,
                     "enunciado": "Qual evento levou os EUA a entrarem na Segunda Guerra Mundial?",
-                    "alternativas": ["Invasão da Polônia", "Ataque a Pearl Harbor", "Batalha da Inglaterra", "Invasão da França"],
+                    "alternativas": ["InvasÁo da Polônia", "Ataque a Pearl Harbor", "Batalha da Inglaterra", "InvasÁo da França"],
                     "correta": 1
                 },
                 {
@@ -130,7 +130,7 @@
                 },
                 {
                     "id": 10,
-                    "enunciado": "Quem foi o presidente durante a maior parte da Grande Depressão?",
+                    "enunciado": "Quem foi o presidente durante a maior parte da Grande DepressÁo?",
                     "alternativas": ["Herbert Hoover", "Franklin D. Roosevelt", "Harry Truman", "Calvin Coolidge"],
                     "correta": 1
                 }

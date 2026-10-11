@@ -1,8 +1,8 @@
-{
+﻿{
   "perguntas": [
     {
       "tema": "historia",
-      "enunciado": "Em que ano Cristóvão Colombo chegou à América?",
+      "enunciado": "Em que ano CristóvÁo Colombo chegou à América?",
       "alternativas": [
         "1490",
         "1492",
@@ -13,7 +13,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual civilização construiu as pirâmides de Gizé?",
+      "enunciado": "Qual civilizaçÁo construiu as pirâmides de Gizé?",
       "alternativas": [
         "Romana",
         "Grega",
@@ -46,7 +46,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual país foi o berço da Revolução Industrial?",
+      "enunciado": "Qual país foi o berço da RevoluçÁo Industrial?",
       "alternativas": [
         "França",
         "Alemanha",
@@ -81,10 +81,10 @@
       "tema": "historia",
       "enunciado": "Qual foi a causa imediata do início da Primeira Guerra Mundial?",
       "alternativas": [
-        "Invasão da Polônia",
+        "InvasÁo da Polônia",
         "Assassinato de Francisco Ferdinando",
         "Afundamento do Lusitania",
-        "Revolução Russa"
+        "RevoluçÁo Russa"
       ],
       "correta": 1
     },
@@ -92,16 +92,16 @@
       "tema": "historia",
       "enunciado": "Quem descobriu o Brasil?",
       "alternativas": [
-        "Cristóvão Colombo",
+        "CristóvÁo Colombo",
         "Vasco da Gama",
         "Pedro Álvares Cabral",
-        "Fernão de Magalhães"
+        "FernÁo de MagalhÁes"
       ],
       "correta": 2
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano ocorreu a Revolução Francesa?",
+      "enunciado": "Em que ano ocorreu a RevoluçÁo Francesa?",
       "alternativas": [
         "1776",
         "1789",
@@ -115,7 +115,7 @@
       "enunciado": "Qual imperador francês foi exilado na ilha de Elba?",
       "alternativas": [
         "Luís XVI",
-        "Napoleão Bonaparte",
+        "NapoleÁo Bonaparte",
         "Carlos X",
         "Luís XVIII"
       ],
@@ -145,7 +145,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual civilização criou a democracia?",
+      "enunciado": "Qual civilizaçÁo criou a democracia?",
       "alternativas": [
         "Romana",
         "Grega",
@@ -192,7 +192,7 @@
       "enunciado": "Quem escreveu 'A República'?",
       "alternativas": [
         "Aristóteles",
-        "Platão",
+        "PlatÁo",
         "Sócrates",
         "Heródoto"
       ],
@@ -222,7 +222,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi assinada a Declaração de Independência dos EUA?",
+      "enunciado": "Em que ano foi assinada a DeclaraçÁo de Independência dos EUA?",
       "alternativas": [
         "1774",
         "1776",
@@ -233,7 +233,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual civilização antiga construiu Machu Picchu?",
+      "enunciado": "Qual civilizaçÁo antiga construiu Machu Picchu?",
       "alternativas": [
         "Maia",
         "Asteca",
@@ -244,7 +244,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Quem foi o líder da União Soviética durante a maior parte da Segunda Guerra Mundial?",
+      "enunciado": "Quem foi o líder da UniÁo Soviética durante a maior parte da Segunda Guerra Mundial?",
       "alternativas": [
         "Lenin",
         "Trotsky",
@@ -321,7 +321,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano ocorreu a Revolução Russa?",
+      "enunciado": "Em que ano ocorreu a RevoluçÁo Russa?",
       "alternativas": [
         "1905",
         "1914",
@@ -365,10 +365,10 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual país lançou as bombas atômicas sobre o Japão?",
+      "enunciado": "Qual país lançou as bombas atômicas sobre o JapÁo?",
       "alternativas": [
         "Inglaterra",
-        "União Soviética",
+        "UniÁo Soviética",
         "Estados Unidos",
         "China"
       ],
@@ -398,7 +398,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi a primeira civilização da Mesopotâmia?",
+      "enunciado": "Qual foi a primeira civilizaçÁo da Mesopotâmia?",
       "alternativas": [
         "Babilônica",
         "Assíria",
@@ -464,12 +464,12 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi a principal causa da Guerra de Secessão nos EUA?",
+      "enunciado": "Qual foi a principal causa da Guerra de SecessÁo nos EUA?",
       "alternativas": [
         "Impostos",
-        "Escravidão",
+        "EscravidÁo",
         "Território",
-        "Religião"
+        "ReligiÁo"
       ],
       "correta": 1
     },
@@ -486,7 +486,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi abolida a escravidão no Brasil?",
+      "enunciado": "Em que ano foi abolida a escravidÁo no Brasil?",
       "alternativas": [
         "1850",
         "1871",
@@ -534,7 +534,7 @@
       "alternativas": [
         "Nascimento de Cristo",
         "Queda de Roma",
-        "Coroação de Carlos Magno",
+        "CoroaçÁo de Carlos Magno",
         "Primeira Cruzada"
       ],
       "correta": 1
@@ -629,7 +629,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual civilização inventou a escrita cuneiforme?",
+      "enunciado": "Qual civilizaçÁo inventou a escrita cuneiforme?",
       "alternativas": [
         "Egípcia",
         "Suméria",
@@ -684,7 +684,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi criada a União Soviética?",
+      "enunciado": "Em que ano foi criada a UniÁo Soviética?",
       "alternativas": [
         "1917",
         "1922",
@@ -695,7 +695,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi a primeira nação a abolir a escravidão?",
+      "enunciado": "Qual foi a primeira naçÁo a abolir a escravidÁo?",
       "alternativas": [
         "Inglaterra",
         "França",
@@ -744,7 +744,7 @@
         "Rainha francesa",
         "Heroína militar francesa",
         "Santa espanhola",
-        "Imperatriz alemã"
+        "Imperatriz alemÁ"
       ],
       "correta": 1
     },
@@ -775,7 +775,7 @@
       "enunciado": "Quem foi o general cartaginês que atravessou os Alpes?",
       "alternativas": [
         "Aníbal",
-        "Cipião",
+        "CipiÁo",
         "César",
         "Pompeu"
       ],
@@ -827,10 +827,10 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual era o nome do movimento de libertação na América Latina?",
+      "enunciado": "Qual era o nome do movimento de libertaçÁo na América Latina?",
       "alternativas": [
         "Iluminismo",
-        "Revolução Industrial",
+        "RevoluçÁo Industrial",
         "Independências",
         "Neocolonialismo"
       ],
@@ -882,7 +882,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi fundada a cidade de São Paulo?",
+      "enunciado": "Em que ano foi fundada a cidade de SÁo Paulo?",
       "alternativas": [
         "1532",
         "1554",
@@ -926,12 +926,12 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi o nome da operação aliada para invadir a Normandia?",
+      "enunciado": "Qual foi o nome da operaçÁo aliada para invadir a Normandia?",
       "alternativas": [
-        "Operação Barbarossa",
-        "Operação Overlord",
-        "Operação Torch",
-        "Operação Market Garden"
+        "OperaçÁo Barbarossa",
+        "OperaçÁo Overlord",
+        "OperaçÁo Torch",
+        "OperaçÁo Market Garden"
       ],
       "correta": 1
     },
@@ -992,7 +992,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi a primeira civilização a usar o ferro?",
+      "enunciado": "Qual foi a primeira civilizaçÁo a usar o ferro?",
       "alternativas": [
         "Egípcia",
         "Hitita",
@@ -1005,9 +1005,9 @@
       "tema": "historia",
       "enunciado": "Quem foi o descobridor do caminho marítimo para a Índia?",
       "alternativas": [
-        "Cristóvão Colombo",
+        "CristóvÁo Colombo",
         "Vasco da Gama",
-        "Fernão de Magalhães",
+        "FernÁo de MagalhÁes",
         "Bartolomeu Dias"
       ],
       "correta": 1
@@ -1025,9 +1025,9 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual era o nome do período de terror na Revolução Francesa?",
+      "enunciado": "Qual era o nome do período de terror na RevoluçÁo Francesa?",
       "alternativas": [
-        "A Grande Revolução",
+        "A Grande RevoluçÁo",
         "O Terror",
         "A Comuna",
         "O Diretório"
@@ -1047,7 +1047,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a Revolução Cubana?",
+      "enunciado": "Em que ano foi a RevoluçÁo Cubana?",
       "alternativas": [
         "1953",
         "1956",
@@ -1104,7 +1104,7 @@
       "tema": "historia",
       "enunciado": "Quem iniciou a Reforma Protestante?",
       "alternativas": [
-        "João Calvino",
+        "JoÁo Calvino",
         "Martinho Lutero",
         "Henrique VIII",
         "Ulrico Zuínglio"
@@ -1159,7 +1159,7 @@
       "tema": "historia",
       "enunciado": "Qual foi a primeira potência a usar armas nucleares em guerra?",
       "alternativas": [
-        "União Soviética",
+        "UniÁo Soviética",
         "Estados Unidos",
         "Reino Unido",
         "França"
@@ -1179,7 +1179,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a Guerra do Vietnã?",
+      "enunciado": "Em que ano foi a Guerra do VietnÁ?",
       "alternativas": [
         "1945-1954",
         "1955-1975",
@@ -1195,7 +1195,7 @@
         "Satyagraha",
         "Jihad",
         "Intifada",
-        "Revolução"
+        "RevoluçÁo"
       ],
       "correta": 0
     },
@@ -1203,9 +1203,9 @@
       "tema": "historia",
       "enunciado": "Quem foi o primeiro navegador a circunavegar o globo?",
       "alternativas": [
-        "Cristóvão Colombo",
+        "CristóvÁo Colombo",
         "Vasco da Gama",
-        "Fernão de Magalhães",
+        "FernÁo de MagalhÁes",
         "James Cook"
       ],
       "correta": 2
@@ -1223,7 +1223,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi o maior império da história em extensão territorial?",
+      "enunciado": "Qual foi o maior império da história em extensÁo territorial?",
       "alternativas": [
         "Romano",
         "Mongol",
@@ -1278,7 +1278,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a Revolução de 1930 no Brasil?",
+      "enunciado": "Em que ano foi a RevoluçÁo de 1930 no Brasil?",
       "alternativas": [
         "1928",
         "1929",
@@ -1322,7 +1322,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual era o nome da aliança entre Alemanha, Itália e Japão na Segunda Guerra?",
+      "enunciado": "Qual era o nome da aliança entre Alemanha, Itália e JapÁo na Segunda Guerra?",
       "alternativas": [
         "Tríplice Entente",
         "Eixo",
@@ -1357,9 +1357,9 @@
       "tema": "historia",
       "enunciado": "Qual foi a principal causa da Guerra dos Cem Anos?",
       "alternativas": [
-        "Religião",
+        "ReligiÁo",
         "Território",
-        "Sucessão ao trono",
+        "SucessÁo ao trono",
         "Comércio"
       ],
       "correta": 2
@@ -1377,7 +1377,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a Revolução Gloriosa na Inglaterra?",
+      "enunciado": "Em que ano foi a RevoluçÁo Gloriosa na Inglaterra?",
       "alternativas": [
         "1648",
         "1660",
@@ -1392,7 +1392,7 @@
       "alternativas": [
         "Era de Ouro",
         "Roaring Twenties",
-        "Belle Ã‰poque",
+        "Belle Époque",
         "Gilded Age"
       ],
       "correta": 1
@@ -1421,10 +1421,10 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi a principal consequência da Revolução Industrial?",
+      "enunciado": "Qual foi a principal consequência da RevoluçÁo Industrial?",
       "alternativas": [
-        "Urbanização",
-        "Ruralização",
+        "UrbanizaçÁo",
+        "RuralizaçÁo",
         "Feudalismo",
         "Absolutismo"
       ],
@@ -1443,7 +1443,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a Conjuração Baiana?",
+      "enunciado": "Em que ano foi a ConjuraçÁo Baiana?",
       "alternativas": [
         "1789",
         "1792",
@@ -1501,7 +1501,7 @@
       "enunciado": "Quem foi o fundador do Império Mongol?",
       "alternativas": [
         "Kublai Khan",
-        "Tamerlão",
+        "TamerlÁo",
         "Genghis Khan",
         "Ogodei Khan"
       ],
@@ -1509,7 +1509,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a Revolução Meiji no Japão?",
+      "enunciado": "Em que ano foi a RevoluçÁo Meiji no JapÁo?",
       "alternativas": [
         "1854",
         "1868",
@@ -1520,7 +1520,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi o nome dado ao período de modernização do Japão?",
+      "enunciado": "Qual foi o nome dado ao período de modernizaçÁo do JapÁo?",
       "alternativas": [
         "Era Showa",
         "Era Meiji",
@@ -1542,7 +1542,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a publicação de 'A Origem das Espécies'?",
+      "enunciado": "Em que ano foi a publicaçÁo de 'A Origem das Espécies'?",
       "alternativas": [
         "1849",
         "1859",
@@ -1558,7 +1558,7 @@
         "Ouro",
         "Helena",
         "Território",
-        "Religião"
+        "ReligiÁo"
       ],
       "correta": 1
     },
@@ -1599,7 +1599,7 @@
       "tema": "historia",
       "enunciado": "Quem foi o primeiro imperador do Brasil?",
       "alternativas": [
-        "D. João VI",
+        "D. JoÁo VI",
         "D. Pedro I",
         "D. Pedro II",
         "José Bonifácio"
@@ -1654,7 +1654,7 @@
       "tema": "historia",
       "enunciado": "Qual foi a consequência do Tratado de Tordesilhas?",
       "alternativas": [
-        "Divisão da América entre Portugal e Espanha",
+        "DivisÁo da América entre Portugal e Espanha",
         "Fim das Cruzadas",
         "Início do Renascimento",
         "Descoberta da Índia"
@@ -1696,18 +1696,18 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Quem foi Napoleão III?",
+      "enunciado": "Quem foi NapoleÁo III?",
       "alternativas": [
-        "Irmão de Napoleão",
-        "Filho de Napoleão",
-        "Sobrinho de Napoleão",
-        "Neto de Napoleão"
+        "IrmÁo de NapoleÁo",
+        "Filho de NapoleÁo",
+        "Sobrinho de NapoleÁo",
+        "Neto de NapoleÁo"
       ],
       "correta": 2
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a unificação da Alemanha?",
+      "enunciado": "Em que ano foi a unificaçÁo da Alemanha?",
       "alternativas": [
         "1848",
         "1861",
@@ -1718,7 +1718,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Quem liderou a unificação da Alemanha?",
+      "enunciado": "Quem liderou a unificaçÁo da Alemanha?",
       "alternativas": [
         "Guilherme I",
         "Bismarck",
@@ -1729,7 +1729,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi a unificação da Itália?",
+      "enunciado": "Em que ano foi a unificaçÁo da Itália?",
       "alternativas": [
         "1848",
         "1861",
@@ -1743,7 +1743,7 @@
       "enunciado": "Quem foi Giuseppe Garibaldi?",
       "alternativas": [
         "Rei italiano",
-        "Líder da unificação italiana",
+        "Líder da unificaçÁo italiana",
         "Papa",
         "Compositor"
       ],
@@ -1773,7 +1773,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Em que ano foi o fim da União Soviética?",
+      "enunciado": "Em que ano foi o fim da UniÁo Soviética?",
       "alternativas": [
         "1989",
         "1990",
@@ -1817,7 +1817,7 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual foi o nome da política de distensão entre EUA e URSS?",
+      "enunciado": "Qual foi o nome da política de distensÁo entre EUA e URSS?",
       "alternativas": [
         "Détente",
         "Glasnost",
@@ -1863,7 +1863,7 @@
       "tema": "historia",
       "enunciado": "Quem foi Anne Frank?",
       "alternativas": [
-        "Espiã britânica",
+        "EspiÁ britânica",
         "Vítima do Holocausto",
         "Líder da resistência",
         "Enfermeira de guerra"
@@ -1885,8 +1885,8 @@
       "tema": "historia",
       "enunciado": "Qual era o nome do programa de extermínio nazista?",
       "alternativas": [
-        "Solução Final",
-        "Operação Barbarossa",
+        "SoluçÁo Final",
+        "OperaçÁo Barbarossa",
         "Blitzkrieg",
         "Anschluss"
       ],
@@ -1920,8 +1920,8 @@
       "alternativas": [
         "Vitória do Norte",
         "Vitória do Sul",
-        "Divisão permanente",
-        "Unificação"
+        "DivisÁo permanente",
+        "UnificaçÁo"
       ],
       "correta": 2
     },
@@ -1929,8 +1929,8 @@
       "tema": "historia",
       "enunciado": "Quem foi Ho Chi Minh?",
       "alternativas": [
-        "Líder do Vietnã do Sul",
-        "Líder do Vietnã do Norte",
+        "Líder do VietnÁ do Sul",
+        "Líder do VietnÁ do Norte",
         "Imperador japonês",
         "General americano"
       ],
@@ -1982,11 +1982,11 @@
     },
     {
       "tema": "historia",
-      "enunciado": "Qual era o nome do movimento de libertação africano contra o colonialismo?",
+      "enunciado": "Qual era o nome do movimento de libertaçÁo africano contra o colonialismo?",
       "alternativas": [
         "Pan-africanismo",
         "Negritude",
-        "Descolonização",
+        "DescolonizaçÁo",
         "Todas as anteriores"
       ],
       "correta": 3

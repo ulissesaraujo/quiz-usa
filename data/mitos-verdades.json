@@ -1,4 +1,4 @@
-{
+﻿{
   "perguntas": [
     {
       "tema": "mitos-verdades",
@@ -70,7 +70,7 @@
       "tema": "mitos-verdades",
       "enunciado": "Verdade ou mito: Camaleões mudam de cor para se camuflar.",
       "alternativas": [
-        "Verdade, mas não só por isso",
+        "Verdade, mas nÁo só por isso",
         "Mito total",
         "Só algumas espécies",
         "Nunca mudam de cor"
@@ -112,7 +112,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Morcegos são cegos.",
+      "enunciado": "Verdade ou mito: Morcegos sÁo cegos.",
       "alternativas": [
         "Verdade",
         "Mito",
@@ -189,7 +189,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Napoleão Bonaparte era muito baixo.",
+      "enunciado": "Verdade ou mito: NapoleÁo Bonaparte era muito baixo.",
       "alternativas": [
         "Verdade",
         "Mito",
@@ -205,7 +205,7 @@
         "Verdade exata",
         "Mito simplificado",
         "Depende da raça",
-        "São 5 anos"
+        "SÁo 5 anos"
       ],
       "correta": 1
     },
@@ -292,7 +292,7 @@
       "alternativas": [
         "Verdade comprovada",
         "Mito",
-        "Só musculação pesada",
+        "Só musculaçÁo pesada",
         "Depende da idade"
       ],
       "correta": 1
@@ -346,8 +346,8 @@
       "enunciado": "Verdade ou mito: Lâmpadas fluorescentes economizam mais que LEDs.",
       "alternativas": [
         "Verdade",
-        "Mito - LEDs são mais econômicos",
-        "São iguais",
+        "Mito - LEDs sÁo mais econômicos",
+        "SÁo iguais",
         "Depende do uso"
       ],
       "correta": 1
@@ -376,7 +376,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Não se deve acordar um sonâmbulo.",
+      "enunciado": "Verdade ou mito: NÁo se deve acordar um sonâmbulo.",
       "alternativas": [
         "Verdade - é perigoso",
         "Mito - apenas assusta",
@@ -409,7 +409,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Tubarões não pegam câncer.",
+      "enunciado": "Verdade ou mito: Tubarões nÁo pegam câncer.",
       "alternativas": [
         "Verdade",
         "Mito - podem ter câncer",
@@ -420,7 +420,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Ler no escuro prejudica a visão permanentemente.",
+      "enunciado": "Verdade ou mito: Ler no escuro prejudica a visÁo permanentemente.",
       "alternativas": [
         "Verdade",
         "Mito - causa apenas cansaço",
@@ -445,8 +445,8 @@
       "enunciado": "Verdade ou mito: O Sol é uma bola de fogo.",
       "alternativas": [
         "Verdade",
-        "Mito - é plasma e fusão nuclear",
-        "Ã‰ lava",
+        "Mito - é plasma e fusÁo nuclear",
+        "É lava",
         "Apenas gás quente"
       ],
       "correta": 1
@@ -464,12 +464,12 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Café causa desidratação significativa.",
+      "enunciado": "Verdade ou mito: Café causa desidrataçÁo significativa.",
       "alternativas": [
         "Verdade",
         "Mito - o efeito diurético é leve",
         "Só café forte",
-        "Descafeinado não causa"
+        "Descafeinado nÁo causa"
       ],
       "correta": 1
     },
@@ -486,7 +486,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Comer antes de nadar causa cãibras mortais.",
+      "enunciado": "Verdade ou mito: Comer antes de nadar causa cÁibras mortais.",
       "alternativas": [
         "Verdade comprovada",
         "Mito exagerado",
@@ -500,9 +500,9 @@
       "enunciado": "Verdade ou mito: A Torre de Pisa foi construída inclinada de propósito.",
       "alternativas": [
         "Verdade",
-        "Mito - inclinou durante a construção",
+        "Mito - inclinou durante a construçÁo",
         "Projeto original",
-        "Inclinação proposital"
+        "InclinaçÁo proposital"
       ],
       "correta": 1
     },
@@ -535,18 +535,18 @@
         "Verdade",
         "Mito",
         "Dura 2 minutos",
-        "Não existe voo tão curto"
+        "NÁo existe voo tÁo curto"
       ],
       "correta": 0
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Diamantes são feitos de carvão comprimido.",
+      "enunciado": "Verdade ou mito: Diamantes sÁo feitos de carvÁo comprimido.",
       "alternativas": [
         "Verdade",
         "Mito - formam-se de carbono diferente",
         "Exatamente igual",
-        "Carvão transformado"
+        "CarvÁo transformado"
       ],
       "correta": 1
     },
@@ -590,7 +590,7 @@
         "Verdade - acontece regularmente",
         "Mito - nunca acontece",
         "Só aviões pequenos",
-        "Derruba o avião"
+        "Derruba o aviÁo"
       ],
       "correta": 0
     },
@@ -599,7 +599,7 @@
       "enunciado": "Verdade ou mito: Você pode ver milhões de estrelas a olho nu.",
       "alternativas": [
         "Verdade",
-        "Mito - são cerca de 2.500 em condições ideais",
+        "Mito - sÁo cerca de 2.500 em condições ideais",
         "Bilhões de estrelas",
         "Infinitas estrelas"
       ],
@@ -673,7 +673,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Comer cenoura melhora a visão noturna.",
+      "enunciado": "Verdade ou mito: Comer cenoura melhora a visÁo noturna.",
       "alternativas": [
         "Verdade absoluta",
         "Mito - ajuda só se há deficiência de vitamina A",
@@ -796,9 +796,9 @@
       "tema": "mitos-verdades",
       "enunciado": "Verdade ou mito: O Nilo é o rio mais longo do mundo.",
       "alternativas": [
-        "Verdade (ou Amazonas, dependendo da medição)",
+        "Verdade (ou Amazonas, dependendo da mediçÁo)",
         "Mito claro",
-        "Ã‰ o mais largo",
+        "É o mais largo",
         "Terceiro maior"
       ],
       "correta": 0
@@ -831,7 +831,7 @@
       "alternativas": [
         "Verdade",
         "Mito",
-        "Causa indigestão",
+        "Causa indigestÁo",
         "Só manga verde"
       ],
       "correta": 1
@@ -841,7 +841,7 @@
       "enunciado": "Verdade ou mito: Tomar leite durante resfriado aumenta o muco.",
       "alternativas": [
         "Verdade",
-        "Mito - não há conexão",
+        "Mito - nÁo há conexÁo",
         "Só leite integral",
         "Piora os sintomas"
       ],
@@ -860,7 +860,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: O coração para de bater quando você espirra.",
+      "enunciado": "Verdade ou mito: O coraçÁo para de bater quando você espirra.",
       "alternativas": [
         "Verdade",
         "Mito",
@@ -907,7 +907,7 @@
       "enunciado": "Verdade ou mito: Ouvir Mozart torna bebês mais inteligentes.",
       "alternativas": [
         "Verdade comprovada",
-        "Mito - efeito Mozart não existe",
+        "Mito - efeito Mozart nÁo existe",
         "Só música clássica",
         "Aumenta QI"
       ],
@@ -920,7 +920,7 @@
         "Verdade",
         "Mito",
         "A fruta veio depois",
-        "São palavras diferentes"
+        "SÁo palavras diferentes"
       ],
       "correta": 0
     },
@@ -937,7 +937,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Cangurus não podem andar para trás.",
+      "enunciado": "Verdade ou mito: Cangurus nÁo podem andar para trás.",
       "alternativas": [
         "Verdade",
         "Mito - podem, mas raramente",
@@ -950,8 +950,8 @@
       "tema": "mitos-verdades",
       "enunciado": "Verdade ou mito: Urso polar é destro ou canhoto.",
       "alternativas": [
-        "Verdade - são canhotos",
-        "Mito - não há preferência",
+        "Verdade - sÁo canhotos",
+        "Mito - nÁo há preferência",
         "Todos destros",
         "Ambidestros"
       ],
@@ -962,7 +962,7 @@
       "enunciado": "Verdade ou mito: Você pode ouvir o mar em conchas.",
       "alternativas": [
         "Verdade - som do mar",
-        "Mito - são ecos do ambiente",
+        "Mito - sÁo ecos do ambiente",
         "Som do sangue",
         "Vento na concha"
       ],
@@ -1085,7 +1085,7 @@
         "Verdade tradicional",
         "Mito total",
         "Só no judô",
-        "Invenção moderna (verdade parcial)"
+        "InvençÁo moderna (verdade parcial)"
       ],
       "correta": 3
     },
@@ -1135,7 +1135,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Faz mal tomar banho durante menstruação.",
+      "enunciado": "Verdade ou mito: Faz mal tomar banho durante menstruaçÁo.",
       "alternativas": [
         "Verdade",
         "Mito",
@@ -1146,7 +1146,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Fazer exercício durante menstruação é prejudicial.",
+      "enunciado": "Verdade ou mito: Fazer exercício durante menstruaçÁo é prejudicial.",
       "alternativas": [
         "Verdade",
         "Mito - pode até ajudar",
@@ -1160,7 +1160,7 @@
       "enunciado": "Verdade ou mito: Chocolate causa espinhas.",
       "alternativas": [
         "Verdade comprovada",
-        "Mito - sem relação direta",
+        "Mito - sem relaçÁo direta",
         "Só chocolate ao leite",
         "Apenas em excesso"
       ],
@@ -1182,8 +1182,8 @@
       "enunciado": "Verdade ou mito: A língua é o músculo mais forte do corpo.",
       "alternativas": [
         "Verdade",
-        "Mito - não é um único músculo e não é o mais forte",
-        "O coração é mais forte",
+        "Mito - nÁo é um único músculo e nÁo é o mais forte",
+        "O coraçÁo é mais forte",
         "Os glúteos"
       ],
       "correta": 1
@@ -1228,16 +1228,16 @@
         "Verdade",
         "Mito - parece mais grosso por ser cortado reto",
         "Só nas pernas",
-        "Depilação a laser sim"
+        "DepilaçÁo a laser sim"
       ],
       "correta": 1
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Limão 'corta' a gordura.",
+      "enunciado": "Verdade ou mito: LimÁo 'corta' a gordura.",
       "alternativas": [
         "Verdade científica",
-        "Mito - não dissolve gordura corporal",
+        "Mito - nÁo dissolve gordura corporal",
         "Só gordura de comida",
         "Ajuda a emagrecer"
       ],
@@ -1245,10 +1245,10 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Água com limão em jejum emagrece.",
+      "enunciado": "Verdade ou mito: Água com limÁo em jejum emagrece.",
       "alternativas": [
         "Verdade comprovada",
-        "Mito - não há evidências",
+        "Mito - nÁo há evidências",
         "Queima gordura",
         "Acelera metabolismo"
       ],
@@ -1278,12 +1278,12 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Os cinco sentidos são visão, audição, tato, olfato e paladar.",
+      "enunciado": "Verdade ou mito: Os cinco sentidos sÁo visÁo, audiçÁo, tato, olfato e paladar.",
       "alternativas": [
         "Verdade completa",
         "Mito - temos mais sentidos",
         "Falta o equilíbrio",
-        "São sete sentidos"
+        "SÁo sete sentidos"
       ],
       "correta": 1
     },
@@ -1292,7 +1292,7 @@
       "enunciado": "Verdade ou mito: Ursos hibernam durante todo o inverno sem acordar.",
       "alternativas": [
         "Verdade",
-        "Mito - entram em torpor, não hibernação verdadeira",
+        "Mito - entram em torpor, nÁo hibernaçÁo verdadeira",
         "Dormem 6 meses",
         "Nunca acordam"
       ],
@@ -1305,7 +1305,7 @@
         "Verdade",
         "Mito - lembram por meses",
         "5 segundos",
-        "Não têm memória"
+        "NÁo têm memória"
       ],
       "correta": 1
     },
@@ -1314,7 +1314,7 @@
       "enunciado": "Verdade ou mito: O vermelho irrita os touros.",
       "alternativas": [
         "Verdade",
-        "Mito - touros são daltônicos para vermelho",
+        "Mito - touros sÁo daltônicos para vermelho",
         "Qualquer cor forte",
         "Só na Espanha"
       ],
@@ -1336,7 +1336,7 @@
       "enunciado": "Verdade ou mito: Vitamina C previne resfriados.",
       "alternativas": [
         "Verdade comprovada",
-        "Mito - pode reduzir duração, não previne",
+        "Mito - pode reduzir duraçÁo, nÁo previne",
         "Cura gripe",
         "Previne todas doenças"
       ],
@@ -1355,11 +1355,11 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: A Holanda e os Países Baixos são o mesmo país.",
+      "enunciado": "Verdade ou mito: A Holanda e os Países Baixos sÁo o mesmo país.",
       "alternativas": [
         "Verdade completa",
         "Mito - Holanda é parte dos Países Baixos",
-        "São vizinhos",
+        "SÁo vizinhos",
         "Países diferentes"
       ],
       "correta": 1
@@ -1377,7 +1377,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Girafas não têm cordas vocais.",
+      "enunciado": "Verdade ou mito: Girafas nÁo têm cordas vocais.",
       "alternativas": [
         "Verdade",
         "Mito - têm, mas vocalizam raramente",
@@ -1388,7 +1388,7 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Salmão volta ao mesmo rio onde nasceu para desovar.",
+      "enunciado": "Verdade ou mito: SalmÁo volta ao mesmo rio onde nasceu para desovar.",
       "alternativas": [
         "Verdade",
         "Mito",
@@ -1403,14 +1403,14 @@
       "alternativas": [
         "Verdade - o cérebro usa ~20% da energia",
         "Mito total",
-        "Não gasta energia",
+        "NÁo gasta energia",
         "Queima músculos"
       ],
       "correta": 0
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Cobras são surdas.",
+      "enunciado": "Verdade ou mito: Cobras sÁo surdas.",
       "alternativas": [
         "Verdade",
         "Mito - sentem vibrações e alguns sons",
@@ -1435,7 +1435,7 @@
       "enunciado": "Verdade ou mito: O intestino humano tem quilômetros de comprimento.",
       "alternativas": [
         "Verdade - cerca de 7-8 metros",
-        "Mito - são centímetros",
+        "Mito - sÁo centímetros",
         "Apenas 1 metro",
         "Varia muito"
       ],
@@ -1448,7 +1448,7 @@
         "Verdade - legalmente",
         "Mito",
         "Só pandas gigantes",
-        "Também ao Japão"
+        "Também ao JapÁo"
       ],
       "correta": 0
     },
@@ -1479,7 +1479,7 @@
       "enunciado": "Verdade ou mito: O ferro da espinafre é facilmente absorvido pelo corpo.",
       "alternativas": [
         "Verdade",
-        "Mito - absorção é baixa",
+        "Mito - absorçÁo é baixa",
         "Melhor que carne",
         "Só cozido"
       ],
@@ -1524,14 +1524,14 @@
       "alternativas": [
         "Verdade aproximada",
         "Mito total",
-        "Ã‰ 90%",
+        "É 90%",
         "Apenas 30%"
       ],
       "correta": 0
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Diamantes são indestrutíveis.",
+      "enunciado": "Verdade ou mito: Diamantes sÁo indestrutíveis.",
       "alternativas": [
         "Verdade",
         "Mito - podem quebrar e queimar",
@@ -1586,23 +1586,23 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: O tomate é um fruto, não legume.",
+      "enunciado": "Verdade ou mito: O tomate é um fruto, nÁo legume.",
       "alternativas": [
         "Verdade botânica",
         "Mito",
-        "Ã‰ um legume",
+        "É um legume",
         "Nenhum dos dois"
       ],
       "correta": 0
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Morangos são frutas verdadeiras.",
+      "enunciado": "Verdade ou mito: Morangos sÁo frutas verdadeiras.",
       "alternativas": [
         "Verdade",
-        "Mito - botanicamente são pseudofrutos",
-        "São bagas",
-        "São vegetais"
+        "Mito - botanicamente sÁo pseudofrutos",
+        "SÁo bagas",
+        "SÁo vegetais"
       ],
       "correta": 1
     },
@@ -1612,7 +1612,7 @@
       "alternativas": [
         "Verdade",
         "Mito - bananeira é uma planta herbácea",
-        "Ã‰ um arbusto",
+        "É um arbusto",
         "Cresce no solo"
       ],
       "correta": 1
@@ -1623,8 +1623,8 @@
       "alternativas": [
         "Verdade",
         "Mito - é uma leguminosa",
-        "Ã‰ semente",
-        "Ã‰ castanha"
+        "É semente",
+        "É castanha"
       ],
       "correta": 1
     },
@@ -1641,11 +1641,11 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: Tarântulas são mortais para humanos.",
+      "enunciado": "Verdade ou mito: Tarântulas sÁo mortais para humanos.",
       "alternativas": [
         "Verdade",
         "Mito - picada dolorosa, mas raramente fatal",
-        "Todas são letais",
+        "Todas sÁo letais",
         "Inofensivas"
       ],
       "correta": 1
@@ -1656,7 +1656,7 @@
       "alternativas": [
         "Verdade entre os quentes",
         "Mito - Antártida é maior (deserto frio)",
-        "Ã‰ o único deserto",
+        "É o único deserto",
         "Gobi é maior"
       ],
       "correta": 1
@@ -1723,7 +1723,7 @@
         "Verdade (aproximadamente igual)",
         "Mito total",
         "10 vezes mais células",
-        "Não há bactérias"
+        "NÁo há bactérias"
       ],
       "correta": 0
     },
@@ -1732,7 +1732,7 @@
       "enunciado": "Verdade ou mito: Unhas de mortos continuam crescendo.",
       "alternativas": [
         "Verdade",
-        "Mito - a pele retrai criando essa ilusão",
+        "Mito - a pele retrai criando essa ilusÁo",
         "Por dias",
         "Apenas unhas dos pés"
       ],
@@ -1740,12 +1740,12 @@
     },
     {
       "tema": "mitos-verdades",
-      "enunciado": "Verdade ou mito: A Rússia tem mais área que Plutão.",
+      "enunciado": "Verdade ou mito: A Rússia tem mais área que PlutÁo.",
       "alternativas": [
         "Verdade",
         "Mito",
-        "São iguais",
-        "Plutão é maior"
+        "SÁo iguais",
+        "PlutÁo é maior"
       ],
       "correta": 0
     }

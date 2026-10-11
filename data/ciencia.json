@@ -1,4 +1,4 @@
-{
+﻿{
   "perguntas": [
     {
       "tema": "ciencia",
@@ -48,8 +48,8 @@
       "tema": "ciencia",
       "enunciado": "O que é a mitocôndria?",
       "alternativas": [
-        "Organela responsável pela digestão",
-        "Organela responsável pela produção de energia",
+        "Organela responsável pela digestÁo",
+        "Organela responsável pela produçÁo de energia",
         "Organela responsável pela síntese de proteínas",
         "Organela responsável pelo armazenamento"
       ],
@@ -57,7 +57,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é o maior órgão do corpo humano?",
+      "enunciado": "Qual é o maior órgÁo do corpo humano?",
       "alternativas": [
         "Fígado",
         "Cérebro",
@@ -136,10 +136,10 @@
       "tema": "ciencia",
       "enunciado": "O que é fotossíntese?",
       "alternativas": [
-        "Processo de respiração das plantas",
-        "Processo de produção de alimento pelas plantas usando luz",
-        "Processo de reprodução vegetal",
-        "Processo de absorção de água"
+        "Processo de respiraçÁo das plantas",
+        "Processo de produçÁo de alimento pelas plantas usando luz",
+        "Processo de reproduçÁo vegetal",
+        "Processo de absorçÁo de água"
       ],
       "correta": 1
     },
@@ -178,7 +178,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a temperatura de ebulição da água ao nível do mar?",
+      "enunciado": "Qual é a temperatura de ebuliçÁo da água ao nível do mar?",
       "alternativas": [
         "90°C",
         "100°C",
@@ -191,8 +191,8 @@
       "tema": "ciencia",
       "enunciado": "O que é a gravidade?",
       "alternativas": [
-        "Força de repulsão entre corpos",
-        "Força de atração entre corpos com massa",
+        "Força de repulsÁo entre corpos",
+        "Força de atraçÁo entre corpos com massa",
         "Força magnética",
         "Força elétrica"
       ],
@@ -225,7 +225,7 @@
       "enunciado": "O que é um buraco negro?",
       "alternativas": [
         "Uma estrela muito brilhante",
-        "Uma região do espaço com gravidade extrema",
+        "Uma regiÁo do espaço com gravidade extrema",
         "Um planeta escuro",
         "Uma galáxia distante"
       ],
@@ -233,7 +233,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função dos glóbulos brancos?",
+      "enunciado": "Qual é a funçÁo dos glóbulos brancos?",
       "alternativas": [
         "Transportar oxigênio",
         "Defender o corpo contra infecções",
@@ -247,7 +247,7 @@
       "enunciado": "O que é a camada de ozônio?",
       "alternativas": [
         "Camada de gás na troposfera",
-        "Camada que protege contra radiação UV",
+        "Camada que protege contra radiaçÁo UV",
         "Camada de nuvens",
         "Camada de poeira cósmica"
       ],
@@ -266,7 +266,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é evaporação?",
+      "enunciado": "O que é evaporaçÁo?",
       "alternativas": [
         "Passagem de sólido para líquido",
         "Passagem de líquido para gasoso",
@@ -288,7 +288,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a principal função do coração?",
+      "enunciado": "Qual é a principal funçÁo do coraçÁo?",
       "alternativas": [
         "Produzir sangue",
         "Bombear sangue pelo corpo",
@@ -301,10 +301,10 @@
       "tema": "ciencia",
       "enunciado": "O que é um ecossistema?",
       "alternativas": [
-        "Apenas os animais de uma região",
-        "Apenas as plantas de uma região",
+        "Apenas os animais de uma regiÁo",
+        "Apenas as plantas de uma regiÁo",
         "Conjunto de seres vivos e ambiente interagindo",
-        "O clima de uma região"
+        "O clima de uma regiÁo"
       ],
       "correta": 2
     },
@@ -315,7 +315,7 @@
         "Fotossíntese",
         "Mitose",
         "Osmose",
-        "Difusão"
+        "DifusÁo"
       ],
       "correta": 1
     },
@@ -324,9 +324,9 @@
       "enunciado": "O que é a Tabela Periódica?",
       "alternativas": [
         "Tabela de vitaminas",
-        "Organização dos elementos químicos",
+        "OrganizaçÁo dos elementos químicos",
         "Tabela de planetas",
-        "Organização de espécies"
+        "OrganizaçÁo de espécies"
       ],
       "correta": 1
     },
@@ -343,7 +343,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que são vírus?",
+      "enunciado": "O que sÁo vírus?",
       "alternativas": [
         "Seres vivos unicelulares",
         "Agentes infecciosos que precisam de hospedeiro",
@@ -354,12 +354,12 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função do sistema nervoso?",
+      "enunciado": "Qual é a funçÁo do sistema nervoso?",
       "alternativas": [
-        "Digestão",
-        "Respiração",
-        "Controle e coordenação do corpo",
-        "Circulação sanguínea"
+        "DigestÁo",
+        "RespiraçÁo",
+        "Controle e coordenaçÁo do corpo",
+        "CirculaçÁo sanguínea"
       ],
       "correta": 2
     },
@@ -409,7 +409,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é condensação?",
+      "enunciado": "O que é condensaçÁo?",
       "alternativas": [
         "Passagem de líquido para sólido",
         "Passagem de gás para líquido",
@@ -420,7 +420,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função dos rins?",
+      "enunciado": "Qual é a funçÁo dos rins?",
       "alternativas": [
         "Produzir hormônios",
         "Filtrar o sangue e produzir urina",
@@ -442,7 +442,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a Lei de Newton que fala sobre ação e reação?",
+      "enunciado": "Qual é a Lei de Newton que fala sobre açÁo e reaçÁo?",
       "alternativas": [
         "Primeira Lei",
         "Segunda Lei",
@@ -457,14 +457,14 @@
       "alternativas": [
         "Resfriamento da atmosfera",
         "Aquecimento causado por gases na atmosfera",
-        "Formação de nuvens",
+        "FormaçÁo de nuvens",
         "Chuva ácida"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é o órgão responsável pela produção de insulina?",
+      "enunciado": "Qual é o órgÁo responsável pela produçÁo de insulina?",
       "alternativas": [
         "Fígado",
         "Rim",
@@ -499,16 +499,16 @@
       "tema": "ciencia",
       "enunciado": "O que é a cadeia alimentar?",
       "alternativas": [
-        "Produção industrial de alimentos",
+        "ProduçÁo industrial de alimentos",
         "Sequência de quem come quem na natureza",
         "Rede de supermercados",
-        "Digestão dos alimentos"
+        "DigestÁo dos alimentos"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual vitamina é produzida pela exposição ao sol?",
+      "enunciado": "Qual vitamina é produzida pela exposiçÁo ao sol?",
       "alternativas": [
         "Vitamina A",
         "Vitamina C",
@@ -545,7 +545,7 @@
       "alternativas": [
         "Tendência de um corpo manter seu estado de movimento",
         "Força de atrito",
-        "Aceleração constante",
+        "AceleraçÁo constante",
         "Velocidade variável"
       ],
       "correta": 0
@@ -563,7 +563,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que são combustíveis fósseis?",
+      "enunciado": "O que sÁo combustíveis fósseis?",
       "alternativas": [
         "Combustíveis de origem vegetal recente",
         "Combustíveis derivados de restos orgânicos antigos",
@@ -574,7 +574,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função do estômago?",
+      "enunciado": "Qual é a funçÁo do estômago?",
       "alternativas": [
         "Absorver nutrientes",
         "Digerir alimentos com suco gástrico",
@@ -588,7 +588,7 @@
       "enunciado": "O que é uma molécula?",
       "alternativas": [
         "Um átomo isolado",
-        "União de dois ou mais átomos",
+        "UniÁo de dois ou mais átomos",
         "Uma partícula subatômica",
         "Um íon"
       ],
@@ -651,9 +651,9 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é erosão?",
+      "enunciado": "O que é erosÁo?",
       "alternativas": [
-        "Formação de montanhas",
+        "FormaçÁo de montanhas",
         "Desgaste do solo por agentes naturais",
         "Crescimento de plantas",
         "Movimento das placas tectônicas"
@@ -662,7 +662,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função da hemoglobina?",
+      "enunciado": "Qual é a funçÁo da hemoglobina?",
       "alternativas": [
         "Coagular o sangue",
         "Transportar oxigênio",
@@ -695,18 +695,18 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é a teoria da evolução?",
+      "enunciado": "O que é a teoria da evoluçÁo?",
       "alternativas": [
-        "Criação instantânea das espécies",
+        "CriaçÁo instantânea das espécies",
         "Mudança gradual das espécies ao longo do tempo",
-        "Extinção de todas as espécies",
+        "ExtinçÁo de todas as espécies",
         "Clonagem natural"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual órgão produz a bile?",
+      "enunciado": "Qual órgÁo produz a bile?",
       "alternativas": [
         "Pâncreas",
         "Estômago",
@@ -717,12 +717,12 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é um vulcão?",
+      "enunciado": "O que é um vulcÁo?",
       "alternativas": [
-        "Montanha formada por erosão",
+        "Montanha formada por erosÁo",
         "Abertura na crosta que expele magma",
-        "Depressão no solo",
-        "Formação de gelo"
+        "DepressÁo no solo",
+        "FormaçÁo de gelo"
       ],
       "correta": 1
     },
@@ -755,7 +755,7 @@
         "Marte",
         "Vênus",
         "Mercúrio",
-        "Plutão"
+        "PlutÁo"
       ],
       "correta": 2
     },
@@ -765,14 +765,14 @@
       "alternativas": [
         "Movimento das nuvens",
         "Tremor causado por movimentos tectônicos",
-        "Erupção vulcânica",
+        "ErupçÁo vulcânica",
         "Deslizamento de terra"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função do intestino grosso?",
+      "enunciado": "Qual é a funçÁo do intestino grosso?",
       "alternativas": [
         "Digerir proteínas",
         "Absorver água e formar fezes",
@@ -783,12 +783,12 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é fissão nuclear?",
+      "enunciado": "O que é fissÁo nuclear?",
       "alternativas": [
-        "União de núcleos atômicos",
-        "Divisão de núcleos atômicos",
-        "Reação química comum",
-        "Decomposição radioativa"
+        "UniÁo de núcleos atômicos",
+        "DivisÁo de núcleos atômicos",
+        "ReaçÁo química comum",
+        "DecomposiçÁo radioativa"
       ],
       "correta": 1
     },
@@ -798,7 +798,7 @@
       "alternativas": [
         "Andrômeda",
         "Via Láctea",
-        "Magalhães",
+        "MagalhÁes",
         "Sombrero"
       ],
       "correta": 1
@@ -807,7 +807,7 @@
       "tema": "ciencia",
       "enunciado": "O que é um condutor elétrico?",
       "alternativas": [
-        "Material que não permite passagem de corrente",
+        "Material que nÁo permite passagem de corrente",
         "Material que permite passagem de corrente",
         "Material isolante",
         "Material magnético"
@@ -829,16 +829,16 @@
       "tema": "ciencia",
       "enunciado": "O que é metamorfose?",
       "alternativas": [
-        "Reprodução assexuada",
-        "Transformação física durante o desenvolvimento",
-        "Migração de animais",
-        "Hibernação"
+        "ReproduçÁo assexuada",
+        "TransformaçÁo física durante o desenvolvimento",
+        "MigraçÁo de animais",
+        "HibernaçÁo"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é o órgão responsável pela visão?",
+      "enunciado": "Qual é o órgÁo responsável pela visÁo?",
       "alternativas": [
         "Ouvido",
         "Nariz",
@@ -849,7 +849,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é pressão atmosférica?",
+      "enunciado": "O que é pressÁo atmosférica?",
       "alternativas": [
         "Peso da água sobre objetos",
         "Peso do ar sobre a superfície",
@@ -875,30 +875,30 @@
       "alternativas": [
         "Tempestade de areia",
         "Onda gigante causada por terremoto submarino",
-        "Furacão marítimo",
+        "FuracÁo marítimo",
         "Maré alta"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função das plaquetas no sangue?",
+      "enunciado": "Qual é a funçÁo das plaquetas no sangue?",
       "alternativas": [
         "Transportar oxigênio",
         "Combater infecções",
-        "Auxiliar na coagulação",
+        "Auxiliar na coagulaçÁo",
         "Transportar nutrientes"
       ],
       "correta": 2
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é fusão nuclear?",
+      "enunciado": "O que é fusÁo nuclear?",
       "alternativas": [
-        "Divisão de núcleos",
-        "União de núcleos atômicos",
+        "DivisÁo de núcleos",
+        "UniÁo de núcleos atômicos",
         "Decaimento radioativo",
-        "Reação química"
+        "ReaçÁo química"
       ],
       "correta": 1
     },
@@ -919,7 +919,7 @@
       "alternativas": [
         "Uma célula",
         "Uma proteína",
-        "Unidade de informação hereditária",
+        "Unidade de informaçÁo hereditária",
         "Um vírus"
       ],
       "correta": 2
@@ -937,7 +937,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é sublimação?",
+      "enunciado": "O que é sublimaçÁo?",
       "alternativas": [
         "Passagem de líquido para gás",
         "Passagem de sólido para gás diretamente",
@@ -948,18 +948,18 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função do cerebelo?",
+      "enunciado": "Qual é a funçÁo do cerebelo?",
       "alternativas": [
         "Controlar emoções",
         "Coordenar movimentos e equilíbrio",
-        "Processar a visão",
+        "Processar a visÁo",
         "Regular a temperatura"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é um ímã?",
+      "enunciado": "O que é um ímÁ?",
       "alternativas": [
         "Material que conduz eletricidade",
         "Material que atrai ferro e outros metais",
@@ -981,7 +981,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que são bactérias?",
+      "enunciado": "O que sÁo bactérias?",
       "alternativas": [
         "Vírus grandes",
         "Organismos unicelulares procariontes",
@@ -1003,12 +1003,12 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é refração da luz?",
+      "enunciado": "O que é refraçÁo da luz?",
       "alternativas": [
-        "Reflexão da luz",
+        "ReflexÁo da luz",
         "Desvio da luz ao mudar de meio",
-        "Absorção da luz",
-        "Dispersão da luz"
+        "AbsorçÁo da luz",
+        "DispersÁo da luz"
       ],
       "correta": 1
     },
@@ -1028,7 +1028,7 @@
       "enunciado": "O que é o ciclo da água?",
       "alternativas": [
         "Apenas a chuva",
-        "Circulação contínua da água na natureza",
+        "CirculaçÁo contínua da água na natureza",
         "Tratamento de água",
         "Consumo de água"
       ],
@@ -1058,7 +1058,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função do diafragma na respiração?",
+      "enunciado": "Qual é a funçÁo do diafragma na respiraçÁo?",
       "alternativas": [
         "Filtrar o ar",
         "Aquecer o ar",
@@ -1096,17 +1096,17 @@
         "Gêmeo natural",
         "Cópia geneticamente idêntica",
         "Híbrido de espécies",
-        "Mutação genética"
+        "MutaçÁo genética"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é o órgão central do sistema circulatório?",
+      "enunciado": "Qual é o órgÁo central do sistema circulatório?",
       "alternativas": [
-        "Pulmão",
+        "PulmÁo",
         "Fígado",
-        "Coração",
+        "CoraçÁo",
         "Rim"
       ],
       "correta": 2
@@ -1116,7 +1116,7 @@
       "enunciado": "O que é energia potencial?",
       "alternativas": [
         "Energia do movimento",
-        "Energia armazenada devido à posição",
+        "Energia armazenada devido à posiçÁo",
         "Energia térmica",
         "Energia sonora"
       ],
@@ -1124,7 +1124,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual planeta gira de lado em relação à sua órbita?",
+      "enunciado": "Qual planeta gira de lado em relaçÁo à sua órbita?",
       "alternativas": [
         "Marte",
         "Vênus",
@@ -1139,14 +1139,14 @@
       "alternativas": [
         "Medida de temperatura",
         "Medida de acidez ou basicidade",
-        "Medida de pressão",
+        "Medida de pressÁo",
         "Medida de peso"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função da medula óssea?",
+      "enunciado": "Qual é a funçÁo da medula óssea?",
       "alternativas": [
         "Produzir hormônios",
         "Produzir células sanguíneas",
@@ -1159,10 +1159,10 @@
       "tema": "ciencia",
       "enunciado": "O que é radioatividade?",
       "alternativas": [
-        "Emissão de luz visível",
-        "Emissão de radiação por núcleos instáveis",
-        "Condução de eletricidade",
-        "Reflexão de ondas"
+        "EmissÁo de luz visível",
+        "EmissÁo de radiaçÁo por núcleos instáveis",
+        "ConduçÁo de eletricidade",
+        "ReflexÁo de ondas"
       ],
       "correta": 1
     },
@@ -1181,9 +1181,9 @@
       "tema": "ciencia",
       "enunciado": "O que é simbiose?",
       "alternativas": [
-        "Competição entre espécies",
-        "Relação benéfica entre espécies diferentes",
-        "Predação",
+        "CompetiçÁo entre espécies",
+        "RelaçÁo benéfica entre espécies diferentes",
+        "PredaçÁo",
         "Parasitismo"
       ],
       "correta": 1
@@ -1201,7 +1201,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que são células-tronco?",
+      "enunciado": "O que sÁo células-tronco?",
       "alternativas": [
         "Células mortas",
         "Células que podem se transformar em outros tipos",
@@ -1234,7 +1234,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função das enzimas?",
+      "enunciado": "Qual é a funçÁo das enzimas?",
       "alternativas": [
         "Armazenar energia",
         "Acelerar reações químicas",
@@ -1256,12 +1256,12 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é o processo de transformação de larva em adulto?",
+      "enunciado": "Qual é o processo de transformaçÁo de larva em adulto?",
       "alternativas": [
-        "Mutação",
+        "MutaçÁo",
         "Metamorfose",
-        "Reprodução",
-        "Regeneração"
+        "ReproduçÁo",
+        "RegeneraçÁo"
       ],
       "correta": 1
     },
@@ -1294,7 +1294,7 @@
         "Animal que come carne",
         "Animal que come plantas",
         "Animal que come de tudo",
-        "Animal que não come"
+        "Animal que nÁo come"
       ],
       "correta": 1
     },
@@ -1322,7 +1322,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função do baço?",
+      "enunciado": "Qual é a funçÁo do baço?",
       "alternativas": [
         "Produzir bile",
         "Filtrar sangue e reciclar células velhas",
@@ -1337,7 +1337,7 @@
       "alternativas": [
         "Estrela cadente",
         "Corpo de gelo e rocha que orbita o Sol",
-        "Planeta anão",
+        "Planeta anÁo",
         "Satélite artificial"
       ],
       "correta": 1
@@ -1346,7 +1346,7 @@
       "tema": "ciencia",
       "enunciado": "Qual é a diferença entre massa e peso?",
       "alternativas": [
-        "São a mesma coisa",
+        "SÁo a mesma coisa",
         "Massa é quantidade de matéria, peso é força gravitacional",
         "Peso é quantidade de matéria, massa é força",
         "Massa varia com a gravidade"
@@ -1355,10 +1355,10 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é polinização?",
+      "enunciado": "O que é polinizaçÁo?",
       "alternativas": [
-        "Germinação de sementes",
-        "Transferência de pólen para reprodução",
+        "GerminaçÁo de sementes",
+        "Transferência de pólen para reproduçÁo",
         "Crescimento da planta",
         "Queda das folhas"
       ],
@@ -1369,7 +1369,7 @@
       "enunciado": "Qual é o elemento químico representado pela letra 'O'?",
       "alternativas": [
         "Ouro",
-        "Ã“smio",
+        "Á“smio",
         "Oxigênio",
         "Oganessônio"
       ],
@@ -1388,7 +1388,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual instrumento mede a pressão atmosférica?",
+      "enunciado": "Qual instrumento mede a pressÁo atmosférica?",
       "alternativas": [
         "Termômetro",
         "Barômetro",
@@ -1410,7 +1410,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função dos ribossomos?",
+      "enunciado": "Qual é a funçÁo dos ribossomos?",
       "alternativas": [
         "Produzir energia",
         "Sintetizar proteínas",
@@ -1454,7 +1454,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a unidade de medida de tensão elétrica?",
+      "enunciado": "Qual é a unidade de medida de tensÁo elétrica?",
       "alternativas": [
         "Ampere",
         "Watt",
@@ -1470,7 +1470,7 @@
         "Animal que come apenas plantas",
         "Animal que come apenas carne",
         "Animal que come plantas e carne",
-        "Animal que não come"
+        "Animal que nÁo come"
       ],
       "correta": 2
     },
@@ -1512,7 +1512,7 @@
       "enunciado": "O que é a biosfera?",
       "alternativas": [
         "Apenas os oceanos",
-        "Região da Terra onde existe vida",
+        "RegiÁo da Terra onde existe vida",
         "Apenas as florestas",
         "A atmosfera inteira"
       ],
@@ -1520,7 +1520,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função do esôfago?",
+      "enunciado": "Qual é a funçÁo do esôfago?",
       "alternativas": [
         "Digerir alimentos",
         "Transportar alimentos ao estômago",
@@ -1567,7 +1567,7 @@
       "enunciado": "Qual é o planeta mais distante do Sol?",
       "alternativas": [
         "Urano",
-        "Plutão",
+        "PlutÁo",
         "Netuno",
         "Saturno"
       ],
@@ -1577,7 +1577,7 @@
       "tema": "ciencia",
       "enunciado": "O que é o RNA?",
       "alternativas": [
-        "Ácido nucleico que copia informação do DNA",
+        "Ácido nucleico que copia informaçÁo do DNA",
         "Um tipo de proteína",
         "Um carboidrato",
         "Um lipídio"
@@ -1588,16 +1588,16 @@
       "tema": "ciencia",
       "enunciado": "Qual é a Lei de Ohm?",
       "alternativas": [
-        "F = m Ã— a",
-        "V = R Ã— I",
-        "E = m Ã— cÂ²",
-        "P = V Ã— I"
+        "F = m Á— a",
+        "V = R Á— I",
+        "E = m Á— cÂ²",
+        "P = V Á— I"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que são fungos?",
+      "enunciado": "O que sÁo fungos?",
       "alternativas": [
         "Plantas sem clorofila",
         "Organismos heterotróficos com parede celular",
@@ -1619,10 +1619,10 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é aceleração?",
+      "enunciado": "O que é aceleraçÁo?",
       "alternativas": [
         "Velocidade constante",
-        "Variação da velocidade no tempo",
+        "VariaçÁo da velocidade no tempo",
         "Distância percorrida",
         "Força aplicada"
       ],
@@ -1630,12 +1630,12 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função das brânquias?",
+      "enunciado": "Qual é a funçÁo das brânquias?",
       "alternativas": [
-        "Locomoção",
-        "Respiração aquática",
-        "Reprodução",
-        "Digestão"
+        "LocomoçÁo",
+        "RespiraçÁo aquática",
+        "ReproduçÁo",
+        "DigestÁo"
       ],
       "correta": 1
     },
@@ -1674,7 +1674,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função da tireóide?",
+      "enunciado": "Qual é a funçÁo da tireóide?",
       "alternativas": [
         "Filtrar sangue",
         "Produzir hormônios metabólicos",
@@ -1710,9 +1710,9 @@
       "enunciado": "O que é resistência elétrica?",
       "alternativas": [
         "Facilidade de passagem de corrente",
-        "Oposição à passagem de corrente",
+        "OposiçÁo à passagem de corrente",
         "Armazenamento de carga",
-        "Produção de energia"
+        "ProduçÁo de energia"
       ],
       "correta": 1
     },
@@ -1723,7 +1723,7 @@
         "Apenas o tamanho",
         "Célula vegetal tem parede celular e cloroplastos",
         "Célula animal tem cloroplastos",
-        "Não há diferença"
+        "NÁo há diferença"
       ],
       "correta": 1
     },
@@ -1755,7 +1755,7 @@
       "alternativas": [
         "Parte que produz energia",
         "Parte que contém o material genético",
-        "Parte que faz digestão",
+        "Parte que faz digestÁo",
         "Parede externa da célula"
       ],
       "correta": 1
@@ -1773,12 +1773,12 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que é difusão?",
+      "enunciado": "O que é difusÁo?",
       "alternativas": [
         "Movimento de partículas do mais concentrado para o menos",
         "Movimento de partículas do menos para o mais concentrado",
-        "Separação de substâncias",
-        "Reação química"
+        "SeparaçÁo de substâncias",
+        "ReaçÁo química"
       ],
       "correta": 0
     },
@@ -1800,17 +1800,17 @@
         "Glândula que controla outras glândulas",
         "Parte do estômago",
         "Osso do crânio",
-        "Válvula do coração"
+        "Válvula do coraçÁo"
       ],
       "correta": 0
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é o processo de produção de gametas?",
+      "enunciado": "Qual é o processo de produçÁo de gametas?",
       "alternativas": [
         "Mitose",
         "Meiose",
-        "Fissão",
+        "FissÁo",
         "Brotamento"
       ],
       "correta": 1
@@ -1820,9 +1820,9 @@
       "enunciado": "O que é um campo magnético?",
       "alternativas": [
         "Área de influência gravitacional",
-        "Região onde forças magnéticas atuam",
+        "RegiÁo onde forças magnéticas atuam",
         "Campo elétrico estático",
-        "Área de pressão atmosférica"
+        "Área de pressÁo atmosférica"
       ],
       "correta": 1
     },
@@ -1842,9 +1842,9 @@
       "enunciado": "O que é homeostase?",
       "alternativas": [
         "Aumento de temperatura",
-        "Manutenção do equilíbrio interno",
-        "Processo de digestão",
-        "Formação de anticorpos"
+        "ManutençÁo do equilíbrio interno",
+        "Processo de digestÁo",
+        "FormaçÁo de anticorpos"
       ],
       "correta": 1
     },
@@ -1852,7 +1852,7 @@
       "tema": "ciencia",
       "enunciado": "Qual é a fórmula da velocidade média?",
       "alternativas": [
-        "v = d Ã— t",
+        "v = d Á— t",
         "v = d / t",
         "v = t / d",
         "v = d + t"
@@ -1861,7 +1861,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que são protozoários?",
+      "enunciado": "O que sÁo protozoários?",
       "alternativas": [
         "Vírus grandes",
         "Organismos unicelulares eucariontes",
@@ -1875,7 +1875,7 @@
       "enunciado": "Qual é o osso mais longo do corpo humano?",
       "alternativas": [
         "Tíbia",
-        "Ãšmero",
+        "Ášmero",
         "Fêmur",
         "Rádio"
       ],
@@ -1886,7 +1886,7 @@
       "enunciado": "O que é espectro eletromagnético?",
       "alternativas": [
         "Apenas luz visível",
-        "Todas as formas de radiação eletromagnética",
+        "Todas as formas de radiaçÁo eletromagnética",
         "Apenas raios X",
         "Som em frequências altas"
       ],
@@ -1899,7 +1899,7 @@
         "Lua (Terra)",
         "Europa (Júpiter)",
         "Ganimedes (Júpiter)",
-        "Titã (Saturno)"
+        "TitÁ (Saturno)"
       ],
       "correta": 2
     },
@@ -1916,7 +1916,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função do complexo de Golgi?",
+      "enunciado": "Qual é a funçÁo do complexo de Golgi?",
       "alternativas": [
         "Produzir energia",
         "Processar e empacotar proteínas",
@@ -1929,21 +1929,21 @@
       "tema": "ciencia",
       "enunciado": "O que é momento linear?",
       "alternativas": [
-        "Energia de rotação",
+        "Energia de rotaçÁo",
         "Produto de massa por velocidade",
         "Força gravitacional",
-        "Aceleração centrípeta"
+        "AceleraçÁo centrípeta"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é o planeta com maior inclinação axial?",
+      "enunciado": "Qual é o planeta com maior inclinaçÁo axial?",
       "alternativas": [
         "Marte",
         "Vênus",
         "Urano",
-        "Plutão"
+        "PlutÁo"
       ],
       "correta": 2
     },
@@ -1971,7 +1971,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que são anfíbios?",
+      "enunciado": "O que sÁo anfíbios?",
       "alternativas": [
         "Animais que vivem só na água",
         "Animais que vivem só na terra",
@@ -2007,15 +2007,15 @@
       "enunciado": "Qual é a Segunda Lei de Newton?",
       "alternativas": [
         "Lei da inércia",
-        "F = m Ã— a",
-        "Ação e reação",
+        "F = m Á— a",
+        "AçÁo e reaçÁo",
         "Lei da gravidade"
       ],
       "correta": 1
     },
     {
       "tema": "ciencia",
-      "enunciado": "O que são lipídios?",
+      "enunciado": "O que sÁo lipídios?",
       "alternativas": [
         "Açúcares complexos",
         "Proteínas especiais",
@@ -2048,7 +2048,7 @@
     },
     {
       "tema": "ciencia",
-      "enunciado": "Qual é a função da insulina?",
+      "enunciado": "Qual é a funçÁo da insulina?",
       "alternativas": [
         "Aumentar a glicose no sangue",
         "Regular a glicose no sangue",
@@ -2062,7 +2062,7 @@
       "enunciado": "O que é trabalho em física?",
       "alternativas": [
         "Força vezes distância",
-        "Massa vezes aceleração",
+        "Massa vezes aceleraçÁo",
         "Velocidade vezes tempo",
         "Energia vezes potência"
       ],

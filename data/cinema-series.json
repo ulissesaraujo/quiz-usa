@@ -1,4 +1,4 @@
-{
+﻿{
   "perguntas": [
     {
       "tema": "cinema-series",
@@ -13,7 +13,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Quem dirigiu 'O Poderoso Chefão'?",
+      "enunciado": "Quem dirigiu 'O Poderoso ChefÁo'?",
       "alternativas": [
         "Martin Scorsese",
         "Francis Ford Coppola",
@@ -35,11 +35,11 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Em qual filme Marlon Brando faz a famosa cena com algodão na boca?",
+      "enunciado": "Em qual filme Marlon Brando faz a famosa cena com algodÁo na boca?",
       "alternativas": [
         "Apocalypse Now",
-        "O Ãšltimo Tango em Paris",
-        "O Poderoso Chefão",
+        "O Ášltimo Tango em Paris",
+        "O Poderoso ChefÁo",
         "Um Bonde Chamado Desejo"
       ],
       "correta": 2
@@ -79,7 +79,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual é o nome do vilão principal de 'O Senhor dos Anéis'?",
+      "enunciado": "Qual é o nome do vilÁo principal de 'O Senhor dos Anéis'?",
       "alternativas": [
         "Saruman",
         "Sauron",
@@ -123,7 +123,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual filme de animação da Pixar foi lançado primeiro?",
+      "enunciado": "Qual filme de animaçÁo da Pixar foi lançado primeiro?",
       "alternativas": [
         "Vida de Inseto",
         "Toy Story",
@@ -244,7 +244,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual é o bordão de Joey em 'Friends'?",
+      "enunciado": "Qual é o bordÁo de Joey em 'Friends'?",
       "alternativas": [
         "Pivot!",
         "How you doin'?",
@@ -312,7 +312,7 @@
       "tema": "cinema-series",
       "enunciado": "Qual filme mostra a história de Chris Gardner?",
       "alternativas": [
-        "Ã€ Procura da Felicidade",
+        "À Procura da Felicidade",
         "Coach Carter",
         "Homens de Honra",
         "Ray"
@@ -334,7 +334,7 @@
       "tema": "cinema-series",
       "enunciado": "Qual é o primeiro filme do MCU (Universo Cinematográfico Marvel)?",
       "alternativas": [
-        "Capitão América",
+        "CapitÁo América",
         "Thor",
         "Homem de Ferro",
         "Os Vingadores"
@@ -343,7 +343,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual vilão é interpretado por Josh Brolin no MCU?",
+      "enunciado": "Qual vilÁo é interpretado por Josh Brolin no MCU?",
       "alternativas": [
         "Ultron",
         "Loki",
@@ -431,7 +431,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Em qual filme Audrey Hepburn toma café da manhã olhando uma vitrine?",
+      "enunciado": "Em qual filme Audrey Hepburn toma café da manhÁ olhando uma vitrine?",
       "alternativas": [
         "Sabrina",
         "Bonequinha de Luxo",
@@ -464,7 +464,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual estúdio de animação japonês criou 'Meu Amigo Totoro'?",
+      "enunciado": "Qual estúdio de animaçÁo japonês criou 'Meu Amigo Totoro'?",
       "alternativas": [
         "Toei Animation",
         "Studio Ghibli",
@@ -475,7 +475,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual filme de Miyazaki ganhou o Oscar de Melhor Animação?",
+      "enunciado": "Qual filme de Miyazaki ganhou o Oscar de Melhor AnimaçÁo?",
       "alternativas": [
         "Meu Amigo Totoro",
         "Princesa Mononoke",
@@ -676,7 +676,7 @@
       "enunciado": "Quem criou 'Stranger Things'?",
       "alternativas": [
         "J.J. Abrams",
-        "Os Irmãos Duffer",
+        "Os IrmÁos Duffer",
         "Jordan Peele",
         "Mike Flanagan"
       ],
@@ -775,7 +775,7 @@
       "enunciado": "Qual é a primeira regra do Clube da Luta?",
       "alternativas": [
         "Lutar até o fim",
-        "Não falar sobre o Clube da Luta",
+        "NÁo falar sobre o Clube da Luta",
         "Só homens podem participar",
         "Sem armas"
       ],
@@ -1084,7 +1084,7 @@
       "alternativas": [
         "Os Infiltrados",
         "O Lobo de Wall Street",
-        "A Invenção de Hugo Cabret",
+        "A InvençÁo de Hugo Cabret",
         "Cassino"
       ],
       "correta": 1
@@ -1139,7 +1139,7 @@
       "alternativas": [
         "Nós",
         "Corra!",
-        "Não! Não Olhe!",
+        "NÁo! NÁo Olhe!",
         "Candyman"
       ],
       "correta": 1
@@ -1292,15 +1292,15 @@
       "enunciado": "Qual filme da Disney conta a história de Simba?",
       "alternativas": [
         "Mogli",
-        "O Rei Leão",
+        "O Rei LeÁo",
         "Tarzan",
-        "Irmão Urso"
+        "IrmÁo Urso"
       ],
       "correta": 1
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Quem dublou Buzz Lightyear na versão original?",
+      "enunciado": "Quem dublou Buzz Lightyear na versÁo original?",
       "alternativas": [
         "Tom Hanks",
         "Tim Allen",
@@ -1311,7 +1311,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Quem dublou Woody na versão original de 'Toy Story'?",
+      "enunciado": "Quem dublou Woody na versÁo original de 'Toy Story'?",
       "alternativas": [
         "Tim Allen",
         "Tom Hanks",
@@ -1399,7 +1399,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual série brasileira de ficção científica se passa em um futuro distópico?",
+      "enunciado": "Qual série brasileira de ficçÁo científica se passa em um futuro distópico?",
       "alternativas": [
         "Cidade Invisível",
         "3%",
@@ -1465,7 +1465,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual série americana se passa em uma prisão feminina?",
+      "enunciado": "Qual série americana se passa em uma prisÁo feminina?",
       "alternativas": [
         "Wentworth",
         "Orange Is the New Black",
@@ -1557,7 +1557,7 @@
       "alternativas": [
         "Aquaman",
         "Pantera Negra",
-        "Capitã Marvel",
+        "CapitÁ Marvel",
         "Shang-Chi"
       ],
       "correta": 1
@@ -1608,7 +1608,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual filme de animação mostra o Homem-Aranha em versão 'Aranhaverso'?",
+      "enunciado": "Qual filme de animaçÁo mostra o Homem-Aranha em versÁo 'Aranhaverso'?",
       "alternativas": [
         "Homem-Aranha: No Aranhaverso",
         "Homem-Aranha: De Volta ao Lar",
@@ -1641,10 +1641,10 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual filme de Bong Joon-ho é uma ficção científica em um trem?",
+      "enunciado": "Qual filme de Bong Joon-ho é uma ficçÁo científica em um trem?",
       "alternativas": [
         "O Hospedeiro",
-        "Expresso do Amanhã",
+        "Expresso do AmanhÁ",
         "Okja",
         "Memórias de um Assassino"
       ],
@@ -1652,7 +1652,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual série da HBO é sobre sucessão em uma família de mídia?",
+      "enunciado": "Qual série da HBO é sobre sucessÁo em uma família de mídia?",
       "alternativas": [
         "Billions",
         "Succession",
@@ -1696,7 +1696,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual série mostra a criação do Facebook?",
+      "enunciado": "Qual série mostra a criaçÁo do Facebook?",
       "alternativas": [
         "A Rede Social (filme)",
         "Silicon Valley",
@@ -1729,7 +1729,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Quantos filmes de 'Missão Impossível' foram feitos até 2024?",
+      "enunciado": "Quantos filmes de 'MissÁo Impossível' foram feitos até 2024?",
       "alternativas": [
         "5",
         "6",
@@ -1740,7 +1740,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Quem interpreta Ethan Hunt em 'Missão Impossível'?",
+      "enunciado": "Quem interpreta Ethan Hunt em 'MissÁo Impossível'?",
       "alternativas": [
         "Matt Damon",
         "Tom Cruise",
@@ -1773,7 +1773,7 @@
     },
     {
       "tema": "cinema-series",
-      "enunciado": "Qual filme de ação mostra John Wick?",
+      "enunciado": "Qual filme de açÁo mostra John Wick?",
       "alternativas": [
         "John Wick",
         "O Protetor",
@@ -1841,7 +1841,7 @@
       "tema": "cinema-series",
       "enunciado": "Qual filme de 2023 é sobre o criador da bomba atômica?",
       "alternativas": [
-        "Napoleão",
+        "NapoleÁo",
         "Oppenheimer",
         "Maestro",
         "Killers of the Flower Moon"

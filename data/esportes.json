@@ -1,4 +1,4 @@
-{
+﻿{
   "perguntas": [
     {
       "enunciado": "Qual país sediou a Copa do Mundo FIFA de 2014?",
@@ -39,24 +39,24 @@
         "Futebol",
         "Basquete",
         "Tênis",
-        "Natação"
+        "NataçÁo"
       ],
       "correta": 2,
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual país ganhou mais medalhas de ouro nas Olimpíadas de verão historicamente?",
+      "enunciado": "Qual país ganhou mais medalhas de ouro nas Olimpíadas de verÁo historicamente?",
       "alternativas": [
         "China",
         "Rússia",
         "Estados Unidos",
-        "Grã-Bretanha"
+        "GrÁ-Bretanha"
       ],
       "correta": 2,
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantos sets são necessários para vencer uma partida de vôlei?",
+      "enunciado": "Quantos sets sÁo necessários para vencer uma partida de vôlei?",
       "alternativas": [
         "2",
         "3",
@@ -67,7 +67,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual é o esporte nacional do Japão?",
+      "enunciado": "Qual é o esporte nacional do JapÁo?",
       "alternativas": [
         "Judô",
         "Karatê",
@@ -144,7 +144,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual seleção de futebol é conhecida como 'La Roja'?",
+      "enunciado": "Qual seleçÁo de futebol é conhecida como 'La Roja'?",
       "alternativas": [
         "Portugal",
         "Espanha",
@@ -155,7 +155,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantas bolas são usadas em uma partida de sinuca?",
+      "enunciado": "Quantas bolas sÁo usadas em uma partida de sinuca?",
       "alternativas": [
         "15",
         "16",
@@ -179,7 +179,7 @@
     {
       "enunciado": "Em qual país foi inventado o beisebol?",
       "alternativas": [
-        "Japão",
+        "JapÁo",
         "Cuba",
         "Estados Unidos",
         "Canadá"
@@ -311,7 +311,7 @@
     {
       "enunciado": "Qual país dominou o badminton nas últimas décadas?",
       "alternativas": [
-        "Japão",
+        "JapÁo",
         "Indonésia",
         "China",
         "Coreia do Sul"
@@ -353,7 +353,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual surfista brasileiro foi campeão mundial em 2014 e 2019?",
+      "enunciado": "Qual surfista brasileiro foi campeÁo mundial em 2014 e 2019?",
       "alternativas": [
         "Mineirinho",
         "Gabriel Medina",
@@ -397,7 +397,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual seleção de futebol é conhecida como 'Azzurra'?",
+      "enunciado": "Qual seleçÁo de futebol é conhecida como 'Azzurra'?",
       "alternativas": [
         "França",
         "Argentina",
@@ -419,7 +419,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual é o tempo de duração de um jogo de futebol (tempo regulamentar)?",
+      "enunciado": "Qual é o tempo de duraçÁo de um jogo de futebol (tempo regulamentar)?",
       "alternativas": [
         "80 minutos",
         "90 minutos",
@@ -430,7 +430,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantos jogadores de cada time estão em quadra no basquete?",
+      "enunciado": "Quantos jogadores de cada time estÁo em quadra no basquete?",
       "alternativas": [
         "4",
         "5",
@@ -443,7 +443,7 @@
     {
       "enunciado": "Qual país sediou as Olimpíadas de 2008?",
       "alternativas": [
-        "Japão",
+        "JapÁo",
         "Coreia do Sul",
         "China",
         "Austrália"
@@ -474,7 +474,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantos buracos tem um campo de golfe padrão?",
+      "enunciado": "Quantos buracos tem um campo de golfe padrÁo?",
       "alternativas": [
         "9",
         "12",
@@ -510,9 +510,9 @@
       "enunciado": "Qual é o maior estádio de futebol do mundo em capacidade?",
       "alternativas": [
         "Camp Nou",
-        "Maracanã",
+        "MaracanÁ",
         "Wembley",
-        "Rungrado 1Âº de Maio"
+        "Rungrado 1º de Maio"
       ],
       "correta": 3,
       "tema": "esportes"
@@ -529,10 +529,10 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual é o apelido da seleção brasileira de futebol?",
+      "enunciado": "Qual é o apelido da seleçÁo brasileira de futebol?",
       "alternativas": [
         "La Furia",
-        "Seleção Canarinho",
+        "SeleçÁo Canarinho",
         "Les Bleus",
         "Albiceleste"
       ],
@@ -540,7 +540,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Em qual esporte existe a posição de 'quarterback'?",
+      "enunciado": "Em qual esporte existe a posiçÁo de 'quarterback'?",
       "alternativas": [
         "Rugby",
         "Futebol Americano",
@@ -595,7 +595,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual é o nome do troféu dado ao campeão da NBA?",
+      "enunciado": "Qual é o nome do troféu dado ao campeÁo da NBA?",
       "alternativas": [
         "Troféu Vince Lombardi",
         "Troféu Larry O'Brien",
@@ -609,7 +609,7 @@
       "enunciado": "Em qual esporte se compete na Tour de France?",
       "alternativas": [
         "Corrida",
-        "Natação",
+        "NataçÁo",
         "Ciclismo",
         "Esqui"
       ],
@@ -655,7 +655,7 @@
         "Brasil",
         "Estados Unidos",
         "Itália",
-        "Japão"
+        "JapÁo"
       ],
       "correta": 1,
       "tema": "esportes"
@@ -741,7 +741,7 @@
       "enunciado": "Em qual esporte existe a figura chamada 'axel'?",
       "alternativas": [
         "Ginástica",
-        "Patinação artística",
+        "PatinaçÁo artística",
         "Nado sincronizado",
         "Saltos ornamentais"
       ],
@@ -760,7 +760,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantos sets são necessários para vencer um jogo de tênis masculino em Grand Slam?",
+      "enunciado": "Quantos sets sÁo necessários para vencer um jogo de tênis masculino em Grand Slam?",
       "alternativas": [
         "2",
         "3",
@@ -818,7 +818,7 @@
       "enunciado": "Qual país sediou as Olimpíadas de Inverno de 2018?",
       "alternativas": [
         "Rússia",
-        "Japão",
+        "JapÁo",
         "Coreia do Sul",
         "Canadá"
       ],
@@ -872,7 +872,7 @@
     {
       "enunciado": "Qual time italiano é conhecido como 'La Vecchia Signora'?",
       "alternativas": [
-        "Inter de Milão",
+        "Inter de MilÁo",
         "Milan",
         "Juventus",
         "Roma"
@@ -884,7 +884,7 @@
       "enunciado": "Em qual esporte Nadia ComÄƒneci fez história com nota 10?",
       "alternativas": [
         "Nado sincronizado",
-        "Patinação artística",
+        "PatinaçÁo artística",
         "Ginástica artística",
         "Saltos ornamentais"
       ],
@@ -892,7 +892,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual é a duração de um quarto no basquete da NBA?",
+      "enunciado": "Qual é a duraçÁo de um quarto no basquete da NBA?",
       "alternativas": [
         "10 minutos",
         "12 minutos",
@@ -903,7 +903,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual seleção de futebol é conhecida como 'Albiceleste'?",
+      "enunciado": "Qual seleçÁo de futebol é conhecida como 'Albiceleste'?",
       "alternativas": [
         "Uruguai",
         "Argentina",
@@ -936,7 +936,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual é o maior campeão da Liga dos Campeões da UEFA?",
+      "enunciado": "Qual é o maior campeÁo da Liga dos Campeões da UEFA?",
       "alternativas": [
         "Barcelona",
         "Milan",
@@ -1037,7 +1037,7 @@
     {
       "enunciado": "Em qual esporte existe a categoria 'peso-pena'?",
       "alternativas": [
-        "Natação",
+        "NataçÁo",
         "Boxe",
         "Ginástica",
         "Atletismo"
@@ -1082,7 +1082,7 @@
       "enunciado": "Em qual cidade está localizado o Estádio Azteca?",
       "alternativas": [
         "Buenos Aires",
-        "São Paulo",
+        "SÁo Paulo",
         "Cidade do México",
         "Lima"
       ],
@@ -1114,7 +1114,7 @@
     {
       "enunciado": "Qual país é a maior potência no tênis de mesa?",
       "alternativas": [
-        "Japão",
+        "JapÁo",
         "Coreia do Sul",
         "China",
         "Alemanha"
@@ -1134,7 +1134,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual seleção de futebol venceu a Copa do Mundo de 2018?",
+      "enunciado": "Qual seleçÁo de futebol venceu a Copa do Mundo de 2018?",
       "alternativas": [
         "Brasil",
         "Alemanha",
@@ -1172,7 +1172,7 @@
         "Futebol",
         "Tênis",
         "Boxe",
-        "Natação"
+        "NataçÁo"
       ],
       "correta": 1,
       "tema": "esportes"
@@ -1200,7 +1200,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual é o nome da competição de ciclismo mais famosa da Itália?",
+      "enunciado": "Qual é o nome da competiçÁo de ciclismo mais famosa da Itália?",
       "alternativas": [
         "Tour de France",
         "Vuelta a España",
@@ -1211,7 +1211,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Em qual esporte existe a posição de 'libero'?",
+      "enunciado": "Em qual esporte existe a posiçÁo de 'libero'?",
       "alternativas": [
         "Futebol",
         "Basquete",
@@ -1224,7 +1224,7 @@
     {
       "enunciado": "Qual time de futebol brasileiro tem mais títulos de Libertadores?",
       "alternativas": [
-        "São Paulo",
+        "SÁo Paulo",
         "Santos",
         "Flamengo",
         "Palmeiras"
@@ -1248,7 +1248,7 @@
       "alternativas": [
         "China",
         "Coreia",
-        "Japão",
+        "JapÁo",
         "Tailândia"
       ],
       "correta": 2,
@@ -1258,7 +1258,7 @@
       "enunciado": "Em qual esporte Serena Williams é uma lenda?",
       "alternativas": [
         "Golfe",
-        "Natação",
+        "NataçÁo",
         "Tênis",
         "Atletismo"
       ],
@@ -1303,7 +1303,7 @@
       "alternativas": [
         "Roma",
         "Turim",
-        "Milão",
+        "MilÁo",
         "Nápoles"
       ],
       "correta": 2,
@@ -1332,7 +1332,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual país é hexacampeão olímpico no vôlei masculino?",
+      "enunciado": "Qual país é hexacampeÁo olímpico no vôlei masculino?",
       "alternativas": [
         "Estados Unidos",
         "Brasil",
@@ -1358,7 +1358,7 @@
       "alternativas": [
         "Corinthians",
         "Flamengo",
-        "São Paulo",
+        "SÁo Paulo",
         "Vasco"
       ],
       "correta": 1,
@@ -1376,7 +1376,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual é a modalidade de natação mais rápida?",
+      "enunciado": "Qual é a modalidade de nataçÁo mais rápida?",
       "alternativas": [
         "Costas",
         "Peito",
@@ -1434,7 +1434,7 @@
       "enunciado": "Em qual esporte Katie Ledecky é uma estrela?",
       "alternativas": [
         "Ginástica",
-        "Natação",
+        "NataçÁo",
         "Atletismo",
         "Ciclismo"
       ],
@@ -1453,7 +1453,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantos jogadores de críquete estão em campo por equipe?",
+      "enunciado": "Quantos jogadores de críquete estÁo em campo por equipe?",
       "alternativas": [
         "9",
         "10",
@@ -1497,7 +1497,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantos sets são jogados no máximo em uma partida de vôlei?",
+      "enunciado": "Quantos sets sÁo jogados no máximo em uma partida de vôlei?",
       "alternativas": [
         "3",
         "4",
@@ -1513,7 +1513,7 @@
         "Romário",
         "Zico",
         "Sócrates",
-        "Falcão"
+        "FalcÁo"
       ],
       "correta": 1,
       "tema": "esportes"
@@ -1535,7 +1535,7 @@
         "Austrália",
         "França",
         "Estados Unidos",
-        "Japão"
+        "JapÁo"
       ],
       "correta": 2,
       "tema": "esportes"
@@ -1543,7 +1543,7 @@
     {
       "enunciado": "Quantos metros tem a prova de salto em distância?",
       "alternativas": [
-        "Não tem distância fixa",
+        "NÁo tem distância fixa",
         "10 metros",
         "15 metros",
         "20 metros"
@@ -1600,7 +1600,7 @@
       "alternativas": [
         "Corinthians",
         "Palmeiras",
-        "São Paulo",
+        "SÁo Paulo",
         "Santos"
       ],
       "correta": 2,
@@ -1618,7 +1618,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual foi a primeira seleção africana a chegar às semifinais de uma Copa do Mundo?",
+      "enunciado": "Qual foi a primeira seleçÁo africana a chegar às semifinais de uma Copa do Mundo?",
       "alternativas": [
         "Nigéria",
         "Camarões",
@@ -1651,7 +1651,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Em qual esporte se usa a expressão 'tiebreak'?",
+      "enunciado": "Em qual esporte se usa a expressÁo 'tiebreak'?",
       "alternativas": [
         "Futebol",
         "Tênis",
@@ -1686,7 +1686,7 @@
     {
       "enunciado": "Qual é o esporte mais assistido nas Olimpíadas?",
       "alternativas": [
-        "Natação",
+        "NataçÁo",
         "Atletismo",
         "Ginástica",
         "Futebol"
@@ -1741,7 +1741,7 @@
     {
       "enunciado": "Em qual esporte existe a categoria 'peso-pesado'?",
       "alternativas": [
-        "Natação",
+        "NataçÁo",
         "Ginástica",
         "Boxe",
         "Atletismo"
@@ -1829,7 +1829,7 @@
     {
       "enunciado": "Em qual esporte existe a prova de 'contra-relógio'?",
       "alternativas": [
-        "Natação",
+        "NataçÁo",
         "Ciclismo",
         "Atletismo",
         "Todas as anteriores"
@@ -1862,7 +1862,7 @@
     {
       "enunciado": "Qual país é a maior potência no badminton?",
       "alternativas": [
-        "Japão",
+        "JapÁo",
         "Indonésia",
         "China",
         "Malásia"
@@ -1915,7 +1915,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Em qual esporte existe a posição de 'pivô'?",
+      "enunciado": "Em qual esporte existe a posiçÁo de 'pivô'?",
       "alternativas": [
         "Futebol",
         "Basquete",
@@ -1937,7 +1937,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantos pontos vale uma conversão de dois pontos no futebol americano?",
+      "enunciado": "Quantos pontos vale uma conversÁo de dois pontos no futebol americano?",
       "alternativas": [
         "1",
         "2",
@@ -1961,7 +1961,7 @@
     {
       "enunciado": "Em qual esporte Simone Biles compete?",
       "alternativas": [
-        "Patinação artística",
+        "PatinaçÁo artística",
         "Ginástica artística",
         "Nado sincronizado",
         "Atletismo"
@@ -1981,7 +1981,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Quantas provas de natação existem nas Olimpíadas?",
+      "enunciado": "Quantas provas de nataçÁo existem nas Olimpíadas?",
       "alternativas": [
         "28",
         "32",
@@ -1994,7 +1994,7 @@
     {
       "enunciado": "Qual país domina o esporte de tênis de mesa feminino?",
       "alternativas": [
-        "Japão",
+        "JapÁo",
         "Coreia do Sul",
         "China",
         "Alemanha"
@@ -2058,7 +2058,7 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Qual time de futebol é conhecido como 'Mengão'?",
+      "enunciado": "Qual time de futebol é conhecido como 'MengÁo'?",
       "alternativas": [
         "Fluminense",
         "Botafogo",
@@ -2091,9 +2091,9 @@
       "tema": "esportes"
     },
     {
-      "enunciado": "Em qual esporte existe a prova de 'perseguição por equipes'?",
+      "enunciado": "Em qual esporte existe a prova de 'perseguiçÁo por equipes'?",
       "alternativas": [
-        "Natação",
+        "NataçÁo",
         "Atletismo",
         "Ciclismo",
         "Esqui"
@@ -2148,7 +2148,7 @@
     {
       "enunciado": "Qual é a distância da prova de decatlo no atletismo?",
       "alternativas": [
-        "Não é uma prova de distância",
+        "NÁo é uma prova de distância",
         "5000m",
         "10000m",
         "42km"

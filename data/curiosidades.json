@@ -1,7 +1,7 @@
-{
+﻿{
   "perguntas": [
     {
-      "enunciado": "Qual é o maior órgão do corpo humano?",
+      "enunciado": "Qual é o maior órgÁo do corpo humano?",
       "alternativas": [
         "Fígado",
         "Cérebro",
@@ -25,10 +25,10 @@
     {
       "enunciado": "Qual é o animal mais rápido do mundo?",
       "alternativas": [
-        "Leão",
+        "LeÁo",
         "Guepardo",
         "Águia",
-        "Tubarão"
+        "TubarÁo"
       ],
       "correta": 1,
       "tema": "curiosidades"
@@ -71,7 +71,7 @@
       "alternativas": [
         "Tíbia",
         "Fêmur",
-        "Ãšmero",
+        "Ášmero",
         "Rádio"
       ],
       "correta": 1,
@@ -166,7 +166,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantas vezes por minuto o coração humano bate em média?",
+      "enunciado": "Quantas vezes por minuto o coraçÁo humano bate em média?",
       "alternativas": [
         "40-50",
         "60-80",
@@ -267,7 +267,7 @@
     {
       "enunciado": "Qual animal pode girar a cabeça até 270 graus?",
       "alternativas": [
-        "Camaleão",
+        "CamaleÁo",
         "Coruja",
         "Gato",
         "Serpente"
@@ -301,7 +301,7 @@
       "enunciado": "Qual é o maior animal do mundo?",
       "alternativas": [
         "Elefante africano",
-        "Tubarão-baleia",
+        "TubarÁo-baleia",
         "Baleia-azul",
         "Lula-gigante"
       ],
@@ -309,7 +309,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantos músculos são necessários para dar um passo?",
+      "enunciado": "Quantos músculos sÁo necessários para dar um passo?",
       "alternativas": [
         "50",
         "100",
@@ -322,7 +322,7 @@
     {
       "enunciado": "Qual é o país com mais vulcões ativos?",
       "alternativas": [
-        "Japão",
+        "JapÁo",
         "Indonésia",
         "Islândia",
         "Estados Unidos"
@@ -369,7 +369,7 @@
         "Cobra rei",
         "Aranha-armadeira",
         "Água-viva-caixa",
-        "Escorpião"
+        "EscorpiÁo"
       ],
       "correta": 2,
       "tema": "curiosidades"
@@ -410,9 +410,9 @@
     {
       "enunciado": "Qual é o animal que nunca dorme?",
       "alternativas": [
-        "Tubarão",
+        "TubarÁo",
         "Formiga",
-        "Rã-touro",
+        "RÁ-touro",
         "Abelha"
       ],
       "correta": 2,
@@ -606,7 +606,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o animal com a gestação mais longa?",
+      "enunciado": "Qual é o animal com a gestaçÁo mais longa?",
       "alternativas": [
         "Baleia-azul",
         "Rinoceronte",
@@ -617,7 +617,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantas oitavas tem um piano padrão?",
+      "enunciado": "Quantas oitavas tem um piano padrÁo?",
       "alternativas": [
         "5",
         "6",
@@ -650,10 +650,10 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual animal tem a língua mais comprida em relação ao corpo?",
+      "enunciado": "Qual animal tem a língua mais comprida em relaçÁo ao corpo?",
       "alternativas": [
         "Tamanduá",
-        "Camaleão",
+        "CamaleÁo",
         "Cobra",
         "Sapo"
       ],
@@ -661,7 +661,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantos anos de azar dá quebrar um espelho segundo a superstição?",
+      "enunciado": "Quantos anos de azar dá quebrar um espelho segundo a superstiçÁo?",
       "alternativas": [
         "3",
         "5",
@@ -677,7 +677,7 @@
         "Indonésia",
         "Filipinas",
         "Suécia",
-        "Japão"
+        "JapÁo"
       ],
       "correta": 2,
       "tema": "curiosidades"
@@ -705,7 +705,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantos zeros tem um bilhão?",
+      "enunciado": "Quantos zeros tem um bilhÁo?",
       "alternativas": [
         "6",
         "9",
@@ -738,9 +738,9 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o maior órgão interno do corpo humano?",
+      "enunciado": "Qual é o maior órgÁo interno do corpo humano?",
       "alternativas": [
-        "Coração",
+        "CoraçÁo",
         "Pulmões",
         "Fígado",
         "Intestino"
@@ -894,7 +894,7 @@
     {
       "enunciado": "Qual é o maior felino do mundo?",
       "alternativas": [
-        "Leão",
+        "LeÁo",
         "Tigre",
         "Onça-pintada",
         "Leopardo"
@@ -960,7 +960,7 @@
     {
       "enunciado": "Qual é a capital do Brasil?",
       "alternativas": [
-        "São Paulo",
+        "SÁo Paulo",
         "Rio de Janeiro",
         "Brasília",
         "Salvador"
@@ -1035,7 +1035,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantos dias tem o mês de fevereiro em anos não bissextos?",
+      "enunciado": "Quantos dias tem o mês de fevereiro em anos nÁo bissextos?",
       "alternativas": [
         "26",
         "27",
@@ -1115,7 +1115,7 @@
       "enunciado": "Qual é o animal que muda de cor conforme o ambiente?",
       "alternativas": [
         "Lagarto",
-        "Camaleão",
+        "CamaleÁo",
         "Iguana",
         "Salamandra"
       ],
@@ -1159,7 +1159,7 @@
       "enunciado": "Qual é a maior célula do corpo humano?",
       "alternativas": [
         "Neurônio",
-        "Ã“vulo",
+        "Á“vulo",
         "Hemácia",
         "Adipócito"
       ],
@@ -1189,7 +1189,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantas teclas tem um piano padrão?",
+      "enunciado": "Quantas teclas tem um piano padrÁo?",
       "alternativas": [
         "66",
         "76",
@@ -1211,7 +1211,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantas cordas tem um violão clássico?",
+      "enunciado": "Quantas cordas tem um violÁo clássico?",
       "alternativas": [
         "4",
         "5",
@@ -1225,7 +1225,7 @@
       "enunciado": "Qual é o animal que simboliza a sabedoria?",
       "alternativas": [
         "Águia",
-        "Leão",
+        "LeÁo",
         "Coruja",
         "Serpente"
       ],
@@ -1270,7 +1270,7 @@
       "alternativas": [
         "China",
         "Coreia",
-        "Japão",
+        "JapÁo",
         "Tailândia"
       ],
       "correta": 2,
@@ -1292,7 +1292,7 @@
       "alternativas": [
         "Touro",
         "Carneiro",
-        "Leão",
+        "LeÁo",
         "Cabra"
       ],
       "correta": 1,
@@ -1310,7 +1310,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o maior vulcão do Sistema Solar?",
+      "enunciado": "Qual é o maior vulcÁo do Sistema Solar?",
       "alternativas": [
         "Krakatoa",
         "Vesúvio",
@@ -1321,7 +1321,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantos zeros tem um milhão?",
+      "enunciado": "Quantos zeros tem um milhÁo?",
       "alternativas": [
         "4",
         "5",
@@ -1332,7 +1332,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o único osso do corpo humano que não se articula com nenhum outro?",
+      "enunciado": "Qual é o único osso do corpo humano que nÁo se articula com nenhum outro?",
       "alternativas": [
         "Patela",
         "Hioide",
@@ -1376,7 +1376,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o gás produzido durante a respiração celular?",
+      "enunciado": "Qual é o gás produzido durante a respiraçÁo celular?",
       "alternativas": [
         "Oxigênio",
         "Nitrogênio",
@@ -1400,8 +1400,8 @@
     {
       "enunciado": "Qual é o nome do fenômeno que causa as marés?",
       "alternativas": [
-        "Rotação da Terra",
-        "Atração gravitacional da Lua",
+        "RotaçÁo da Terra",
+        "AtraçÁo gravitacional da Lua",
         "Ventos",
         "Correntes marítimas"
       ],
@@ -1423,7 +1423,7 @@
       "enunciado": "Qual é o maior satélite natural do Sistema Solar?",
       "alternativas": [
         "Lua",
-        "Titã",
+        "TitÁ",
         "Ganimedes",
         "Europa"
       ],
@@ -1442,7 +1442,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o animal mais forte em proporção ao seu tamanho?",
+      "enunciado": "Qual é o animal mais forte em proporçÁo ao seu tamanho?",
       "alternativas": [
         "Formiga",
         "Besouro-rinoceronte",
@@ -1453,7 +1453,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantas cavidades tem o coração humano?",
+      "enunciado": "Quantas cavidades tem o coraçÁo humano?",
       "alternativas": [
         "2",
         "3",
@@ -1486,12 +1486,12 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o animal que consegue ver radiação ultravioleta?",
+      "enunciado": "Qual é o animal que consegue ver radiaçÁo ultravioleta?",
       "alternativas": [
         "Gato",
-        "Cão",
+        "CÁo",
         "Abelha",
-        "Tubarão"
+        "TubarÁo"
       ],
       "correta": 2,
       "tema": "curiosidades"
@@ -1607,7 +1607,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantos dentes tem um tubarão ao mesmo tempo?",
+      "enunciado": "Quantos dentes tem um tubarÁo ao mesmo tempo?",
       "alternativas": [
         "30",
         "100",
@@ -1708,7 +1708,7 @@
     {
       "enunciado": "Qual é o maior arquipélago do mundo?",
       "alternativas": [
-        "Japão",
+        "JapÁo",
         "Filipinas",
         "Indonésia",
         "Havaí"
@@ -1717,7 +1717,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantas olimpíadas de verão o Brasil sediou?",
+      "enunciado": "Quantas olimpíadas de verÁo o Brasil sediou?",
       "alternativas": [
         "0",
         "1",
@@ -1732,7 +1732,7 @@
       "alternativas": [
         "Elefante",
         "Tartaruga-gigante",
-        "Tubarão-da-groenlândia",
+        "TubarÁo-da-groenlândia",
         "Baleia-azul"
       ],
       "correta": 2,
@@ -1750,7 +1750,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o nome do maior órgão do sistema digestivo?",
+      "enunciado": "Qual é o nome do maior órgÁo do sistema digestivo?",
       "alternativas": [
         "Estômago",
         "Intestino delgado",
@@ -1772,7 +1772,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o único continente onde não existem répteis?",
+      "enunciado": "Qual é o único continente onde nÁo existem répteis?",
       "alternativas": [
         "Europa",
         "Oceania",
@@ -1794,7 +1794,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o animal que tem o período de gestação mais curto?",
+      "enunciado": "Qual é o animal que tem o período de gestaçÁo mais curto?",
       "alternativas": [
         "Hamster",
         "Gambá",
@@ -1810,7 +1810,7 @@
         "10 milhões",
         "100 milhões",
         "86 bilhões",
-        "1 trilhão"
+        "1 trilhÁo"
       ],
       "correta": 2,
       "tema": "curiosidades"
@@ -1863,7 +1863,7 @@
       "enunciado": "Qual é o país que mais produz café no mundo?",
       "alternativas": [
         "Colômbia",
-        "Vietnã",
+        "VietnÁ",
         "Brasil",
         "Etiópia"
       ],
@@ -1871,7 +1871,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantos graus Celsius é a temperatura de ebulição da água ao nível do mar?",
+      "enunciado": "Quantos graus Celsius é a temperatura de ebuliçÁo da água ao nível do mar?",
       "alternativas": [
         "90°C",
         "95°C",
@@ -1926,7 +1926,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Qual é o animal que não pode pular?",
+      "enunciado": "Qual é o animal que nÁo pode pular?",
       "alternativas": [
         "Hipopótamo",
         "Elefante",
@@ -1937,7 +1937,7 @@
       "tema": "curiosidades"
     },
     {
-      "enunciado": "Quantas vezes o coração humano bate por dia em média?",
+      "enunciado": "Quantas vezes o coraçÁo humano bate por dia em média?",
       "alternativas": [
         "50.000",
         "75.000",
@@ -1951,8 +1951,8 @@
       "enunciado": "Qual é o maior peixe do mundo?",
       "alternativas": [
         "Baleia-azul",
-        "Tubarão-branco",
-        "Tubarão-baleia",
+        "TubarÁo-branco",
+        "TubarÁo-baleia",
         "Marlim-azul"
       ],
       "correta": 2,
