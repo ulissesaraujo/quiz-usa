@@ -590,6 +590,9 @@
                             📤 Importar JSON
                             <input type="file" id="input-importar" accept=".json" multiple style="display: none;">
                         </label>
+                        <button class="btn btn-outline btn-small" id="btn-migrar" style="background: #ff9800; color: white;">
+                            🔄 Migrar Subtemas
+                        </button>
                     </div>
                 </div>
             </div>
@@ -704,6 +707,122 @@
             btnAtualizar.addEventListener('click', carregarPerguntas);
             btnExportar.addEventListener('click', exportarPerguntas);
             inputImportar.addEventListener('change', importarPerguntas);
+            document.getElementById('btn-migrar').addEventListener('click', migrarSubtemas);
+        }
+
+        // Migra perguntas de esportes para subtemas específicos
+        async function migrarSubtemas() {
+            if (!confirm('Isso irá analisar perguntas de "esportes" e migrar para subtemas específicos. Continuar?')) {
+                return;
+            }
+
+            // Regras de migração: palavras-chave -> subtema
+            const regras = {
+                'copa-do-mundo': [
+                    'copa do mundo', 'copa de 2014', 'copa de 2018', 'copa de 2022', 'copa de 1930',
+                    'copa de 1950', 'copa de 1958', 'copa de 1962', 'copa de 1970', 'copa de 1986',
+                    'copa de 1994', 'copa de 1998', 'copa de 2002', 'copa de 2006', 'copa de 2010',
+                    'maracanazo', 'gol do século', 'copas do mundo', 'mundial de futebol'
+                ],
+                'olimpiadas': [
+                    'olimpíada', 'olimpiada', 'olímpic', 'olimpic', 'jogos olímpicos', 'jogos olimpicos',
+                    'medalha de ouro', 'medalhas olímpicas', 'michael phelps', 'usain bolt',
+                    'simone biles', 'nadia comaneci', 'jesse owens', 'primeiro jogos', 'primeiras olimpíadas'
+                ],
+                'f1': [
+                    'fórmula 1', 'formula 1', 'f1', 'piloto', 'schumacher', 'senna', 'hamilton',
+                    'verstappen', 'circuito de mônaco', 'grand prix', 'gp de', 'pole position',
+                    'pit stop', 'ferrari', 'mclaren', 'red bull racing'
+                ],
+                'basquete': [
+                    'basquete', 'nba', 'cesta de três', 'basketball', 'lebron', 'michael jordan',
+                    'kobe bryant', 'stephen curry', 'slam dunk', 'larry o\'brien', 'alley-oop',
+                    'triple-double', 'enterrada'
+                ],
+                'volei': [
+                    'vôlei', 'volei', 'volleyball', 'sets para vencer', 'líbero', 'libero',
+                    'vôlei de praia', 'saque', 'bloqueio', 'levantador', 'ponteiro'
+                ],
+                'tenis': [
+                    'tênis', 'tenis', 'grand slam', 'wimbledon', 'roland garros', 'us open',
+                    'australian open', 'nadal', 'federer', 'djokovic', 'serena williams',
+                    'raquete', 'ace'
+                ],
+                'futebol': [
+                    'futebol', 'gol', 'goleiro', 'atacante', 'zagueiro', 'meio-campo',
+                    'champions league', 'libertadores', 'premier league', 'la liga',
+                    'serie a', 'bundesliga', 'bola de ouro', 'cr7', 'messi', 'pelé', 'pele',
+                    'maradona', 'neymar', 'real madrid', 'barcelona', 'manchester', 'liverpool'
+                ],
+                'natacao': [
+                    'natação', 'natacao', 'nadar', 'piscina olímpica', 'nado', 'crawl',
+                    'borboleta', 'costas', 'peito', 'medley'
+                ]
+            };
+
+            try {
+                mostrarMensagem('Buscando perguntas de esportes...', 'info');
+                
+                // Busca perguntas com tema "esportes"
+                const snapshot = await db.collection('perguntas').where('tema', '==', 'esportes').get();
+                
+                if (snapshot.empty) {
+                    mostrarMensagem('Nenhuma pergunta com tema "esportes" encontrada.', 'info');
+                    return;
+                }
+
+                let migradas = 0;
+                let naoMigradas = 0;
+                const batch = db.batch();
+                const maxBatch = 500; // Limite do Firestore
+                let batchCount = 0;
+
+                for (const doc of snapshot.docs) {
+                    const pergunta = doc.data();
+                    const enunciado = pergunta.enunciado.toLowerCase();
+                    let novoTema = null;
+
+                    // Verifica cada regra
+                    for (const [subtema, palavras] of Object.entries(regras)) {
+                        for (const palavra of palavras) {
+                            if (enunciado.includes(palavra.toLowerCase())) {
+                                novoTema = subtema;
+                                break;
+                            }
+                        }
+                        if (novoTema) break;
+                    }
+
+                    if (novoTema) {
+                        batch.update(doc.ref, { tema: novoTema });
+                        migradas++;
+                        batchCount++;
+                        
+                        // Executa batch se atingir limite
+                        if (batchCount >= maxBatch) {
+                            await batch.commit();
+                            batchCount = 0;
+                        }
+                    } else {
+                        naoMigradas++;
+                        console.log('Não migrada:', pergunta.enunciado);
+                    }
+                }
+
+                // Commit final se houver pendências
+                if (batchCount > 0) {
+                    await batch.commit();
+                }
+
+                mostrarMensagem(`Migração concluída! ${migradas} migradas, ${naoMigradas} permaneceram em "esportes".`, 'sucesso');
+                
+                // Recarrega perguntas
+                await carregarPerguntas();
+                
+            } catch (error) {
+                console.error('Erro na migração:', error);
+                mostrarMensagem('Erro ao migrar: ' + error.message, 'erro');
+            }
         }
 
         // Carrega perguntas do Firebase
