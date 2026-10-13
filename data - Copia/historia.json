@@ -1,0 +1,2061 @@
+{
+  "perguntas": [
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano Cristóvão Colombo chegou à América?",
+      "alternativas": [
+        "1490",
+        "1492",
+        "1494",
+        "1500"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual civilização construiu as pirâmides de Gizé?",
+      "alternativas": [
+        "Romana",
+        "Grega",
+        "Egípcia",
+        "Mesopotâmica"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o primeiro imperador romano?",
+      "alternativas": [
+        "Júlio César",
+        "Augusto",
+        "Nero",
+        "Calígula"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano começou a Primeira Guerra Mundial?",
+      "alternativas": [
+        "1912",
+        "1914",
+        "1916",
+        "1918"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual país foi o berço da Revolução Industrial?",
+      "alternativas": [
+        "França",
+        "Alemanha",
+        "Inglaterra",
+        "Estados Unidos"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem pintou o teto da Capela Sistina?",
+      "alternativas": [
+        "Leonardo da Vinci",
+        "Rafael",
+        "Michelangelo",
+        "Donatello"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano terminou a Segunda Guerra Mundial?",
+      "alternativas": [
+        "1943",
+        "1944",
+        "1945",
+        "1946"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a causa imediata do início da Primeira Guerra Mundial?",
+      "alternativas": [
+        "Invasão da Polônia",
+        "Assassinato de Francisco Ferdinando",
+        "Afundamento do Lusitania",
+        "Revolução Russa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem descobriu o Brasil?",
+      "alternativas": [
+        "Cristóvão Colombo",
+        "Vasco da Gama",
+        "Pedro Álvares Cabral",
+        "Fernão de Magalhães"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano ocorreu a Revolução Francesa?",
+      "alternativas": [
+        "1776",
+        "1789",
+        "1799",
+        "1804"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual imperador francês foi exilado na ilha de Elba?",
+      "alternativas": [
+        "Luís XVI",
+        "Napoleão Bonaparte",
+        "Carlos X",
+        "Luís XVIII"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o líder da Alemanha Nazista?",
+      "alternativas": [
+        "Mussolini",
+        "Stalin",
+        "Hitler",
+        "Franco"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi proclamada a Independência do Brasil?",
+      "alternativas": [
+        "1808",
+        "1815",
+        "1822",
+        "1889"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual civilização criou a democracia?",
+      "alternativas": [
+        "Romana",
+        "Grega",
+        "Egípcia",
+        "Persa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o primeiro presidente dos Estados Unidos?",
+      "alternativas": [
+        "Thomas Jefferson",
+        "Benjamin Franklin",
+        "George Washington",
+        "John Adams"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano caiu o Muro de Berlim?",
+      "alternativas": [
+        "1987",
+        "1989",
+        "1991",
+        "1993"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era a capital do Império Romano do Oriente?",
+      "alternativas": [
+        "Roma",
+        "Atenas",
+        "Alexandria",
+        "Constantinopla"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem escreveu 'A República'?",
+      "alternativas": [
+        "Aristóteles",
+        "Platão",
+        "Sócrates",
+        "Heródoto"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "alternativas": [
+        "1965",
+        "1967",
+        "1969",
+        "1971"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual rainha governou a Inglaterra por mais de 60 anos no século XIX?",
+      "alternativas": [
+        "Maria I",
+        "Elizabeth I",
+        "Vitória",
+        "Ana"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi assinada a Declaração de Independência dos EUA?",
+      "alternativas": [
+        "1774",
+        "1776",
+        "1778",
+        "1780"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual civilização antiga construiu Machu Picchu?",
+      "alternativas": [
+        "Maia",
+        "Asteca",
+        "Inca",
+        "Olmeca"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o líder da União Soviética durante a maior parte da Segunda Guerra Mundial?",
+      "alternativas": [
+        "Lenin",
+        "Trotsky",
+        "Stalin",
+        "Kruschev"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi proclamada a República no Brasil?",
+      "alternativas": [
+        "1822",
+        "1889",
+        "1891",
+        "1930"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a última dinastia imperial da China?",
+      "alternativas": [
+        "Ming",
+        "Han",
+        "Qing",
+        "Tang"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem liderou a marcha do sal na Índia?",
+      "alternativas": [
+        "Jawaharlal Nehru",
+        "Mahatma Gandhi",
+        "Subhas Bose",
+        "Bhagat Singh"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano terminou a Guerra Civil Americana?",
+      "alternativas": [
+        "1863",
+        "1865",
+        "1867",
+        "1870"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual império foi governado por Genghis Khan?",
+      "alternativas": [
+        "Persa",
+        "Otomano",
+        "Mongol",
+        "Chinês"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o autor da teoria da relatividade?",
+      "alternativas": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Niels Bohr",
+        "Max Planck"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano ocorreu a Revolução Russa?",
+      "alternativas": [
+        "1905",
+        "1914",
+        "1917",
+        "1921"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do navio que levou os Peregrinos à América?",
+      "alternativas": [
+        "Santa Maria",
+        "Mayflower",
+        "Discovery",
+        "Victoria"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Cleópatra?",
+      "alternativas": [
+        "Rainha da Grécia",
+        "Imperatriz de Roma",
+        "Rainha do Egito",
+        "Rainha da Pérsia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi fundada a cidade de Roma?",
+      "alternativas": [
+        "753 a.C.",
+        "509 a.C.",
+        "264 a.C.",
+        "27 a.C."
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual país lançou as bombas atômicas sobre o Japão?",
+      "alternativas": [
+        "Inglaterra",
+        "União Soviética",
+        "Estados Unidos",
+        "China"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o líder do movimento pelos direitos civis nos EUA?",
+      "alternativas": [
+        "Malcolm X",
+        "Martin Luther King Jr.",
+        "Rosa Parks",
+        "Jesse Jackson"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi inaugurado o Canal de Suez?",
+      "alternativas": [
+        "1859",
+        "1869",
+        "1879",
+        "1889"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a primeira civilização da Mesopotâmia?",
+      "alternativas": [
+        "Babilônica",
+        "Assíria",
+        "Suméria",
+        "Acadiana"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o primeiro homem no espaço?",
+      "alternativas": [
+        "Neil Armstrong",
+        "Yuri Gagarin",
+        "John Glenn",
+        "Alan Shepard"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi construída a Grande Muralha da China?",
+      "alternativas": [
+        "Século III a.C.",
+        "Século I a.C.",
+        "Século I d.C.",
+        "Século III d.C."
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do sistema econômico feudal baseado na posse de terras?",
+      "alternativas": [
+        "Capitalismo",
+        "Socialismo",
+        "Feudalismo",
+        "Mercantilismo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Alexandre, o Grande?",
+      "alternativas": [
+        "Imperador romano",
+        "Rei macedônio",
+        "Faraó egípcio",
+        "Rei persa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano ocorreu o ataque a Pearl Harbor?",
+      "alternativas": [
+        "1939",
+        "1940",
+        "1941",
+        "1942"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a principal causa da Guerra de Secessão nos EUA?",
+      "alternativas": [
+        "Impostos",
+        "Escravidão",
+        "Território",
+        "Religião"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem inventou a imprensa de tipos móveis?",
+      "alternativas": [
+        "Leonardo da Vinci",
+        "Johannes Gutenberg",
+        "Galileu Galilei",
+        "Francis Bacon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi abolida a escravidão no Brasil?",
+      "alternativas": [
+        "1850",
+        "1871",
+        "1888",
+        "1889"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do movimento cultural do século XIV ao XVII na Europa?",
+      "alternativas": [
+        "Iluminismo",
+        "Renascimento",
+        "Romantismo",
+        "Barroco"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o faraó que mandou construir a Grande Pirâmide de Gizé?",
+      "alternativas": [
+        "Tutancâmon",
+        "Ramsés II",
+        "Quéops",
+        "Akhenaton"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi fundada a ONU?",
+      "alternativas": [
+        "1942",
+        "1945",
+        "1948",
+        "1950"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual evento marcou o início da Idade Média?",
+      "alternativas": [
+        "Nascimento de Cristo",
+        "Queda de Roma",
+        "Coroação de Carlos Magno",
+        "Primeira Cruzada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Spartacus?",
+      "alternativas": [
+        "Imperador romano",
+        "Gladiador rebelde",
+        "General cartaginês",
+        "Filósofo grego"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano terminou o Império Romano do Ocidente?",
+      "alternativas": [
+        "395 d.C.",
+        "410 d.C.",
+        "455 d.C.",
+        "476 d.C."
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual país colonizou o Brasil?",
+      "alternativas": [
+        "Espanha",
+        "Portugal",
+        "França",
+        "Holanda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o autor do 'Manifesto Comunista'?",
+      "alternativas": [
+        "Lenin",
+        "Marx e Engels",
+        "Trotsky",
+        "Mao Tsé-Tung"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano ocorreu a Queda da Bastilha?",
+      "alternativas": [
+        "1787",
+        "1789",
+        "1791",
+        "1793"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a maior epidemia da Idade Média?",
+      "alternativas": [
+        "Varíola",
+        "Cólera",
+        "Peste Negra",
+        "Tifo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o primeiro presidente do Brasil?",
+      "alternativas": [
+        "Getúlio Vargas",
+        "Prudente de Morais",
+        "Deodoro da Fonseca",
+        "Floriano Peixoto"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi assinado o Tratado de Versalhes?",
+      "alternativas": [
+        "1917",
+        "1918",
+        "1919",
+        "1920"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual civilização inventou a escrita cuneiforme?",
+      "alternativas": [
+        "Egípcia",
+        "Suméria",
+        "Chinesa",
+        "Fenícia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Marco Polo?",
+      "alternativas": [
+        "Navegador português",
+        "Explorador italiano",
+        "Conquistador espanhol",
+        "Mercador holandês"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi inventada a máquina a vapor?",
+      "alternativas": [
+        "1712",
+        "1769",
+        "1785",
+        "1800"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do movimento de resistência francesa na Segunda Guerra Mundial?",
+      "alternativas": [
+        "Wehrmacht",
+        "Gestapo",
+        "Résistance",
+        "SS"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o líder fascista da Itália?",
+      "alternativas": [
+        "Hitler",
+        "Mussolini",
+        "Franco",
+        "Salazar"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi criada a União Soviética?",
+      "alternativas": [
+        "1917",
+        "1922",
+        "1924",
+        "1929"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a primeira nação a abolir a escravidão?",
+      "alternativas": [
+        "Inglaterra",
+        "França",
+        "Haiti",
+        "Estados Unidos"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Nero?",
+      "alternativas": [
+        "General romano",
+        "Imperador romano",
+        "Gladiador",
+        "Senador"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi inaugurado o Canal do Panamá?",
+      "alternativas": [
+        "1904",
+        "1910",
+        "1914",
+        "1920"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do sistema de castas na Índia antiga?",
+      "alternativas": [
+        "Varnas",
+        "Dharma",
+        "Karma",
+        "Samsara"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Joana d'Arc?",
+      "alternativas": [
+        "Rainha francesa",
+        "Heroína militar francesa",
+        "Santa espanhola",
+        "Imperatriz alemã"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi descoberta a América por Colombo?",
+      "alternativas": [
+        "1488",
+        "1492",
+        "1498",
+        "1500"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a capital do Império Asteca?",
+      "alternativas": [
+        "Cusco",
+        "Tenochtitlán",
+        "Tikal",
+        "Chichén Itzá"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o general cartaginês que atravessou os Alpes?",
+      "alternativas": [
+        "Aníbal",
+        "Cipião",
+        "César",
+        "Pompeu"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi fundada a cidade de Brasília?",
+      "alternativas": [
+        "1956",
+        "1958",
+        "1960",
+        "1962"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual evento iniciou a Guerra Fria?",
+      "alternativas": [
+        "Fim da Segunda Guerra",
+        "Conferência de Yalta",
+        "Bloqueio de Berlim",
+        "Crise dos Mísseis"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o último czar da Rússia?",
+      "alternativas": [
+        "Nicolau I",
+        "Alexandre II",
+        "Alexandre III",
+        "Nicolau II"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi construído o Coliseu de Roma?",
+      "alternativas": [
+        "50 a.C.",
+        "27 a.C.",
+        "80 d.C.",
+        "120 d.C."
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do movimento de libertação na América Latina?",
+      "alternativas": [
+        "Iluminismo",
+        "Revolução Industrial",
+        "Independências",
+        "Neocolonialismo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Simón Bolívar?",
+      "alternativas": [
+        "Libertador sul-americano",
+        "Imperador brasileiro",
+        "Ditador mexicano",
+        "Conquistador espanhol"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi criado o Estado de Israel?",
+      "alternativas": [
+        "1945",
+        "1948",
+        "1956",
+        "1967"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a principal potência colonial na África?",
+      "alternativas": [
+        "Espanha",
+        "Alemanha",
+        "França",
+        "Todas as anteriores"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Confúcio?",
+      "alternativas": [
+        "Imperador chinês",
+        "Filósofo chinês",
+        "General japonês",
+        "Monge budista"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi fundada a cidade de São Paulo?",
+      "alternativas": [
+        "1532",
+        "1554",
+        "1565",
+        "1580"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do sistema de governo da antiga Atenas?",
+      "alternativas": [
+        "Monarquia",
+        "Oligarquia",
+        "Democracia",
+        "Tirania"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o autor de 'A Riqueza das Nações'?",
+      "alternativas": [
+        "John Locke",
+        "Adam Smith",
+        "Thomas Hobbes",
+        "Jean-Jacques Rousseau"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi assassinado John F. Kennedy?",
+      "alternativas": [
+        "1961",
+        "1963",
+        "1965",
+        "1968"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o nome da operação aliada para invadir a Normandia?",
+      "alternativas": [
+        "Operação Barbarossa",
+        "Operação Overlord",
+        "Operação Torch",
+        "Operação Market Garden"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o imperador romano que dividiu o império em dois?",
+      "alternativas": [
+        "Constantino",
+        "Diocleciano",
+        "Teodósio",
+        "Justiniano"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi fundada a cidade do Rio de Janeiro?",
+      "alternativas": [
+        "1502",
+        "1532",
+        "1565",
+        "1580"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do tratado que encerrou a Primeira Guerra Mundial?",
+      "alternativas": [
+        "Tratado de Paris",
+        "Tratado de Versalhes",
+        "Tratado de Viena",
+        "Tratado de Westfália"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o líder da China comunista?",
+      "alternativas": [
+        "Sun Yat-sen",
+        "Chiang Kai-shek",
+        "Mao Tsé-Tung",
+        "Deng Xiaoping"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi criada a Liga das Nações?",
+      "alternativas": [
+        "1918",
+        "1919",
+        "1920",
+        "1921"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a primeira civilização a usar o ferro?",
+      "alternativas": [
+        "Egípcia",
+        "Hitita",
+        "Grega",
+        "Romana"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o descobridor do caminho marítimo para a Índia?",
+      "alternativas": [
+        "Cristóvão Colombo",
+        "Vasco da Gama",
+        "Fernão de Magalhães",
+        "Bartolomeu Dias"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Batalha de Waterloo?",
+      "alternativas": [
+        "1812",
+        "1814",
+        "1815",
+        "1817"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do período de terror na Revolução Francesa?",
+      "alternativas": [
+        "A Grande Revolução",
+        "O Terror",
+        "A Comuna",
+        "O Diretório"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o fundador do Império Persa?",
+      "alternativas": [
+        "Dario I",
+        "Xerxes",
+        "Ciro, o Grande",
+        "Artaxerxes"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Revolução Cubana?",
+      "alternativas": [
+        "1953",
+        "1956",
+        "1959",
+        "1961"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a maior batalha naval da Segunda Guerra Mundial no Pacífico?",
+      "alternativas": [
+        "Batalha de Midway",
+        "Batalha do Mar de Coral",
+        "Batalha de Leyte",
+        "Batalha de Okinawa"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Leonardo da Vinci?",
+      "alternativas": [
+        "Pintor e inventor",
+        "Navegador",
+        "Imperador",
+        "Papa"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Independência da Índia?",
+      "alternativas": [
+        "1945",
+        "1947",
+        "1949",
+        "1950"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do movimento de reforma religiosa do século XVI?",
+      "alternativas": [
+        "Renascimento",
+        "Reforma Protestante",
+        "Iluminismo",
+        "Contra-Reforma"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem iniciou a Reforma Protestante?",
+      "alternativas": [
+        "João Calvino",
+        "Martinho Lutero",
+        "Henrique VIII",
+        "Ulrico Zuínglio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a crise de 1929?",
+      "alternativas": [
+        "1927",
+        "1928",
+        "1929",
+        "1930"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o primeiro país a reconhecer a independência do Brasil?",
+      "alternativas": [
+        "Inglaterra",
+        "França",
+        "Estados Unidos",
+        "Argentina"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o líder do Apartheid na África do Sul?",
+      "alternativas": [
+        "Nelson Mandela",
+        "Hendrik Verwoerd",
+        "Desmond Tutu",
+        "F.W. de Klerk"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Revolta da Vacina no Brasil?",
+      "alternativas": [
+        "1900",
+        "1904",
+        "1910",
+        "1914"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a primeira potência a usar armas nucleares em guerra?",
+      "alternativas": [
+        "União Soviética",
+        "Estados Unidos",
+        "Reino Unido",
+        "França"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Átila?",
+      "alternativas": [
+        "Imperador romano",
+        "Rei huno",
+        "General persa",
+        "Faraó egípcio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Guerra do Vietnã?",
+      "alternativas": [
+        "1945-1954",
+        "1955-1975",
+        "1960-1980",
+        "1965-1985"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do movimento de independência indiana?",
+      "alternativas": [
+        "Satyagraha",
+        "Jihad",
+        "Intifada",
+        "Revolução"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o primeiro navegador a circunavegar o globo?",
+      "alternativas": [
+        "Cristóvão Colombo",
+        "Vasco da Gama",
+        "Fernão de Magalhães",
+        "James Cook"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Inconfidência Mineira?",
+      "alternativas": [
+        "1780",
+        "1785",
+        "1789",
+        "1792"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o maior império da história em extensão territorial?",
+      "alternativas": [
+        "Romano",
+        "Mongol",
+        "Britânico",
+        "Russo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Getúlio Vargas?",
+      "alternativas": [
+        "Imperador brasileiro",
+        "Presidente brasileiro",
+        "General brasileiro",
+        "Revolucionário brasileiro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Primeira Cruzada?",
+      "alternativas": [
+        "1095",
+        "1099",
+        "1145",
+        "1189"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o objetivo das Cruzadas?",
+      "alternativas": [
+        "Conquistar Roma",
+        "Recuperar Terra Santa",
+        "Invadir a Índia",
+        "Derrotar os Vikings"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o criador da psicanálise?",
+      "alternativas": [
+        "Carl Jung",
+        "Sigmund Freud",
+        "B.F. Skinner",
+        "Jean Piaget"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Revolução de 1930 no Brasil?",
+      "alternativas": [
+        "1928",
+        "1929",
+        "1930",
+        "1931"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a primeira potência europeia a colonizar a América?",
+      "alternativas": [
+        "Portugal",
+        "Espanha",
+        "Inglaterra",
+        "França"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o conquistador do Império Asteca?",
+      "alternativas": [
+        "Francisco Pizarro",
+        "Hernán Cortés",
+        "Pedro de Valdivia",
+        "Diego de Almagro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi o golpe militar no Brasil?",
+      "alternativas": [
+        "1960",
+        "1962",
+        "1964",
+        "1966"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome da aliança entre Alemanha, Itália e Japão na Segunda Guerra?",
+      "alternativas": [
+        "Tríplice Entente",
+        "Eixo",
+        "Aliados",
+        "Pacto de Varsóvia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o conquistador do Império Inca?",
+      "alternativas": [
+        "Hernán Cortés",
+        "Francisco Pizarro",
+        "Pedro de Valdivia",
+        "Gonzalo Pizarro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Guerra dos Cem Anos?",
+      "alternativas": [
+        "1237-1337",
+        "1337-1453",
+        "1453-1553",
+        "1553-1653"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a principal causa da Guerra dos Cem Anos?",
+      "alternativas": [
+        "Religião",
+        "Território",
+        "Sucessão ao trono",
+        "Comércio"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Ramsés II?",
+      "alternativas": [
+        "Rei persa",
+        "Faraó egípcio",
+        "Imperador romano",
+        "Rei assírio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Revolução Gloriosa na Inglaterra?",
+      "alternativas": [
+        "1648",
+        "1660",
+        "1688",
+        "1714"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do período de prosperidade nos EUA nos anos 1920?",
+      "alternativas": [
+        "Era de Ouro",
+        "Roaring Twenties",
+        "Belle Époque",
+        "Gilded Age"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o autor de 'O Príncipe'?",
+      "alternativas": [
+        "Dante",
+        "Maquiavel",
+        "Boccaccio",
+        "Petrarca"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Guerra do Golfo?",
+      "alternativas": [
+        "1989",
+        "1990",
+        "1991",
+        "1992"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a principal consequência da Revolução Industrial?",
+      "alternativas": [
+        "Urbanização",
+        "Ruralização",
+        "Feudalismo",
+        "Absolutismo"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Tiradentes?",
+      "alternativas": [
+        "Imperador brasileiro",
+        "Mártir da Independência",
+        "Presidente brasileiro",
+        "General português"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Conjuração Baiana?",
+      "alternativas": [
+        "1789",
+        "1792",
+        "1798",
+        "1800"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do sistema de governo absolutista na França?",
+      "alternativas": [
+        "República",
+        "Monarquia Absoluta",
+        "Democracia",
+        "Oligarquia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o rei que construiu Versalhes?",
+      "alternativas": [
+        "Luís XIII",
+        "Luís XIV",
+        "Luís XV",
+        "Luís XVI"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Queda de Constantinopla?",
+      "alternativas": [
+        "1204",
+        "1453",
+        "1492",
+        "1517"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual império conquistou Constantinopla?",
+      "alternativas": [
+        "Persa",
+        "Mongol",
+        "Otomano",
+        "Árabe"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o fundador do Império Mongol?",
+      "alternativas": [
+        "Kublai Khan",
+        "Tamerlão",
+        "Genghis Khan",
+        "Ogodei Khan"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Revolução Meiji no Japão?",
+      "alternativas": [
+        "1854",
+        "1868",
+        "1889",
+        "1905"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o nome dado ao período de modernização do Japão?",
+      "alternativas": [
+        "Era Showa",
+        "Era Meiji",
+        "Era Taisho",
+        "Era Edo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Charles Darwin?",
+      "alternativas": [
+        "Físico",
+        "Naturalista",
+        "Químico",
+        "Astrônomo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a publicação de 'A Origem das Espécies'?",
+      "alternativas": [
+        "1849",
+        "1859",
+        "1869",
+        "1879"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a causa da Guerra de Tróia segundo a mitologia?",
+      "alternativas": [
+        "Ouro",
+        "Helena",
+        "Território",
+        "Religião"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Péricles?",
+      "alternativas": [
+        "Rei espartano",
+        "Estadista ateniense",
+        "Filósofo grego",
+        "General macedônio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Guerra das Malvinas?",
+      "alternativas": [
+        "1980",
+        "1982",
+        "1984",
+        "1986"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual país colonizou a maior parte da África?",
+      "alternativas": [
+        "Portugal",
+        "Espanha",
+        "França",
+        "Inglaterra"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o primeiro imperador do Brasil?",
+      "alternativas": [
+        "D. João VI",
+        "D. Pedro I",
+        "D. Pedro II",
+        "José Bonifácio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Lei Áurea?",
+      "alternativas": [
+        "1850",
+        "1871",
+        "1888",
+        "1889"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do sistema de trabalho forçado nas colônias espanholas?",
+      "alternativas": [
+        "Mita",
+        "Encomienda",
+        "Hacienda",
+        "Ambos A e B"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Elizabeth I?",
+      "alternativas": [
+        "Rainha da França",
+        "Rainha da Inglaterra",
+        "Imperatriz da Rússia",
+        "Rainha da Espanha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi o Tratado de Tordesilhas?",
+      "alternativas": [
+        "1492",
+        "1494",
+        "1500",
+        "1502"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a consequência do Tratado de Tordesilhas?",
+      "alternativas": [
+        "Divisão da América entre Portugal e Espanha",
+        "Fim das Cruzadas",
+        "Início do Renascimento",
+        "Descoberta da Índia"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Galileu Galilei?",
+      "alternativas": [
+        "Pintor",
+        "Navegador",
+        "Cientista",
+        "Poeta"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Independência do México?",
+      "alternativas": [
+        "1810",
+        "1821",
+        "1836",
+        "1848"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o papel de D. Pedro I na independência do Brasil?",
+      "alternativas": [
+        "Opositor",
+        "Líder",
+        "Neutro",
+        "Exilado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Napoleão III?",
+      "alternativas": [
+        "Irmão de Napoleão",
+        "Filho de Napoleão",
+        "Sobrinho de Napoleão",
+        "Neto de Napoleão"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a unificação da Alemanha?",
+      "alternativas": [
+        "1848",
+        "1861",
+        "1871",
+        "1890"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem liderou a unificação da Alemanha?",
+      "alternativas": [
+        "Guilherme I",
+        "Bismarck",
+        "Metternich",
+        "Hindenburg"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a unificação da Itália?",
+      "alternativas": [
+        "1848",
+        "1861",
+        "1871",
+        "1880"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Giuseppe Garibaldi?",
+      "alternativas": [
+        "Rei italiano",
+        "Líder da unificação italiana",
+        "Papa",
+        "Compositor"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a primeira guerra em que foram usados aviões?",
+      "alternativas": [
+        "Guerra Civil Americana",
+        "Guerra Russo-Japonesa",
+        "Primeira Guerra Mundial",
+        "Guerra dos Bôeres"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o líder do movimento SolidarnoÅ›Ä‡ na Polônia?",
+      "alternativas": [
+        "Mikhail Gorbachev",
+        "Lech Walesa",
+        "Vaclav Havel",
+        "Boris Yeltsin"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi o fim da União Soviética?",
+      "alternativas": [
+        "1989",
+        "1990",
+        "1991",
+        "1992"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do plano americano para reconstruir a Europa após a Segunda Guerra?",
+      "alternativas": [
+        "Plano Truman",
+        "Plano Marshall",
+        "Plano Wilson",
+        "Plano Roosevelt"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Franklin D. Roosevelt?",
+      "alternativas": [
+        "General americano",
+        "Presidente americano",
+        "Cientista americano",
+        "Empresário americano"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Crise dos Mísseis de Cuba?",
+      "alternativas": [
+        "1960",
+        "1961",
+        "1962",
+        "1963"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o nome da política de distensão entre EUA e URSS?",
+      "alternativas": [
+        "Détente",
+        "Glasnost",
+        "Perestroika",
+        "Containment"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Winston Churchill?",
+      "alternativas": [
+        "Primeiro-ministro britânico",
+        "Rei britânico",
+        "General americano",
+        "Presidente francês"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Batalha de Stalingrado?",
+      "alternativas": [
+        "1941",
+        "1942-1943",
+        "1944",
+        "1945"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi a importância da Batalha de Stalingrado?",
+      "alternativas": [
+        "Primeira vitória aliada",
+        "Virada na frente oriental",
+        "Fim da guerra",
+        "Entrada dos EUA"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Anne Frank?",
+      "alternativas": [
+        "Espiã britânica",
+        "Vítima do Holocausto",
+        "Líder da resistência",
+        "Enfermeira de guerra"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Noite dos Cristais?",
+      "alternativas": [
+        "1933",
+        "1935",
+        "1938",
+        "1940"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do programa de extermínio nazista?",
+      "alternativas": [
+        "Solução Final",
+        "Operação Barbarossa",
+        "Blitzkrieg",
+        "Anschluss"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Oskar Schindler?",
+      "alternativas": [
+        "General nazista",
+        "Empresário que salvou judeus",
+        "Líder da resistência",
+        "Cientista nazista"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Guerra da Coreia?",
+      "alternativas": [
+        "1948-1950",
+        "1950-1953",
+        "1955-1960",
+        "1960-1965"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o resultado da Guerra da Coreia?",
+      "alternativas": [
+        "Vitória do Norte",
+        "Vitória do Sul",
+        "Divisão permanente",
+        "Unificação"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Ho Chi Minh?",
+      "alternativas": [
+        "Líder do Vietnã do Sul",
+        "Líder do Vietnã do Norte",
+        "Imperador japonês",
+        "General americano"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Queda de Saigon?",
+      "alternativas": [
+        "1973",
+        "1974",
+        "1975",
+        "1976"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o nome do movimento de resistência na Segunda Guerra Mundial na França?",
+      "alternativas": [
+        "Maquis",
+        "Partisans",
+        "Résistance",
+        "Underground"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Charles de Gaulle?",
+      "alternativas": [
+        "Rei francês",
+        "Líder da resistência francesa",
+        "Imperador francês",
+        "Revolucionário francês"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a independência da Argélia?",
+      "alternativas": [
+        "1954",
+        "1958",
+        "1962",
+        "1965"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual era o nome do movimento de libertação africano contra o colonialismo?",
+      "alternativas": [
+        "Pan-africanismo",
+        "Negritude",
+        "Descolonização",
+        "Todas as anteriores"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Kwame Nkrumah?",
+      "alternativas": [
+        "Líder sul-africano",
+        "Líder ganês",
+        "Líder queniano",
+        "Líder nigeriano"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a independência de Gana?",
+      "alternativas": [
+        "1955",
+        "1957",
+        "1960",
+        "1963"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual foi o primeiro país africano a se tornar independente após a Segunda Guerra?",
+      "alternativas": [
+        "Egito",
+        "Gana",
+        "Líbia",
+        "Etiópia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi Jomo Kenyatta?",
+      "alternativas": [
+        "Líder do Congo",
+        "Líder do Quênia",
+        "Líder da Tanzânia",
+        "Líder de Uganda"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano foi a Guerra Civil Espanhola?",
+      "alternativas": [
+        "1931-1934",
+        "1936-1939",
+        "1940-1943",
+        "1945-1948"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o ditador espanhol após a Guerra Civil?",
+      "alternativas": [
+        "Salazar",
+        "Mussolini",
+        "Franco",
+        "Perón"
+      ],
+      "correta": 2
+    }
+  ]
+}

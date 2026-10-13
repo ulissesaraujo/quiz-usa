@@ -1,0 +1,155 @@
+{
+  "tema": "olimpiadas",
+  "perguntas": [
+    {
+      "enunciado": "Em qual cidade da Grécia surgiram os Jogos Olímpicos antigos?",
+      "alternativas": ["Atenas", "Esparta", "Olímpia", "Tebas"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano foram realizados os primeiros Jogos Olímpicos modernos?",
+      "alternativas": ["1892", "1896", "1900", "1904"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos anéis compõem o símbolo olímpico?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o lema olímpico em latim?",
+      "alternativas": ["Veni, Vidi, Vici", "Citius, Altius, Fortius", "Carpe Diem", "E Pluribus Unum"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que cidade o Brasil sediou os Jogos Olímpicos?",
+      "alternativas": ["São Paulo", "Brasília", "Rio de Janeiro", "Belo Horizonte"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano o Rio de Janeiro sediou as Olimpíadas?",
+      "alternativas": ["2012", "2014", "2016", "2018"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual país lidera o quadro geral de medalhas da história olímpica?",
+      "alternativas": ["China", "Rússia", "Estados Unidos", "Alemanha"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual nadador americano é o maior medalhista olímpico de todos os tempos?",
+      "alternativas": ["Mark Spitz", "Michael Phelps", "Ryan Lochte", "Matt Biondi"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas medalhas de ouro Michael Phelps conquistou na carreira?",
+      "alternativas": ["18", "21", "23", "25"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi o primeiro país sul-americano a sediar uma Olimpíada?",
+      "alternativas": ["Argentina", "Chile", "Brasil", "Colômbia"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual ginasta brasileira conquistou medalha inédita em Tóquio 2020?",
+      "alternativas": ["Daiane dos Santos", "Jade Barbosa", "Rebeca Andrade", "Flávia Saraiva"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em qual esporte Usain Bolt se tornou lenda olímpica?",
+      "alternativas": ["Natação", "Atletismo", "Ginástica", "Ciclismo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a cor do anel que representa a Europa?",
+      "alternativas": ["Vermelho", "Azul", "Verde", "Amarelo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que cidade foram os Jogos Olímpicos de 2020 (realizados em 2021)?",
+      "alternativas": ["Pequim", "Paris", "Tóquio", "Los Angeles"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual país boicotou as Olimpíadas de Moscou 1980?",
+      "alternativas": ["China", "Estados Unidos", "Brasil", "Japão"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que significa o lema olímpico 'Citius, Altius, Fortius'?",
+      "alternativas": ["Paz, Amor, União", "Mais rápido, Mais alto, Mais forte", "Força, Coragem, Vitória", "Disciplina, Foco, Honra"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cidade sediará os Jogos Olímpicos de 2028?",
+      "alternativas": ["Paris", "Los Angeles", "Brisbane", "Tóquio"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual atleta brasileiro é recordista de medalhas olímpicas?",
+      "alternativas": ["Gustavo Borges", "Robert Scheidt", "Torben Grael", "Isaquias Queiroz"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em qual esporte Robert Scheidt conquistou suas medalhas?",
+      "alternativas": ["Natação", "Vela", "Judô", "Atletismo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi a primeira mulher brasileira a conquistar ouro olímpico?",
+      "alternativas": ["Hortência", "Maurren Maggi", "Daiane dos Santos", "Jackie Silva"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Em qual cidade Jesse Owens venceu 4 ouros desafiando o nazismo?",
+      "alternativas": ["Paris 1936", "Berlim 1936", "Londres 1948", "Helsinque 1952"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que a chama olímpica simboliza?",
+      "alternativas": ["Vitória", "Paz e união entre povos", "Força do atleta", "História grega"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país tem tradição em ginástica artística feminina?",
+      "alternativas": ["Estados Unidos", "Brasil", "Romênia", "Todas as anteriores"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual esporte foi incluído nas Olimpíadas de Tóquio 2020?",
+      "alternativas": ["Skate", "Boliche", "Críquete", "Squash"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual atleta é conhecida como 'Rainha da Pista' no atletismo?",
+      "alternativas": ["Allyson Felix", "Shelly-Ann Fraser-Pryce", "Elaine Thompson", "Florence Griffith-Joyner"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Em quantas Olimpíadas Usain Bolt competiu?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual cidade sediou as Olimpíadas em 2012?",
+      "alternativas": ["Pequim", "Londres", "Rio de Janeiro", "Atenas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o esporte mais antigo das Olimpíadas?",
+      "alternativas": ["Natação", "Atletismo", "Luta", "Boxe"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país sediou as Olimpíadas de Inverno em 2022?",
+      "alternativas": ["Japão", "Coreia do Sul", "China", "Rússia"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o intervalo de tempo entre cada edição dos Jogos Olímpicos de Verão?",
+      "alternativas": ["2 anos", "3 anos", "4 anos", "5 anos"],
+      "correta": 2
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "tema": "natacao",
+  "perguntas": [
+    {
+      "enunciado": "Qual nadador americano é o maior medalhista olímpico de todos os tempos?",
+      "alternativas": ["Ryan Lochte", "Michael Phelps", "Mark Spitz", "Matt Biondi"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o estilo de natação mais rápido?",
+      "alternativas": ["Costas", "Peito", "Borboleta", "Crawl"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual nadador brasileiro ganhou ouro nos 50m livre nas Olimpíadas de 2008?",
+      "alternativas": ["Gustavo Borges", "Fernando Scherer", "César Cielo", "Nicholas Santos"],
+      "correta": 2
+    }
+  ]
+}

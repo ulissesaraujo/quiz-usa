@@ -1,0 +1,155 @@
+{
+  "tema": "copa-do-mundo",
+  "perguntas": [
+    {
+      "enunciado": "Qual país tem mais títulos de Copa do Mundo?",
+      "alternativas": ["Alemanha", "Itália", "Argentina", "Brasil"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Quantas Copas do Mundo o Brasil conquistou?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano foi realizada a primeira Copa do Mundo?",
+      "alternativas": ["1926", "1930", "1934", "1938"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país sediou a primeira Copa do Mundo?",
+      "alternativas": ["Brasil", "Itália", "Uruguai", "França"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é o maior artilheiro da história das Copas?",
+      "alternativas": ["Pelé", "Ronaldo", "Miroslav Klose", "Gerd Müller"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual país venceu a Copa do Mundo de 2022 no Catar?",
+      "alternativas": ["França", "Brasil", "Argentina", "Croácia"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi o placar da final da Copa de 2014 entre Alemanha e Argentina?",
+      "alternativas": ["1x0", "2x1", "2x0", "3x2"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual jogador brasileiro foi artilheiro da Copa de 2002?",
+      "alternativas": ["Rivaldo", "Ronaldo", "Ronaldinho", "Kaká"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que país o Brasil sofreu a derrota de 7x1 em 2014?",
+      "alternativas": ["Argentina", "Brasil", "Alemanha", "Espanha"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual time derrotou o Brasil por 7x1 na Copa de 2014?",
+      "alternativas": ["Holanda", "França", "Alemanha", "Argentina"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantas Copas do Mundo o jogador Pelé conquistou?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual goleiro brasileiro foi eleito o melhor do mundo em 2002?",
+      "alternativas": ["Taffarel", "Dida", "Marcos", "Rogério Ceni"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano o Brasil conquistou o pentacampeonato?",
+      "alternativas": ["1998", "2002", "2006", "2010"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país sediou a Copa de 2006?",
+      "alternativas": ["França", "Itália", "Alemanha", "Espanha"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quem marcou o gol da França na final de 1998 contra o Brasil?",
+      "alternativas": ["Thierry Henry", "Zinedine Zidane", "David Trezeguet", "Youri Djorkaeff"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos gols Zidane marcou na final de 1998?",
+      "alternativas": ["1", "2", "3", "0"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual técnico comandou a seleção brasileira no penta de 2002?",
+      "alternativas": ["Zagallo", "Parreira", "Felipão", "Dunga"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual país foi bicampeão consecutivo em 1934 e 1938?",
+      "alternativas": ["Brasil", "Uruguai", "Itália", "Alemanha"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi o resultado do 'Maracanazo' em 1950?",
+      "alternativas": ["Brasil 1x2 Uruguai", "Brasil 0x2 Uruguai", "Brasil 2x2 Uruguai", "Brasil 1x0 Uruguai"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Quem foi o artilheiro da Copa de 2014?",
+      "alternativas": ["Neymar", "Messi", "James Rodríguez", "Thomas Müller"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador levantou a taça da Copa de 2022 pela Argentina?",
+      "alternativas": ["Di María", "Messi", "Martínez", "Álvarez"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas Copas do Mundo Messi disputou na carreira?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual país sediará a Copa do Mundo de 2026?",
+      "alternativas": ["China", "Austrália", "EUA, Canadá e México", "Marrocos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi o placar da final da Copa de 2022?",
+      "alternativas": ["Argentina 2x0 França", "Argentina 3x3 França (pênaltis)", "Argentina 4x2 França", "Argentina 1x0 França"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país venceu a Copa de 2018 na Rússia?",
+      "alternativas": ["Croácia", "Bélgica", "França", "Inglaterra"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quem fez o 'Hat-trick' na final de 2022 pela França?",
+      "alternativas": ["Griezmann", "Mbappé", "Giroud", "Dembélé"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual seleção foi a primeira bicampeã mundial?",
+      "alternativas": ["Brasil", "Itália", "Uruguai", "Alemanha"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'O Fenômeno'?",
+      "alternativas": ["Pelé", "Romário", "Ronaldo", "Ronaldinho"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano a seleção feminina brasileira foi vice-campeã mundial?",
+      "alternativas": ["2003", "2007", "2011", "2019"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual estádio sediou a final da Copa de 2014?",
+      "alternativas": ["Mané Garrincha", "Arena Corinthians", "Maracanã", "Castelão"],
+      "correta": 2
+    }
+  ]
+}

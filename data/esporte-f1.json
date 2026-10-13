@@ -1,0 +1,155 @@
+{
+  "tema": "f1",
+  "perguntas": [
+    {
+      "enunciado": "Qual piloto detém o recorde de mais títulos mundiais na Fórmula 1?",
+      "alternativas": ["Ayrton Senna", "Michael Schumacher", "Lewis Hamilton", "Max Verstappen"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual equipe é conhecida como 'Scuderia' e usa a cor vermelha?",
+      "alternativas": ["McLaren", "Red Bull", "Ferrari", "Mercedes"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que país está localizado o circuito de Mônaco?",
+      "alternativas": ["França", "Itália", "Mônaco", "Espanha"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual piloto brasileiro conquistou 3 títulos mundiais de F1?",
+      "alternativas": ["Nelson Piquet", "Ayrton Senna", "Emerson Fittipaldi", "Rubens Barrichello"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas equipes participam de uma temporada típica da F1?",
+      "alternativas": ["8", "10", "12", "14"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a cor tradicional dos carros da equipe McLaren?",
+      "alternativas": ["Vermelho", "Azul", "Papaia/Laranja", "Prata"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano Ayrton Senna faleceu em acidente no GP de Ímola?",
+      "alternativas": ["1992", "1993", "1994", "1995"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual circuito é conhecido como 'O Templo da Velocidade'?",
+      "alternativas": ["Silverstone", "Monza", "Spa-Francorchamps", "Suzuka"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual piloto é conhecido pelo apelido 'Professor'?",
+      "alternativas": ["Niki Lauda", "Alain Prost", "Nigel Mansell", "Jackie Stewart"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos pontos vale uma vitória na F1 atualmente?",
+      "alternativas": ["20", "25", "30", "35"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país sedia o GP de Interlagos?",
+      "alternativas": ["Argentina", "México", "Brasil", "Chile"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual equipe Max Verstappen defende desde 2016?",
+      "alternativas": ["Mercedes", "Ferrari", "Red Bull", "McLaren"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual piloto ficou conhecido como 'Iceman'?",
+      "alternativas": ["Mika Häkkinen", "Kimi Räikkönen", "Valtteri Bottas", "David Coulthard"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o circuito mais longo do calendário da F1?",
+      "alternativas": ["Monza", "Spa-Francorchamps", "Silverstone", "Jeddah"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual equipe Lewis Hamilton defendeu antes da Mercedes?",
+      "alternativas": ["Ferrari", "Red Bull", "McLaren", "Williams"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é a bandeira mostrada quando a corrida termina?",
+      "alternativas": ["Amarela", "Vermelha", "Xadrez", "Azul"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual piloto venceu o primeiro GP da era moderna (1950)?",
+      "alternativas": ["Juan Manuel Fangio", "Giuseppe Farina", "Alberto Ascari", "Stirling Moss"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que significa DRS na Fórmula 1?",
+      "alternativas": ["Drive Racing System", "Drag Reduction System", "Dynamic Racing Speed", "Driver Response System"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país é sede do GP de Suzuka?",
+      "alternativas": ["China", "Coreia do Sul", "Japão", "Singapura"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantos títulos mundiais Michael Schumacher conquistou?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é a volta mais rápida em classificação chamada?",
+      "alternativas": ["Hot Lap", "Pole Position", "Flying Lap", "Fast Lap"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual equipe dominou a era híbrida de 2014 a 2021?",
+      "alternativas": ["Ferrari", "Red Bull", "Mercedes", "McLaren"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual piloto ganhou seu primeiro título em 2021 após disputa acirrada?",
+      "alternativas": ["Lewis Hamilton", "Max Verstappen", "Valtteri Bottas", "Charles Leclerc"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual a cor da bandeira que indica perigo na pista?",
+      "alternativas": ["Verde", "Amarela", "Vermelha", "Azul"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual piloto é conhecido como 'O Leão'?",
+      "alternativas": ["Nigel Mansell", "Nelson Piquet", "Alain Prost", "Niki Lauda"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Quantas corridas aproximadamente tem uma temporada de F1?",
+      "alternativas": ["15-17", "18-20", "21-24", "25-28"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual circuito é conhecido por sua curva 'Eau Rouge'?",
+      "alternativas": ["Monza", "Silverstone", "Spa-Francorchamps", "Monaco"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual piloto britânico venceu o campeonato em 2009 pela Brawn GP?",
+      "alternativas": ["Lewis Hamilton", "Jenson Button", "David Coulthard", "Damon Hill"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é o 'parc fermé' na F1?",
+      "alternativas": ["Área de pit stop", "Área onde carros ficam sob inspeção", "Área de aquecimento", "Área de entrevistas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual fabricante de motores fornece para a Red Bull desde 2022?",
+      "alternativas": ["Honda/Red Bull Powertrains", "Mercedes", "Ferrari", "Renault"],
+      "correta": 0
+    }
+  ]
+}

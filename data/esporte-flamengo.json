@@ -1,0 +1,155 @@
+{
+  "tema": "flamengo",
+  "perguntas": [
+    {
+      "enunciado": "Em que ano o Flamengo foi fundado?",
+      "alternativas": ["1895", "1898", "1900", "1905"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual é o mascote oficial do Flamengo?",
+      "alternativas": ["Leão", "Urubu", "Águia", "Gavião"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas vezes o Flamengo foi campeão brasileiro?",
+      "alternativas": ["6", "7", "8", "9"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome do estádio do Flamengo?",
+      "alternativas": ["Maracanã", "Engenhão", "Gávea", "Ilha do Urubu"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantas Libertadores o Flamengo conquistou?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é o maior artilheiro da história do Flamengo?",
+      "alternativas": ["Zico", "Gabigol", "Romário", "Bebeto"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual é o maior rival do Flamengo no clássico carioca?",
+      "alternativas": ["Botafogo", "Fluminense", "Vasco", "Todos são rivais"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano o Flamengo venceu a Libertadores com gol de Gabigol nos acréscimos?",
+      "alternativas": ["2017", "2018", "2019", "2020"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual técnico comandou o Flamengo na Libertadores de 2019?",
+      "alternativas": ["Abel Braga", "Jorge Jesus", "Rogério Ceni", "Renato Gaúcho"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o apelido carinhoso dado ao Flamengo pela torcida?",
+      "alternativas": ["Tricolor", "Mengão", "Gigante", "Alvinegro"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'Galinho de Quintino'?",
+      "alternativas": ["Romário", "Bebeto", "Zico", "Leandro"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano o Flamengo venceu o Mundial de Clubes?",
+      "alternativas": ["1979", "1981", "1983", "1985"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual time o Flamengo derrotou na final da Libertadores 2019?",
+      "alternativas": ["Boca Juniors", "River Plate", "Palmeiras", "Grêmio"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos gols Gabigol marcou na final da Libertadores 2019?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a cor predominante do uniforme do Flamengo?",
+      "alternativas": ["Vermelho e branco", "Vermelho e preto", "Preto e branco", "Vermelho apenas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual goleiro fez parte do time campeão mundial de 1981?",
+      "alternativas": ["Júlio César", "Raul", "Cantarelli", "Diego Alves"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual o nome do bairro onde fica a sede social do Flamengo?",
+      "alternativas": ["Copacabana", "Gávea", "Leblon", "Ipanema"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual lateral-esquerdo ídolo marcou época no Flamengo nos anos 80?",
+      "alternativas": ["Leandro", "Júnior", "Mozer", "Andrade"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador ficou conhecido como 'Rei do Rio'?",
+      "alternativas": ["Romário", "Adriano", "Zico", "Ronaldinho"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que estádio foi disputada a final da Libertadores 2019?",
+      "alternativas": ["Maracanã", "Monumental de Lima", "La Bombonera", "Monumental de Núñez"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador do Flamengo foi artilheiro da Libertadores 2019?",
+      "alternativas": ["Bruno Henrique", "Gabigol", "Arrascaeta", "Éverton Ribeiro"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos títulos do Campeonato Carioca o Flamengo tem?",
+      "alternativas": ["25-30", "31-35", "36-40", "Mais de 40"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual hino do Flamengo tem a frase 'Uma vez Flamengo, sempre Flamengo'?",
+      "alternativas": ["Hino oficial", "Hino popular", "Hino do centenário", "Hino da torcida"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é conhecido pelo apelido 'Imperador' e jogou no Flamengo?",
+      "alternativas": ["Romário", "Ronaldinho", "Adriano", "Vagner Love"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em qual esporte o Flamengo também é uma potência além do futebol?",
+      "alternativas": ["Vôlei", "Basquete", "Natação", "Remo"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual foi o placar da final do Mundial de 1981 contra o Liverpool?",
+      "alternativas": ["2x0", "3x0", "2x1", "3x1"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual meia uruguaio se destacou no Flamengo a partir de 2019?",
+      "alternativas": ["Suárez", "De Arrascaeta", "Cavani", "Valverde"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o grito de guerra mais famoso da torcida do Flamengo?",
+      "alternativas": ["Eu sou Flamengo", "Vamos Flamengo", "Mengo, Mengo", "Fla, Fla, Flamengo"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual técnico português treinou o Flamengo em 2019?",
+      "alternativas": ["José Mourinho", "Jorge Jesus", "André Villas-Boas", "Leonardo Jardim"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que década o Flamengo teve sua 'Geração de Ouro' com Zico?",
+      "alternativas": ["1970", "1980", "1990", "2000"],
+      "correta": 1
+    }
+  ]
+}

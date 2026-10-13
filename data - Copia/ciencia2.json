@@ -1,0 +1,2199 @@
+{"perguntas": [
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o resultado da expressão numérica: (321 - 123) x (123 - 321) x (123 - 123)?",
+    "alternativas": [
+      "-39204",
+      "0",
+      "39204",
+      "1"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a área de um quadrado cuja medida dos lados é igual a 5 cm?",
+    "alternativas": [
+      "20 cm²",
+      "25 cm²",
+      "10 cm²",
+      "50 cm²"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a área de um triângulo que possui uma base de 8 cm e uma altura de 5 cm?",
+    "alternativas": [
+      "40 cm²",
+      "13 cm²",
+      "20 cm²",
+      "26 cm²"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se um cubo tem arestas medindo 3 cm, qual é o valor exato do seu volume?",
+    "alternativas": [
+      "9 cm³",
+      "18 cm³",
+      "27 cm³",
+      "54 cm³"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha matemática: Se 5 gatos comem 5 ratos em 5 minutos, quanto tempo levam 100 gatos para comer 100 ratos?",
+    "alternativas": [
+      "100 minutos",
+      "5 minutos",
+      "20 minutos",
+      "1 minuto"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual elemento químico possui a sigla 'Hg', cujo nome deriva do latim hydrargyrum (prata líquida)?",
+    "alternativas": [
+      "Prata",
+      "Hidrogênio",
+      "Mercúrio",
+      "Hélio"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quantos segundos há exatamente em um dia inteiro (24 horas)?",
+    "alternativas": [
+      "86.400 segundos",
+      "3.600 segundos",
+      "1.440 segundos",
+      "43.200 segundos"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o único planeta do Sistema Solar que gira deitado de lado sobre o seu próprio eixo?",
+    "alternativas": [
+      "Marte",
+      "Netuno",
+      "Saturno",
+      "Urano"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o resultado da operação matemática clássica: 5 + 5 x 5 + 5?",
+    "alternativas": [
+      "55",
+      "35",
+      "50",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Em biologia, qual é o principal órgão do corpo humano responsável pela desintoxicação do sangue e produção de bile?",
+    "alternativas": [
+      "Rins",
+      "Fígado",
+      "Pâncreas",
+      "Estômago"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a velocidade aproximada da luz no vácuo?",
+    "alternativas": [
+      "300.000 km/s",
+      "150.000 km/s",
+      "3.000 km/s",
+      "1.080.000 km/h"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se você tem um poço de 10 metros de profundidade e um caracol sobe 3 metros de dia, mas escorrega 2 metros à noite, em quantos dias ele chega ao topo?",
+    "alternativas": [
+      "10 dias",
+      "7 dias",
+      "8 dias",
+      "5 dias"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o gás mais abundante na atmosfera da Terra?",
+    "alternativas": [
+      "Oxigênio",
+      "Dióxido de Carbono",
+      "Hidrogênio",
+      "Nitrogênio"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a raiz quadrada de 144 somada com 10?",
+    "alternativas": [
+      "22",
+      "24",
+      "14",
+      "20"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Na física, qual lei estabelece que 'para toda ação há uma reação de força igual e oposta'?",
+    "alternativas": [
+      "Primeira Lei de Newton",
+      "Segunda Lei de Newton",
+      "Terceira Lei de Newton",
+      "Lei da Gravitação Universal"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da organela celular conhecida popularmente como a 'usina de energia' da célula?",
+    "alternativas": [
+      "Ribossomo",
+      "Mitocôndria",
+      "Complexo de Golgi",
+      "Lisossomo"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha lógica: Se um tijolo pesa 1 quilo mais meio tijolo, quanto pesa um tijolo inteiro?",
+    "alternativas": [
+      "1,5 kg",
+      "2 kg",
+      "1 kg",
+      "2,5 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor do número Pi ($\\pi$) arredondado para as duas primeiras casas decimais?",
+    "alternativas": [
+      "3,12",
+      "3,16",
+      "3,14",
+      "3,41"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual organela é exclusiva das células vegetais e é responsável pelo processo de fotossíntese?",
+    "alternativas": [
+      "Cloroplasto",
+      "Vacúolo",
+      "Parede Celular",
+      "Centríolo"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a fórmula química da água oxigenada?",
+    "alternativas": [
+      "H2O",
+      "H2O2",
+      "HO2",
+      "H3O"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quanto é 50% de 200 dividido por 25% de 40?",
+    "alternativas": [
+      "10",
+      "4",
+      "2",
+      "5"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual animal possui o sangue na cor azul devido à presença de hemocianina em vez de hemoglobina?",
+    "alternativas": [
+      "Tubarão",
+      "Polvo",
+      "Crocodilo",
+      "Sapo"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se um trem elétrico viaja para o norte a 100 km/h e o vento sopra forte para o leste a 50 km/h, para onde vai a fumaça do trem?",
+    "alternativas": [
+      "Para o leste",
+      "Para o norte",
+      "Para o sul",
+      "O trem elétrico não solta fumaça"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o osso mais longo e pesado do corpo humano?",
+    "alternativas": [
+      "Úmero",
+      "Fêmur",
+      "Tíbia",
+      "Fíbula"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o resultado de 2 elevado à décima potência ($2^{10}$)?",
+    "alternativas": [
+      "512",
+      "2048",
+      "1024",
+      "1000"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a unidade de medida padrão da força no Sistema Internacional (SI)?",
+    "alternativas": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o pH de uma solução neutra, como a água pura, a 25 °C?",
+    "alternativas": [
+      "0",
+      "14",
+      "7",
+      "1"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de irmãos: Pai de Maria tem 5 filhas: Nana, Nene, Nini, Nono e... qual é o nome da quinta filha?",
+    "alternativas": [
+      "Nunu",
+      "Maria",
+      "Nina",
+      "Noca"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da galáxia mais próxima da Via Láctea que pode ser vista a olho nu?",
+    "alternativas": [
+      "Andrômeda",
+      "Magalhães",
+      "Sombreiro",
+      "Triângulo"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quantos ossos tem o corpo de um ser humano adulto saudável?",
+    "alternativas": [
+      "300",
+      "180",
+      "206",
+      "214"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se três galinhas põem três ovos em três dias, quanto tempo leva uma galinha para pôr um ovo?",
+    "alternativas": [
+      "1 dia",
+      "3 dias",
+      "33 horas",
+      "Não é possível determinar exatamente com esses dados"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o metal que se apresenta no estado líquido à temperatura ambiente?",
+    "alternativas": [
+      "Cobre",
+      "Mercúrio",
+      "Zinco",
+      "Alumínio"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a porcentagem aproximada de água na superfície da Terra?",
+    "alternativas": [
+      "50%",
+      "60%",
+      "71%",
+      "85%"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor de x na equação simples: 3x - 5 = 16?",
+    "alternativas": [
+      "5",
+      "7",
+      "9",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do cientista que formulou a Teoria da Relatividade Geral?",
+    "alternativas": [
+      "Isaac Newton",
+      "Nikola Tesla",
+      "Galileu Galilei",
+      "Albert Einstein"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quantos lados tem um polígono regular cuja soma dos ângulos internos é igual a 1080 graus?",
+    "alternativas": [
+      "6 lados",
+      "8 lados",
+      "10 lados",
+      "12 lados"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual vitamina é sintetizada pelo organismo humano através da exposição aos raios solares ultravioleta tipo B?",
+    "alternativas": [
+      "Vitamina A",
+      "Vitamina C",
+      "Vitamina D",
+      "Vitamina K"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha: O que é mais pesado, 1 quilo de chumbo ou 1 quilo de algodão?",
+    "alternativas": [
+      "O chumbo",
+      "O algodão",
+      "Pesam exatamente o mesmo",
+      "Depende da umidade do ar"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o menor osso do corpo humano, localizado dentro do ouvido?",
+    "alternativas": [
+      "Bigorna",
+      "Martelo",
+      "Estribo",
+      "Cúbito"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o resultado de 999 x 0 + 1?",
+    "alternativas": [
+      "0",
+      "999",
+      "1000",
+      "1"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do processo pelo qual as plantas produzem seu próprio alimento utilizando luz solar, água e gás carbônico?",
+    "alternativas": [
+      "Respiração celular",
+      "Fotossíntese",
+      "Transpiração",
+      "Fermentação"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a temperatura em Celsius em que a água ferve ao nível do mar?",
+    "alternativas": [
+      "90 °C",
+      "100 °C",
+      "212 °C",
+      "373 °C"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se você tem uma gaveta com 4 meias pretas e 4 meias brancas, qual é o número mínimo de meias que você deve retirar no escuro para garantir que tem um par da mesma cor?",
+    "alternativas": [
+      "2 meias",
+      "3 meias",
+      "4 meias",
+      "5 meias"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da força invisível que atrai os corpos para o centro da Terra?",
+    "alternativas": [
+      "Força Centrífuga",
+      "Magnetismo",
+      "Gravidade",
+      "Inércia"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da hipotenusa de um triângulo retângulo cujos catetos medem 3 cm e 4 cm?",
+    "alternativas": [
+      "5 cm",
+      "7 cm",
+      "12 cm",
+      "6 cm"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o gás liberado pelas plantas durante o processo de fotossíntese?",
+    "alternativas": [
+      "Dióxido de Carbono",
+      "Nitrogênio",
+      "Oxigênio",
+      "Monóxido de Carbono"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o menor número primo existente?",
+    "alternativas": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da camada mais externa da atmosfera da Terra?",
+    "alternativas": [
+      "Troposfera",
+      "Estratosfera",
+      "Mesosfera",
+      "Exosfera"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quanto é a metade de dois mais dois?",
+    "alternativas": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o principal componente químico do vidro comum?",
+    "alternativas": [
+      "Sílica (Dióxido de Silício)",
+      "Carbonato de Cálcio",
+      "Cloreto de Sódio",
+      "Óxido de Ferro"
+    ],
+    "correta": 0
+  },{
+    "tema": "ciencia",
+    "enunciado": "Qual é a área de um círculo que possui um raio de 3 cm? (Use $\\pi$ = 3,14)",
+    "alternativas": [
+      "18,84 cm²",
+      "28,26 cm²",
+      "9,42 cm²",
+      "31,4 cm²"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da expressão: 10 + 10 x 0 - 10 / 10?",
+    "alternativas": [
+      "0",
+      "10",
+      "9",
+      "1"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da substância química popularmente conhecida como 'gelo seco'?",
+    "alternativas": [
+      "Água congelada",
+      "Dióxido de carbono no estado sólido",
+      "Nitrogênio líquido",
+      "Monóxido de carbono sólido"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se um relógio de ponteiros marca exatamente 3h15min, qual é o menor ângulo formado entre o ponteiro das horas e o dos minutos?",
+    "alternativas": [
+      "0°",
+      "7,5°",
+      "15°",
+      "90°"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a unidade de medida utilizada na física para medir a frequência de uma onda (ciclos por segundo)?",
+    "alternativas": [
+      "Decibéis",
+      "Hertz",
+      "Tesla",
+      "Weber"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual animal terrestre é considerado o mais rápido do mundo em corridas curtas?",
+    "alternativas": [
+      "Leão",
+      "Antilocapra",
+      "Guepardo (Chita)",
+      "Cavalo Quarto de Milha"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o perímetro de um retângulo que possui 12 cm de comprimento e 5 cm de largura?",
+    "alternativas": [
+      "17 cm",
+      "60 cm",
+      "34 cm",
+      "24 cm"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quantos litros de água cabem exatamente em uma caixa d'água cúbica que mede 1 metro de cada lado?",
+    "alternativas": [
+      "10 litros",
+      "100 litros",
+      "1.000 litros",
+      "10.000 litros"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Na tabela periódica, qual é o símbolo químico do ouro?",
+    "alternativas": [
+      "Ag",
+      "Au",
+      "Pb",
+      "Fe"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha numérica: Se você tem 3 maçãs e tira 4, com quantas maçãs você fica?",
+    "alternativas": [
+      "Nenhuma",
+      "Fica com 4 maçãs (as que você tirou)",
+      "Fica com -1 maçã",
+      "Fica com 1 maçã"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da força que empurra um objeto para cima quando ele está imerso em um fluido (princípio de Arquimedes)?",
+    "alternativas": [
+      "Força Normal",
+      "Empuxo",
+      "Atrito",
+      "Tensão superficial"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a raiz cúbica de 125?",
+    "alternativas": [
+      "5",
+      "25",
+      "15",
+      "50"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o órgão humano responsável pelo controle do equilíbrio e da coordenação motora fina?",
+    "alternativas": [
+      "Cérebro",
+      "Cerebelo",
+      "Bulbo raquidiano",
+      "Hipotálamo"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o resultado da operação: (2 + 2) x (2 - 2) / 2?",
+    "alternativas": [
+      "4",
+      "2",
+      "0",
+      "8"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o planeta mais quente do Sistema Solar, mesmo não sendo o mais próximo do Sol?",
+    "alternativas": [
+      "Mercúrio",
+      "Marte",
+      "Vênus",
+      "Júpiter"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quantos graus mede cada ângulo interno de um triângulo equilátero?",
+    "alternativas": [
+      "45°",
+      "60°",
+      "90°",
+      "120°"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do ácido presente no estômago humano que auxilia na digestão dos alimentos?",
+    "alternativas": [
+      "Ácido Sulfúrico",
+      "Ácido Acético",
+      "Ácido Clorídrico",
+      "Ácido Cítrico"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de lógica: Ontem foi o amanhã de ontem. Que dia é hoje?",
+    "alternativas": [
+      "Amanhã",
+      "Ontem",
+      "Hoje",
+      "Anteontem"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a fórmula matemática para calcular a área de um trapézio?",
+    "alternativas": [
+      "Base maior x Altura",
+      "[(Base maior + Base menor) x Altura] / 2",
+      "Lado ao quadrado",
+      "(Diagonal maior x Diagonal menor) / 2"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a maior estrutura viva do planeta Terra feita por animais, visível até do espaço?",
+    "alternativas": [
+      "Floresta Amazônica",
+      "Grande Barreira de Corais",
+      "Cordilheira dos Andes",
+      "Deserto do Saara"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quanto vale 0 elevado a 0 ($0^0$) na matemática padrão avançada?",
+    "alternativas": [
+      "0",
+      "1",
+      "Indeterminado (ou definido como 1 em muitas áreas)",
+      "Infinito"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do cientista que propôs as Três Leis do Movimento Planetário?",
+    "alternativas": [
+      "Johannes Kepler",
+      "Isaac Newton",
+      "Copérnico",
+      "Galileu Galilei"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quantos pares de costelas possui um ser humano adulto típico?",
+    "alternativas": [
+      "10 pares",
+      "11 pares",
+      "12 pares",
+      "14 pares"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se um carro viaja a uma velocidade constante de 80 km/h, quanto tempo ele leva para percorrer 200 km?",
+    "alternativas": [
+      "2 horas",
+      "2 horas e 30 minutos",
+      "3 horas",
+      "1 hora e 45 minutos"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o gás nobre mais leve e o segundo elemento mais abundante do universo?",
+    "alternativas": [
+      "Neônio",
+      "Argônio",
+      "Hélio",
+      "Criptônio"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o volume de um cilindro que possui raio da base igual a 2 cm e altura de 5 cm? (Use $\\pi$ = 3)",
+    "alternativas": [
+      "30 cm³",
+      "60 cm³",
+      "20 cm³",
+      "40 cm³"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha: Quantos meses do ano têm 28 dias?",
+    "alternativas": [
+      "Apenas 1 (fevereiro)",
+      "Nenhum",
+      "Todos os 12 meses",
+      "Apenas nos anos bissextos"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a principal função dos glóbulos brancos (leucócitos) no corpo humano?",
+    "alternativas": [
+      "Transportar oxigênio",
+      "Combater infecções e defesa imunológica",
+      "Coagulação sanguínea",
+      "Digestão de gorduras"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor de x na proporção: 4 / 8 = x / 32?",
+    "alternativas": [
+      "12",
+      "16",
+      "8",
+      "24"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da camada de ozônio que protege a Terra contra os raios ultravioleta nocivos?",
+    "alternativas": [
+      "Troposfera",
+      "Estratosfera",
+      "Termosfera",
+      "Mesosfera"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o resultado de 7 fatorial ($7!$)?",
+    "alternativas": [
+      "720",
+      "5040",
+      "40320",
+      "2520"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do processo físico de mudança do estado sólido diretamente para o estado gasoso?",
+    "alternativas": [
+      "Fusão",
+      "Vaporização",
+      "Sublimação",
+      "Condensação"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se você tem um bolo e corta ele em 3 partes iguais, depois come 2 partes, que fração do bolo sobrou?",
+    "alternativas": [
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/4"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a constelação que aponta sempre para o Polo Sul Celeste?",
+    "alternativas": [
+      "Ursa Maior",
+      "Cruzeiro do Sul",
+      "Órion",
+      "Plêiades"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual animal marinho possui três corações e sangue azul?",
+    "alternativas": [
+      "Baleia azul",
+      "Tubarão branco",
+      "Polvo",
+      "Tartaruga marinha"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da soma dos ângulos internos de um pentágono regular?",
+    "alternativas": [
+      "360°",
+      "540°",
+      "720°",
+      "1080°"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da partícula subatômica que possui carga elétrica negativa?",
+    "alternativas": [
+      "Próton",
+      "Nêutron",
+      "Elétron",
+      "Fóton"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha: Se um avião cai exatamente na fronteira entre o Brasil e o Paraguai, onde devem ser enterrados os sobreviventes?",
+    "alternativas": [
+      "No Brasil",
+      "No Paraguai",
+      "No local do acidente",
+      "Eles não são enterrados, pois são sobreviventes"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a unidade de medida de resistência elétrica no Sistema Internacional?",
+    "alternativas": [
+      "Volt",
+      "Ampère",
+      "Ohm",
+      "Watt"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quanto é 25% de 80 mais 40% de 50?",
+    "alternativas": [
+      "40",
+      "35",
+      "45",
+      "50"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do maior osso do crânio humano que forma a mandíbula inferior?",
+    "alternativas": [
+      "Maxilar",
+      "Mandíbula",
+      "Zigomático",
+      "Nasal"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor exato da raiz quadrada de 1024?",
+    "alternativas": [
+      "32",
+      "28",
+      "34",
+      "64"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o principal tipo de rocha que compõe a crosta dos oceanos?",
+    "alternativas": [
+      "Granito",
+      "Basalto",
+      "Calcário",
+      "Mármore"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se 2 pintores pintam uma parede em 6 horas, quanto tempo levariam 4 pintores para pintar a mesma parede?",
+    "alternativas": [
+      "12 horas",
+      "3 horas",
+      "4 horas",
+      "1 hora e meia"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do cientista que descobriu a penicilina, o primeiro antibiotico do mundo?",
+    "alternativas": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Marie Curie",
+      "Gregor Mendel"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor do logaritmo de 1 na base 10 ($\\log_{10} 1$)?",
+    "alternativas": [
+      "1",
+      "10",
+      "0",
+      "Indeterminado"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a cor predominante da luz emitida pelas estrelas mais quentes do universo?",
+    "alternativas": [
+      "Vermelha",
+      "Amarela",
+      "Azul",
+      "Laranja"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha: O que tem chaves mas não abre nenhuma porta?",
+    "alternativas": [
+      "Um armário",
+      "Um piano",
+      "Um cadeado quebrado",
+      "Um cofre"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome dado ao ponto de uma órbita elíptica em que um planeta está mais próximo do Sol?",
+    "alternativas": [
+      "Afélio",
+      "Periélio",
+      "Apogeu",
+      "Perigeu"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o resultado de 100 dividido por 0,5 somado a 10?",
+    "alternativas": [
+      "60",
+      "210",
+      "110",
+      "510"
+    ],
+    "correta": 1
+  },{
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da expressão numérica: (50 - 50) x (25 + 25) x (10 - 5)?",
+    "alternativas": [
+      "2500",
+      "0",
+      "12500",
+      "-2500"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a área de um losango cujas diagonais medem 10 cm e 6 cm?",
+    "alternativas": [
+      "60 cm²",
+      "30 cm²",
+      "15 cm²",
+      "16 cm²"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o elemento químico mais abundante na crosta terrestre em termos de massa?",
+    "alternativas": [
+      "Silício",
+      "Ferro",
+      "Oxigênio",
+      "Alumínio"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se um relógio atrasa 2 minutos a cada hora, quantas horas ele atrasará exatamente em um dia (24 horas)?",
+    "alternativas": [
+      "24 minutos",
+      "48 minutos",
+      "1 hora",
+      "2 horas"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a unidade utilizada para medir a intensidade sonora (volume do som)?",
+    "alternativas": [
+      "Hertz",
+      "Decibel",
+      "Watt",
+      "Joule"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da maior lua do planeta Júpiter e de todo o Sistema Solar?",
+    "alternativas": [
+      "Titã",
+      "Europa",
+      "Ganimedes",
+      "Io"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor de x na equação exponencial: $2^x = 32$?",
+    "alternativas": [
+      "4",
+      "5",
+      "6",
+      "3"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da substância responsável por dar a cor verde às plantas e capturar a luz solar?",
+    "alternativas": [
+      "Carotenóide",
+      "Clorofila",
+      "Antocianina",
+      "Xantofila"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de matemática básica: Quanto é 10 dividido por metade, mais 10?",
+    "alternativas": [
+      "15",
+      "20",
+      "30",
+      "5"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o pH de uma substância altamente ácida, como o limão ou o ácido estomacal?",
+    "alternativas": [
+      "Próximo de 7",
+      "Entre 8 e 10",
+      "Próximo de 0 ou 2",
+      "Exatamente 14"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a área lateral de um cubo cuja aresta mede 4 cm?",
+    "alternativas": [
+      "64 cm²",
+      "96 cm²",
+      "48 cm²",
+      "16 cm²"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do cientista que propôs o modelo atômico conhecido como 'pudin de passas'?",
+    "alternativas": [
+      "John Dalton",
+      "J.J. Thomson",
+      "Ernest Rutherford",
+      "Niels Bohr"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se você tem 5 velas acesas em uma sala e o vento apaga 2 delas, quantas velas restam na sala?",
+    "alternativas": [
+      "3 velas",
+      "5 velas (as 2 apagadas continuam na sala)",
+      "Nenhuma",
+      "2 velas"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a velocidade do som no ar seco, ao nível do mar e a 20 °C, aproximadamente?",
+    "alternativas": [
+      "340 m/s",
+      "300.000 km/s",
+      "1.200 m/s",
+      "150 m/s"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da soma dos ângulos internos de um hexágono regular?",
+    "alternativas": [
+      "540°",
+      "720°",
+      "360°",
+      "1080°"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da principal artéria do corpo humano, que transporta sangue oxigenado do coração para o resto do corpo?",
+    "alternativas": [
+      "Artéria Pulmonar",
+      "Veia Cava",
+      "Artéria Aorta",
+      "Carótida"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quanto é 1% de 1000 somado a 1000% de 1?",
+    "alternativas": [
+      "20",
+      "11",
+      "101",
+      "2"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o estado físico da matéria em que os átomos possuem tanta energia que os elétrons se desprendem, formando um gás ionizado?",
+    "alternativas": [
+      "Líquido",
+      "Sólido",
+      "Plasma",
+      "Condensado de Bose-Einstein"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de raciocínio: Se um pastor tem 15 ovelhas e todas, exceto 8, morrem, quantas ovelhas sobram?",
+    "alternativas": [
+      "7 ovelhas",
+      "8 ovelhas",
+      "Nenhuma",
+      "15 ovelhas"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a fórmula de Bhaskara utilizada para encontrar as raízes de uma equação do segundo grau?",
+    "alternativas": [
+      "x = -b ± √(delta) / 2a",
+      "x = a² + b²",
+      "x = -b / a",
+      "x = 2at + v0"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do animal mamífero que é o único capaz de voar de verdade?",
+    "alternativas": [
+      "Esquilo-voador",
+      "Morcego",
+      "Pinguim",
+      "Ornitorrinco"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a unidade de medida padrão da pressão atmosférica ou mecânica no Sistema Internacional?",
+    "alternativas": [
+      "Joule",
+      "Pascal",
+      "Watt",
+      "Newton"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se um produto custa R$ 100 e sofre um desconto de 20%, e depois o novo valor sofre um aumento de 20%, qual é o preço final?",
+    "alternativas": [
+      "R$ 100",
+      "R$ 96",
+      "R$ 104",
+      "R$ 90"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do processo químico em que uma substância ganha elétrons?",
+    "alternativas": [
+      "Oxidação",
+      "Redução",
+      "Neutralização",
+      "Hidrólise"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor exato de 3 fatorial multiplicado por 3 fatorial ($3! \times 3!$)?",
+    "alternativas": [
+      "36",
+      "18",
+      "12",
+      "9"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da camada da Terra localizada logo abaixo da crosta terrestre?",
+    "alternativas": [
+      "Núcleo interno",
+      "Manto",
+      "Núcleo externo",
+      "Litosfera"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha clássica: Quantas vezes o número 9 aparece inteiro entre 0 e 100?",
+    "alternativas": [
+      "10 vezes",
+      "11 vezes",
+      "19 vezes",
+      "20 vezes"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a principal função dos ribossomos nas células vivas?",
+    "alternativas": [
+      "Digestão celular",
+      "Síntese de proteínas",
+      "Produção de energia",
+      "Armazenamento de água"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor do cosseno de 0 graus ($\\cos 0°$)?",
+    "alternativas": [
+      "0",
+      "1",
+      "-1",
+      "0,5"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do fenômeno óptico responsável pela formação do arco-íris no céu?",
+    "alternativas": [
+      "Reflexão total e difração",
+      "Refração, dispersão e reflexão da luz na água",
+      "Polarização da luz solar",
+      "Interferência quântica"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se uma torneira enche um reservatório em 4 horas e outra torneira esvazia o mesmo reservatório em 6 horas, trabalhando juntas, em quanto tempo o reservatório enche?",
+    "alternativas": [
+      "5 horas",
+      "10 horas",
+      "12 horas",
+      "2 horas"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o metal mais abundante encontrado na composição da crosta terrestre?",
+    "alternativas": [
+      "Ferro",
+      "Cobre",
+      "Alumínio",
+      "Ouro"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da raiz quadrada de 0,25?",
+    "alternativas": [
+      "0,5",
+      "0,05",
+      "0,2",
+      "0,025"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do hormônio responsável por regular os níveis de açúcar (glicose) no sangue humano?",
+    "alternativas": [
+      "Adrenalina",
+      "Insulina",
+      "Tireoxina",
+      "Melatonina"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de datas: Se o dia anterior ao de ontem é três dias depois de sábado, que dia é hoje?",
+    "alternativas": [
+      "Domingo",
+      "Segunda-feira",
+      "Terça-feira",
+      "Quarta-feira"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da galáxia espiral gigante mais próxima da nossa Via Láctea?",
+    "alternativas": [
+      "Galáxia de Andrômeda",
+      "Grande Nuvem de Magalhães",
+      "Galáxia do Sombreiro",
+      "Galáxia do Triângulo"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da operação logarítmica: $\\log_{2} 32$?",
+    "alternativas": [
+      "4",
+      "5",
+      "6",
+      "16"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Na física quântica e mecânica, o que mede a grandeza chamada 'Joule'?",
+    "alternativas": [
+      "Potência elétrica",
+      "Trabalho, energia e quantidade de calor",
+      "Carga elétrica",
+      "Velocidade angular"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se você divide 30 por meio e soma 10, qual é o resultado final?",
+    "alternativas": [
+      "25",
+      "40",
+      "70",
+      "55"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da glândula humana considerada a 'glândula mestre' por controlar várias outras glândulas do corpo?",
+    "alternativas": [
+      "Tireoide",
+      "Pâncreas",
+      "Hipófise (Pituitária)",
+      "Adrenal"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a área de um setor circular cujo raio mede 6 cm e o arco mede 90 graus (um quarto do círculo)?",
+    "alternativas": [
+      "9π cm²",
+      "36π cm²",
+      "18π cm²",
+      "6π cm²"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o elemento químico mais leve de toda a tabela periódica?",
+    "alternativas": [
+      "Hélio",
+      "Hidrogênio",
+      "Lítio",
+      "Carbono"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha: Se um galo bota um ovo no telhado de uma casa inclinada, para qual lado o ovo cai?",
+    "alternativas": [
+      "Para o lado esquerdo",
+      "Para o lado direito",
+      "Para o chão",
+      "Galo não bota ovo"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da soma dos primeiros 100 números inteiros positivos (de 1 até 100)?",
+    "alternativas": [
+      "5000",
+      "5050",
+      "5100",
+      "4950"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do cientista que formulou as Leis da Genética clássica através de experimentos com ervilhas?",
+    "alternativas": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Louis Pasteur",
+      "James Watson"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a energia associada ao movimento de um corpo na mecânica clássica?",
+    "alternativas": [
+      "Energia Potencial",
+      "Energia Cinética",
+      "Energia Térmica",
+      "Energia Química"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quantos segundos equivalem exatamente a 1 hora e 15 minutos?",
+    "alternativas": [
+      "4500 segundos",
+      "3600 segundos",
+      "5400 segundos",
+      "4200 segundos"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do polígono regular que possui exatamente 9 lados?",
+    "alternativas": [
+      "Heptágono",
+      "Octógono",
+      "Eneágono (Nonágono)",
+      "Decágono"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome dado à camada de transição na atmosfera onde a temperatura diminui rapidamente com a altitude, sendo a camada onde ocorrem os fenômenos meteorológicos?",
+    "alternativas": [
+      "Estratosfera",
+      "Troposfera",
+      "Mesosfera",
+      "Termosfera"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se você joga uma moeda 3 vezes, qual é a probabilidade exata de obter exatamente 3 coroas?",
+    "alternativas": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/6"
+    ],
+    "correta": 2
+  },{
+    "tema": "ciencia",
+    "enunciado": "Qual é a área de um trapézio que possui base maior de 10 cm, base menor de 6 cm e altura de 5 cm?",
+    "alternativas": [
+      "40 cm²",
+      "80 cm²",
+      "30 cm²",
+      "50 cm²"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a fórmula química do gás oxigênio molecular que respiramos?",
+    "alternativas": [
+      "O",
+      "O2",
+      "O3",
+      "CO2"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se um carro viaja a uma velocidade média de 90 km/h por 40 minutos, qual distância exata ele percorre?",
+    "alternativas": [
+      "90 km",
+      "45 km",
+      "60 km",
+      "120 km"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do cientista que formulou a Teoria da Relatividade Restrita em 1905?",
+    "alternativas": [
+      "Isaac Newton",
+      "Galileu Galilei",
+      "Nikola Tesla",
+      "Albert Einstein"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Quantos graus mede a soma de todos os ângulos externos de qualquer polígono convexo?",
+    "alternativas": [
+      "360°",
+      "180°",
+      "540°",
+      "720°"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a principal organela responsável pela respiração celular aeróbica e produção de ATP nas células?",
+    "alternativas": [
+      "Ribossomo",
+      "Mitocôndria",
+      "Lisossomo",
+      "Complexo de Golgi"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da expressão: 5 + 5 x 5 - 5 / 5?",
+    "alternativas": [
+      "25",
+      "30",
+      "29",
+      "24"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da camada gasosa que envolve a Terra e se estende até cerca de 500 km de altitude?",
+    "alternativas": [
+      "Litosfera",
+      "Hidrosfera",
+      "Biosfera",
+      "Atmosfera"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o menor número inteiro positivo que é divisível por 1, 2, 3, 4 e 5 ao mesmo tempo?",
+    "alternativas": [
+      "60",
+      "30",
+      "120",
+      "10"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome dado ao ponto mais distante da Terra em uma órbita elíptica ao redor do Sol?",
+    "alternativas": [
+      "Periélio",
+      "Afélio",
+      "Apogeu",
+      "Perigeu"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da raiz quadrada de 16 somada com a raiz quadrada de 9?",
+    "alternativas": [
+      "5",
+      "12",
+      "7",
+      "25"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o gás nobre mais abundante na atmosfera terrestre após o nitrogênio e o oxigênio?",
+    "alternativas": [
+      "Hélio",
+      "Neônio",
+      "Criptônio",
+      "Argônio"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se uma corda de 20 metros é cortada em pedaços de 2 metros cada, quantos cortes exatos são necessários?",
+    "alternativas": [
+      "9 cortes",
+      "10 cortes",
+      "11 cortes",
+      "8 cortes"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do processo biológico em que as células se dividem para formar gametas (células sexuais) com metade do número de cromossomos?",
+    "alternativas": [
+      "Mitose",
+      "Meiose",
+      "Citosinese",
+      "Apoptose"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a área total da superfície de um cubo cujas arestas medem 3 cm cada?",
+    "alternativas": [
+      "27 cm²",
+      "36 cm²",
+      "54 cm²",
+      "18 cm²"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor de x na equação do primeiro grau: 5x + 10 = 3x + 24?",
+    "alternativas": [
+      "5",
+      "6",
+      "8",
+      "7"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do fenômeno físico em que a luz muda de direção ao passar obliquamente de um meio para outro com diferentes densidades?",
+    "alternativas": [
+      "Refração",
+      "Reflexão",
+      "Difração",
+      "Polarização"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a unidade de medida padrão da potência elétrica no Sistema Internacional?",
+    "alternativas": [
+      "Joule",
+      "Watt",
+      "Volt",
+      "Ampère"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de raciocínio: Se um avião voa exatamente sobre a linha do equador, saindo do leste para o oeste, para onde vai a sua sombra num dia ensolarado?",
+    "alternativas": [
+      "Para o norte",
+      "Para o sul",
+      "Depende da posição exata do Sol no momento",
+      "O avião não tem sombra"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do principal mineral metálico do qual o ferro industrial é extraído?",
+    "alternativas": [
+      "Bauxita",
+      "Galena",
+      "Calcopirita",
+      "Hematita"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor exato de 2 elevado à oitava potência ($2^8$)?",
+    "alternativas": [
+      "256",
+      "128",
+      "512",
+      "64"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do ácido orgânico encontrado nas formigas e liberado por elas durante picadas e mordidas?",
+    "alternativas": [
+      "Ácido Cítrico",
+      "Ácido Fórmico (Metanoico)",
+      "Ácido Acético",
+      "Ácido Lático"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se 5 máquinas produzem 5 peças em 5 minutos, quanto tempo levariam 100 máquinas para produzir 100 peças?",
+    "alternativas": [
+      "100 minutos",
+      "50 minutos",
+      "5 minutos",
+      "1 minuto"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do cientista que descobriu as leis da gravitação universal e inventou o cálculo diferencial?",
+    "alternativas": [
+      "Albert Einstein",
+      "Galileu Galilei",
+      "Johannes Kepler",
+      "Isaac Newton"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o volume de uma esfera que possui raio igual a 3 cm? (Fórmula: $V = \frac{4}{3}\\pi r^3$)",
+    "alternativas": [
+      "36π cm³",
+      "12π cm³",
+      "18π cm³",
+      "27π cm³"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da estrutura do sistema nervoso central humano responsável pelas funções superiores, raciocínio e memória?",
+    "alternativas": [
+      "Cerebelo",
+      "Cérebro (Córtex Cerebral)",
+      "Bulbo raquidiano",
+      "Tronco encefálico"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor do seno de 90 graus ($\\sin 90°$)?",
+    "alternativas": [
+      "0",
+      "-1",
+      "1",
+      "0,5"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da camada mais interna e densa da Terra, composta principalmente de ferro e níquel?",
+    "alternativas": [
+      "Manto superior",
+      "Crosta continental",
+      "Manto inferior",
+      "Núcleo"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de lógica: O pai de João tem 4 filhos: Norte, Sul, Leste e... qual é o nome do quarto filho?",
+    "alternativas": [
+      "João",
+      "Oeste",
+      "Pedro",
+      "Lucas"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é a unidade de medida padrão da quantidade de matéria ou substância no Sistema Internacional?",
+    "alternativas": [
+      "Quilograma",
+      "Mol",
+      "Grama",
+      "Litro"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da expressão: (100 - 10 x 10) / (5 + 5)?",
+    "alternativas": [
+      "10",
+      "9",
+      "0",
+      "1"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do processo em que o gelo absorve calor e se transforma diretamente em vapor de água sem passar pelo estado líquido?",
+    "alternativas": [
+      "Fusão",
+      "Ebulição",
+      "Condensação",
+      "Sublimação"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da área de um triângulo equilátero cujo lado mede 4 cm?",
+    "alternativas": [
+      "4√3 cm²",
+      "8 cm²",
+      "16 cm²",
+      "2√3 cm²"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da substância química que dá a coloração vermelha ao sangue humano ao se ligar ao ferro?",
+    "alternativas": [
+      "Clorofila",
+      "Hemoglobina",
+      "Melanina",
+      "Queratina"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se um trabalhador gasta 8 horas para construir uma cerca sozinho, quanto tempo levariam 4 trabalhadores com a mesma eficiência?",
+    "alternativas": [
+      "32 horas",
+      "4 horas",
+      "2 horas",
+      "1 hora"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da galáxia espiral em formato de disco onde se localiza o nosso Sistema Solar?",
+    "alternativas": [
+      "Andrômeda",
+      "Sombreiro",
+      "Magalhães",
+      "Via Láctea"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor de x na equação logarítmica: $\\log_{3} 81 = x$?",
+    "alternativas": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do gás responsável pelo efeito estufa natural que mantém a temperatura da Terra habitável?",
+    "alternativas": [
+      "Nitrogênio",
+      "Dióxido de Carbono (CO2)",
+      "Hélio",
+      "Argônio"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de números: Se há 3 peixes em um aquário e 1 deles morre afogado, quantos peixes restam no aquário?",
+    "alternativas": [
+      "2 peixes",
+      "Nenhum",
+      "3 peixes (peixes não morrem afogados)",
+      "1 peixe"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do cientista grego que exclamou 'Eureka!' ao descobrir o princípio do empuxo na banheira?",
+    "alternativas": [
+      "Pitágoras",
+      "Aristóteles",
+      "Sócrates",
+      "Arquimedes"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da soma dos ângulos internos de um decágono regular (10 lados)?",
+    "alternativas": [
+      "1440°",
+      "1080°",
+      "720°",
+      "1800°"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do principal componente estrutural das paredes celulares dos fungos e do exoesqueleto dos insetos?",
+    "alternativas": [
+      "Celulose",
+      "Quitina",
+      "Amido",
+      "Glicogênio"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da expressão matemática: $2^3 \times 3^2$?",
+    "alternativas": [
+      "36",
+      "54",
+      "72",
+      "144"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do instrumento óptico inventado por Galileu utilizado para observar corpos celestes distantes?",
+    "alternativas": [
+      "Microscópio",
+      "Prisma",
+      "Periscópio",
+      "Telescópio"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Se você tem uma barra de chocolate dividida em 12 pedaços iguais, qual fração representa exatamente 3 pedaços?",
+    "alternativas": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "3/8"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome do polímero natural que compõe a estrutura do material genético (DNA) em quase todos os seres vivos?",
+    "alternativas": [
+      "Proteína",
+      "Ácido Desoxirribonucleico",
+      "Lipídio",
+      "Carboidrato"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor de x na proporção geométrica: 5 / 10 = 15 / x?",
+    "alternativas": [
+      "20",
+      "25",
+      "30",
+      "45"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o nome da força de resistência que surge quando um objeto se move através de um fluido (como o ar ou a água)?",
+    "alternativas": [
+      "Força Normal",
+      "Força Gravitacional",
+      "Força Magnética",
+      "Força de Arrasto (Resistência do fluido)"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Pegadinha de lógica: O que sobe e desce, mas permanece exatamente no mesmo lugar?",
+    "alternativas": [
+      "As escadas",
+      "Um balão",
+      "Um elevador",
+      "A maré"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "ciencia",
+    "enunciado": "Qual é o valor da hipotenusa de um triângulo retângulo cujos catetos medem 6 cm e 8 cm?",
+    "alternativas": [
+      "14 cm",
+      "10 cm",
+      "12 cm",
+      "100 cm"
+    ],
+    "correta": 1
+  }
+]}

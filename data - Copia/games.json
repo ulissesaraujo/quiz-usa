@@ -1,0 +1,1665 @@
+{
+  "perguntas": [
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem da Nintendo é um encanador italiano?",
+      "alternativas": [
+        "Link",
+        "Mario",
+        "Kirby",
+        "Donkey Kong"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome do irmão de Mario?",
+      "alternativas": [
+        "Wario",
+        "Luigi",
+        "Toad",
+        "Bowser"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual princesa Mario frequentemente resgata?",
+      "alternativas": [
+        "Zelda",
+        "Peach",
+        "Daisy",
+        "Rosalina"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o vilão principal da série Mario?",
+      "alternativas": [
+        "Wario",
+        "Donkey Kong",
+        "Bowser",
+        "King Boo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Em qual console foi lançado originalmente o primeiro 'The Legend of Zelda'?",
+      "alternativas": [
+        "Super Nintendo",
+        "NES",
+        "Game Boy",
+        "Nintendo 64"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome do protagonista de 'The Legend of Zelda'?",
+      "alternativas": [
+        "Zelda",
+        "Ganon",
+        "Link",
+        "Impa"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual item Link usa para bloquear ataques?",
+      "alternativas": [
+        "Espada Mestra",
+        "Escudo Hyliano",
+        "Arco",
+        "Boomerang"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome do reino onde Link vive?",
+      "alternativas": [
+        "Mushroom Kingdom",
+        "Hyrule",
+        "Termina",
+        "Lorule"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de corrida da Nintendo tem personagens como Mario e Luigi?",
+      "alternativas": [
+        "Need for Speed",
+        "Gran Turismo",
+        "Mario Kart",
+        "F-Zero"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual console Nintendo foi lançado em 2017?",
+      "alternativas": [
+        "Wii U",
+        "Nintendo Switch",
+        "Nintendo 3DS",
+        "Nintendo DSi"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Nintendo permite capturar criaturas chamadas Pokémon?",
+      "alternativas": [
+        "Digimon",
+        "Pokémon",
+        "Monster Hunter",
+        "Yo-kai Watch"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o Pokémon mais famoso, amarelo e elétrico?",
+      "alternativas": [
+        "Charmander",
+        "Bulbasaur",
+        "Pikachu",
+        "Eevee"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Quantos Pokémon existiam na primeira geração?",
+      "alternativas": [
+        "100",
+        "150",
+        "151",
+        "152"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual empresa criou PlayStation?",
+      "alternativas": [
+        "Microsoft",
+        "Nintendo",
+        "Sega",
+        "Sony"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual console da Sony foi lançado em 1994?",
+      "alternativas": [
+        "PlayStation 2",
+        "PlayStation",
+        "PSP",
+        "PS Vita"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o console mais vendido da história?",
+      "alternativas": [
+        "Nintendo Switch",
+        "PlayStation 2",
+        "Nintendo DS",
+        "Game Boy"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem é o mascote da Sega?",
+      "alternativas": [
+        "Mario",
+        "Sonic",
+        "Crash Bandicoot",
+        "Mega Man"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é a cor de Sonic?",
+      "alternativas": [
+        "Vermelho",
+        "Verde",
+        "Azul",
+        "Amarelo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome do amigo voador de Sonic?",
+      "alternativas": [
+        "Knuckles",
+        "Tails",
+        "Amy",
+        "Shadow"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de luta da Capcom tem Ryu e Ken?",
+      "alternativas": [
+        "Mortal Kombat",
+        "Tekken",
+        "Street Fighter",
+        "King of Fighters"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o golpe especial mais famoso de Ryu?",
+      "alternativas": [
+        "Shoryuken",
+        "Hadouken",
+        "Tatsumaki",
+        "Shinku Hadouken"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de luta é conhecido pela fatalidade?",
+      "alternativas": [
+        "Street Fighter",
+        "Mortal Kombat",
+        "Tekken",
+        "Soul Calibur"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem de Mortal Kombat usa um arpão e diz 'Get over here!'?",
+      "alternativas": [
+        "Sub-Zero",
+        "Scorpion",
+        "Reptile",
+        "Noob Saibot"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Rockstar se passa em uma cidade inspirada em Los Angeles?",
+      "alternativas": [
+        "GTA: Vice City",
+        "GTA: San Andreas",
+        "GTA V",
+        "GTA IV"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome da cidade fictícia de GTA V?",
+      "alternativas": [
+        "Liberty City",
+        "Vice City",
+        "Los Santos",
+        "San Fierro"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem de GTA San Andreas é protagonista?",
+      "alternativas": [
+        "Tommy Vercetti",
+        "Niko Bellic",
+        "CJ (Carl Johnson)",
+        "Michael De Santa"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Rockstar se passa no Velho Oeste?",
+      "alternativas": [
+        "GTA",
+        "Red Dead Redemption",
+        "Bully",
+        "Max Payne"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o protagonista de Red Dead Redemption 2?",
+      "alternativas": [
+        "John Marston",
+        "Arthur Morgan",
+        "Dutch van der Linde",
+        "Micah Bell"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de blocos foi criado por Markus 'Notch' Persson?",
+      "alternativas": [
+        "Terraria",
+        "Roblox",
+        "Minecraft",
+        "Fortnite"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual empresa comprou Minecraft?",
+      "alternativas": [
+        "Sony",
+        "Nintendo",
+        "Microsoft",
+        "Google"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o modo de sobrevivência contra monstros em Minecraft?",
+      "alternativas": [
+        "Criativo",
+        "Sobrevivência",
+        "Aventura",
+        "Hardcore"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual monstro explode em Minecraft?",
+      "alternativas": [
+        "Zombie",
+        "Skeleton",
+        "Creeper",
+        "Enderman"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo Battle Royale foi desenvolvido pela Epic Games?",
+      "alternativas": [
+        "PUBG",
+        "Apex Legends",
+        "Fortnite",
+        "Warzone"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é a mecânica distintiva de Fortnite além do combate?",
+      "alternativas": [
+        "Pesca",
+        "Construção",
+        "Corrida de carros",
+        "Agricultura"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo Battle Royale foi um dos primeiros populares?",
+      "alternativas": [
+        "Fortnite",
+        "PUBG",
+        "Apex Legends",
+        "H1Z1"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Respawn Entertainment é um Battle Royale com heróis?",
+      "alternativas": [
+        "Fortnite",
+        "PUBG",
+        "Apex Legends",
+        "Warzone"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de tiro da Valve é famoso pelo modo competitivo?",
+      "alternativas": [
+        "Call of Duty",
+        "Counter-Strike",
+        "Battlefield",
+        "Overwatch"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de tiro tático da Riot Games foi lançado em 2020?",
+      "alternativas": [
+        "Overwatch",
+        "Counter-Strike",
+        "Valorant",
+        "Apex Legends"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo MOBA da Riot Games tem campeões como Lux e Yasuo?",
+      "alternativas": [
+        "Dota 2",
+        "League of Legends",
+        "Heroes of the Storm",
+        "Smite"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual empresa criou Dota 2?",
+      "alternativas": [
+        "Riot Games",
+        "Valve",
+        "Blizzard",
+        "Epic Games"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Blizzard é um MMORPG com orcs e humanos?",
+      "alternativas": [
+        "Diablo",
+        "StarCraft",
+        "World of Warcraft",
+        "Overwatch"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Blizzard é um FPS com heróis?",
+      "alternativas": [
+        "World of Warcraft",
+        "Diablo",
+        "Overwatch",
+        "StarCraft"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o personagem icônico de Overwatch com visor vermelho?",
+      "alternativas": [
+        "Genji",
+        "Soldier: 76",
+        "Reaper",
+        "McCree/Cassidy"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de ação da Sony tem Kratos como protagonista?",
+      "alternativas": [
+        "Uncharted",
+        "The Last of Us",
+        "God of War",
+        "Horizon"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Em qual mitologia se passa o God of War original?",
+      "alternativas": [
+        "Nórdica",
+        "Egípcia",
+        "Grega",
+        "Romana"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome do filho de Kratos no God of War (2018)?",
+      "alternativas": [
+        "Baldur",
+        "Atreus",
+        "Modi",
+        "Magni"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Naughty Dog tem Joel e Ellie?",
+      "alternativas": [
+        "Uncharted",
+        "Crash Bandicoot",
+        "The Last of Us",
+        "Jak and Daxter"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo tem o caçador de tesouros Nathan Drake?",
+      "alternativas": [
+        "Tomb Raider",
+        "Uncharted",
+        "Indiana Jones",
+        "Far Cry"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem feminina é protagonista de Tomb Raider?",
+      "alternativas": [
+        "Samus Aran",
+        "Lara Croft",
+        "Jill Valentine",
+        "Ada Wong"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual série de jogos de terror tem a Umbrella Corporation?",
+      "alternativas": [
+        "Silent Hill",
+        "Dead Space",
+        "Resident Evil",
+        "Fatal Frame"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem é protagonista de Resident Evil 2?",
+      "alternativas": [
+        "Chris Redfield",
+        "Leon S. Kennedy",
+        "Jill Valentine",
+        "Claire Redfield"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de terror psicológico se passa em uma cidade com neblina?",
+      "alternativas": [
+        "Resident Evil",
+        "Silent Hill",
+        "Outlast",
+        "Amnesia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de sobrevivência espacial tem necromorfos?",
+      "alternativas": [
+        "Alien: Isolation",
+        "Dead Space",
+        "Doom",
+        "System Shock"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da id Software tem o Doom Slayer?",
+      "alternativas": [
+        "Quake",
+        "Wolfenstein",
+        "Doom",
+        "Rage"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de tiro é ambientado na Segunda Guerra com nazistas?",
+      "alternativas": [
+        "Doom",
+        "Wolfenstein",
+        "Medal of Honor",
+        "Call of Duty"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual série de jogos de tiro da Activision se passa em guerras modernas?",
+      "alternativas": [
+        "Battlefield",
+        "Halo",
+        "Call of Duty",
+        "Medal of Honor"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Bungie/Microsoft tem Master Chief?",
+      "alternativas": [
+        "Destiny",
+        "Halo",
+        "Marathon",
+        "Myth"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome da IA que acompanha Master Chief?",
+      "alternativas": [
+        "GLaDOS",
+        "Cortana",
+        "EDI",
+        "SHODAN"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de construção de cidades foi criado pela Maxis?",
+      "alternativas": [
+        "Cities: Skylines",
+        "SimCity",
+        "Tropico",
+        "Anno"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de simulação de vida foi criado por Will Wright?",
+      "alternativas": [
+        "Animal Crossing",
+        "The Sims",
+        "Stardew Valley",
+        "Harvest Moon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Nintendo tem aldeões animais?",
+      "alternativas": [
+        "The Sims",
+        "Stardew Valley",
+        "Animal Crossing",
+        "Harvest Moon"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo indie de fazenda foi criado por ConcernedApe?",
+      "alternativas": [
+        "Animal Crossing",
+        "Harvest Moon",
+        "Stardew Valley",
+        "Story of Seasons"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da FromSoftware é conhecido por sua extrema dificuldade?",
+      "alternativas": [
+        "The Witcher",
+        "Dark Souls",
+        "Skyrim",
+        "Dragon Age"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da FromSoftware ganhou Game of the Year em 2022?",
+      "alternativas": [
+        "Dark Souls III",
+        "Sekiro",
+        "Bloodborne",
+        "Elden Ring"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual autor de fantasia colaborou em Elden Ring?",
+      "alternativas": [
+        "J.R.R. Tolkien",
+        "George R.R. Martin",
+        "Brandon Sanderson",
+        "Patrick Rothfuss"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da FromSoftware se passa no Japão feudal?",
+      "alternativas": [
+        "Dark Souls",
+        "Bloodborne",
+        "Sekiro: Shadows Die Twice",
+        "Elden Ring"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de RPG da CD Projekt Red tem Geralt de Rívia?",
+      "alternativas": [
+        "Cyberpunk 2077",
+        "The Witcher",
+        "Thronebreaker",
+        "Gwent"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo cyberpunk da CD Projekt Red foi lançado em 2020?",
+      "alternativas": [
+        "Deus Ex",
+        "Cyberpunk 2077",
+        "Watch Dogs",
+        "Shadowrun"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual cidade fictícia é cenário de Cyberpunk 2077?",
+      "alternativas": [
+        "Los Santos",
+        "Night City",
+        "Midgar",
+        "Neo Tokyo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de RPG japonês tem Cloud Strife?",
+      "alternativas": [
+        "Final Fantasy VII",
+        "Kingdom Hearts",
+        "Dragon Quest",
+        "Chrono Trigger"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual empresa criou Final Fantasy?",
+      "alternativas": [
+        "Capcom",
+        "Konami",
+        "Square Enix",
+        "Bandai Namco"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo mistura Final Fantasy e Disney?",
+      "alternativas": [
+        "World of Final Fantasy",
+        "Kingdom Hearts",
+        "Dissidia",
+        "Theatrhythm"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual arma Cloud usa em Final Fantasy VII?",
+      "alternativas": [
+        "Gunblade",
+        "Buster Sword",
+        "Keyblade",
+        "Masamune"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de RPG da Bethesda se passa em Skyrim?",
+      "alternativas": [
+        "Fallout",
+        "Oblivion",
+        "The Elder Scrolls V: Skyrim",
+        "Morrowind"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual série de jogos pós-apocalípticos da Bethesda tem Vault Boy?",
+      "alternativas": [
+        "The Elder Scrolls",
+        "Fallout",
+        "Doom",
+        "Rage"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de plataforma indie tem um cavaleiro inseto?",
+      "alternativas": [
+        "Celeste",
+        "Hollow Knight",
+        "Ori",
+        "Shovel Knight"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo indie de plataforma desafiador tem Madeline?",
+      "alternativas": [
+        "Hollow Knight",
+        "Celeste",
+        "Cuphead",
+        "Dead Cells"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo indie tem estilo visual de desenho dos anos 1930?",
+      "alternativas": [
+        "Hollow Knight",
+        "Celeste",
+        "Cuphead",
+        "Hades"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo roguelike da Supergiant Games tem Zagreus?",
+      "alternativas": [
+        "Bastion",
+        "Transistor",
+        "Pyre",
+        "Hades"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de cartas digital da Blizzard se passa no universo Warcraft?",
+      "alternativas": [
+        "Magic: The Gathering Arena",
+        "Hearthstone",
+        "Legends of Runeterra",
+        "Gwent"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Supergiant Games tem um narrador que comenta suas ações?",
+      "alternativas": [
+        "Hades",
+        "Bastion",
+        "Transistor",
+        "Pyre"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de puzzle tem uma IA malévola chamada GLaDOS?",
+      "alternativas": [
+        "Half-Life",
+        "Portal",
+        "BioShock",
+        "System Shock"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é a arma principal em Portal?",
+      "alternativas": [
+        "Gravity Gun",
+        "Portal Gun",
+        "BFG",
+        "Gravity Hammer"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Valve nunca teve sua terceira parte lançada?",
+      "alternativas": [
+        "Counter-Strike",
+        "Portal",
+        "Half-Life",
+        "Left 4 Dead"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o protagonista de Half-Life?",
+      "alternativas": [
+        "Master Chief",
+        "Gordon Freeman",
+        "Duke Nukem",
+        "Doom Slayer"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de ação subaquática tem Big Daddy e Little Sister?",
+      "alternativas": [
+        "Subnautica",
+        "BioShock",
+        "SOMA",
+        "Abzû"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual cidade subaquática é cenário de BioShock?",
+      "alternativas": [
+        "Columbia",
+        "Rapture",
+        "Atlantis",
+        "The Citadel"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de simulação de futebol é produzido pela EA Sports?",
+      "alternativas": [
+        "PES",
+        "eFootball",
+        "EA Sports FC (antigo FIFA)",
+        "Football Manager"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de basquete é produzido pela 2K Games?",
+      "alternativas": [
+        "NBA Live",
+        "NBA 2K",
+        "NBA Jam",
+        "NBA Street"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de skate foi muito popular nos anos 2000?",
+      "alternativas": [
+        "Skate",
+        "Tony Hawk's Pro Skater",
+        "Session",
+        "Skater XL"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de dança usa um tapete especial?",
+      "alternativas": [
+        "Just Dance",
+        "Dance Dance Revolution",
+        "Dance Central",
+        "Pump It Up"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de ritmo usa guitarras de plástico?",
+      "alternativas": [
+        "Rock Band",
+        "Guitar Hero",
+        "Rocksmith",
+        "Amplitude"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de corrida da Sony tem Gran Turismo no nome?",
+      "alternativas": [
+        "Need for Speed",
+        "Forza",
+        "Gran Turismo",
+        "Project Cars"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de corrida da Microsoft compete com Gran Turismo?",
+      "alternativas": [
+        "Need for Speed",
+        "Forza",
+        "Assetto Corsa",
+        "DiRT"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de construção de parques temáticos foi lançado pela Frontier?",
+      "alternativas": [
+        "RollerCoaster Tycoon",
+        "Planet Coaster",
+        "Parkitect",
+        "Theme Park"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo clássico de gerenciamento de parques foi criado por Chris Sawyer?",
+      "alternativas": [
+        "Theme Park",
+        "RollerCoaster Tycoon",
+        "Planet Coaster",
+        "Parkitect"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de terror da Capcom tem os irmãos Redfield?",
+      "alternativas": [
+        "Silent Hill",
+        "Resident Evil",
+        "Dead Space",
+        "The Evil Within"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo indie de terror tem um monstro que se move quando você não olha?",
+      "alternativas": [
+        "Amnesia",
+        "Outlast",
+        "SCP: Containment Breach",
+        "FNAF"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo indie de terror se passa em uma pizzaria com animatrônicos?",
+      "alternativas": [
+        "Five Nights at Freddy's",
+        "Bendy",
+        "Hello Neighbor",
+        "Poppy Playtime"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem do jogo Among Us pode matar outros jogadores?",
+      "alternativas": [
+        "Crewmate",
+        "Impostor",
+        "Ghost",
+        "Engineer"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de dedução social se tornou viral em 2020?",
+      "alternativas": [
+        "Town of Salem",
+        "Werewolf",
+        "Among Us",
+        "Mafia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Mojang permite jogar 'Dungeons' com elementos de Minecraft?",
+      "alternativas": [
+        "Minecraft Legends",
+        "Minecraft Dungeons",
+        "Minecraft Earth",
+        "Minecraft Story Mode"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo mobile da Niantic usa realidade aumentada para capturar Pokémon?",
+      "alternativas": [
+        "Pokémon Masters",
+        "Pokémon Go",
+        "Pokémon Unite",
+        "Pokémon Sleep"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo mobile da Supercell tem clãs e construção de vilas?",
+      "alternativas": [
+        "Clash of Clans",
+        "Brawl Stars",
+        "Hay Day",
+        "Boom Beach"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo mobile da Supercell usa cartas de Clash of Clans?",
+      "alternativas": [
+        "Clash of Clans",
+        "Clash Royale",
+        "Brawl Stars",
+        "Clash Quest"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de tiro da Krafton é a versão mobile de PUBG?",
+      "alternativas": [
+        "Call of Duty Mobile",
+        "PUBG Mobile",
+        "Free Fire",
+        "Fortnite Mobile"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo Battle Royale mobile é muito popular no Brasil?",
+      "alternativas": [
+        "PUBG Mobile",
+        "Fortnite",
+        "Free Fire",
+        "Call of Duty Mobile"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual plataforma de distribuição digital de jogos da Valve é a mais popular?",
+      "alternativas": [
+        "Epic Games Store",
+        "GOG",
+        "Steam",
+        "Origin"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual serviço de assinatura de jogos da Microsoft oferece acesso a muitos títulos?",
+      "alternativas": [
+        "PlayStation Plus",
+        "Game Pass",
+        "Nintendo Switch Online",
+        "EA Play"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de estratégia em tempo real tem Zerg, Protoss e Terran?",
+      "alternativas": [
+        "Warcraft",
+        "StarCraft",
+        "Age of Empires",
+        "Command & Conquer"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de estratégia histórica é desenvolvido pela Ensemble Studios?",
+      "alternativas": [
+        "Civilization",
+        "Age of Empires",
+        "Total War",
+        "Anno"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de estratégia por turnos da Firaxis tem civilizações do mundo?",
+      "alternativas": [
+        "Age of Empires",
+        "Total War",
+        "Civilization",
+        "Europa Universalis"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o criador da série Civilization?",
+      "alternativas": [
+        "Sid Meier",
+        "Will Wright",
+        "Peter Molyneux",
+        "John Carmack"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Ubisoft tem assassinos ao longo da história?",
+      "alternativas": [
+        "Watch Dogs",
+        "Far Cry",
+        "Assassin's Creed",
+        "Ghost Recon"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome do protagonista do primeiro Assassin's Creed?",
+      "alternativas": [
+        "Ezio",
+        "Altaïr",
+        "Connor",
+        "Edward"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de mundo aberto da Ubisoft se passa em ilhas tropicais?",
+      "alternativas": [
+        "Assassin's Creed",
+        "Far Cry",
+        "Watch Dogs",
+        "Ghost Recon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual vilão icônico aparece em Far Cry 3?",
+      "alternativas": [
+        "Pagan Min",
+        "Vaas Montenegro",
+        "Joseph Seed",
+        "Anton Castillo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de hacking da Ubisoft se passa em Chicago e San Francisco?",
+      "alternativas": [
+        "Assassin's Creed",
+        "Far Cry",
+        "Watch Dogs",
+        "The Division"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de robôs dinossauros tem Aloy como protagonista?",
+      "alternativas": [
+        "Monster Hunter",
+        "Horizon Zero Dawn",
+        "Death Stranding",
+        "Days Gone"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de Hideo Kojima foi lançado em 2019?",
+      "alternativas": [
+        "Metal Gear Solid V",
+        "Death Stranding",
+        "Silent Hill",
+        "Zone of the Enders"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é a série de jogos de stealth mais famosa de Hideo Kojima?",
+      "alternativas": [
+        "Splinter Cell",
+        "Hitman",
+        "Metal Gear Solid",
+        "Thief"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o protagonista icônico de Metal Gear Solid?",
+      "alternativas": [
+        "Sam Fisher",
+        "Agent 47",
+        "Solid Snake",
+        "Garrett"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da IO Interactive tem um assassino careca?",
+      "alternativas": [
+        "Hitman",
+        "Metal Gear",
+        "Splinter Cell",
+        "Thief"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem é o protagonista de Hitman?",
+      "alternativas": [
+        "Sam Fisher",
+        "Solid Snake",
+        "Agent 47",
+        "Altaïr"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo indie de exploração subaquática se chama Subnautica?",
+      "alternativas": [
+        "Abzû",
+        "Subnautica",
+        "SOMA",
+        "The Forest"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de sobrevivência tem canibais em uma ilha?",
+      "alternativas": [
+        "Subnautica",
+        "The Forest",
+        "Green Hell",
+        "Raft"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de sobrevivência da Facepunch Studios tem base building e PvP?",
+      "alternativas": [
+        "DayZ",
+        "Rust",
+        "ARK",
+        "Conan Exiles"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de sobrevivência tem dinossauros e tribos?",
+      "alternativas": [
+        "Rust",
+        "ARK: Survival Evolved",
+        "Conan Exiles",
+        "The Forest"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de luta da Nintendo tem personagens de várias franquias?",
+      "alternativas": [
+        "Mortal Kombat",
+        "Street Fighter",
+        "Super Smash Bros.",
+        "Tekken"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual personagem de Smash Bros. é da série Metroid?",
+      "alternativas": [
+        "Link",
+        "Kirby",
+        "Samus Aran",
+        "Fox"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de plataforma da Nintendo tem uma bola rosa que engole inimigos?",
+      "alternativas": [
+        "Yoshi's Island",
+        "Kirby",
+        "Super Mario",
+        "Donkey Kong"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Nintendo tem um gorila que joga barris?",
+      "alternativas": [
+        "Super Mario",
+        "Kirby",
+        "Donkey Kong",
+        "Yoshi"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual console portátil da Nintendo lançado em 2004 tem duas telas?",
+      "alternativas": [
+        "Game Boy Advance",
+        "Nintendo DS",
+        "Nintendo Switch Lite",
+        "PSP"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de puzzle tem tetrominós que caem?",
+      "alternativas": [
+        "Dr. Mario",
+        "Tetris",
+        "Puyo Puyo",
+        "Columns"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo clássico de arcade tem um personagem amarelo comendo pontos?",
+      "alternativas": [
+        "Donkey Kong",
+        "Space Invaders",
+        "Pac-Man",
+        "Galaga"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual foi o primeiro jogo de arcade de grande sucesso da Atari?",
+      "alternativas": [
+        "Asteroids",
+        "Pong",
+        "Centipede",
+        "Missile Command"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual console da Atari causou o 'crash' dos videogames em 1983?",
+      "alternativas": [
+        "Atari 2600",
+        "Atari 5200",
+        "Atari 7800",
+        "Atari Jaguar"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de E.T. da Atari é considerado um dos piores da história?",
+      "alternativas": [
+        "E.T. the Extra-Terrestrial",
+        "E.T. Phone Home",
+        "E.T. Adventure",
+        "E.T. Return Home"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual empresa japonesa 'salvou' o mercado de videogames após 1983?",
+      "alternativas": [
+        "Sega",
+        "Nintendo",
+        "Sony",
+        "Atari"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual console Nintendo foi lançado em 1985 nos EUA?",
+      "alternativas": [
+        "Super Nintendo",
+        "NES",
+        "Game Boy",
+        "Nintendo 64"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual foi o primeiro console com CD-ROM da Sony?",
+      "alternativas": [
+        "PlayStation",
+        "PlayStation 2",
+        "PSP",
+        "PS Vita"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual console da Microsoft foi lançado em 2001?",
+      "alternativas": [
+        "Xbox",
+        "Xbox 360",
+        "Xbox One",
+        "Xbox Series X"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual foi o primeiro jogo de lançamento do Xbox?",
+      "alternativas": [
+        "Forza",
+        "Gears of War",
+        "Halo: Combat Evolved",
+        "Fable"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo da Epic Games usa Unreal Engine e tem Marcus Fenix?",
+      "alternativas": [
+        "Halo",
+        "Gears of War",
+        "Mass Effect",
+        "Dead Space"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual série de RPG espacial da BioWare tem Commander Shepard?",
+      "alternativas": [
+        "Star Wars: KOTOR",
+        "Mass Effect",
+        "Dragon Age",
+        "Anthem"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual série de RPG de fantasia da BioWare tem o Inquisidor?",
+      "alternativas": [
+        "Mass Effect",
+        "Baldur's Gate",
+        "Dragon Age",
+        "Jade Empire"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de RPG clássico da BioWare se passa no universo Dungeons & Dragons?",
+      "alternativas": [
+        "Dragon Age",
+        "Mass Effect",
+        "Baldur's Gate",
+        "Neverwinter Nights"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual estúdio desenvolveu Baldur's Gate 3?",
+      "alternativas": [
+        "BioWare",
+        "Larian Studios",
+        "Obsidian",
+        "InXile"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo ganhou vários prêmios de Game of the Year em 2023?",
+      "alternativas": [
+        "Elden Ring",
+        "Baldur's Gate 3",
+        "The Legend of Zelda: Tears of the Kingdom",
+        "Todos concorreram"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de Zelda foi lançado em 2023?",
+      "alternativas": [
+        "Breath of the Wild",
+        "Tears of the Kingdom",
+        "Link's Awakening",
+        "Skyward Sword"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo de Zelda revolucionou a série com mundo aberto em 2017?",
+      "alternativas": [
+        "Ocarina of Time",
+        "Twilight Princess",
+        "Breath of the Wild",
+        "A Link Between Worlds"
+      ],
+      "correta": 2
+    }
+  ]
+}

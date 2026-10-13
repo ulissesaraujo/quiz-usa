@@ -1,0 +1,1069 @@
+{"perguntas": [
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a cor do céu em um dia ensolarado?",
+    "alternativas": [
+      "Azul",
+      "Verde",
+      "Vermelho",
+      "Roxo"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantas patas tem um cachorro?",
+    "alternativas": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal faz 'miau'?",
+    "alternativas": [
+      "Cachorro",
+      "Vaca",
+      "Gato",
+      "Pato"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a fruta amarela que o macaco gosta?",
+    "alternativas": [
+      "Maçã",
+      "Banana",
+      "Uva",
+      "Morango"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantos dedos temos em uma mão?",
+    "alternativas": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal é o rei da selva?",
+    "alternativas": [
+      "Elefante",
+      "Girafa",
+      "Leão",
+      "Zebra"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De que cor é o sol?",
+    "alternativas": [
+      "Azul",
+      "Amarelo",
+      "Verde",
+      "Roxo"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o maior animal do mundo?",
+    "alternativas": [
+      "Elefante",
+      "Girafa",
+      "Baleia azul",
+      "Tubarão"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantas cores tem o arco-íris?",
+    "alternativas": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que a galinha bota?",
+    "alternativas": [
+      "Leite",
+      "Ovo",
+      "Mel",
+      "Lã"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem um pescoço bem longo?",
+    "alternativas": [
+      "Elefante",
+      "Leão",
+      "Girafa",
+      "Urso"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para escrever no caderno?",
+    "alternativas": [
+      "Garfo",
+      "Lápis",
+      "Colher",
+      "Escova"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o animal que late?",
+    "alternativas": [
+      "Gato",
+      "Cachorro",
+      "Galinha",
+      "Peixe"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantos dias tem uma semana?",
+    "alternativas": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De que cor é a grama?",
+    "alternativas": [
+      "Verde",
+      "Azul",
+      "Amarelo",
+      "Vermelho"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal vive na água e tem escamas?",
+    "alternativas": [
+      "Cachorro",
+      "Pássaro",
+      "Peixe",
+      "Coelho"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quanto é 1 + 1?",
+    "alternativas": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a primeira letra do alfabeto?",
+    "alternativas": [
+      "B",
+      "C",
+      "A",
+      "D"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que a vaca nos dá?",
+    "alternativas": [
+      "Ovo",
+      "Mel",
+      "Leite",
+      "Lã"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem tromba?",
+    "alternativas": [
+      "Leão",
+      "Elefante",
+      "Macaco",
+      "Tigre"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De que cor é o morango?",
+    "alternativas": [
+      "Amarelo",
+      "Verde",
+      "Vermelho",
+      "Azul"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o animal mais rápido do mundo?",
+    "alternativas": [
+      "Tartaruga",
+      "Guepardo",
+      "Elefante",
+      "Caracol"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantas letras tem a palavra 'SOL'?",
+    "alternativas": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que a abelha produz?",
+    "alternativas": [
+      "Leite",
+      "Mel",
+      "Ovo",
+      "Lã"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal pula e come cenoura?",
+    "alternativas": [
+      "Cachorro",
+      "Gato",
+      "Coelho",
+      "Galinha"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantos olhos nós temos?",
+    "alternativas": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De que cor é a neve?",
+    "alternativas": [
+      "Azul",
+      "Verde",
+      "Branca",
+      "Preta"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o oposto de 'grande'?",
+    "alternativas": [
+      "Alto",
+      "Pequeno",
+      "Largo",
+      "Comprido"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para cortar papel?",
+    "alternativas": [
+      "Cola",
+      "Lápis",
+      "Tesoura",
+      "Borracha"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem listras pretas e brancas?",
+    "alternativas": [
+      "Leão",
+      "Zebra",
+      "Elefante",
+      "Macaco"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantas orelhas nós temos?",
+    "alternativas": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal voa e tem penas?",
+    "alternativas": [
+      "Peixe",
+      "Cachorro",
+      "Pássaro",
+      "Cobra"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De que cor é a laranja (fruta)?",
+    "alternativas": [
+      "Verde",
+      "Azul",
+      "Laranja",
+      "Roxo"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quanto é 2 + 2?",
+    "alternativas": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o dia que vem depois de segunda-feira?",
+    "alternativas": [
+      "Domingo",
+      "Quarta-feira",
+      "Terça-feira",
+      "Sexta-feira"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que a ovelha nos dá?",
+    "alternativas": [
+      "Leite",
+      "Mel",
+      "Lã",
+      "Ovo"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal carrega a casa nas costas?",
+    "alternativas": [
+      "Formiga",
+      "Caracol",
+      "Borboleta",
+      "Abelha"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantos meses tem um ano?",
+    "alternativas": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual parte do corpo usamos para ouvir?",
+    "alternativas": [
+      "Olhos",
+      "Nariz",
+      "Boca",
+      "Orelhas"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que cai do céu quando chove?",
+    "alternativas": [
+      "Neve",
+      "Água",
+      "Folhas",
+      "Pedras"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem oito pernas?",
+    "alternativas": [
+      "Formiga",
+      "Borboleta",
+      "Aranha",
+      "Abelha"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o oposto de 'quente'?",
+    "alternativas": [
+      "Morno",
+      "Frio",
+      "Gelado",
+      "Fresco"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantas pernas tem uma galinha?",
+    "alternativas": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o animal que dá leite e faz 'muu'?",
+    "alternativas": [
+      "Cavalo",
+      "Porco",
+      "Vaca",
+      "Ovelha"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De que planeta nós moramos?",
+    "alternativas": [
+      "Marte",
+      "Lua",
+      "Terra",
+      "Sol"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a forma de uma bola?",
+    "alternativas": [
+      "Quadrado",
+      "Triângulo",
+      "Redonda",
+      "Retângulo"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para apagar o lápis?",
+    "alternativas": [
+      "Tesoura",
+      "Cola",
+      "Borracha",
+      "Régua"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem asas coloridas e era lagarta?",
+    "alternativas": [
+      "Abelha",
+      "Borboleta",
+      "Mosca",
+      "Joaninha"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantos lados tem um triângulo?",
+    "alternativas": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que aparece no céu à noite e brilha?",
+    "alternativas": [
+      "Sol",
+      "Nuvem",
+      "Estrelas",
+      "Arco-íris"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a cor do limão?",
+    "alternativas": [
+      "Vermelho",
+      "Amarelo",
+      "Verde",
+      "Azul"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal nada no mar e é muito grande?",
+    "alternativas": [
+      "Passarinho",
+      "Gato",
+      "Baleia",
+      "Coelho"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quanto é 5 - 3?",
+    "alternativas": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para ver?",
+    "alternativas": [
+      "Orelhas",
+      "Olhos",
+      "Nariz",
+      "Boca"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a estação do ano mais quente?",
+    "alternativas": [
+      "Inverno",
+      "Outono",
+      "Primavera",
+      "Verão"
+    ],
+    "correta": 3
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para cheirar?",
+    "alternativas": [
+      "Olhos",
+      "Nariz",
+      "Boca",
+      "Orelhas"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal vive no gelo e é preto e branco?",
+    "alternativas": [
+      "Urso",
+      "Pinguim",
+      "Foca",
+      "Leão"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantos lados tem um quadrado?",
+    "alternativas": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De que cor é o chocolate?",
+    "alternativas": [
+      "Branco",
+      "Vermelho",
+      "Marrom",
+      "Azul"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem muitas manchas e corre muito?",
+    "alternativas": [
+      "Elefante",
+      "Onça",
+      "Hipopótamo",
+      "Tartaruga"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que a árvore tem que cai no outono?",
+    "alternativas": [
+      "Flores",
+      "Frutas",
+      "Folhas",
+      "Neve"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o oposto de 'alto'?",
+    "alternativas": [
+      "Magro",
+      "Gordo",
+      "Baixo",
+      "Grande"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para escovar os dentes?",
+    "alternativas": [
+      "Pente",
+      "Escova de dentes",
+      "Toalha",
+      "Sabonete"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal faz 'cocoricó'?",
+    "alternativas": [
+      "Pato",
+      "Galo",
+      "Peru",
+      "Ganso"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantas horas tem um dia?",
+    "alternativas": [
+      "12",
+      "20",
+      "24",
+      "30"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o satélite natural da Terra?",
+    "alternativas": [
+      "Sol",
+      "Estrela",
+      "Lua",
+      "Marte"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem chifres e dá leite?",
+    "alternativas": [
+      "Porco",
+      "Vaca",
+      "Cavalo",
+      "Galinha"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quanto é 3 + 3?",
+    "alternativas": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a cor da folha da árvore?",
+    "alternativas": [
+      "Azul",
+      "Vermelho",
+      "Verde",
+      "Roxo"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal gosta de comer queijo?",
+    "alternativas": [
+      "Cachorro",
+      "Gato",
+      "Rato",
+      "Pássaro"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos na cabeça para nos proteger do sol?",
+    "alternativas": [
+      "Luvas",
+      "Sapato",
+      "Chapéu",
+      "Cachecol"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a última letra do alfabeto?",
+    "alternativas": [
+      "X",
+      "Y",
+      "Z",
+      "W"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal rasteja e não tem pernas?",
+    "alternativas": [
+      "Lagarto",
+      "Cobra",
+      "Sapo",
+      "Jacaré"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que comemos no café da manhã com manteiga?",
+    "alternativas": [
+      "Arroz",
+      "Feijão",
+      "Pão",
+      "Salada"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal vive em colméia?",
+    "alternativas": [
+      "Formiga",
+      "Aranha",
+      "Abelha",
+      "Borboleta"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantas vogais existem?",
+    "alternativas": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o animal mais lento?",
+    "alternativas": [
+      "Coelho",
+      "Cavalo",
+      "Tartaruga",
+      "Cachorro"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De que cor é o céu quando chove?",
+    "alternativas": [
+      "Azul claro",
+      "Cinza",
+      "Verde",
+      "Amarelo"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para pentear o cabelo?",
+    "alternativas": [
+      "Escova de dentes",
+      "Pente",
+      "Toalha",
+      "Sabonete"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal vive no formigueiro?",
+    "alternativas": [
+      "Abelha",
+      "Formiga",
+      "Aranha",
+      "Mosca"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quanto é 10 - 5?",
+    "alternativas": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual parte do corpo usamos para andar?",
+    "alternativas": [
+      "Mãos",
+      "Pernas",
+      "Braços",
+      "Cabeça"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal faz 'quá quá'?",
+    "alternativas": [
+      "Galinha",
+      "Pato",
+      "Peru",
+      "Galo"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a cor do sangue?",
+    "alternativas": [
+      "Azul",
+      "Verde",
+      "Vermelho",
+      "Amarelo"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para beber água?",
+    "alternativas": [
+      "Prato",
+      "Copo",
+      "Garfo",
+      "Colher"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal pula muito e vive na Austrália?",
+    "alternativas": [
+      "Coelho",
+      "Sapo",
+      "Canguru",
+      "Macaco"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quantos anos tem uma década?",
+    "alternativas": [
+      "5",
+      "10",
+      "100",
+      "50"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é a cor da cenoura?",
+    "alternativas": [
+      "Verde",
+      "Azul",
+      "Laranja",
+      "Roxo"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos nos pés para andar?",
+    "alternativas": [
+      "Luvas",
+      "Chapéu",
+      "Sapatos",
+      "Óculos"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem penas mas não voa?",
+    "alternativas": [
+      "Papagaio",
+      "Pinguim",
+      "Tucano",
+      "Coruja"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que o sapo come?",
+    "alternativas": [
+      "Queijo",
+      "Insetos",
+      "Grama",
+      "Frutas"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Quanto é 2 x 2?",
+    "alternativas": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual é o oposto de 'rápido'?",
+    "alternativas": [
+      "Devagar",
+      "Veloz",
+      "Ligeiro",
+      "Ágil"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "O que usamos para comer sopa?",
+    "alternativas": [
+      "Garfo",
+      "Faca",
+      "Colher",
+      "Pauzinho"
+    ],
+    "correta": 2
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal tem casca dura e anda devagar?",
+    "alternativas": [
+      "Coelho",
+      "Tartaruga",
+      "Cavalo",
+      "Cachorro"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "De onde vem a chuva?",
+    "alternativas": [
+      "Do mar",
+      "Das nuvens",
+      "Das montanhas",
+      "Dos rios"
+    ],
+    "correta": 1
+  },
+  {
+    "tema": "criancas",
+    "enunciado": "Qual animal vive na teia?",
+    "alternativas": [
+      "Abelha",
+      "Formiga",
+      "Aranha",
+      "Mosca"
+    ],
+    "correta": 2
+  }
+]}

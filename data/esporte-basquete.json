@@ -1,0 +1,155 @@
+{
+  "tema": "basquete",
+  "perguntas": [
+    {
+      "enunciado": "Quantos jogadores de cada equipe estão em quadra no basquete?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a altura oficial da cesta de basquete?",
+      "alternativas": ["2,75m", "3,05m", "3,25m", "3,50m"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos pontos vale um arremesso de três pontos?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é considerado o maior de todos os tempos (GOAT)?",
+      "alternativas": ["LeBron James", "Kobe Bryant", "Michael Jordan", "Magic Johnson"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantos títulos da NBA Michael Jordan conquistou?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual equipe da NBA tem mais títulos na história?",
+      "alternativas": ["Chicago Bulls", "Los Angeles Lakers", "Boston Celtics", "Golden State Warriors"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quanto tempo dura cada quarto na NBA?",
+      "alternativas": ["10 minutos", "12 minutos", "15 minutos", "20 minutos"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é um 'slam dunk'?",
+      "alternativas": ["Arremesso de três pontos", "Enterrada na cesta", "Passe entre as pernas", "Bloqueio de arremesso"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país inventou o basquete?",
+      "alternativas": ["Brasil", "Estados Unidos", "Canadá", "Inglaterra"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual brasileiro foi o primeiro a jogar na NBA?",
+      "alternativas": ["Oscar Schmidt", "Nenê", "Leandro Barbosa", "Rafael Araújo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que significa NBA?",
+      "alternativas": ["National Basketball Association", "North Basketball America", "National Ball Association", "New Basketball Association"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual jogador tem o apelido 'King James'?",
+      "alternativas": ["James Harden", "LeBron James", "Michael Jordan", "Kevin Durant"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos lances livres são concedidos em falta de arremesso de três pontos?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual equipe Kobe Bryant defendeu por toda sua carreira na NBA?",
+      "alternativas": ["Boston Celtics", "Chicago Bulls", "Los Angeles Lakers", "Miami Heat"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é um 'triple-double'?",
+      "alternativas": ["Três arremessos de três pontos seguidos", "Dois dígitos em três estatísticas", "Três enterradas no jogo", "Três assistências seguidas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador detém o recorde de mais pontos em um único jogo da NBA?",
+      "alternativas": ["Michael Jordan", "Kobe Bryant", "Wilt Chamberlain", "LeBron James"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantos pontos Wilt Chamberlain marcou no seu jogo recorde?",
+      "alternativas": ["81", "92", "100", "105"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual posição joga no garrafão e é geralmente o mais alto?",
+      "alternativas": ["Armador", "Ala", "Pivô", "Ala-armador"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é o 'Draft' da NBA?",
+      "alternativas": ["Playoffs", "Seleção de novos jogadores", "All-Star Game", "Final"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual equipe Stephen Curry defende?",
+      "alternativas": ["Los Angeles Lakers", "Brooklyn Nets", "Golden State Warriors", "Phoenix Suns"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é uma 'assistência' no basquete?",
+      "alternativas": ["Roubo de bola", "Passe que resulta em cesta", "Bloqueio de arremesso", "Rebote ofensivo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador tem o apelido 'The Black Mamba'?",
+      "alternativas": ["Michael Jordan", "LeBron James", "Kobe Bryant", "Kevin Durant"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quanto tempo um jogador tem para arremessar após pegar a bola (NBA)?",
+      "alternativas": ["14 segundos", "20 segundos", "24 segundos", "30 segundos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome do troféu de campeão da NBA?",
+      "alternativas": ["Troféu Naismith", "Troféu Larry O'Brien", "Troféu Michael Jordan", "Troféu NBA"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos períodos tem um jogo de basquete?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual brasileiro jogou no San Antonio Spurs e Golden State Warriors?",
+      "alternativas": ["Nenê", "Leandro Barbosa", "Anderson Varejão", "Tiago Splitter"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é um 'alley-oop'?",
+      "alternativas": ["Passe para enterrada no ar", "Arremesso de três pontos", "Bloqueio duplo", "Falta técnica"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual jogador é conhecido por seus arremessos de três pontos?",
+      "alternativas": ["Shaquille O'Neal", "Stephen Curry", "Dwight Howard", "Ben Wallace"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que ano o 'Dream Team' americano dominou as Olimpíadas?",
+      "alternativas": ["1988", "1992", "1996", "2000"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o diâmetro do aro de basquete?",
+      "alternativas": ["40cm", "45cm", "46cm", "50cm"],
+      "correta": 2
+    }
+  ]
+}

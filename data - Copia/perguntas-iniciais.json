@@ -1,0 +1,628 @@
+{
+  "perguntas": [
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital dos Estados Unidos?",
+      "alternativas": ["Nova York", "Los Angeles", "Washington D.C.", "Chicago"],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Quantos estados compõem os Estados Unidos?",
+      "alternativas": ["48", "50", "51", "52"],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior estado dos EUA em área territorial?",
+      "alternativas": ["Texas", "Califórnia", "Alasca", "Montana"],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual rio é o mais longo dos Estados Unidos?",
+      "alternativas": ["Rio Colorado", "Rio Mississippi", "Rio Missouri", "Rio Ohio"],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Em qual estado fica o Grand Canyon?",
+      "alternativas": ["Nevada", "Utah", "Arizona", "Colorado"],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a cidade mais populosa dos Estados Unidos?",
+      "alternativas": ["Los Angeles", "Chicago", "Houston", "Nova York"],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual montanha é a mais alta dos EUA?",
+      "alternativas": ["Monte Denali", "Monte Whitney", "Monte Rainier", "Monte Elbert"],
+      "correta": 0
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Quantos fusos horários existem nos Estados Unidos continental?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano os Estados Unidos declararam independência?",
+      "alternativas": ["1774", "1775", "1776", "1777"],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quem foi o primeiro presidente dos Estados Unidos?",
+      "alternativas": ["Thomas Jefferson", "John Adams", "Benjamin Franklin", "George Washington"],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual presidente aboliu a escravidão nos EUA?",
+      "alternativas": ["Abraham Lincoln", "Andrew Johnson", "Ulysses Grant", "Theodore Roosevelt"],
+      "correta": 0
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano começou a Guerra Civil Americana?",
+      "alternativas": ["1859", "1860", "1861", "1862"],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual evento levou os EUA a entrarem na Segunda Guerra Mundial?",
+      "alternativas": ["Invasão da Polônia", "Ataque a Pearl Harbor", "Batalha da Inglaterra", "Invasão da França"],
+      "correta": 1
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Quantas colônias originais formaram os Estados Unidos?",
+      "alternativas": ["10", "11", "12", "13"],
+      "correta": 3
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Qual presidente comprou a Louisiana da França?",
+      "alternativas": ["George Washington", "John Adams", "Thomas Jefferson", "James Madison"],
+      "correta": 2
+    },
+    {
+      "tema": "historia",
+      "enunciado": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "alternativas": ["1967", "1968", "1969", "1970"],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quem inventou a lâmpada elétrica?",
+      "alternativas": ["Nikola Tesla", "Thomas Edison", "Alexander Graham Bell", "Benjamin Franklin"],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o elemento químico mais abundante no universo?",
+      "alternativas": ["Oxigênio", "Carbono", "Hidrogênio", "Hélio"],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quantos planetas existem no Sistema Solar?",
+      "alternativas": ["7", "8", "9", "10"],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é a velocidade da luz em km/s aproximadamente?",
+      "alternativas": ["150.000 km/s", "300.000 km/s", "450.000 km/s", "600.000 km/s"],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual cientista desenvolveu a teoria da relatividade?",
+      "alternativas": ["Isaac Newton", "Stephen Hawking", "Albert Einstein", "Niels Bohr"],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o maior órgão do corpo humano?",
+      "alternativas": ["Coração", "Fígado", "Pele", "Pulmão"],
+      "correta": 2
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Quantos cromossomos tem o ser humano?",
+      "alternativas": ["23", "46", "48", "64"],
+      "correta": 1
+    },
+    {
+      "tema": "ciencia",
+      "enunciado": "Qual é o gás mais abundante na atmosfera terrestre?",
+      "alternativas": ["Oxigênio", "Nitrogênio", "Dióxido de Carbono", "Argônio"],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual filme ganhou o Oscar de Melhor Filme em 1994?",
+      "alternativas": ["Pulp Fiction", "Forrest Gump", "O Rei Leão", "Um Sonho de Liberdade"],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quem dirigiu o filme Titanic?",
+      "alternativas": ["Steven Spielberg", "James Cameron", "Christopher Nolan", "Martin Scorsese"],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série da HBO é baseada em livros de George R.R. Martin?",
+      "alternativas": ["The Wire", "True Detective", "Game of Thrones", "Westworld"],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual ator interpreta Jack Sparrow em Piratas do Caribe?",
+      "alternativas": ["Orlando Bloom", "Johnny Depp", "Geoffrey Rush", "Javier Bardem"],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Em qual ano foi lançado o primeiro filme de Harry Potter?",
+      "alternativas": ["1999", "2000", "2001", "2002"],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual é o nome do personagem interpretado por Keanu Reeves em Matrix?",
+      "alternativas": ["Morpheus", "Neo", "Trinity", "Smith"],
+      "correta": 1
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Quantos filmes tem a saga original de Star Wars?",
+      "alternativas": ["3", "6", "9", "12"],
+      "correta": 2
+    },
+    {
+      "tema": "cinema-series",
+      "enunciado": "Qual série de TV se passa na cidade fictícia de Hawkins?",
+      "alternativas": ["Dark", "Stranger Things", "The OA", "Lost"],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou o álbum 'Abbey Road'?",
+      "alternativas": ["The Rolling Stones", "The Beatles", "Led Zeppelin", "Pink Floyd"],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é conhecido como o 'Rei do Pop'?",
+      "alternativas": ["Prince", "Elvis Presley", "Michael Jackson", "Freddie Mercury"],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista cantou 'Bohemian Rhapsody'?",
+      "alternativas": ["David Bowie", "Queen", "Elton John", "The Who"],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Em que cidade nasceu o Hip Hop?",
+      "alternativas": ["Los Angeles", "Chicago", "Nova York", "Detroit"],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual instrumento Jimi Hendrix era famoso por tocar?",
+      "alternativas": ["Bateria", "Baixo", "Guitarra", "Teclado"],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista é conhecida como 'Rainha do Pop'?",
+      "alternativas": ["Whitney Houston", "Madonna", "Beyoncé", "Lady Gaga"],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quantos integrantes tinha a banda Nirvana?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou o álbum 'Thriller', o mais vendido da história?",
+      "alternativas": ["Prince", "Michael Jackson", "Whitney Houston", "Stevie Wonder"],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o jogo mais vendido de todos os tempos?",
+      "alternativas": ["GTA V", "Tetris", "Minecraft", "Wii Sports"],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual empresa criou o personagem Mario?",
+      "alternativas": ["Sega", "Sony", "Nintendo", "Atari"],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Em que ano foi lançado o primeiro PlayStation?",
+      "alternativas": ["1992", "1994", "1996", "1998"],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é o nome do protagonista de The Legend of Zelda?",
+      "alternativas": ["Zelda", "Link", "Ganon", "Epona"],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual jogo popularizou o gênero Battle Royale?",
+      "alternativas": ["Fortnite", "PUBG", "Apex Legends", "Call of Duty Warzone"],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual é a franquia de jogos de corrida mais vendida?",
+      "alternativas": ["Need for Speed", "Gran Turismo", "Mario Kart", "Forza"],
+      "correta": 2
+    },
+    {
+      "tema": "games",
+      "enunciado": "Em Pokémon, qual é o número do Pikachu na Pokédex?",
+      "alternativas": ["1", "25", "50", "151"],
+      "correta": 1
+    },
+    {
+      "tema": "games",
+      "enunciado": "Qual empresa desenvolveu o jogo Halo?",
+      "alternativas": ["Rockstar", "Bungie", "EA", "Ubisoft"],
+      "correta": 1
+    },
+    {
+      "tema": "esportes",
+      "enunciado": "Quantos jogadores tem um time de basquete em quadra?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 1
+    },
+    {
+      "tema": "esportes",
+      "enunciado": "Qual país sediou a Copa do Mundo de 2014?",
+      "alternativas": ["Rússia", "África do Sul", "Brasil", "Alemanha"],
+      "correta": 2
+    },
+    {
+      "tema": "esportes",
+      "enunciado": "Quantos anéis olímpicos existem?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 1
+    },
+    {
+      "tema": "esportes",
+      "enunciado": "Qual tenista masculino tem mais títulos de Grand Slam?",
+      "alternativas": ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
+      "correta": 2
+    },
+    {
+      "tema": "esportes",
+      "enunciado": "Em qual esporte se usa o termo 'home run'?",
+      "alternativas": ["Futebol Americano", "Beisebol", "Críquete", "Golfe"],
+      "correta": 1
+    },
+    {
+      "tema": "esportes",
+      "enunciado": "Qual país ganhou mais Copas do Mundo de Futebol?",
+      "alternativas": ["Alemanha", "Argentina", "Brasil", "Itália"],
+      "correta": 2
+    },
+    {
+      "tema": "esportes",
+      "enunciado": "Quantas Olimpíadas Michael Phelps participou?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": 2
+    },
+    {
+      "tema": "esportes",
+      "enunciado": "Qual é o esporte mais popular nos Estados Unidos?",
+      "alternativas": ["Beisebol", "Basquete", "Futebol Americano", "Hóquei"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou a Mona Lisa?",
+      "alternativas": ["Michelangelo", "Leonardo da Vinci", "Rafael", "Botticelli"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Em qual museu está a Mona Lisa?",
+      "alternativas": ["Museu do Prado", "Museu Britânico", "Louvre", "Uffizi"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é famoso por pintar relógios derretidos?",
+      "alternativas": ["Pablo Picasso", "Salvador Dalí", "Joan Miró", "René Magritte"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico Van Gogh representava?",
+      "alternativas": ["Impressionismo", "Pós-Impressionismo", "Expressionismo", "Cubismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem esculpiu a estátua de David?",
+      "alternativas": ["Leonardo da Vinci", "Donatello", "Michelangelo", "Bernini"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor cortou a própria orelha?",
+      "alternativas": ["Claude Monet", "Vincent van Gogh", "Paul Gauguin", "Édouard Manet"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "O que Andy Warhol é famoso por pintar?",
+      "alternativas": ["Paisagens", "Latas de sopa Campbell's", "Cavalos", "Flores"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o estilo artístico de Picasso?",
+      "alternativas": ["Surrealismo", "Impressionismo", "Cubismo", "Realismo"],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'Dom Quixote'?",
+      "alternativas": ["Miguel de Cervantes", "William Shakespeare", "Dante Alighieri", "Victor Hugo"],
+      "correta": 0
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autor criou Sherlock Holmes?",
+      "alternativas": ["Agatha Christie", "Arthur Conan Doyle", "Edgar Allan Poe", "H.G. Wells"],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu '1984'?",
+      "alternativas": ["Aldous Huxley", "Ray Bradbury", "George Orwell", "H.G. Wells"],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual é o livro mais vendido de todos os tempos (excluindo religiosos)?",
+      "alternativas": ["Harry Potter", "O Senhor dos Anéis", "Dom Quixote", "O Pequeno Príncipe"],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'O Velho e o Mar'?",
+      "alternativas": ["F. Scott Fitzgerald", "Ernest Hemingway", "John Steinbeck", "Mark Twain"],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Qual autora escreveu 'Orgulho e Preconceito'?",
+      "alternativas": ["Charlotte Brontë", "Jane Austen", "Emily Brontë", "Virginia Woolf"],
+      "correta": 1
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quantos livros tem a série Harry Potter?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2
+    },
+    {
+      "tema": "literatura",
+      "enunciado": "Quem escreveu 'A Metamorfose'?",
+      "alternativas": ["Albert Camus", "Franz Kafka", "Fiódor Dostoiévski", "Jean-Paul Sartre"],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país é o maior produtor de café do mundo?",
+      "alternativas": ["Colômbia", "Vietnã", "Brasil", "Etiópia"],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é o ingrediente principal do guacamole?",
+      "alternativas": ["Tomate", "Abacate", "Pimentão", "Cebola"],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originária a pizza?",
+      "alternativas": ["Grécia", "França", "Itália", "Espanha"],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual bebida é feita com uvas?",
+      "alternativas": ["Cerveja", "Vinho", "Whisky", "Rum"],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual é a especiaria mais cara do mundo?",
+      "alternativas": ["Baunilha", "Cardamomo", "Açafrão", "Canela"],
+      "correta": 2
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "De qual país é originário o sushi?",
+      "alternativas": ["China", "Coreia", "Tailândia", "Japão"],
+      "correta": 3
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual fruta é conhecida como 'rei das frutas'?",
+      "alternativas": ["Manga", "Durian", "Abacaxi", "Mamão"],
+      "correta": 1
+    },
+    {
+      "tema": "comidas-bebidas",
+      "enunciado": "Qual país inventou o chocolate quente?",
+      "alternativas": ["Suíça", "Bélgica", "México", "França"],
+      "correta": 2
+    },
+    {
+      "tema": "mitos-verdades",
+      "enunciado": "A Grande Muralha da China é visível do espaço a olho nu?",
+      "alternativas": ["Verdade", "Mito", "Depende do clima", "Só com telescópio"],
+      "correta": 1
+    },
+    {
+      "tema": "mitos-verdades",
+      "enunciado": "Peixes têm memória de apenas 3 segundos?",
+      "alternativas": ["Verdade", "Mito", "Só peixes dourados", "Depende da espécie"],
+      "correta": 1
+    },
+    {
+      "tema": "mitos-verdades",
+      "enunciado": "Humanos usam apenas 10% do cérebro?",
+      "alternativas": ["Verdade", "Mito", "Só quando dormem", "Depende da pessoa"],
+      "correta": 1
+    },
+    {
+      "tema": "mitos-verdades",
+      "enunciado": "Raios nunca caem duas vezes no mesmo lugar?",
+      "alternativas": ["Verdade", "Mito", "Só em áreas urbanas", "Depende da altitude"],
+      "correta": 1
+    },
+    {
+      "tema": "mitos-verdades",
+      "enunciado": "Touros ficam irritados com a cor vermelha?",
+      "alternativas": ["Verdade", "Mito", "Só alguns touros", "Depende da raça"],
+      "correta": 1
+    },
+    {
+      "tema": "mitos-verdades",
+      "enunciado": "O Monte Everest é a montanha mais alta do mundo?",
+      "alternativas": ["Verdade", "Mito", "Depende da medição", "Só acima do nível do mar"],
+      "correta": 0
+    },
+    {
+      "tema": "mitos-verdades",
+      "enunciado": "Camaleões mudam de cor para se camuflar?",
+      "alternativas": ["Verdade", "Mito (é para comunicação)", "Só algumas espécies", "Depende do ambiente"],
+      "correta": 1
+    },
+    {
+      "tema": "mitos-verdades",
+      "enunciado": "Napoleão Bonaparte era baixo?",
+      "alternativas": ["Verdade", "Mito (tinha altura média)", "Só quando jovem", "Depende do padrão"],
+      "correta": 1
+    },
+    {
+      "tema": "nostalgia",
+      "enunciado": "Qual console da Nintendo foi lançado em 1985?",
+      "alternativas": ["Super Nintendo", "Nintendo 64", "NES", "Game Boy"],
+      "correta": 2
+    },
+    {
+      "tema": "nostalgia",
+      "enunciado": "Qual era o nome do cachorro dos Jetsons?",
+      "alternativas": ["Astro", "Cosmo", "Buddy", "Max"],
+      "correta": 0
+    },
+    {
+      "tema": "nostalgia",
+      "enunciado": "Qual banda lançou 'Smells Like Teen Spirit' em 1991?",
+      "alternativas": ["Pearl Jam", "Nirvana", "Soundgarden", "Alice in Chains"],
+      "correta": 1
+    },
+    {
+      "tema": "nostalgia",
+      "enunciado": "Qual era o nome do gato de Os Simpsons?",
+      "alternativas": ["Bola de Neve", "Miau", "Garfield", "Snowball"],
+      "correta": 0
+    },
+    {
+      "tema": "nostalgia",
+      "enunciado": "Em que ano foi lançado o Tamagotchi?",
+      "alternativas": ["1995", "1996", "1997", "1998"],
+      "correta": 1
+    },
+    {
+      "tema": "nostalgia",
+      "enunciado": "Qual era a cor do primeiro iMac?",
+      "alternativas": ["Branco", "Azul Bondi", "Cinza", "Preto"],
+      "correta": 1
+    },
+    {
+      "tema": "nostalgia",
+      "enunciado": "Qual programa de TV tinha o personagem Seninha?",
+      "alternativas": ["TV Globinho", "Xou da Xuxa", "Senninha", "Bom Dia & Cia"],
+      "correta": 2
+    },
+    {
+      "tema": "nostalgia",
+      "enunciado": "Qual era o nome completo do personagem Pica-Pau?",
+      "alternativas": ["Walter Lantz Woodpecker", "Woody Woodpecker", "Walter Woodpecker", "Woody Lantz"],
+      "correta": 1
+    },
+    {
+      "tema": "curiosidades",
+      "enunciado": "Qual é o animal mais rápido do mundo?",
+      "alternativas": ["Leopardo", "Guepardo", "Leão", "Tigre"],
+      "correta": 1
+    },
+    {
+      "tema": "curiosidades",
+      "enunciado": "Quantos corações tem um polvo?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 2
+    },
+    {
+      "tema": "curiosidades",
+      "enunciado": "Qual é o menor país do mundo?",
+      "alternativas": ["Mônaco", "Vaticano", "San Marino", "Liechtenstein"],
+      "correta": 1
+    },
+    {
+      "tema": "curiosidades",
+      "enunciado": "Quantos ossos tem o corpo humano adulto?",
+      "alternativas": ["186", "206", "226", "246"],
+      "correta": 1
+    },
+    {
+      "tema": "curiosidades",
+      "enunciado": "Qual é o único mamífero capaz de voar?",
+      "alternativas": ["Esquilo voador", "Morcego", "Colugo", "Peixe voador"],
+      "correta": 1
+    },
+    {
+      "tema": "curiosidades",
+      "enunciado": "Qual é a língua mais falada do mundo?",
+      "alternativas": ["Inglês", "Espanhol", "Mandarim", "Hindi"],
+      "correta": 2
+    },
+    {
+      "tema": "curiosidades",
+      "enunciado": "Quantas pernas tem uma aranha?",
+      "alternativas": ["6", "8", "10", "12"],
+      "correta": 1
+    },
+    {
+      "tema": "curiosidades",
+      "enunciado": "Qual é o oceano mais profundo do mundo?",
+      "alternativas": ["Atlântico", "Índico", "Pacífico", "Ártico"],
+      "correta": 2
+    }
+  ]
+}

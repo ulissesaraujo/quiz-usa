@@ -1,0 +1,1204 @@
+{
+  "perguntas": [
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou a Mona Lisa?",
+      "alternativas": ["Michelangelo", "Leonardo da Vinci", "Rafael", "Caravaggio"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Em que museu está exposta a Mona Lisa?",
+      "alternativas": ["Museu do Prado", "Museu Britânico", "Museu do Louvre", "Galeria Uffizi"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem esculpiu o Davi de mármore em Florença?",
+      "alternativas": ["Donatello", "Bernini", "Michelangelo", "Rodin"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor cortou a própria orelha?",
+      "alternativas": ["Claude Monet", "Vincent van Gogh", "Paul Cézanne", "Edgar Degas"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico é caracterizado por pinceladas visíveis e luz natural?",
+      "alternativas": ["Cubismo", "Impressionismo", "Surrealismo", "Barroco"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Noite Estrelada'?",
+      "alternativas": ["Pablo Picasso", "Vincent van Gogh", "Salvador Dalí", "Henri Matisse"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido pelo Cubismo?",
+      "alternativas": ["Claude Monet", "Andy Warhol", "Pablo Picasso", "Rembrandt"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou o teto da Capela Sistina?",
+      "alternativas": ["Rafael", "Leonardo da Vinci", "Michelangelo", "Botticelli"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual obra de Salvador Dalí mostra relógios derretendo?",
+      "alternativas": ["O Enigma do Desejo", "A Persistência da Memória", "Girafa em Chamas", "Cisnes Refletindo Elefantes"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista liderou o movimento Pop Art?",
+      "alternativas": ["Andy Warhol", "Jackson Pollock", "Roy Lichtenstein", "Keith Haring"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Grito'?",
+      "alternativas": ["Gustav Klimt", "Edvard Munch", "Egon Schiele", "Max Ernst"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual técnica de pintura usa pequenos pontos de cor?",
+      "alternativas": ["Impressionismo", "Pontilhismo", "Fauvismo", "Expressionismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Guernica'?",
+      "alternativas": ["Salvador Dalí", "Joan Miró", "Pablo Picasso", "Diego Rivera"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista brasileiro pintou 'Abaporu'?",
+      "alternativas": ["Candido Portinari", "Di Cavalcanti", "Tarsila do Amaral", "Anita Malfatti"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual estilo artístico surgiu na Itália no século XIV?",
+      "alternativas": ["Barroco", "Renascimento", "Gótico", "Maneirismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem criou a escultura 'O Pensador'?",
+      "alternativas": ["Michelangelo", "Auguste Rodin", "Donatello", "Antonio Canova"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor é famoso pela 'Moça com Brinco de Pérola'?",
+      "alternativas": ["Rembrandt", "Johannes Vermeer", "Frans Hals", "Jan van Eyck"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico surgiu após a Primeira Guerra Mundial e rejeitava a lógica?",
+      "alternativas": ["Futurismo", "Dadaísmo", "Construtivismo", "Suprematismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'As Meninas'?",
+      "alternativas": ["El Greco", "Francisco Goya", "Diego Velázquez", "Bartolomé Murillo"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista mexicana é conhecida por seus autorretratos?",
+      "alternativas": ["Maria Izquierdo", "Remedios Varo", "Frida Kahlo", "Leonora Carrington"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual cor resulta da mistura de azul e amarelo?",
+      "alternativas": ["Laranja", "Verde", "Roxo", "Marrom"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Última Ceia'?",
+      "alternativas": ["Rafael", "Michelangelo", "Leonardo da Vinci", "Caravaggio"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual técnica usa a cera derretida misturada com pigmentos?",
+      "alternativas": ["Afresco", "Encáustica", "Têmpera", "Aquarela"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou 'Campbell's Soup Cans'?",
+      "alternativas": ["Roy Lichtenstein", "Andy Warhol", "Jasper Johns", "Robert Rauschenberg"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Nascimento de Vênus'?",
+      "alternativas": ["Rafael", "Leonardo da Vinci", "Sandro Botticelli", "Tiziano"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico é caracterizado por formas geométricas abstratas?",
+      "alternativas": ["Impressionismo", "Cubismo", "Romantismo", "Realismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem foi o principal artista do Barroco italiano?",
+      "alternativas": ["Michelangelo", "Caravaggio", "Botticelli", "Rafael"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista holandês é famoso por suas pinturas de girassóis?",
+      "alternativas": ["Rembrandt", "Vermeer", "Van Gogh", "Frans Hals"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da técnica de pintura em paredes com gesso úmido?",
+      "alternativas": ["Têmpera", "Afresco", "Óleo", "Guache"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Ronda Noturna'?",
+      "alternativas": ["Vermeer", "Rembrandt", "Frans Hals", "Rubens"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas bailarinas?",
+      "alternativas": ["Monet", "Renoir", "Degas", "Manet"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico buscava representar o mundo dos sonhos?",
+      "alternativas": ["Cubismo", "Expressionismo", "Surrealismo", "Futurismo"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Os Girassóis'?",
+      "alternativas": ["Monet", "Van Gogh", "Cézanne", "Gauguin"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista russo é considerado o pai da arte abstrata?",
+      "alternativas": ["Malevich", "Kandinsky", "Chagall", "El Lissitzky"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor espanhol criou o período azul e rosa?",
+      "alternativas": ["Dalí", "Miró", "Picasso", "Goya"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem esculpiu a Pietà do Vaticano?",
+      "alternativas": ["Bernini", "Michelangelo", "Donatello", "Cellini"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a cor complementar do vermelho?",
+      "alternativas": ["Amarelo", "Azul", "Verde", "Laranja"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Grande Onda de Kanagawa'?",
+      "alternativas": ["Hiroshige", "Hokusai", "Utamaro", "Sharaku"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou o 'Balão Dog'?",
+      "alternativas": ["Damien Hirst", "Jeff Koons", "Banksy", "Ai Weiwei"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico italiano exaltava a velocidade e a tecnologia?",
+      "alternativas": ["Dadaísmo", "Futurismo", "Construtivismo", "Minimalismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Impressão, Sol Nascente'?",
+      "alternativas": ["Renoir", "Degas", "Monet", "Pissarro"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista americano é conhecido pela técnica de dripping?",
+      "alternativas": ["Willem de Kooning", "Jackson Pollock", "Mark Rothko", "Franz Kline"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Beijo'?",
+      "alternativas": ["Egon Schiele", "Gustav Klimt", "Edvard Munch", "Oskar Kokoschka"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual estilo arquitetônico é caracterizado por arcos ogivais?",
+      "alternativas": ["Românico", "Gótico", "Renascentista", "Barroco"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem é considerado o pai do Impressionismo?",
+      "alternativas": ["Monet", "Manet", "Renoir", "Cézanne"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou móbiles como forma de arte?",
+      "alternativas": ["Henry Moore", "Alexander Calder", "Jean Arp", "Constantin Brancusi"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor é famoso por retratos de Marilyn Monroe?",
+      "alternativas": ["Roy Lichtenstein", "Andy Warhol", "Jasper Johns", "Tom Wesselmann"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Jardim das Delícias Terrenas'?",
+      "alternativas": ["Pieter Bruegel", "Hieronymus Bosch", "Jan van Eyck", "Albrecht Dürer"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a técnica de criar imagens com pedaços de materiais?",
+      "alternativas": ["Colagem", "Mosaico", "Gravura", "Decalque"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou os murais do Palácio Nacional do México?",
+      "alternativas": ["Frida Kahlo", "David Alfaro Siqueiros", "Diego Rivera", "José Clemente Orozco"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista inglês é famoso por suas obras de rua anônimas?",
+      "alternativas": ["Damien Hirst", "Tracey Emin", "Banksy", "Antony Gormley"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico surgiu em Nova York nos anos 1940-50?",
+      "alternativas": ["Pop Art", "Expressionismo Abstrato", "Minimalismo", "Arte Conceitual"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Composição com Vermelho, Amarelo e Azul'?",
+      "alternativas": ["Kandinsky", "Mondrian", "Malevich", "Klee"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista brasileiro é conhecido pelos 'Bichos'?",
+      "alternativas": ["Hélio Oiticica", "Lygia Clark", "Lygia Pape", "Cildo Meireles"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Liberdade Guiando o Povo'?",
+      "alternativas": ["Jacques-Louis David", "Eugène Delacroix", "Théodore Géricault", "Jean-Auguste Ingres"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome do museu que abriga 'A Noite Estrelada'?",
+      "alternativas": ["Museu do Louvre", "Metropolitan", "MoMA", "Tate Modern"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem criou a técnica de ready-made?",
+      "alternativas": ["Man Ray", "Marcel Duchamp", "Max Ernst", "Francis Picabia"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista pintou a 'Escola de Atenas'?",
+      "alternativas": ["Leonardo da Vinci", "Michelangelo", "Rafael", "Bramante"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico usava cores vibrantes e pinceladas expressivas?",
+      "alternativas": ["Pontilhismo", "Fauvismo", "Cubismo", "Construtivismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'American Gothic'?",
+      "alternativas": ["Edward Hopper", "Grant Wood", "Norman Rockwell", "Andrew Wyeth"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas pinturas de nenúfares?",
+      "alternativas": ["Renoir", "Degas", "Monet", "Cézanne"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem esculpiu 'O Beijo' em mármore?",
+      "alternativas": ["Michelangelo", "Rodin", "Canova", "Bernini"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor é famoso por suas obras com relógios moles?",
+      "alternativas": ["Miró", "Dalí", "Magritte", "Ernst"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a cor primária que não é vermelho nem azul?",
+      "alternativas": ["Verde", "Amarelo", "Laranja", "Roxo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Criação de Adão'?",
+      "alternativas": ["Leonardo da Vinci", "Rafael", "Michelangelo", "Botticelli"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista belga é conhecido por pinturas com homens de chapéu-coco?",
+      "alternativas": ["Paul Delvaux", "René Magritte", "James Ensor", "Fernand Khnopff"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual técnica japonesa usa blocos de madeira para impressão?",
+      "alternativas": ["Sumi-e", "Ukiyo-e", "Origami", "Ikebana"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Café Noturno'?",
+      "alternativas": ["Gauguin", "Van Gogh", "Toulouse-Lautrec", "Cézanne"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou 'Fountain' usando um urinol?",
+      "alternativas": ["Man Ray", "Marcel Duchamp", "Kurt Schwitters", "Hans Arp"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico buscava capturar a luz e o momento?",
+      "alternativas": ["Realismo", "Romantismo", "Impressionismo", "Naturalismo"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Os Comedores de Batata'?",
+      "alternativas": ["Millet", "Van Gogh", "Courbet", "Daumier"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou esculturas de aranhas gigantes?",
+      "alternativas": ["Anish Kapoor", "Louise Bourgeois", "Richard Serra", "Antony Gormley"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da técnica de pintura com tinta à base de ovo?",
+      "alternativas": ["Óleo", "Acrílico", "Têmpera", "Guache"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Olympia'?",
+      "alternativas": ["Monet", "Manet", "Renoir", "Degas"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista chinês contemporâneo é conhecido por sua arte política?",
+      "alternativas": ["Cai Guo-Qiang", "Ai Weiwei", "Xu Bing", "Zhang Huan"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor espanhol é conhecido por suas 'pinturas negras'?",
+      "alternativas": ["Velázquez", "El Greco", "Goya", "Zurbarán"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem criou a obra 'For the Love of God' com crânio de diamantes?",
+      "alternativas": ["Jeff Koons", "Damien Hirst", "Banksy", "Maurizio Cattelan"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico é caracterizado por grandes campos de cor?",
+      "alternativas": ["Pop Art", "Color Field", "Op Art", "Hard Edge"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Jangada da Medusa'?",
+      "alternativas": ["Delacroix", "Géricault", "David", "Ingres"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas esculturas de bronze alongadas?",
+      "alternativas": ["Giacometti", "Moore", "Rodin", "Brancusi"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome do museu em Madri que abriga 'Guernica'?",
+      "alternativas": ["Museu do Prado", "Museu Reina Sofia", "Museu Thyssen", "Museu Picasso"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Retrato do Dr. Gachet'?",
+      "alternativas": ["Cézanne", "Van Gogh", "Gauguin", "Toulouse-Lautrec"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou as 'Brillo Boxes'?",
+      "alternativas": ["Roy Lichtenstein", "Andy Warhol", "Jasper Johns", "Claes Oldenburg"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual estilo artístico é caracterizado por ornamentos exuberantes?",
+      "alternativas": ["Renascimento", "Maneirismo", "Barroco", "Neoclassicismo"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Nu Descendo uma Escada'?",
+      "alternativas": ["Picasso", "Duchamp", "Braque", "Léger"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista brasileiro criou a série 'Retirantes'?",
+      "alternativas": ["Di Cavalcanti", "Portinari", "Tarsila do Amaral", "Lasar Segall"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento buscava representar múltiplas perspectivas simultaneamente?",
+      "alternativas": ["Futurismo", "Cubismo", "Expressionismo", "Fauvismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Almoço na Relva'?",
+      "alternativas": ["Monet", "Manet", "Renoir", "Cézanne"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por seus quadros de latas de sopa?",
+      "alternativas": ["Roy Lichtenstein", "Andy Warhol", "James Rosenquist", "Tom Wesselmann"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a técnica de criar relevos em papel?",
+      "alternativas": ["Decoupage", "Embossing", "Origami", "Quilling"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Noiva Despida pelos Seus Celibatários'?",
+      "alternativas": ["Picabia", "Duchamp", "Man Ray", "Ernst"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou instalações com luz néon?",
+      "alternativas": ["James Turrell", "Dan Flavin", "Robert Irwin", "Bruce Nauman"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor francês é conhecido por cenas de cabarés?",
+      "alternativas": ["Degas", "Renoir", "Toulouse-Lautrec", "Manet"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Filho do Homem' com a maçã verde?",
+      "alternativas": ["Dalí", "Magritte", "Ernst", "Tanguy"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da técnica de gravura em metal?",
+      "alternativas": ["Litografia", "Xilogravura", "Água-forte", "Serigrafia"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem criou as 'Caixas de Cornell'?",
+      "alternativas": ["Man Ray", "Joseph Cornell", "Marcel Duchamp", "Robert Rauschenberg"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas pinturas de pessoas solitárias em ambientes urbanos?",
+      "alternativas": ["Grant Wood", "Edward Hopper", "Norman Rockwell", "Andrew Wyeth"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico usa ilusões ópticas?",
+      "alternativas": ["Pop Art", "Op Art", "Minimalismo", "Conceitual"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Nighthawks'?",
+      "alternativas": ["Norman Rockwell", "Edward Hopper", "Grant Wood", "Andrew Wyeth"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou 'Spiral Jetty'?",
+      "alternativas": ["Richard Serra", "Robert Smithson", "Michael Heizer", "Walter De Maria"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da arte de dobrar papel?",
+      "alternativas": ["Kirigami", "Origami", "Quilling", "Papier-mâché"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Autorretrato com Colar de Espinhos'?",
+      "alternativas": ["Remedios Varo", "Frida Kahlo", "Leonora Carrington", "Maria Izquierdo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por embrulhar monumentos?",
+      "alternativas": ["Anish Kapoor", "Christo", "Richard Serra", "Jeff Koons"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento rejeitava a arte tradicional com humor e absurdo?",
+      "alternativas": ["Surrealismo", "Dadaísmo", "Futurismo", "Construtivismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Les Demoiselles d'Avignon'?",
+      "alternativas": ["Braque", "Picasso", "Léger", "Gris"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por quadros de pontos coloridos infinitos?",
+      "alternativas": ["Takashi Murakami", "Yayoi Kusama", "Yoshitomo Nara", "Chiho Aoshima"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da técnica de impressão usando tela de seda?",
+      "alternativas": ["Litografia", "Xilogravura", "Água-forte", "Serigrafia"],
+      "correta": 3
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Quarto em Arles'?",
+      "alternativas": ["Gauguin", "Van Gogh", "Cézanne", "Seurat"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista britânico é famoso por seus tubarões em formol?",
+      "alternativas": ["Banksy", "Damien Hirst", "Tracey Emin", "Antony Gormley"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor é conhecido por suas paisagens de Provence?",
+      "alternativas": ["Monet", "Renoir", "Cézanne", "Pissarro"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem criou as esculturas de 'Pássaro no Espaço'?",
+      "alternativas": ["Giacometti", "Moore", "Brancusi", "Arp"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico surgiu no Brasil em 1922?",
+      "alternativas": ["Concretismo", "Modernismo", "Neoconcretismo", "Tropicália"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'De Onde Viemos? O Que Somos? Para Onde Vamos?'?",
+      "alternativas": ["Van Gogh", "Gauguin", "Cézanne", "Seurat"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a cor secundária formada por vermelho e amarelo?",
+      "alternativas": ["Verde", "Laranja", "Roxo", "Marrom"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Bar do Folies-Bergère'?",
+      "alternativas": ["Degas", "Renoir", "Manet", "Monet"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou 'The Gates' no Central Park?",
+      "alternativas": ["Richard Serra", "Christo", "Jeff Koons", "Anish Kapoor"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual estilo artístico valoriza a emoção sobre a razão?",
+      "alternativas": ["Neoclassicismo", "Romantismo", "Realismo", "Academicismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Vênus Adormecida'?",
+      "alternativas": ["Tiziano", "Giorgione", "Bellini", "Veronese"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista americano pintou bandeiras e alvos?",
+      "alternativas": ["Andy Warhol", "Roy Lichtenstein", "Jasper Johns", "Robert Rauschenberg"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da arte de criar imagens com vidro colorido?",
+      "alternativas": ["Mosaico", "Vitral", "Afresco", "Encáustica"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Autoretrato com Orelha Cortada'?",
+      "alternativas": ["Gauguin", "Van Gogh", "Cézanne", "Toulouse-Lautrec"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por seus retratos de celebridades em cores vibrantes?",
+      "alternativas": ["Andy Warhol", "Roy Lichtenstein", "Keith Haring", "Jean-Michel Basquiat"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico usava pontos de cores puras lado a lado?",
+      "alternativas": ["Impressionismo", "Divisionismo", "Fauvismo", "Expressionismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Moça Lendo uma Carta à Janela'?",
+      "alternativas": ["Rembrandt", "Vermeer", "Hals", "De Hooch"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista brasileiro criou os 'Parangolés'?",
+      "alternativas": ["Lygia Clark", "Hélio Oiticica", "Lygia Pape", "Cildo Meireles"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da técnica de criar imagens raspando tinta?",
+      "alternativas": ["Sgraffito", "Impasto", "Chiaroscuro", "Sfumato"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Balanço'?",
+      "alternativas": ["Watteau", "Fragonard", "Boucher", "Chardin"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou esculturas enormes de objetos cotidianos?",
+      "alternativas": ["Andy Warhol", "Claes Oldenburg", "Roy Lichtenstein", "Tom Wesselmann"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico exaltava a vida rural e camponesa?",
+      "alternativas": ["Impressionismo", "Realismo", "Romantismo", "Naturalismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'As Respigadoras'?",
+      "alternativas": ["Courbet", "Millet", "Daubigny", "Corot"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas esculturas de figuras alongadas?",
+      "alternativas": ["Henry Moore", "Alberto Giacometti", "Constantin Brancusi", "Alexander Calder"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da técnica que usa luz e sombra dramaticamente?",
+      "alternativas": ["Sfumato", "Chiaroscuro", "Impasto", "Velatura"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Rendeira'?",
+      "alternativas": ["Vermeer", "Rembrandt", "De Hooch", "Ter Borch"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas pinturas de quadrados coloridos?",
+      "alternativas": ["Kandinsky", "Mondrian", "Malevich", "Josef Albers"],
+      "correta": 3
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico surgiu como reação ao Impressionismo?",
+      "alternativas": ["Fauvismo", "Pós-Impressionismo", "Expressionismo", "Simbolismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Tarde de Domingo na Ilha de Grande Jatte'?",
+      "alternativas": ["Monet", "Renoir", "Seurat", "Signac"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista japonês é conhecido por suas flores e caveiras coloridas?",
+      "alternativas": ["Takashi Murakami", "Yayoi Kusama", "Yoshitomo Nara", "Hiroshi Sugimoto"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a arte de criar esculturas em jardins com plantas?",
+      "alternativas": ["Bonsai", "Ikebana", "Topiaria", "Paisagismo"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Cristo Amarelo'?",
+      "alternativas": ["Van Gogh", "Gauguin", "Bernard", "Denis"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista americano pintou cenas de histórias em quadrinhos?",
+      "alternativas": ["Andy Warhol", "Roy Lichtenstein", "Jasper Johns", "Robert Rauschenberg"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico buscava formas essenciais e puras?",
+      "alternativas": ["Pop Art", "Minimalismo", "Arte Conceitual", "Neo-Expressionismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Morte de Marat'?",
+      "alternativas": ["Delacroix", "Géricault", "David", "Ingres"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou a 'Cloud Gate' em Chicago?",
+      "alternativas": ["Richard Serra", "Jeff Koons", "Anish Kapoor", "Olafur Eliasson"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da técnica de pintura com camadas translúcidas?",
+      "alternativas": ["Impasto", "Velatura", "Sfumato", "Sgraffito"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Moinho de Vento em Wijk bij Duurstede'?",
+      "alternativas": ["Rembrandt", "Vermeer", "Ruisdael", "Hobbema"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista brasileiro é conhecido por suas esculturas de ferro?",
+      "alternativas": ["Franz Weissmann", "Amilcar de Castro", "Sérgio Camargo", "Lygia Pape"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico valorizava a arte clássica greco-romana?",
+      "alternativas": ["Romantismo", "Realismo", "Neoclassicismo", "Barroco"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Juramento dos Horácios'?",
+      "alternativas": ["Delacroix", "Géricault", "David", "Ingres"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas instalações com espelhos infinitos?",
+      "alternativas": ["Takashi Murakami", "Yayoi Kusama", "Ai Weiwei", "Anish Kapoor"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a técnica de pintar com tinta espessa criando textura?",
+      "alternativas": ["Velatura", "Impasto", "Sfumato", "Chiaroscuro"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Dança'?",
+      "alternativas": ["Picasso", "Matisse", "Derain", "Vlaminck"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou o 'Cachorro de Balões'?",
+      "alternativas": ["Damien Hirst", "Jeff Koons", "Maurizio Cattelan", "Takashi Murakami"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico surgiu em resposta à industrialização?",
+      "alternativas": ["Art Nouveau", "Arts and Crafts", "Art Déco", "Bauhaus"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Mulher com Chapéu'?",
+      "alternativas": ["Picasso", "Matisse", "Derain", "Braque"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é o nome da técnica que cria efeito de fumaça suave?",
+      "alternativas": ["Chiaroscuro", "Sfumato", "Impasto", "Velatura"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Rapto das Filhas de Leucipo'?",
+      "alternativas": ["Caravaggio", "Rubens", "Velázquez", "Rembrandt"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico celebrava a máquina e a velocidade?",
+      "alternativas": ["Dadaísmo", "Surrealismo", "Futurismo", "Construtivismo"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem criou a obra 'A Fonte' (urinol) assinada como R. Mutt?",
+      "alternativas": ["Man Ray", "Marcel Duchamp", "Max Ernst", "Francis Picabia"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas pinturas de paisagens aquáticas?",
+      "alternativas": ["Renoir", "Monet", "Sisley", "Pissarro"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Madona Sistina'?",
+      "alternativas": ["Leonardo", "Michelangelo", "Rafael", "Botticelli"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é famoso por retratar a vida no Taiti?",
+      "alternativas": ["Van Gogh", "Gauguin", "Cézanne", "Seurat"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a técnica de criar imagens usando papel picado e colado?",
+      "alternativas": ["Decoupage", "Collage", "Papier collé", "Mosaico"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem é o artista por trás das famosas 'Meninas' do período azul?",
+      "alternativas": ["Dalí", "Miró", "Picasso", "Velázquez"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou as 'Combine Paintings' misturando pintura e objetos?",
+      "alternativas": ["Jasper Johns", "Robert Rauschenberg", "Andy Warhol", "Roy Lichtenstein"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual escola de arte e design alemã influenciou a arquitetura moderna?",
+      "alternativas": ["Art Nouveau", "Art Déco", "Bauhaus", "De Stijl"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Persistência da Memória' com relógios derretidos?",
+      "alternativas": ["Magritte", "Dalí", "Ernst", "Miró"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou esculturas cinéticas que se movem?",
+      "alternativas": ["Jean Tinguely", "Alexander Calder", "Naum Gabo", "Todos os anteriores"],
+      "correta": 3
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual pintor holandês do século XVII é mestre do claro-escuro?",
+      "alternativas": ["Vermeer", "Rembrandt", "Hals", "Rubens"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Nascimento de Vênus' no Renascimento italiano?",
+      "alternativas": ["Michelangelo", "Leonardo", "Botticelli", "Rafael"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista brasileiro é conhecido por suas obras com cordas e fios?",
+      "alternativas": ["Tunga", "Cildo Meireles", "Ernesto Neto", "Vik Muniz"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico é caracterizado pelo uso de linhas retas e cores primárias?",
+      "alternativas": ["Suprematismo", "De Stijl", "Construtivismo", "Minimalismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'Café Terraço à Noite'?",
+      "alternativas": ["Monet", "Renoir", "Van Gogh", "Gauguin"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas esculturas de 'Formas Únicas de Continuidade no Espaço'?",
+      "alternativas": ["Boccioni", "Balla", "Carrà", "Severini"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual técnica de pintura usa pigmentos misturados com gema de ovo?",
+      "alternativas": ["Óleo", "Têmpera", "Acrílico", "Aquarela"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem é conhecido como o mestre do Quatrocentro florentino?",
+      "alternativas": ["Leonardo", "Botticelli", "Masaccio", "Fra Angelico"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou as famosas 'Bandeiras' americanas?",
+      "alternativas": ["Andy Warhol", "Jasper Johns", "Roy Lichtenstein", "Robert Rauschenberg"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico é representado por Malevich e seu 'Quadrado Negro'?",
+      "alternativas": ["Construtivismo", "De Stijl", "Suprematismo", "Neoplasticismo"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Lição de Anatomia do Dr. Tulp'?",
+      "alternativas": ["Vermeer", "Rembrandt", "Hals", "Rubens"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista pop criou obras com histórias em quadrinhos ampliadas?",
+      "alternativas": ["Andy Warhol", "Roy Lichtenstein", "Claes Oldenburg", "James Rosenquist"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual museu abriga 'A Ronda Noturna' de Rembrandt?",
+      "alternativas": ["Louvre", "Rijksmuseum", "Prado", "National Gallery"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem é considerado o principal representante do Maneirismo?",
+      "alternativas": ["Michelangelo", "El Greco", "Pontormo", "Parmigianino"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas obras de Land Art no deserto?",
+      "alternativas": ["Richard Serra", "Michael Heizer", "Robert Smithson", "Walter De Maria"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico surgiu em Munique com Kandinsky e Marc?",
+      "alternativas": ["Die Brücke", "Der Blaue Reiter", "Bauhaus", "Dada"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Almoço dos Remadores'?",
+      "alternativas": ["Monet", "Renoir", "Degas", "Manet"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista contemporâneo é conhecido por suas instalações com balões?",
+      "alternativas": ["Anish Kapoor", "Jeff Koons", "Philippe Parreno", "Olafur Eliasson"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual é a técnica de gravura em madeira?",
+      "alternativas": ["Litografia", "Xilogravura", "Água-forte", "Serigrafia"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'A Virgem dos Rochedos'?",
+      "alternativas": ["Michelangelo", "Rafael", "Leonardo da Vinci", "Botticelli"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista brasileiro criou a obra 'Inserções em Circuitos Ideológicos'?",
+      "alternativas": ["Hélio Oiticica", "Lygia Clark", "Cildo Meireles", "Tunga"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico alemão do início do séc. XX usava cores fortes e formas distorcidas?",
+      "alternativas": ["Impressionismo", "Expressionismo", "Fauvismo", "Cubismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem criou a série 'Black Paintings'?",
+      "alternativas": ["Velázquez", "Goya", "El Greco", "Zurbarán"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista é conhecido por suas pinturas de caixas de sapato e prateleiras?",
+      "alternativas": ["Andy Warhol", "Donald Judd", "Dan Flavin", "Carl Andre"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual museu de Nova York abriga 'Les Demoiselles d'Avignon'?",
+      "alternativas": ["Metropolitan", "MoMA", "Guggenheim", "Whitney"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem é o artista por trás das instalações de luzes fluorescentes?",
+      "alternativas": ["James Turrell", "Dan Flavin", "Robert Irwin", "Bruce Nauman"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico é caracterizado por pinturas de ação e gestuais?",
+      "alternativas": ["Pop Art", "Expressionismo Abstrato", "Minimalismo", "Arte Conceitual"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Enterro do Conde de Orgaz'?",
+      "alternativas": ["Velázquez", "Goya", "El Greco", "Murillo"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista italiano é conhecido por suas naturezas-mortas com frutas?",
+      "alternativas": ["Caravaggio", "Morandi", "De Chirico", "Carrà"],
+      "correta": 0
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem pintou 'O Vagão de Terceira Classe'?",
+      "alternativas": ["Courbet", "Millet", "Daumier", "Corot"],
+      "correta": 2
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual movimento artístico usava formas biomórficas e orgânicas?",
+      "alternativas": ["Cubismo", "Surrealismo", "Arte Orgânica", "Biomorfismo"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Quem é o artista por trás das famosas esculturas de 'Homem Caminhando'?",
+      "alternativas": ["Rodin", "Giacometti", "Moore", "Brancusi"],
+      "correta": 1
+    },
+    {
+      "tema": "arte",
+      "enunciado": "Qual artista criou a série 'Quadrados' explorando a interação de cores?",
+      "alternativas": ["Mondrian", "Malevich", "Josef Albers", "Kandinsky"],
+      "correta": 2
+    }
+  ]
+}

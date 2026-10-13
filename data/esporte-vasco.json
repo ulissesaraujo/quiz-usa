@@ -1,0 +1,155 @@
+{
+  "tema": "vasco",
+  "perguntas": [
+    {
+      "enunciado": "Em que ano o Vasco da Gama foi fundado?",
+      "alternativas": ["1895", "1898", "1900", "1904"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome completo do Vasco?",
+      "alternativas": ["Clube de Regatas Vasco da Gama", "Vasco da Gama Futebol Clube", "Sport Club Vasco da Gama", "Associação Vasco da Gama"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Quantas vezes o Vasco foi campeão brasileiro?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o mascote oficial do Vasco?",
+      "alternativas": ["Leão", "Almirante", "Caravela", "Cruz de Malta"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do estádio do Vasco?",
+      "alternativas": ["Maracanã", "São Januário", "Engenhão", "Raulino de Oliveira"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é o maior artilheiro da história do Vasco?",
+      "alternativas": ["Romário", "Roberto Dinamite", "Edmundo", "Juninho"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que ano o Vasco foi campeão da Libertadores?",
+      "alternativas": ["1997", "1998", "1999", "2000"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador ficou conhecido como 'Animal' no Vasco?",
+      "alternativas": ["Romário", "Edmundo", "Juninho", "Felipe"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a principal cor do uniforme do Vasco?",
+      "alternativas": ["Preto e vermelho", "Branco e preto", "Azul e branco", "Vermelho e branco"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o histórico placar de Vasco 4x1 sobre o Flamengo em 2001?",
+      "alternativas": ["Campeonato Carioca", "Campeonato Brasileiro", "Libertadores", "Copa do Brasil"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual símbolo está presente no escudo do Vasco?",
+      "alternativas": ["Estrela", "Cruz de Malta", "Águia", "Leão"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual técnico comandou o Vasco na Libertadores de 1998?",
+      "alternativas": ["Vanderlei Luxemburgo", "Antônio Lopes", "Joel Santana", "Oswaldo de Oliveira"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual time o Vasco derrotou na final da Libertadores 1998?",
+      "alternativas": ["River Plate", "Boca Juniors", "Barcelona de Guayaquil", "Peñarol"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual goleiro ídolo atuou no Vasco nas décadas de 90 e 2000?",
+      "alternativas": ["Helton", "Carlos Germano", "Barbieri", "Fernando Prass"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual era o apelido de Roberto Dinamite?",
+      "alternativas": ["Rei", "Dinamite", "Animal", "Baixinho"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em qual bairro do Rio de Janeiro fica São Januário?",
+      "alternativas": ["Gávea", "Maracanã", "Vasco da Gama", "São Cristóvão"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador revelado no Vasco jogou na seleção e no Real Madrid?",
+      "alternativas": ["Romário", "Juninho", "Philippe Coutinho", "Grafite"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O Vasco foi pioneiro ao escalar jogadores negros em qual década?",
+      "alternativas": ["1910", "1920", "1930", "1940"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o time que o Vasco goleou por 7x0 em 2001?",
+      "alternativas": ["Flamengo", "Fluminense", "Botafogo", "Madureira"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Quantos gols Roberto Dinamite marcou pelo Vasco?",
+      "alternativas": ["Menos de 500", "Entre 500 e 600", "Entre 600 e 700", "Mais de 700"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual meia argentino foi ídolo do Vasco na década de 2000?",
+      "alternativas": ["D'Alessandro", "Sorín", "Ramón", "Arango"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual é o hino mais cantado pela torcida do Vasco?",
+      "alternativas": ["Hino oficial", "Hino do centenário", "Hino popular 'Vasco'", "Hino da Libertadores"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador marcou o gol do título da Libertadores em 1998?",
+      "alternativas": ["Romário", "Edmundo", "Juninho", "Luizão"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Em que ano o Vasco foi rebaixado pela primeira vez?",
+      "alternativas": ["2006", "2008", "2013", "2015"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual navegador português dá nome ao clube?",
+      "alternativas": ["Pedro Álvares Cabral", "Fernão de Magalhães", "Vasco da Gama", "Bartolomeu Dias"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual era a formação da 'Máquina Tricolor' do Vasco em 2000?",
+      "alternativas": ["4-4-2", "4-3-3", "3-5-2", "4-2-4"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual atacante é conhecido como 'Baixinho' e jogou no Vasco?",
+      "alternativas": ["Edmundo", "Romário", "Jardel", "Bebeto"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual time espanhol contratou Juninho Pernambucano após o Vasco?",
+      "alternativas": ["Real Madrid", "Barcelona", "Lyon", "Nenhum, foi para a França"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Quantos títulos cariocas o Vasco conquistou?",
+      "alternativas": ["15-20", "21-25", "26-30", "Mais de 30"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador ficou conhecido pelo gol de falta contra o Flamengo em 2000?",
+      "alternativas": ["Romário", "Juninho", "Pedrinho", "Edmundo"],
+      "correta": 1
+    }
+  ]
+}

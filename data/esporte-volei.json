@@ -1,0 +1,155 @@
+{
+  "tema": "volei",
+  "perguntas": [
+    {
+      "enunciado": "Quantos jogadores de cada equipe estão em quadra no vôlei?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a altura oficial da rede de vôlei masculino?",
+      "alternativas": ["2,24m", "2,35m", "2,43m", "2,50m"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador usa camisa de cor diferente no vôlei?",
+      "alternativas": ["Levantador", "Líbero", "Ponteiro", "Oposto"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos sets são necessários para vencer uma partida de vôlei?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Até quantos pontos vai um set normal de vôlei?",
+      "alternativas": ["21", "25", "30", "15"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país é considerado o berço do vôlei?",
+      "alternativas": ["Brasil", "Estados Unidos", "Japão", "Itália"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas vezes o Brasil masculino foi campeão olímpico de vôlei?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador brasileiro é conhecido como 'Escadinha'?",
+      "alternativas": ["Giba", "Bruninho", "Serginho", "Murilo"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é um 'ace' no vôlei?",
+      "alternativas": ["Bloqueio perfeito", "Saque que gera ponto direto", "Ataque sem defesa", "Levantamento perfeito"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a função do levantador no vôlei?",
+      "alternativas": ["Atacar", "Bloquear", "Distribuir bolas para ataque", "Defender"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano o vôlei foi incluído nos Jogos Olímpicos?",
+      "alternativas": ["1956", "1960", "1964", "1968"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual seleção feminina de vôlei mais vezes foi campeã olímpica?",
+      "alternativas": ["Brasil", "China", "Estados Unidos", "Rússia"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos toques cada equipe pode dar antes de passar a bola?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do golpe defensivo básico no vôlei?",
+      "alternativas": ["Cortada", "Manchete", "Bloqueio", "Saque"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual técnico comandou a seleção brasileira masculina por mais tempo?",
+      "alternativas": ["Bernardinho", "Zé Roberto", "Renan Dal Zotto", "Bebeto de Freitas"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que acontece quando a bola toca a linha no vôlei?",
+      "alternativas": ["Bola fora", "Bola dentro", "Repetição do ponto", "Depende do árbitro"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a posição do jogador que ataca pela ponta direita?",
+      "alternativas": ["Ponteiro", "Oposto", "Central", "Líbero"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos pontos vai o tie-break no vôlei?",
+      "alternativas": ["15", "21", "25", "30"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual jogadora brasileira é considerada uma das maiores da história?",
+      "alternativas": ["Fernanda Venturini", "Sheilla Castro", "Jaqueline", "Fofão"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que significa 'rally' no vôlei?",
+      "alternativas": ["Saque forte", "Sequência de jogadas até o ponto", "Bloqueio duplo", "Ataque de fundo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país dominou o vôlei masculino nas décadas de 80?",
+      "alternativas": ["Brasil", "Estados Unidos", "União Soviética", "Itália"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O líbero pode fazer qual jogada?",
+      "alternativas": ["Atacar acima da rede", "Sacar", "Defender e passar", "Bloquear"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o diâmetro aproximado da bola de vôlei?",
+      "alternativas": ["55-57cm", "60-62cm", "65-67cm", "70-72cm"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em qual Olimpíada o Brasil masculino ganhou seu primeiro ouro?",
+      "alternativas": ["Barcelona 1992", "Atlanta 1996", "Sydney 2000", "Atenas 2004"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é uma 'pipe' no vôlei?",
+      "alternativas": ["Ataque rápido pelo meio", "Ataque de fundo pelo centro", "Saque flutuante", "Defesa de mergulho"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a altura da rede no vôlei feminino?",
+      "alternativas": ["2,14m", "2,24m", "2,35m", "2,43m"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas substituições são permitidas por set no vôlei?",
+      "alternativas": ["4", "5", "6", "Ilimitadas"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual cidade brasileira é conhecida como 'capital do vôlei'?",
+      "alternativas": ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Campinas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é um 'toque' ou 'levantamento de dedos'?",
+      "alternativas": ["Defesa com antebraços", "Passe com as pontas dos dedos", "Ataque forte", "Bloqueio simples"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual competição de clubes é a mais importante da América do Sul?",
+      "alternativas": ["Liga das Américas", "Sul-Americano de Clubes", "Copa Libertadores de Vôlei", "Superliga"],
+      "correta": 1
+    }
+  ]
+}

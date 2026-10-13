@@ -1,0 +1,24 @@
+{"perguntas": [
+  {
+    "tema": "z-testes",
+    "enunciado": "Esta é uma pergunta de teste. Qual é a resposta correta?",
+    "alternativas": [
+      "Alternativa A (correta)",
+      "Alternativa B",
+      "Alternativa C",
+      "Alternativa D"
+    ],
+    "correta": 0
+  },
+  {
+    "tema": "z-testes",
+    "enunciado": "Segunda pergunta de teste. Escolha a opção C.",
+    "alternativas": [
+      "Opção A",
+      "Opção B",
+      "Opção C (correta)",
+      "Opção D"
+    ],
+    "correta": 2
+  }
+]}

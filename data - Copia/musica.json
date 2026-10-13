@@ -1,0 +1,1808 @@
+{
+  "perguntas": [
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda britânica é formada por John, Paul, George e Ringo?",
+      "alternativas": [
+        "The Rolling Stones",
+        "The Who",
+        "The Beatles",
+        "Led Zeppelin"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é conhecido como o 'Rei do Pop'?",
+      "alternativas": [
+        "Prince",
+        "Michael Jackson",
+        "Elvis Presley",
+        "Freddie Mercury"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é conhecido como o 'Rei do Rock'?",
+      "alternativas": [
+        "Chuck Berry",
+        "Elvis Presley",
+        "Little Richard",
+        "Jerry Lee Lewis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor brasileiro é conhecido como 'Rei'?",
+      "alternativas": [
+        "Caetano Veloso",
+        "Gilberto Gil",
+        "Roberto Carlos",
+        "Tim Maia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora é conhecida como 'Rainha do Pop'?",
+      "alternativas": [
+        "Whitney Houston",
+        "Madonna",
+        "Beyoncé",
+        "Lady Gaga"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou o álbum 'Dark Side of the Moon'?",
+      "alternativas": [
+        "Led Zeppelin",
+        "Pink Floyd",
+        "Deep Purple",
+        "Black Sabbath"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem cantou 'Bohemian Rhapsody'?",
+      "alternativas": [
+        "Led Zeppelin",
+        "The Who",
+        "Queen",
+        "Guns N' Roses"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem era o vocalista do Queen?",
+      "alternativas": [
+        "David Bowie",
+        "Freddie Mercury",
+        "Robert Plant",
+        "Mick Jagger"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor brasileiro compôs 'Aquarela'?",
+      "alternativas": [
+        "Chico Buarque",
+        "Toquinho",
+        "Vinícius de Moraes",
+        "Tom Jobim"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem compôs 'Garota de Ipanema'?",
+      "alternativas": [
+        "Chico Buarque e Vinícius",
+        "Tom Jobim e Vinícius de Moraes",
+        "Caetano e Gil",
+        "Milton Nascimento e Lô Borges"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual movimento musical surgiu na Bahia com Caetano e Gil?",
+      "alternativas": [
+        "Bossa Nova",
+        "Tropicália",
+        "Jovem Guarda",
+        "MPB"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é considerado o 'pai' da Bossa Nova?",
+      "alternativas": [
+        "Vinícius de Moraes",
+        "Tom Jobim",
+        "João Gilberto",
+        "Baden Powell"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou o álbum 'Thriller'?",
+      "alternativas": [
+        "Prince",
+        "Michael Jackson",
+        "Stevie Wonder",
+        "Whitney Houston"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual é o álbum mais vendido de todos os tempos?",
+      "alternativas": [
+        "Back in Black - AC/DC",
+        "The Bodyguard - Whitney Houston",
+        "Thriller - Michael Jackson",
+        "Dark Side of the Moon - Pink Floyd"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda de rock lançou 'Stairway to Heaven'?",
+      "alternativas": [
+        "Pink Floyd",
+        "Led Zeppelin",
+        "The Rolling Stones",
+        "Deep Purple"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem cantou 'Imagine'?",
+      "alternativas": [
+        "Paul McCartney",
+        "John Lennon",
+        "George Harrison",
+        "Ringo Starr"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda brasileira lançou 'Dois Rios'?",
+      "alternativas": [
+        "Legião Urbana",
+        "Skank",
+        "Jota Quest",
+        "O Rappa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem foi o líder da Legião Urbana?",
+      "alternativas": [
+        "Dado Villa-Lobos",
+        "Renato Russo",
+        "Marcelo Bonfá",
+        "Renato Rocha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual música da Legião Urbana fala sobre tempo?",
+      "alternativas": [
+        "Será",
+        "Faroeste Caboclo",
+        "Tempo Perdido",
+        "Eduardo e Mônica"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Smells Like Teen Spirit'?",
+      "alternativas": [
+        "Pearl Jam",
+        "Nirvana",
+        "Soundgarden",
+        "Alice in Chains"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem foi o vocalista do Nirvana?",
+      "alternativas": [
+        "Eddie Vedder",
+        "Kurt Cobain",
+        "Chris Cornell",
+        "Layne Staley"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual gênero musical surgiu em Seattle nos anos 90?",
+      "alternativas": [
+        "Punk",
+        "Grunge",
+        "Heavy Metal",
+        "Indie Rock"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda de metal lançou 'Master of Puppets'?",
+      "alternativas": [
+        "Iron Maiden",
+        "Metallica",
+        "Megadeth",
+        "Slayer"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor brasileiro é conhecido como 'Maluco Beleza'?",
+      "alternativas": [
+        "Cazuza",
+        "Raul Seixas",
+        "Rita Lee",
+        "Lobão"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem cantou 'Gita' com Raul Seixas?",
+      "alternativas": [
+        "Paulo Coelho",
+        "Marcelo Nova",
+        "Ninguém, foi solo",
+        "Zé Ramalho"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Comfortably Numb'?",
+      "alternativas": [
+        "The Who",
+        "Pink Floyd",
+        "Genesis",
+        "Yes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor lançou 'Purple Rain'?",
+      "alternativas": [
+        "Michael Jackson",
+        "Prince",
+        "Stevie Wonder",
+        "George Michael"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Like a Prayer'?",
+      "alternativas": [
+        "Cyndi Lauper",
+        "Madonna",
+        "Whitney Houston",
+        "Janet Jackson"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda britânica lançou 'Wonderwall'?",
+      "alternativas": [
+        "Blur",
+        "Oasis",
+        "Radiohead",
+        "Coldplay"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem são os irmãos que formaram o Oasis?",
+      "alternativas": [
+        "Ray e Dave Davies",
+        "Liam e Noel Gallagher",
+        "Robin e Barry Gibb",
+        "Chris e Rich Robinson"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Creep'?",
+      "alternativas": [
+        "Coldplay",
+        "Oasis",
+        "Radiohead",
+        "Muse"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual álbum do Radiohead é considerado revolucionário?",
+      "alternativas": [
+        "The Bends",
+        "OK Computer",
+        "Kid A",
+        "In Rainbows"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Yellow'?",
+      "alternativas": [
+        "Radiohead",
+        "Muse",
+        "Coldplay",
+        "The Verve"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é o vocalista do Coldplay?",
+      "alternativas": [
+        "Thom Yorke",
+        "Chris Martin",
+        "Matt Bellamy",
+        "Brandon Flowers"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Rolling in the Deep'?",
+      "alternativas": [
+        "Amy Winehouse",
+        "Adele",
+        "Duffy",
+        "Florence Welch"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora britânica lançou 'Back to Black'?",
+      "alternativas": [
+        "Adele",
+        "Amy Winehouse",
+        "Lily Allen",
+        "Duffy"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora é conhecida por 'Single Ladies'?",
+      "alternativas": [
+        "Rihanna",
+        "Beyoncé",
+        "Lady Gaga",
+        "Katy Perry"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual grupo Beyoncé fazia parte antes da carreira solo?",
+      "alternativas": [
+        "TLC",
+        "Destiny's Child",
+        "En Vogue",
+        "The Supremes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor lançou 'Uptown Funk' com Bruno Mars?",
+      "alternativas": [
+        "Pharrell Williams",
+        "Mark Ronson",
+        "Justin Timberlake",
+        "Robin Thicke"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Bad Romance'?",
+      "alternativas": [
+        "Katy Perry",
+        "Rihanna",
+        "Lady Gaga",
+        "Kesha"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou 'Shape of You'?",
+      "alternativas": [
+        "Bruno Mars",
+        "Ed Sheeran",
+        "Sam Smith",
+        "Shawn Mendes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor canadense lançou 'Baby'?",
+      "alternativas": [
+        "Shawn Mendes",
+        "Justin Bieber",
+        "The Weeknd",
+        "Drake"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual rapper lançou 'Lose Yourself'?",
+      "alternativas": [
+        "Jay-Z",
+        "Kanye West",
+        "Eminem",
+        "50 Cent"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual rapper é casado com Beyoncé?",
+      "alternativas": [
+        "Kanye West",
+        "Drake",
+        "Jay-Z",
+        "Nas"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual rapper lançou 'Gold Digger'?",
+      "alternativas": [
+        "Jay-Z",
+        "Kanye West",
+        "Eminem",
+        "Lil Wayne"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou 'Blinding Lights'?",
+      "alternativas": [
+        "Post Malone",
+        "The Weeknd",
+        "Doja Cat",
+        "Dua Lipa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira é conhecida como 'Rainha do Rock'?",
+      "alternativas": [
+        "Elza Soares",
+        "Rita Lee",
+        "Cássia Eller",
+        "Marina Lima"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda Rita Lee integrou?",
+      "alternativas": [
+        "Secos & Molhados",
+        "Os Mutantes",
+        "A Bolha",
+        "O Terço"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor brasileiro lançou 'Não Quero Dinheiro (Só Quero Amar)'?",
+      "alternativas": [
+        "Raul Seixas",
+        "Tim Maia",
+        "Jorge Ben Jor",
+        "Roberto Carlos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual compositor brasileiro criou 'Mas Que Nada'?",
+      "alternativas": [
+        "Tom Jobim",
+        "Jorge Ben Jor",
+        "Gilberto Gil",
+        "Milton Nascimento"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem compôs 'Construção'?",
+      "alternativas": [
+        "Caetano Veloso",
+        "Gilberto Gil",
+        "Chico Buarque",
+        "Milton Nascimento"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira gravou 'O Bêbado e a Equilibrista'?",
+      "alternativas": [
+        "Gal Costa",
+        "Elis Regina",
+        "Maria Bethânia",
+        "Nara Leão"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é considerada a maior cantora brasileira?",
+      "alternativas": [
+        "Gal Costa",
+        "Elis Regina",
+        "Maria Bethânia",
+        "Clara Nunes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor gravou 'Travessia' com Milton Nascimento?",
+      "alternativas": [
+        "Nenhum, foi solo",
+        "Lô Borges",
+        "Beto Guedes",
+        "Fernando Brant"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual álbum de Milton Nascimento e Lô Borges é considerado obra-prima?",
+      "alternativas": [
+        "Milagre dos Peixes",
+        "Clube da Esquina",
+        "Minas",
+        "Geraes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Alagados'?",
+      "alternativas": [
+        "Legião Urbana",
+        "Barão Vermelho",
+        "Paralamas do Sucesso",
+        "Titãs"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é o vocalista dos Paralamas do Sucesso?",
+      "alternativas": [
+        "Dado Villa-Lobos",
+        "Herbert Vianna",
+        "Bi Ribeiro",
+        "João Barone"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Pro Dia Nascer Feliz'?",
+      "alternativas": [
+        "Legião Urbana",
+        "Barão Vermelho",
+        "Titãs",
+        "Paralamas do Sucesso"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem foi o primeiro vocalista do Barão Vermelho?",
+      "alternativas": [
+        "Frejat",
+        "Cazuza",
+        "Guto Goffi",
+        "Dé"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora gravou 'O Seu Amor' com Tim Maia?",
+      "alternativas": [
+        "Elis Regina",
+        "Gal Costa",
+        "Sandra de Sá",
+        "Elza Soares"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Epitáfio'?",
+      "alternativas": [
+        "Skank",
+        "Jota Quest",
+        "Titãs",
+        "O Rappa"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda mineira lançou 'Ainda Gosto Dela'?",
+      "alternativas": [
+        "Pato Fu",
+        "Skank",
+        "Jota Quest",
+        "14 Bis"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Dias Melhores' e 'Do Lado de Cá'?",
+      "alternativas": [
+        "Skank",
+        "Jota Quest",
+        "Charlie Brown Jr.",
+        "O Rappa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem foi o vocalista do Charlie Brown Jr.?",
+      "alternativas": [
+        "Champignon",
+        "Chorão",
+        "Marcão",
+        "Thiago Castanho"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual música do Charlie Brown Jr. tem surf e skate como tema?",
+      "alternativas": [
+        "Zóio de Lula",
+        "Só os Loucos Sabem",
+        "Proibida pra Mim",
+        "Lugar ao Sol"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Vogue'?",
+      "alternativas": [
+        "Janet Jackson",
+        "Madonna",
+        "Cyndi Lauper",
+        "Paula Abdul"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Don't Stop Believin''?",
+      "alternativas": [
+        "Foreigner",
+        "Journey",
+        "REO Speedwagon",
+        "Styx"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Sweet Child O' Mine'?",
+      "alternativas": [
+        "Mötley Crüe",
+        "Bon Jovi",
+        "Guns N' Roses",
+        "Def Leppard"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é o vocalista do Guns N' Roses?",
+      "alternativas": [
+        "Slash",
+        "Axl Rose",
+        "Duff McKagan",
+        "Steven Adler"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Livin' on a Prayer'?",
+      "alternativas": [
+        "Guns N' Roses",
+        "Bon Jovi",
+        "Def Leppard",
+        "Van Halen"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual guitarrista é conhecido por 'Eruption'?",
+      "alternativas": [
+        "Slash",
+        "Jimmy Page",
+        "Eddie Van Halen",
+        "Angus Young"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Back in Black'?",
+      "alternativas": [
+        "Iron Maiden",
+        "AC/DC",
+        "Judas Priest",
+        "Motörhead"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda de heavy metal tem um mascote chamado Eddie?",
+      "alternativas": [
+        "Metallica",
+        "Iron Maiden",
+        "Megadeth",
+        "Slayer"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda brasileira lançou 'Fico Assim Sem Você'?",
+      "alternativas": [
+        "Skank",
+        "Adriana Calcanhotto",
+        "Claudinho & Buchecha",
+        "Roupa Nova"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Evidências' com Chitãozinho & Xororó?",
+      "alternativas": [
+        "Roberta Miranda",
+        "Nenhuma, é duo masculino",
+        "Paula Fernandes",
+        "Maiara & Maraisa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual dupla sertaneja gravou 'Evidências'?",
+      "alternativas": [
+        "Leandro & Leonardo",
+        "Chitãozinho & Xororó",
+        "Zezé Di Camargo & Luciano",
+        "Bruno & Marrone"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista popularizou o 'Arrocha'?",
+      "alternativas": [
+        "Pablo",
+        "Silvanno Salles",
+        "Tayrone",
+        "Nara Costa"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual é o gênero musical de origem baiana com guitarras e percussão?",
+      "alternativas": [
+        "Forró",
+        "Axé",
+        "Pagode",
+        "Sertanejo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor é conhecido como 'Rei do Axé'?",
+      "alternativas": [
+        "Carlinhos Brown",
+        "Luiz Caldas",
+        "Durval Lelys",
+        "Bell Marques"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda de axé lançou 'Eva'?",
+      "alternativas": [
+        "Chiclete com Banana",
+        "Banda Eva",
+        "Asa de Águia",
+        "Timbalada"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual grupo de pagode lançou 'A Cor do Sol'?",
+      "alternativas": [
+        "Exaltasamba",
+        "Revelação",
+        "Raça Negra",
+        "Soweto"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Ai Se Eu Te Pego' com Michel Teló?",
+      "alternativas": [
+        "Ninguém, foi solo",
+        "Paula Fernandes",
+        "Ivete Sangalo",
+        "Claudia Leitte"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor brasileiro ficou mundialmente famoso com 'Ai Se Eu Te Pego'?",
+      "alternativas": [
+        "Gusttavo Lima",
+        "Michel Teló",
+        "Luan Santana",
+        "Jorge & Mateus"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira comandou o 'Bloco da Preta'?",
+      "alternativas": [
+        "Ivete Sangalo",
+        "Daniela Mercury",
+        "Preta Gil",
+        "Claudia Leitte"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual é o nome artístico de Roberta Medina como produtora musical?",
+      "alternativas": [
+        "Ela não é cantora, é produtora do Rock in Rio",
+        "Roberta Gil",
+        "Bela Gil",
+        "Preta Gil"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Telephone' com Beyoncé?",
+      "alternativas": [
+        "Rihanna",
+        "Katy Perry",
+        "Lady Gaga",
+        "Nicki Minaj"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Umbrella'?",
+      "alternativas": [
+        "Beyoncé",
+        "Rihanna",
+        "Lady Gaga",
+        "Katy Perry"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou 'Get Lucky' com Pharrell Williams?",
+      "alternativas": [
+        "Calvin Harris",
+        "Daft Punk",
+        "David Guetta",
+        "Deadmau5"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual duo francês é conhecido por usar capacetes?",
+      "alternativas": [
+        "Justice",
+        "Daft Punk",
+        "Air",
+        "Phoenix"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Seven Nation Army'?",
+      "alternativas": [
+        "The Strokes",
+        "The White Stripes",
+        "The Killers",
+        "Kings of Leon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Mr. Brightside'?",
+      "alternativas": [
+        "The Strokes",
+        "Franz Ferdinand",
+        "The Killers",
+        "Arcade Fire"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou 'Happy'?",
+      "alternativas": [
+        "Bruno Mars",
+        "Pharrell Williams",
+        "Mark Ronson",
+        "Justin Timberlake"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira lançou 'Festa'?",
+      "alternativas": [
+        "Daniela Mercury",
+        "Ivete Sangalo",
+        "Claudia Leitte",
+        "Anitta"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira é conhecida por 'Abalou'?",
+      "alternativas": [
+        "Ivete Sangalo",
+        "Claudia Leitte",
+        "Daniela Mercury",
+        "Margareth Menezes"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou 'Old Town Road'?",
+      "alternativas": [
+        "Post Malone",
+        "Lil Nas X",
+        "Travis Scott",
+        "Roddy Ricch"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira lançou 'Show das Poderosas'?",
+      "alternativas": [
+        "Ludmilla",
+        "Anitta",
+        "IZA",
+        "Lexa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Pesadão' com Marcelo Falcão?",
+      "alternativas": [
+        "Anitta",
+        "IZA",
+        "Ludmilla",
+        "Lexa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual DJ brasileiro é conhecido mundialmente como Alok?",
+      "alternativas": [
+        "É o próprio nome artístico",
+        "Alok Achkar Peres Petrillo",
+        "Alex Petrillo",
+        "Alan Walker"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor brasileiro lançou 'Que Tiro Foi Esse'?",
+      "alternativas": [
+        "Kevinho",
+        "MC Livinho",
+        "Jojo Maronttinni",
+        "MC Kekel"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual gênero musical surgiu no Rio de Janeiro nas favelas?",
+      "alternativas": [
+        "Sertanejo",
+        "Axé",
+        "Funk Carioca",
+        "Pagode"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor é conhecido como 'Rei do Funk'?",
+      "alternativas": [
+        "MC Marcinho",
+        "MC Créu",
+        "Mr. Catra",
+        "Naldo Benny"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'drivers license'?",
+      "alternativas": [
+        "Billie Eilish",
+        "Olivia Rodrigo",
+        "Dua Lipa",
+        "Doja Cat"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou 'bad guy'?",
+      "alternativas": [
+        "Olivia Rodrigo",
+        "Billie Eilish",
+        "Halsey",
+        "Lorde"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Don't Start Now'?",
+      "alternativas": [
+        "Doja Cat",
+        "Dua Lipa",
+        "Ariana Grande",
+        "Halsey"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou '7 Rings'?",
+      "alternativas": [
+        "Dua Lipa",
+        "Taylor Swift",
+        "Ariana Grande",
+        "Selena Gomez"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Shake It Off'?",
+      "alternativas": [
+        "Katy Perry",
+        "Taylor Swift",
+        "Selena Gomez",
+        "Ariana Grande"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual álbum de Taylor Swift quebrou recordes em 2020?",
+      "alternativas": [
+        "1989",
+        "Reputation",
+        "Folklore",
+        "Lover"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda coreana lançou 'Dynamite'?",
+      "alternativas": [
+        "BLACKPINK",
+        "BTS",
+        "EXO",
+        "NCT"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual é o nome do fandom do BTS?",
+      "alternativas": [
+        "Blink",
+        "ARMY",
+        "Once",
+        "Stay"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual grupo feminino de K-pop lançou 'How You Like That'?",
+      "alternativas": [
+        "Twice",
+        "Red Velvet",
+        "BLACKPINK",
+        "aespa"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor latino lançou 'Despacito'?",
+      "alternativas": [
+        "J Balvin",
+        "Luis Fonsi",
+        "Daddy Yankee",
+        "Bad Bunny"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista colaborou em 'Despacito' remix?",
+      "alternativas": [
+        "Ed Sheeran",
+        "Justin Bieber",
+        "Drake",
+        "Bruno Mars"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor porto-riquenho é conhecido como 'Bad Bunny'?",
+      "alternativas": [
+        "Benito Antonio Martínez Ocasio",
+        "Luis Fonsi",
+        "Daddy Yankee",
+        "J Balvin"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual gênero musical combina reggae com hip hop latino?",
+      "alternativas": [
+        "Salsa",
+        "Reggaeton",
+        "Bachata",
+        "Cumbia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor brasileiro lançou 'Exagerado'?",
+      "alternativas": [
+        "Renato Russo",
+        "Cazuza",
+        "Lobão",
+        "Lulu Santos"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor lançou 'Tempos Modernos'?",
+      "alternativas": [
+        "Cazuza",
+        "Renato Russo",
+        "Lulu Santos",
+        "Herbert Vianna"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Amor I Love You'?",
+      "alternativas": [
+        "Skank",
+        "Marisa Monte",
+        "Tribalistas",
+        "Arnaldo Antunes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem formou os Tribalistas?",
+      "alternativas": [
+        "Marisa Monte, Arnaldo Antunes e Carlinhos Brown",
+        "Gilberto Gil, Caetano e Bethânia",
+        "Cazuza, Lobão e Lulu",
+        "Djavan, Ivan Lins e Gonzaguinha"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual música dos Tribalistas foi sucesso internacional?",
+      "alternativas": [
+        "Velha Infância",
+        "Já Sei Namorar",
+        "Passe em Casa",
+        "É Você"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Amor de Chocolate'?",
+      "alternativas": [
+        "Kelly Key",
+        "Rouge",
+        "Wanessa",
+        "Naldo Benny"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual grupo pop brasileiro teve Karin, Fantine, Luciana, Aline e Li?",
+      "alternativas": [
+        "As Meninas",
+        "Rouge",
+        "É o Tchan",
+        "Babado Novo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual música do Rouge foi hit em 2002?",
+      "alternativas": [
+        "Brilha La Luna",
+        "Ragatanga",
+        "Sem Ar",
+        "Blá Blá Blá"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor lançou 'Você Não Me Conhece'?",
+      "alternativas": [
+        "Daniel",
+        "Leonardo",
+        "Leandro",
+        "Zezé Di Camargo"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual dupla sertaneja lançou 'É o Amor'?",
+      "alternativas": [
+        "Chitãozinho & Xororó",
+        "Leandro & Leonardo",
+        "Zezé Di Camargo & Luciano",
+        "Bruno & Marrone"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor sertanejo faleceu jovem deixando um legado de sucessos como 'Pense em Mim'?",
+      "alternativas": [
+        "Leandro",
+        "Leonardo",
+        "João Paulo",
+        "Chrystian"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora gravou 'Eu Sei Que Vou Te Amar' de Tom Jobim?",
+      "alternativas": [
+        "Gal Costa",
+        "Elis Regina",
+        "Nara Leão",
+        "Todas as anteriores e outras"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual instrumento Tom Jobim tocava principalmente?",
+      "alternativas": [
+        "Violão",
+        "Piano",
+        "Saxofone",
+        "Bateria"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual compositor brasileiro é conhecido como 'Mestre'?",
+      "alternativas": [
+        "Milton Nascimento",
+        "Tom Jobim",
+        "Dorival Caymmi",
+        "Vinícius de Moraes"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem compôs 'O Que É O Que É'?",
+      "alternativas": [
+        "Gilberto Gil",
+        "Gonzaguinha",
+        "Djavan",
+        "Ivan Lins"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor lançou 'A Paz'?",
+      "alternativas": [
+        "Gilberto Gil",
+        "Djavan",
+        "Gonzaguinha",
+        "Milton Nascimento"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou 'Andar com Fé'?",
+      "alternativas": [
+        "Caetano Veloso",
+        "Gilberto Gil",
+        "Djavan",
+        "Ivan Lins"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor nordestino lançou 'Asa Branca'?",
+      "alternativas": [
+        "Dominguinhos",
+        "Luiz Gonzaga",
+        "Alceu Valença",
+        "Elba Ramalho"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é conhecido como o 'Rei do Baião'?",
+      "alternativas": [
+        "Dominguinhos",
+        "Luiz Gonzaga",
+        "Jackson do Pandeiro",
+        "Sivuca"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor lançou 'Morena Tropicana'?",
+      "alternativas": [
+        "Fagner",
+        "Zé Ramalho",
+        "Alceu Valença",
+        "Geraldo Azevedo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'One' (álbum ...And Justice for All)?",
+      "alternativas": [
+        "Megadeth",
+        "Metallica",
+        "Slayer",
+        "Anthrax"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual é o álbum mais vendido do Metallica?",
+      "alternativas": [
+        "Master of Puppets",
+        "Metallica (Black Album)",
+        "...And Justice for All",
+        "Ride the Lightning"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda brasileira de metal lançou 'Roots'?",
+      "alternativas": [
+        "Angra",
+        "Sepultura",
+        "Ratos de Porão",
+        "Korzus"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual é o festival de música mais famoso do Brasil?",
+      "alternativas": [
+        "Lollapalooza Brasil",
+        "Rock in Rio",
+        "SWU",
+        "Planeta Atlântida"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Em qual cidade começou o Rock in Rio?",
+      "alternativas": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Belo Horizonte",
+        "Salvador"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda encerrou o primeiro Rock in Rio em 1985?",
+      "alternativas": [
+        "Iron Maiden",
+        "Queen",
+        "AC/DC",
+        "Yes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira é conhecida por 'Comida' com Titãs?",
+      "alternativas": [
+        "Marina Lima",
+        "Não tem cantora, só os Titãs",
+        "Marisa Monte",
+        "Cássia Eller"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Comida'?",
+      "alternativas": [
+        "Legião Urbana",
+        "Titãs",
+        "Paralamas do Sucesso",
+        "Barão Vermelho"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quantos integrantes originais os Titãs tinham?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual instrumento Nando Reis toca nos Titãs?",
+      "alternativas": [
+        "Guitarra",
+        "Baixo",
+        "Bateria",
+        "Teclado"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor lançou 'All of Me'?",
+      "alternativas": [
+        "Bruno Mars",
+        "John Legend",
+        "Sam Smith",
+        "Ed Sheeran"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista lançou 'Thinking Out Loud'?",
+      "alternativas": [
+        "Sam Smith",
+        "Ed Sheeran",
+        "John Legend",
+        "Bruno Mars"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Hello' em 2015?",
+      "alternativas": [
+        "Adele",
+        "Beyoncé",
+        "Taylor Swift",
+        "Rihanna"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual artista ganhou mais Grammys na história?",
+      "alternativas": [
+        "Quincy Jones",
+        "Beyoncé",
+        "Georg Solti",
+        "U2"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor brasileiro ganhou Grammy Latino de melhor álbum?",
+      "alternativas": [
+        "Caetano Veloso",
+        "Gilberto Gil",
+        "Milton Nascimento",
+        "Todos os anteriores"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira lançou 'Dias de Luta, Dias de Glória'?",
+      "alternativas": [
+        "Não é cantora, é cantor: Charlie Brown Jr.",
+        "Pitty",
+        "Cássia Eller",
+        "Ana Carolina"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora brasileira lançou 'Na Sua Estante'?",
+      "alternativas": [
+        "Marisa Monte",
+        "Pitty",
+        "Adriana Calcanhotto",
+        "Cássia Eller"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual instrumento Hermeto Pascoal toca principalmente?",
+      "alternativas": [
+        "Piano/Teclado",
+        "Saxofone",
+        "Vários instrumentos",
+        "Violão"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual músico brasileiro é conhecido como 'O Bruxo'?",
+      "alternativas": [
+        "Egberto Gismonti",
+        "Hermeto Pascoal",
+        "João Donato",
+        "Airto Moreira"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantor lançou 'Billie Jean'?",
+      "alternativas": [
+        "Prince",
+        "Michael Jackson",
+        "Lionel Richie",
+        "Stevie Wonder"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual dança Michael Jackson popularizou?",
+      "alternativas": [
+        "Breakdance",
+        "Moonwalk",
+        "Robot",
+        "Todas as anteriores"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'With or Without You'?",
+      "alternativas": [
+        "Coldplay",
+        "R.E.M.",
+        "U2",
+        "The Police"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é o vocalista do U2?",
+      "alternativas": [
+        "The Edge",
+        "Bono",
+        "Adam Clayton",
+        "Larry Mullen Jr."
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Every Breath You Take'?",
+      "alternativas": [
+        "U2",
+        "Genesis",
+        "The Police",
+        "Dire Straits"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é Sting?",
+      "alternativas": [
+        "Vocalista do Genesis",
+        "Vocalista do The Police",
+        "Guitarrista do U2",
+        "Baterista do Coldplay"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual banda lançou 'Sultans of Swing'?",
+      "alternativas": [
+        "The Police",
+        "Dire Straits",
+        "Pink Floyd",
+        "Supertramp"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Quem é Mark Knopfler?",
+      "alternativas": [
+        "Vocalista do Pink Floyd",
+        "Guitarrista do Dire Straits",
+        "Baterista do Genesis",
+        "Tecladista do Yes"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Halo'?",
+      "alternativas": [
+        "Rihanna",
+        "Alicia Keys",
+        "Beyoncé",
+        "Christina Aguilera"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'If I Ain't Got You'?",
+      "alternativas": [
+        "Beyoncé",
+        "Alicia Keys",
+        "Mary J. Blige",
+        "Lauryn Hill"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "musica",
+      "enunciado": "Qual cantora lançou 'Doo-Wop (That Thing)'?",
+      "alternativas": [
+        "Erykah Badu",
+        "Lauryn Hill",
+        "Jill Scott",
+        "India.Arie"
+      ],
+      "correta": 1
+    }
+  ]
+}

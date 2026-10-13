@@ -1,0 +1,30 @@
+{
+  "tema": "futebol",
+  "perguntas": [
+    {
+      "enunciado": "Qual país venceu a Copa do Mundo de 2022 no Catar?",
+      "alternativas": ["Brasil", "França", "Argentina", "Croácia"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'Rei do Futebol'?",
+      "alternativas": ["Maradona", "Pelé", "Ronaldo", "Zidane"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos jogadores de cada time estão em campo em uma partida de futebol?",
+      "alternativas": ["9", "10", "11", "12"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual clube brasileiro tem mais títulos da Libertadores da América?",
+      "alternativas": ["Santos", "São Paulo", "Flamengo", "Palmeiras"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Em que ano o Brasil conquistou seu primeiro título mundial de futebol?",
+      "alternativas": ["1950", "1958", "1962", "1970"],
+      "correta": 1
+    }
+  ]
+}

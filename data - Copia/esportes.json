@@ -1,0 +1,2160 @@
+{
+  "perguntas": [
+    {
+      "enunciado": "Qual país sediou a Copa do Mundo FIFA de 2014?",
+      "alternativas": [
+        "Argentina",
+        "Brasil",
+        "Alemanha",
+        "África do Sul"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores compõem um time de futebol em campo?",
+      "alternativas": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual tenista masculino detém o recorde de mais títulos de Grand Slam?",
+      "alternativas": [
+        "Roger Federer",
+        "Rafael Nadal",
+        "Novak Djokovic",
+        "Pete Sampras"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'ace'?",
+      "alternativas": [
+        "Futebol",
+        "Basquete",
+        "Tênis",
+        "Natação"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país ganhou mais medalhas de ouro nas Olimpíadas de verão historicamente?",
+      "alternativas": [
+        "China",
+        "Rússia",
+        "Estados Unidos",
+        "Grã-Bretanha"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos sets são necessários para vencer uma partida de vôlei?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o esporte nacional do Japão?",
+      "alternativas": [
+        "Judô",
+        "Karatê",
+        "Sumô",
+        "Beisebol"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade foram realizadas as primeiras Olimpíadas da era moderna?",
+      "alternativas": [
+        "Paris",
+        "Atenas",
+        "Londres",
+        "Roma"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de basquete é conhecido como 'King James'?",
+      "alternativas": [
+        "Michael Jordan",
+        "Kobe Bryant",
+        "LeBron James",
+        "Stephen Curry"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos pontos vale uma cesta de três pontos no basquete?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país é conhecido como o berço do futebol?",
+      "alternativas": [
+        "Brasil",
+        "Itália",
+        "Inglaterra",
+        "Espanha"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual nadador é o mais premiado da história olímpica?",
+      "alternativas": [
+        "Ian Thorpe",
+        "Michael Phelps",
+        "Ryan Lochte",
+        "Mark Spitz"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a manobra chamada 'ollie'?",
+      "alternativas": [
+        "Surfe",
+        "Skate",
+        "Snowboard",
+        "BMX"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual seleção de futebol é conhecida como 'La Roja'?",
+      "alternativas": [
+        "Portugal",
+        "Espanha",
+        "Chile",
+        "Peru"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas bolas são usadas em uma partida de sinuca?",
+      "alternativas": [
+        "15",
+        "16",
+        "21",
+        "22"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o maior torneio de tênis em quadra de grama?",
+      "alternativas": [
+        "US Open",
+        "Roland Garros",
+        "Australian Open",
+        "Wimbledon"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual país foi inventado o beisebol?",
+      "alternativas": [
+        "Japão",
+        "Cuba",
+        "Estados Unidos",
+        "Canadá"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual piloto de Fórmula 1 tem mais títulos mundiais?",
+      "alternativas": [
+        "Ayrton Senna",
+        "Michael Schumacher",
+        "Lewis Hamilton",
+        "Alain Prost"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores formam um time de vôlei de praia?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual atleta é conhecido como 'O Relâmpago' (The Bolt)?",
+      "alternativas": [
+        "Carl Lewis",
+        "Usain Bolt",
+        "Justin Gatlin",
+        "Tyson Gay"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se compete pelo Troféu Vince Lombardi?",
+      "alternativas": [
+        "Beisebol",
+        "Basquete",
+        "Futebol Americano",
+        "Hóquei no Gelo"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a distância oficial de uma maratona?",
+      "alternativas": [
+        "40 km",
+        "42,195 km",
+        "45 km",
+        "50 km"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país ganhou a primeira Copa do Mundo de Futebol em 1930?",
+      "alternativas": [
+        "Brasil",
+        "Argentina",
+        "Uruguai",
+        "Itália"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos períodos tem uma partida de hóquei no gelo?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual boxeador é conhecido como 'The Greatest'?",
+      "alternativas": [
+        "Mike Tyson",
+        "Muhammad Ali",
+        "Floyd Mayweather",
+        "Sugar Ray Leonard"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'birdie'?",
+      "alternativas": [
+        "Tênis",
+        "Badminton",
+        "Golfe",
+        "Críquete"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol é conhecido como 'Barça'?",
+      "alternativas": [
+        "Real Madrid",
+        "Barcelona",
+        "Atlético de Madrid",
+        "Sevilla"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores compõem um time de rugby?",
+      "alternativas": [
+        "11",
+        "13",
+        "15",
+        "18"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país dominou o badminton nas últimas décadas?",
+      "alternativas": [
+        "Japão",
+        "Indonésia",
+        "China",
+        "Coreia do Sul"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual ano Pelé conquistou sua primeira Copa do Mundo?",
+      "alternativas": [
+        "1954",
+        "1958",
+        "1962",
+        "1966"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o esporte mais praticado no mundo?",
+      "alternativas": [
+        "Basquete",
+        "Críquete",
+        "Futebol",
+        "Tênis"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos rounds tem uma luta de boxe profissional no máximo?",
+      "alternativas": [
+        "10",
+        "12",
+        "15",
+        "20"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual surfista brasileiro foi campeão mundial em 2014 e 2019?",
+      "alternativas": [
+        "Mineirinho",
+        "Gabriel Medina",
+        "Italo Ferreira",
+        "Filipe Toledo"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe o termo 'spare'?",
+      "alternativas": [
+        "Boliche",
+        "Sinuca",
+        "Dardos",
+        "Golfe"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual ginasta americana ganhou mais medalhas olímpicas?",
+      "alternativas": [
+        "Mary Lou Retton",
+        "Gabby Douglas",
+        "Simone Biles",
+        "Nastia Liukin"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas bases existem em um campo de beisebol?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual seleção de futebol é conhecida como 'Azzurra'?",
+      "alternativas": [
+        "França",
+        "Argentina",
+        "Itália",
+        "Uruguai"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade está localizado o estádio Old Trafford?",
+      "alternativas": [
+        "Londres",
+        "Liverpool",
+        "Manchester",
+        "Birmingham"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o tempo de duração de um jogo de futebol (tempo regulamentar)?",
+      "alternativas": [
+        "80 minutos",
+        "90 minutos",
+        "100 minutos",
+        "120 minutos"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores de cada time estão em quadra no basquete?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país sediou as Olimpíadas de 2008?",
+      "alternativas": [
+        "Japão",
+        "Coreia do Sul",
+        "China",
+        "Austrália"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'try'?",
+      "alternativas": [
+        "Futebol Americano",
+        "Rugby",
+        "Críquete",
+        "Hóquei"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'CR7'?",
+      "alternativas": [
+        "Cristiano Ronaldo",
+        "Carlos Roberto",
+        "Clarence Rodrigues",
+        "Christian Rodríguez"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos buracos tem um campo de golfe padrão?",
+      "alternativas": [
+        "9",
+        "12",
+        "18",
+        "24"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país ganhou mais Copas do Mundo de Futebol?",
+      "alternativas": [
+        "Alemanha",
+        "Argentina",
+        "Brasil",
+        "Itália"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte Michael Jordan se destacou?",
+      "alternativas": [
+        "Futebol Americano",
+        "Beisebol",
+        "Basquete",
+        "Golfe"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o maior estádio de futebol do mundo em capacidade?",
+      "alternativas": [
+        "Camp Nou",
+        "Maracanã",
+        "Wembley",
+        "Rungrado 1º de Maio"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas medalhas de ouro Usain Bolt ganhou em Olimpíadas?",
+      "alternativas": [
+        "6",
+        "8",
+        "9",
+        "10"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o apelido da seleção brasileira de futebol?",
+      "alternativas": [
+        "La Furia",
+        "Seleção Canarinho",
+        "Les Bleus",
+        "Albiceleste"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a posição de 'quarterback'?",
+      "alternativas": [
+        "Rugby",
+        "Futebol Americano",
+        "Beisebol",
+        "Críquete"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual tenista venceu mais vezes Roland Garros?",
+      "alternativas": [
+        "Roger Federer",
+        "Novak Djokovic",
+        "Rafael Nadal",
+        "Björn Borg"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores formam uma equipe de handebol em quadra?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país é a maior potência olímpica na ginástica artística feminina historicamente?",
+      "alternativas": [
+        "Estados Unidos",
+        "Romênia",
+        "Rússia",
+        "China"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual ano as mulheres puderam participar oficialmente das Olimpíadas pela primeira vez?",
+      "alternativas": [
+        "1896",
+        "1900",
+        "1912",
+        "1920"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o nome do troféu dado ao campeão da NBA?",
+      "alternativas": [
+        "Troféu Vince Lombardi",
+        "Troféu Larry O'Brien",
+        "Troféu Stanley Cup",
+        "Troféu Commissioner"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se compete na Tour de France?",
+      "alternativas": [
+        "Corrida",
+        "Natação",
+        "Ciclismo",
+        "Esqui"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol ganhou mais Bolas de Ouro?",
+      "alternativas": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Johan Cruyff",
+        "Michel Platini"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos pontos vale um touchdown no futebol americano?",
+      "alternativas": [
+        "3",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a modalidade mais longa do atletismo em pista?",
+      "alternativas": [
+        "5.000 metros",
+        "10.000 metros",
+        "Maratona",
+        "3.000 metros com obstáculos"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual país foi inventado o voleibol?",
+      "alternativas": [
+        "Brasil",
+        "Estados Unidos",
+        "Itália",
+        "Japão"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol inglês é conhecido como 'The Red Devils'?",
+      "alternativas": [
+        "Liverpool",
+        "Arsenal",
+        "Manchester United",
+        "Chelsea"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas vezes o Brasil sediou a Copa do Mundo?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o nome da liga profissional de hóquei no gelo da América do Norte?",
+      "alternativas": [
+        "MLS",
+        "NHL",
+        "NBA",
+        "NFL"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'hat-trick'?",
+      "alternativas": [
+        "Tênis",
+        "Golfe",
+        "Futebol",
+        "Basquete"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país é conhecido por dominar o críquete mundial?",
+      "alternativas": [
+        "Estados Unidos",
+        "Canadá",
+        "Índia",
+        "Brasil"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas pessoas compõem uma equipe de revezamento 4x100m?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual piloto brasileiro de F1 ganhou três campeonatos mundiais?",
+      "alternativas": [
+        "Emerson Fittipaldi",
+        "Nelson Piquet",
+        "Ayrton Senna",
+        "Rubens Barrichello"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a figura chamada 'axel'?",
+      "alternativas": [
+        "Ginástica",
+        "Patinação artística",
+        "Nado sincronizado",
+        "Saltos ornamentais"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o maior torneio de futebol de clubes do mundo?",
+      "alternativas": [
+        "Copa Libertadores",
+        "Liga dos Campeões da UEFA",
+        "Copa do Mundo de Clubes",
+        "Premier League"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos sets são necessários para vencer um jogo de tênis masculino em Grand Slam?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'O Fenômeno'?",
+      "alternativas": [
+        "Ronaldinho",
+        "Ronaldo Nazário",
+        "Romário",
+        "Rivaldo"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade está o estádio Santiago Bernabéu?",
+      "alternativas": [
+        "Barcelona",
+        "Madri",
+        "Sevilha",
+        "Valência"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual esporte usa o termo 'alley-oop'?",
+      "alternativas": [
+        "Futebol",
+        "Basquete",
+        "Vôlei",
+        "Tênis"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores de futebol americano entram em campo por equipe?",
+      "alternativas": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país sediou as Olimpíadas de Inverno de 2018?",
+      "alternativas": [
+        "Rússia",
+        "Japão",
+        "Coreia do Sul",
+        "Canadá"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a altura oficial de uma cesta de basquete?",
+      "alternativas": [
+        "2,80 m",
+        "3,05 m",
+        "3,20 m",
+        "3,50 m"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'scrum'?",
+      "alternativas": [
+        "Futebol",
+        "Rugby",
+        "Críquete",
+        "Polo aquático"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogadora de tênis tem mais títulos de Grand Slam na era Open?",
+      "alternativas": [
+        "Martina Navratilova",
+        "Steffi Graf",
+        "Serena Williams",
+        "Margaret Court"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas pistas tem uma piscina olímpica?",
+      "alternativas": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time italiano é conhecido como 'La Vecchia Signora'?",
+      "alternativas": [
+        "Inter de Milão",
+        "Milan",
+        "Juventus",
+        "Roma"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte Nadia ComÄƒneci fez história com nota 10?",
+      "alternativas": [
+        "Nado sincronizado",
+        "Patinação artística",
+        "Ginástica artística",
+        "Saltos ornamentais"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a duração de um quarto no basquete da NBA?",
+      "alternativas": [
+        "10 minutos",
+        "12 minutos",
+        "15 minutos",
+        "20 minutos"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual seleção de futebol é conhecida como 'Albiceleste'?",
+      "alternativas": [
+        "Uruguai",
+        "Argentina",
+        "Chile",
+        "Colômbia"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade foram realizadas as Olimpíadas de 2016?",
+      "alternativas": [
+        "Tóquio",
+        "Londres",
+        "Rio de Janeiro",
+        "Pequim"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos pontos vale um field goal no futebol americano?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o maior campeão da Liga dos Campeões da UEFA?",
+      "alternativas": [
+        "Barcelona",
+        "Milan",
+        "Real Madrid",
+        "Bayern de Munique"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe o movimento 'smash'?",
+      "alternativas": [
+        "Golfe",
+        "Tênis",
+        "Boliche",
+        "Críquete"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'El Pibe de Oro'?",
+      "alternativas": [
+        "Pelé",
+        "Maradona",
+        "Messi",
+        "Di Stéfano"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas voltas tem o circuito de Mônaco na Fórmula 1?",
+      "alternativas": [
+        "58",
+        "66",
+        "78",
+        "82"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país venceu a Copa do Mundo de Rugby mais vezes?",
+      "alternativas": [
+        "Inglaterra",
+        "Austrália",
+        "Nova Zelândia",
+        "África do Sul"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa raquete e peteca?",
+      "alternativas": [
+        "Tênis de mesa",
+        "Squash",
+        "Badminton",
+        "Padel"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o apelido do time de futebol Palmeiras?",
+      "alternativas": [
+        "Rubro-Negro",
+        "Tricolor",
+        "Alviverde",
+        "Alvinegro"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores compõem um time de polo aquático na piscina?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual velocista é conhecido como 'Bullet' (Bala)?",
+      "alternativas": [
+        "Carl Lewis",
+        "Usain Bolt",
+        "Tyson Gay",
+        "Maurice Greene"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a categoria 'peso-pena'?",
+      "alternativas": [
+        "Natação",
+        "Boxe",
+        "Ginástica",
+        "Atletismo"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol é conhecido como 'Los Blancos'?",
+      "alternativas": [
+        "Barcelona",
+        "Atlético de Madrid",
+        "Real Madrid",
+        "Valência"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas Copas do Mundo Pelé conquistou?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o esporte mais popular nos Estados Unidos?",
+      "alternativas": [
+        "Basquete",
+        "Beisebol",
+        "Futebol Americano",
+        "Hóquei no Gelo"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade está localizado o Estádio Azteca?",
+      "alternativas": [
+        "Buenos Aires",
+        "São Paulo",
+        "Cidade do México",
+        "Lima"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de basquete é conhecido como 'Black Mamba'?",
+      "alternativas": [
+        "Michael Jordan",
+        "LeBron James",
+        "Kobe Bryant",
+        "Shaquille O'Neal"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos segundos um time tem para atacar no basquete da NBA?",
+      "alternativas": [
+        "20",
+        "24",
+        "30",
+        "35"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país é a maior potência no tênis de mesa?",
+      "alternativas": [
+        "Japão",
+        "Coreia do Sul",
+        "China",
+        "Alemanha"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte Tiger Woods se destacou?",
+      "alternativas": [
+        "Tênis",
+        "Golfe",
+        "Automobilismo",
+        "Críquete"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual seleção de futebol venceu a Copa do Mundo de 2018?",
+      "alternativas": [
+        "Brasil",
+        "Alemanha",
+        "França",
+        "Croácia"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas medalhas de ouro Michael Phelps conquistou em Olimpíadas?",
+      "alternativas": [
+        "18",
+        "21",
+        "23",
+        "25"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a maior maratona do mundo em número de participantes?",
+      "alternativas": [
+        "Boston",
+        "Londres",
+        "Nova York",
+        "Berlim"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'grand chelem'?",
+      "alternativas": [
+        "Futebol",
+        "Tênis",
+        "Boxe",
+        "Natação"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol marcou o 'Gol do Século' em 1986?",
+      "alternativas": [
+        "Pelé",
+        "Maradona",
+        "Zico",
+        "Platini"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores de beisebol ficam em campo defensivamente?",
+      "alternativas": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o nome da competição de ciclismo mais famosa da Itália?",
+      "alternativas": [
+        "Tour de France",
+        "Vuelta a España",
+        "Giro d'Italia",
+        "Tour de Suisse"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a posição de 'libero'?",
+      "alternativas": [
+        "Futebol",
+        "Basquete",
+        "Vôlei",
+        "Handebol"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol brasileiro tem mais títulos de Libertadores?",
+      "alternativas": [
+        "São Paulo",
+        "Santos",
+        "Flamengo",
+        "Palmeiras"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas categorias de peso existem no boxe olímpico masculino?",
+      "alternativas": [
+        "8",
+        "10",
+        "12",
+        "13"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país inventou o judô?",
+      "alternativas": [
+        "China",
+        "Coreia",
+        "Japão",
+        "Tailândia"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte Serena Williams é uma lenda?",
+      "alternativas": [
+        "Golfe",
+        "Natação",
+        "Tênis",
+        "Atletismo"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o recorde mundial dos 100 metros rasos masculino?",
+      "alternativas": [
+        "9,48 s",
+        "9,58 s",
+        "9,69 s",
+        "9,79 s"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas equipes participam da Premier League inglesa?",
+      "alternativas": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'O Rei'?",
+      "alternativas": [
+        "Maradona",
+        "Pelé",
+        "Zidane",
+        "Cruyff"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade está localizado o estádio San Siro?",
+      "alternativas": [
+        "Roma",
+        "Turim",
+        "Milão",
+        "Nápoles"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o nome do campeonato de beisebol profissional dos EUA?",
+      "alternativas": [
+        "NBA",
+        "NFL",
+        "NHL",
+        "MLB"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos minutos dura um tempo de basquete FIBA?",
+      "alternativas": [
+        "8",
+        "10",
+        "12",
+        "15"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país é hexacampeão olímpico no vôlei masculino?",
+      "alternativas": [
+        "Estados Unidos",
+        "Brasil",
+        "Rússia",
+        "Itália"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se compete pela Copa Davis?",
+      "alternativas": [
+        "Golfe",
+        "Tênis",
+        "Badminton",
+        "Squash"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol é conhecido como 'O Mais Querido'?",
+      "alternativas": [
+        "Corinthians",
+        "Flamengo",
+        "São Paulo",
+        "Vasco"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos países participaram das primeiras Olimpíadas modernas em 1896?",
+      "alternativas": [
+        "10",
+        "14",
+        "20",
+        "28"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a modalidade de natação mais rápida?",
+      "alternativas": [
+        "Costas",
+        "Peito",
+        "Borboleta",
+        "Crawl"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe o termo 'double fault'?",
+      "alternativas": [
+        "Vôlei",
+        "Tênis",
+        "Badminton",
+        "Tênis de mesa"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'La Pulga'?",
+      "alternativas": [
+        "Cristiano Ronaldo",
+        "Neymar",
+        "Lionel Messi",
+        "Luis Suárez"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas vezes a Alemanha sediou a Copa do Mundo?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o maior torneio de clubes da América do Sul?",
+      "alternativas": [
+        "Copa Sul-Americana",
+        "Recopa",
+        "Copa Libertadores",
+        "Copa América"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte Katie Ledecky é uma estrela?",
+      "alternativas": [
+        "Ginástica",
+        "Natação",
+        "Atletismo",
+        "Ciclismo"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país domina o esporte de levantamento de peso?",
+      "alternativas": [
+        "Estados Unidos",
+        "Brasil",
+        "China",
+        "Alemanha"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores de críquete estão em campo por equipe?",
+      "alternativas": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol inglês é conhecido como 'The Gunners'?",
+      "alternativas": [
+        "Chelsea",
+        "Arsenal",
+        "Tottenham",
+        "Manchester City"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade foi realizada a Copa do Mundo de 2022?",
+      "alternativas": [
+        "Rússia",
+        "Catar",
+        "Estados Unidos",
+        "México"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a distância da prova de 'sprint' no ciclismo de pista?",
+      "alternativas": [
+        "200m",
+        "500m",
+        "1000m",
+        "2000m"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos sets são jogados no máximo em uma partida de vôlei?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'Galinho de Quintino'?",
+      "alternativas": [
+        "Romário",
+        "Zico",
+        "Sócrates",
+        "Falcão"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'love' para zero pontos?",
+      "alternativas": [
+        "Badminton",
+        "Squash",
+        "Tênis",
+        "Tênis de mesa"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país sediará as Olimpíadas de 2028?",
+      "alternativas": [
+        "Austrália",
+        "França",
+        "Estados Unidos",
+        "Japão"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos metros tem a prova de salto em distância?",
+      "alternativas": [
+        "Não tem distância fixa",
+        "10 metros",
+        "15 metros",
+        "20 metros"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o nome da liga de futebol americano universitário?",
+      "alternativas": [
+        "NFL",
+        "CFL",
+        "NCAA",
+        "XFL"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a manobra 'slam dunk'?",
+      "alternativas": [
+        "Vôlei",
+        "Handebol",
+        "Basquete",
+        "Futebol"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de tênis é conhecido como 'The Swiss Maestro'?",
+      "alternativas": [
+        "Stan Wawrinka",
+        "Roger Federer",
+        "Rafael Nadal",
+        "Andy Murray"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas medalhas um atleta pode ganhar no decatlo?",
+      "alternativas": [
+        "1",
+        "5",
+        "10",
+        "15"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol brasileiro é conhecido como 'Tricolor Paulista'?",
+      "alternativas": [
+        "Corinthians",
+        "Palmeiras",
+        "São Paulo",
+        "Santos"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o 'taco' para rebater uma bola?",
+      "alternativas": [
+        "Golfe",
+        "Polo",
+        "Críquete",
+        "Todas as anteriores"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual foi a primeira seleção africana a chegar às semifinais de uma Copa do Mundo?",
+      "alternativas": [
+        "Nigéria",
+        "Camarões",
+        "Senegal",
+        "Marrocos"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos pontos vale uma cesta normal de dois pontos no basquete?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país é conhecido por inventar o surfe?",
+      "alternativas": [
+        "Austrália",
+        "Brasil",
+        "Estados Unidos",
+        "Polinésia/Havaí"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa a expressão 'tiebreak'?",
+      "alternativas": [
+        "Futebol",
+        "Tênis",
+        "Golfe",
+        "Críquete"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'Il Divino Codino'?",
+      "alternativas": [
+        "Paolo Maldini",
+        "Roberto Baggio",
+        "Francesco Totti",
+        "Alessandro Del Piero"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores de hóquei no gelo ficam no gelo por equipe (excluindo goleiro)?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o esporte mais assistido nas Olimpíadas?",
+      "alternativas": [
+        "Natação",
+        "Atletismo",
+        "Ginástica",
+        "Futebol"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade está o estádio Anfield?",
+      "alternativas": [
+        "Manchester",
+        "Londres",
+        "Liverpool",
+        "Birmingham"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol é conhecido como 'Fla'?",
+      "alternativas": [
+        "Fluminense",
+        "Flamengo",
+        "Fortaleza",
+        "Figueirense"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos minutos dura uma partida de rugby?",
+      "alternativas": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual atleta jamaicano dominou as provas de velocidade nas Olimpíadas?",
+      "alternativas": [
+        "Yohan Blake",
+        "Usain Bolt",
+        "Asafa Powell",
+        "Shelly-Ann Fraser"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a categoria 'peso-pesado'?",
+      "alternativas": [
+        "Natação",
+        "Ginástica",
+        "Boxe",
+        "Atletismo"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país sediou a primeira Copa do Mundo de Futebol Feminino?",
+      "alternativas": [
+        "Estados Unidos",
+        "Suécia",
+        "China",
+        "Alemanha"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas provas compõem o pentatlo moderno?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'Bruxo'?",
+      "alternativas": [
+        "Ronaldinho",
+        "Rivaldo",
+        "Kaká",
+        "Neymar"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte Wayne Gretzky é considerado o maior de todos os tempos?",
+      "alternativas": [
+        "Basquete",
+        "Beisebol",
+        "Hóquei no Gelo",
+        "Futebol Americano"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a altura da rede de vôlei masculino?",
+      "alternativas": [
+        "2,24 m",
+        "2,35 m",
+        "2,43 m",
+        "2,50 m"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas Copas do Mundo a Argentina venceu?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o nome do campeonato mundial de clubes da FIFA?",
+      "alternativas": [
+        "Copa Intercontinental",
+        "Supercopa",
+        "Copa do Mundo de Clubes",
+        "Liga Mundial"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a prova de 'contra-relógio'?",
+      "alternativas": [
+        "Natação",
+        "Ciclismo",
+        "Atletismo",
+        "Todas as anteriores"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol ganhou a Copa do Mundo como jogador e técnico?",
+      "alternativas": [
+        "Pelé",
+        "Maradona",
+        "Franz Beckenbauer",
+        "Zagallo"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas categorias existem no atletismo olímpico?",
+      "alternativas": [
+        "35",
+        "42",
+        "48",
+        "52"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país é a maior potência no badminton?",
+      "alternativas": [
+        "Japão",
+        "Indonésia",
+        "China",
+        "Malásia"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'home run'?",
+      "alternativas": [
+        "Futebol Americano",
+        "Críquete",
+        "Beisebol",
+        "Rugby"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol é conhecido como 'Galo'?",
+      "alternativas": [
+        "Cruzeiro",
+        "Atlético Mineiro",
+        "América",
+        "Botafogo"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas medalhas de ouro o Brasil ganhou nas Olimpíadas de 2016?",
+      "alternativas": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de basquete é conhecido como 'The Answer'?",
+      "alternativas": [
+        "Allen Iverson",
+        "Shaquille O'Neal",
+        "Kevin Garnett",
+        "Tim Duncan"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a posição de 'pivô'?",
+      "alternativas": [
+        "Futebol",
+        "Basquete",
+        "Vôlei",
+        "Todas as anteriores"
+      ],
+      "correta": 3,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país venceu a Eurocopa de 2020 (realizada em 2021)?",
+      "alternativas": [
+        "Inglaterra",
+        "Espanha",
+        "Itália",
+        "França"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos pontos vale uma conversão de dois pontos no futebol americano?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o maior estádio de futebol da Europa?",
+      "alternativas": [
+        "Wembley",
+        "Camp Nou",
+        "Santiago Bernabéu",
+        "San Siro"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte Simone Biles compete?",
+      "alternativas": [
+        "Patinação artística",
+        "Ginástica artística",
+        "Nado sincronizado",
+        "Atletismo"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'Ney'?",
+      "alternativas": [
+        "Neymar",
+        "Nelson",
+        "Neuer",
+        "Nedved"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas provas de natação existem nas Olimpíadas?",
+      "alternativas": [
+        "28",
+        "32",
+        "35",
+        "37"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país domina o esporte de tênis de mesa feminino?",
+      "alternativas": [
+        "Japão",
+        "Coreia do Sul",
+        "China",
+        "Alemanha"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual cidade será realizada as Olimpíadas de 2032?",
+      "alternativas": [
+        "Brisbane",
+        "Doha",
+        "Budapeste",
+        "Istambul"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é o nome do principal torneio de golfe dos Estados Unidos?",
+      "alternativas": [
+        "British Open",
+        "US Open",
+        "Masters",
+        "PGA Championship"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos jogadores compõem uma equipe de futsal em quadra?",
+      "alternativas": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol tem mais gols em Copas do Mundo?",
+      "alternativas": [
+        "Pelé",
+        "Miroslav Klose",
+        "Ronaldo",
+        "Gerd Müller"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte se usa o termo 'eagle'?",
+      "alternativas": [
+        "Boliche",
+        "Golfe",
+        "Tênis",
+        "Badminton"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual time de futebol é conhecido como 'Mengão'?",
+      "alternativas": [
+        "Fluminense",
+        "Botafogo",
+        "Flamengo",
+        "Vasco"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantas medalhas o Brasil ganhou nos Jogos Pan-Americanos de 2019?",
+      "alternativas": [
+        "141",
+        "171",
+        "196",
+        "205"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual atleta é conhecida como a 'Rainha da Pista'?",
+      "alternativas": [
+        "Florence Griffith-Joyner",
+        "Jackie Joyner-Kersee",
+        "Allyson Felix",
+        "Marion Jones"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte existe a prova de 'perseguição por equipes'?",
+      "alternativas": [
+        "Natação",
+        "Atletismo",
+        "Ciclismo",
+        "Esqui"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual país venceu a primeira Copa do Mundo de Futebol Feminino?",
+      "alternativas": [
+        "Alemanha",
+        "Noruega",
+        "Estados Unidos",
+        "Suécia"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Quantos innings tem uma partida de beisebol?",
+      "alternativas": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correta": 2,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual jogador de futebol é conhecido como 'O Imperador'?",
+      "alternativas": [
+        "Ronaldinho",
+        "Adriano",
+        "Kaká",
+        "Robinho"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Em qual esporte Floyd Mayweather Jr. é uma lenda?",
+      "alternativas": [
+        "MMA",
+        "Boxe",
+        "Wrestling",
+        "Judô"
+      ],
+      "correta": 1,
+      "tema": "esportes"
+    },
+    {
+      "enunciado": "Qual é a distância da prova de decatlo no atletismo?",
+      "alternativas": [
+        "Não é uma prova de distância",
+        "5000m",
+        "10000m",
+        "42km"
+      ],
+      "correta": 0,
+      "tema": "esportes"
+    }
+  ]
+}

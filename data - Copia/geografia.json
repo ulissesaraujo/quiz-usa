@@ -1,0 +1,2149 @@
+{
+  "perguntas": [
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país do mundo em extensão territorial?",
+      "alternativas": [
+        "China",
+        "Estados Unidos",
+        "Rússia",
+        "Canadá"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o rio mais extenso do mundo?",
+      "alternativas": [
+        "Rio Nilo",
+        "Rio Amazonas",
+        "Rio Yangtzé",
+        "Rio Mississippi"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Em qual continente está localizado o Deserto do Saara?",
+      "alternativas": [
+        "Ásia",
+        "África",
+        "Oceania",
+        "América do Sul"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Austrália?",
+      "alternativas": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Brisbane"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Quantos países fazem fronteira com o Brasil?",
+      "alternativas": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o ponto mais alto da Terra?",
+      "alternativas": [
+        "Monte Kilimanjaro",
+        "Monte Everest",
+        "Monte McKinley",
+        "Monte Aconcágua"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem o formato de uma bota?",
+      "alternativas": [
+        "Grécia",
+        "Espanha",
+        "Itália",
+        "Portugal"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o menor país do mundo?",
+      "alternativas": [
+        "Mônaco",
+        "San Marino",
+        "Vaticano",
+        "Liechtenstein"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Em qual oceano está localizado o Havaí?",
+      "alternativas": [
+        "Atlântico",
+        "Índico",
+        "Pacífico",
+        "Ártico"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Japão?",
+      "alternativas": [
+        "Osaka",
+        "Kyoto",
+        "Tóquio",
+        "Nagoya"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual cordilheira separa a Europa da Ásia?",
+      "alternativas": [
+        "Alpes",
+        "Himalaias",
+        "Andes",
+        "Urais"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior lago de água doce do mundo em área?",
+      "alternativas": [
+        "Lago Vitória",
+        "Lago Superior",
+        "Lago Baikal",
+        "Lago Michigan"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como a 'Terra do Sol Nascente'?",
+      "alternativas": [
+        "China",
+        "Coreia do Sul",
+        "Japão",
+        "Tailândia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Quantos continentes existem no mundo?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Argentina?",
+      "alternativas": [
+        "Córdoba",
+        "Buenos Aires",
+        "Rosário",
+        "Mendoza"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual estreito separa a Europa da África?",
+      "alternativas": [
+        "Estreito de Bering",
+        "Estreito de Gibraltar",
+        "Estreito de Magalhães",
+        "Estreito de Ormuz"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o país mais populoso do mundo?",
+      "alternativas": [
+        "Índia",
+        "Estados Unidos",
+        "China",
+        "Indonésia"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Em qual país fica Machu Picchu?",
+      "alternativas": [
+        "Chile",
+        "Bolívia",
+        "Peru",
+        "Equador"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Rússia?",
+      "alternativas": [
+        "São Petersburgo",
+        "Moscou",
+        "Kiev",
+        "Minsk"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual deserto é o maior do mundo em área?",
+      "alternativas": [
+        "Deserto do Saara",
+        "Deserto da Antártida",
+        "Deserto de Gobi",
+        "Deserto da Arábia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país africano tem as pirâmides de Gizé?",
+      "alternativas": [
+        "Marrocos",
+        "Egito",
+        "Líbia",
+        "Sudão"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior arquipélago do mundo?",
+      "alternativas": [
+        "Filipinas",
+        "Japão",
+        "Indonésia",
+        "Maldivas"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Canadá?",
+      "alternativas": [
+        "Toronto",
+        "Vancouver",
+        "Ottawa",
+        "Montreal"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual mar banha a costa leste do Brasil?",
+      "alternativas": [
+        "Mar do Caribe",
+        "Mar Mediterrâneo",
+        "Oceano Atlântico",
+        "Oceano Pacífico"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a maior floresta tropical do mundo?",
+      "alternativas": [
+        "Indonésia",
+        "Congo",
+        "Brasil",
+        "Peru"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Alemanha?",
+      "alternativas": [
+        "Munique",
+        "Frankfurt",
+        "Berlim",
+        "Hamburgo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o segundo maior país do mundo em extensão?",
+      "alternativas": [
+        "Estados Unidos",
+        "China",
+        "Brasil",
+        "Canadá"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Em qual continente está a Nova Zelândia?",
+      "alternativas": [
+        "Ásia",
+        "Oceania",
+        "América do Norte",
+        "Europa"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Índia?",
+      "alternativas": [
+        "Mumbai",
+        "Calcutá",
+        "Nova Delhi",
+        "Bangalore"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é banhado pelo Mar Morto?",
+      "alternativas": [
+        "Egito",
+        "Turquia",
+        "Israel",
+        "Irã"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Espanha?",
+      "alternativas": [
+        "Barcelona",
+        "Sevilha",
+        "Madrid",
+        "Valência"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o vulcão mais ativo da Europa?",
+      "alternativas": [
+        "Vesúvio",
+        "Etna",
+        "Stromboli",
+        "Santorini"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país europeu tem formato de hexágono?",
+      "alternativas": [
+        "Alemanha",
+        "França",
+        "Polônia",
+        "Espanha"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a maior ilha do mundo?",
+      "alternativas": [
+        "Madagascar",
+        "Groenlândia",
+        "Bornéu",
+        "Nova Guiné"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Portugal?",
+      "alternativas": [
+        "Porto",
+        "Lisboa",
+        "Coimbra",
+        "Braga"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual canal liga o Oceano Atlântico ao Pacífico?",
+      "alternativas": [
+        "Canal de Suez",
+        "Canal da Mancha",
+        "Canal do Panamá",
+        "Canal de Beagle"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a cidade mais populosa do Brasil?",
+      "alternativas": [
+        "Rio de Janeiro",
+        "Brasília",
+        "São Paulo",
+        "Salvador"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a maior costa litorânea do mundo?",
+      "alternativas": [
+        "Rússia",
+        "Indonésia",
+        "Canadá",
+        "Austrália"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Itália?",
+      "alternativas": [
+        "Milão",
+        "Roma",
+        "Nápoles",
+        "Florença"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país da América do Sul?",
+      "alternativas": [
+        "Argentina",
+        "Peru",
+        "Colômbia",
+        "Brasil"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual rio atravessa a cidade de Londres?",
+      "alternativas": [
+        "Sena",
+        "Danúbio",
+        "Tâmisa",
+        "Reno"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como a 'Terra dos Mil Lagos'?",
+      "alternativas": [
+        "Suécia",
+        "Noruega",
+        "Finlândia",
+        "Dinamarca"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da África do Sul?",
+      "alternativas": [
+        "Joanesburgo",
+        "Cidade do Cabo",
+        "Pretória",
+        "Durban"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país da África?",
+      "alternativas": [
+        "Egito",
+        "Nigéria",
+        "Argélia",
+        "Sudão"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual montanha é a mais alta da América do Sul?",
+      "alternativas": [
+        "Monte Fitz Roy",
+        "Aconcágua",
+        "Cotopaxi",
+        "Huascarán"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é famoso pelos fiordes?",
+      "alternativas": [
+        "Islândia",
+        "Dinamarca",
+        "Noruega",
+        "Suécia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da China?",
+      "alternativas": [
+        "Xangai",
+        "Hong Kong",
+        "Pequim",
+        "Guangzhou"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país está localizado tanto na Europa quanto na Ásia?",
+      "alternativas": [
+        "Rússia",
+        "Cazaquistão",
+        "Turquia",
+        "Todas as anteriores"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior estado brasileiro em extensão?",
+      "alternativas": [
+        "Mato Grosso",
+        "Pará",
+        "Amazonas",
+        "Minas Gerais"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do México?",
+      "alternativas": [
+        "Guadalajara",
+        "Monterrey",
+        "Cidade do México",
+        "Cancún"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual oceano é o maior do mundo?",
+      "alternativas": [
+        "Atlântico",
+        "Índico",
+        "Pacífico",
+        "Ártico"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país europeu é completamente cercado pela Itália?",
+      "alternativas": [
+        "Mônaco",
+        "Andorra",
+        "San Marino",
+        "Vaticano"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Coreia do Sul?",
+      "alternativas": [
+        "Busan",
+        "Seul",
+        "Incheon",
+        "Daegu"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o pico mais alto do Brasil?",
+      "alternativas": [
+        "Pico da Bandeira",
+        "Pico da Neblina",
+        "Pico das Agulhas Negras",
+        "Pico do Cristal"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual mar banha a cidade de Veneza?",
+      "alternativas": [
+        "Mar Tirreno",
+        "Mar Adriático",
+        "Mar Jônico",
+        "Mar Egeu"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Egito?",
+      "alternativas": [
+        "Alexandria",
+        "Luxor",
+        "Cairo",
+        "Gizé"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior deserto quente do mundo?",
+      "alternativas": [
+        "Deserto de Gobi",
+        "Deserto da Arábia",
+        "Deserto do Saara",
+        "Deserto de Kalahari"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é formado por mais de 7.000 ilhas?",
+      "alternativas": [
+        "Japão",
+        "Indonésia",
+        "Filipinas",
+        "Maldivas"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Turquia?",
+      "alternativas": [
+        "Istambul",
+        "Ancara",
+        "Izmir",
+        "Antalya"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual rio passa por Paris?",
+      "alternativas": [
+        "Reno",
+        "Loire",
+        "Sena",
+        "Ródano"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Grécia?",
+      "alternativas": [
+        "Tessalônica",
+        "Atenas",
+        "Patras",
+        "Heraclião"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a maior população da América do Sul?",
+      "alternativas": [
+        "Argentina",
+        "Colômbia",
+        "Brasil",
+        "Peru"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o lago mais profundo do mundo?",
+      "alternativas": [
+        "Lago Superior",
+        "Lago Vitória",
+        "Lago Baikal",
+        "Lago Tanganica"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como 'país dos cangurus'?",
+      "alternativas": [
+        "Nova Zelândia",
+        "África do Sul",
+        "Austrália",
+        "Papua Nova Guiné"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Suíça?",
+      "alternativas": [
+        "Zurique",
+        "Genebra",
+        "Berna",
+        "Basileia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o único país sul-americano que fala francês oficialmente?",
+      "alternativas": [
+        "Suriname",
+        "Guiana",
+        "Guiana Francesa",
+        "Paraguai"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Noruega?",
+      "alternativas": [
+        "Bergen",
+        "Oslo",
+        "Trondheim",
+        "Stavanger"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país da Oceania?",
+      "alternativas": [
+        "Nova Zelândia",
+        "Papua Nova Guiné",
+        "Fiji",
+        "Austrália"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual cordilheira atravessa a América do Sul de norte a sul?",
+      "alternativas": [
+        "Alpes",
+        "Himalaias",
+        "Andes",
+        "Rochosas"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Holanda?",
+      "alternativas": [
+        "Roterdã",
+        "Haia",
+        "Amsterdã",
+        "Utrecht"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem o maior número de fusos horários?",
+      "alternativas": [
+        "Rússia",
+        "Estados Unidos",
+        "China",
+        "França"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Peru?",
+      "alternativas": [
+        "Cusco",
+        "Arequipa",
+        "Lima",
+        "Trujillo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o menor continente do mundo?",
+      "alternativas": [
+        "Europa",
+        "Antártida",
+        "Oceania",
+        "América Central"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é dividido entre duas ilhas principais: Norte e Sul?",
+      "alternativas": [
+        "Japão",
+        "Filipinas",
+        "Nova Zelândia",
+        "Indonésia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Polônia?",
+      "alternativas": [
+        "Cracóvia",
+        "Varsóvia",
+        "Gdansk",
+        "Wroclaw"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país da América Central?",
+      "alternativas": [
+        "Guatemala",
+        "Honduras",
+        "Nicarágua",
+        "Panamá"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual rio é conhecido como 'Rio Amarelo'?",
+      "alternativas": [
+        "Yangtzé",
+        "Mekong",
+        "Huang He",
+        "Ganges"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Áustria?",
+      "alternativas": [
+        "Salzburgo",
+        "Viena",
+        "Graz",
+        "Innsbruck"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país africano nunca foi colonizado?",
+      "alternativas": [
+        "Quênia",
+        "Nigéria",
+        "Etiópia",
+        "Gana"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Suécia?",
+      "alternativas": [
+        "Gotemburgo",
+        "Malmö",
+        "Estocolmo",
+        "Uppsala"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual mar separa a Europa da África pelo Estreito de Gibraltar?",
+      "alternativas": [
+        "Mar Negro",
+        "Mar Mediterrâneo",
+        "Mar Vermelho",
+        "Mar Cáspio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Chile?",
+      "alternativas": [
+        "Valparaíso",
+        "Concepción",
+        "Santiago",
+        "Viña del Mar"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país asiático era conhecido como Ceilão?",
+      "alternativas": [
+        "Tailândia",
+        "Myanmar",
+        "Sri Lanka",
+        "Bangladesh"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Bélgica?",
+      "alternativas": [
+        "Antuérpia",
+        "Bruges",
+        "Bruxelas",
+        "Liège"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o país mais extenso da América Latina?",
+      "alternativas": [
+        "México",
+        "Argentina",
+        "Brasil",
+        "Peru"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual cataratas ficam na fronteira entre Brasil e Argentina?",
+      "alternativas": [
+        "Cataratas Vitória",
+        "Cataratas do Niágara",
+        "Cataratas do Iguaçu",
+        "Cataratas Angel"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Dinamarca?",
+      "alternativas": [
+        "Aarhus",
+        "Odense",
+        "Copenhague",
+        "Aalborg"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país está localizado entre Espanha e França?",
+      "alternativas": [
+        "Mônaco",
+        "Luxemburgo",
+        "Andorra",
+        "Liechtenstein"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Venezuela?",
+      "alternativas": [
+        "Maracaibo",
+        "Caracas",
+        "Valencia",
+        "Barquisimeto"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o único país que faz fronteira com a Coreia do Sul?",
+      "alternativas": [
+        "China",
+        "Japão",
+        "Coreia do Norte",
+        "Rússia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Irlanda?",
+      "alternativas": [
+        "Cork",
+        "Galway",
+        "Dublin",
+        "Limerick"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país do Oriente Médio?",
+      "alternativas": [
+        "Irã",
+        "Arábia Saudita",
+        "Iraque",
+        "Turquia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Colômbia?",
+      "alternativas": [
+        "Medellín",
+        "Bogotá",
+        "Cali",
+        "Barranquilla"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual ilha pertence a Portugal mas fica no Oceano Atlântico?",
+      "alternativas": [
+        "Canárias",
+        "Madeira",
+        "Baleares",
+        "Açores"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da República Tcheca?",
+      "alternativas": [
+        "Brno",
+        "Praga",
+        "Ostrava",
+        "Pilsen"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é famoso pela Grande Barreira de Coral?",
+      "alternativas": [
+        "Indonésia",
+        "Filipinas",
+        "Austrália",
+        "Tailândia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Vietnã?",
+      "alternativas": [
+        "Ho Chi Minh",
+        "Da Nang",
+        "Hanói",
+        "Hue"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o único país da América do Sul que tem costa no Oceano Pacífico e no Atlântico?",
+      "alternativas": [
+        "Brasil",
+        "Argentina",
+        "Colômbia",
+        "Chile"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Hungria?",
+      "alternativas": [
+        "Debrecen",
+        "Szeged",
+        "Budapeste",
+        "Pécs"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como 'Pérola do Oriente'?",
+      "alternativas": [
+        "Tailândia",
+        "Filipinas",
+        "Sri Lanka",
+        "Hong Kong"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Romênia?",
+      "alternativas": [
+        "Cluj-Napoca",
+        "Bucareste",
+        "TimiÈ™oara",
+        "Constança"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país sul-americano não faz fronteira com o Brasil?",
+      "alternativas": [
+        "Paraguai",
+        "Equador",
+        "Uruguai",
+        "Bolívia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Marrocos?",
+      "alternativas": [
+        "Casablanca",
+        "Marrakech",
+        "Rabat",
+        "Fez"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país sem litoral do mundo?",
+      "alternativas": [
+        "Mongólia",
+        "Cazaquistão",
+        "Bolívia",
+        "Chade"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Tailândia?",
+      "alternativas": [
+        "Chiang Mai",
+        "Phuket",
+        "Bangkok",
+        "Pattaya"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a maior reserva de petróleo do mundo?",
+      "alternativas": [
+        "Arábia Saudita",
+        "Irã",
+        "Venezuela",
+        "Rússia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Ucrânia?",
+      "alternativas": [
+        "Kharkiv",
+        "Odessa",
+        "Kiev",
+        "Lviv"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país europeu é completamente cercado pela África do Sul?",
+      "alternativas": [
+        "Suazilândia",
+        "Lesoto",
+        "Botsuana",
+        "Zimbábue"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Paquistão?",
+      "alternativas": [
+        "Karachi",
+        "Lahore",
+        "Islamabad",
+        "Rawalpindi"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o rio mais caudaloso do mundo?",
+      "alternativas": [
+        "Nilo",
+        "Mississippi",
+        "Amazonas",
+        "Yangtzé"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Finlândia?",
+      "alternativas": [
+        "Turku",
+        "Tampere",
+        "Helsinque",
+        "Oulu"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como 'terra dos tulipas'?",
+      "alternativas": [
+        "Bélgica",
+        "Dinamarca",
+        "Holanda",
+        "Suíça"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Equador?",
+      "alternativas": [
+        "Guayaquil",
+        "Quito",
+        "Cuenca",
+        "Manta"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o menor estado brasileiro?",
+      "alternativas": [
+        "Alagoas",
+        "Sergipe",
+        "Rio Grande do Norte",
+        "Espírito Santo"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Iraque?",
+      "alternativas": [
+        "Basra",
+        "Mossul",
+        "Bagdá",
+        "Erbil"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Portugal?",
+      "alternativas": [
+        "Porto",
+        "Lisboa",
+        "Coimbra",
+        "Faro"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a maior quantidade de vulcões ativos?",
+      "alternativas": [
+        "Japão",
+        "Chile",
+        "Indonésia",
+        "Filipinas"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Nigéria?",
+      "alternativas": [
+        "Lagos",
+        "Kano",
+        "Abuja",
+        "Ibadan"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual estreito separa a Ásia da América do Norte?",
+      "alternativas": [
+        "Estreito de Gibraltar",
+        "Estreito de Bering",
+        "Estreito de Malaca",
+        "Estreito de Magalhães"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Bolívia?",
+      "alternativas": [
+        "La Paz",
+        "Sucre",
+        "Cochabamba",
+        "Santa Cruz"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o país mais visitado do mundo por turistas?",
+      "alternativas": [
+        "Estados Unidos",
+        "Espanha",
+        "França",
+        "Itália"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Arábia Saudita?",
+      "alternativas": [
+        "Jeddah",
+        "Meca",
+        "Riad",
+        "Medina"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país sul-americano fala holandês oficialmente?",
+      "alternativas": [
+        "Guiana",
+        "Suriname",
+        "Guiana Francesa",
+        "Trinidad e Tobago"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Quênia?",
+      "alternativas": [
+        "Mombasa",
+        "Nairobi",
+        "Kisumu",
+        "Nakuru"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior golfo do mundo?",
+      "alternativas": [
+        "Golfo do México",
+        "Golfo Pérsico",
+        "Golfo de Bengala",
+        "Golfo de Omã"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Cuba?",
+      "alternativas": [
+        "Santiago de Cuba",
+        "Havana",
+        "Camagüey",
+        "Holguín"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como o 'Celeiro do Mundo'?",
+      "alternativas": [
+        "Brasil",
+        "Estados Unidos",
+        "Canadá",
+        "Ucrânia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Uruguai?",
+      "alternativas": [
+        "Salto",
+        "Punta del Este",
+        "Montevidéu",
+        "Colonia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a maior cidade do mundo em população?",
+      "alternativas": [
+        "Nova York",
+        "Xangai",
+        "Tóquio",
+        "São Paulo"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Paraguai?",
+      "alternativas": [
+        "Ciudad del Este",
+        "Encarnación",
+        "Assunção",
+        "Pedro Juan Caballero"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem o litoral mais extenso da América do Sul?",
+      "alternativas": [
+        "Argentina",
+        "Chile",
+        "Brasil",
+        "Peru"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Sérvia?",
+      "alternativas": [
+        "Zagreb",
+        "Belgrado",
+        "Sarajevo",
+        "Skopje"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual ilha caribenha é dividida entre dois países?",
+      "alternativas": [
+        "Cuba",
+        "Jamaica",
+        "Hispaniola",
+        "Porto Rico"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Croácia?",
+      "alternativas": [
+        "Split",
+        "Zagreb",
+        "Dubrovnik",
+        "Rijeka"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o país mais populoso da África?",
+      "alternativas": [
+        "Egito",
+        "Etiópia",
+        "Nigéria",
+        "África do Sul"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Irã?",
+      "alternativas": [
+        "Isfahan",
+        "Shiraz",
+        "Teerã",
+        "Tabriz"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como 'Tigre Asiático' e tem Singapura como cidade principal?",
+      "alternativas": [
+        "Malásia",
+        "Taiwan",
+        "Singapura",
+        "Coreia do Sul"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Nova Zelândia?",
+      "alternativas": [
+        "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Hamilton"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a maior extensão de fronteira terrestre?",
+      "alternativas": [
+        "China",
+        "Rússia",
+        "Brasil",
+        "Índia"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Eslovênia?",
+      "alternativas": [
+        "Maribor",
+        "Liubliana",
+        "Celje",
+        "Koper"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o ponto mais baixo da Terra em terra firme?",
+      "alternativas": [
+        "Vale da Morte",
+        "Mar Morto",
+        "Lago Assal",
+        "Depressão de Turpan"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Bangladesh?",
+      "alternativas": [
+        "Chittagong",
+        "Daca",
+        "Khulna",
+        "Rajshahi"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a ilha mais populosa do mundo?",
+      "alternativas": [
+        "Honshu",
+        "Grã-Bretanha",
+        "Java",
+        "Sumatra"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Bulgária?",
+      "alternativas": [
+        "Plovdiv",
+        "Varna",
+        "Sófia",
+        "Burgas"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é atravessado pelo Meridiano de Greenwich?",
+      "alternativas": [
+        "França",
+        "Alemanha",
+        "Reino Unido",
+        "Portugal"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Malásia?",
+      "alternativas": [
+        "Penang",
+        "Kuala Lumpur",
+        "Johor Bahru",
+        "Ipoh"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a única cidade do mundo localizada em dois continentes?",
+      "alternativas": [
+        "Cairo",
+        "Istambul",
+        "Moscou",
+        "Suez"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Myanmar?",
+      "alternativas": [
+        "Yangon",
+        "Mandalay",
+        "Naypyidaw",
+        "Bagan"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o mar mais salgado do mundo?",
+      "alternativas": [
+        "Mar Vermelho",
+        "Mar Morto",
+        "Mar Mediterrâneo",
+        "Mar Cáspio"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Camboja?",
+      "alternativas": [
+        "Siem Reap",
+        "Battambang",
+        "Phnom Penh",
+        "Sihanoukville"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país europeu tem mais de 1.000 lagos?",
+      "alternativas": [
+        "Suécia",
+        "Finlândia",
+        "Noruega",
+        "Polônia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Eslováquia?",
+      "alternativas": [
+        "KoÅ¡ice",
+        "Bratislava",
+        "PreÅ¡ov",
+        "Nitra"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é o maior produtor de café do mundo?",
+      "alternativas": [
+        "Colômbia",
+        "Vietnã",
+        "Brasil",
+        "Etiópia"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Jordânia?",
+      "alternativas": [
+        "Petra",
+        "Aqaba",
+        "Amã",
+        "Irbid"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o único país que faz fronteira terrestre com o Reino Unido?",
+      "alternativas": [
+        "França",
+        "Irlanda",
+        "Bélgica",
+        "Nenhum"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Nepal?",
+      "alternativas": [
+        "Pokhara",
+        "Katmandu",
+        "Lalitpur",
+        "Bhaktapur"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a montanha mais alta da África?",
+      "alternativas": [
+        "Monte Quênia",
+        "Kilimanjaro",
+        "Monte Stanley",
+        "Monte Elgon"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Laos?",
+      "alternativas": [
+        "Luang Prabang",
+        "Vientiane",
+        "Pakse",
+        "Savannakhet"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a maior extensão de florestas do mundo?",
+      "alternativas": [
+        "Brasil",
+        "Canadá",
+        "Rússia",
+        "Estados Unidos"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Moçambique?",
+      "alternativas": [
+        "Beira",
+        "Nampula",
+        "Maputo",
+        "Quelimane"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como a 'Terra do Fogo'?",
+      "alternativas": [
+        "Chile",
+        "Argentina",
+        "Peru",
+        "Equador"
+      ],
+      "correta": 0
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Argélia?",
+      "alternativas": [
+        "Oran",
+        "Constantine",
+        "Argel",
+        "Annaba"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país da União Europeia em área?",
+      "alternativas": [
+        "Alemanha",
+        "França",
+        "Espanha",
+        "Polônia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Gana?",
+      "alternativas": [
+        "Kumasi",
+        "Acra",
+        "Tamale",
+        "Tema"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o estreito que separa a Itália da Sicília?",
+      "alternativas": [
+        "Estreito de Bonifácio",
+        "Estreito de Messina",
+        "Estreito de Gibraltar",
+        "Estreito de Otranto"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Líbia?",
+      "alternativas": [
+        "Benghazi",
+        "Misrata",
+        "Trípoli",
+        "Tobruk"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é o maior exportador de bananas do mundo?",
+      "alternativas": [
+        "Brasil",
+        "Filipinas",
+        "Equador",
+        "Costa Rica"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Angola?",
+      "alternativas": [
+        "Lubango",
+        "Huambo",
+        "Luanda",
+        "Benguela"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o rio mais longo da Europa?",
+      "alternativas": [
+        "Danúbio",
+        "Reno",
+        "Volga",
+        "Don"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Senegal?",
+      "alternativas": [
+        "Saint-Louis",
+        "Dacar",
+        "Thiès",
+        "Kaolack"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país está localizado mais ao norte?",
+      "alternativas": [
+        "Finlândia",
+        "Noruega",
+        "Islândia",
+        "Rússia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Costa Rica?",
+      "alternativas": [
+        "San Pedro",
+        "San José",
+        "Limón",
+        "Alajuela"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a maior baía do mundo?",
+      "alternativas": [
+        "Baía de Hudson",
+        "Baía de Bengala",
+        "Golfo do México",
+        "Baía de Biscaia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital do Panamá?",
+      "alternativas": [
+        "Colón",
+        "David",
+        "Cidade do Panamá",
+        "Santiago"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a maior produção de arroz do mundo?",
+      "alternativas": [
+        "Índia",
+        "Tailândia",
+        "China",
+        "Vietnã"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Tunísia?",
+      "alternativas": [
+        "Sfax",
+        "Sousse",
+        "Túnis",
+        "Kairouan"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o único país sul-americano com costa no Mar do Caribe e no Oceano Pacífico?",
+      "alternativas": [
+        "Venezuela",
+        "Equador",
+        "Peru",
+        "Colômbia"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Guatemala?",
+      "alternativas": [
+        "Quetzaltenango",
+        "Cidade da Guatemala",
+        "Antigua",
+        "Escuintla"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a ilha mais oriental do Havaí?",
+      "alternativas": [
+        "Oahu",
+        "Maui",
+        "Big Island",
+        "Kauai"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Honduras?",
+      "alternativas": [
+        "San Pedro Sula",
+        "La Ceiba",
+        "Tegucigalpa",
+        "Choluteca"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país africano tem a cidade de Timbuktu?",
+      "alternativas": [
+        "Níger",
+        "Mali",
+        "Burkina Faso",
+        "Mauritânia"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Etiópia?",
+      "alternativas": [
+        "Dire Dawa",
+        "Addis Abeba",
+        "Gondar",
+        "Mekele"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a maior península do mundo?",
+      "alternativas": [
+        "Península Ibérica",
+        "Península Arábica",
+        "Península da Índia",
+        "Península Escandinava"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de El Salvador?",
+      "alternativas": [
+        "Santa Ana",
+        "San Miguel",
+        "San Salvador",
+        "Soyapango"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país tem a cidade de Petra, uma das sete maravilhas do mundo moderno?",
+      "alternativas": [
+        "Israel",
+        "Egito",
+        "Jordânia",
+        "Líbano"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da República Dominicana?",
+      "alternativas": [
+        "Santiago",
+        "Santo Domingo",
+        "Puerto Plata",
+        "La Romana"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o maior país insular do mundo?",
+      "alternativas": [
+        "Japão",
+        "Filipinas",
+        "Indonésia",
+        "Madagascar"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Jamaica?",
+      "alternativas": [
+        "Montego Bay",
+        "Kingston",
+        "Ocho Rios",
+        "Negril"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual mar é considerado o maior lago do mundo?",
+      "alternativas": [
+        "Mar de Aral",
+        "Mar Negro",
+        "Mar Cáspio",
+        "Mar Vermelho"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Porto Rico?",
+      "alternativas": [
+        "Ponce",
+        "Mayagüez",
+        "San Juan",
+        "Bayamón"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual país é conhecido como 'Suíça da América Central'?",
+      "alternativas": [
+        "Guatemala",
+        "Panamá",
+        "Costa Rica",
+        "Belize"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital da Islândia?",
+      "alternativas": [
+        "Akureyri",
+        "Reykjavik",
+        "Keflavik",
+        "Vik"
+      ],
+      "correta": 1
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o menor país continental da América do Sul?",
+      "alternativas": [
+        "Equador",
+        "Uruguai",
+        "Paraguai",
+        "Suriname"
+      ],
+      "correta": 3
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é a capital de Trinidad e Tobago?",
+      "alternativas": [
+        "San Fernando",
+        "Scarborough",
+        "Porto Espanha",
+        "Chaguanas"
+      ],
+      "correta": 2
+    },
+    {
+      "tema": "geografia",
+      "enunciado": "Qual é o único país que cruza a linha do Equador e o Trópico de Capricórnio?",
+      "alternativas": [
+        "Colômbia",
+        "Quênia",
+        "Indonésia",
+        "Brasil"
+      ],
+      "correta": 3
+    }
+  ]
+}
