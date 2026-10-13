@@ -37,7 +37,10 @@ export const TEMAS_DISPONIVEIS = [
         subtemas: [
             { id: 'musica-pop', nome: 'Pop', icone: '🎤' },
             { id: 'musica-rock', nome: 'Rock', icone: '🎸' },
-            { id: 'musica-sertanejo', nome: 'Sertanejo', icone: '🤠' }
+            { id: 'musica-sertanejo', nome: 'Sertanejo', icone: '🤠' },
+            { id: 'musica-olivia-rodrigo', nome: 'Olivia Rodrigo', icone: '💜' },
+            { id: 'musica-taylor-swift', nome: 'Taylor Swift', icone: '✨' },
+            { id: 'musica-ed-sheeran', nome: 'Ed Sheeran', icone: '🎸' }
         ]
     },
     { id: 'nostalgia', nome: 'Nostalgia', icone: '📼' },
