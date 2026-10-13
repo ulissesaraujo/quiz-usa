@@ -1,0 +1,185 @@
+{
+  "tema": "criancas",
+  "perguntas": [
+    {
+      "enunciado": "🐝\n\nCom qual letra começa o nome deste animal?",
+      "alternativas": ["A", "B", "C", "D"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐘\n\nQual é o nome deste animal?",
+      "alternativas": ["Elefante", "Girafa", "Leão", "Zebra"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍎\n\nQual é a cor desta fruta?",
+      "alternativas": ["Amarela", "Verde", "Vermelha", "Azul"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌙 ⭐\n\nQuando vemos a lua e as estrelas no céu?",
+      "alternativas": ["De manhã", "À tarde", "À noite", "Ao meio-dia"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🚗 🚌 🚲\n\nO que esses três têm em comum?",
+      "alternativas": ["São animais", "São frutas", "São meios de transporte", "São brinquedos"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐶\n\nQual som este animal faz?",
+      "alternativas": ["Miau", "Au au", "Mu", "Cocoricó"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐱\n\nQual som este animal faz?",
+      "alternativas": ["Miau", "Au au", "Mu", "Cocoricó"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐄\n\nQual som este animal faz?",
+      "alternativas": ["Miau", "Au au", "Mu", "Cocoricó"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐓\n\nQual som este animal faz?",
+      "alternativas": ["Miau", "Au au", "Mu", "Cocoricó"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍌\n\nQual é o nome desta fruta?",
+      "alternativas": ["Maçã", "Laranja", "Banana", "Uva"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌈\n\nQuantas cores tem o arco-íris?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "☀️\n\nO que isso representa?",
+      "alternativas": ["Lua", "Estrela", "Sol", "Nuvem"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦁\n\nQual é o nome deste animal?",
+      "alternativas": ["Tigre", "Leão", "Onça", "Leopardo"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐸\n\nOnde este animal gosta de viver?",
+      "alternativas": ["No deserto", "Na neve", "Perto da água", "No céu"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦋\n\nO que este animal era antes?",
+      "alternativas": ["Pássaro", "Lagarta", "Peixe", "Formiga"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "1️⃣ 2️⃣ 3️⃣ ❓\n\nQual número vem depois?",
+      "alternativas": ["5", "4", "6", "3"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🔴 🟡 🟢\n\nOnde vemos essas cores juntas?",
+      "alternativas": ["No arco-íris", "No semáforo", "No mar", "Na lua"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐧\n\nOnde este animal vive?",
+      "alternativas": ["Na floresta", "No deserto", "No gelo", "No mar"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌻\n\nQual é o nome desta flor?",
+      "alternativas": ["Rosa", "Girassol", "Margarida", "Tulipa"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐢\n\nEste animal é rápido ou lento?",
+      "alternativas": ["Muito rápido", "Lento", "Normal", "Super veloz"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🎂\n\nQuando ganhamos isso?",
+      "alternativas": ["Todo dia", "No aniversário", "Na escola", "No almoço"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "❤️ 💛 💙\n\nO que são esses símbolos?",
+      "alternativas": ["Estrelas", "Corações", "Flores", "Balões"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐟\n\nOnde este animal vive?",
+      "alternativas": ["Na terra", "No ar", "Na água", "Na árvore"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌳\n\nO que cresce nas árvores?",
+      "alternativas": ["Pedras", "Folhas e frutas", "Areia", "Neve"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐰\n\nQual é o nome deste animal?",
+      "alternativas": ["Gato", "Cachorro", "Coelho", "Rato"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍕\n\nQual é o nome desta comida?",
+      "alternativas": ["Hambúrguer", "Pizza", "Cachorro-quente", "Sanduíche"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "✈️\n\nOnde isso anda?",
+      "alternativas": ["Na água", "Na terra", "No céu", "Debaixo da terra"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🎈\n\nO que acontece se furar?",
+      "alternativas": ["Fica maior", "Estoura", "Voa mais alto", "Muda de cor"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦷\n\nQuantas vezes por dia devemos escovar isso?",
+      "alternativas": ["1 vez", "2 vezes", "3 vezes", "Nunca"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐒\n\nOnde este animal gosta de ficar?",
+      "alternativas": ["Na água", "Nas árvores", "No gelo", "Debaixo da terra"],
+      "correta": 1,
+      "dificuldade": "facil"
+    }
+  ]
+}
