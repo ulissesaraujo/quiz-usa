@@ -420,6 +420,342 @@
       "alternativas": ["Privatização do petróleo", "Monopólio estatal do petróleo", "Exportação de petróleo", "Importação de petróleo"],
       "correta": 1,
       "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem foram os candidatos do segundo turno nas eleições presidenciais de 2022?",
+      "alternativas": ["Bolsonaro e Ciro", "Lula e Bolsonaro", "Lula e Ciro", "Bolsonaro e Simone Tebet"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem venceu as eleições presidenciais de 2022?",
+      "alternativas": ["Jair Bolsonaro", "Lula", "Ciro Gomes", "Simone Tebet"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual foi a porcentagem de votos válidos de Lula no segundo turno de 2022?",
+      "alternativas": ["48,43%", "50,90%", "52,15%", "55,30%"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Quem foi o vice de Lula nas eleições de 2022?",
+      "alternativas": ["Fernando Haddad", "Geraldo Alckmin", "José Alencar", "Marina Silva"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por qual partido Geraldo Alckmin concorreu como vice de Lula em 2022?",
+      "alternativas": ["PSDB", "PSB", "MDB", "PDT"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem foi a candidata do MDB à presidência em 2022?",
+      "alternativas": ["Marina Silva", "Simone Tebet", "Soraya Thronicke", "Vera Lúcia"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual foi a colocação de Simone Tebet no primeiro turno de 2022?",
+      "alternativas": ["2º lugar", "3º lugar", "4º lugar", "5º lugar"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem foi o candidato do PDT à presidência em 2022?",
+      "alternativas": ["Ciro Gomes", "Leonel Brizola", "Roberto Jefferson", "Padre Kelmon"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quantas vezes Ciro Gomes concorreu à presidência?",
+      "alternativas": ["2 vezes", "3 vezes", "4 vezes", "5 vezes"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi o partido de Bolsonaro nas eleições de 2022?",
+      "alternativas": ["PSL", "PP", "PL", "Republicanos"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem foi o vice de Bolsonaro na reeleição de 2022?",
+      "alternativas": ["Hamilton Mourão", "Braga Netto", "Tarcísio de Freitas", "Damares Alves"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Em que data ocorreu o primeiro turno das eleições de 2022?",
+      "alternativas": ["2 de outubro", "7 de outubro", "15 de outubro", "30 de outubro"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Em que data ocorreu o segundo turno das eleições de 2022?",
+      "alternativas": ["23 de outubro", "28 de outubro", "30 de outubro", "2 de novembro"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem foi eleito governador de São Paulo em 2022?",
+      "alternativas": ["Rodrigo Garcia", "Fernando Haddad", "Tarcísio de Freitas", "Márcio França"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por qual partido Tarcísio de Freitas foi eleito governador de SP?",
+      "alternativas": ["PSDB", "PL", "Republicanos", "PP"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem era governador de São Paulo antes de Tarcísio?",
+      "alternativas": ["João Doria", "Rodrigo Garcia", "Geraldo Alckmin", "Márcio França"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem foi eleito governador do Rio de Janeiro em 2022?",
+      "alternativas": ["Wilson Witzel", "Cláudio Castro", "Marcelo Freixo", "Eduardo Paes"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem foi eleito governador de Minas Gerais em 2022?",
+      "alternativas": ["Romeu Zema", "Alexandre Kalil", "Fernando Pimentel", "Aécio Neves"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quantos senadores foram eleitos por estado em 2022?",
+      "alternativas": ["1", "2", "3", "Varia por estado"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi o cargo de Tarcísio de Freitas no governo Bolsonaro?",
+      "alternativas": ["Ministro da Economia", "Ministro da Infraestrutura", "Ministro da Defesa", "Ministro da Justiça"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem venceu as eleições para prefeito de São Paulo em 2024?",
+      "alternativas": ["Guilherme Boulos", "Ricardo Nunes", "Pablo Marçal", "Tabata Amaral"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem foi o adversário de Ricardo Nunes no segundo turno em SP 2024?",
+      "alternativas": ["Pablo Marçal", "Guilherme Boulos", "José Luiz Datena", "Tabata Amaral"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por qual partido Ricardo Nunes foi eleito prefeito de SP em 2024?",
+      "alternativas": ["PL", "PP", "MDB", "Republicanos"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Por qual partido Guilherme Boulos concorreu em 2024?",
+      "alternativas": ["PT", "PSOL", "PCdoB", "PDT"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem foi a vice de Guilherme Boulos na eleição de SP 2024?",
+      "alternativas": ["Tabata Amaral", "Marta Suplicy", "Marina Helena", "Simone Tebet"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual candidato ficou em terceiro lugar na eleição de SP 2024 no primeiro turno?",
+      "alternativas": ["Tabata Amaral", "José Luiz Datena", "Pablo Marçal", "Marina Helena"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por qual partido Pablo Marçal concorreu em 2024?",
+      "alternativas": ["PRTB", "PL", "Novo", "PP"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual era a profissão mais conhecida de Pablo Marçal antes da política?",
+      "alternativas": ["Advogado", "Coach/Empresário digital", "Médico", "Jornalista"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual apresentador de TV concorreu à prefeitura de SP em 2024?",
+      "alternativas": ["Ratinho", "José Luiz Datena", "Celso Portiolli", "Luiz Bacci"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por qual partido Datena concorreu em 2024?",
+      "alternativas": ["PL", "PSDB", "MDB", "União Brasil"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual deputada federal concorreu à prefeitura de SP em 2024?",
+      "alternativas": ["Carla Zambelli", "Tabata Amaral", "Joice Hasselmann", "Bia Kicis"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem era o prefeito de São Paulo antes de Ricardo Nunes?",
+      "alternativas": ["João Doria", "Bruno Covas", "Fernando Haddad", "Gilberto Kassab"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Ricardo Nunes assumiu a prefeitura de SP em qual circunstância?",
+      "alternativas": ["Eleito diretamente", "Morte de Bruno Covas", "Renúncia de Doria", "Impeachment"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem apoiou Ricardo Nunes na eleição de 2024?",
+      "alternativas": ["Lula", "Bolsonaro", "Ciro Gomes", "Marina Silva"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem apoiou Guilherme Boulos na eleição de 2024?",
+      "alternativas": ["Bolsonaro", "Lula", "Tarcísio", "Ciro Gomes"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano estão previstas as próximas eleições presidenciais no Brasil?",
+      "alternativas": ["2025", "2026", "2027", "2028"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem é o atual ministro da Fazenda do governo Lula 3?",
+      "alternativas": ["Guido Mantega", "Fernando Haddad", "Paulo Guedes", "Henrique Meirelles"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem é a atual ministra do Meio Ambiente do governo Lula 3?",
+      "alternativas": ["Izabella Teixeira", "Marina Silva", "Simone Tebet", "Sônia Guajajara"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem é a ministra dos Povos Indígenas?",
+      "alternativas": ["Marina Silva", "Sônia Guajajara", "Anielle Franco", "Margareth Menezes"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi o principal tema de debate sobre economia no governo Lula 3?",
+      "alternativas": ["Privatizações", "Arcabouço fiscal", "Dolarização", "Congelamento de preços"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem é o presidente do Banco Central indicado por Bolsonaro e mantido por Lula?",
+      "alternativas": ["Roberto Campos Neto", "Alexandre Tombini", "Ilan Goldfajn", "Henrique Meirelles"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Em que data Lula tomou posse em 2023?",
+      "alternativas": ["1º de janeiro", "15 de janeiro", "1º de fevereiro", "15 de março"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "O que aconteceu em Brasília em 8 de janeiro de 2023?",
+      "alternativas": ["Posse de Lula", "Invasão dos Três Poderes", "Eleição indireta", "Votação do orçamento"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quais prédios foram invadidos em 8 de janeiro de 2023?",
+      "alternativas": ["Apenas o Congresso", "Apenas o STF", "Congresso, STF e Palácio do Planalto", "Apenas o Planalto"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Onde estava Bolsonaro durante os atos de 8 de janeiro?",
+      "alternativas": ["Em Brasília", "Em São Paulo", "Nos Estados Unidos", "Em Santa Catarina"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome do programa de combate à fome retomado por Lula?",
+      "alternativas": ["Fome Zero", "Bolsa Família", "Auxílio Brasil", "Minha Casa Minha Vida"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quanto tempo Lula ficou preso na Operação Lava Jato?",
+      "alternativas": ["1 ano", "580 dias", "2 anos", "3 anos"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem anulou as condenações de Lula na Lava Jato?",
+      "alternativas": ["Sérgio Moro", "STF", "TSE", "Congresso"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi a justificativa para anular as condenações de Lula?",
+      "alternativas": ["Inocência comprovada", "Incompetência da Justiça Federal de Curitiba", "Prescrição", "Anistia"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Quantos mandatos Lula exerceu como presidente até 2026?",
+      "alternativas": ["2", "3", "4", "1"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem foi o primeiro ministro da Justiça de Bolsonaro?",
+      "alternativas": ["André Mendonça", "Anderson Torres", "Sérgio Moro", "Flávio Dino"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por que Sérgio Moro deixou o governo Bolsonaro?",
+      "alternativas": ["Para se candidatar", "Desentendimento sobre interferência na PF", "Assumiu cargo no STF", "Problemas de saúde"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Sérgio Moro foi eleito para qual cargo em 2022?",
+      "alternativas": ["Governador do PR", "Deputado Federal", "Senador pelo PR", "Presidente"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem foi eleito prefeito do Rio de Janeiro em 2024?",
+      "alternativas": ["Marcelo Crivella", "Eduardo Paes", "Alexandre Ramagem", "Tarcísio Motta"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é a quantidade de deputados federais no Brasil?",
+      "alternativas": ["413", "513", "613", "313"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quantos senadores existem no Senado Federal?",
+      "alternativas": ["54", "71", "81", "91"],
+      "correta": 2,
+      "dificuldade": "medio"
     }
   ]
 }
