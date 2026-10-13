@@ -3,32 +3,32 @@
   "perguntas": [
     {
       "enunciado": "Quem foi o primeiro presidente do Brasil?",
-      "alternativas": ["Getúlio Vargas", "Deodoro da Fonseca", "Floriano Peixoto", "Prudente de Morais"],
-      "correta": 1,
+      "alternativas": ["Getúlio Vargas", "Floriano Peixoto", "Prudente de Morais", "Deodoro da Fonseca"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Em que ano foi proclamada a República no Brasil?",
-      "alternativas": ["1822", "1889", "1891", "1888"],
-      "correta": 1,
+      "alternativas": ["1889", "1822", "1891", "1888"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem proclamou a República do Brasil?",
-      "alternativas": ["Dom Pedro II", "Marechal Deodoro da Fonseca", "Getúlio Vargas", "Princesa Isabel"],
-      "correta": 1,
+      "alternativas": ["Dom Pedro II", "Getúlio Vargas", "Princesa Isabel", "Marechal Deodoro da Fonseca"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual presidente brasileiro ficou conhecido como 'pai dos pobres'?",
-      "alternativas": ["Juscelino Kubitschek", "Getúlio Vargas", "João Goulart", "Lula"],
-      "correta": 1,
+      "alternativas": ["Juscelino Kubitschek", "João Goulart", "Lula", "Getúlio Vargas"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Em que ano Getúlio Vargas cometeu suicídio?",
-      "alternativas": ["1950", "1954", "1960", "1945"],
-      "correta": 1,
+      "alternativas": ["1954", "1950", "1960", "1945"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
@@ -39,8 +39,8 @@
     },
     {
       "enunciado": "Qual presidente construiu Brasília?",
-      "alternativas": ["Getúlio Vargas", "Jânio Quadros", "Juscelino Kubitschek", "João Goulart"],
-      "correta": 2,
+      "alternativas": ["Juscelino Kubitschek", "Getúlio Vargas", "Jânio Quadros", "João Goulart"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
@@ -51,20 +51,20 @@
     },
     {
       "enunciado": "Qual foi o slogan do governo JK?",
-      "alternativas": ["Brasil Grande", "50 anos em 5", "Ordem e Progresso", "Brasil Novo"],
-      "correta": 1,
+      "alternativas": ["Brasil Grande", "Ordem e Progresso", "Brasil Novo", "50 anos em 5"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual presidente renunciou com a frase 'forças terríveis'?",
-      "alternativas": ["Getúlio Vargas", "Jânio Quadros", "Fernando Collor", "João Goulart"],
-      "correta": 1,
+      "alternativas": ["Jânio Quadros", "Getúlio Vargas", "Fernando Collor", "João Goulart"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual foi o primeiro presidente civil após a ditadura militar?",
-      "alternativas": ["Fernando Collor", "José Sarney", "Tancredo Neves", "Itamar Franco"],
-      "correta": 1,
+      "alternativas": ["Fernando Collor", "Tancredo Neves", "José Sarney", "Itamar Franco"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
@@ -75,20 +75,20 @@
     },
     {
       "enunciado": "Qual presidente sofreu impeachment em 1992?",
-      "alternativas": ["José Sarney", "Fernando Collor", "Itamar Franco", "Fernando Henrique"],
-      "correta": 1,
+      "alternativas": ["José Sarney", "Itamar Franco", "Fernando Henrique", "Fernando Collor"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual movimento popular pediu o impeachment de Collor?",
-      "alternativas": ["Diretas Já", "Caras-pintadas", "Fora Collor", "Movimento estudantil"],
-      "correta": 1,
+      "alternativas": ["Caras-pintadas", "Diretas Já", "Fora Collor", "Movimento estudantil"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem assumiu a presidência após o impeachment de Collor?",
-      "alternativas": ["Fernando Henrique", "Itamar Franco", "José Sarney", "Lula"],
-      "correta": 1,
+      "alternativas": ["Fernando Henrique", "José Sarney", "Lula", "Itamar Franco"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
@@ -99,8 +99,8 @@
     },
     {
       "enunciado": "Em que ano foi implementado o Plano Real?",
-      "alternativas": ["1992", "1993", "1994", "1995"],
-      "correta": 2,
+      "alternativas": ["1994", "1992", "1993", "1995"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
@@ -117,8 +117,8 @@
     },
     {
       "enunciado": "Qual foi o primeiro presidente do PT eleito no Brasil?",
-      "alternativas": ["Dilma Rousseff", "Lula", "Fernando Haddad", "José Dirceu"],
-      "correta": 1,
+      "alternativas": ["Dilma Rousseff", "Fernando Haddad", "José Dirceu", "Lula"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
@@ -129,44 +129,44 @@
     },
     {
       "enunciado": "Qual foi o programa social mais famoso do governo Lula?",
-      "alternativas": ["Fome Zero", "Bolsa Família", "Minha Casa Minha Vida", "ProUni"],
-      "correta": 1,
+      "alternativas": ["Bolsa Família", "Fome Zero", "Minha Casa Minha Vida", "ProUni"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem foi a primeira mulher presidente do Brasil?",
-      "alternativas": ["Marina Silva", "Dilma Rousseff", "Marta Suplicy", "Erundina"],
-      "correta": 1,
+      "alternativas": ["Marina Silva", "Marta Suplicy", "Erundina", "Dilma Rousseff"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Em que ano Dilma Rousseff sofreu impeachment?",
-      "alternativas": ["2014", "2015", "2016", "2017"],
-      "correta": 2,
+      "alternativas": ["2016", "2014", "2015", "2017"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem assumiu a presidência após o impeachment de Dilma?",
-      "alternativas": ["Lula", "Michel Temer", "Aécio Neves", "Eduardo Cunha"],
-      "correta": 1,
+      "alternativas": ["Michel Temer", "Lula", "Aécio Neves", "Eduardo Cunha"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual foi a principal acusação no impeachment de Dilma?",
-      "alternativas": ["Corrupção", "Pedaladas fiscais", "Caixa 2", "Lavagem de dinheiro"],
-      "correta": 1,
+      "alternativas": ["Corrupção", "Caixa 2", "Pedaladas fiscais", "Lavagem de dinheiro"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual operação investigou esquemas de corrupção na Petrobras?",
-      "alternativas": ["Operação Mãos Limpas", "Operação Lava Jato", "Operação Banestado", "Operação Satiagraha"],
-      "correta": 1,
+      "alternativas": ["Operação Mãos Limpas", "Operação Banestado", "Operação Satiagraha", "Operação Lava Jato"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem foi o juiz responsável pela Lava Jato em primeira instância?",
-      "alternativas": ["Gilmar Mendes", "Sérgio Moro", "Luís Roberto Barroso", "Celso de Mello"],
-      "correta": 1,
+      "alternativas": ["Sérgio Moro", "Gilmar Mendes", "Luís Roberto Barroso", "Celso de Mello"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
@@ -177,8 +177,8 @@
     },
     {
       "enunciado": "Por qual partido Bolsonaro foi eleito presidente?",
-      "alternativas": ["PP", "PSC", "PSL", "PL"],
-      "correta": 2,
+      "alternativas": ["PP", "PSL", "PSC", "PL"],
+      "correta": 1,
       "dificuldade": "medio"
     },
     {
@@ -189,32 +189,32 @@
     },
     {
       "enunciado": "Em que ano ocorreu o movimento Diretas Já?",
-      "alternativas": ["1982", "1983", "1984", "1985"],
-      "correta": 2,
+      "alternativas": ["1982", "1983", "1985", "1984"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual foi o último presidente do regime militar?",
-      "alternativas": ["Ernesto Geisel", "João Figueiredo", "Emílio Médici", "Costa e Silva"],
-      "correta": 1,
+      "alternativas": ["Ernesto Geisel", "Emílio Médici", "João Figueiredo", "Costa e Silva"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual presidente do regime militar ficou conhecido como 'anos de chumbo'?",
-      "alternativas": ["Castelo Branco", "Costa e Silva", "Emílio Médici", "Ernesto Geisel"],
-      "correta": 2,
+      "alternativas": ["Emílio Médici", "Castelo Branco", "Costa e Silva", "Ernesto Geisel"],
+      "correta": 0,
       "dificuldade": "dificil"
     },
     {
       "enunciado": "O que foi o AI-5?",
-      "alternativas": ["Ato que decretou anistia", "Ato que permitiu eleições", "Ato Institucional que endureceu a ditadura", "Ato que criou partidos"],
-      "correta": 2,
+      "alternativas": ["Ato que decretou anistia", "Ato Institucional que endureceu a ditadura", "Ato que permitiu eleições", "Ato que criou partidos"],
+      "correta": 1,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Em que ano foi promulgado o AI-5?",
-      "alternativas": ["1964", "1966", "1968", "1970"],
-      "correta": 2,
+      "alternativas": ["1964", "1968", "1966", "1970"],
+      "correta": 1,
       "dificuldade": "dificil"
     },
     {
@@ -225,8 +225,8 @@
     },
     {
       "enunciado": "Como é conhecida a Constituição de 1988?",
-      "alternativas": ["Constituição Ditatorial", "Constituição Popular", "Constituição Cidadã", "Constituição Democrática"],
-      "correta": 2,
+      "alternativas": ["Constituição Cidadã", "Constituição Ditatorial", "Constituição Popular", "Constituição Democrática"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
@@ -237,20 +237,20 @@
     },
     {
       "enunciado": "O que foi a Coluna Prestes?",
-      "alternativas": ["Partido político", "Marcha militar pelo interior do Brasil", "Jornal oposicionista", "Sindicato de trabalhadores"],
-      "correta": 1,
+      "alternativas": ["Marcha militar pelo interior do Brasil", "Partido político", "Jornal oposicionista", "Sindicato de trabalhadores"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem liderou a Coluna Prestes?",
-      "alternativas": ["Getúlio Vargas", "Luís Carlos Prestes", "Olga Benário", "Carlos Marighella"],
-      "correta": 1,
+      "alternativas": ["Getúlio Vargas", "Olga Benário", "Carlos Marighella", "Luís Carlos Prestes"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "O que foi o Estado Novo?",
-      "alternativas": ["Período democrático", "Ditadura de Getúlio Vargas (1937-1945)", "República Velha", "Era Vargas democrática"],
-      "correta": 1,
+      "alternativas": ["Ditadura de Getúlio Vargas (1937-1945)", "Período democrático", "República Velha", "Era Vargas democrática"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
@@ -261,50 +261,50 @@
     },
     {
       "enunciado": "A República Velha durou de que período?",
-      "alternativas": ["1889-1930", "1889-1945", "1891-1937", "1900-1930"],
-      "correta": 0,
+      "alternativas": ["1889-1945", "1891-1937", "1889-1930", "1900-1930"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual evento encerrou a República Velha?",
-      "alternativas": ["Proclamação da República", "Revolução de 1930", "Estado Novo", "Diretas Já"],
-      "correta": 1,
+      "alternativas": ["Proclamação da República", "Estado Novo", "Revolução de 1930", "Diretas Já"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem liderou a Revolução de 1930?",
-      "alternativas": ["Deodoro da Fonseca", "Getúlio Vargas", "Juscelino Kubitschek", "Washington Luís"],
-      "correta": 1,
+      "alternativas": ["Deodoro da Fonseca", "Juscelino Kubitschek", "Washington Luís", "Getúlio Vargas"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual revolta militar ficou conhecida como Intentona Comunista?",
-      "alternativas": ["Revolta da Armada", "Revolta de 1935", "Revolta dos Tenentes", "Revolta da Chibata"],
-      "correta": 1,
+      "alternativas": ["Revolta de 1935", "Revolta da Armada", "Revolta dos Tenentes", "Revolta da Chibata"],
+      "correta": 0,
       "dificuldade": "dificil"
     },
     {
       "enunciado": "Quem foi Carlos Lacerda?",
-      "alternativas": ["Presidente", "Jornalista e político opositor de Vargas", "General da ditadura", "Líder sindical"],
-      "correta": 1,
+      "alternativas": ["Presidente", "General da ditadura", "Jornalista e político opositor de Vargas", "Líder sindical"],
+      "correta": 2,
       "dificuldade": "dificil"
     },
     {
       "enunciado": "Qual era o partido de Getúlio Vargas quando foi eleito em 1950?",
-      "alternativas": ["UDN", "PTB", "PSD", "PCB"],
-      "correta": 1,
+      "alternativas": ["UDN", "PSD", "PTB", "PCB"],
+      "correta": 2,
       "dificuldade": "dificil"
     },
     {
       "enunciado": "O que foi o 'Mensalão'?",
-      "alternativas": ["Programa social", "Escândalo de compra de votos no Congresso", "Plano econômico", "Reforma política"],
-      "correta": 1,
+      "alternativas": ["Escândalo de compra de votos no Congresso", "Programa social", "Plano econômico", "Reforma política"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Em que ano estourou o escândalo do Mensalão?",
-      "alternativas": ["2003", "2005", "2007", "2010"],
-      "correta": 1,
+      "alternativas": ["2003", "2007", "2010", "2005"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
@@ -315,20 +315,20 @@
     },
     {
       "enunciado": "Qual é a idade mínima para ser presidente do Brasil?",
-      "alternativas": ["30 anos", "35 anos", "40 anos", "45 anos"],
-      "correta": 1,
+      "alternativas": ["30 anos", "40 anos", "35 anos", "45 anos"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual é a duração do mandato de presidente no Brasil?",
-      "alternativas": ["3 anos", "4 anos", "5 anos", "6 anos"],
-      "correta": 1,
+      "alternativas": ["4 anos", "3 anos", "5 anos", "6 anos"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quantas vezes consecutivas uma pessoa pode ser presidente?",
-      "alternativas": ["1 vez", "2 vezes", "3 vezes", "Sem limite"],
-      "correta": 1,
+      "alternativas": ["1 vez", "3 vezes", "Sem limite", "2 vezes"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
@@ -339,32 +339,32 @@
     },
     {
       "enunciado": "Qual instituição julga o presidente em crimes de responsabilidade?",
-      "alternativas": ["STF", "Câmara", "Senado", "TSE"],
-      "correta": 2,
+      "alternativas": ["Senado", "STF", "Câmara", "TSE"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quantos senadores cada estado brasileiro tem?",
-      "alternativas": ["2", "3", "4", "Varia por estado"],
-      "correta": 1,
+      "alternativas": ["2", "4", "3", "Varia por estado"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual é a duração do mandato de senador?",
-      "alternativas": ["4 anos", "6 anos", "8 anos", "Vitalício"],
-      "correta": 1,
+      "alternativas": ["4 anos", "8 anos", "6 anos", "Vitalício"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual é a duração do mandato de deputado federal?",
-      "alternativas": ["2 anos", "4 anos", "6 anos", "8 anos"],
-      "correta": 1,
+      "alternativas": ["2 anos", "6 anos", "8 anos", "4 anos"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem foi o vice-presidente de Lula no primeiro mandato?",
-      "alternativas": ["Michel Temer", "José Alencar", "Marco Maciel", "Geraldo Alckmin"],
-      "correta": 1,
+      "alternativas": ["José Alencar", "Michel Temer", "Marco Maciel", "Geraldo Alckmin"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
@@ -381,20 +381,20 @@
     },
     {
       "enunciado": "Em que ano o Rio de Janeiro deixou de ser capital do Brasil?",
-      "alternativas": ["1958", "1959", "1960", "1961"],
-      "correta": 2,
+      "alternativas": ["1958", "1959", "1961", "1960"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual presidente governou o Brasil durante a Segunda Guerra Mundial?",
-      "alternativas": ["Eurico Gaspar Dutra", "Getúlio Vargas", "Juscelino Kubitschek", "Washington Luís"],
-      "correta": 1,
+      "alternativas": ["Eurico Gaspar Dutra", "Juscelino Kubitschek", "Getúlio Vargas", "Washington Luís"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "O Brasil enviou tropas para qual guerra?",
-      "alternativas": ["Primeira Guerra Mundial", "Segunda Guerra Mundial", "Guerra da Coreia", "Todas anteriores"],
-      "correta": 1,
+      "alternativas": ["Segunda Guerra Mundial", "Primeira Guerra Mundial", "Guerra da Coreia", "Todas anteriores"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
@@ -405,14 +405,14 @@
     },
     {
       "enunciado": "Qual presidente criou a Petrobras?",
-      "alternativas": ["Juscelino Kubitschek", "Getúlio Vargas", "Eurico Dutra", "João Goulart"],
-      "correta": 1,
+      "alternativas": ["Juscelino Kubitschek", "Eurico Dutra", "Getúlio Vargas", "João Goulart"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Em que ano a Petrobras foi criada?",
-      "alternativas": ["1950", "1953", "1956", "1960"],
-      "correta": 1,
+      "alternativas": ["1950", "1956", "1953", "1960"],
+      "correta": 2,
       "dificuldade": "dificil"
     },
     {
@@ -423,26 +423,26 @@
     },
     {
       "enunciado": "Quem foram os candidatos do segundo turno nas eleições presidenciais de 2022?",
-      "alternativas": ["Bolsonaro e Ciro", "Lula e Bolsonaro", "Lula e Ciro", "Bolsonaro e Simone Tebet"],
-      "correta": 1,
+      "alternativas": ["Lula e Bolsonaro", "Bolsonaro e Ciro", "Lula e Ciro", "Bolsonaro e Simone Tebet"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem venceu as eleições presidenciais de 2022?",
-      "alternativas": ["Jair Bolsonaro", "Lula", "Ciro Gomes", "Simone Tebet"],
-      "correta": 1,
+      "alternativas": ["Jair Bolsonaro", "Ciro Gomes", "Lula", "Simone Tebet"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual foi a porcentagem de votos válidos de Lula no segundo turno de 2022?",
-      "alternativas": ["48,43%", "50,90%", "52,15%", "55,30%"],
-      "correta": 1,
+      "alternativas": ["50,90%", "48,43%", "52,15%", "55,30%"],
+      "correta": 0,
       "dificuldade": "dificil"
     },
     {
       "enunciado": "Quem foi o vice de Lula nas eleições de 2022?",
-      "alternativas": ["Fernando Haddad", "Geraldo Alckmin", "José Alencar", "Marina Silva"],
-      "correta": 1,
+      "alternativas": ["Fernando Haddad", "José Alencar", "Marina Silva", "Geraldo Alckmin"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
@@ -453,20 +453,20 @@
     },
     {
       "enunciado": "Quem foi a candidata do MDB à presidência em 2022?",
-      "alternativas": ["Marina Silva", "Simone Tebet", "Soraya Thronicke", "Vera Lúcia"],
-      "correta": 1,
+      "alternativas": ["Simone Tebet", "Marina Silva", "Soraya Thronicke", "Vera Lúcia"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual foi a colocação de Simone Tebet no primeiro turno de 2022?",
-      "alternativas": ["2º lugar", "3º lugar", "4º lugar", "5º lugar"],
+      "alternativas": ["2º lugar", "4º lugar", "3º lugar", "5º lugar"],
       "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem foi o candidato do PDT à presidência em 2022?",
-      "alternativas": ["Ciro Gomes", "Leonel Brizola", "Roberto Jefferson", "Padre Kelmon"],
-      "correta": 0,
+      "alternativas": ["Leonel Brizola", "Roberto Jefferson", "Ciro Gomes", "Padre Kelmon"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
@@ -477,14 +477,14 @@
     },
     {
       "enunciado": "Qual foi o partido de Bolsonaro nas eleições de 2022?",
-      "alternativas": ["PSL", "PP", "PL", "Republicanos"],
-      "correta": 2,
+      "alternativas": ["PSL", "PL", "PP", "Republicanos"],
+      "correta": 1,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem foi o vice de Bolsonaro na reeleição de 2022?",
-      "alternativas": ["Hamilton Mourão", "Braga Netto", "Tarcísio de Freitas", "Damares Alves"],
-      "correta": 1,
+      "alternativas": ["Hamilton Mourão", "Tarcísio de Freitas", "Braga Netto", "Damares Alves"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
@@ -501,32 +501,32 @@
     },
     {
       "enunciado": "Quem foi eleito governador de São Paulo em 2022?",
-      "alternativas": ["Rodrigo Garcia", "Fernando Haddad", "Tarcísio de Freitas", "Márcio França"],
-      "correta": 2,
+      "alternativas": ["Rodrigo Garcia", "Tarcísio de Freitas", "Fernando Haddad", "Márcio França"],
+      "correta": 1,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Por qual partido Tarcísio de Freitas foi eleito governador de SP?",
-      "alternativas": ["PSDB", "PL", "Republicanos", "PP"],
+      "alternativas": ["PSDB", "PP", "Republicanos", "PL"],
       "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem era governador de São Paulo antes de Tarcísio?",
-      "alternativas": ["João Doria", "Rodrigo Garcia", "Geraldo Alckmin", "Márcio França"],
-      "correta": 1,
+      "alternativas": ["João Doria", "Geraldo Alckmin", "Rodrigo Garcia", "Márcio França"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem foi eleito governador do Rio de Janeiro em 2022?",
-      "alternativas": ["Wilson Witzel", "Cláudio Castro", "Marcelo Freixo", "Eduardo Paes"],
-      "correta": 1,
+      "alternativas": ["Cláudio Castro", "Wilson Witzel", "Marcelo Freixo", "Eduardo Paes"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem foi eleito governador de Minas Gerais em 2022?",
-      "alternativas": ["Romeu Zema", "Alexandre Kalil", "Fernando Pimentel", "Aécio Neves"],
-      "correta": 0,
+      "alternativas": ["Alexandre Kalil", "Fernando Pimentel", "Romeu Zema", "Aécio Neves"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
@@ -537,44 +537,44 @@
     },
     {
       "enunciado": "Qual foi o cargo de Tarcísio de Freitas no governo Bolsonaro?",
-      "alternativas": ["Ministro da Economia", "Ministro da Infraestrutura", "Ministro da Defesa", "Ministro da Justiça"],
-      "correta": 1,
+      "alternativas": ["Ministro da Economia", "Ministro da Defesa", "Ministro da Justiça", "Ministro da Infraestrutura"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem venceu as eleições para prefeito de São Paulo em 2024?",
-      "alternativas": ["Guilherme Boulos", "Ricardo Nunes", "Pablo Marçal", "Tabata Amaral"],
-      "correta": 1,
+      "alternativas": ["Ricardo Nunes", "Guilherme Boulos", "Pablo Marçal", "Tabata Amaral"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem foi o adversário de Ricardo Nunes no segundo turno em SP 2024?",
-      "alternativas": ["Pablo Marçal", "Guilherme Boulos", "José Luiz Datena", "Tabata Amaral"],
-      "correta": 1,
+      "alternativas": ["Pablo Marçal", "José Luiz Datena", "Tabata Amaral", "Guilherme Boulos"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Por qual partido Ricardo Nunes foi eleito prefeito de SP em 2024?",
-      "alternativas": ["PL", "PP", "MDB", "Republicanos"],
-      "correta": 2,
+      "alternativas": ["PL", "MDB", "PP", "Republicanos"],
+      "correta": 1,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Por qual partido Guilherme Boulos concorreu em 2024?",
-      "alternativas": ["PT", "PSOL", "PCdoB", "PDT"],
-      "correta": 1,
+      "alternativas": ["PSOL", "PT", "PCdoB", "PDT"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem foi a vice de Guilherme Boulos na eleição de SP 2024?",
-      "alternativas": ["Tabata Amaral", "Marta Suplicy", "Marina Helena", "Simone Tebet"],
-      "correta": 1,
+      "alternativas": ["Tabata Amaral", "Marina Helena", "Simone Tebet", "Marta Suplicy"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual candidato ficou em terceiro lugar na eleição de SP 2024 no primeiro turno?",
-      "alternativas": ["Tabata Amaral", "José Luiz Datena", "Pablo Marçal", "Marina Helena"],
-      "correta": 2,
+      "alternativas": ["Tabata Amaral", "José Luiz Datena", "Marina Helena", "Pablo Marçal"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
@@ -585,68 +585,68 @@
     },
     {
       "enunciado": "Qual era a profissão mais conhecida de Pablo Marçal antes da política?",
-      "alternativas": ["Advogado", "Coach/Empresário digital", "Médico", "Jornalista"],
-      "correta": 1,
+      "alternativas": ["Advogado", "Médico", "Jornalista", "Coach/Empresário digital"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual apresentador de TV concorreu à prefeitura de SP em 2024?",
-      "alternativas": ["Ratinho", "José Luiz Datena", "Celso Portiolli", "Luiz Bacci"],
-      "correta": 1,
+      "alternativas": ["José Luiz Datena", "Ratinho", "Celso Portiolli", "Luiz Bacci"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Por qual partido Datena concorreu em 2024?",
-      "alternativas": ["PL", "PSDB", "MDB", "União Brasil"],
-      "correta": 1,
+      "alternativas": ["PL", "MDB", "PSDB", "União Brasil"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual deputada federal concorreu à prefeitura de SP em 2024?",
-      "alternativas": ["Carla Zambelli", "Tabata Amaral", "Joice Hasselmann", "Bia Kicis"],
-      "correta": 1,
+      "alternativas": ["Carla Zambelli", "Joice Hasselmann", "Tabata Amaral", "Bia Kicis"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem era o prefeito de São Paulo antes de Ricardo Nunes?",
-      "alternativas": ["João Doria", "Bruno Covas", "Fernando Haddad", "Gilberto Kassab"],
-      "correta": 1,
+      "alternativas": ["João Doria", "Fernando Haddad", "Bruno Covas", "Gilberto Kassab"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Ricardo Nunes assumiu a prefeitura de SP em qual circunstância?",
-      "alternativas": ["Eleito diretamente", "Morte de Bruno Covas", "Renúncia de Doria", "Impeachment"],
-      "correta": 1,
+      "alternativas": ["Eleito diretamente", "Renúncia de Doria", "Morte de Bruno Covas", "Impeachment"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem apoiou Ricardo Nunes na eleição de 2024?",
-      "alternativas": ["Lula", "Bolsonaro", "Ciro Gomes", "Marina Silva"],
-      "correta": 1,
+      "alternativas": ["Lula", "Ciro Gomes", "Bolsonaro", "Marina Silva"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem apoiou Guilherme Boulos na eleição de 2024?",
-      "alternativas": ["Bolsonaro", "Lula", "Tarcísio", "Ciro Gomes"],
-      "correta": 1,
+      "alternativas": ["Lula", "Bolsonaro", "Tarcísio", "Ciro Gomes"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Em que ano estão previstas as próximas eleições presidenciais no Brasil?",
-      "alternativas": ["2025", "2026", "2027", "2028"],
-      "correta": 1,
+      "alternativas": ["2025", "2027", "2028", "2026"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem é o atual ministro da Fazenda do governo Lula 3?",
-      "alternativas": ["Guido Mantega", "Fernando Haddad", "Paulo Guedes", "Henrique Meirelles"],
-      "correta": 1,
+      "alternativas": ["Fernando Haddad", "Guido Mantega", "Paulo Guedes", "Henrique Meirelles"],
+      "correta": 0,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem é a atual ministra do Meio Ambiente do governo Lula 3?",
-      "alternativas": ["Izabella Teixeira", "Marina Silva", "Simone Tebet", "Sônia Guajajara"],
-      "correta": 1,
+      "alternativas": ["Izabella Teixeira", "Simone Tebet", "Marina Silva", "Sônia Guajajara"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
@@ -663,8 +663,8 @@
     },
     {
       "enunciado": "Quem é o presidente do Banco Central indicado por Bolsonaro e mantido por Lula?",
-      "alternativas": ["Roberto Campos Neto", "Alexandre Tombini", "Ilan Goldfajn", "Henrique Meirelles"],
-      "correta": 0,
+      "alternativas": ["Alexandre Tombini", "Ilan Goldfajn", "Henrique Meirelles", "Roberto Campos Neto"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
@@ -675,86 +675,86 @@
     },
     {
       "enunciado": "O que aconteceu em Brasília em 8 de janeiro de 2023?",
-      "alternativas": ["Posse de Lula", "Invasão dos Três Poderes", "Eleição indireta", "Votação do orçamento"],
-      "correta": 1,
+      "alternativas": ["Posse de Lula", "Eleição indireta", "Invasão dos Três Poderes", "Votação do orçamento"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quais prédios foram invadidos em 8 de janeiro de 2023?",
-      "alternativas": ["Apenas o Congresso", "Apenas o STF", "Congresso, STF e Palácio do Planalto", "Apenas o Planalto"],
-      "correta": 2,
+      "alternativas": ["Apenas o Congresso", "Congresso, STF e Palácio do Planalto", "Apenas o STF", "Apenas o Planalto"],
+      "correta": 1,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Onde estava Bolsonaro durante os atos de 8 de janeiro?",
-      "alternativas": ["Em Brasília", "Em São Paulo", "Nos Estados Unidos", "Em Santa Catarina"],
-      "correta": 2,
+      "alternativas": ["Em Brasília", "Em São Paulo", "Em Santa Catarina", "Nos Estados Unidos"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual é o nome do programa de combate à fome retomado por Lula?",
-      "alternativas": ["Fome Zero", "Bolsa Família", "Auxílio Brasil", "Minha Casa Minha Vida"],
-      "correta": 1,
+      "alternativas": ["Fome Zero", "Auxílio Brasil", "Bolsa Família", "Minha Casa Minha Vida"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quanto tempo Lula ficou preso na Operação Lava Jato?",
-      "alternativas": ["1 ano", "580 dias", "2 anos", "3 anos"],
-      "correta": 1,
+      "alternativas": ["1 ano", "2 anos", "3 anos", "580 dias"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem anulou as condenações de Lula na Lava Jato?",
-      "alternativas": ["Sérgio Moro", "STF", "TSE", "Congresso"],
-      "correta": 1,
+      "alternativas": ["STF", "Sérgio Moro", "TSE", "Congresso"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Qual foi a justificativa para anular as condenações de Lula?",
-      "alternativas": ["Inocência comprovada", "Incompetência da Justiça Federal de Curitiba", "Prescrição", "Anistia"],
-      "correta": 1,
+      "alternativas": ["Inocência comprovada", "Prescrição", "Incompetência da Justiça Federal de Curitiba", "Anistia"],
+      "correta": 2,
       "dificuldade": "dificil"
     },
     {
       "enunciado": "Quantos mandatos Lula exerceu como presidente até 2026?",
-      "alternativas": ["2", "3", "4", "1"],
-      "correta": 1,
+      "alternativas": ["2", "4", "1", "3"],
+      "correta": 3,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Quem foi o primeiro ministro da Justiça de Bolsonaro?",
-      "alternativas": ["André Mendonça", "Anderson Torres", "Sérgio Moro", "Flávio Dino"],
-      "correta": 2,
+      "alternativas": ["André Mendonça", "Sérgio Moro", "Anderson Torres", "Flávio Dino"],
+      "correta": 1,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Por que Sérgio Moro deixou o governo Bolsonaro?",
-      "alternativas": ["Para se candidatar", "Desentendimento sobre interferência na PF", "Assumiu cargo no STF", "Problemas de saúde"],
-      "correta": 1,
+      "alternativas": ["Desentendimento sobre interferência na PF", "Para se candidatar", "Assumiu cargo no STF", "Problemas de saúde"],
+      "correta": 0,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Sérgio Moro foi eleito para qual cargo em 2022?",
-      "alternativas": ["Governador do PR", "Deputado Federal", "Senador pelo PR", "Presidente"],
-      "correta": 2,
+      "alternativas": ["Governador do PR", "Deputado Federal", "Presidente", "Senador pelo PR"],
+      "correta": 3,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quem foi eleito prefeito do Rio de Janeiro em 2024?",
-      "alternativas": ["Marcelo Crivella", "Eduardo Paes", "Alexandre Ramagem", "Tarcísio Motta"],
-      "correta": 1,
+      "alternativas": ["Marcelo Crivella", "Alexandre Ramagem", "Eduardo Paes", "Tarcísio Motta"],
+      "correta": 2,
       "dificuldade": "facil"
     },
     {
       "enunciado": "Qual é a quantidade de deputados federais no Brasil?",
-      "alternativas": ["413", "513", "613", "313"],
-      "correta": 1,
+      "alternativas": ["413", "613", "513", "313"],
+      "correta": 2,
       "dificuldade": "medio"
     },
     {
       "enunciado": "Quantos senadores existem no Senado Federal?",
-      "alternativas": ["54", "71", "81", "91"],
-      "correta": 2,
+      "alternativas": ["54", "71", "91", "81"],
+      "correta": 3,
       "dificuldade": "medio"
     }
   ]
