@@ -659,6 +659,8 @@
             adicionarPerguntasEmLote,
             buscarTodasPerguntas, 
             excluirPergunta,
+            atualizarPergunta,
+            buscarPerguntasPorTema,
             buscarRanking,
             TEMAS_DISPONIVEIS,
             aguardarFirebase
@@ -730,55 +732,55 @@
                     'simone biles', 'nadia comaneci', 'jesse owens', 'primeiro jogos', 'primeiras olimpíadas'
                 ],
                 'f1': [
-                    'fórmula 1', 'formula 1', 'f1', 'piloto', 'schumacher', 'senna', 'hamilton',
-                    'verstappen', 'circuito de mônaco', 'grand prix', 'gp de', 'pole position',
-                    'pit stop', 'ferrari', 'mclaren', 'red bull racing'
+                    'fórmula 1', 'formula 1', 'piloto de f1', 'schumacher', 'senna', 'hamilton',
+                    'verstappen', 'circuito de mônaco', 'grand prix', 'pole position',
+                    'pit stop', 'ferrari', 'mclaren', 'red bull racing', 'títulos mundiais'
                 ],
                 'basquete': [
                     'basquete', 'nba', 'cesta de três', 'basketball', 'lebron', 'michael jordan',
                     'kobe bryant', 'stephen curry', 'slam dunk', 'larry o\'brien', 'alley-oop',
-                    'triple-double', 'enterrada'
+                    'triple-double', 'enterrada', 'king james', 'black mamba'
                 ],
                 'volei': [
                     'vôlei', 'volei', 'volleyball', 'sets para vencer', 'líbero', 'libero',
-                    'vôlei de praia', 'saque', 'bloqueio', 'levantador', 'ponteiro'
+                    'vôlei de praia', 'levantador', 'ponteiro'
                 ],
                 'tenis': [
                     'tênis', 'tenis', 'grand slam', 'wimbledon', 'roland garros', 'us open',
                     'australian open', 'nadal', 'federer', 'djokovic', 'serena williams',
-                    'raquete', 'ace'
+                    'raquete', 'tenista'
                 ],
                 'futebol': [
-                    'futebol', 'gol', 'goleiro', 'atacante', 'zagueiro', 'meio-campo',
+                    'time de futebol', 'jogadores de futebol', 'goleiro', 'atacante', 'zagueiro', 'meio-campo',
                     'champions league', 'libertadores', 'premier league', 'la liga',
                     'serie a', 'bundesliga', 'bola de ouro', 'cr7', 'messi', 'pelé', 'pele',
-                    'maradona', 'neymar', 'real madrid', 'barcelona', 'manchester', 'liverpool'
+                    'maradona', 'neymar', 'real madrid', 'barcelona', 'manchester', 'liverpool',
+                    'hat-trick', 'seleção de futebol', 'fenômeno'
                 ],
                 'natacao': [
                     'natação', 'natacao', 'nadar', 'piscina olímpica', 'nado', 'crawl',
-                    'borboleta', 'costas', 'peito', 'medley'
+                    'borboleta', 'costas', 'peito', 'medley', 'nadador'
                 ]
             };
 
             try {
                 mostrarMensagem('Buscando perguntas de esportes...', 'info');
                 
-                // Busca perguntas com tema "esportes"
-                const snapshot = await db.collection('perguntas').where('tema', '==', 'esportes').get();
+                // Busca perguntas com tema "esportes" usando função exportada
+                const perguntasEsportes = await buscarPerguntasPorTema('esportes');
                 
-                if (snapshot.empty) {
+                if (perguntasEsportes.length === 0) {
                     mostrarMensagem('Nenhuma pergunta com tema "esportes" encontrada.', 'info');
                     return;
                 }
 
+                mostrarMensagem(`Analisando ${perguntasEsportes.length} perguntas...`, 'info');
+
                 let migradas = 0;
                 let naoMigradas = 0;
-                const batch = db.batch();
-                const maxBatch = 500; // Limite do Firestore
-                let batchCount = 0;
+                const erros = [];
 
-                for (const doc of snapshot.docs) {
-                    const pergunta = doc.data();
+                for (const pergunta of perguntasEsportes) {
                     const enunciado = pergunta.enunciado.toLowerCase();
                     let novoTema = null;
 
@@ -794,27 +796,25 @@
                     }
 
                     if (novoTema) {
-                        batch.update(doc.ref, { tema: novoTema });
-                        migradas++;
-                        batchCount++;
-                        
-                        // Executa batch se atingir limite
-                        if (batchCount >= maxBatch) {
-                            await batch.commit();
-                            batchCount = 0;
+                        try {
+                            await atualizarPergunta(pergunta.id, { tema: novoTema });
+                            migradas++;
+                            console.log(`✅ Migrada para ${novoTema}:`, pergunta.enunciado.substring(0, 50));
+                        } catch (err) {
+                            erros.push(pergunta.enunciado);
+                            console.error('Erro ao migrar:', err);
                         }
                     } else {
                         naoMigradas++;
-                        console.log('Não migrada:', pergunta.enunciado);
+                        console.log('⏭️ Não migrada:', pergunta.enunciado);
                     }
                 }
 
-                // Commit final se houver pendências
-                if (batchCount > 0) {
-                    await batch.commit();
+                let msg = `Migração concluída! ${migradas} migradas, ${naoMigradas} permaneceram em "esportes".`;
+                if (erros.length > 0) {
+                    msg += ` ${erros.length} erros.`;
                 }
-
-                mostrarMensagem(`Migração concluída! ${migradas} migradas, ${naoMigradas} permaneceram em "esportes".`, 'sucesso');
+                mostrarMensagem(msg, 'sucesso');
                 
                 // Recarrega perguntas
                 await carregarPerguntas();

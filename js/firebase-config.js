@@ -539,6 +539,57 @@ export async function excluirPergunta(perguntaId) {
     }
 }
 
+/**
+ * Atualiza uma pergunta existente
+ * @param {string} perguntaId - ID da pergunta
+ * @param {Object} dados - Dados a atualizar
+ */
+export async function atualizarPergunta(perguntaId, dados) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const { doc, updateDoc, db } = window._firestore;
+        await updateDoc(doc(db, "perguntas", perguntaId), dados);
+        console.log("✅ Pergunta atualizada:", perguntaId);
+        return true;
+    } catch (error) {
+        console.error("Erro ao atualizar pergunta:", error);
+        throw error;
+    }
+}
+
+/**
+ * Busca perguntas por tema específico
+ * @param {string} tema - ID do tema
+ * @returns {Promise<Array>} - Array de perguntas com id
+ */
+export async function buscarPerguntasPorTema(tema) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        return [];
+    }
+    
+    try {
+        const { collection, query, where, getDocs, db } = window._firestore;
+        const perguntasRef = collection(db, "perguntas");
+        const q = query(perguntasRef, where("tema", "==", tema));
+        const snapshot = await getDocs(q);
+        
+        return snapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data()
+        }));
+    } catch (error) {
+        console.error("Erro ao buscar perguntas por tema:", error);
+        return [];
+    }
+}
+
 // ========================================
 // FUNÇÕES DE RESULTADO/RANKING
 // ========================================
