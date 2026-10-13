@@ -590,9 +590,7 @@
                             📤 Importar JSON
                             <input type="file" id="input-importar" accept=".json" multiple style="display: none;">
                         </label>
-                        <button class="btn btn-outline btn-small" id="btn-migrar" style="background: #ff9800; color: white;">
-                            🔄 Migrar Subtemas
-                        </button>
+
                     </div>
                 </div>
             </div>
@@ -709,120 +707,6 @@
             btnAtualizar.addEventListener('click', carregarPerguntas);
             btnExportar.addEventListener('click', exportarPerguntas);
             inputImportar.addEventListener('change', importarPerguntas);
-            document.getElementById('btn-migrar').addEventListener('click', migrarSubtemas);
-        }
-
-        // Migra perguntas de esportes para subtemas específicos
-        async function migrarSubtemas() {
-            if (!confirm('Isso irá analisar perguntas de "esportes" e migrar para subtemas específicos. Continuar?')) {
-                return;
-            }
-
-            // Regras de migração: palavras-chave -> subtema
-            const regras = {
-                'copa-do-mundo': [
-                    'copa do mundo', 'copa de 2014', 'copa de 2018', 'copa de 2022', 'copa de 1930',
-                    'copa de 1950', 'copa de 1958', 'copa de 1962', 'copa de 1970', 'copa de 1986',
-                    'copa de 1994', 'copa de 1998', 'copa de 2002', 'copa de 2006', 'copa de 2010',
-                    'maracanazo', 'gol do século', 'copas do mundo', 'mundial de futebol'
-                ],
-                'olimpiadas': [
-                    'olimpíada', 'olimpiada', 'olímpic', 'olimpic', 'jogos olímpicos', 'jogos olimpicos',
-                    'medalha de ouro', 'medalhas olímpicas', 'michael phelps', 'usain bolt',
-                    'simone biles', 'nadia comaneci', 'jesse owens', 'primeiro jogos', 'primeiras olimpíadas'
-                ],
-                'f1': [
-                    'fórmula 1', 'formula 1', 'piloto de f1', 'schumacher', 'senna', 'hamilton',
-                    'verstappen', 'circuito de mônaco', 'grand prix', 'pole position',
-                    'pit stop', 'ferrari', 'mclaren', 'red bull racing', 'títulos mundiais'
-                ],
-                'basquete': [
-                    'basquete', 'nba', 'cesta de três', 'basketball', 'lebron', 'michael jordan',
-                    'kobe bryant', 'stephen curry', 'slam dunk', 'larry o\'brien', 'alley-oop',
-                    'triple-double', 'enterrada', 'king james', 'black mamba'
-                ],
-                'volei': [
-                    'vôlei', 'volei', 'volleyball', 'sets para vencer', 'líbero', 'libero',
-                    'vôlei de praia', 'levantador', 'ponteiro'
-                ],
-                'tenis': [
-                    'tênis', 'tenis', 'grand slam', 'wimbledon', 'roland garros', 'us open',
-                    'australian open', 'nadal', 'federer', 'djokovic', 'serena williams',
-                    'tenista'
-                ],
-                'futebol': [
-                    'time de futebol', 'jogadores de futebol', 'goleiro', 'atacante', 'zagueiro', 'meio-campo',
-                    'champions league', 'libertadores', 'premier league', 'la liga',
-                    'serie a', 'bundesliga', 'bola de ouro', 'cr7', 'messi', 'pelé', 'pele',
-                    'maradona', 'neymar', 'real madrid', 'barcelona', 'manchester', 'liverpool',
-                    'hat-trick', 'seleção de futebol', 'fenômeno'
-                ],
-                'natacao': [
-                    'natação', 'natacao', 'nadar', 'piscina olímpica', 'nado', 'crawl',
-                    'borboleta', 'costas', 'peito', 'medley', 'nadador'
-                ]
-            };
-
-            try {
-                mostrarMensagem('Buscando perguntas de esportes...', 'info');
-                
-                // Busca perguntas com tema "esportes" usando função exportada
-                const perguntasEsportes = await buscarPerguntasPorTema('esportes');
-                
-                if (perguntasEsportes.length === 0) {
-                    mostrarMensagem('Nenhuma pergunta com tema "esportes" encontrada.', 'info');
-                    return;
-                }
-
-                mostrarMensagem(`Analisando ${perguntasEsportes.length} perguntas...`, 'info');
-
-                let migradas = 0;
-                let naoMigradas = 0;
-                const erros = [];
-
-                for (const pergunta of perguntasEsportes) {
-                    const enunciado = pergunta.enunciado.toLowerCase();
-                    let novoTema = null;
-
-                    // Verifica cada regra
-                    for (const [subtema, palavras] of Object.entries(regras)) {
-                        for (const palavra of palavras) {
-                            if (enunciado.includes(palavra.toLowerCase())) {
-                                novoTema = subtema;
-                                break;
-                            }
-                        }
-                        if (novoTema) break;
-                    }
-
-                    if (novoTema) {
-                        try {
-                            await atualizarPergunta(pergunta.id, { tema: novoTema });
-                            migradas++;
-                            console.log(`✅ Migrada para ${novoTema}:`, pergunta.enunciado.substring(0, 50));
-                        } catch (err) {
-                            erros.push(pergunta.enunciado);
-                            console.error('Erro ao migrar:', err);
-                        }
-                    } else {
-                        naoMigradas++;
-                        console.log('⏭️ Não migrada:', pergunta.enunciado);
-                    }
-                }
-
-                let msg = `Migração concluída! ${migradas} migradas, ${naoMigradas} permaneceram em "esportes".`;
-                if (erros.length > 0) {
-                    msg += ` ${erros.length} erros.`;
-                }
-                mostrarMensagem(msg, 'sucesso');
-                
-                // Recarrega perguntas
-                await carregarPerguntas();
-                
-            } catch (error) {
-                console.error('Erro na migração:', error);
-                mostrarMensagem('Erro ao migrar: ' + error.message, 'erro');
-            }
         }
 
         // Carrega perguntas do Firebase
