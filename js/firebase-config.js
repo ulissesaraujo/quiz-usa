@@ -15,7 +15,16 @@ export const TEMAS_DISPONIVEIS = [
     { id: 'comidas-bebidas', nome: 'Comidas e Bebidas', icone: '🍔' },
     { id: 'criancas', nome: 'Crianças', icone: '🧒' },
     { id: 'curiosidades', nome: 'Curiosidades', icone: '💡' },
-    { id: 'esportes', nome: 'Esportes', icone: '⚽' },
+    { 
+        id: 'esportes', 
+        nome: 'Esportes', 
+        icone: '⚽',
+        subtemas: [
+            { id: 'futebol', nome: 'Futebol', icone: '⚽' },
+            { id: 'tenis', nome: 'Tênis', icone: '🎾' },
+            { id: 'natacao', nome: 'Natação', icone: '🏊' }
+        ]
+    },
     { id: 'geografia', nome: 'Geografia', icone: '🗺️' },
     { id: 'historia', nome: 'História', icone: '📜' },
     { id: 'literatura', nome: 'Literatura', icone: '📚' },

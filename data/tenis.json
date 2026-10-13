@@ -1,0 +1,20 @@
+{
+  "tema": "tenis",
+  "perguntas": [
+    {
+      "enunciado": "Qual tenista brasileiro foi número 1 do mundo em duplas?",
+      "alternativas": ["Gustavo Kuerten", "Marcelo Melo", "Bruno Soares", "Fernando Meligeni"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos sets são necessários para vencer uma partida de Grand Slam masculino?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o Grand Slam jogado em quadra de saibro?",
+      "alternativas": ["Wimbledon", "US Open", "Australian Open", "Roland Garros"],
+      "correta": 3
+    }
+  ]
+}
