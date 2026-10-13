@@ -252,6 +252,11 @@
             color: white;
         }
 
+        .btn-warning {
+            background: #ff9800;
+            color: white;
+        }
+
         .btn-outline {
             background: transparent;
             border: 2px solid var(--gray-300);
@@ -667,6 +672,7 @@
         // Estado
         let perguntas = [];
         let filtroAtual = '';
+        let editandoId = null; // ID da pergunta sendo editada
 
         // Elementos
         const form = document.getElementById('form-pergunta');
@@ -767,6 +773,9 @@
                                 👁️ Ver alternativas
                             </button>
                             <div class="pergunta-acoes">
+                                <button class="btn btn-small btn-outline" onclick="editarPerguntaHandler('${p.id}')">
+                                    ✏️ Editar
+                                </button>
                                 <button class="btn btn-small btn-danger" onclick="excluirPerguntaHandler('${p.id}')">
                                     🗑️ Excluir
                                 </button>
@@ -808,15 +817,27 @@
             btnSalvar.textContent = 'Salvando...';
 
             try {
-                await adicionarPergunta({
-                    tema,
-                    enunciado,
-                    alternativas,
-                    correta
-                });
-
-                mostrarMensagem('Pergunta adicionada com sucesso!', 'sucesso');
-                form.reset();
+                if (editandoId) {
+                    // Modo edição - atualiza pergunta existente
+                    await atualizarPergunta(editandoId, {
+                        tema,
+                        enunciado,
+                        alternativas,
+                        correta
+                    });
+                    mostrarMensagem('Pergunta atualizada com sucesso!', 'sucesso');
+                    cancelarEdicao();
+                } else {
+                    // Modo criação - adiciona nova pergunta
+                    await adicionarPergunta({
+                        tema,
+                        enunciado,
+                        alternativas,
+                        correta
+                    });
+                    mostrarMensagem('Pergunta adicionada com sucesso!', 'sucesso');
+                    form.reset();
+                }
                 await carregarPerguntas();
             } catch (error) {
                 console.error('Erro ao salvar:', error);
@@ -840,6 +861,73 @@
                 mostrarMensagem('Erro ao excluir pergunta.', 'erro');
             }
         };
+
+        // Edita pergunta - preenche formulário com dados
+        window.editarPerguntaHandler = function(id) {
+            const pergunta = perguntas.find(p => p.id === id);
+            if (!pergunta) return;
+
+            editandoId = id;
+
+            // Preenche o formulário
+            document.getElementById('tema').value = pergunta.tema;
+            document.getElementById('enunciado').value = pergunta.enunciado;
+
+            // Preenche alternativas
+            const alternativasInputs = document.querySelectorAll('#alternativas-list input[type="text"]');
+            pergunta.alternativas.forEach((alt, index) => {
+                if (alternativasInputs[index]) {
+                    alternativasInputs[index].value = alt;
+                }
+            });
+
+            // Marca a alternativa correta
+            const corretaRadio = document.querySelector(`input[name="correta"][value="${pergunta.correta}"]`);
+            if (corretaRadio) corretaRadio.checked = true;
+
+            // Muda visual do botão
+            const btnSalvar = document.getElementById('btn-salvar');
+            btnSalvar.textContent = '💾 Atualizar Pergunta';
+            btnSalvar.classList.add('btn-warning');
+
+            // Mostra botão cancelar
+            mostrarBotaoCancelar();
+
+            // Scroll para o formulário
+            form.scrollIntoView({ behavior: 'smooth' });
+            
+            mostrarMensagem('Editando pergunta. Faça as alterações e clique em Atualizar.', 'info');
+        };
+
+        // Cancela edição
+        function cancelarEdicao() {
+            editandoId = null;
+            form.reset();
+            
+            const btnSalvar = document.getElementById('btn-salvar');
+            btnSalvar.textContent = '💾 Salvar Pergunta';
+            btnSalvar.classList.remove('btn-warning');
+
+            // Remove botão cancelar
+            const btnCancelar = document.getElementById('btn-cancelar-edicao');
+            if (btnCancelar) btnCancelar.remove();
+        }
+
+        // Mostra botão de cancelar edição
+        function mostrarBotaoCancelar() {
+            if (document.getElementById('btn-cancelar-edicao')) return;
+
+            const btnSalvar = document.getElementById('btn-salvar');
+            const btnCancelar = document.createElement('button');
+            btnCancelar.type = 'button';
+            btnCancelar.id = 'btn-cancelar-edicao';
+            btnCancelar.className = 'btn btn-outline';
+            btnCancelar.textContent = '❌ Cancelar Edição';
+            btnCancelar.onclick = cancelarEdicao;
+            btnCancelar.style.marginLeft = '10px';
+            
+            btnSalvar.parentNode.insertBefore(btnCancelar, btnSalvar.nextSibling);
+        }
 
         // Exporta perguntas para JSON
         function exportarPerguntas() {
