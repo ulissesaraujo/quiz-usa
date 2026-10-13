@@ -41,7 +41,14 @@ export const TEMAS_DISPONIVEIS = [
         ]
     },
     { id: 'geografia', nome: 'Geografia', icone: '🗺️' },
-    { id: 'historia', nome: 'História', icone: '📜' },
+    { 
+        id: 'historia', 
+        nome: 'História', 
+        icone: '📜',
+        subtemas: [
+            { id: 'politica-brasileira', nome: 'Política Brasileira', icone: '🇧🇷' }
+        ]
+    },
     { id: 'literatura', nome: 'Literatura', icone: '📚' },
     { id: 'mitos-verdades', nome: 'Mitos ou Verdades', icone: '🤔' },
     { id: 'games', nome: 'Mundo dos Games', icone: '🎮' },

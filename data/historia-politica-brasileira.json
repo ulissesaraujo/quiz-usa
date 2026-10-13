@@ -1,0 +1,425 @@
+{
+  "tema": "politica-brasileira",
+  "perguntas": [
+    {
+      "enunciado": "Quem foi o primeiro presidente do Brasil?",
+      "alternativas": ["Getúlio Vargas", "Deodoro da Fonseca", "Floriano Peixoto", "Prudente de Morais"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano foi proclamada a República no Brasil?",
+      "alternativas": ["1822", "1889", "1891", "1888"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem proclamou a República do Brasil?",
+      "alternativas": ["Dom Pedro II", "Marechal Deodoro da Fonseca", "Getúlio Vargas", "Princesa Isabel"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual presidente brasileiro ficou conhecido como 'pai dos pobres'?",
+      "alternativas": ["Juscelino Kubitschek", "Getúlio Vargas", "João Goulart", "Lula"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano Getúlio Vargas cometeu suicídio?",
+      "alternativas": ["1950", "1954", "1960", "1945"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi o período da ditadura militar no Brasil?",
+      "alternativas": ["1954-1974", "1964-1985", "1970-1990", "1960-1980"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual presidente construiu Brasília?",
+      "alternativas": ["Getúlio Vargas", "Jânio Quadros", "Juscelino Kubitschek", "João Goulart"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano Brasília foi inaugurada como capital?",
+      "alternativas": ["1958", "1959", "1960", "1961"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi o slogan do governo JK?",
+      "alternativas": ["Brasil Grande", "50 anos em 5", "Ordem e Progresso", "Brasil Novo"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual presidente renunciou com a frase 'forças terríveis'?",
+      "alternativas": ["Getúlio Vargas", "Jânio Quadros", "Fernando Collor", "João Goulart"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi o primeiro presidente civil após a ditadura militar?",
+      "alternativas": ["Fernando Collor", "José Sarney", "Tancredo Neves", "Itamar Franco"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Tancredo Neves chegou a tomar posse como presidente?",
+      "alternativas": ["Sim", "Não", "Por alguns dias", "Apenas simbolicamente"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual presidente sofreu impeachment em 1992?",
+      "alternativas": ["José Sarney", "Fernando Collor", "Itamar Franco", "Fernando Henrique"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual movimento popular pediu o impeachment de Collor?",
+      "alternativas": ["Diretas Já", "Caras-pintadas", "Fora Collor", "Movimento estudantil"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem assumiu a presidência após o impeachment de Collor?",
+      "alternativas": ["Fernando Henrique", "Itamar Franco", "José Sarney", "Lula"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual plano econômico acabou com a hiperinflação no Brasil?",
+      "alternativas": ["Plano Cruzado", "Plano Collor", "Plano Real", "Plano Bresser"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano foi implementado o Plano Real?",
+      "alternativas": ["1992", "1993", "1994", "1995"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem foi o ministro da Fazenda responsável pelo Plano Real?",
+      "alternativas": ["Itamar Franco", "Fernando Henrique Cardoso", "Pedro Malan", "Delfim Netto"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quantos mandatos FHC exerceu como presidente?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual foi o primeiro presidente do PT eleito no Brasil?",
+      "alternativas": ["Dilma Rousseff", "Lula", "Fernando Haddad", "José Dirceu"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano Lula foi eleito presidente pela primeira vez?",
+      "alternativas": ["1998", "2000", "2002", "2004"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual foi o programa social mais famoso do governo Lula?",
+      "alternativas": ["Fome Zero", "Bolsa Família", "Minha Casa Minha Vida", "ProUni"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem foi a primeira mulher presidente do Brasil?",
+      "alternativas": ["Marina Silva", "Dilma Rousseff", "Marta Suplicy", "Erundina"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano Dilma Rousseff sofreu impeachment?",
+      "alternativas": ["2014", "2015", "2016", "2017"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem assumiu a presidência após o impeachment de Dilma?",
+      "alternativas": ["Lula", "Michel Temer", "Aécio Neves", "Eduardo Cunha"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual foi a principal acusação no impeachment de Dilma?",
+      "alternativas": ["Corrupção", "Pedaladas fiscais", "Caixa 2", "Lavagem de dinheiro"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual operação investigou esquemas de corrupção na Petrobras?",
+      "alternativas": ["Operação Mãos Limpas", "Operação Lava Jato", "Operação Banestado", "Operação Satiagraha"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem foi o juiz responsável pela Lava Jato em primeira instância?",
+      "alternativas": ["Gilmar Mendes", "Sérgio Moro", "Luís Roberto Barroso", "Celso de Mello"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano Jair Bolsonaro foi eleito presidente?",
+      "alternativas": ["2016", "2017", "2018", "2019"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por qual partido Bolsonaro foi eleito presidente?",
+      "alternativas": ["PP", "PSC", "PSL", "PL"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual movimento popular ficou conhecido como 'Diretas Já'?",
+      "alternativas": ["Pedido de eleições diretas para presidente", "Pedido de impeachment", "Pedido de anistia", "Pedido de nova constituição"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano ocorreu o movimento Diretas Já?",
+      "alternativas": ["1982", "1983", "1984", "1985"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi o último presidente do regime militar?",
+      "alternativas": ["Ernesto Geisel", "João Figueiredo", "Emílio Médici", "Costa e Silva"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual presidente do regime militar ficou conhecido como 'anos de chumbo'?",
+      "alternativas": ["Castelo Branco", "Costa e Silva", "Emílio Médici", "Ernesto Geisel"],
+      "correta": 2,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "O que foi o AI-5?",
+      "alternativas": ["Ato que decretou anistia", "Ato que permitiu eleições", "Ato Institucional que endureceu a ditadura", "Ato que criou partidos"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Em que ano foi promulgado o AI-5?",
+      "alternativas": ["1964", "1966", "1968", "1970"],
+      "correta": 2,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Qual a atual Constituição do Brasil foi promulgada em que ano?",
+      "alternativas": ["1985", "1986", "1988", "1990"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Como é conhecida a Constituição de 1988?",
+      "alternativas": ["Constituição Ditatorial", "Constituição Popular", "Constituição Cidadã", "Constituição Democrática"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem foi o presidente da Assembleia Constituinte de 1988?",
+      "alternativas": ["José Sarney", "Ulysses Guimarães", "Tancredo Neves", "Fernando Henrique"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "O que foi a Coluna Prestes?",
+      "alternativas": ["Partido político", "Marcha militar pelo interior do Brasil", "Jornal oposicionista", "Sindicato de trabalhadores"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem liderou a Coluna Prestes?",
+      "alternativas": ["Getúlio Vargas", "Luís Carlos Prestes", "Olga Benário", "Carlos Marighella"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "O que foi o Estado Novo?",
+      "alternativas": ["Período democrático", "Ditadura de Getúlio Vargas (1937-1945)", "República Velha", "Era Vargas democrática"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual foi a política do 'café com leite'?",
+      "alternativas": ["Política agrícola", "Alternância entre presidentes de SP e MG", "Acordo comercial", "Programa social"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "A República Velha durou de que período?",
+      "alternativas": ["1889-1930", "1889-1945", "1891-1937", "1900-1930"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual evento encerrou a República Velha?",
+      "alternativas": ["Proclamação da República", "Revolução de 1930", "Estado Novo", "Diretas Já"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem liderou a Revolução de 1930?",
+      "alternativas": ["Deodoro da Fonseca", "Getúlio Vargas", "Juscelino Kubitschek", "Washington Luís"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual revolta militar ficou conhecida como Intentona Comunista?",
+      "alternativas": ["Revolta da Armada", "Revolta de 1935", "Revolta dos Tenentes", "Revolta da Chibata"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Quem foi Carlos Lacerda?",
+      "alternativas": ["Presidente", "Jornalista e político opositor de Vargas", "General da ditadura", "Líder sindical"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Qual era o partido de Getúlio Vargas quando foi eleito em 1950?",
+      "alternativas": ["UDN", "PTB", "PSD", "PCB"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "O que foi o 'Mensalão'?",
+      "alternativas": ["Programa social", "Escândalo de compra de votos no Congresso", "Plano econômico", "Reforma política"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Em que ano estourou o escândalo do Mensalão?",
+      "alternativas": ["2003", "2005", "2007", "2010"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quantos partidos políticos existem atualmente no Brasil (aproximadamente)?",
+      "alternativas": ["10", "20", "30", "Mais de 30"],
+      "correta": 3,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a idade mínima para ser presidente do Brasil?",
+      "alternativas": ["30 anos", "35 anos", "40 anos", "45 anos"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a duração do mandato de presidente no Brasil?",
+      "alternativas": ["3 anos", "4 anos", "5 anos", "6 anos"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quantas vezes consecutivas uma pessoa pode ser presidente?",
+      "alternativas": ["1 vez", "2 vezes", "3 vezes", "Sem limite"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual instituição é responsável por julgar o presidente em crimes comuns?",
+      "alternativas": ["Senado", "Câmara", "STF", "TSE"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual instituição julga o presidente em crimes de responsabilidade?",
+      "alternativas": ["STF", "Câmara", "Senado", "TSE"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quantos senadores cada estado brasileiro tem?",
+      "alternativas": ["2", "3", "4", "Varia por estado"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é a duração do mandato de senador?",
+      "alternativas": ["4 anos", "6 anos", "8 anos", "Vitalício"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a duração do mandato de deputado federal?",
+      "alternativas": ["2 anos", "4 anos", "6 anos", "8 anos"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem foi o vice-presidente de Lula no primeiro mandato?",
+      "alternativas": ["Michel Temer", "José Alencar", "Marco Maciel", "Geraldo Alckmin"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual presidente brasileiro foi reeleito em primeiro turno?",
+      "alternativas": ["Lula", "FHC", "Dilma", "Nenhum"],
+      "correta": 3,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Qual foi a primeira capital do Brasil?",
+      "alternativas": ["Rio de Janeiro", "Salvador", "São Paulo", "Recife"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em que ano o Rio de Janeiro deixou de ser capital do Brasil?",
+      "alternativas": ["1958", "1959", "1960", "1961"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual presidente governou o Brasil durante a Segunda Guerra Mundial?",
+      "alternativas": ["Eurico Gaspar Dutra", "Getúlio Vargas", "Juscelino Kubitschek", "Washington Luís"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "O Brasil enviou tropas para qual guerra?",
+      "alternativas": ["Primeira Guerra Mundial", "Segunda Guerra Mundial", "Guerra da Coreia", "Todas anteriores"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "O que foi a FEB?",
+      "alternativas": ["Partido político", "Força Expedicionária Brasileira na 2ª Guerra", "Federação econômica", "Força de segurança"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual presidente criou a Petrobras?",
+      "alternativas": ["Juscelino Kubitschek", "Getúlio Vargas", "Eurico Dutra", "João Goulart"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Em que ano a Petrobras foi criada?",
+      "alternativas": ["1950", "1953", "1956", "1960"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Qual era o lema da campanha 'O petróleo é nosso'?",
+      "alternativas": ["Privatização do petróleo", "Monopólio estatal do petróleo", "Exportação de petróleo", "Importação de petróleo"],
+      "correta": 1,
+      "dificuldade": "medio"
+    }
+  ]
+}
