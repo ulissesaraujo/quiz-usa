@@ -747,7 +747,7 @@ async function carregarRankingPartida(temas) {
         }
         
         tr.innerHTML = `
-            <td>${index + 1}º</td>
+            <td>${index + 1}</td>
             <td>${temasDisplay}</td>
             <td>${item.pontuacaoTotal}</td>
             <td>${item.acertos}/${item.totalPerguntas || 10}</td>
