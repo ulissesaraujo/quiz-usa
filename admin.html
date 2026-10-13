@@ -91,6 +91,20 @@
             box-shadow: var(--shadow);
         }
 
+        .stat-card-clicavel {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .stat-card-clicavel:hover {
+            background: #fff3f3;
+            border: 2px solid var(--danger);
+        }
+
+        .stat-card-clicavel:hover .stat-valor {
+            color: var(--danger);
+        }
+
         .stat-valor {
             font-size: 2rem;
             font-weight: 700;
@@ -500,7 +514,7 @@
                 <div class="stat-valor" id="total-temas">-</div>
                 <div class="stat-label">Temas</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card stat-card-clicavel" id="card-partidas" title="Clique para zerar partidas">
                 <div class="stat-valor" id="total-partidas">-</div>
                 <div class="stat-label">Partidas Jogadas</div>
             </div>
@@ -665,6 +679,7 @@
             atualizarPergunta,
             buscarPerguntasPorTema,
             buscarRanking,
+            excluirTodasPartidas,
             TEMAS_DISPONIVEIS,
             aguardarFirebase
         } from './js/firebase-config.js';
@@ -713,6 +728,38 @@
             btnAtualizar.addEventListener('click', carregarPerguntas);
             btnExportar.addEventListener('click', exportarPerguntas);
             inputImportar.addEventListener('change', importarPerguntas);
+            
+            // Click no card de partidas para zerar
+            document.getElementById('card-partidas').addEventListener('click', zerarPartidas);
+        }
+
+        // Zera todas as partidas
+        async function zerarPartidas() {
+            const totalAtual = totalPartidasEl.textContent;
+            
+            if (totalAtual === '0' || totalAtual === '-') {
+                mostrarMensagem('Não há partidas para excluir.', 'info');
+                return;
+            }
+            
+            if (!confirm(`⚠️ ATENÇÃO!\n\nIsso irá excluir TODAS as ${totalAtual} partidas jogadas.\n\nEsta ação não pode ser desfeita!\n\nTem certeza?`)) {
+                return;
+            }
+            
+            // Segunda confirmação
+            if (!confirm('Última chance! Realmente deseja ZERAR todas as partidas?')) {
+                return;
+            }
+            
+            try {
+                mostrarMensagem('Excluindo partidas...', 'info');
+                const excluidas = await excluirTodasPartidas();
+                totalPartidasEl.textContent = '0';
+                mostrarMensagem(`✅ ${excluidas} partidas excluídas com sucesso!`, 'sucesso');
+            } catch (error) {
+                console.error('Erro ao zerar partidas:', error);
+                mostrarMensagem('Erro ao excluir partidas: ' + error.message, 'erro');
+            }
         }
 
         // Carrega perguntas do Firebase

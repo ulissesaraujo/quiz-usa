@@ -771,6 +771,42 @@ export function isFirebaseDisponivel() {
 }
 
 /**
+ * Exclui todas as partidas (resultados) do Firebase
+ * @returns {Promise<number>} - Número de partidas excluídas
+ */
+export async function excluirTodasPartidas() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    const { collection, getDocs, deleteDoc, doc } = window._firestore;
+    const db = window._firestoreDb;
+    
+    try {
+        const resultadosRef = collection(db, 'resultados');
+        const snapshot = await getDocs(resultadosRef);
+        
+        let count = 0;
+        const deletePromises = [];
+        
+        snapshot.forEach((documento) => {
+            deletePromises.push(deleteDoc(doc(db, 'resultados', documento.id)));
+            count++;
+        });
+        
+        await Promise.all(deletePromises);
+        
+        console.log(`✅ ${count} partidas excluídas`);
+        return count;
+    } catch (error) {
+        console.error("Erro ao excluir partidas:", error);
+        throw error;
+    }
+}
+
+/**
  * Aguarda o Firebase inicializar
  */
 export async function aguardarFirebase() {
