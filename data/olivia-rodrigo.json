@@ -1,0 +1,155 @@
+{
+  "tema": "musica-olivia-rodrigo",
+  "perguntas": [
+    {
+      "enunciado": "Qual foi o primeiro single de Olivia Rodrigo que alcançou o #1 na Billboard Hot 100?",
+      "alternativas": ["Good 4 U", "Drivers License", "Deja Vu", "Brutal"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em qual série da Disney Channel Olivia Rodrigo ficou famosa?",
+      "alternativas": ["Descendants", "High School Musical: The Musical: The Series", "Bizaardvark", "Andi Mack"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome do álbum de estreia de Olivia Rodrigo?",
+      "alternativas": ["Guts", "Sour", "Brutal", "Vampire"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que ano Olivia Rodrigo nasceu?",
+      "alternativas": ["2001", "2002", "2003", "2004"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantos Grammys Olivia Rodrigo ganhou em 2022?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Olivia Rodrigo menciona 'red lights, stop signs'?",
+      "alternativas": ["Deja Vu", "Drivers License", "Traitor", "Brutal"],
+      "correta": 1
+    },
+    {
+      "enunciado": "De qual estado americano Olivia Rodrigo é natural?",
+      "alternativas": ["Texas", "Nova York", "Califórnia", "Flórida"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o segundo álbum de estúdio de Olivia Rodrigo?",
+      "alternativas": ["Sour", "Guts", "Vampire", "Brutal"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música do álbum GUTS foi o primeiro single lançado?",
+      "alternativas": ["Bad Idea Right?", "Vampire", "Get Him Back!", "Ballad of a Homeschooled Girl"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual personagem Olivia Rodrigo interpretou em High School Musical: The Musical: The Series?",
+      "alternativas": ["Gabriella", "Nini", "Gina", "Kourtney"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Olivia Rodrigo começa com 'I want it to be messy'?",
+      "alternativas": ["Brutal", "All-American Bitch", "Ballad of a Homeschooled Girl", "Love Is Embarrassing"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Olivia Rodrigo tem ascendência de qual país asiático?",
+      "alternativas": ["Japão", "China", "Filipinas", "Coreia"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi a primeira turnê mundial de Olivia Rodrigo?",
+      "alternativas": ["Guts World Tour", "Sour Tour", "Drivers License Tour", "Vampire Tour"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em 'Deja Vu', qual sorvete é mencionado na letra?",
+      "alternativas": ["Chocolate", "Baunilha", "Morango", "Pistache"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Olivia Rodrigo foi inspirada em Paramore?",
+      "alternativas": ["Brutal", "Good 4 U", "Jealousy Jealousy", "Favorite Crime"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas faixas tem o álbum SOUR?",
+      "alternativas": ["9", "10", "11", "12"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música do álbum SOUR fala sobre inveja das redes sociais?",
+      "alternativas": ["Brutal", "Jealousy Jealousy", "Traitor", "Happier"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que mês de 2021 'Drivers License' foi lançada?",
+      "alternativas": ["Janeiro", "Fevereiro", "Março", "Abril"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música de Olivia Rodrigo menciona Billy Joel?",
+      "alternativas": ["Drivers License", "Deja Vu", "1 Step Forward 3 Steps Back", "Enough for You"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome completo de Olivia Rodrigo?",
+      "alternativas": ["Olivia Marie Rodrigo", "Olivia Isabel Rodrigo", "Olivia Grace Rodrigo", "Olivia Rose Rodrigo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em qual série Olivia Rodrigo atuou antes de High School Musical?",
+      "alternativas": ["Girl Meets World", "Bizaardvark", "Liv and Maddie", "KC Undercover"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de GUTS fala sobre querer vingança de um ex?",
+      "alternativas": ["Vampire", "Get Him Back!", "Lacy", "Logical"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual artista é mencionado como inspiração na faixa '1 Step Forward, 3 Steps Back'?",
+      "alternativas": ["Lorde", "Taylor Swift", "Billie Eilish", "Lana Del Rey"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que cidade Olivia Rodrigo nasceu?",
+      "alternativas": ["Los Angeles", "San Francisco", "Temecula", "San Diego"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Olivia Rodrigo foi trilha sonora do filme 'The Hunger Games: Ballad of Songbirds and Snakes'?",
+      "alternativas": ["Vampire", "Can't Catch Me Now", "Bad Idea Right?", "Get Him Back!"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual instrumento Olivia Rodrigo aprendeu a tocar quando criança?",
+      "alternativas": ["Guitarra", "Bateria", "Piano", "Violino"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de SOUR é uma balada sobre aceitar que um ex está mais feliz?",
+      "alternativas": ["Traitor", "Happier", "Favorite Crime", "Hope Ur Ok"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos anos Olivia Rodrigo tinha quando lançou 'Drivers License'?",
+      "alternativas": ["16", "17", "18", "19"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cor predomina na estética do álbum SOUR?",
+      "alternativas": ["Rosa", "Azul", "Roxo", "Verde"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é a última faixa do álbum SOUR?",
+      "alternativas": ["Favorite Crime", "Hope Ur Ok", "Jealousy Jealousy", "Deja Vu"],
+      "correta": 1
+    }
+  ]
+}

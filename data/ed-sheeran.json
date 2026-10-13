@@ -1,0 +1,155 @@
+{
+  "tema": "musica-ed-sheeran",
+  "perguntas": [
+    {
+      "enunciado": "Qual é o nome completo de Ed Sheeran?",
+      "alternativas": ["Edward Christopher Sheeran", "Edward James Sheeran", "Edward Michael Sheeran", "Edward William Sheeran"],
+      "correta": 0
+    },
+    {
+      "enunciado": "De qual país Ed Sheeran é natural?",
+      "alternativas": ["Irlanda", "Escócia", "Inglaterra", "País de Gales"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi o álbum de estreia de Ed Sheeran?",
+      "alternativas": ["×", "+", "÷", "="],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran foi escrita para o filme 'O Hobbit'?",
+      "alternativas": ["Photograph", "I See Fire", "Thinking Out Loud", "Castle on the Hill"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran foi a mais tocada no Spotify em 2017?",
+      "alternativas": ["Perfect", "Shape of You", "Castle on the Hill", "Galway Girl"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que cidade Ed Sheeran nasceu?",
+      "alternativas": ["Londres", "Halifax", "Manchester", "Liverpool"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual instrumento Ed Sheeran é mais conhecido por tocar?",
+      "alternativas": ["Piano", "Violão", "Bateria", "Baixo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran foi trilha sonora de 'A Culpa é das Estrelas'?",
+      "alternativas": ["Photograph", "Thinking Out Loud", "All of the Stars", "Tenerife Sea"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome da esposa de Ed Sheeran?",
+      "alternativas": ["Cherry Seaborn", "Emily Sheeran", "Sophie Turner", "Lisa Crawford"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Em que ano Ed Sheeran nasceu?",
+      "alternativas": ["1989", "1990", "1991", "1992"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual álbum de Ed Sheeran é representado pelo símbolo '÷'?",
+      "alternativas": ["Plus", "Multiply", "Divide", "Equals"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran menciona 'We found love in a local rave'?",
+      "alternativas": ["Galway Girl", "Shape of You", "Castle on the Hill", "Nancy Mulligan"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Ed Sheeran fez uma participação especial em qual série de TV famosa?",
+      "alternativas": ["Breaking Bad", "The Office", "Game of Thrones", "Friends"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran fala sobre sua cidade natal?",
+      "alternativas": ["Photograph", "Castle on the Hill", "The A Team", "Lego House"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi a primeira música de Ed Sheeran a chegar ao #1 no Reino Unido?",
+      "alternativas": ["The A Team", "Lego House", "Sing", "Thinking Out Loud"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista produziu a música 'Sing' de Ed Sheeran?",
+      "alternativas": ["Max Martin", "Pharrell Williams", "Dr. Luke", "Benny Blanco"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran ganhou o Grammy de Música do Ano em 2016?",
+      "alternativas": ["Photograph", "Thinking Out Loud", "Bloodstream", "Don't"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cor de cabelo Ed Sheeran é conhecido por ter?",
+      "alternativas": ["Loiro", "Castanho", "Ruivo", "Preto"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o álbum de Ed Sheeran lançado em 2021?",
+      "alternativas": ["÷", "No.6 Collaborations Project", "=", "-"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista fez dueto com Ed Sheeran em 'Perfect Duet'?",
+      "alternativas": ["Adele", "Beyoncé", "Rihanna", "Taylor Swift"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran foi escrita sobre uma pessoa sem-teto?",
+      "alternativas": ["Small Bump", "The A Team", "Wake Me Up", "Give Me Love"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos irmãos Ed Sheeran tem?",
+      "alternativas": ["0", "1", "2", "3"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome da filha de Ed Sheeran nascida em 2020?",
+      "alternativas": ["Lily", "Rose", "Lyra", "Ivy"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran menciona 'Wembley'?",
+      "alternativas": ["Castle on the Hill", "Eraser", "Shape of You", "Photograph"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Ed Sheeran escreveu qual hit para One Direction?",
+      "alternativas": ["What Makes You Beautiful", "Story of My Life", "Little Things", "Best Song Ever"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome do álbum colaborativo de Ed Sheeran lançado em 2019?",
+      "alternativas": ["Collaborations", "No.6 Collaborations Project", "Duets", "Friends"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual artista participou de 'I Don't Care' com Ed Sheeran?",
+      "alternativas": ["Bruno Mars", "Justin Bieber", "Shawn Mendes", "The Weeknd"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual instrumento Ed Sheeran usa com um loop pedal para criar camadas de som?",
+      "alternativas": ["Teclado", "Violão", "Violino", "Ukulele"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran foi usada em muitos casamentos por sua letra romântica?",
+      "alternativas": ["Photograph", "Thinking Out Loud", "Perfect", "Tenerife Sea"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em qual álbum está a música 'Bad Habits' de Ed Sheeran?",
+      "alternativas": ["÷", "No.6 Collaborations Project", "=", "-"],
+      "correta": 2
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "tema": "musica-taylor-swift",
+  "perguntas": [
+    {
+      "enunciado": "Qual foi o primeiro álbum de Taylor Swift?",
+      "alternativas": ["Fearless", "Taylor Swift", "Speak Now", "Red"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em qual estado americano Taylor Swift nasceu?",
+      "alternativas": ["Tennessee", "Pensilvânia", "Texas", "Nova York"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Taylor Swift ganhou o Grammy de Música do Ano em 2010?",
+      "alternativas": ["Love Story", "You Belong with Me", "Fearless", "White Horse"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantos álbuns 'Taylor's Version' Taylor Swift já lançou até 2024?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o álbum mais vendido de Taylor Swift?",
+      "alternativas": ["1989", "Fearless", "Red", "Reputation"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música de Taylor Swift tem 10 minutos de duração na versão completa?",
+      "alternativas": ["Dear John", "All Too Well", "Last Kiss", "Enchanted"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que ano Taylor Swift lançou o álbum 'Reputation'?",
+      "alternativas": ["2015", "2016", "2017", "2018"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi o primeiro álbum de Taylor Swift a ganhar o Grammy de Álbum do Ano?",
+      "alternativas": ["Taylor Swift", "Fearless", "Speak Now", "Red"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome da turnê de Taylor Swift que se tornou a mais lucrativa da história?",
+      "alternativas": ["Reputation Stadium Tour", "1989 World Tour", "The Eras Tour", "Speak Now World Tour"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Taylor Swift menciona 'Romeo and Juliet'?",
+      "alternativas": ["Enchanted", "Love Story", "Teardrops on My Guitar", "Mine"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos gatos Taylor Swift tem?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual álbum de Taylor Swift foi lançado de surpresa durante a pandemia em 2020?",
+      "alternativas": ["Evermore", "Folklore", "Midnights", "Lover"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual era o nome da banda de abertura que Taylor Swift fez turnê antes de ficar famosa?",
+      "alternativas": ["Rascal Flatts", "Tim McGraw", "Keith Urban", "Brad Paisley"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música deu nome à era 'snake' de Taylor Swift?",
+      "alternativas": ["Bad Blood", "Look What You Made Me Do", "Ready for It", "End Game"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em qual cidade Taylor Swift se mudou aos 14 anos para seguir carreira?",
+      "alternativas": ["Los Angeles", "Nova York", "Nashville", "Atlanta"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome do primeiro gato de Taylor Swift?",
+      "alternativas": ["Olivia", "Meredith", "Benjamin", "Kitty"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual álbum de Taylor Swift tem uma cobra como símbolo?",
+      "alternativas": ["1989", "Reputation", "Red", "Lover"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Taylor Swift foi escrita para o filme 'Jogos Vorazes'?",
+      "alternativas": ["Eyes Open", "Safe & Sound", "Today Was a Fairytale", "Sweeter Than Fiction"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos Grammys de Álbum do Ano Taylor Swift ganhou?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música do álbum 'Midnights' foi a primeira a estrear no #1?",
+      "alternativas": ["Lavender Haze", "Anti-Hero", "Midnight Rain", "Karma"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em que dia Taylor Swift nasceu?",
+      "alternativas": ["13 de dezembro", "13 de novembro", "23 de dezembro", "23 de novembro"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual é o número da sorte de Taylor Swift?",
+      "alternativas": ["7", "11", "13", "22"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Taylor Swift foi escrita sobre Joe Jonas?",
+      "alternativas": ["Dear John", "Last Kiss", "Forever & Always", "Back to December"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual álbum de Taylor Swift tem o maior número de faixas?",
+      "alternativas": ["Red (Taylor's Version)", "Midnights (3am Edition)", "Folklore", "The Tortured Poets Department"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual foi a primeira música de Taylor Swift a atingir #1 na Billboard Hot 100?",
+      "alternativas": ["Love Story", "You Belong with Me", "We Are Never Getting Back Together", "Shake It Off"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista fez dueto com Taylor Swift em 'Everything Has Changed'?",
+      "alternativas": ["Ed Sheeran", "Bruno Mars", "Justin Bieber", "Shawn Mendes"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual é o álbum 'irmão' de Folklore?",
+      "alternativas": ["Midnights", "Evermore", "Lover", "1989"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cor predomina na estética do álbum 'Lover'?",
+      "alternativas": ["Vermelho", "Azul", "Rosa", "Roxo"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi o single de estreia de Taylor Swift?",
+      "alternativas": ["Our Song", "Teardrops on My Guitar", "Tim McGraw", "Picture to Burn"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Taylor Swift tem a frase 'I'm the problem, it's me'?",
+      "alternativas": ["Karma", "Anti-Hero", "Lavender Haze", "Vigilante Shit"],
+      "correta": 1
+    }
+  ]
+}
