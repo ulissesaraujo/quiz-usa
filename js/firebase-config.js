@@ -11,7 +11,14 @@ let db = null;
 export const TEMAS_DISPONIVEIS = [
     { id: 'arte', nome: 'Arte', icone: '🎨' },
     { id: 'ciencia', nome: 'Ciência', icone: '🔬' },
-    { id: 'cinema-series', nome: 'Cinema e Séries', icone: '🎬' },
+    { 
+        id: 'cinema-series', 
+        nome: 'Cinema e Séries', 
+        icone: '🎬',
+        subtemas: [
+            { id: 'harry-potter', nome: 'Harry Potter', icone: '⚡' }
+        ]
+    },
     { id: 'comidas-bebidas', nome: 'Comidas e Bebidas', icone: '🍔' },
     { id: 'criancas', nome: 'Crianças', icone: '🧒' },
     { id: 'curiosidades', nome: 'Curiosidades', icone: '💡' },

@@ -1,0 +1,587 @@
+{
+  "tema": "harry-potter",
+  "perguntas": [
+    {
+      "enunciado": "Qual é o nome completo de Harry Potter?",
+      "alternativas": ["Harry James Potter", "Harry John Potter", "Harry William Potter", "Harry Thomas Potter"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em qual casa de Hogwarts Harry Potter foi selecionado?",
+      "alternativas": ["Sonserina", "Corvinal", "Lufa-Lufa", "Grifinória"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o nome do padrinho de Harry Potter?",
+      "alternativas": ["Remo Lupin", "Sirius Black", "Severo Snape", "Alvo Dumbledore"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é a marca registrada de Harry Potter no rosto?",
+      "alternativas": ["Uma estrela", "Um raio", "Uma lua", "Um círculo"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o nome da coruja de Harry Potter?",
+      "alternativas": ["Hedwig", "Errol", "Píchi", "Fawkes"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem são os melhores amigos de Harry Potter?",
+      "alternativas": ["Draco e Crabbe", "Neville e Luna", "Rony e Hermione", "Fred e Jorge"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o número da plataforma onde Harry pega o Expresso de Hogwarts?",
+      "alternativas": ["9", "9 e 1/2", "9 e 3/4", "10"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o nome do vilão principal da saga Harry Potter?",
+      "alternativas": ["Grindelwald", "Voldemort", "Bellatrix", "Lucius Malfoy"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é a posição de Harry no time de Quadribol?",
+      "alternativas": ["Goleiro", "Artilheiro", "Batedor", "Apanhador"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o nome do elfo doméstico que ajuda Harry?",
+      "alternativas": ["Dobby", "Kreacher", "Winky", "Monstro"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o feitiço usado para desarmar o oponente?",
+      "alternativas": ["Estupefaça", "Expelliarmus", "Petrificus Totalus", "Impedimenta"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual objeto é necessário destruir para derrotar Voldemort?",
+      "alternativas": ["Varinha das Varinhas", "Capa da Invisibilidade", "Horcruxes", "Pedra Filosofal"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o Patrono de Harry Potter?",
+      "alternativas": ["Leão", "Cervo", "Fênix", "Lobo"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome verdadeiro de Voldemort?",
+      "alternativas": ["Tom Marvolo Riddle", "Salazar Slytherin", "Gellert Grindelwald", "Morfin Gaunt"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome do diretor de Hogwarts durante a maior parte da saga?",
+      "alternativas": ["Severo Snape", "Minerva McGonagall", "Alvo Dumbledore", "Armando Dippet"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual criatura guarda a Pedra Filosofal no primeiro livro/filme?",
+      "alternativas": ["Dragão", "Cérbero (Fluffy)", "Basilisco", "Hipogrifo"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome do hipogrifo que Harry conhece no terceiro ano?",
+      "alternativas": ["Fawkes", "Bicuço", "Aragogue", "Norberto"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem é o professor de Poções que odeia Harry?",
+      "alternativas": ["Horácio Slughorn", "Severo Snape", "Quirino Quirrell", "Gilderoy Lockhart"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o nome da irmã de Rony Weasley?",
+      "alternativas": ["Luna", "Gina", "Cho", "Pansy"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual objeto mágico permite ver o desejo mais profundo do coração?",
+      "alternativas": ["Penseira", "Espelho de Ojesed", "Vira-Tempo", "Mapa do Maroto"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a maldição imperdoável que mata instantaneamente?",
+      "alternativas": ["Cruciatus", "Imperius", "Avada Kedavra", "Sectumsempra"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome do banco dos bruxos?",
+      "alternativas": ["Gringotes", "Borgin e Burkes", "Floreios e Borrões", "Olivaras"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem matou Dumbledore?",
+      "alternativas": ["Voldemort", "Bellatrix", "Severo Snape", "Draco Malfoy"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome da cobra de Voldemort?",
+      "alternativas": ["Nagini", "Basilisco", "Aragogue", "Serpente"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quantas Horcruxes Voldemort criou intencionalmente?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Qual é a matéria que ensina a transformar objetos?",
+      "alternativas": ["Feitiços", "Transfiguração", "Poções", "Herbologia"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem é a professora de Transfiguração?",
+      "alternativas": ["Pomona Sprout", "Minerva McGonagall", "Sibila Trelawney", "Aurora Sinistra"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o feitiço que produz luz na ponta da varinha?",
+      "alternativas": ["Nox", "Lumos", "Incendio", "Aparecium"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual criatura vive na Câmara Secreta?",
+      "alternativas": ["Acromântula", "Dragão", "Basilisco", "Dementador"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem abriu a Câmara Secreta pela primeira vez?",
+      "alternativas": ["Salazar Slytherin", "Tom Riddle", "Hagrid", "Draco Malfoy"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome do irmão mais velho de Rony que trabalha com dragões?",
+      "alternativas": ["Gui", "Carlinhos", "Percy", "Fred"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o doce favorito de Dumbledore?",
+      "alternativas": ["Sapos de Chocolate", "Drops de Limão", "Feijõezinhos de Todos os Sabores", "Varinhas de Alcaçuz"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome do pub em Hogsmeade onde servem cerveja amanteigada?",
+      "alternativas": ["Cabeça de Javali", "Três Vassouras", "Caldeirão Furado", "Dedosdemel"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem venceu o Torneio Tribruxo junto com Harry?",
+      "alternativas": ["Viktor Krum", "Fleur Delacour", "Cedrico Diggory", "Ninguém"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome da fênix de Dumbledore?",
+      "alternativas": ["Hedwig", "Fawkes", "Errol", "Bicuço"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é a forma animaga de Sirius Black?",
+      "alternativas": ["Rato", "Cervo", "Cachorro", "Lobo"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem é Rabicho?",
+      "alternativas": ["Sirius Black", "Remo Lupin", "Pedro Pettigrew", "Tiago Potter"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual objeto mostra todos os corredores de Hogwarts?",
+      "alternativas": ["Penseira", "Mapa do Maroto", "Espelho de Ojesed", "Vira-Tempo"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o feitiço para conjurar um Patrono?",
+      "alternativas": ["Expecto Patronum", "Riddikulus", "Expelliarmus", "Protego"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem ensinou Harry a conjurar um Patrono?",
+      "alternativas": ["Dumbledore", "Sirius Black", "Remo Lupin", "Snape"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual criatura se alimenta de felicidade?",
+      "alternativas": ["Bicho-Papão", "Dementador", "Testrálio", "Lobisomem"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome da loja de logros dos gêmeos Weasley?",
+      "alternativas": ["Zonko's", "Gemialidades Weasley", "Dedosdemel", "Borgin e Burkes"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o núcleo da varinha de Harry Potter?",
+      "alternativas": ["Pelo de unicórnio", "Corda de coração de dragão", "Pena de fênix", "Pelo de veela"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "De qual fênix veio a pena da varinha de Harry?",
+      "alternativas": ["Uma fênix selvagem", "Fawkes", "Uma fênix de Voldemort", "Uma fênix antiga"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "O que as varinhas de Harry e Voldemort têm em comum?",
+      "alternativas": ["Mesmo tamanho", "Mesmo núcleo da mesma fênix", "Mesma madeira", "Mesmo fabricante"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a casa de Hogwarts conhecida pela astúcia?",
+      "alternativas": ["Grifinória", "Corvinal", "Lufa-Lufa", "Sonserina"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual casa valoriza a inteligência e o conhecimento?",
+      "alternativas": ["Grifinória", "Corvinal", "Lufa-Lufa", "Sonserina"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual casa é conhecida pela lealdade e trabalho duro?",
+      "alternativas": ["Grifinória", "Corvinal", "Lufa-Lufa", "Sonserina"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem é a fundadora da Corvinal?",
+      "alternativas": ["Helga Hufflepuff", "Rowena Ravenclaw", "Godric Gryffindor", "Salazar Slytherin"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o animal símbolo da Grifinória?",
+      "alternativas": ["Cobra", "Águia", "Texugo", "Leão"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o animal símbolo da Sonserina?",
+      "alternativas": ["Cobra", "Águia", "Texugo", "Leão"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem é o zelador de Hogwarts?",
+      "alternativas": ["Rúbeo Hagrid", "Argo Filch", "Dobby", "Kreacher"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o nome da gata do zelador Filch?",
+      "alternativas": ["Bichento", "Madame Norris", "Perebas", "Hedwig"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome do gato de Hermione?",
+      "alternativas": ["Bichento", "Madame Norris", "Perebas", "Fofinho"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual era o nome do rato de Rony?",
+      "alternativas": ["Bichento", "Perebas", "Trevor", "Errol"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem Perebas realmente era?",
+      "alternativas": ["Sirius Black", "Remo Lupin", "Pedro Pettigrew", "Um rato comum"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome do sapo de Neville?",
+      "alternativas": ["Perebas", "Trevor", "Errol", "Bichento"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual feitiço é usado para abrir fechaduras?",
+      "alternativas": ["Alohomora", "Alorromora", "Portaberto", "Colloportus"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o feitiço para reparar objetos?",
+      "alternativas": ["Reparo", "Episkey", "Scourgify", "Tergeo"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual maldição causa dor intensa?",
+      "alternativas": ["Avada Kedavra", "Cruciatus", "Imperius", "Sectumsempra"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual maldição controla a vontade da pessoa?",
+      "alternativas": ["Avada Kedavra", "Cruciatus", "Imperius", "Confundus"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem inventou o feitiço Sectumsempra?",
+      "alternativas": ["Voldemort", "Dumbledore", "Snape", "Grindelwald"],
+      "correta": 2,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Qual é o apelido de Snape nos livros de poções?",
+      "alternativas": ["O Mestre", "Príncipe Mestiço", "Morcegão", "O Bruxo"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Por que Snape protegia Harry?",
+      "alternativas": ["Por Dumbledore", "Por amizade com Tiago", "Por amor a Lílian", "Por medo de Voldemort"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o Patrono de Snape?",
+      "alternativas": ["Cobra", "Corça", "Lobo", "Fênix"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Por que o Patrono de Snape é uma corça?",
+      "alternativas": ["Era seu animal favorito", "Igual ao de Lílian", "Era o animal de Sonserina", "Dumbledore escolheu"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual era o Patrono de Lílian Potter?",
+      "alternativas": ["Corça", "Cervo", "Leão", "Águia"],
+      "correta": 0,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Como os pais de Harry morreram?",
+      "alternativas": ["Acidente de carro", "Doença mágica", "Assassinados por Voldemort", "Acidente com dragões"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por que Voldemort não conseguiu matar Harry quando bebê?",
+      "alternativas": ["Varinha quebrou", "Proteção do amor de Lílian", "Dumbledore interferiu", "Feitiço errado"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Onde Harry morava antes de ir para Hogwarts?",
+      "alternativas": ["Toca dos Weasley", "Rua dos Alfeneiros, 4", "Largo Grimmauld, 12", "Godric's Hollow"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome dos tios de Harry?",
+      "alternativas": ["Vernon e Petúnia", "Richard e Rose", "Harold e Helen", "Thomas e Mary"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o nome do primo de Harry?",
+      "alternativas": ["Dennis", "Dudley", "Derek", "David"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Onde Harry dormia na casa dos Dursley no início?",
+      "alternativas": ["Quarto de hóspedes", "Porão", "Armário sob a escada", "Garagem"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem levou Harry para a casa dos Dursley quando bebê?",
+      "alternativas": ["Sirius Black", "Hagrid", "McGonagall", "Snape"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual veículo Hagrid usou para levar Harry bebê?",
+      "alternativas": ["Vassoura", "Moto voadora", "Carro voador", "Testrálio"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "De quem era a moto voadora de Hagrid?",
+      "alternativas": ["Dumbledore", "Sirius Black", "Tiago Potter", "Arthur Weasley"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a profissão de Hagrid em Hogwarts inicialmente?",
+      "alternativas": ["Professor", "Zelador", "Guarda-caça", "Cozinheiro"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "De que matéria Hagrid se torna professor?",
+      "alternativas": ["Herbologia", "Poções", "Trato das Criaturas Mágicas", "Defesa Contra as Artes das Trevas"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Por que Hagrid foi expulso de Hogwarts?",
+      "alternativas": ["Notas baixas", "Foi culpado de abrir a Câmara Secreta", "Brigou com professor", "Usou magia negra"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem realmente abriu a Câmara Secreta quando Hagrid foi expulso?",
+      "alternativas": ["Hagrid mesmo", "Tom Riddle", "Lucius Malfoy", "Salazar Slytherin"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o nome da aranha gigante amiga de Hagrid?",
+      "alternativas": ["Nagini", "Aragogue", "Fluffy", "Bicuço"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quantas cabeças tem o cachorro Fluffy?",
+      "alternativas": ["Uma", "Duas", "Três", "Quatro"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "O que faz Fluffy dormir?",
+      "alternativas": ["Feitiço", "Poção", "Música", "Comida"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem criou a Pedra Filosofal?",
+      "alternativas": ["Dumbledore", "Voldemort", "Nicolau Flamel", "Merlin"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "O que a Pedra Filosofal produz?",
+      "alternativas": ["Ouro e Elixir da Longa Vida", "Poder infinito", "Imortalidade instantânea", "Varinha invencível"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual professor tinha Voldemort atrás da cabeça?",
+      "alternativas": ["Snape", "Quirrell", "Lockhart", "Moody"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é o verdadeiro nome de 'Você-Sabe-Quem'?",
+      "alternativas": ["Lord Voldemort", "Aquele-Que-Não-Deve-Ser-Nomeado", "Tom Riddle", "O Lorde das Trevas"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual objeto Lucius Malfoy colocou no caldeirão de Gina?",
+      "alternativas": ["Varinha", "Diário de Tom Riddle", "Anel", "Medalhão"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem destruiu o diário de Tom Riddle?",
+      "alternativas": ["Dumbledore", "Harry Potter", "Rony Weasley", "Hermione Granger"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Com o que Harry destruiu o diário?",
+      "alternativas": ["Espada de Gryffindor", "Presa de basilisco", "Varinha", "Feitiço"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual relíquia da morte torna o usuário invisível?",
+      "alternativas": ["Varinha das Varinhas", "Pedra da Ressurreição", "Capa da Invisibilidade", "Anel"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual relíquia da morte pode trazer sombras dos mortos?",
+      "alternativas": ["Varinha das Varinhas", "Pedra da Ressurreição", "Capa da Invisibilidade", "Espada"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a varinha mais poderosa do mundo bruxo?",
+      "alternativas": ["Varinha de Harry", "Varinha de Dumbledore", "Varinha das Varinhas", "Varinha de Voldemort"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem derrotou Grindelwald e ganhou a Varinha das Varinhas?",
+      "alternativas": ["Harry Potter", "Voldemort", "Alvo Dumbledore", "Severo Snape"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem era o verdadeiro mestre da Varinha das Varinhas quando Voldemort morreu?",
+      "alternativas": ["Voldemort", "Dumbledore", "Snape", "Harry Potter"],
+      "correta": 3,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Como Harry se tornou mestre da Varinha das Varinhas?",
+      "alternativas": ["Matou Dumbledore", "Desarmou Draco Malfoy", "Roubou de Voldemort", "Dumbledore deu a ele"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "Qual Weasley morreu na Batalha de Hogwarts?",
+      "alternativas": ["Rony", "Gina", "Fred", "Jorge"],
+      "correta": 2,
+      "dificuldade": "medio"
+    }
+  ]
+}
