@@ -704,6 +704,19 @@ body {
     line-height: 1.5;
 }
 
+/* Emoji grande na pergunta */
+.pergunta-emoji {
+    display: block;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.pergunta-texto {
+    display: block;
+}
+
 /* Alternativas */
 .alternativas-container {
     transition: var(--transition);

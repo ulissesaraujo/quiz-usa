@@ -9,6 +9,33 @@ import { buscarPerguntasPorIds } from './firebase-config.js';
 import { Anunciador, GerenciadorFoco, NavegacaoTeclado } from './acessibilidade.js';
 
 // ========================================
+// FUNÇÕES UTILITÁRIAS
+// ========================================
+
+/**
+ * Separa emojis do início do texto
+ * Retorna { emoji: string|null, texto: string }
+ */
+function separarEmojiDoTexto(enunciado) {
+    // Regex para detectar emojis no início (incluindo sequências de emojis)
+    const emojiRegex = /^([\p{Emoji_Presentation}\p{Extended_Pictographic}\u200d\ufe0f\s]+)/u;
+    const match = enunciado.match(emojiRegex);
+    
+    if (match) {
+        const emoji = match[1].trim();
+        // Remove o emoji e quebras de linha do início
+        let texto = enunciado.slice(match[0].length).replace(/^\n+/, '').trim();
+        
+        // Só considera como emoji separado se tiver pelo menos um emoji real
+        if (emoji && /[\p{Emoji_Presentation}\p{Extended_Pictographic}]/u.test(emoji)) {
+            return { emoji, texto };
+        }
+    }
+    
+    return { emoji: null, texto: enunciado };
+}
+
+// ========================================
 // ESTADO DA APLICAÇÃO
 // ========================================
 const estado = {
@@ -512,7 +539,16 @@ async function iniciarDesafio(partidaOriginal) {
 function configurarCallbacksQuiz() {
     quizEngine.onPerguntaCarregada = ({ numero, total, pergunta, tema }) => {
         elementos.perguntaContador.textContent = `${numero}/${total}`;
-        elementos.perguntaEnunciado.textContent = pergunta.enunciado;
+        
+        // Detecta emojis no início do enunciado
+        const { emoji, texto } = separarEmojiDoTexto(pergunta.enunciado);
+        
+        if (emoji) {
+            // Mostra emoji grande separado do texto
+            elementos.perguntaEnunciado.innerHTML = `<span class="pergunta-emoji">${emoji}</span><span class="pergunta-texto">${texto}</span>`;
+        } else {
+            elementos.perguntaEnunciado.textContent = pergunta.enunciado;
+        }
         
         // Mostra o tema da pergunta se disponível
         if (elementos.perguntaTema && tema) {
