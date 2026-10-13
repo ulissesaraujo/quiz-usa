@@ -1,0 +1,255 @@
+{
+  "tema": "tenis",
+  "perguntas": [
+    {
+      "enunciado": "Qual tenista masculino detém o recorde de mais títulos de Grand Slam?",
+      "alternativas": ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantos Grand Slams existem no calendário do tênis?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o único Grand Slam disputado em quadra de grama?",
+      "alternativas": ["US Open", "Roland Garros", "Australian Open", "Wimbledon"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual tenista é conhecida como 'Queen of Clay'?",
+      "alternativas": ["Serena Williams", "Steffi Graf", "Chris Evert", "Justine Henin"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual tenista brasileiro chegou a ser número 1 do mundo em duplas?",
+      "alternativas": ["Gustavo Kuerten", "Marcelo Melo", "Bruno Soares", "Fernando Meligeni"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do golpe dado de costas no tênis?",
+      "alternativas": ["Forehand", "Backhand", "Slice", "Volley"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista espanhol é conhecido como 'Rei do Saibro'?",
+      "alternativas": ["David Ferrer", "Rafael Nadal", "Carlos Alcaraz", "Tommy Robredo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos sets são necessários para vencer um jogo masculino em Grand Slam?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista americana tem mais Grand Slams na era Open?",
+      "alternativas": ["Venus Williams", "Serena Williams", "Billie Jean King", "Chris Evert"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual Grand Slam é disputado no saibro?",
+      "alternativas": ["Wimbledon", "US Open", "Roland Garros", "Australian Open"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual tenista suíço é conhecido por sua elegância e técnica?",
+      "alternativas": ["Stan Wawrinka", "Roger Federer", "Marc Rosset", "Jakob Hlasek"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que significa '40-40' no tênis?",
+      "alternativas": ["Set point", "Deuce", "Advantage", "Match point"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista sérvio é atual número 1 do mundo?",
+      "alternativas": ["Ana Ivanovic", "Novak Djokovic", "Jelena Jankovic", "Janko Tipsarevic"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do golpe quando a bola quica e sobe com efeito?",
+      "alternativas": ["Slice", "Topspin", "Drop shot", "Lob"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista ganhou o 'Career Grand Slam' mais jovem?",
+      "alternativas": ["Nadal", "Djokovic", "Federer", "Sampras"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual país sedia o Australian Open?",
+      "alternativas": ["Nova Zelândia", "Austrália", "África do Sul", "Índia"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista alemã ganhou todos os Grand Slams e o ouro olímpico?",
+      "alternativas": ["Angelique Kerber", "Steffi Graf", "Sabine Lisicki", "Andrea Petkovic"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do torneio de equipes masculinas por países?",
+      "alternativas": ["Fed Cup", "Davis Cup", "ATP Cup", "Hopman Cup"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista britânico venceu Wimbledon em 2013?",
+      "alternativas": ["Tim Henman", "Andy Murray", "Greg Rusedski", "Kyle Edmund"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é um 'ace' no tênis?",
+      "alternativas": ["Erro do adversário", "Saque que o adversário não toca", "Volley vencedor", "Smash perfeito"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista russa foi número 1 e ganhou 5 Grand Slams?",
+      "alternativas": ["Anna Kournikova", "Maria Sharapova", "Svetlana Kuznetsova", "Dinara Safina"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual superfície é usada no US Open?",
+      "alternativas": ["Grama", "Saibro", "Quadra dura", "Carpete"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual tenista é conhecido pelo grito 'Vamos!'?",
+      "alternativas": ["Federer", "Djokovic", "Nadal", "Murray"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantos jogos são necessários para ganhar um set com tie-break?",
+      "alternativas": ["6", "7", "8", "9"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista argentina ganhou Roland Garros em 2020?",
+      "alternativas": ["Gisela Dulko", "Nadia Podoroska", "Paula Ormaechea", "Nenhuma"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual irmã de Venus Williams tem mais Grand Slams?",
+      "alternativas": ["Serena Williams", "Venus tem mais", "Empate", "Não são irmãs"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual tenista é conhecido por sua técnica de saque e voleio?",
+      "alternativas": ["Nadal", "Federer", "Sampras", "Agassi"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é a cor tradicional das quadras de Roland Garros?",
+      "alternativas": ["Verde", "Azul", "Vermelho/Laranja", "Cinza"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual tenista japonesa ganhou o US Open em 2018?",
+      "alternativas": ["Ai Sugiyama", "Naomi Osaka", "Kimiko Date", "Misaki Doi"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é um 'double fault'?",
+      "alternativas": ["Dois erros consecutivos", "Dois saques errados", "Duas faltas de pé", "Dois aces seguidos"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista americano é conhecido por usar bandana?",
+      "alternativas": ["Pete Sampras", "Jim Courier", "Andre Agassi", "John McEnroe"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome do golpe curto que morre perto da rede?",
+      "alternativas": ["Lob", "Drop shot", "Slice", "Passing shot"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista australiana é conhecida como 'Barty Party'?",
+      "alternativas": ["Samantha Stosur", "Ashleigh Barty", "Jelena Dokic", "Casey Dellacqua"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual Grand Slam Gustavo Kuerten venceu 3 vezes?",
+      "alternativas": ["Wimbledon", "US Open", "Australian Open", "Roland Garros"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que significa 'break' no tênis?",
+      "alternativas": ["Intervalo", "Quebra de saque", "Desistência", "Empate"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista tcheca foi número 1 e venceu 18 Grand Slams?",
+      "alternativas": ["Petra Kvitova", "Karolina Pliskova", "Martina Navratilova", "Hana Mandlikova"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome da competição feminina por equipes?",
+      "alternativas": ["Davis Cup", "Billie Jean King Cup", "Fed Cup", "WTA Cup"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual tenista espanhol é a nova sensação e venceu o US Open 2022?",
+      "alternativas": ["Pablo Carreño", "Carlos Alcaraz", "Roberto Bautista", "Alejandro Davidovich"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a pontuação inicial de um game de tênis?",
+      "alternativas": ["0-0", "15-15", "Love-love", "Zero-zero"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual tenista chinesa foi primeira asiática número 1?",
+      "alternativas": ["Peng Shuai", "Li Na", "Zhang Shuai", "Zheng Jie"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que significa 'love' na pontuação de tênis?",
+      "alternativas": ["15", "30", "Zero", "Vantagem"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual tenista tem o saque mais rápido já registrado?",
+      "alternativas": ["Andy Roddick", "Ivo Karlovic", "John Isner", "Sam Groth"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual Grand Slam foi vencido por Guga em 1997?",
+      "alternativas": ["Wimbledon", "Australian Open", "Roland Garros", "US Open"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual tenista belga ganhou Roland Garros em 2003?",
+      "alternativas": ["Kim Clijsters", "Justine Henin", "Kirsten Flipkens", "Yanina Wickmayer"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é um 'passing shot'?",
+      "alternativas": ["Bola que passa o adversário na rede", "Saque forte", "Voleio perfeito", "Smash"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual tenista suíço venceu 3 Grand Slams de simples?",
+      "alternativas": ["Roger Federer", "Stan Wawrinka", "Marc Rosset", "Martina Hingis"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a maior rivalidade do tênis masculino atual?",
+      "alternativas": ["Federer x Nadal", "Nadal x Djokovic", "Federer x Djokovic", "Todos os três"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual tenista polonesa é atual número 1 do ranking feminino?",
+      "alternativas": ["Agnieszka Radwanska", "Iga Swiatek", "Magda Linette", "Urszula Radwanska"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos Grand Slams femininos Venus Williams venceu?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o apelido do torneio Indian Wells?",
+      "alternativas": ["O quinto Grand Slam", "O Major do deserto", "Sunshine Double", "California Classic"],
+      "correta": 0
+    }
+  ]
+}

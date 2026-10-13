@@ -1,0 +1,255 @@
+{
+  "tema": "musica-sertanejo",
+  "perguntas": [
+    {
+      "enunciado": "Qual dupla sertaneja é conhecida pela música 'Evidências'?",
+      "alternativas": ["Zezé Di Camargo e Luciano", "Chitãozinho e Xororó", "Leandro e Leonardo", "João Paulo e Daniel"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantor sertanejo é conhecido como 'Rei do Sertanejo'?",
+      "alternativas": ["Gusttavo Lima", "Luan Santana", "Leonardo", "Michel Teló"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Michel Teló fez sucesso mundial em 2012?",
+      "alternativas": ["Ai Se Eu Te Pego", "Bara Bara", "Fugidinha", "Balada"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual dupla sertaneja gravou 'Fio de Cabelo'?",
+      "alternativas": ["Zezé Di Camargo e Luciano", "Chitãozinho e Xororó", "Milionário e José Rico", "Tonico e Tinoco"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantor sertanejo faleceu em acidente aéreo em 1998?",
+      "alternativas": ["Leonardo", "Leandro", "Xororó", "José Rico"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Pense em Mim'?",
+      "alternativas": ["Chitãozinho e Xororó", "Zezé Di Camargo e Luciano", "Leandro e Leonardo", "Bruno e Marrone"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual cantor sertanejo é conhecido como 'Embaixador'?",
+      "alternativas": ["Wesley Safadão", "Gusttavo Lima", "Leonardo", "Luan Santana"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla gravou 'Ainda Ontem Chorei de Saudade'?",
+      "alternativas": ["Chitãozinho e Xororó", "João Mineiro e Marciano", "Milionário e José Rico", "Tonico e Tinoco"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantora sertaneja é conhecida como 'Rainha da Sofrência'?",
+      "alternativas": ["Paula Fernandes", "Marília Mendonça", "Maiara", "Simone"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla feminina faz sucesso com 'Medo Bobo'?",
+      "alternativas": ["Simone e Simaria", "Maiara e Maraisa", "Day e Lara", "Thaeme e Thiago"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantor é famoso pela música 'Seu Polícia'?",
+      "alternativas": ["Gusttavo Lima", "Zé Neto", "Cristiano", "Murilo Huff"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual dupla gravou 'É o Amor'?",
+      "alternativas": ["Chitãozinho e Xororó", "Zezé Di Camargo e Luciano", "Leandro e Leonardo", "João Paulo e Daniel"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantora sertaneja faleceu em 2021 em acidente aéreo?",
+      "alternativas": ["Paula Fernandes", "Marília Mendonça", "Maiara", "Simone"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Vidro Fumê'?",
+      "alternativas": ["Jorge e Mateus", "Bruno e Marrone", "Henrique e Juliano", "Zé Neto e Cristiano"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual cantor lançou 'Balada Boa'?",
+      "alternativas": ["Luan Santana", "Gusttavo Lima", "Michel Teló", "Fernando"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla gravou 'Dormi na Praça'?",
+      "alternativas": ["Chitãozinho e Xororó", "Bruno e Marrone", "Jorge e Mateus", "Victor e Leo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantor é conhecido pela música 'Inventor dos Amores'?",
+      "alternativas": ["Gusttavo Lima", "Leonardo", "Daniel", "Luan Santana"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla fez sucesso com 'Amor Perfeito'?",
+      "alternativas": ["Roberto Carlos", "Leonardo", "Daniel", "Eduardo Costa"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual festa sertaneja é realizada em Barretos?",
+      "alternativas": ["Festa do Peão de Americana", "Festa do Peão de Barretos", "Caldas Country", "Villa Mix"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla gravou 'Borbulhas de Amor' em versão sertaneja?",
+      "alternativas": ["Jorge e Mateus", "Chitãozinho e Xororó", "Bruno e Marrone", "Zezé Di Camargo e Luciano"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantor é parceiro de Sorocaba na dupla?",
+      "alternativas": ["Fernando", "Jorge", "Mateus", "Juliano"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Amo Noite e Dia'?",
+      "alternativas": ["Jorge e Mateus", "Bruno e Marrone", "Victor e Leo", "Fernando e Sorocaba"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantora gravou 'Eu Sei de Cor'?",
+      "alternativas": ["Paula Fernandes", "Marília Mendonça", "Maiara", "Simone"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla sertaneja tem os irmãos José e Durval?",
+      "alternativas": ["Chitãozinho e Xororó", "Zezé Di Camargo e Luciano", "Bruno e Marrone", "Di Paullo e Paulino"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantor é conhecido por 'Meteoro da Paixão'?",
+      "alternativas": ["Gusttavo Lima", "Luan Santana", "Michel Teló", "Wesley Safadão"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla gravou 'Entre Tapas e Beijos'?",
+      "alternativas": ["Leandro e Leonardo", "Chitãozinho e Xororó", "Zezé Di Camargo e Luciano", "Milionário e José Rico"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantor sertanejo é casado com Andressa Suita?",
+      "alternativas": ["Luan Santana", "Leonardo", "Gusttavo Lima", "Michel Teló"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Marília Mendonça fala sobre 'bebida na ferida'?",
+      "alternativas": ["Infiel", "Supera", "De Quem é a Culpa?", "Todo Mundo Vai Sofrer"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Tarde Demais'?",
+      "alternativas": ["Bruno e Marrone", "Jorge e Mateus", "Henrique e Juliano", "Zé Neto e Cristiano"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual cantor é ex-marido de Thais Pacholek?",
+      "alternativas": ["Leonardo", "Eduardo Costa", "Gusttavo Lima", "Belutti"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla gravou 'Telefone Mudo'?",
+      "alternativas": ["Leandro e Leonardo", "Chitãozinho e Xororó", "Zezé Di Camargo e Luciano", "Bruno e Marrone"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantor é filho de Leonardo?",
+      "alternativas": ["Luan Santana", "Zé Felipe", "Gusttavo Lima", "Michel Teló"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantora é irmã de Simaria?",
+      "alternativas": ["Maiara", "Maraisa", "Simone", "Marília"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Logo Eu'?",
+      "alternativas": ["Bruno e Marrone", "Jorge e Mateus", "Victor e Leo", "Fernando e Sorocaba"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantor gravou 'Não Aprendi Dizer Adeus'?",
+      "alternativas": ["Leonardo", "Daniel", "Eduardo Costa", "Gusttavo Lima"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Temporal de Amor'?",
+      "alternativas": ["Leandro e Leonardo", "Chitãozinho e Xororó", "Bruno e Marrone", "Zezé Di Camargo e Luciano"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantor é conhecido como 'Príncipe do Sertanejo'?",
+      "alternativas": ["Gusttavo Lima", "Luan Santana", "Michel Teló", "Leonardo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla gravou 'Inquilina de Violeiro'?",
+      "alternativas": ["Chitãozinho e Xororó", "Milionário e José Rico", "Tonico e Tinoco", "Liu e Léu"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantor é casado com Thais Fersoza?",
+      "alternativas": ["Gusttavo Lima", "Leonardo", "Michel Teló", "Luan Santana"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Só Não Me Fale de Amor'?",
+      "alternativas": ["Bruno e Marrone", "Jorge e Mateus", "Henrique e Juliano", "Fernando e Sorocaba"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantor é pai de João Guilherme?",
+      "alternativas": ["Eduardo Costa", "Leonardo", "Zezé Di Camargo", "Chitãozinho"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla gravou 'No Rancho Fundo'?",
+      "alternativas": ["Chitãozinho e Xororó", "Milionário e José Rico", "Tonico e Tinoco", "Pena Branca e Xavantinho"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantor sertanejo é de Goiânia?",
+      "alternativas": ["Luan Santana", "Leonardo", "Gusttavo Lima", "Michel Teló"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Os Dez Mandamentos do Amor'?",
+      "alternativas": ["Zezé Di Camargo e Luciano", "Chitãozinho e Xororó", "Leandro e Leonardo", "Bruno e Marrone"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantora gravou 'Pássaro de Fogo'?",
+      "alternativas": ["Marília Mendonça", "Paula Fernandes", "Roberta Miranda", "Maiara"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Amargurado'?",
+      "alternativas": ["Leandro e Leonardo", "Chitãozinho e Xororó", "Zezé Di Camargo e Luciano", "João Paulo e Daniel"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual festival sertanejo acontece em Ribeirão Preto?",
+      "alternativas": ["Festa do Peão de Barretos", "Ribeirão Rodeo Music", "Villa Mix", "Caldas Country"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual dupla gravou 'Páginas da Vida'?",
+      "alternativas": ["Chitãozinho e Xororó", "Zezé Di Camargo e Luciano", "Leandro e Leonardo", "Bruno e Marrone"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual cantor é conhecido por 'Apelido Carinhoso'?",
+      "alternativas": ["Luan Santana", "Gusttavo Lima", "Michel Teló", "Gustavo Mioto"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual dupla é conhecida por 'Saudade de Minha Terra'?",
+      "alternativas": ["Chitãozinho e Xororó", "Milionário e José Rico", "Tonico e Tinoco", "Tião Carreiro e Pardinho"],
+      "correta": 0
+    }
+  ]
+}

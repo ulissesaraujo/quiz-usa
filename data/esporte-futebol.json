@@ -1,0 +1,255 @@
+{
+  "tema": "futebol",
+  "perguntas": [
+    {
+      "enunciado": "Qual jogador é o maior artilheiro da história do futebol?",
+      "alternativas": ["Pelé", "Cristiano Ronaldo", "Lionel Messi", "Romário"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual clube espanhol é conhecido como 'Merengues'?",
+      "alternativas": ["Barcelona", "Atlético de Madrid", "Real Madrid", "Sevilla"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador brasileiro ganhou 3 Bolas de Ouro?",
+      "alternativas": ["Pelé", "Ronaldo", "Ronaldinho", "Nenhum brasileiro ganhou 3"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual é o maior clássico do futebol espanhol?",
+      "alternativas": ["Real Madrid x Atlético", "Barcelona x Espanyol", "Real Madrid x Barcelona", "Sevilla x Betis"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'O Bruxo'?",
+      "alternativas": ["Zidane", "Ronaldinho", "Rivaldo", "Kaká"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual clube inglês é conhecido como 'The Reds'?",
+      "alternativas": ["Manchester United", "Arsenal", "Liverpool", "Todos os anteriores"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador marcou o gol mais rápido em Copas do Mundo?",
+      "alternativas": ["Ronaldo", "Hakan Şükür", "Miroslav Klose", "Pelé"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a liga de futebol mais rica do mundo?",
+      "alternativas": ["La Liga", "Serie A", "Premier League", "Bundesliga"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual goleiro é o maior artilheiro de gols no futebol?",
+      "alternativas": ["Rogério Ceni", "Chilavert", "Higuita", "Neuer"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual clube tem mais Champions League?",
+      "alternativas": ["Milan", "Barcelona", "Real Madrid", "Liverpool"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'La Pulga'?",
+      "alternativas": ["Maradona", "Messi", "Di María", "Agüero"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual seleção é conhecida como 'Les Bleus'?",
+      "alternativas": ["Itália", "Portugal", "França", "Bélgica"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador brasileiro jogou mais tempo no Barcelona?",
+      "alternativas": ["Ronaldinho", "Neymar", "Rivaldo", "Dani Alves"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual é o estádio do Manchester United?",
+      "alternativas": ["Anfield", "Stamford Bridge", "Old Trafford", "Emirates"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'Il Fenomeno' na Itália?",
+      "alternativas": ["Ronaldinho", "Ronaldo", "Kaká", "Adriano"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual clube alemão tem mais Bundesligas?",
+      "alternativas": ["Borussia Dortmund", "Bayern de Munique", "Schalke 04", "Werder Bremen"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador marcou de 'mão de Deus'?",
+      "alternativas": ["Pelé", "Maradona", "Messi", "Zidane"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a punição máxima no futebol?",
+      "alternativas": ["Cartão amarelo", "Cartão vermelho", "Pênalti", "Expulsão"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'CR7'?",
+      "alternativas": ["Carlos Roberto", "Cristiano Ronaldo", "Clarence Rodrigues", "Christian Rodríguez"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual clube é conhecido como 'A Velha Senhora'?",
+      "alternativas": ["Milan", "Inter", "Roma", "Juventus"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual técnico ganhou mais Champions League?",
+      "alternativas": ["Guardiola", "Mourinho", "Ferguson", "Ancelotti"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual jogador tem mais gols em uma única temporada europeia?",
+      "alternativas": ["Cristiano Ronaldo", "Lionel Messi", "Robert Lewandowski", "Gerd Müller"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o maior clássico do futebol italiano?",
+      "alternativas": ["Juventus x Inter", "Milan x Inter", "Roma x Lazio", "Juventus x Milan"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'Ibra'?",
+      "alternativas": ["Ibrahimovic", "Ibrahim", "Ibarra", "Ibson"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual seleção é conhecida como 'Azzurra'?",
+      "alternativas": ["Argentina", "Uruguai", "Itália", "França"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador brasileiro foi eleito melhor do mundo em 2007?",
+      "alternativas": ["Ronaldinho", "Kaká", "Ronaldo", "Adriano"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do troféu da Champions League?",
+      "alternativas": ["Taça UEFA", "Taça das Taças", "Orelhuda", "Copa dos Campeões"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'The Special One'?",
+      "alternativas": ["Guardiola", "Mourinho", "Ancelotti", "Ferguson"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual seleção ganhou a primeira Eurocopa?",
+      "alternativas": ["Alemanha", "Itália", "União Soviética", "Espanha"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o maior artilheiro da história da Premier League?",
+      "alternativas": ["Wayne Rooney", "Alan Shearer", "Thierry Henry", "Harry Kane"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'El Niño'?",
+      "alternativas": ["David Villa", "Fernando Torres", "Raúl", "Iniesta"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual clube é conhecido como 'Os Diabos Vermelhos'?",
+      "alternativas": ["Liverpool", "Arsenal", "Manchester United", "Chelsea"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador tem mais assistências na história do futebol?",
+      "alternativas": ["Xavi", "Messi", "Iniesta", "Thomas Müller"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o estádio do Barcelona?",
+      "alternativas": ["Santiago Bernabéu", "Camp Nou", "Wanda Metropolitano", "Mestalla"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'The Egyptian King'?",
+      "alternativas": ["Salah", "Mané", "Firmino", "Elneny"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual clube é conhecido como 'The Gunners'?",
+      "alternativas": ["Chelsea", "Arsenal", "Tottenham", "West Ham"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador brasileiro nunca ganhou Bola de Ouro?",
+      "alternativas": ["Ronaldo", "Ronaldinho", "Kaká", "Neymar"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual técnico é conhecido como 'The Professor'?",
+      "alternativas": ["Guardiola", "Wenger", "Klopp", "Ancelotti"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o maior artilheiro da história do Real Madrid?",
+      "alternativas": ["Raúl", "Di Stéfano", "Cristiano Ronaldo", "Benzema"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'Kun'?",
+      "alternativas": ["Agüero", "Messi", "Di María", "Higuaín"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual seleção é conhecida como 'Oranje'?",
+      "alternativas": ["Bélgica", "Holanda", "Alemanha", "Dinamarca"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador marcou o gol 'do século' em 1986?",
+      "alternativas": ["Pelé", "Maradona", "Platini", "Zico"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual clube inglês é conhecido como 'The Blues'?",
+      "alternativas": ["Manchester City", "Chelsea", "Everton", "Todos os anteriores"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual jogador é conhecido como 'El Pibe de Oro'?",
+      "alternativas": ["Messi", "Maradona", "Riquelme", "Tévez"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a maior goleada da história das Copas?",
+      "alternativas": ["Brasil 7x1 Alemanha", "Hungria 10x1 El Salvador", "Alemanha 8x0 Arábia Saudita", "Hungria 9x0 Coreia do Sul"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é o maior artilheiro da história da Espanha?",
+      "alternativas": ["Raúl", "David Villa", "Fernando Torres", "Morata"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual clube é conhecido como 'I Rossoneri'?",
+      "alternativas": ["Roma", "Inter", "Milan", "Juventus"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual jogador é conhecido por sua 'trivela'?",
+      "alternativas": ["Ronaldinho", "Quaresma", "Neymar", "Robinho"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual técnico é conhecido como 'Pep'?",
+      "alternativas": ["Mourinho", "Guardiola", "Klopp", "Ancelotti"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual jogador é o maior artilheiro da história da Argentina?",
+      "alternativas": ["Maradona", "Batistuta", "Messi", "Agüero"],
+      "correta": 2
+    }
+  ]
+}

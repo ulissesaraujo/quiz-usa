@@ -1,0 +1,255 @@
+{
+  "tema": "musica-rock",
+  "perguntas": [
+    {
+      "enunciado": "Qual banda é conhecida como 'Os Reis do Rock'?",
+      "alternativas": ["The Beatles", "Led Zeppelin", "Queen", "The Rolling Stones"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi a primeira banda de rock a tocar no Rock in Rio?",
+      "alternativas": ["Iron Maiden", "Queen", "AC/DC", "Whitesnake"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual vocalista do Nirvana faleceu em 1994?",
+      "alternativas": ["Eddie Vedder", "Kurt Cobain", "Chris Cornell", "Layne Staley"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música do Queen se tornou um hino em estádios de futebol?",
+      "alternativas": ["Bohemian Rhapsody", "We Will Rock You", "Radio Ga Ga", "Somebody to Love"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual guitarra é mais associada ao rock clássico?",
+      "alternativas": ["Fender Stratocaster", "Gibson Les Paul", "PRS Custom", "Ibanez RG"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda lançou o álbum 'The Dark Side of the Moon'?",
+      "alternativas": ["Led Zeppelin", "Pink Floyd", "Deep Purple", "Black Sabbath"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o primeiro álbum dos Beatles?",
+      "alternativas": ["Abbey Road", "Please Please Me", "Rubber Soul", "Help!"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual guitarrista é conhecido como 'Slowhand'?",
+      "alternativas": ["Jimi Hendrix", "Eric Clapton", "Jimmy Page", "Keith Richards"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda é conhecida pelo mascote 'Eddie'?",
+      "alternativas": ["Metallica", "Megadeth", "Iron Maiden", "Slayer"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música do Guns N' Roses tem mais de 8 minutos?",
+      "alternativas": ["Welcome to the Jungle", "Sweet Child O' Mine", "November Rain", "Paradise City"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual banda lançou 'Stairway to Heaven'?",
+      "alternativas": ["Deep Purple", "Black Sabbath", "Led Zeppelin", "The Who"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual vocalista do The Doors morreu em Paris em 1971?",
+      "alternativas": ["Janis Joplin", "Jim Morrison", "Jimi Hendrix", "Brian Jones"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda é considerada pioneira do heavy metal?",
+      "alternativas": ["Led Zeppelin", "Deep Purple", "Black Sabbath", "Judas Priest"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi o último álbum de estúdio dos Beatles?",
+      "alternativas": ["Abbey Road", "Let It Be", "The White Album", "Sgt. Pepper's"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual guitarrista é famoso por tocar com os dentes?",
+      "alternativas": ["Eddie Van Halen", "Jimi Hendrix", "Slash", "Angus Young"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda lançou 'Back in Black'?",
+      "alternativas": ["Metallica", "AC/DC", "Motörhead", "Kiss"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do vocalista do Aerosmith?",
+      "alternativas": ["Steven Tyler", "David Lee Roth", "Robert Plant", "Axl Rose"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual banda grunge de Seattle lançou 'Ten' em 1991?",
+      "alternativas": ["Nirvana", "Soundgarden", "Pearl Jam", "Alice in Chains"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música do U2 é um hino contra a violência?",
+      "alternativas": ["One", "Sunday Bloody Sunday", "With or Without You", "Beautiful Day"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda britânica lançou '(What's the Story) Morning Glory?'",
+      "alternativas": ["Blur", "Oasis", "Radiohead", "Pulp"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o festival de rock mais famoso de 1969?",
+      "alternativas": ["Monterey Pop", "Woodstock", "Isle of Wight", "Altamont"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda lançou 'Smells Like Teen Spirit'?",
+      "alternativas": ["Pearl Jam", "Soundgarden", "Nirvana", "Stone Temple Pilots"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nome verdadeiro de Bono do U2?",
+      "alternativas": ["David Evans", "Paul Hewson", "Adam Clayton", "Larry Mullen"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda é conhecida pelo símbolo de quatro runas?",
+      "alternativas": ["Black Sabbath", "Led Zeppelin", "Deep Purple", "Yes"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual guitarrista fundou os Rolling Stones com Mick Jagger?",
+      "alternativas": ["Ron Wood", "Bill Wyman", "Keith Richards", "Brian Jones"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual álbum do Metallica é conhecido como 'The Black Album'?",
+      "alternativas": ["Master of Puppets", "...And Justice for All", "Metallica", "Load"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual banda lançou 'Paranoid' em 1970?",
+      "alternativas": ["Led Zeppelin", "Deep Purple", "Black Sabbath", "Uriah Heep"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual vocalista substituiu Bon Scott no AC/DC?",
+      "alternativas": ["Brian Johnson", "Dave Evans", "Axl Rose", "Phil Rudd"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual banda lançou 'The Wall'?",
+      "alternativas": ["Genesis", "Yes", "Pink Floyd", "King Crimson"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual guitarra Angus Young do AC/DC é famoso por tocar?",
+      "alternativas": ["Fender Telecaster", "Gibson SG", "Gibson Les Paul", "Flying V"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda lançou 'Hotel California'?",
+      "alternativas": ["Fleetwood Mac", "Eagles", "Doobie Brothers", "Lynyrd Skynyrd"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual baterista do Led Zeppelin é considerado um dos maiores?",
+      "alternativas": ["Keith Moon", "John Bonham", "Neil Peart", "Ginger Baker"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda é conhecida pela música 'Smoke on the Water'?",
+      "alternativas": ["Led Zeppelin", "Black Sabbath", "Deep Purple", "Rainbow"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual guitarrista criou a técnica de 'tapping' moderna?",
+      "alternativas": ["Jimi Hendrix", "Eddie Van Halen", "Steve Vai", "Joe Satriani"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda lançou 'Appetite for Destruction'?",
+      "alternativas": ["Mötley Crüe", "Guns N' Roses", "Def Leppard", "Bon Jovi"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual vocalista do Queen era conhecido por sua extensão vocal?",
+      "alternativas": ["Roger Taylor", "Brian May", "Freddie Mercury", "John Deacon"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual banda lançou 'Nevermind' em 1991?",
+      "alternativas": ["Pearl Jam", "Nirvana", "Alice in Chains", "Soundgarden"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do baixista dos Red Hot Chili Peppers?",
+      "alternativas": ["Chad Smith", "John Frusciante", "Flea", "Anthony Kiedis"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual banda lançou 'Hysteria' em 1987?",
+      "alternativas": ["Bon Jovi", "Def Leppard", "Whitesnake", "Poison"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o primeiro supergrupo do rock?",
+      "alternativas": ["Cream", "Led Zeppelin", "Blind Faith", "Emerson, Lake & Palmer"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual banda é conhecida por 'Livin' on a Prayer'?",
+      "alternativas": ["Def Leppard", "Bon Jovi", "Journey", "Foreigner"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual álbum é considerado o primeiro de heavy metal da história?",
+      "alternativas": ["Led Zeppelin I", "Black Sabbath", "Deep Purple in Rock", "In Rock"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o último show dos Beatles?",
+      "alternativas": ["Shea Stadium", "Rooftop Concert", "Hollywood Bowl", "Candlestick Park"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual banda lançou 'OK Computer'?",
+      "alternativas": ["Blur", "Oasis", "Radiohead", "Coldplay"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual guitarrista do Guns N' Roses usa cartola?",
+      "alternativas": ["Duff McKagan", "Izzy Stradlin", "Slash", "Gilby Clarke"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual banda lançou 'Master of Puppets'?",
+      "alternativas": ["Megadeth", "Metallica", "Slayer", "Anthrax"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a nacionalidade da banda AC/DC?",
+      "alternativas": ["Britânica", "Americana", "Australiana", "Canadense"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual banda lançou 'American Idiot'?",
+      "alternativas": ["Blink-182", "Green Day", "The Offspring", "Sum 41"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o álbum mais vendido do Pink Floyd?",
+      "alternativas": ["The Wall", "The Dark Side of the Moon", "Wish You Were Here", "Animals"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual vocalista do Soundgarden faleceu em 2017?",
+      "alternativas": ["Layne Staley", "Scott Weiland", "Chris Cornell", "Kurt Cobain"],
+      "correta": 2
+    }
+  ]
+}

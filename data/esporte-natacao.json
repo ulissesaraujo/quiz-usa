@@ -1,0 +1,155 @@
+{
+  "tema": "natacao",
+  "perguntas": [
+    {
+      "enunciado": "Qual nadador é o mais premiado da história olímpica?",
+      "alternativas": ["Ian Thorpe", "Michael Phelps", "Ryan Lochte", "Mark Spitz"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas medalhas de ouro Michael Phelps conquistou em Olimpíadas?",
+      "alternativas": ["18", "21", "23", "25"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nado mais rápido na natação?",
+      "alternativas": ["Costas", "Peito", "Borboleta", "Crawl"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Quantos metros tem uma piscina olímpica?",
+      "alternativas": ["25m", "50m", "75m", "100m"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual nadador brasileiro é conhecido como 'César Cielo'?",
+      "alternativas": ["Gustavo Borges", "Fernando Scherer", "César Cielo", "Nicholas Santos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o nado onde se começa dentro da água?",
+      "alternativas": ["Crawl", "Costas", "Peito", "Borboleta"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas pistas tem uma piscina olímpica?",
+      "alternativas": ["6", "8", "10", "12"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual nadadora americana é a mais vitoriosa da história?",
+      "alternativas": ["Missy Franklin", "Katie Ledecky", "Natalie Coughlin", "Dara Torres"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é o 'medley' na natação?",
+      "alternativas": ["Nado muito rápido", "Revezamento dos 4 nados", "Nado sincronizado", "Nado de fundo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual nadador australiano é conhecido como 'Thorpedo'?",
+      "alternativas": ["Grant Hackett", "Ian Thorpe", "Kieren Perkins", "James Magnussen"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a ordem dos nados no medley individual?",
+      "alternativas": ["Crawl, costas, peito, borboleta", "Borboleta, costas, peito, crawl", "Costas, peito, borboleta, crawl", "Peito, borboleta, costas, crawl"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual nadador brasileiro ganhou ouro nos 50m livre em 2008?",
+      "alternativas": ["Gustavo Borges", "Fernando Scherer", "César Cielo", "Nicholas Santos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é a prova mais longa da natação em piscina?",
+      "alternativas": ["800m livre", "1500m livre", "1000m livre", "400m medley"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual nadadora húngara é uma das maiores da história?",
+      "alternativas": ["Katinka Hosszú", "Kristina Egerszegi", "Ágnes Kovács", "Éva Székely"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é uma 'saída de golfinho' na natação?",
+      "alternativas": ["Saída do bloco", "Mergulho após virada", "Ondulações subaquáticas", "Saída na água"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual país domina a natação masculina nas Olimpíadas?",
+      "alternativas": ["Austrália", "China", "Estados Unidos", "Rússia"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é a distância da maratona aquática?",
+      "alternativas": ["5km", "10km", "15km", "20km"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual nadador americano é conhecido por quebrar recordes de Phelps?",
+      "alternativas": ["Ryan Lochte", "Nathan Adrian", "Caeleb Dressel", "Matt Grevers"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que acontece se um nadador fizer queimada de largada?",
+      "alternativas": ["Advertência", "Desclassificação", "Volta ao bloco", "Penalidade de tempo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual nadadora brasileira é conhecida como 'Poliana Okimoto'?",
+      "alternativas": ["Ana Marcela", "Poliana Okimoto", "Joanna Maranhão", "Etiene Medeiros"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nado mais lento na competição?",
+      "alternativas": ["Crawl", "Costas", "Peito", "Borboleta"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual nadador detém o recorde mundial dos 100m livre?",
+      "alternativas": ["Michael Phelps", "César Cielo", "Caeleb Dressel", "Pan Zhanle"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual nadadora é a maior medalhista olímpica do Brasil?",
+      "alternativas": ["Joanna Maranhão", "Ana Marcela Cunha", "Poliana Okimoto", "Fabíola Molina"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos nadadores participam de um revezamento?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a temperatura ideal da água para competições?",
+      "alternativas": ["20-22°C", "25-28°C", "30-32°C", "18-20°C"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual nadador brasileiro foi campeão mundial em 2015?",
+      "alternativas": ["César Cielo", "Bruno Fratus", "Nicholas Santos", "Felipe França"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é 'nado sincronizado' atualmente chamado?",
+      "alternativas": ["Nado artístico", "Nado rítmico", "Nado acrobático", "Nado de ballet"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual nadador tem o apelido de 'Xuxa'?",
+      "alternativas": ["Gustavo Borges", "Fernando Scherer", "César Cielo", "Thiago Pereira"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a prova de natação mais curta em piscina olímpica?",
+      "alternativas": ["25m", "50m", "100m", "200m"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual país é a maior potência na natação feminina?",
+      "alternativas": ["China", "Austrália", "Estados Unidos", "Holanda"],
+      "correta": 2
+    }
+  ]
+}
