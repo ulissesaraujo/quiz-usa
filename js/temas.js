@@ -92,17 +92,16 @@ export class TemasManager {
                 this.subtemasSelecionados.add(temaId);
             }
             
-            // Verifica se todos os subtemas do tema pai estão selecionados
+            // Remove o tema pai da seleção se estiver (usuário quer só subtemas específicos)
             const temaPai = this._encontrarTemaPai(temaId);
-            if (temaPai) {
-                const todosSubtemasSelecionados = temaPai.subtemas.every(s => 
-                    this.subtemasSelecionados.has(s.id)
-                );
-                if (todosSubtemasSelecionados) {
-                    // Se todos subtemas selecionados, seleciona o tema pai e limpa subtemas
-                    this.temasSelecionados.add(temaPai.id);
-                    temaPai.subtemas.forEach(s => this.subtemasSelecionados.delete(s.id));
-                }
+            if (temaPai && this.temasSelecionados.has(temaPai.id)) {
+                this.temasSelecionados.delete(temaPai.id);
+                // Adiciona os outros subtemas que estavam implicitamente selecionados
+                temaPai.subtemas.forEach(s => {
+                    if (s.id !== temaId) {
+                        this.subtemasSelecionados.add(s.id);
+                    }
+                });
             }
         } else {
             // Gerencia tema principal
