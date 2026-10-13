@@ -855,25 +855,32 @@
                         const dados = JSON.parse(texto);
                         
                         let perguntasDoArquivo = [];
+                        let temaDoArquivo = null;
                         
                         // Suporta diferentes formatos
                         if (Array.isArray(dados)) {
                             perguntasDoArquivo = dados;
                         } else if (dados.perguntas && Array.isArray(dados.perguntas)) {
                             perguntasDoArquivo = dados.perguntas;
+                            temaDoArquivo = dados.tema || null; // Pega o tema do nível do arquivo
                         } else {
                             console.warn(`Arquivo ${file.name}: formato inválido`);
                             totalErros++;
                             continue;
                         }
 
-                        // Valida estrutura
-                        const perguntasValidas = perguntasDoArquivo.filter(p => 
-                            p.tema && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
-                        );
+                        // Valida estrutura (permite herdar tema do arquivo)
+                        const perguntasValidas = perguntasDoArquivo
+                            .map(p => ({
+                                ...p,
+                                tema: p.tema || temaDoArquivo // Herda tema do arquivo se não tiver
+                            }))
+                            .filter(p => 
+                                p.tema && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
+                            );
 
                         todasPerguntas.push(...perguntasValidas);
-                        console.log(`Arquivo ${file.name}: ${perguntasValidas.length} perguntas válidas`);
+                        console.log(`Arquivo ${file.name}: ${perguntasValidas.length} perguntas válidas (tema: ${temaDoArquivo || 'individual'})`);
                         
                     } catch (err) {
                         console.error(`Erro no arquivo ${file.name}:`, err);
