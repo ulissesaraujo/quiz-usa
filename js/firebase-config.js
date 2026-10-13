@@ -781,18 +781,17 @@ export async function excluirTodasPartidas() {
         throw new Error('Firebase não disponível');
     }
     
-    const { collection, getDocs, deleteDoc, doc } = window._firestore;
-    const db = window._firestoreDb;
+    const { collection, getDocs, deleteDoc, doc, db } = window._firestore;
     
     try {
-        const resultadosRef = collection(db, 'resultados');
+        const resultadosRef = collection(db, 'quiz-results');
         const snapshot = await getDocs(resultadosRef);
         
         let count = 0;
         const deletePromises = [];
         
         snapshot.forEach((documento) => {
-            deletePromises.push(deleteDoc(doc(db, 'resultados', documento.id)));
+            deletePromises.push(deleteDoc(doc(db, 'quiz-results', documento.id)));
             count++;
         });
         
