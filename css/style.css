@@ -798,11 +798,12 @@ body {
 /* Feedback */
 .feedback-container {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: 20;
     text-align: center;
+    padding-top: 16px;
 }
 
 .feedback-container.oculto {
@@ -811,7 +812,7 @@ body {
 
 .feedback {
     background: var(--white);
-    padding: 32px 48px;
+    padding: 16px 32px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     animation: popIn 0.3s ease;
@@ -824,20 +825,20 @@ body {
 
 .feedback-icon {
     display: block;
-    font-size: 3rem;
-    margin-bottom: 8px;
+    font-size: 2rem;
+    margin-bottom: 4px;
 }
 
 .feedback-texto {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .feedback-pontos {
     display: block;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: var(--primary);
     font-weight: 600;
 }
