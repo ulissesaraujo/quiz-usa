@@ -508,7 +508,7 @@ body {
 
 /* Card de subtema */
 .subtema-card {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 8px 12px;
@@ -518,7 +518,7 @@ body {
     cursor: pointer;
     transition: var(--transition);
     font-size: 0.85rem;
-    min-width: 0; /* Permite que flex items encolham */
+    width: fit-content;
 }
 
 .subtema-card:hover {
