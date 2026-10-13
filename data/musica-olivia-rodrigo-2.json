@@ -1,0 +1,255 @@
+{
+  "tema": "musica-olivia-rodrigo",
+  "perguntas": [
+    {
+      "enunciado": "Qual música de Olivia Rodrigo tem a frase 'I'm so sick of 17'?",
+      "alternativas": ["Brutal", "Jealousy Jealousy", "Good 4 U", "All-American Bitch"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual instrumento aparece no início de 'Drivers License'?",
+      "alternativas": ["Guitarra", "Bateria", "Piano", "Violino"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual era a idade de Olivia quando escreveu 'Drivers License'?",
+      "alternativas": ["16", "17", "18", "19"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música do álbum GUTS fala sobre uma garota que ela inveja?",
+      "alternativas": ["Vampire", "Lacy", "Ballad of a Homeschooled Girl", "Pretty Isn't Pretty"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual artista Olivia Rodrigo conheceu no BRIT Awards que a fez chorar?",
+      "alternativas": ["Adele", "Taylor Swift", "Billie Eilish", "Dua Lipa"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual é o nome da turnê de 2024 de Olivia Rodrigo?",
+      "alternativas": ["Sour Tour", "GUTS World Tour", "Vampire Tour", "Brutal Tour"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de SOUR usa interpolação de 'Cruel Summer' de Taylor Swift?",
+      "alternativas": ["Deja Vu", "1 Step Forward 3 Steps Back", "Good 4 U", "Brutal"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em qual clipe Olivia aparece destruindo um quarto?",
+      "alternativas": ["Drivers License", "Good 4 U", "Brutal", "Vampire"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música menciona 'Malibu' na letra?",
+      "alternativas": ["Traitor", "Deja Vu", "Drivers License", "Happier"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas semanas 'Drivers License' ficou no #1 da Billboard?",
+      "alternativas": ["6", "8", "10", "12"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual era o nome do personagem de Olivia em Bizaardvark?",
+      "alternativas": ["Paige", "Frankie", "Amelia", "Bernie"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música do GUTS critica padrões de beleza?",
+      "alternativas": ["All-American Bitch", "Pretty Isn't Pretty", "Lacy", "Teenage Dream"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual prêmio Olivia ganhou no Grammy 2022 como artista revelação?",
+      "alternativas": ["Best New Artist", "Song of the Year", "Album of the Year", "Record of the Year"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual frase inicia a música 'Traitor'?",
+      "alternativas": ["Brown guilty eyes", "You betrayed me", "I knew everything", "White lies"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Em qual rede social Olivia ficou famosa antes da música?",
+      "alternativas": ["YouTube", "TikTok", "Instagram", "Twitter"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música fala sobre querer ser amiga do ex?",
+      "alternativas": ["Happier", "Favorite Crime", "Hope Ur Ok", "Enough for You"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual banda de rock inspirou o som de 'Brutal'?",
+      "alternativas": ["Nirvana", "Green Day", "Paramore", "Blink-182"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Olivia menciona 'strawberry ice cream'?",
+      "alternativas": ["Drivers License", "Deja Vu", "Traitor", "Happier"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o single de lançamento do álbum GUTS?",
+      "alternativas": ["Bad Idea Right?", "Vampire", "Ballad of a Homeschooled Girl", "Get Him Back!"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cor predomina na capa do álbum GUTS?",
+      "alternativas": ["Roxo", "Rosa", "Vermelho", "Azul"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música fala sobre crescer em ambiente escolar diferente?",
+      "alternativas": ["Brutal", "Ballad of a Homeschooled Girl", "Teenage Dream", "All-American Bitch"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Olivia Rodrigo foi indicada a quantos Grammys em 2022?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música tem a frase 'And I'm not cool and I'm not smart'?",
+      "alternativas": ["Brutal", "Jealousy Jealousy", "Teenage Dream", "Pretty Isn't Pretty"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual versão especial do álbum SOUR foi lançada?",
+      "alternativas": ["SOUR (Deluxe)", "SOUR (Prom)", "SOUR (Live)", "SOUR (Acoustic)"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em qual programa de TV Olivia cantou 'Drivers License' ao vivo pela primeira vez?",
+      "alternativas": ["SNL", "The Tonight Show", "Good Morning America", "Ellen"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música de GUTS menciona fazer vodu com o ex?",
+      "alternativas": ["Vampire", "Get Him Back!", "Bad Idea Right?", "Love Is Embarrassing"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o sobrenome verdadeiro de Olivia?",
+      "alternativas": ["Rodriguez", "Rodrigo", "Rodrigues", "Rodrigez"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música é dedicada a amigos que passaram por dificuldades?",
+      "alternativas": ["Favorite Crime", "Enough for You", "Hope Ur Ok", "Traitor"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual foi a posição de 'Vampire' na estreia da Billboard?",
+      "alternativas": ["#1", "#2", "#3", "#5"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música menciona um carro Subaru?",
+      "alternativas": ["Drivers License", "Good 4 U", "Deja Vu", "Brutal"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual artista veterana elogiou Olivia publicamente por 'Drivers License'?",
+      "alternativas": ["Madonna", "Cher", "Taylor Swift", "Beyoncé"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual filme de terror inspirou o clipe de 'Good 4 U'?",
+      "alternativas": ["Carrie", "O Exorcista", "Jennifer's Body", "Prom Night"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantas faixas tem o álbum GUTS?",
+      "alternativas": ["10", "11", "12", "13"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música fala sobre voltar com o ex sendo uma má ideia?",
+      "alternativas": ["Vampire", "Bad Idea Right?", "Get Him Back!", "Lacy"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi a gravadora que assinou Olivia Rodrigo?",
+      "alternativas": ["Universal", "Sony", "Geffen Records", "Warner"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música tem a frase 'I'm a perfect all-American'?",
+      "alternativas": ["Brutal", "All-American Bitch", "Teenage Dream", "Making the Bed"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cor é associada à estética de 'Vampire'?",
+      "alternativas": ["Vermelho", "Preto", "Roxo", "Branco"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música do GUTS é mais acústica e introspectiva?",
+      "alternativas": ["Logical", "The Grudge", "Making the Bed", "Teenage Dream"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual programa da Disney+ apresentou o documentário 'Driving Home 2 U'?",
+      "alternativas": ["Disney+ Original", "Disney Music", "Disney Showcase", "Disney Live"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música fala sobre guardar rancor?",
+      "alternativas": ["Vampire", "The Grudge", "Lacy", "Logical"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual era a cor do vestido no clipe de 'Deja Vu'?",
+      "alternativas": ["Azul", "Verde", "Lilás", "Rosa"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música critica a cultura de celebridades e redes sociais?",
+      "alternativas": ["Brutal", "Jealousy Jealousy", "All-American Bitch", "Ballad of a Homeschooled Girl"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual versão de 'Drivers License' tem colaboração com outro artista?",
+      "alternativas": ["Não existe versão com colaboração", "Com Taylor Swift", "Com Conan Gray", "Com Joshua Bassett"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual prêmio MTV Olivia ganhou em 2021?",
+      "alternativas": ["Best New Artist", "Push Performance", "Song of the Year", "Todas as anteriores"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual música menciona 'readingerta'?",
+      "alternativas": ["Deja Vu", "Jealousy Jealousy", "1 Step Forward 3 Steps Back", "Happier"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual foi o primeiro videoclipe oficial de Olivia como artista solo?",
+      "alternativas": ["All I Want", "Drivers License", "Deja Vu", "Brutal"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de GUTS tem sonoridade mais punk rock?",
+      "alternativas": ["Vampire", "All-American Bitch", "Ballad of a Homeschooled Girl", "Get Him Back!"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista produziu a maioria das músicas de SOUR?",
+      "alternativas": ["Max Martin", "Dan Nigro", "Jack Antonoff", "Finneas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música fala sobre fazer a própria cama e ter que deitar nela?",
+      "alternativas": ["Logical", "Making the Bed", "The Grudge", "Pretty Isn't Pretty"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos anos Olivia tinha quando estreou em Bizaardvark?",
+      "alternativas": ["12", "13", "14", "15"],
+      "correta": 1
+    }
+  ]
+}

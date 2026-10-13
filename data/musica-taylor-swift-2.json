@@ -1,0 +1,255 @@
+{
+  "tema": "musica-taylor-swift",
+  "perguntas": [
+    {
+      "enunciado": "Qual música de Taylor Swift menciona um lenço deixado na casa da irmã do ex?",
+      "alternativas": ["Dear John", "All Too Well", "Last Kiss", "Back to December"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual álbum Taylor Swift lançou apenas 5 meses após Folklore?",
+      "alternativas": ["Midnights", "Evermore", "Lover", "Red (Taylor's Version)"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de 1989 foi escrita sobre Harry Styles?",
+      "alternativas": ["Style", "Out of the Woods", "I Knew You Were Trouble", "Todas as anteriores"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual é o nome do gato de Taylor inspirado em Grey's Anatomy?",
+      "alternativas": ["Olivia", "Meredith", "Benjamin", "Cristina"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música do Reputation tem a frase 'I did something bad'?",
+      "alternativas": ["Look What You Made Me Do", "I Did Something Bad", "Getaway Car", "End Game"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual artista fez dueto com Taylor em 'Bad Blood' remix?",
+      "alternativas": ["Nicki Minaj", "Kendrick Lamar", "Drake", "Eminem"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Folklore conta a história de um triângulo amoroso fictício?",
+      "alternativas": ["Cardigan", "August", "Betty", "Todas fazem parte da mesma história"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual cor é associada à era 'Lover'?",
+      "alternativas": ["Vermelho", "Preto", "Rosa pastel", "Azul"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música Taylor escreveu aos 12 anos que está em seu primeiro álbum?",
+      "alternativas": ["Tim McGraw", "Our Song", "Lucky You", "The Outside"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual é o nome completo de Taylor Swift?",
+      "alternativas": ["Taylor Alison Swift", "Taylor Marie Swift", "Taylor Anne Swift", "Taylor Rose Swift"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música do Midnights fala sobre karma positivo?",
+      "alternativas": ["Vigilante Shit", "Karma", "Bejeweled", "Mastermind"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi a polêmica do VMA 2009 envolvendo Taylor Swift?",
+      "alternativas": ["Tropeço no palco", "Kanye West interrompeu seu discurso", "Vestido rasgou", "Esqueceu a letra"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Taylor menciona a 'cor do outono'?",
+      "alternativas": ["August", "All Too Well", "Red", "Cardigan"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quantos minutos tem a versão completa de 'All Too Well'?",
+      "alternativas": ["8 minutos", "10 minutos", "12 minutos", "15 minutos"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual diretor fez o curta-metragem de 'All Too Well'?",
+      "alternativas": ["Taylor Swift", "Blake Lively", "Joe Alwyn", "Justin Baldoni"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música de Speak Now Taylor escreveu sobre John Mayer?",
+      "alternativas": ["Dear John", "Last Kiss", "Enchanted", "Back to December"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual era o namorado de Taylor durante a era 1989?",
+      "alternativas": ["Joe Jonas", "Jake Gyllenhaal", "Calvin Harris", "Tom Hiddleston"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música Taylor dedicou a Selena Gomez?",
+      "alternativas": ["Bad Blood", "Long Live", "22", "Shake It Off"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o primeiro álbum 'Taylor's Version' lançado?",
+      "alternativas": ["Red", "Fearless", "Speak Now", "1989"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música do Reputation Taylor escreveu sobre seu relacionamento com Joe Alwyn?",
+      "alternativas": ["Gorgeous", "Call It What You Want", "Delicate", "Todas as anteriores"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual ator interpretou o ex-namorado no curta de 'All Too Well'?",
+      "alternativas": ["Dylan O'Brien", "Jake Gyllenhaal", "Dylan Sprouse", "Nenhum dos anteriores"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música de Evermore foi escrita com Bon Iver?",
+      "alternativas": ["Willow", "Evermore", "Champagne Problems", "Ivy"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantas músicas do 'The Tortured Poets Department' Taylor lançou em 2024?",
+      "alternativas": ["16", "31", "22", "18"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a música mais longa de Taylor Swift?",
+      "alternativas": ["All Too Well (10 Minute Version)", "Dear John", "Last Kiss", "Enchanted"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música Taylor escreveu para a trilha de 'Crepúsculo'?",
+      "alternativas": ["Eyes Open", "Safe & Sound", "Today Was a Fairytale", "Love Story"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Em qual cidade Taylor Swift nasceu?",
+      "alternativas": ["Nashville", "West Reading", "Philadelphia", "Los Angeles"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Lover foi o single principal?",
+      "alternativas": ["Lover", "ME!", "You Need to Calm Down", "The Archer"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual empresa comprou os masters originais de Taylor sem seu consentimento?",
+      "alternativas": ["Universal", "Big Machine Records", "Shamrock Holdings", "Scooter Braun"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual música de Folklore foi indicada ao Grammy de Música do Ano?",
+      "alternativas": ["Exile", "Cardigan", "August", "The 1"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual instrumento Taylor aprendeu primeiro?",
+      "alternativas": ["Piano", "Violão", "Banjo", "Ukulele"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de 1989 menciona 'polaroids'?",
+      "alternativas": ["Style", "Wildest Dreams", "Out of the Woods", "Blank Space"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista fez dueto com Taylor em 'Exile'?",
+      "alternativas": ["Ed Sheeran", "Bon Iver", "The National", "HAIM"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cor Taylor usa frequentemente como símbolo de boa sorte?",
+      "alternativas": ["Vermelho", "Azul", "Roxo", "Dourado"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual álbum ganhou o Grammy de Álbum do Ano em 2024?",
+      "alternativas": ["Midnights", "Evermore", "Folklore", "1989 (Taylor's Version)"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música de Red fala sobre guardar o cachecol do ex?",
+      "alternativas": ["Red", "State of Grace", "All Too Well", "Begin Again"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual produtora Taylor mais trabalhou em Midnights?",
+      "alternativas": ["Max Martin", "Jack Antonoff", "Aaron Dessner", "Joel Little"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos anos Taylor tinha quando assinou seu primeiro contrato?",
+      "alternativas": ["13", "14", "15", "16"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música menciona 'midnight rain'?",
+      "alternativas": ["Lavender Haze", "Midnight Rain", "Anti-Hero", "Maroon"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi a surpresa do álbum Midnights lançado às 3h da manhã?",
+      "alternativas": ["Versão acústica", "7 faixas extras (3am Edition)", "Colaboração secreta", "Videoclipe surpresa"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Speak Now foi escrita para Taylor Lautner?",
+      "alternativas": ["Dear John", "Back to December", "Last Kiss", "Enchanted"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o sobrenome do namorado de longa data de Taylor até 2023?",
+      "alternativas": ["Harris", "Hiddleston", "Alwyn", "Healy"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de 1989 Taylor regravou primeiro?",
+      "alternativas": ["Shake It Off", "Blank Space", "Wildest Dreams", "Style"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual filme Taylor Swift atuou em 2019?",
+      "alternativas": ["O Rei Leão", "Cats", "Amizade Colorida", "Aves de Rapina"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música fala sobre o número 22?",
+      "alternativas": ["15", "22", "Fifteen", "We Are Never Getting Back Together"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual álbum Taylor Swift escreveu completamente sozinha?",
+      "alternativas": ["Fearless", "Speak Now", "Red", "1989"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual era o apelido do grupo de amigas de Taylor?",
+      "alternativas": ["Squad", "Swifties", "Girl Gang", "Taylor's Angels"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música de Lover celebra o orgulho LGBTQ+?",
+      "alternativas": ["ME!", "You Need to Calm Down", "Lover", "Paper Rings"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual era a idade de Taylor quando se mudou para Nashville?",
+      "alternativas": ["12", "13", "14", "15"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Fearless fala sobre um conto de fadas?",
+      "alternativas": ["Fifteen", "Love Story", "You Belong With Me", "White Horse"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a frase final de 'Anti-Hero'?",
+      "alternativas": ["It's me, hi", "I'm the problem", "At tea time, everybody agrees", "I'll stare directly at the sun"],
+      "correta": 2
+    }
+  ]
+}

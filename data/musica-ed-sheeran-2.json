@@ -1,0 +1,250 @@
+{
+  "tema": "musica-ed-sheeran",
+  "perguntas": [
+    {
+      "enunciado": "Qual música de Ed Sheeran foi inspirada em sua avó?",
+      "alternativas": ["Photograph", "Supermarket Flowers", "Thinking Out Loud", "Castle on the Hill"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do irmão de Ed Sheeran que também é músico?",
+      "alternativas": ["Matthew Sheeran", "James Sheeran", "Tom Sheeran", "Não tem irmão músico"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual música Ed escreveu sobre bullying que sofreu na infância?",
+      "alternativas": ["The A Team", "Castle on the Hill", "Lego House", "Small Bump"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a tatuagem mais famosa de Ed Sheeran?",
+      "alternativas": ["Uma rosa", "Um leão", "Ketchup (pinguim)", "Uma guitarra"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que episódio de Game of Thrones Ed Sheeran apareceu?",
+      "alternativas": ["Temporada 5", "Temporada 6", "Temporada 7", "Temporada 8"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran foi acusada de plagiar Marvin Gaye?",
+      "alternativas": ["Shape of You", "Thinking Out Loud", "Perfect", "Photograph"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos álbuns de estúdio Ed Sheeran lançou até 2023?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual cidade irlandesa é mencionada em 'Galway Girl'?",
+      "alternativas": ["Dublin", "Cork", "Galway", "Limerick"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista latina colaborou com Ed em 'South of the Border'?",
+      "alternativas": ["Shakira", "Camila Cabello", "J Balvin", "Bad Bunny"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música Ed Sheeran escreveu para Justin Bieber que virou hit?",
+      "alternativas": ["Love Yourself", "Cold Water", "What Do You Mean", "Sorry"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual é o nome da segunda filha de Ed Sheeran?",
+      "alternativas": ["Lyra", "Jupiter", "Luna", "Iris"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual instrumento Ed Sheeran NÃO sabe tocar?",
+      "alternativas": ["Violão", "Piano", "Bateria", "Todos ele sabe tocar"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual música de Ed fala sobre uma pessoa em situação de rua?",
+      "alternativas": ["Small Bump", "The A Team", "Give Me Love", "Lego House"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual cantor de hip-hop é grande amigo de Ed Sheeran?",
+      "alternativas": ["Drake", "Eminem", "Stormzy", "Chance the Rapper"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música Ed Sheeran escreveu para a boyband One Direction?",
+      "alternativas": ["What Makes You Beautiful", "Story of My Life", "Moments/Little Things", "Best Song Ever"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que ano Ed Sheeran se casou com Cherry Seaborn?",
+      "alternativas": ["2017", "2018", "2019", "2020"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o símbolo matemático do quarto álbum de Ed Sheeran?",
+      "alternativas": ["+", "×", "÷", "="],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran menciona 'Van Morrison'?",
+      "alternativas": ["Castle on the Hill", "Galway Girl", "Shape of You", "Perfect"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o primeiro single do álbum '÷' (Divide)?",
+      "alternativas": ["Perfect", "Galway Girl", "Shape of You", "Castle on the Hill"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista fez dueto com Ed em 'River'?",
+      "alternativas": ["Beyoncé", "Eminem", "50 Cent", "Eminem e 50 Cent"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed fala sobre perder um bebê?",
+      "alternativas": ["The A Team", "Small Bump", "Supermarket Flowers", "Photograph"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual versão de 'Perfect' foi a mais tocada globalmente?",
+      "alternativas": ["Original", "Com Beyoncé", "Com Andrea Bocelli", "Com Anne-Marie"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual esporte Ed Sheeran é fã declarado?",
+      "alternativas": ["Críquete", "Futebol (Ipswich Town)", "Rugby", "Tênis"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música menciona 'I'm in love with the shape of you'?",
+      "alternativas": ["Perfect", "Thinking Out Loud", "Shape of You", "Photograph"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Em que cidade Ed Sheeran cresceu?",
+      "alternativas": ["Londres", "Halifax", "Framlingham", "Manchester"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual álbum tem a música 'Shivers'?",
+      "alternativas": ["÷", "No.6 Collaborations Project", "=", "-"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista sul-coreano colaborou com Ed em 'Make It Right'?",
+      "alternativas": ["BLACKPINK", "BTS", "EXO", "TWICE"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed Sheeran foi usada no filme 'O Teorema Katherine'?",
+      "alternativas": ["Give Me Love", "Kiss Me", "Lego House", "The A Team"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quantos Brit Awards Ed Sheeran ganhou na carreira?",
+      "alternativas": ["2", "4", "6", "8"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música Ed escreveu pensando em seu casamento?",
+      "alternativas": ["Thinking Out Loud", "Perfect", "Photograph", "Tenerife Sea"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é a cor do cabelo de Ed Sheeran?",
+      "alternativas": ["Loiro", "Castanho", "Ruivo", "Preto"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual rapper americano colaborou com Ed em '2step'?",
+      "alternativas": ["Drake", "Lil Wayne", "Lil Baby", "Travis Scott"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Ed fala sobre dançar no escuro?",
+      "alternativas": ["Thinking Out Loud", "Perfect", "Photograph", "Shape of You"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual foi a turnê mais lucrativa de Ed Sheeran?",
+      "alternativas": ["+ Tour", "× Tour", "÷ Tour", "= Tour"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música menciona 'In case you didn't know, baby, I'm crazy about you'?",
+      "alternativas": ["Perfect", "Thinking Out Loud", "Photograph", "How Would You Feel"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual é o gênero musical principal de Ed Sheeran?",
+      "alternativas": ["Rock", "Pop/Folk", "R&B", "Country"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música de Ed foi escrita para o filme 'Yesterday'?",
+      "alternativas": ["One Life", "Castle on the Hill", "Photograph", "Não escreveu para o filme"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual artista feminina colaborou com Ed em 'End Game'?",
+      "alternativas": ["Rihanna", "Beyoncé", "Taylor Swift", "Ariana Grande"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual escola de música Ed Sheeran frequentou em sua juventude?",
+      "alternativas": ["Julliard", "BRIT School", "Berklee", "Royal Academy"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música tem a frase 'When your legs don't work like they used to before'?",
+      "alternativas": ["Perfect", "Photograph", "Thinking Out Loud", "Castle on the Hill"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual é o álbum de Ed Sheeran que tem apenas colaborações?",
+      "alternativas": ["÷", "=", "No.6 Collaborations Project", "-"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual música de Ed menciona 'Three words, eight letters'?",
+      "alternativas": ["Perfect", "Happier", "How Would You Feel", "First Times"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o primeiro grande sucesso de Ed Sheeran no Reino Unido?",
+      "alternativas": ["Lego House", "The A Team", "Give Me Love", "Drunk"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual música Ed dedicou ao seu melhor amigo que faleceu?",
+      "alternativas": ["Afire Love", "Supermarket Flowers", "Visiting Hours", "The A Team"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual artista participou de 'Antisocial' com Ed Sheeran?",
+      "alternativas": ["Stormzy", "Travis Scott", "J Balvin", "Khalid"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual é o nome do pub que Ed Sheeran comprou em Londres?",
+      "alternativas": ["The Red Lion", "The Bertie Blossoms", "The Sheeran Arms", "The Castle"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual álbum contém a música 'Bloodstream'?",
+      "alternativas": ["+", "×", "÷", "="],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual foi o último álbum lançado na série de símbolos matemáticos?",
+      "alternativas": ["÷", "=", "-", "Subtract é o último"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual música de Ed fala sobre sair com alguém em um bar e acabar dançando?",
+      "alternativas": ["Shape of You", "Galway Girl", "Drunk", "Take It Back"],
+      "correta": 0
+    }
+  ]
+}
