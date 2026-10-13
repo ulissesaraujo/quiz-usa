@@ -670,8 +670,10 @@
         // Inicialização
         async function init() {
             await aguardarFirebase();
-            await carregarPerguntas();
             await carregarStats();
+            
+            // Mostra mensagem inicial em vez de carregar perguntas
+            perguntasLista.innerHTML = '<p style="text-align: center; color: #888; padding: 2rem;">Clique em "Atualizar" para carregar as perguntas.</p>';
             
             // Event listeners
             form.addEventListener('submit', handleSubmit);
