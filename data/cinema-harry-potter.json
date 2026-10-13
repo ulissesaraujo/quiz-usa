@@ -582,6 +582,24 @@
       "alternativas": ["Rony", "Gina", "Fred", "Jorge"],
       "correta": 2,
       "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quem matou Nagini na Batalha de Hogwarts?",
+      "alternativas": ["Harry Potter", "Rony Weasley", "Neville Longbottom", "Hermione Granger"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Com qual objeto Neville matou Nagini?",
+      "alternativas": ["Varinha", "Espada de Gryffindor", "Presa de basilisco", "Feitiço"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Com quem Harry Potter se casou?",
+      "alternativas": ["Hermione Granger", "Luna Lovegood", "Cho Chang", "Gina Weasley"],
+      "correta": 3,
+      "dificuldade": "facil"
     }
   ]
 }
