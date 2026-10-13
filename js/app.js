@@ -172,67 +172,165 @@ function renderizarTemas() {
     
     temas.forEach((tema, index) => {
         const selecionado = temasManager.temaSelecionado(tema.id);
+        const temSubtemas = tema.subtemas && tema.subtemas.length > 0;
+        const parcialmenteSelecionado = temasManager.temaParcialmenteSelecionado(tema.id);
+        
+        // Container do tema (com ou sem subtemas)
+        const temaContainer = document.createElement('div');
+        temaContainer.className = 'tema-container';
         
         const card = document.createElement('div');
-        card.className = `tema-card${selecionado ? ' selecionado' : ''}`;
+        card.className = `tema-card${selecionado ? ' selecionado' : ''}${parcialmenteSelecionado ? ' parcial' : ''}${temSubtemas ? ' tem-subtemas' : ''}`;
         card.dataset.temaId = tema.id;
         
         // Atributos de acessibilidade
         card.setAttribute('role', 'checkbox');
-        card.setAttribute('aria-checked', selecionado ? 'true' : 'false');
+        card.setAttribute('aria-checked', selecionado ? 'true' : (parcialmenteSelecionado ? 'mixed' : 'false'));
         card.setAttribute('aria-label', `${tema.nome}, ${tema.totalPerguntas || 0} perguntas${selecionado ? ', selecionado' : ''}`);
         card.setAttribute('tabindex', '0');
+        
+        // Indicador de subtemas
+        const expandirBtn = temSubtemas ? `<span class="tema-expandir" aria-hidden="true">▶</span>` : '';
         
         card.innerHTML = `
             <span class="tema-icone" aria-hidden="true">${tema.icone}</span>
             <h3 class="tema-nome">${tema.nome}</h3>
             <span class="tema-contador">${tema.totalPerguntas || 0} perguntas</span>
+            ${expandirBtn}
         `;
         
-        // Click handler
-        card.addEventListener('click', () => {
+        // Click handler para selecionar tema
+        card.addEventListener('click', (e) => {
+            // Se clicou no botão de expandir, não seleciona
+            if (e.target.classList.contains('tema-expandir')) {
+                toggleSubtemas(temaContainer);
+                return;
+            }
             temasManager.alternarTema(tema.id);
             atualizarUITemas();
         });
         
-        // Keyboard handler para ativar com Enter ou Space
+        // Keyboard handler
         card.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 temasManager.alternarTema(tema.id);
                 atualizarUITemas();
             }
+            // Seta direita expande subtemas
+            if (e.key === 'ArrowRight' && temSubtemas) {
+                e.preventDefault();
+                temaContainer.classList.add('expandido');
+            }
+            // Seta esquerda colapsa
+            if (e.key === 'ArrowLeft' && temSubtemas) {
+                e.preventDefault();
+                temaContainer.classList.remove('expandido');
+            }
         });
         
-        elementos.temasGrid.appendChild(card);
+        temaContainer.appendChild(card);
+        
+        // Renderiza subtemas se existirem
+        if (temSubtemas) {
+            const subtemasContainer = document.createElement('div');
+            subtemasContainer.className = 'subtemas-container';
+            
+            tema.subtemas.forEach(subtema => {
+                const subtemaCard = criarCardSubtema(subtema, tema.id);
+                subtemasContainer.appendChild(subtemaCard);
+            });
+            
+            temaContainer.appendChild(subtemasContainer);
+        }
+        
+        elementos.temasGrid.appendChild(temaContainer);
     });
     
     atualizarUITemas();
 }
 
+/**
+ * Cria um card de subtema
+ */
+function criarCardSubtema(subtema, temaPaiId) {
+    const selecionado = temasManager.temaSelecionado(subtema.id, true);
+    
+    const card = document.createElement('div');
+    card.className = `subtema-card${selecionado ? ' selecionado' : ''}`;
+    card.dataset.subtemaId = subtema.id;
+    card.dataset.temaPaiId = temaPaiId;
+    
+    card.setAttribute('role', 'checkbox');
+    card.setAttribute('aria-checked', selecionado ? 'true' : 'false');
+    card.setAttribute('aria-label', `${subtema.nome}, ${subtema.totalPerguntas || 0} perguntas${selecionado ? ', selecionado' : ''}`);
+    card.setAttribute('tabindex', '0');
+    
+    card.innerHTML = `
+        <span class="subtema-icone" aria-hidden="true">${subtema.icone}</span>
+        <span class="subtema-nome">${subtema.nome}</span>
+        <span class="subtema-contador">${subtema.totalPerguntas || 0}</span>
+    `;
+    
+    card.addEventListener('click', () => {
+        temasManager.alternarTema(subtema.id, true);
+        atualizarUITemas();
+    });
+    
+    card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            temasManager.alternarTema(subtema.id, true);
+            atualizarUITemas();
+        }
+    });
+    
+    return card;
+}
+
+/**
+ * Expande/colapsa subtemas de um tema
+ */
+function toggleSubtemas(temaContainer) {
+    temaContainer.classList.toggle('expandido');
+    const expandirBtn = temaContainer.querySelector('.tema-expandir');
+    if (expandirBtn) {
+        expandirBtn.textContent = temaContainer.classList.contains('expandido') ? '▼' : '▶';
+    }
+}
+
 function atualizarUITemas() {
     const temas = temasManager.obterTemas();
     const temasSelecionados = temasManager.obterTemasSelecionados();
-    const numSelecionados = temasSelecionados.length;
+    const numTemasPrincipais = temasManager.obterTemasPrincipaisSelecionados().length;
+    const numSubtemas = temasManager.subtemasSelecionados.size;
+    const numSelecionados = numTemasPrincipais + numSubtemas;
     const modoAleatorio = temasManager.isModoAleatorio();
     
-    // Atualiza cards de temas
+    // Atualiza cards de temas principais
     document.querySelectorAll('.tema-card').forEach(card => {
         const temaId = card.dataset.temaId;
         const selecionado = temasManager.temaSelecionado(temaId);
+        const parcialmenteSelecionado = temasManager.temaParcialmenteSelecionado(temaId);
         const tema = temas.find(t => t.id === temaId);
         
-        if (selecionado) {
-            card.classList.add('selecionado');
-        } else {
-            card.classList.remove('selecionado');
-        }
+        card.classList.toggle('selecionado', selecionado);
+        card.classList.toggle('parcial', parcialmenteSelecionado);
         
         // Atualiza ARIA
-        card.setAttribute('aria-checked', selecionado ? 'true' : 'false');
+        card.setAttribute('aria-checked', selecionado ? 'true' : (parcialmenteSelecionado ? 'mixed' : 'false'));
         if (tema) {
             card.setAttribute('aria-label', `${tema.nome}, ${tema.totalPerguntas || 0} perguntas${selecionado ? ', selecionado' : ''}`);
         }
+    });
+    
+    // Atualiza cards de subtemas
+    document.querySelectorAll('.subtema-card').forEach(card => {
+        const subtemaId = card.dataset.subtemaId;
+        const selecionado = temasManager.temaSelecionado(subtemaId, true);
+        
+        card.classList.toggle('selecionado', selecionado);
+        card.setAttribute('aria-checked', selecionado ? 'true' : 'false');
     });
     
     // Atualiza botão aleatório

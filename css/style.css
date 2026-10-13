@@ -410,6 +410,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 12px;
     margin-bottom: 24px;
+    align-items: start; /* Alinha items ao topo quando têm alturas diferentes */
 }
 
 /* Card de Tema */
@@ -451,6 +452,100 @@ body {
 .tema-contador {
     font-size: 0.75rem;
     color: var(--gray-500);
+}
+
+/* Container de tema (para acordeão) */
+.tema-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tema com subtemas */
+.tema-card.tem-subtemas {
+    position: relative;
+}
+
+.tema-card.tem-subtemas .tema-expandir {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 0.7rem;
+    color: var(--gray-400);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.tema-card.tem-subtemas .tema-expandir:hover {
+    color: var(--primary);
+}
+
+.tema-container.expandido .tema-expandir {
+    transform: rotate(90deg);
+}
+
+/* Estado parcialmente selecionado */
+.tema-card.parcial {
+    border-color: var(--warning);
+    background: rgba(245, 158, 11, 0.1);
+    border-style: dashed;
+}
+
+/* Container de subtemas */
+.subtemas-container {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 0 8px 16px;
+    margin-top: 4px;
+    border-left: 2px solid var(--gray-200);
+    margin-left: 16px;
+}
+
+.tema-container.expandido .subtemas-container {
+    display: flex;
+}
+
+/* Card de subtema */
+.subtema-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.85rem;
+}
+
+.subtema-card:hover {
+    border-color: var(--primary);
+    background: var(--gray-50);
+}
+
+.subtema-card.selecionado {
+    border-color: var(--primary);
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.subtema-icone {
+    font-size: 1.1rem;
+}
+
+.subtema-nome {
+    flex: 1;
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.subtema-contador {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+    background: var(--gray-100);
+    padding: 2px 6px;
+    border-radius: 10px;
 }
 
 /* Info de Seleção */

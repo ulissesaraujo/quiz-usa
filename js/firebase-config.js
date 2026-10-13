@@ -7,6 +7,7 @@ let firebaseDisponivel = false;
 let db = null;
 
 // Temas disponíveis no quiz (ordem alfabética)
+// Subtemas são opcionais - quando presentes, aparecem como acordeão
 export const TEMAS_DISPONIVEIS = [
     { id: 'arte', nome: 'Arte', icone: '🎨' },
     { id: 'ciencia', nome: 'Ciência', icone: '🔬' },
@@ -20,8 +21,16 @@ export const TEMAS_DISPONIVEIS = [
     { id: 'literatura', nome: 'Literatura', icone: '📚' },
     { id: 'mitos-verdades', nome: 'Mitos ou Verdades', icone: '🤔' },
     { id: 'games', nome: 'Mundo dos Games', icone: '🎮' },
-    { id: 'musica', nome: 'Música', icone: '🎵' },
-    { id: 'musica-pop', nome: 'Música Pop', icone: '🎤' },
+    { 
+        id: 'musica', 
+        nome: 'Música', 
+        icone: '🎵',
+        subtemas: [
+            { id: 'musica-pop', nome: 'Pop', icone: '🎤' },
+            { id: 'musica-rock', nome: 'Rock', icone: '🎸' },
+            { id: 'musica-sertanejo', nome: 'Sertanejo', icone: '🤠' }
+        ]
+    },
     { id: 'nostalgia', nome: 'Nostalgia', icone: '📼' },
     { id: 'z-testes', nome: 'Z-Testes', icone: '🧪' }
 ];
@@ -86,9 +95,23 @@ const firebasePromise = inicializarFirebase();
 /**
  * Busca todos os temas disponíveis
  * Retorna os temas estáticos + contagem de perguntas do Firebase
+ * Para temas com subtemas, soma a contagem de todos os subtemas
  */
 export async function buscarTemas() {
     await firebasePromise;
+    
+    // Função auxiliar para contar perguntas de um tema/subtema
+    async function contarPerguntas(temaId) {
+        if (!firebaseDisponivel || !window._firestore) return 0;
+        try {
+            const { collection, getDocs, query, where, db } = window._firestore;
+            const q = query(collection(db, "perguntas"), where("tema", "==", temaId));
+            const snapshot = await getDocs(q);
+            return snapshot.size;
+        } catch {
+            return 0;
+        }
+    }
     
     // Retorna temas estáticos com contagem se possível
     if (!firebaseDisponivel || !window._firestore) {
@@ -96,21 +119,29 @@ export async function buscarTemas() {
     }
     
     try {
-        const { collection, getDocs, query, where, db } = window._firestore;
-        
-        // Busca contagem de perguntas por tema
+        // Busca contagem de perguntas por tema (incluindo subtemas)
         const temasComContagem = await Promise.all(
             TEMAS_DISPONIVEIS.map(async (tema) => {
-                try {
-                    const q = query(
-                        collection(db, "perguntas"),
-                        where("tema", "==", tema.id)
+                // Conta perguntas do tema principal
+                let totalPerguntas = await contarPerguntas(tema.id);
+                
+                // Se tem subtemas, conta também e adiciona contagem a cada subtema
+                let subtemasComContagem = null;
+                if (tema.subtemas && tema.subtemas.length > 0) {
+                    subtemasComContagem = await Promise.all(
+                        tema.subtemas.map(async (subtema) => {
+                            const subCount = await contarPerguntas(subtema.id);
+                            totalPerguntas += subCount;
+                            return { ...subtema, totalPerguntas: subCount };
+                        })
                     );
-                    const snapshot = await getDocs(q);
-                    return { ...tema, totalPerguntas: snapshot.size };
-                } catch {
-                    return { ...tema, totalPerguntas: 0 };
                 }
+                
+                return { 
+                    ...tema, 
+                    totalPerguntas,
+                    subtemas: subtemasComContagem || tema.subtemas
+                };
             })
         );
         
@@ -122,10 +153,37 @@ export async function buscarTemas() {
 }
 
 /**
- * Busca informações de um tema específico
+ * Busca informações de um tema específico (incluindo subtemas)
  */
 export function buscarTemaPorId(temaId) {
-    return TEMAS_DISPONIVEIS.find(t => t.id === temaId) || null;
+    // Primeiro busca nos temas principais
+    const temaPrincipal = TEMAS_DISPONIVEIS.find(t => t.id === temaId);
+    if (temaPrincipal) return temaPrincipal;
+    
+    // Se não encontrou, busca nos subtemas
+    for (const tema of TEMAS_DISPONIVEIS) {
+        if (tema.subtemas) {
+            const subtema = tema.subtemas.find(s => s.id === temaId);
+            if (subtema) return { ...subtema, temaPai: tema.id };
+        }
+    }
+    
+    return null;
+}
+
+/**
+ * Retorna todos os IDs de temas relacionados (tema + subtemas)
+ * Útil para buscar perguntas quando um tema pai é selecionado
+ */
+export function obterTodosIdsTema(temaId) {
+    const tema = TEMAS_DISPONIVEIS.find(t => t.id === temaId);
+    if (!tema) return [temaId];
+    
+    const ids = [temaId];
+    if (tema.subtemas) {
+        tema.subtemas.forEach(s => ids.push(s.id));
+    }
+    return ids;
 }
 
 // ========================================

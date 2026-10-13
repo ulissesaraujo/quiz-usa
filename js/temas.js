@@ -7,7 +7,8 @@ import {
     buscarTemas, 
     buscarPerguntasPorTemas, 
     buscarPerguntasAleatorias,
-    buscarTemaPorId
+    buscarTemaPorId,
+    obterTodosIdsTema
 } from './firebase-config.js';
 
 /**
@@ -17,6 +18,7 @@ export class TemasManager {
     constructor() {
         this.temas = [];
         this.temasSelecionados = new Set();
+        this.subtemasSelecionados = new Set(); // Novo: subtemas selecionados individualmente
         this.modoAleatorio = false;
         this.carregando = false;
         
@@ -72,22 +74,67 @@ export class TemasManager {
     }
 
     /**
-     * Alterna a seleção de um tema
+     * Alterna a seleção de um tema (principal ou subtema)
      * @param {string} temaId - ID do tema
+     * @param {boolean} isSubtema - Se é um subtema
      */
-    alternarTema(temaId) {
+    alternarTema(temaId, isSubtema = false) {
         // Se estava em modo aleatório, desativa
         if (this.modoAleatorio) {
             this.modoAleatorio = false;
         }
         
-        if (this.temasSelecionados.has(temaId)) {
-            this.temasSelecionados.delete(temaId);
+        if (isSubtema) {
+            // Gerencia subtema
+            if (this.subtemasSelecionados.has(temaId)) {
+                this.subtemasSelecionados.delete(temaId);
+            } else {
+                this.subtemasSelecionados.add(temaId);
+            }
+            
+            // Verifica se todos os subtemas do tema pai estão selecionados
+            const temaPai = this._encontrarTemaPai(temaId);
+            if (temaPai) {
+                const todosSubtemasSelecionados = temaPai.subtemas.every(s => 
+                    this.subtemasSelecionados.has(s.id)
+                );
+                if (todosSubtemasSelecionados) {
+                    // Se todos subtemas selecionados, seleciona o tema pai e limpa subtemas
+                    this.temasSelecionados.add(temaPai.id);
+                    temaPai.subtemas.forEach(s => this.subtemasSelecionados.delete(s.id));
+                }
+            }
         } else {
-            this.temasSelecionados.add(temaId);
+            // Gerencia tema principal
+            if (this.temasSelecionados.has(temaId)) {
+                this.temasSelecionados.delete(temaId);
+                // Também remove subtemas desse tema se houver
+                const tema = this.obterTemaPorId(temaId);
+                if (tema && tema.subtemas) {
+                    tema.subtemas.forEach(s => this.subtemasSelecionados.delete(s.id));
+                }
+            } else {
+                this.temasSelecionados.add(temaId);
+                // Se tem subtemas, limpa seleção individual de subtemas
+                const tema = this.obterTemaPorId(temaId);
+                if (tema && tema.subtemas) {
+                    tema.subtemas.forEach(s => this.subtemasSelecionados.delete(s.id));
+                }
+            }
         }
         
         this.notificarSelecaoAlterada();
+    }
+
+    /**
+     * Encontra o tema pai de um subtema
+     * @param {string} subtemaId - ID do subtema
+     * @returns {Object|null}
+     */
+    _encontrarTemaPai(subtemaId) {
+        return this.temas.find(t => 
+            t.subtemas && t.subtemas.some(s => s.id === subtemaId)
+        );
     }
 
     /**
@@ -143,10 +190,33 @@ export class TemasManager {
     /**
      * Verifica se um tema está selecionado
      * @param {string} temaId - ID do tema
+     * @param {boolean} isSubtema - Se é um subtema
      * @returns {boolean}
      */
-    temaSelecionado(temaId) {
+    temaSelecionado(temaId, isSubtema = false) {
+        if (isSubtema) {
+            // Subtema está selecionado se está na lista OU se o tema pai está selecionado
+            if (this.subtemasSelecionados.has(temaId)) return true;
+            const temaPai = this._encontrarTemaPai(temaId);
+            return temaPai ? this.temasSelecionados.has(temaPai.id) : false;
+        }
         return this.temasSelecionados.has(temaId);
+    }
+
+    /**
+     * Verifica se um tema pai tem pelo menos um subtema selecionado (parcialmente selecionado)
+     * @param {string} temaId - ID do tema pai
+     * @returns {boolean}
+     */
+    temaParcialmenteSelecionado(temaId) {
+        const tema = this.obterTemaPorId(temaId);
+        if (!tema || !tema.subtemas) return false;
+        
+        // Não está parcialmente selecionado se o tema pai já está selecionado
+        if (this.temasSelecionados.has(temaId)) return false;
+        
+        // Verifica se algum subtema está selecionado
+        return tema.subtemas.some(s => this.subtemasSelecionados.has(s.id));
     }
 
     /**
@@ -158,19 +228,63 @@ export class TemasManager {
     }
 
     /**
-     * Retorna os IDs dos temas selecionados
+     * Retorna os IDs dos temas selecionados (para buscar perguntas)
+     * Inclui o tema pai + todos subtemas quando tema pai selecionado
+     * Ou só os subtemas individuais selecionados
      * @returns {Array}
      */
     obterTemasSelecionados() {
+        const ids = new Set();
+        
+        // Adiciona temas principais e seus subtemas
+        this.temasSelecionados.forEach(temaId => {
+            ids.add(temaId);
+            const tema = this.obterTemaPorId(temaId);
+            if (tema && tema.subtemas) {
+                tema.subtemas.forEach(s => ids.add(s.id));
+            }
+        });
+        
+        // Adiciona subtemas selecionados individualmente
+        this.subtemasSelecionados.forEach(subtemaId => ids.add(subtemaId));
+        
+        return [...ids];
+    }
+
+    /**
+     * Retorna apenas os IDs dos temas principais selecionados (para exibição)
+     * @returns {Array}
+     */
+    obterTemasPrincipaisSelecionados() {
         return [...this.temasSelecionados];
     }
 
     /**
-     * Retorna os objetos dos temas selecionados
+     * Retorna os objetos dos temas selecionados (temas principais)
      * @returns {Array}
      */
     obterTemasObjetos() {
-        return this.temas.filter(t => this.temasSelecionados.has(t.id));
+        const objetos = [];
+        
+        // Adiciona temas principais selecionados
+        this.temas.forEach(t => {
+            if (this.temasSelecionados.has(t.id)) {
+                objetos.push(t);
+            }
+        });
+        
+        // Adiciona subtemas selecionados individualmente (com nome do tema pai)
+        this.subtemasSelecionados.forEach(subtemaId => {
+            const temaPai = this._encontrarTemaPai(subtemaId);
+            if (temaPai && !this.temasSelecionados.has(temaPai.id)) {
+                const subtema = temaPai.subtemas.find(s => s.id === subtemaId);
+                if (subtema) {
+                    objetos.push({ ...subtema, temaPaiNome: temaPai.nome });
+                }
+            }
+        });
+        
+        return objetos;
     }
 
     /**
@@ -178,6 +292,7 @@ export class TemasManager {
      */
     limparSelecao() {
         this.temasSelecionados.clear();
+        this.subtemasSelecionados.clear();
         this.modoAleatorio = false;
         this.notificarSelecaoAlterada();
     }
@@ -187,7 +302,7 @@ export class TemasManager {
      * @returns {boolean}
      */
     podeIniciar() {
-        return this.modoAleatorio || this.temasSelecionados.size > 0;
+        return this.modoAleatorio || this.temasSelecionados.size > 0 || this.subtemasSelecionados.size > 0;
     }
 
     /**
@@ -199,9 +314,35 @@ export class TemasManager {
             return this.temas.reduce((acc, t) => acc + (t.totalPerguntas || 0), 0);
         }
         
-        return this.temas
-            .filter(t => this.temasSelecionados.has(t.id))
-            .reduce((acc, t) => acc + (t.totalPerguntas || 0), 0);
+        let total = 0;
+        const contados = new Set(); // Evita contar duplicado
+        
+        // Conta perguntas dos temas principais selecionados
+        this.temas.forEach(tema => {
+            if (this.temasSelecionados.has(tema.id)) {
+                total += tema.totalPerguntas || 0;
+                contados.add(tema.id);
+                // Marca subtemas como contados
+                if (tema.subtemas) {
+                    tema.subtemas.forEach(s => contados.add(s.id));
+                }
+            }
+        });
+        
+        // Conta perguntas dos subtemas selecionados individualmente
+        this.subtemasSelecionados.forEach(subtemaId => {
+            if (!contados.has(subtemaId)) {
+                const temaPai = this._encontrarTemaPai(subtemaId);
+                if (temaPai) {
+                    const subtema = temaPai.subtemas.find(s => s.id === subtemaId);
+                    if (subtema) {
+                        total += subtema.totalPerguntas || 0;
+                    }
+                }
+            }
+        });
+        
+        return total;
     }
 
     /**
