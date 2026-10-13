@@ -746,11 +746,18 @@ async function carregarRankingPartida(temas) {
             });
         }
         
+        // Formata tempo total
+        const tempoTotal = item.tempoTotal || 0;
+        const minutos = Math.floor(tempoTotal / 60);
+        const segundos = tempoTotal % 60;
+        const tempoDisplay = minutos > 0 ? `${minutos}m${segundos}s` : `${segundos}s`;
+        
         tr.innerHTML = `
             <td>${index + 1}</td>
             <td>${temasDisplay}</td>
             <td>${item.pontuacaoTotal}</td>
             <td>${item.acertos}/${item.totalPerguntas || 10}</td>
+            <td>${tempoDisplay}</td>
             <td>${dataDisplay}</td>
         `;
         
