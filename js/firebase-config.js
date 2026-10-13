@@ -16,7 +16,8 @@ export const TEMAS_DISPONIVEIS = [
         nome: 'Cinema e Séries', 
         icone: '🎬',
         subtemas: [
-            { id: 'harry-potter', nome: 'Harry Potter', icone: '⚡' }
+            { id: 'harry-potter', nome: 'Harry Potter', icone: '⚡' },
+            { id: 'chaves', nome: 'Chaves', icone: '🪣' }
         ]
     },
     { id: 'comidas-bebidas', nome: 'Comidas e Bebidas', icone: '🍔' },
