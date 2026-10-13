@@ -576,6 +576,30 @@
       "alternativas": ["Dinheiro", "Comida", "Nada", "Um brinquedo"],
       "correta": 2,
       "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a frase que Quico diz quando quer chamar atenção?",
+      "alternativas": ["Olha aqui!", "Mamãe!", "Olha o que eu sei fazer!", "Prestem atenção!"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Em qual local da vila as crianças mais brincam?",
+      "alternativas": ["Dentro dos apartamentos", "No pátio central", "Na rua", "No telhado"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é a nacionalidade de todos os personagens da série?",
+      "alternativas": ["Brasileira", "Mexicana", "Argentina", "Espanhola"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quem é o personagem mais pobre da vila?",
+      "alternativas": ["Seu Madruga", "Chaves", "Dona Clotilde", "Jaiminho"],
+      "correta": 1,
+      "dificuldade": "facil"
     }
   ]
 }
