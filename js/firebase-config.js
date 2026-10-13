@@ -23,7 +23,7 @@ export const TEMAS_DISPONIVEIS = [
             { id: 'futebol', nome: 'Futebol', icone: '⚽' },
             { id: 'tenis', nome: 'Tênis', icone: '🎾' },
             { id: 'natacao', nome: 'Natação', icone: '🏊' },
-            { id: 'f1', nome: 'Fórmula 1', icone: '🏎️' },
+            { id: 'f1', nome: 'F1', icone: '🏎️' },
             { id: 'volei', nome: 'Vôlei', icone: '🏐' },
             { id: 'basquete', nome: 'Basquete', icone: '🏀' },
             { id: 'flamengo', nome: 'Flamengo', icone: '🔴⚫' },

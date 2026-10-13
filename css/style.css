@@ -500,6 +500,7 @@ body {
     margin-top: 4px;
     border-left: 2px solid var(--gray-200);
     margin-left: 16px;
+    max-width: 200px;
 }
 
 .tema-container.expandido .subtemas-container {
@@ -518,6 +519,7 @@ body {
     cursor: pointer;
     transition: var(--transition);
     font-size: 0.85rem;
+    min-width: 0; /* Permite que flex items encolham */
 }
 
 .subtema-card:hover {
@@ -532,12 +534,17 @@ body {
 
 .subtema-icone {
     font-size: 1.1rem;
+    flex-shrink: 0;
 }
 
 .subtema-nome {
     flex: 1;
     font-weight: 500;
     color: var(--gray-700);
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .subtema-contador {
@@ -546,6 +553,7 @@ body {
     background: var(--gray-100);
     padding: 2px 6px;
     border-radius: 10px;
+    flex-shrink: 0;
 }
 
 /* Info de Seleção */
