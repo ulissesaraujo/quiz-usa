@@ -500,7 +500,6 @@ body {
     margin-top: 4px;
     border-left: 2px solid var(--gray-200);
     margin-left: 16px;
-    max-width: 200px;
 }
 
 .tema-container.expandido .subtemas-container {
@@ -538,12 +537,8 @@ body {
 }
 
 .subtema-nome {
-    flex: 1;
     font-weight: 500;
     color: var(--gray-700);
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
