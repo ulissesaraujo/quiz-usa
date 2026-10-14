@@ -735,9 +735,9 @@ function usarAjudaEliminar() {
 }
 
 /**
- * Usa a ajuda de pular pergunta
+ * Usa a ajuda de pular pergunta - busca uma nova pergunta para substituir
  */
-function usarAjudaPular() {
+async function usarAjudaPular() {
     if (quizEngine.ajudasUsadas.pular || !estado.config?.ajudaPular) return;
     if (quizEngine.respondeu) return;
     
@@ -745,25 +745,53 @@ function usarAjudaPular() {
     elementos.btnAjudaPular.disabled = true;
     elementos.btnAjudaPular.classList.add('usado');
     
-    // Registra como pulada (sem pontos, sem tempo)
-    const pergunta = quizEngine.perguntas[quizEngine.perguntaAtual];
-    quizEngine.respostas.push({
-        perguntaId: pergunta.id,
-        tema: pergunta.tema,
-        correto: false,
-        tempo: 0,
-        pontosTotais: 0,
-        pulada: true
-    });
-    
     // Para o cronômetro
     clearInterval(quizEngine.timerCronometro);
     
-    console.log(`⏭️ Ajuda usada: Pergunta pulada`);
+    // Pega a pergunta atual que será pulada
+    const perguntaPulada = quizEngine.perguntas[quizEngine.perguntaAtual];
     
-    // Avança para próxima pergunta
-    quizEngine.perguntaAtual++;
-    setTimeout(() => quizEngine.carregarPergunta(), 500);
+    console.log(`⏭️ Ajuda usada: Pulando pergunta "${perguntaPulada.id}"`);
+    
+    // Busca uma nova pergunta para substituir
+    try {
+        // IDs das perguntas já na partida (para não repetir)
+        const idsAtuais = quizEngine.perguntas.map(p => p.id);
+        
+        // Busca do mesmo tema ou aleatória
+        let novasPergunta = [];
+        if (perguntaPulada.tema) {
+            // Tenta buscar do mesmo tema
+            const { buscarPerguntasPorTemas } = await import('./firebase-config.js');
+            novasPergunta = await buscarPerguntasPorTemas([perguntaPulada.tema], 5, estado.jogador, estado.config?.evitarRepeticao || 0);
+        } else {
+            // Busca aleatória
+            const { buscarPerguntasAleatorias } = await import('./firebase-config.js');
+            novasPergunta = await buscarPerguntasAleatorias(5, estado.jogador, estado.config?.evitarRepeticao || 0);
+        }
+        
+        // Filtra para não pegar uma que já está na partida
+        const perguntaSubstituta = novasPergunta.find(p => !idsAtuais.includes(p.id));
+        
+        if (perguntaSubstituta) {
+            // Substitui a pergunta pulada pela nova
+            quizEngine.perguntas[quizEngine.perguntaAtual] = perguntaSubstituta;
+            console.log(`✅ Nova pergunta: "${perguntaSubstituta.id}"`);
+            
+            // Recarrega a pergunta (que agora é a nova)
+            setTimeout(() => quizEngine.carregarPergunta(), 300);
+        } else {
+            // Não encontrou substituta - remove a pergunta pulada e segue
+            console.log(`⚠️ Sem pergunta substituta disponível`);
+            quizEngine.perguntas.splice(quizEngine.perguntaAtual, 1);
+            setTimeout(() => quizEngine.carregarPergunta(), 300);
+        }
+    } catch (error) {
+        console.error('Erro ao buscar pergunta substituta:', error);
+        // Em caso de erro, apenas remove a pergunta pulada
+        quizEngine.perguntas.splice(quizEngine.perguntaAtual, 1);
+        setTimeout(() => quizEngine.carregarPergunta(), 300);
+    }
 }
 
 function renderizarAlternativas() {
