@@ -1088,8 +1088,7 @@ function obterMensagemMotivacional(percentual) {
 
 function inicializarResultado() {
     elementos.btnVoltarTemas.addEventListener('click', () => {
-        temasManager.limparSelecao();
-        renderizarTemas();
+        // Não limpa a seleção - permite jogar novamente com os mesmos temas
         mostrarTela('temas');
     });
     
