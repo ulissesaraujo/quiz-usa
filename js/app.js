@@ -385,11 +385,14 @@ function atualizarUITemas() {
     }
     
     // Atualiza badge do botão jogar
+    console.log('🔴 Badge:', { numSelecionados, modoAleatorio, elemento: elementos.badgeSelecionados });
     if (numSelecionados > 0 && !modoAleatorio) {
         elementos.badgeSelecionados.textContent = numSelecionados;
         elementos.badgeSelecionados.classList.remove('oculto');
+        console.log('🔴 Badge VISÍVEL, classes:', elementos.badgeSelecionados.className);
     } else {
         elementos.badgeSelecionados.classList.add('oculto');
+        console.log('🔴 Badge OCULTO');
     }
     
     // Atualiza estado do botão jogar
