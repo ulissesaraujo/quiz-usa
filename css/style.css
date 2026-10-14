@@ -328,6 +328,50 @@ body {
     z-index: 20;
 }
 
+/* OPÇÃO 2: Badge clicável */
+.badge-clicavel {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.badge-clicavel:hover {
+    transform: scale(1.15);
+    background: #b91c1c;
+}
+
+/* OPÇÃO 1: Botão Limpar */
+.btn-limpar {
+    background: var(--gray-100);
+    color: var(--gray-600);
+    border: 2px solid var(--gray-300);
+    flex: 0 0 auto;
+    min-width: auto;
+    padding: 14px 16px;
+}
+
+.btn-limpar:hover {
+    background: var(--danger);
+    color: white;
+    border-color: var(--danger);
+}
+
+/* OPÇÃO 3: Link discreto */
+.limpar-selecao-link {
+    text-align: center;
+    margin: -10px 0 10px 0;
+    font-size: 0.85rem;
+}
+
+.limpar-selecao-link a {
+    color: var(--gray-500);
+    text-decoration: none;
+}
+
+.limpar-selecao-link a:hover {
+    color: var(--danger);
+    text-decoration: underline;
+}
+
 .btn-acao-badge.oculto {
     display: none;
 }

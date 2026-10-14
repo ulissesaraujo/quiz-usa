@@ -74,6 +74,10 @@ const elementos = {
     selecaoInfo: document.getElementById('selecao-info'),
     btnVerRankingSalas: document.getElementById('btn-ver-ranking-salas'),
     btnVerRankingGeral: document.getElementById('btn-ver-ranking-geral'),
+    // Opções de limpar seleção
+    btnLimpar: document.getElementById('btn-limpar'),
+    limparSelecaoLink: document.getElementById('limpar-selecao-link'),
+    linkLimparSelecao: document.getElementById('link-limpar-selecao'),
     
     // Quiz
     quizTemaInfo: document.getElementById('quiz-tema-info'),
@@ -384,15 +388,20 @@ function atualizarUITemas() {
         elementos.btnAleatorio.setAttribute('aria-pressed', 'false');
     }
     
-    // Atualiza badge do botão jogar
-    console.log('🔴 Badge:', { numSelecionados, modoAleatorio, elemento: elementos.badgeSelecionados });
-    if (numSelecionados > 0 && !modoAleatorio) {
+    // Atualiza badge do botão jogar e elementos de limpar
+    const temSelecao = numSelecionados > 0 && !modoAleatorio;
+    
+    if (temSelecao) {
         elementos.badgeSelecionados.textContent = numSelecionados;
         elementos.badgeSelecionados.classList.remove('oculto');
-        console.log('🔴 Badge VISÍVEL, classes:', elementos.badgeSelecionados.className);
+        // Mostra opções de limpar
+        elementos.btnLimpar?.classList.remove('oculto');
+        elementos.limparSelecaoLink?.classList.remove('oculto');
     } else {
         elementos.badgeSelecionados.classList.add('oculto');
-        console.log('🔴 Badge OCULTO');
+        // Oculta opções de limpar
+        elementos.btnLimpar?.classList.add('oculto');
+        elementos.limparSelecaoLink?.classList.add('oculto');
     }
     
     // Atualiza estado do botão jogar
@@ -437,6 +446,26 @@ function inicializarTemas() {
     // Botão ver ranking geral (lista simples)
     elementos.btnVerRankingGeral.addEventListener('click', () => {
         mostrarRankingGeral();
+    });
+    
+    // OPÇÃO 1: Botão Limpar
+    elementos.btnLimpar?.addEventListener('click', () => {
+        temasManager.limparSelecao();
+        renderizarTemas();
+    });
+    
+    // OPÇÃO 2: Badge clicável
+    elementos.badgeSelecionados?.addEventListener('click', (e) => {
+        e.stopPropagation(); // Evita acionar o botão Jogar
+        temasManager.limparSelecao();
+        renderizarTemas();
+    });
+    
+    // OPÇÃO 3: Link discreto
+    elementos.linkLimparSelecao?.addEventListener('click', (e) => {
+        e.preventDefault();
+        temasManager.limparSelecao();
+        renderizarTemas();
     });
     
     // Callback quando seleção muda

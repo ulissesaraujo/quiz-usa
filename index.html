@@ -27,7 +27,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="canonical" href="https://ulissesaraujo.github.io/quizlandia/">
-    <link rel="stylesheet" href="css/style.css?v=48">
+    <link rel="stylesheet" href="css/style.css?v=49">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -92,7 +92,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build #48 - 13:05:00 08/10/2026</p>
+                <p class="versao-debug">Build #49 - 13:18:00 08/10/2026</p>
             </div>
         </section>
 
@@ -130,6 +130,14 @@
                 
                 <!-- Botões de Ação -->
                 <div class="acoes-container">
+                    <!-- OPÇÃO 1: Botão Limpar separado -->
+                    <button class="btn-acao btn-limpar oculto" 
+                            id="btn-limpar"
+                            title="Limpar seleção">
+                        <span class="btn-acao-icone" aria-hidden="true">🗑️</span>
+                        <span class="btn-acao-texto">Limpar</span>
+                    </button>
+                    
                     <button class="btn-acao btn-aleatorio" 
                             id="btn-aleatorio"
                             role="switch"
@@ -143,9 +151,15 @@
                             aria-disabled="true">
                         <span class="btn-acao-icone" aria-hidden="true">▶</span>
                         <span class="btn-acao-texto">Jogar</span>
-                        <span class="btn-acao-badge oculto" id="badge-selecionados">0</span>
+                        <!-- OPÇÃO 2: Badge clicável -->
+                        <span class="btn-acao-badge badge-clicavel oculto" id="badge-selecionados" title="Clique para limpar seleção">0</span>
                     </button>
                 </div>
+                
+                <!-- OPÇÃO 3: Link discreto -->
+                <p class="limpar-selecao-link oculto" id="limpar-selecao-link">
+                    <a href="#" id="link-limpar-selecao">limpar seleção</a>
+                </p>
 
                 <div class="divisor" role="separator">
                     <span>escolha temas específicos</span>
@@ -447,6 +461,6 @@
     </div>
 
     <!-- Scripts -->
-    <script type="module" src="js/app.js?v=48"></script>
+    <script type="module" src="js/app.js?v=49"></script>
 </body>
 </html>
