@@ -247,7 +247,7 @@ export function obterTodosIdsTema(temaId) {
  * @returns {Array} - Array de IDs de perguntas
  */
 function obterHistoricoPerguntas(jogador) {
-    const key = `quiz_historico_${jogador}`;
+    const key = `quiz_perguntas_respondidas_${jogador}`;
     const salvo = localStorage.getItem(key);
     return salvo ? JSON.parse(salvo) : [];
 }
@@ -261,7 +261,7 @@ function obterHistoricoPerguntas(jogador) {
 export function salvarHistoricoPerguntas(jogador, perguntasIds, limite = 50) {
     if (!jogador || limite === 0) return;
     
-    const key = `quiz_historico_${jogador}`;
+    const key = `quiz_perguntas_respondidas_${jogador}`;
     let historico = obterHistoricoPerguntas(jogador);
     
     // Adiciona novas perguntas no início
