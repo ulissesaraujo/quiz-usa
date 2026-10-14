@@ -347,6 +347,7 @@ body {
 .btn-jogar-principal {
     background: var(--success);
     color: var(--white);
+    position: relative; /* Para o badge posicionar corretamente */
 }
 
 .btn-jogar-principal:hover:not(:disabled) {
