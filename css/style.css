@@ -949,6 +949,7 @@ body {
 }
 
 .resultado-detalhes {
+    margin-top: 24px;
     margin-bottom: 32px;
     border: 1px solid var(--gray-200);
     border-radius: var(--radius);
