@@ -1064,6 +1064,9 @@
             buscarPerguntasPorTema,
             buscarRanking,
             excluirTodasPartidas,
+            buscarConfiguracoes,
+            salvarConfiguracoes,
+            getConfigPadrao,
             TEMAS_DISPONIVEIS,
             aguardarFirebase
         } from './js/firebase-config.js';
@@ -1116,37 +1119,31 @@
         });
 
         // ========================================
-        // CONFIGURAÇÕES
+        // CONFIGURAÇÕES (FIREBASE)
         // ========================================
-        const CONFIG_KEY = 'quiz_config';
         
-        const configPadrao = {
-            qtdPerguntas: 10,
-            evitarRepeticao: 50,
-            tempoPergunta: 15,
-            ajudaTempo: true,
-            tempoExtra: 10,
-            ajudaEliminar: true,
-            ajudaPular: false
-        };
-
-        function carregarConfiguracoes() {
-            const salvo = localStorage.getItem(CONFIG_KEY);
-            const config = salvo ? JSON.parse(salvo) : configPadrao;
-            
-            // Aplica valores nos campos
-            document.getElementById('config-qtd-perguntas').value = config.qtdPerguntas;
-            document.getElementById('config-evitar-repeticao').value = config.evitarRepeticao;
-            document.getElementById('config-tempo-pergunta').value = config.tempoPergunta;
-            document.getElementById('config-ajuda-tempo').checked = config.ajudaTempo;
-            document.getElementById('config-tempo-extra').value = config.tempoExtra;
-            document.getElementById('config-ajuda-eliminar').checked = config.ajudaEliminar;
-            document.getElementById('config-ajuda-pular').checked = config.ajudaPular;
-            
-            return config;
+        async function carregarConfiguracoesTela() {
+            try {
+                const config = await buscarConfiguracoes();
+                
+                // Aplica valores nos campos
+                document.getElementById('config-qtd-perguntas').value = config.qtdPerguntas;
+                document.getElementById('config-evitar-repeticao').value = config.evitarRepeticao;
+                document.getElementById('config-tempo-pergunta').value = config.tempoPergunta;
+                document.getElementById('config-ajuda-tempo').checked = config.ajudaTempo;
+                document.getElementById('config-tempo-extra').value = config.tempoExtra;
+                document.getElementById('config-ajuda-eliminar').checked = config.ajudaEliminar;
+                document.getElementById('config-ajuda-pular').checked = config.ajudaPular;
+                
+                console.log('✅ Configurações carregadas na tela');
+                return config;
+            } catch (error) {
+                console.error('Erro ao carregar configurações:', error);
+                alert('Erro ao carregar configurações. Usando valores padrão.');
+            }
         }
 
-        function salvarConfiguracoes() {
+        async function salvarConfiguracoesTela() {
             const config = {
                 qtdPerguntas: parseInt(document.getElementById('config-qtd-perguntas').value),
                 evitarRepeticao: parseInt(document.getElementById('config-evitar-repeticao').value),
@@ -1157,35 +1154,62 @@
                 ajudaPular: document.getElementById('config-ajuda-pular').checked
             };
             
-            localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
-            return config;
+            try {
+                await salvarConfiguracoes(config);
+                return config;
+            } catch (error) {
+                console.error('Erro ao salvar configurações:', error);
+                throw error;
+            }
         }
 
-        function resetarConfiguracoes() {
-            localStorage.removeItem(CONFIG_KEY);
-            carregarConfiguracoes();
+        function resetarConfiguracoesTela() {
+            const config = getConfigPadrao();
+            
+            document.getElementById('config-qtd-perguntas').value = config.qtdPerguntas;
+            document.getElementById('config-evitar-repeticao').value = config.evitarRepeticao;
+            document.getElementById('config-tempo-pergunta').value = config.tempoPergunta;
+            document.getElementById('config-ajuda-tempo').checked = config.ajudaTempo;
+            document.getElementById('config-tempo-extra').value = config.tempoExtra;
+            document.getElementById('config-ajuda-eliminar').checked = config.ajudaEliminar;
+            document.getElementById('config-ajuda-pular').checked = config.ajudaPular;
         }
 
         // Event listeners das configurações
-        document.getElementById('btn-salvar-config').addEventListener('click', () => {
-            salvarConfiguracoes();
-            alert('✅ Configurações salvas com sucesso!\n\nAs mudanças serão aplicadas nas próximas partidas.');
-        });
-
-        document.getElementById('btn-resetar-config').addEventListener('click', () => {
-            if (confirm('Restaurar todas as configurações para os valores padrão?')) {
-                resetarConfiguracoes();
-                alert('🔄 Configurações restauradas!');
+        document.getElementById('btn-salvar-config').addEventListener('click', async () => {
+            const btn = document.getElementById('btn-salvar-config');
+            btn.disabled = true;
+            btn.textContent = '⏳ Salvando...';
+            
+            try {
+                await salvarConfiguracoesTela();
+                alert('✅ Configurações salvas com sucesso!\n\nAs mudanças serão aplicadas para todos os jogadores nas próximas partidas.');
+            } catch (error) {
+                alert('❌ Erro ao salvar configurações: ' + error.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '💾 Salvar Configurações';
             }
         });
 
-        // Carrega configurações ao iniciar
-        carregarConfiguracoes();
+        document.getElementById('btn-resetar-config').addEventListener('click', async () => {
+            if (confirm('Restaurar todas as configurações para os valores padrão?')) {
+                resetarConfiguracoesTela();
+                
+                try {
+                    await salvarConfiguracoesTela();
+                    alert('🔄 Configurações restauradas e salvas!');
+                } catch (error) {
+                    alert('❌ Erro ao salvar: ' + error.message);
+                }
+            }
+        });
 
         // Inicialização
         async function init() {
             await aguardarFirebase();
             await carregarStats();
+            await carregarConfiguracoesTela();
             
             // Mostra mensagem inicial em vez de carregar perguntas
             perguntasLista.innerHTML = '<p style="text-align: center; color: #888; padding: 2rem;">Clique em "Atualizar" para carregar as perguntas.</p>';

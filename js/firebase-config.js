@@ -844,4 +844,85 @@ export async function aguardarFirebase() {
     return firebasePromise;
 }
 
+// ========================================
+// FUNÇÕES DE CONFIGURAÇÃO GLOBAL
+// ========================================
+
+const CONFIG_PADRAO = {
+    qtdPerguntas: 10,
+    evitarRepeticao: 50,
+    tempoPergunta: 15,
+    ajudaTempo: true,
+    tempoExtra: 10,
+    ajudaEliminar: true,
+    ajudaPular: false
+};
+
+/**
+ * Busca as configurações globais do quiz
+ * @returns {Promise<Object>} - Objeto com as configurações
+ */
+export async function buscarConfiguracoes() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        console.log('Firebase offline - usando configurações padrão');
+        return CONFIG_PADRAO;
+    }
+    
+    try {
+        const { doc, getDoc, db } = window._firestore;
+        const configRef = doc(db, 'configuracoes', 'global');
+        const configDoc = await getDoc(configRef);
+        
+        if (configDoc.exists()) {
+            const config = configDoc.data();
+            console.log('✅ Configurações carregadas do Firebase');
+            return { ...CONFIG_PADRAO, ...config };
+        } else {
+            console.log('📝 Usando configurações padrão');
+            return CONFIG_PADRAO;
+        }
+    } catch (error) {
+        console.error("Erro ao buscar configurações:", error);
+        return CONFIG_PADRAO;
+    }
+}
+
+/**
+ * Salva as configurações globais do quiz
+ * @param {Object} config - Objeto com as configurações
+ * @returns {Promise<boolean>} - true se salvou com sucesso
+ */
+export async function salvarConfiguracoes(config) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const { doc, setDoc, db } = window._firestore;
+        const configRef = doc(db, 'configuracoes', 'global');
+        
+        await setDoc(configRef, {
+            ...config,
+            atualizadoEm: new Date().toISOString()
+        });
+        
+        console.log('✅ Configurações salvas no Firebase');
+        return true;
+    } catch (error) {
+        console.error("Erro ao salvar configurações:", error);
+        throw error;
+    }
+}
+
+/**
+ * Retorna as configurações padrão
+ */
+export function getConfigPadrao() {
+    return { ...CONFIG_PADRAO };
+}
+
 export { db, firebaseDisponivel };
