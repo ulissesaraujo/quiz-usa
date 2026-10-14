@@ -454,7 +454,12 @@ function inicializarTemas() {
 async function iniciarQuiz() {
     estado.carregando = true;
     elementos.btnJogar.disabled = true;
-    elementos.btnJogar.textContent = 'Carregando...';
+    
+    // Atualiza apenas o texto, mantendo a estrutura do botão
+    const textoBtn = elementos.btnJogar.querySelector('.btn-acao-texto');
+    if (textoBtn) {
+        textoBtn.textContent = 'Carregando...';
+    }
     
     try {
         // Carrega configurações globais
@@ -504,7 +509,12 @@ async function iniciarQuiz() {
     } finally {
         estado.carregando = false;
         elementos.btnJogar.disabled = false;
-        elementos.btnJogar.textContent = 'Jogar';
+        
+        // Restaura o texto do botão
+        const textoBtn = elementos.btnJogar.querySelector('.btn-acao-texto');
+        if (textoBtn) {
+            textoBtn.textContent = 'Jogar';
+        }
     }
 }
 
