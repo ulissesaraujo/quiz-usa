@@ -245,6 +245,7 @@ function renderizarTemas() {
                 toggleSubtemas(temaContainer);
                 return;
             }
+            console.log('🖱️ Click no tema:', tema.id);
             temasManager.alternarTema(tema.id);
             atualizarUITemas();
         });
@@ -346,6 +347,8 @@ function atualizarUITemas() {
     const numSelecionados = numTemasPrincipais + numSubtemas;
     const modoAleatorio = temasManager.isModoAleatorio();
     
+    console.log('📊 atualizarUITemas:', { numTemasPrincipais, numSubtemas, numSelecionados, modoAleatorio });
+    
     // Atualiza cards de temas principais
     document.querySelectorAll('.tema-card').forEach(card => {
         const temaId = card.dataset.temaId;
@@ -435,8 +438,11 @@ function inicializarTemas() {
     
     // Callback quando seleção muda
     temasManager.onSelecaoAlterada = () => {
+        console.log('🔄 Seleção alterada - atualizando UI');
         atualizarUITemas();
     };
+    
+    console.log('✅ Callback onSelecaoAlterada configurado');
 }
 
 // ========================================
