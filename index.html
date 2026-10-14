@@ -92,7 +92,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build #25 - 09:38:22 08/10/2026</p>
+                <p class="versao-debug">Build #26 - 09:48:30 08/10/2026</p>
             </div>
         </section>
 
@@ -399,17 +399,18 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p class="ranking-legenda">Todas as partidas ordenadas por pontuação</p>
-                    <table class="ranking-tabela"
+                    <p class="ranking-legenda">Clique nos cabeçalhos para ordenar</p>
+                    <table class="ranking-tabela ranking-ordenavel"
                            aria-label="Ranking geral de todas as partidas">
                         <thead>
                             <tr>
                                 <th scope="col" abbr="Posição">#</th>
-                                <th scope="col">Jogador</th>
+                                <th scope="col" data-sort="jogador" class="th-ordenavel">Jogador ⇅</th>
                                 <th scope="col">Temas</th>
-                                <th scope="col">Pontos</th>
-                                <th scope="col">Acertos</th>
-                                <th scope="col">Tempo</th>
+                                <th scope="col" data-sort="pontuacaoTotal" class="th-ordenavel th-ativo" data-order="desc">Pontos ▼</th>
+                                <th scope="col" data-sort="acertos" class="th-ordenavel">Acertos ⇅</th>
+                                <th scope="col" data-sort="tempoTotal" class="th-ordenavel">Tempo ⇅</th>
+                                <th scope="col" data-sort="dataHora" class="th-ordenavel">Data ⇅</th>
                                 <th scope="col">Ação</th>
                             </tr>
                         </thead>

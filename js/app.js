@@ -1009,84 +1009,154 @@ async function mostrarRankingGlobal() {
 /**
  * Mostra o ranking geral - lista simples ordenada por pontuação
  */
+// Estado da ordenação do ranking geral
+let rankingGeralDados = [];
+let ordenacaoAtual = { campo: 'pontuacaoTotal', ordem: 'desc' };
+
 async function mostrarRankingGeral() {
-    const ranking = await rankingManager.obterRankingGlobal(100);
+    rankingGeralDados = await rankingManager.obterRankingGlobal(100);
     
+    renderizarRankingGeral();
+    
+    // Configura os event listeners para ordenação (apenas uma vez)
+    configurarOrdenacaoRankingGeral();
+    
+    abrirModal(elementos.modalRankingGeral, elementos.btnVerRankingGeral);
+}
+
+function configurarOrdenacaoRankingGeral() {
+    const headers = elementos.modalRankingGeral.querySelectorAll('.th-ordenavel');
+    
+    headers.forEach(th => {
+        // Remove listener antigo se existir
+        th.removeEventListener('click', th._clickHandler);
+        
+        // Cria novo handler
+        th._clickHandler = () => {
+            const campo = th.dataset.sort;
+            
+            // Se clicar no mesmo campo, inverte a ordem
+            if (ordenacaoAtual.campo === campo) {
+                ordenacaoAtual.ordem = ordenacaoAtual.ordem === 'asc' ? 'desc' : 'asc';
+            } else {
+                ordenacaoAtual.campo = campo;
+                // Ordem padrão por campo
+                ordenacaoAtual.ordem = (campo === 'tempoTotal') ? 'asc' : 'desc';
+            }
+            
+            // Atualiza visual dos headers
+            headers.forEach(h => {
+                h.classList.remove('th-ativo');
+                const baseName = h.textContent.replace(/[▲▼⇅]/g, '').trim();
+                h.textContent = baseName + ' ⇅';
+            });
+            
+            th.classList.add('th-ativo');
+            const baseName = th.textContent.replace(/[▲▼⇅]/g, '').trim();
+            th.textContent = baseName + (ordenacaoAtual.ordem === 'desc' ? ' ▼' : ' ▲');
+            
+            renderizarRankingGeral();
+        };
+        
+        th.addEventListener('click', th._clickHandler);
+    });
+}
+
+function renderizarRankingGeral() {
     elementos.rankingGeralBody.innerHTML = '';
     
-    if (ranking.length === 0) {
+    if (rankingGeralDados.length === 0) {
         elementos.rankingGeralBody.innerHTML = `
             <tr>
-                <td colspan="7" style="text-align: center; color: #9ca3af;">
+                <td colspan="8" style="text-align: center; color: #9ca3af;">
                     Nenhum resultado ainda
                 </td>
             </tr>
         `;
-    } else {
-        // Ordena por pontuação (maior primeiro), desempate por tempo (menor primeiro)
-        const rankingOrdenado = [...ranking].sort((a, b) => {
-            if (b.pontuacaoTotal !== a.pontuacaoTotal) {
-                return b.pontuacaoTotal - a.pontuacaoTotal;
-            }
-            return a.tempoTotal - b.tempoTotal;
-        });
+        return;
+    }
+    
+    // Ordena os dados
+    const rankingOrdenado = [...rankingGeralDados].sort((a, b) => {
+        let valorA = a[ordenacaoAtual.campo];
+        let valorB = b[ordenacaoAtual.campo];
         
-        rankingOrdenado.forEach((item, index) => {
-            const isJogadorAtual = item.jogador === estado.jogador;
-            const tr = document.createElement('tr');
-            tr.className = isJogadorAtual ? 'destaque' : '';
-            
-            const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
-            
-            // Medalhas para top 3
-            let posicao = '';
+        // Tratamento especial para strings
+        if (typeof valorA === 'string') {
+            valorA = valorA.toLowerCase();
+            valorB = valorB.toLowerCase();
+        }
+        
+        // Tratamento para datas
+        if (ordenacaoAtual.campo === 'dataHora') {
+            valorA = new Date(valorA).getTime();
+            valorB = new Date(valorB).getTime();
+        }
+        
+        let resultado = 0;
+        if (valorA < valorB) resultado = -1;
+        else if (valorA > valorB) resultado = 1;
+        
+        // Inverte se ordem for descendente
+        return ordenacaoAtual.ordem === 'desc' ? -resultado : resultado;
+    });
+    
+    rankingOrdenado.forEach((item, index) => {
+        const isJogadorAtual = item.jogador === estado.jogador;
+        const tr = document.createElement('tr');
+        tr.className = isJogadorAtual ? 'destaque' : '';
+        
+        const temasDisplay = rankingManager.formatarTemas(item.temasNomes || item.temas);
+        
+        // Medalhas para top 3 (apenas se ordenado por pontuação desc)
+        let posicao = `${index + 1}º`;
+        if (ordenacaoAtual.campo === 'pontuacaoTotal' && ordenacaoAtual.ordem === 'desc') {
             if (index === 0) posicao = '🥇';
             else if (index === 1) posicao = '🥈';
             else if (index === 2) posicao = '🥉';
-            else posicao = `${index + 1}º`;
-            
-            // Determina se pode desafiar esta partida
-            const sessaoId = item.sessaoOriginalId || item.sessaoId;
-            const jaJogou = sessaoId ? rankingManager.jaJogouSessao(sessaoId) : true;
-            const temPerguntasIds = item.perguntasIds && item.perguntasIds.length > 0;
-            
-            let btnDesafiarHtml = '';
-            if (temPerguntasIds) {
-                // Se é o próprio jogador OU já jogou essa sessão, mostra "Jogado"
-                if (isJogadorAtual || jaJogou) {
-                    btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
-                } else {
-                    btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;
-                }
-            } else {
-                btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
-            }
-            
-            tr.innerHTML = `
-                <td>${posicao}</td>
-                <td>${item.jogador}${isJogadorAtual ? ' <span class="tag-voce">(você)</span>' : ''}</td>
-                <td>${temasDisplay}</td>
-                <td>${item.pontuacaoTotal}</td>
-                <td>${item.acertos}/${item.totalPerguntas || 10}</td>
-                <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
-                <td class="td-desafiar">${btnDesafiarHtml}</td>
-            `;
-            
-            elementos.rankingGeralBody.appendChild(tr);
-        });
+        }
         
-        // Adiciona event listeners para os botões de desafio
-        elementos.rankingGeralBody.querySelectorAll('.btn-desafiar:not(.disabled)').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const index = parseInt(btn.dataset.index);
-                // Fecha o modal geral
-                fecharModal(elementos.modalRankingGeral);
-                iniciarDesafio(rankingOrdenado[index]);
-            });
-        });
-    }
+        // Formata a data
+        const dataFormatada = rankingManager.formatarData(item.dataHora);
+        
+        // Determina se pode desafiar esta partida
+        const sessaoId = item.sessaoOriginalId || item.sessaoId;
+        const jaJogou = sessaoId ? rankingManager.jaJogouSessao(sessaoId) : true;
+        const temPerguntasIds = item.perguntasIds && item.perguntasIds.length > 0;
+        
+        let btnDesafiarHtml = '';
+        if (temPerguntasIds) {
+            if (isJogadorAtual || jaJogou) {
+                btnDesafiarHtml = `<button class="btn-desafiar disabled" disabled title="Você já jogou este desafio">✓ Jogado</button>`;
+            } else {
+                btnDesafiarHtml = `<button class="btn-desafiar" data-index="${index}" title="Jogar com as mesmas perguntas">⚔️ Desafiar</button>`;
+            }
+        } else {
+            btnDesafiarHtml = `<span class="desafiar-info">—</span>`;
+        }
+        
+        tr.innerHTML = `
+            <td>${posicao}</td>
+            <td>${item.jogador}${isJogadorAtual ? ' <span class="tag-voce">(você)</span>' : ''}</td>
+            <td>${temasDisplay}</td>
+            <td>${item.pontuacaoTotal}</td>
+            <td>${item.acertos}/${item.totalPerguntas || 10}</td>
+            <td>${rankingManager.formatarTempo(item.tempoTotal)}</td>
+            <td>${dataFormatada}</td>
+            <td class="td-desafiar">${btnDesafiarHtml}</td>
+        `;
+        
+        elementos.rankingGeralBody.appendChild(tr);
+    });
     
-    abrirModal(elementos.modalRankingGeral, elementos.btnVerRankingGeral);
+    // Adiciona event listeners para os botões de desafio
+    elementos.rankingGeralBody.querySelectorAll('.btn-desafiar:not(.disabled)').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const index = parseInt(btn.dataset.index);
+            fecharModal(elementos.modalRankingGeral);
+            iniciarDesafio(rankingOrdenado[index]);
+        });
+    });
 }
 
 function inicializarModal() {

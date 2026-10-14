@@ -1064,6 +1064,24 @@ body {
     text-transform: uppercase;
 }
 
+/* Headers ordenáveis */
+.th-ordenavel {
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.th-ordenavel:hover {
+    color: var(--primary);
+    background: var(--gray-50);
+}
+
+.th-ordenavel.th-ativo {
+    color: var(--primary);
+    background: rgba(59, 130, 246, 0.1);
+}
+
 .ranking-tabela tbody tr:hover {
     background: var(--gray-50);
 }
