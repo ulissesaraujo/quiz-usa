@@ -496,6 +496,226 @@
             display: block;
             margin-bottom: 12px;
         }
+
+        /* Abas de Navegação */
+        .admin-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            background: var(--white);
+            padding: 8px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .admin-tab {
+            flex: 1;
+            padding: 12px 24px;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: transparent;
+            color: var(--gray-500);
+            transition: all 0.2s ease;
+        }
+
+        .admin-tab:hover {
+            background: var(--gray-100);
+            color: var(--gray-700);
+        }
+
+        .admin-tab.ativa {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .admin-tab-content {
+            display: none;
+        }
+
+        .admin-tab-content.ativa {
+            display: block;
+        }
+
+        /* Grid de Configurações */
+        .config-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 900px) {
+            .config-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .config-item {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .config-item:last-child {
+            border-bottom: none;
+        }
+
+        .config-item label {
+            display: block;
+            font-weight: 600;
+            color: var(--gray-800);
+            margin-bottom: 4px;
+        }
+
+        .config-desc {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-bottom: 12px;
+        }
+
+        .config-intro {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            margin-bottom: 16px;
+            padding: 12px;
+            background: var(--gray-50);
+            border-radius: 8px;
+        }
+
+        .config-item select {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px 12px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            background: var(--white);
+            cursor: pointer;
+        }
+
+        .config-item select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        /* Ajudas */
+        .ajuda-item {
+            padding: 20px;
+            background: var(--gray-50);
+            border-radius: var(--radius);
+            margin-bottom: 12px;
+            border: none;
+        }
+
+        .ajuda-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .ajuda-icone {
+            font-size: 2rem;
+            width: 50px;
+            text-align: center;
+        }
+
+        .ajuda-info {
+            flex: 1;
+        }
+
+        .ajuda-info label {
+            margin-bottom: 2px;
+        }
+
+        .ajuda-info .config-desc {
+            margin-bottom: 0;
+        }
+
+        .ajuda-opcoes {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--gray-200);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .ajuda-opcoes label {
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .ajuda-opcoes select {
+            max-width: 150px;
+        }
+
+        /* Toggle Switch */
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 52px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+
+        .toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--gray-300);
+            transition: 0.3s;
+            border-radius: 28px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .toggle input:checked + .toggle-slider {
+            background-color: var(--success);
+        }
+
+        .toggle input:checked + .toggle-slider:before {
+            transform: translateX(24px);
+        }
+
+        /* Ações de Configuração */
+        .config-acoes {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            padding: 24px;
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .config-acoes .btn {
+            min-width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -506,21 +726,29 @@
             <a href="index.html">← Voltar ao Quiz</a>
         </header>
 
-        <!-- Stats -->
-        <div class="stats-grid" id="stats-grid">
-            <div class="stat-card">
-                <div class="stat-valor" id="total-perguntas">-</div>
-                <div class="stat-label">Total de Perguntas</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-valor" id="total-temas">-</div>
-                <div class="stat-label">Temas</div>
-            </div>
-            <div class="stat-card stat-card-clicavel" id="card-partidas" title="Clique para zerar partidas">
-                <div class="stat-valor" id="total-partidas">-</div>
-                <div class="stat-label">Partidas Jogadas</div>
-            </div>
+        <!-- Abas de Navegação -->
+        <div class="admin-tabs">
+            <button class="admin-tab ativa" data-tab="perguntas">📝 Perguntas</button>
+            <button class="admin-tab" data-tab="config">⚙️ Configurações</button>
         </div>
+
+        <!-- ABA: PERGUNTAS -->
+        <div class="admin-tab-content ativa" id="tab-perguntas">
+            <!-- Stats -->
+            <div class="stats-grid" id="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-valor" id="total-perguntas">-</div>
+                    <div class="stat-label">Total de Perguntas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-valor" id="total-temas">-</div>
+                    <div class="stat-label">Temas</div>
+                </div>
+                <div class="stat-card stat-card-clicavel" id="card-partidas" title="Clique para zerar partidas">
+                    <div class="stat-valor" id="total-partidas">-</div>
+                    <div class="stat-label">Partidas Jogadas</div>
+                </div>
+            </div>
 
         <!-- Layout Principal -->
         <div class="admin-layout">
@@ -698,6 +926,132 @@
                 </div>
             </div>
         </div>
+        </div><!-- Fim tab-perguntas -->
+
+        <!-- ABA: CONFIGURAÇÕES -->
+        <div class="admin-tab-content" id="tab-config">
+            <div class="config-grid">
+                <!-- Card: Configurações do Quiz -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>🎮 Configurações do Quiz</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="config-item">
+                            <label for="config-qtd-perguntas">Quantidade de perguntas por partida</label>
+                            <p class="config-desc">Define quantas perguntas serão sorteadas em cada partida</p>
+                            <select id="config-qtd-perguntas">
+                                <option value="5">5 perguntas</option>
+                                <option value="10" selected>10 perguntas (padrão)</option>
+                                <option value="15">15 perguntas</option>
+                                <option value="18">18 perguntas</option>
+                                <option value="20">20 perguntas</option>
+                                <option value="25">25 perguntas</option>
+                                <option value="30">30 perguntas</option>
+                            </select>
+                        </div>
+
+                        <div class="config-item">
+                            <label for="config-evitar-repeticao">Evitar repetição de perguntas</label>
+                            <p class="config-desc">Quantidade de perguntas recentes que não serão repetidas (por jogador)</p>
+                            <select id="config-evitar-repeticao">
+                                <option value="0">Desativado</option>
+                                <option value="25">Últimas 25 perguntas</option>
+                                <option value="50" selected>Últimas 50 perguntas (recomendado)</option>
+                                <option value="75">Últimas 75 perguntas</option>
+                                <option value="100">Últimas 100 perguntas</option>
+                                <option value="150">Últimas 150 perguntas</option>
+                            </select>
+                        </div>
+
+                        <div class="config-item">
+                            <label for="config-tempo-pergunta">Tempo por pergunta</label>
+                            <p class="config-desc">Tempo máximo para responder cada pergunta</p>
+                            <select id="config-tempo-pergunta">
+                                <option value="10">10 segundos</option>
+                                <option value="15" selected>15 segundos (padrão)</option>
+                                <option value="20">20 segundos</option>
+                                <option value="30">30 segundos</option>
+                                <option value="45">45 segundos</option>
+                                <option value="60">60 segundos</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Sistema de Ajudas -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>🆘 Sistema de Ajudas</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="config-intro">Configure as ajudas disponíveis durante o quiz. Cada ajuda pode ser usada apenas uma vez por partida.</p>
+                        
+                        <div class="config-item ajuda-item">
+                            <div class="ajuda-header">
+                                <span class="ajuda-icone">⏱️</span>
+                                <div class="ajuda-info">
+                                    <label>Tempo Extra</label>
+                                    <p class="config-desc">Adiciona segundos extras ao cronômetro</p>
+                                </div>
+                                <label class="toggle">
+                                    <input type="checkbox" id="config-ajuda-tempo" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <div class="ajuda-opcoes">
+                                <label for="config-tempo-extra">Segundos extras:</label>
+                                <select id="config-tempo-extra">
+                                    <option value="5">+5 segundos</option>
+                                    <option value="10" selected>+10 segundos</option>
+                                    <option value="15">+15 segundos</option>
+                                    <option value="20">+20 segundos</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="config-item ajuda-item">
+                            <div class="ajuda-header">
+                                <span class="ajuda-icone">❌</span>
+                                <div class="ajuda-info">
+                                    <label>Eliminar Alternativas</label>
+                                    <p class="config-desc">Remove 2 alternativas erradas</p>
+                                </div>
+                                <label class="toggle">
+                                    <input type="checkbox" id="config-ajuda-eliminar" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="config-item ajuda-item">
+                            <div class="ajuda-header">
+                                <span class="ajuda-icone">⏭️</span>
+                                <div class="ajuda-info">
+                                    <label>Pular Pergunta</label>
+                                    <p class="config-desc">Pula para a próxima pergunta sem perder pontos</p>
+                                </div>
+                                <label class="toggle">
+                                    <input type="checkbox" id="config-ajuda-pular">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão Salvar -->
+            <div class="config-acoes">
+                <button class="btn btn-primary" id="btn-salvar-config">
+                    💾 Salvar Configurações
+                </button>
+                <button class="btn btn-outline" id="btn-resetar-config">
+                    🔄 Restaurar Padrões
+                </button>
+            </div>
+        </div><!-- Fim tab-config -->
+
     </div>
 
     <script type="module">
@@ -740,6 +1094,93 @@
         
         // Atualiza total de temas
         totalTemasEl.textContent = TEMAS_DISPONIVEIS.length;
+
+        // ========================================
+        // SISTEMA DE ABAS
+        // ========================================
+        const abas = document.querySelectorAll('.admin-tab');
+        const conteudos = document.querySelectorAll('.admin-tab-content');
+
+        abas.forEach(aba => {
+            aba.addEventListener('click', () => {
+                const tabId = aba.dataset.tab;
+                
+                // Remove classe ativa de todas as abas e conteúdos
+                abas.forEach(a => a.classList.remove('ativa'));
+                conteudos.forEach(c => c.classList.remove('ativa'));
+                
+                // Adiciona classe ativa na aba e conteúdo selecionados
+                aba.classList.add('ativa');
+                document.getElementById(`tab-${tabId}`).classList.add('ativa');
+            });
+        });
+
+        // ========================================
+        // CONFIGURAÇÕES
+        // ========================================
+        const CONFIG_KEY = 'quiz_config';
+        
+        const configPadrao = {
+            qtdPerguntas: 10,
+            evitarRepeticao: 50,
+            tempoPergunta: 15,
+            ajudaTempo: true,
+            tempoExtra: 10,
+            ajudaEliminar: true,
+            ajudaPular: false
+        };
+
+        function carregarConfiguracoes() {
+            const salvo = localStorage.getItem(CONFIG_KEY);
+            const config = salvo ? JSON.parse(salvo) : configPadrao;
+            
+            // Aplica valores nos campos
+            document.getElementById('config-qtd-perguntas').value = config.qtdPerguntas;
+            document.getElementById('config-evitar-repeticao').value = config.evitarRepeticao;
+            document.getElementById('config-tempo-pergunta').value = config.tempoPergunta;
+            document.getElementById('config-ajuda-tempo').checked = config.ajudaTempo;
+            document.getElementById('config-tempo-extra').value = config.tempoExtra;
+            document.getElementById('config-ajuda-eliminar').checked = config.ajudaEliminar;
+            document.getElementById('config-ajuda-pular').checked = config.ajudaPular;
+            
+            return config;
+        }
+
+        function salvarConfiguracoes() {
+            const config = {
+                qtdPerguntas: parseInt(document.getElementById('config-qtd-perguntas').value),
+                evitarRepeticao: parseInt(document.getElementById('config-evitar-repeticao').value),
+                tempoPergunta: parseInt(document.getElementById('config-tempo-pergunta').value),
+                ajudaTempo: document.getElementById('config-ajuda-tempo').checked,
+                tempoExtra: parseInt(document.getElementById('config-tempo-extra').value),
+                ajudaEliminar: document.getElementById('config-ajuda-eliminar').checked,
+                ajudaPular: document.getElementById('config-ajuda-pular').checked
+            };
+            
+            localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
+            return config;
+        }
+
+        function resetarConfiguracoes() {
+            localStorage.removeItem(CONFIG_KEY);
+            carregarConfiguracoes();
+        }
+
+        // Event listeners das configurações
+        document.getElementById('btn-salvar-config').addEventListener('click', () => {
+            salvarConfiguracoes();
+            alert('✅ Configurações salvas com sucesso!\n\nAs mudanças serão aplicadas nas próximas partidas.');
+        });
+
+        document.getElementById('btn-resetar-config').addEventListener('click', () => {
+            if (confirm('Restaurar todas as configurações para os valores padrão?')) {
+                resetarConfiguracoes();
+                alert('🔄 Configurações restauradas!');
+            }
+        });
+
+        // Carrega configurações ao iniciar
+        carregarConfiguracoes();
 
         // Inicialização
         async function init() {
