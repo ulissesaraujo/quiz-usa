@@ -5,7 +5,7 @@
 import { QuizEngine } from './quiz.js';
 import { RankingManager } from './ranking.js';
 import { TemasManager } from './temas.js';
-import { buscarPerguntasPorIds, buscarConfiguracoes } from './firebase-config.js';
+import { buscarPerguntasPorIds, buscarConfiguracoes, salvarHistoricoPerguntas } from './firebase-config.js';
 import { Anunciador, GerenciadorFoco, NavegacaoTeclado } from './acessibilidade.js';
 
 // ========================================
@@ -85,6 +85,10 @@ const elementos = {
     alternativasContainer: document.getElementById('alternativas-container'),
     cronometro: document.getElementById('cronometro'),
     cronometroTempo: document.getElementById('cronometro-tempo'),
+    ajudasBar: document.getElementById('ajudas-bar'),
+    btnAjudaTempo: document.getElementById('btn-ajuda-tempo'),
+    btnAjudaEliminar: document.getElementById('btn-ajuda-eliminar'),
+    btnAjudaPular: document.getElementById('btn-ajuda-pular'),
     alternativas: document.getElementById('alternativas'),
     feedbackContainer: document.getElementById('feedback-container'),
     feedbackIcon: document.getElementById('feedback-icon'),
@@ -440,9 +444,10 @@ async function iniciarQuiz() {
         // Carrega configurações globais
         estado.config = await buscarConfiguracoes();
         const qtdPerguntas = estado.config.qtdPerguntas || 10;
+        const evitarRepeticao = estado.config.evitarRepeticao || 0;
         
-        // Busca perguntas usando a quantidade configurada
-        const perguntas = await temasManager.buscarPerguntas(qtdPerguntas);
+        // Busca perguntas usando a quantidade configurada e evitando repetição
+        const perguntas = await temasManager.buscarPerguntas(qtdPerguntas, estado.jogador, evitarRepeticao);
         
         if (perguntas.length === 0) {
             alert('Não há perguntas disponíveis para os temas selecionados.');
@@ -622,6 +627,143 @@ function configurarCallbacksQuiz() {
     quizEngine.onQuizFinalizado = (resultado) => {
         mostrarResultado(resultado);
     };
+    
+    // Configura botões de ajuda
+    configurarAjudas();
+}
+
+/**
+ * Configura os botões de ajuda baseado nas configurações
+ */
+function configurarAjudas() {
+    const config = estado.config || {};
+    
+    // Mostra/oculta botões baseado na configuração
+    if (elementos.btnAjudaTempo) {
+        elementos.btnAjudaTempo.style.display = config.ajudaTempo ? 'flex' : 'none';
+        elementos.btnAjudaTempo.disabled = false;
+        elementos.btnAjudaTempo.classList.remove('usado');
+    }
+    
+    if (elementos.btnAjudaEliminar) {
+        elementos.btnAjudaEliminar.style.display = config.ajudaEliminar ? 'flex' : 'none';
+        elementos.btnAjudaEliminar.disabled = false;
+        elementos.btnAjudaEliminar.classList.remove('usado');
+    }
+    
+    if (elementos.btnAjudaPular) {
+        elementos.btnAjudaPular.style.display = config.ajudaPular ? 'flex' : 'none';
+        elementos.btnAjudaPular.disabled = false;
+        elementos.btnAjudaPular.classList.remove('usado');
+    }
+    
+    // Verifica se há alguma ajuda ativada
+    const temAjudas = config.ajudaTempo || config.ajudaEliminar || config.ajudaPular;
+    if (elementos.ajudasBar) {
+        elementos.ajudasBar.style.display = temAjudas ? 'flex' : 'none';
+    }
+}
+
+/**
+ * Inicializa os event listeners dos botões de ajuda (chamado uma vez na inicialização)
+ */
+function inicializarAjudas() {
+    if (elementos.btnAjudaTempo) {
+        elementos.btnAjudaTempo.addEventListener('click', usarAjudaTempo);
+    }
+    
+    if (elementos.btnAjudaEliminar) {
+        elementos.btnAjudaEliminar.addEventListener('click', usarAjudaEliminar);
+    }
+    
+    if (elementos.btnAjudaPular) {
+        elementos.btnAjudaPular.addEventListener('click', usarAjudaPular);
+    }
+}
+
+/**
+ * Usa a ajuda de tempo extra
+ */
+function usarAjudaTempo() {
+    if (quizEngine.ajudasUsadas.tempo || !estado.config?.ajudaTempo) return;
+    
+    quizEngine.ajudasUsadas.tempo = true;
+    elementos.btnAjudaTempo.disabled = true;
+    elementos.btnAjudaTempo.classList.add('usado');
+    
+    // Adiciona tempo extra ao cronômetro
+    const tempoExtra = estado.config.tempoExtra || 10;
+    quizEngine.tempoInicio += tempoExtra * 1000; // Adiciona tempo em ms
+    
+    console.log(`⏱️ Ajuda usada: +${tempoExtra} segundos`);
+}
+
+/**
+ * Usa a ajuda de eliminar alternativas
+ */
+function usarAjudaEliminar() {
+    if (quizEngine.ajudasUsadas.eliminar || !estado.config?.ajudaEliminar) return;
+    if (quizEngine.respondeu) return;
+    
+    quizEngine.ajudasUsadas.eliminar = true;
+    elementos.btnAjudaEliminar.disabled = true;
+    elementos.btnAjudaEliminar.classList.add('usado');
+    
+    const pergunta = quizEngine.perguntas[quizEngine.perguntaAtual];
+    const correta = pergunta.correta;
+    
+    // Encontra índices das alternativas erradas
+    const erradas = [];
+    for (let i = 0; i < pergunta.alternativas.length; i++) {
+        if (i !== correta) erradas.push(i);
+    }
+    
+    // Embaralha e pega 2 erradas para eliminar
+    const eliminar = erradas.sort(() => Math.random() - 0.5).slice(0, 2);
+    
+    // Desabilita os botões das alternativas eliminadas
+    const botoes = elementos.alternativas.querySelectorAll('.alternativa-btn');
+    eliminar.forEach(idx => {
+        if (botoes[idx]) {
+            botoes[idx].disabled = true;
+            botoes[idx].style.opacity = '0.3';
+            botoes[idx].style.textDecoration = 'line-through';
+        }
+    });
+    
+    console.log(`❌ Ajuda usada: Eliminadas alternativas ${eliminar.map(i => i + 1).join(' e ')}`);
+}
+
+/**
+ * Usa a ajuda de pular pergunta
+ */
+function usarAjudaPular() {
+    if (quizEngine.ajudasUsadas.pular || !estado.config?.ajudaPular) return;
+    if (quizEngine.respondeu) return;
+    
+    quizEngine.ajudasUsadas.pular = true;
+    elementos.btnAjudaPular.disabled = true;
+    elementos.btnAjudaPular.classList.add('usado');
+    
+    // Registra como pulada (sem pontos, sem tempo)
+    const pergunta = quizEngine.perguntas[quizEngine.perguntaAtual];
+    quizEngine.respostas.push({
+        perguntaId: pergunta.id,
+        tema: pergunta.tema,
+        correto: false,
+        tempo: 0,
+        pontosTotais: 0,
+        pulada: true
+    });
+    
+    // Para o cronômetro
+    clearInterval(quizEngine.timerCronometro);
+    
+    console.log(`⏭️ Ajuda usada: Pergunta pulada`);
+    
+    // Avança para próxima pergunta
+    quizEngine.perguntaAtual++;
+    setTimeout(() => quizEngine.carregarPergunta(), 500);
 }
 
 function renderizarAlternativas() {
@@ -712,6 +854,11 @@ async function mostrarResultado(resultado) {
     
     // Salva no Firebase
     await rankingManager.salvarResultadoPartida(resultado);
+    
+    // Salva histórico de perguntas para evitar repetição
+    if (resultado.perguntasIds && estado.config) {
+        salvarHistoricoPerguntas(estado.jogador, resultado.perguntasIds, estado.config.evitarRepeticao);
+    }
     
     // Atualiza UI
     elementos.resultadoTemas.textContent = resultado.descricaoTemas;
@@ -1345,6 +1492,7 @@ async function init() {
     inicializarResultado();
     inicializarModal();
     inicializarFaseLeitura();
+    inicializarAjudas();
     
     // Verifica se existe jogador salvo
     const jogadorSalvo = localStorage.getItem('quiz_jogador');
