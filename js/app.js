@@ -150,7 +150,8 @@ function mostrarTela(telaNome) {
         
         // Atualiza UI dos temas quando volta para a tela de seleção
         if (telaNome === 'temas') {
-            atualizarUITemas();
+            // Usa setTimeout para garantir que o DOM está pronto
+            setTimeout(() => atualizarUITemas(), 0);
         }
     }
 }
