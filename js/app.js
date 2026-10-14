@@ -41,7 +41,8 @@ function separarEmojiDoTexto(enunciado) {
 const estado = {
     jogador: '',
     carregando: false,
-    config: null // Configurações globais do quiz
+    config: null, // Configurações globais do quiz
+    perguntaReserva: null // Pergunta extra para caso o usuário pule
 };
 
 // Instâncias dos gerenciadores
@@ -446,12 +447,25 @@ async function iniciarQuiz() {
         const qtdPerguntas = estado.config.qtdPerguntas || 10;
         const evitarRepeticao = estado.config.evitarRepeticao || 0;
         
+        // Se pular está ativo, busca 1 pergunta extra como reserva
+        const qtdBuscar = estado.config.ajudaPular ? qtdPerguntas + 1 : qtdPerguntas;
+        
         // Busca perguntas usando a quantidade configurada e evitando repetição
-        const perguntas = await temasManager.buscarPerguntas(qtdPerguntas, estado.jogador, evitarRepeticao);
+        const perguntas = await temasManager.buscarPerguntas(qtdBuscar, estado.jogador, evitarRepeticao);
         
         if (perguntas.length === 0) {
             alert('Não há perguntas disponíveis para os temas selecionados.');
             return;
+        }
+        
+        // Separa pergunta reserva (se houver) e perguntas principais
+        let perguntasQuiz = perguntas;
+        estado.perguntaReserva = null;
+        
+        if (estado.config.ajudaPular && perguntas.length > qtdPerguntas) {
+            perguntasQuiz = perguntas.slice(0, qtdPerguntas);
+            estado.perguntaReserva = perguntas[qtdPerguntas];
+            console.log(`🎯 Pergunta reserva carregada: "${estado.perguntaReserva.id}"`);
         }
         
         // Prepara configuração dos temas
@@ -465,7 +479,7 @@ async function iniciarQuiz() {
         configurarCallbacksQuiz();
         
         // Inicia o quiz com as configurações
-        quizEngine.iniciar(perguntas, configTemas, estado.config);
+        quizEngine.iniciar(perguntasQuiz, configTemas, estado.config);
         
         // Mostra tela do quiz
         mostrarTela('quiz');
@@ -735,9 +749,9 @@ function usarAjudaEliminar() {
 }
 
 /**
- * Usa a ajuda de pular pergunta - busca uma nova pergunta para substituir
+ * Usa a ajuda de pular pergunta - usa a pergunta reserva carregada no início
  */
-async function usarAjudaPular() {
+function usarAjudaPular() {
     if (quizEngine.ajudasUsadas.pular || !estado.config?.ajudaPular) return;
     if (quizEngine.respondeu) return;
     
@@ -753,45 +767,19 @@ async function usarAjudaPular() {
     
     console.log(`⏭️ Ajuda usada: Pulando pergunta "${perguntaPulada.id}"`);
     
-    // Busca uma nova pergunta para substituir
-    try {
-        // IDs das perguntas já na partida (para não repetir)
-        const idsAtuais = quizEngine.perguntas.map(p => p.id);
-        
-        // Busca do mesmo tema ou aleatória
-        let novasPergunta = [];
-        if (perguntaPulada.tema) {
-            // Tenta buscar do mesmo tema
-            const { buscarPerguntasPorTemas } = await import('./firebase-config.js');
-            novasPergunta = await buscarPerguntasPorTemas([perguntaPulada.tema], 5, estado.jogador, estado.config?.evitarRepeticao || 0);
-        } else {
-            // Busca aleatória
-            const { buscarPerguntasAleatorias } = await import('./firebase-config.js');
-            novasPergunta = await buscarPerguntasAleatorias(5, estado.jogador, estado.config?.evitarRepeticao || 0);
-        }
-        
-        // Filtra para não pegar uma que já está na partida
-        const perguntaSubstituta = novasPergunta.find(p => !idsAtuais.includes(p.id));
-        
-        if (perguntaSubstituta) {
-            // Substitui a pergunta pulada pela nova
-            quizEngine.perguntas[quizEngine.perguntaAtual] = perguntaSubstituta;
-            console.log(`✅ Nova pergunta: "${perguntaSubstituta.id}"`);
-            
-            // Recarrega a pergunta (que agora é a nova)
-            setTimeout(() => quizEngine.carregarPergunta(), 300);
-        } else {
-            // Não encontrou substituta - remove a pergunta pulada e segue
-            console.log(`⚠️ Sem pergunta substituta disponível`);
-            quizEngine.perguntas.splice(quizEngine.perguntaAtual, 1);
-            setTimeout(() => quizEngine.carregarPergunta(), 300);
-        }
-    } catch (error) {
-        console.error('Erro ao buscar pergunta substituta:', error);
-        // Em caso de erro, apenas remove a pergunta pulada
+    // Usa a pergunta reserva se disponível
+    if (estado.perguntaReserva) {
+        quizEngine.perguntas[quizEngine.perguntaAtual] = estado.perguntaReserva;
+        console.log(`✅ Usando pergunta reserva: "${estado.perguntaReserva.id}"`);
+        estado.perguntaReserva = null; // Limpa a reserva (só pode usar uma vez)
+    } else {
+        // Sem reserva - remove a pergunta pulada
+        console.log(`⚠️ Sem pergunta reserva disponível`);
         quizEngine.perguntas.splice(quizEngine.perguntaAtual, 1);
-        setTimeout(() => quizEngine.carregarPergunta(), 300);
     }
+    
+    // Recarrega (nova pergunta ou próxima)
+    setTimeout(() => quizEngine.carregarPergunta(), 300);
 }
 
 function renderizarAlternativas() {
