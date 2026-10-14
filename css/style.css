@@ -1386,8 +1386,26 @@ body {
         padding: 12px 16px;
     }
     
+    /* Resultado mais compacto no mobile */
     .resultado-resumo {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .resultado-card.destaque {
+        grid-column: 1 / -1; /* Pontuação ocupa linha inteira */
+    }
+    
+    .resultado-card {
+        padding: 12px 8px;
+    }
+    
+    .resultado-card .resultado-valor {
+        font-size: 1.5rem;
+    }
+    
+    .resultado-card .resultado-label {
+        font-size: 0.75rem;
     }
     
     .resultado-acoes {
