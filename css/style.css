@@ -736,6 +736,103 @@ body {
     pointer-events: none;
 }
 
+/* Barra de Ajudas */
+.ajudas-bar {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.ajudas-bar.oculto {
+    display: none;
+}
+
+.btn-ajuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 16px;
+    background: linear-gradient(145deg, #f8faff 0%, #e8efff 100%);
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 80px;
+}
+
+.btn-ajuda:hover:not(:disabled) {
+    border-color: var(--primary);
+    background: linear-gradient(145deg, #ffffff 0%, #dbeafe 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.btn-ajuda:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background: var(--gray-100);
+    border-color: var(--gray-200);
+}
+
+.btn-ajuda.usado {
+    opacity: 0.5;
+    background: var(--gray-100);
+    border-style: dashed;
+}
+
+.btn-ajuda.usado::after {
+    content: '✓';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--success);
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-ajuda {
+    position: relative;
+}
+
+.ajuda-icone {
+    font-size: 1.5rem;
+}
+
+.ajuda-texto {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-600);
+}
+
+@media (max-width: 640px) {
+    .ajudas-bar {
+        gap: 8px;
+    }
+    
+    .btn-ajuda {
+        padding: 8px 12px;
+        min-width: 70px;
+    }
+    
+    .ajuda-icone {
+        font-size: 1.2rem;
+    }
+    
+    .ajuda-texto {
+        font-size: 0.65rem;
+    }
+}
+
 .cronometro {
     display: flex;
     align-items: center;

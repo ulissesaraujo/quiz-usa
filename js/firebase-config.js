@@ -242,12 +242,82 @@ export function obterTodosIdsTema(temaId) {
 // ========================================
 
 /**
+ * Obtém o histórico de perguntas respondidas do jogador (localStorage)
+ * @param {string} jogador - Nome do jogador
+ * @returns {Array} - Array de IDs de perguntas
+ */
+function obterHistoricoPerguntas(jogador) {
+    const key = `quiz_historico_${jogador}`;
+    const salvo = localStorage.getItem(key);
+    return salvo ? JSON.parse(salvo) : [];
+}
+
+/**
+ * Salva IDs de perguntas no histórico do jogador
+ * @param {string} jogador - Nome do jogador
+ * @param {Array} perguntasIds - IDs das perguntas respondidas
+ * @param {number} limite - Quantidade máxima a manter no histórico
+ */
+export function salvarHistoricoPerguntas(jogador, perguntasIds, limite = 50) {
+    if (!jogador || limite === 0) return;
+    
+    const key = `quiz_historico_${jogador}`;
+    let historico = obterHistoricoPerguntas(jogador);
+    
+    // Adiciona novas perguntas no início
+    historico = [...perguntasIds, ...historico];
+    
+    // Mantém apenas o limite configurado
+    if (historico.length > limite) {
+        historico = historico.slice(0, limite);
+    }
+    
+    localStorage.setItem(key, JSON.stringify(historico));
+    console.log(`📝 Histórico atualizado: ${historico.length} perguntas (limite: ${limite})`);
+}
+
+/**
+ * Filtra perguntas para evitar repetição
+ * @param {Array} perguntas - Array de perguntas
+ * @param {Array} historico - IDs de perguntas a evitar
+ * @param {number} quantidade - Quantidade desejada
+ * @returns {Array} - Perguntas filtradas
+ */
+function filtrarPerguntasEvitandoRepeticao(perguntas, historico, quantidade) {
+    if (!historico || historico.length === 0) {
+        return embaralharArray(perguntas).slice(0, quantidade);
+    }
+    
+    const historicoSet = new Set(historico);
+    
+    // Separa perguntas novas das já respondidas
+    const perguntasNovas = perguntas.filter(p => !historicoSet.has(p.id));
+    const perguntasRepetidas = perguntas.filter(p => historicoSet.has(p.id));
+    
+    console.log(`🔍 Perguntas disponíveis: ${perguntas.length} (novas: ${perguntasNovas.length}, já respondidas: ${perguntasRepetidas.length})`);
+    
+    // Embaralha as novas
+    let resultado = embaralharArray(perguntasNovas);
+    
+    // Se não tiver suficientes, complementa com repetidas
+    if (resultado.length < quantidade) {
+        const faltam = quantidade - resultado.length;
+        resultado = [...resultado, ...embaralharArray(perguntasRepetidas).slice(0, faltam)];
+        console.log(`⚠️ Complementando com ${faltam} perguntas repetidas`);
+    }
+    
+    return resultado.slice(0, quantidade);
+}
+
+/**
  * Busca perguntas por temas selecionados
  * @param {Array} temas - Array de IDs de temas (ex: ['geografia', 'historia'])
  * @param {number} quantidade - Quantidade de perguntas para sortear
+ * @param {string} jogador - Nome do jogador (para evitar repetição)
+ * @param {number} evitarRepeticao - Quantidade de perguntas recentes a evitar
  * @returns {Promise<Array>} - Array de perguntas sorteadas
  */
-export async function buscarPerguntasPorTemas(temas, quantidade = 10) {
+export async function buscarPerguntasPorTemas(temas, quantidade = 10, jogador = null, evitarRepeticao = 0) {
     await firebasePromise;
     
     if (!firebaseDisponivel || !window._firestore) {
@@ -277,8 +347,14 @@ export async function buscarPerguntasPorTemas(temas, quantidade = 10) {
             });
         }
         
-        // Embaralha e seleciona a quantidade desejada
-        const perguntasSorteadas = embaralharArray(todasPerguntas).slice(0, quantidade);
+        // Aplica filtro de repetição se configurado
+        let perguntasSorteadas;
+        if (jogador && evitarRepeticao > 0) {
+            const historico = obterHistoricoPerguntas(jogador);
+            perguntasSorteadas = filtrarPerguntasEvitandoRepeticao(todasPerguntas, historico, quantidade);
+        } else {
+            perguntasSorteadas = embaralharArray(todasPerguntas).slice(0, quantidade);
+        }
         
         console.log(`✅ ${perguntasSorteadas.length} perguntas sorteadas de ${temas.length} tema(s)`);
         return perguntasSorteadas;
@@ -291,9 +367,11 @@ export async function buscarPerguntasPorTemas(temas, quantidade = 10) {
 /**
  * Busca perguntas aleatórias de todos os temas
  * @param {number} quantidade - Quantidade de perguntas
+ * @param {string} jogador - Nome do jogador (para evitar repetição)
+ * @param {number} evitarRepeticao - Quantidade de perguntas recentes a evitar
  * @returns {Promise<Array>}
  */
-export async function buscarPerguntasAleatorias(quantidade = 10) {
+export async function buscarPerguntasAleatorias(quantidade = 10, jogador = null, evitarRepeticao = 0) {
     await firebasePromise;
     
     if (!firebaseDisponivel || !window._firestore) {
@@ -318,8 +396,14 @@ export async function buscarPerguntasAleatorias(quantidade = 10) {
             }
         });
         
-        // Embaralha e seleciona
-        const perguntasSorteadas = embaralharArray(todasPerguntas).slice(0, quantidade);
+        // Aplica filtro de repetição se configurado
+        let perguntasSorteadas;
+        if (jogador && evitarRepeticao > 0) {
+            const historico = obterHistoricoPerguntas(jogador);
+            perguntasSorteadas = filtrarPerguntasEvitandoRepeticao(todasPerguntas, historico, quantidade);
+        } else {
+            perguntasSorteadas = embaralharArray(todasPerguntas).slice(0, quantidade);
+        }
         
         console.log(`✅ ${perguntasSorteadas.length} perguntas aleatórias sorteadas (excluídos: ${temasExcluidos.join(', ')})`);
         return perguntasSorteadas;

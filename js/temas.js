@@ -347,19 +347,21 @@ export class TemasManager {
     /**
      * Busca as perguntas para o quiz baseado na seleção
      * @param {number} quantidade - Quantidade de perguntas
+     * @param {string} jogador - Nome do jogador (para evitar repetição)
+     * @param {number} evitarRepeticao - Quantidade de perguntas recentes a evitar
      * @returns {Promise<Array>}
      */
-    async buscarPerguntas(quantidade = 10) {
+    async buscarPerguntas(quantidade = 10, jogador = null, evitarRepeticao = 0) {
         this.carregando = true;
         
         try {
             let perguntas;
             
             if (this.modoAleatorio) {
-                perguntas = await buscarPerguntasAleatorias(quantidade);
+                perguntas = await buscarPerguntasAleatorias(quantidade, jogador, evitarRepeticao);
             } else {
                 const temas = this.obterTemasSelecionados();
-                perguntas = await buscarPerguntasPorTemas(temas, quantidade);
+                perguntas = await buscarPerguntasPorTemas(temas, quantidade, jogador, evitarRepeticao);
             }
             
             if (this.onPerguntasCarregadas) {
