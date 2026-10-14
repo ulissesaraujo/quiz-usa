@@ -249,7 +249,32 @@ export function obterTodosIdsTema(temaId) {
 function obterHistoricoPerguntas(jogador) {
     const key = `quiz_perguntas_respondidas_${jogador}`;
     const salvo = localStorage.getItem(key);
-    return salvo ? JSON.parse(salvo) : [];
+    
+    if (!salvo) return [];
+    
+    try {
+        const dados = JSON.parse(salvo);
+        
+        // Verifica se é o formato novo (com data) ou antigo (só array)
+        if (dados.dataAtualizacao) {
+            const agora = Date.now();
+            const diasPassados = (agora - dados.dataAtualizacao) / (1000 * 60 * 60 * 24);
+            
+            // Expira após 30 dias
+            if (diasPassados > 30) {
+                localStorage.removeItem(key);
+                console.log(`🗑️ Histórico de perguntas expirado (${Math.floor(diasPassados)} dias)`);
+                return [];
+            }
+            
+            return dados.perguntas || [];
+        }
+        
+        // Formato antigo: migra para o novo
+        return Array.isArray(dados) ? dados : [];
+    } catch {
+        return [];
+    }
 }
 
 /**
@@ -272,7 +297,13 @@ export function salvarHistoricoPerguntas(jogador, perguntasIds, limite = 50) {
         historico = historico.slice(0, limite);
     }
     
-    localStorage.setItem(key, JSON.stringify(historico));
+    // Salva com timestamp para controle de expiração
+    const dados = {
+        perguntas: historico,
+        dataAtualizacao: Date.now()
+    };
+    
+    localStorage.setItem(key, JSON.stringify(dados));
     console.log(`📝 Histórico atualizado: ${historico.length} perguntas (limite: ${limite})`);
 }
 
