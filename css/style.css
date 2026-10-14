@@ -328,43 +328,17 @@ body {
     z-index: 20;
 }
 
-/* OPÇÃO 2: Badge clicável */
-.badge-clicavel {
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.badge-clicavel:hover {
-    transform: scale(1.15);
-    background: #b91c1c;
-}
-
-/* OPÇÃO 1: Botão Limpar */
-.btn-limpar {
-    background: var(--gray-100);
-    color: var(--gray-600);
-    border: 2px solid var(--gray-300);
-    flex: 0 0 auto;
-    min-width: auto;
-    padding: 14px 16px;
-}
-
-.btn-limpar:hover {
-    background: var(--danger);
-    color: white;
-    border-color: var(--danger);
-}
-
-/* OPÇÃO 3: Link discreto */
+/* Link para limpar seleção */
 .limpar-selecao-link {
     text-align: center;
-    margin: -10px 0 10px 0;
+    margin: -8px 0 12px 0;
     font-size: 0.85rem;
 }
 
 .limpar-selecao-link a {
     color: var(--gray-500);
     text-decoration: none;
+    transition: var(--transition);
 }
 
 .limpar-selecao-link a:hover {
@@ -450,6 +424,17 @@ body {
     padding: 0 16px;
     color: var(--gray-400);
     font-size: 0.875rem;
+}
+
+/* Divisor com destaque */
+.divisor-destaque span {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-light);
 }
 
 /* Grid de Temas */

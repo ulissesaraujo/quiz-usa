@@ -74,8 +74,7 @@ const elementos = {
     selecaoInfo: document.getElementById('selecao-info'),
     btnVerRankingSalas: document.getElementById('btn-ver-ranking-salas'),
     btnVerRankingGeral: document.getElementById('btn-ver-ranking-geral'),
-    // Opções de limpar seleção
-    btnLimpar: document.getElementById('btn-limpar'),
+    // Link para limpar seleção
     limparSelecaoLink: document.getElementById('limpar-selecao-link'),
     linkLimparSelecao: document.getElementById('link-limpar-selecao'),
     
@@ -394,13 +393,11 @@ function atualizarUITemas() {
     if (temSelecao) {
         elementos.badgeSelecionados.textContent = numSelecionados;
         elementos.badgeSelecionados.classList.remove('oculto');
-        // Mostra opções de limpar
-        elementos.btnLimpar?.classList.remove('oculto');
+        // Mostra link de limpar
         elementos.limparSelecaoLink?.classList.remove('oculto');
     } else {
         elementos.badgeSelecionados.classList.add('oculto');
-        // Oculta opções de limpar
-        elementos.btnLimpar?.classList.add('oculto');
+        // Oculta link de limpar
         elementos.limparSelecaoLink?.classList.add('oculto');
     }
     
@@ -448,20 +445,7 @@ function inicializarTemas() {
         mostrarRankingGeral();
     });
     
-    // OPÇÃO 1: Botão Limpar
-    elementos.btnLimpar?.addEventListener('click', () => {
-        temasManager.limparSelecao();
-        renderizarTemas();
-    });
-    
-    // OPÇÃO 2: Badge clicável
-    elementos.badgeSelecionados?.addEventListener('click', (e) => {
-        e.stopPropagation(); // Evita acionar o botão Jogar
-        temasManager.limparSelecao();
-        renderizarTemas();
-    });
-    
-    // OPÇÃO 3: Link discreto
+    // Link para limpar seleção
     elementos.linkLimparSelecao?.addEventListener('click', (e) => {
         e.preventDefault();
         temasManager.limparSelecao();
