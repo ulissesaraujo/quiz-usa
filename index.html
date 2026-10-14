@@ -92,7 +92,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build #37 - 11:48:30 08/10/2026</p>
+                <p class="versao-debug">Build #38 - 11:55:40 08/10/2026</p>
             </div>
         </section>
 
@@ -207,21 +207,9 @@
                             🗺️ Geografia
                         </p>
                         
-                        <!-- Área direita: Ajudas + Cronômetro -->
+                        <!-- Área direita: Cronômetro + Ajudas -->
                         <div class="header-direita">
-                            <!-- Barra de Ajudas (compacta) -->
-                            <div class="ajudas-bar" id="ajudas-bar">
-                                <button class="btn-ajuda" id="btn-ajuda-tempo" title="Adicionar tempo extra">
-                                    <span class="ajuda-icone">⏱️</span>
-                                </button>
-                                <button class="btn-ajuda" id="btn-ajuda-eliminar" title="Eliminar 2 alternativas erradas">
-                                    <span class="ajuda-icone">❌</span>
-                                </button>
-                                <button class="btn-ajuda" id="btn-ajuda-pular" title="Pular esta pergunta">
-                                    <span class="ajuda-icone">⏭️</span>
-                                </button>
-                            </div>
-                            
+                            <!-- Cronômetro vem primeiro (à esquerda) -->
                             <div class="cronometro oculto" 
                                  id="cronometro"
                                  role="timer" 
@@ -230,6 +218,22 @@
                                 <span class="cronometro-tempo" 
                                       id="cronometro-tempo"
                                       aria-live="off">10.0s</span>
+                            </div>
+                            
+                            <!-- Barra de Ajudas (estilo badge como o tema) -->
+                            <div class="ajudas-bar" id="ajudas-bar">
+                                <button class="btn-ajuda" id="btn-ajuda-tempo" title="Adicionar tempo extra">
+                                    <span class="ajuda-icone">⏱️</span>
+                                    <span class="ajuda-texto">+Tempo</span>
+                                </button>
+                                <button class="btn-ajuda" id="btn-ajuda-eliminar" title="Eliminar 2 alternativas erradas">
+                                    <span class="ajuda-icone">❌</span>
+                                    <span class="ajuda-texto">Eliminar</span>
+                                </button>
+                                <button class="btn-ajuda" id="btn-ajuda-pular" title="Pular esta pergunta">
+                                    <span class="ajuda-icone">⏭️</span>
+                                    <span class="ajuda-texto">Pular</span>
+                                </button>
                             </div>
                         </div>
                     </div>

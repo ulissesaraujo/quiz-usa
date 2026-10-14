@@ -736,14 +736,14 @@ body {
     pointer-events: none;
 }
 
-/* Área direita do header (ajudas + cronômetro) */
+/* Área direita do header (cronômetro + ajudas) */
 .header-direita {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 
-/* Barra de Ajudas (compacta no header) */
+/* Barra de Ajudas (estilo badge como o tema) */
 .ajudas-bar {
     display: flex;
     align-items: center;
@@ -757,36 +757,39 @@ body {
 .btn-ajuda {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    padding: 0;
-    background: linear-gradient(145deg, #f8faff 0%, #e8efff 100%);
-    border: 2px solid var(--gray-200);
-    border-radius: 50%;
+    gap: 4px;
+    padding: 6px 12px;
+    background: linear-gradient(145deg, #fef9c3 0%, #fde047 100%);
+    border: 1px solid #eab308;
+    border-radius: 20px;
     cursor: pointer;
     transition: var(--transition);
     position: relative;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #854d0e;
 }
 
 .btn-ajuda:hover:not(:disabled) {
-    border-color: var(--primary);
-    background: linear-gradient(145deg, #ffffff 0%, #dbeafe 100%);
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    background: linear-gradient(145deg, #fef08a 0%, #facc15 100%);
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(234, 179, 8, 0.3);
 }
 
 .btn-ajuda:disabled {
     opacity: 0.4;
     cursor: not-allowed;
     background: var(--gray-100);
-    border-color: var(--gray-200);
+    border-color: var(--gray-300);
+    color: var(--gray-500);
 }
 
 .btn-ajuda.usado {
     opacity: 0.5;
     background: var(--gray-100);
     border-style: dashed;
+    border-color: var(--gray-300);
+    color: var(--gray-500);
 }
 
 .btn-ajuda.usado::after {
@@ -806,16 +809,17 @@ body {
 }
 
 .ajuda-icone {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .ajuda-texto {
-    display: none; /* Oculto na versão compacta */
+    font-size: 0.75rem;
+    white-space: nowrap;
 }
 
 @media (max-width: 640px) {
     .header-direita {
-        gap: 8px;
+        gap: 6px;
     }
     
     .ajudas-bar {
@@ -823,12 +827,16 @@ body {
     }
     
     .btn-ajuda {
-        width: 32px;
-        height: 32px;
+        padding: 4px 8px;
+        gap: 3px;
     }
     
     .ajuda-icone {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .ajuda-texto {
+        font-size: 0.65rem;
     }
 }
 
