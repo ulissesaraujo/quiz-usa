@@ -29,6 +29,22 @@ export class QuizEngine {
         this.sessaoOriginalId = null; // ID da sessão que está sendo desafiada
         this.jogadorDesafiado = null; // Nome do jogador que criou a partida original
         
+        // Configurações do quiz
+        this.config = {
+            tempoPergunta: 10,
+            ajudaTempo: true,
+            tempoExtra: 10,
+            ajudaEliminar: true,
+            ajudaPular: false
+        };
+        
+        // Estado das ajudas usadas na partida
+        this.ajudasUsadas = {
+            tempo: false,
+            eliminar: false,
+            pular: false
+        };
+        
         // Callbacks
         this.onPerguntaCarregada = null;
         this.onFaseLeitura = null;
@@ -55,8 +71,9 @@ export class QuizEngine {
      * Inicia o quiz com perguntas e configuração de temas
      * @param {Array} perguntas - Array de perguntas do Firebase
      * @param {Object} configTemas - Configuração dos temas selecionados
+     * @param {Object} configGlobal - Configurações globais do quiz
      */
-    iniciar(perguntas, configTemas = {}) {
+    iniciar(perguntas, configTemas = {}, configGlobal = {}) {
         this.perguntas = [...perguntas];
         this.temasSelecionados = configTemas.temas || [];
         this.temasNomes = configTemas.temasNomes || [];
@@ -69,13 +86,31 @@ export class QuizEngine {
         this.sessaoOriginalId = configTemas.sessaoOriginalId || this.sessaoId;
         this.jogadorDesafiado = configTemas.jogadorDesafiado || null;
         
+        // Aplica configurações globais
+        if (configGlobal) {
+            this.config = {
+                tempoPergunta: configGlobal.tempoPergunta || 10,
+                ajudaTempo: configGlobal.ajudaTempo !== false,
+                tempoExtra: configGlobal.tempoExtra || 10,
+                ajudaEliminar: configGlobal.ajudaEliminar !== false,
+                ajudaPular: configGlobal.ajudaPular || false
+            };
+        }
+        
+        // Reseta estado das ajudas
+        this.ajudasUsadas = {
+            tempo: false,
+            eliminar: false,
+            pular: false
+        };
+        
         this.perguntaAtual = 0;
         this.pontuacaoTotal = 0;
         this.respostas = [];
         this.respondeu = false;
         
         const tipoPartida = this.modoDesafio ? 'Desafio' : 'Quiz';
-        console.log(`🎮 ${tipoPartida} iniciado: ${this.descricaoTemas} (${this.perguntas.length} perguntas)`);
+        console.log(`🎮 ${tipoPartida} iniciado: ${this.descricaoTemas} (${this.perguntas.length} perguntas, ${this.config.tempoPergunta}s por pergunta)`);
         
         this.carregarPergunta();
     }
@@ -222,9 +257,10 @@ export class QuizEngine {
         this.timerCronometro = setInterval(() => {
             try {
                 this.cronometroSegundos = (Date.now() - this.tempoInicio) / 1000;
+                const tempoLimite = this.config.tempoPergunta;
                 
                 // Anuncia tempo restante em momentos críticos
-                const tempoRestante = Math.ceil(10 - this.cronometroSegundos);
+                const tempoRestante = Math.ceil(tempoLimite - this.cronometroSegundos);
                 if (tempoRestante !== this._ultimoAnuncioTempo && tempoRestante > 0) {
                     this._ultimoAnuncioTempo = tempoRestante;
                     try {
@@ -237,12 +273,13 @@ export class QuizEngine {
                 if (this.onFaseResposta) {
                     this.onFaseResposta({ 
                         ativa: true, 
-                        tempo: this.cronometroSegundos 
+                        tempo: this.cronometroSegundos,
+                        tempoLimite: tempoLimite
                     });
                 }
                 
-                // Tempo esgotado após 10 segundos
-                if (this.cronometroSegundos >= 10 && !this.respondeu) {
+                // Tempo esgotado após o limite configurado
+                if (this.cronometroSegundos >= tempoLimite && !this.respondeu) {
                     this.tempoEsgotado();
                 }
             } catch (error) {

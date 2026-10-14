@@ -851,7 +851,7 @@ export async function aguardarFirebase() {
 const CONFIG_PADRAO = {
     qtdPerguntas: 10,
     evitarRepeticao: 50,
-    tempoPergunta: 15,
+    tempoPergunta: 10,
     ajudaTempo: true,
     tempoExtra: 10,
     ajudaEliminar: true,

@@ -5,7 +5,7 @@
 import { QuizEngine } from './quiz.js';
 import { RankingManager } from './ranking.js';
 import { TemasManager } from './temas.js';
-import { buscarPerguntasPorIds } from './firebase-config.js';
+import { buscarPerguntasPorIds, buscarConfiguracoes } from './firebase-config.js';
 import { Anunciador, GerenciadorFoco, NavegacaoTeclado } from './acessibilidade.js';
 
 // ========================================
@@ -40,7 +40,8 @@ function separarEmojiDoTexto(enunciado) {
 // ========================================
 const estado = {
     jogador: '',
-    carregando: false
+    carregando: false,
+    config: null // Configurações globais do quiz
 };
 
 // Instâncias dos gerenciadores
@@ -436,8 +437,12 @@ async function iniciarQuiz() {
     elementos.btnJogar.textContent = 'Carregando...';
     
     try {
-        // Busca perguntas
-        const perguntas = await temasManager.buscarPerguntas(10);
+        // Carrega configurações globais
+        estado.config = await buscarConfiguracoes();
+        const qtdPerguntas = estado.config.qtdPerguntas || 10;
+        
+        // Busca perguntas usando a quantidade configurada
+        const perguntas = await temasManager.buscarPerguntas(qtdPerguntas);
         
         if (perguntas.length === 0) {
             alert('Não há perguntas disponíveis para os temas selecionados.');
@@ -454,8 +459,8 @@ async function iniciarQuiz() {
         // Configura callbacks do quiz engine
         configurarCallbacksQuiz();
         
-        // Inicia o quiz
-        quizEngine.iniciar(perguntas, configTemas);
+        // Inicia o quiz com as configurações
+        quizEngine.iniciar(perguntas, configTemas, estado.config);
         
         // Mostra tela do quiz
         mostrarTela('quiz');
@@ -577,18 +582,23 @@ function configurarCallbacksQuiz() {
         }
     };
     
-    quizEngine.onFaseResposta = ({ ativa, tempo }) => {
+    quizEngine.onFaseResposta = ({ ativa, tempo, tempoLimite }) => {
         if (ativa) {
             elementos.faseLeitura.classList.add('oculto');
             elementos.alternativasContainer.classList.remove('oculto');
             elementos.cronometro.classList.remove('oculto');
             elementos.cronometroTempo.textContent = `${tempo.toFixed(1)}s`;
             
+            // Usa o tempo limite configurado (padrão 10s)
+            const limite = tempoLimite || 10;
+            const tempoAlerta = limite * 0.6;  // 60% do tempo = alerta
+            const tempoCritico = limite * 0.8; // 80% do tempo = crítico
+            
             // Muda cor do cronômetro conforme o tempo
             elementos.cronometroTempo.classList.remove('alerta', 'critico');
-            if (tempo >= 8) {
+            if (tempo >= tempoCritico) {
                 elementos.cronometroTempo.classList.add('critico');
-            } else if (tempo >= 6) {
+            } else if (tempo >= tempoAlerta) {
                 elementos.cronometroTempo.classList.add('alerta');
             }
             
