@@ -147,6 +147,11 @@ function mostrarTela(telaNome) {
         if (titulosTelas[telaNome]) {
             Anunciador.anunciar(titulosTelas[telaNome]);
         }
+        
+        // Atualiza UI dos temas quando volta para a tela de seleção
+        if (telaNome === 'temas') {
+            atualizarUITemas();
+        }
     }
 }
 
