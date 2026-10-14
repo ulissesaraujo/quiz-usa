@@ -237,6 +237,9 @@ export class RankingManager {
      * @returns {string}
      */
     formatarTempo(segundos) {
+        // Arredonda para 1 casa decimal para evitar problemas de precisão
+        segundos = Math.round(segundos * 10) / 10;
+        
         if (segundos < 60) {
             return `${segundos.toFixed(1)}s`;
         }
