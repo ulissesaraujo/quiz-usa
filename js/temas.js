@@ -141,12 +141,57 @@ export class TemasManager {
      * @param {string} temaId - ID do tema
      */
     selecionarTema(temaId) {
+        const primeiraSelecao = this.temasSelecionados.size === 0 && !this.modoAleatorio;
+        
         if (this.modoAleatorio) {
             this.modoAleatorio = false;
         }
         
         this.temasSelecionados.add(temaId);
         this.notificarSelecaoAlterada();
+        
+        // Mostra dica na primeira seleção
+        if (primeiraSelecao) {
+            this.mostrarDicaPrimeiraSelecao();
+        }
+    }
+    
+    /**
+     * Mostra dica para novos usuários na primeira seleção de tema
+     */
+    mostrarDicaPrimeiraSelecao() {
+        // Verifica se já mostrou a dica antes
+        if (localStorage.getItem('quiz_dica_selecao_mostrada')) return;
+        
+        // Cria elemento da dica
+        const dica = document.createElement('div');
+        dica.className = 'dica-selecao';
+        dica.innerHTML = `
+            <span>💡 Selecione mais temas ou clique em <strong>Jogar</strong> para começar!</span>
+            <button class="dica-fechar" aria-label="Fechar dica">✕</button>
+        `;
+        
+        // Insere após a grade de temas
+        const temasGrid = document.querySelector('.temas-grid');
+        if (temasGrid) {
+            temasGrid.parentNode.insertBefore(dica, temasGrid.nextSibling);
+            
+            // Fecha ao clicar no X
+            dica.querySelector('.dica-fechar').addEventListener('click', () => {
+                dica.remove();
+            });
+            
+            // Remove automaticamente após 6 segundos
+            setTimeout(() => {
+                if (dica.parentNode) {
+                    dica.classList.add('dica-saindo');
+                    setTimeout(() => dica.remove(), 300);
+                }
+            }, 6000);
+            
+            // Marca que já mostrou
+            localStorage.setItem('quiz_dica_selecao_mostrada', '1');
+        }
     }
 
     /**
