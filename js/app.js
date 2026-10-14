@@ -744,16 +744,66 @@ async function mostrarResultado(resultado) {
     mostrarTela('resultado');
 }
 
+// Estado da ordenação do histórico pessoal
+let historicoPessoalDados = [];
+let ordenacaoHistorico = { campo: 'dataHora', ordem: 'desc' };
+
 async function carregarRankingPartida(temas) {
     // Busca histórico de partidas do jogador atual
-    const historico = await rankingManager.obterHistoricoJogador(20);
+    historicoPessoalDados = await rankingManager.obterHistoricoJogador(20);
     
+    renderizarHistoricoPessoal();
+    
+    // Configura os event listeners para ordenação
+    configurarOrdenacaoHistorico();
+}
+
+function configurarOrdenacaoHistorico() {
+    const tabela = document.getElementById('ranking-partida-tabela');
+    const headers = tabela.querySelectorAll('.th-ordenavel');
+    
+    headers.forEach(th => {
+        // Remove listener antigo se existir
+        th.removeEventListener('click', th._clickHandler);
+        
+        // Cria novo handler
+        th._clickHandler = () => {
+            const campo = th.dataset.sort;
+            
+            // Se clicar no mesmo campo, inverte a ordem
+            if (ordenacaoHistorico.campo === campo) {
+                ordenacaoHistorico.ordem = ordenacaoHistorico.ordem === 'asc' ? 'desc' : 'asc';
+            } else {
+                ordenacaoHistorico.campo = campo;
+                // Ordem padrão por campo
+                ordenacaoHistorico.ordem = (campo === 'tempoTotal') ? 'asc' : 'desc';
+            }
+            
+            // Atualiza visual dos headers
+            headers.forEach(h => {
+                h.classList.remove('th-ativo');
+                const baseName = h.textContent.replace(/[▲▼⇅]/g, '').trim();
+                h.textContent = baseName + ' ⇅';
+            });
+            
+            th.classList.add('th-ativo');
+            const baseName = th.textContent.replace(/[▲▼⇅]/g, '').trim();
+            th.textContent = baseName + (ordenacaoHistorico.ordem === 'desc' ? ' ▼' : ' ▲');
+            
+            renderizarHistoricoPessoal();
+        };
+        
+        th.addEventListener('click', th._clickHandler);
+    });
+}
+
+function renderizarHistoricoPessoal() {
     elementos.rankingPartidaBody.innerHTML = '';
     
-    if (historico.length === 0) {
+    if (historicoPessoalDados.length === 0) {
         elementos.rankingPartidaBody.innerHTML = `
             <tr>
-                <td colspan="5" style="text-align: center; color: #9ca3af;">
+                <td colspan="6" style="text-align: center; color: #9ca3af;">
                     Nenhuma partida ainda
                 </td>
             </tr>
@@ -761,9 +811,44 @@ async function carregarRankingPartida(temas) {
         return;
     }
     
-    // A primeira partida (mais recente) é a que acabou de jogar
-    historico.forEach((item, index) => {
-        const isPartidaAtual = index === 0; // Primeira é a mais recente
+    // Ordena os dados
+    const historicoOrdenado = [...historicoPessoalDados].sort((a, b) => {
+        let valorA = a[ordenacaoHistorico.campo];
+        let valorB = b[ordenacaoHistorico.campo];
+        
+        // Tratamento para datas (pode ser Firestore Timestamp ou string ISO)
+        if (ordenacaoHistorico.campo === 'dataHora') {
+            const dataA = valorA?.toDate ? valorA.toDate() : new Date(valorA);
+            const dataB = valorB?.toDate ? valorB.toDate() : new Date(valorB);
+            valorA = dataA.getTime();
+            valorB = dataB.getTime();
+        }
+        
+        let resultado = 0;
+        if (valorA < valorB) resultado = -1;
+        else if (valorA > valorB) resultado = 1;
+        
+        return ordenacaoHistorico.ordem === 'desc' ? -resultado : resultado;
+    });
+    
+    // Encontra o índice da partida mais recente (para destacar)
+    let indexPartidaAtual = -1;
+    if (ordenacaoHistorico.campo === 'dataHora' && ordenacaoHistorico.ordem === 'desc') {
+        indexPartidaAtual = 0;
+    } else {
+        // Encontra a partida mais recente na lista ordenada
+        let maisRecente = null;
+        historicoOrdenado.forEach((item, idx) => {
+            const dataItem = item.dataHora?.toDate ? item.dataHora.toDate() : new Date(item.dataHora);
+            if (!maisRecente || dataItem > maisRecente) {
+                maisRecente = dataItem;
+                indexPartidaAtual = idx;
+            }
+        });
+    }
+    
+    historicoOrdenado.forEach((item, index) => {
+        const isPartidaAtual = index === indexPartidaAtual;
         const tr = document.createElement('tr');
         tr.className = isPartidaAtual ? 'destaque partida-atual' : '';
         
@@ -796,7 +881,7 @@ async function carregarRankingPartida(temas) {
         
         elementos.rankingPartidaBody.appendChild(tr);
         
-        // Scroll para a partida atual (primeira linha)
+        // Scroll para a partida atual
         if (isPartidaAtual) {
             tr.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
