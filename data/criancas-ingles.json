@@ -1,0 +1,245 @@
+{
+  "tema": "ingles",
+  "perguntas": [
+    {
+      "enunciado": "🔴 Como se diz VERMELHO em inglês?",
+      "alternativas": ["Blue", "Green", "Red", "Yellow"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🔵 Como se diz AZUL em inglês?",
+      "alternativas": ["Blue", "Red", "Green", "Pink"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🟢 Como se diz VERDE em inglês?",
+      "alternativas": ["Yellow", "Orange", "Purple", "Green"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🟡 Como se diz AMARELO em inglês?",
+      "alternativas": ["White", "Yellow", "Brown", "Black"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "⚫ Como se diz PRETO em inglês?",
+      "alternativas": ["White", "Gray", "Brown", "Black"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "⚪ Como se diz BRANCO em inglês?",
+      "alternativas": ["White", "Black", "Gray", "Silver"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🟠 Como se diz LARANJA em inglês?",
+      "alternativas": ["Purple", "Pink", "Brown", "Orange"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🩷 Como se diz ROSA em inglês?",
+      "alternativas": ["Pink", "Purple", "Red", "Orange"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🟤 Como se diz MARROM em inglês?",
+      "alternativas": ["Gray", "Brown", "Black", "Orange"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🟣 Como se diz ROXO em inglês?",
+      "alternativas": ["Pink", "Blue", "Purple", "Red"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐕 Como se diz CACHORRO em inglês?",
+      "alternativas": ["Cat", "Bird", "Fish", "Dog"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐈 Como se diz GATO em inglês?",
+      "alternativas": ["Dog", "Mouse", "Cat", "Rabbit"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐦 Como se diz PÁSSARO em inglês?",
+      "alternativas": ["Bird", "Fish", "Frog", "Bee"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐟 Como se diz PEIXE em inglês?",
+      "alternativas": ["Bird", "Snake", "Frog", "Fish"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐘 Como se diz ELEFANTE em inglês?",
+      "alternativas": ["Lion", "Elephant", "Tiger", "Bear"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦁 Como se diz LEÃO em inglês?",
+      "alternativas": ["Tiger", "Bear", "Wolf", "Lion"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐻 Como se diz URSO em inglês?",
+      "alternativas": ["Bear", "Wolf", "Fox", "Deer"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐒 Como se diz MACACO em inglês?",
+      "alternativas": ["Mouse", "Moose", "Monkey", "Mole"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐸 Como se diz SAPO em inglês?",
+      "alternativas": ["Fish", "Frog", "Snake", "Turtle"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦋 Como se diz BORBOLETA em inglês?",
+      "alternativas": ["Bee", "Bug", "Bird", "Butterfly"],
+      "correta": 3,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐢 Como se diz TARTARUGA em inglês?",
+      "alternativas": ["Turtle", "Toad", "Turkey", "Tiger"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐇 Como se diz COELHO em inglês?",
+      "alternativas": ["Rabbit", "Mouse", "Rat", "Hamster"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍎 Como se diz MAÇÃ em inglês?",
+      "alternativas": ["Orange", "Banana", "Grape", "Apple"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍌 Como se diz BANANA em inglês?",
+      "alternativas": ["Banana", "Apple", "Mango", "Peach"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "📚 Como se diz LIVRO em inglês?",
+      "alternativas": ["Notebook", "Paper", "Book", "Pen"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "✏️ Como se diz LÁPIS em inglês?",
+      "alternativas": ["Pen", "Paper", "Eraser", "Pencil"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🏠 Como se diz CASA em inglês?",
+      "alternativas": ["Home", "Hut", "House", "Hall"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🚗 Como se diz CARRO em inglês?",
+      "alternativas": ["Car", "Bus", "Bike", "Truck"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "⭐ Como se diz ESTRELA em inglês?",
+      "alternativas": ["Sun", "Star", "Moon", "Sky"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌙 Como se diz LUA em inglês?",
+      "alternativas": ["Sun", "Star", "Sky", "Moon"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "☀️ Como se diz SOL em inglês?",
+      "alternativas": ["Moon", "Sun", "Star", "Cloud"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌳 Como se diz ÁRVORE em inglês?",
+      "alternativas": ["Flower", "Grass", "Leaf", "Tree"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌸 Como se diz FLOR em inglês?",
+      "alternativas": ["Tree", "Flower", "Leaf", "Grass"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💧 Como se diz ÁGUA em inglês?",
+      "alternativas": ["Water", "Fire", "Air", "Earth"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍕 Como se diz PIZZA em inglês?",
+      "alternativas": ["Pasta", "Pie", "Pizza", "Pancake"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🎈 Como se diz BALÃO em inglês?",
+      "alternativas": ["Ball", "Bubble", "Balloon", "Box"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "⚽ Como se diz BOLA em inglês?",
+      "alternativas": ["Ball", "Balloon", "Bowl", "Bell"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👑 Como se diz REI em inglês?",
+      "alternativas": ["King", "Queen", "Prince", "Knight"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "👸 Como se diz RAINHA em inglês?",
+      "alternativas": ["King", "Princess", "Queen", "Prince"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🎂 Como se diz BOLO em inglês?",
+      "alternativas": ["Cookie", "Cake", "Candy", "Chocolate"],
+      "correta": 1,
+      "dificuldade": "facil"
+    }
+  ]
+}

@@ -21,7 +21,14 @@ export const TEMAS_DISPONIVEIS = [
         ]
     },
     { id: 'comidas-bebidas', nome: 'Comidas e Bebidas', icone: '🍔' },
-    { id: 'criancas', nome: 'Crianças', icone: '🧒' },
+    { 
+        id: 'criancas', 
+        nome: 'Crianças', 
+        icone: '🧒',
+        subtemas: [
+            { id: 'ingles', nome: 'Inglês', icone: '🇺🇸' }
+        ]
+    },
     { id: 'curiosidades', nome: 'Curiosidades', icone: '💡' },
     { 
         id: 'esportes', 
