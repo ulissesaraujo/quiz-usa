@@ -1,0 +1,125 @@
+{
+  "tema": "matematica",
+  "perguntas": [
+    {
+      "enunciado": "🍎🍎 + 🍎🍎🍎 = ?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "⭐⭐⭐ + ⭐⭐ = ?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍌🍌🍌🍌 - 🍌 = ?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🎈🎈🎈🎈🎈 - 🎈🎈 = ?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐶🐶 + 🐶🐶 + 🐶🐶 = ?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual número vem depois do 7?",
+      "alternativas": ["6", "7", "8", "9"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual número vem antes do 5?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕 = Quantas pizzas?",
+      "alternativas": ["8", "9", "10", "11"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "5 + 5 = ?",
+      "alternativas": ["8", "9", "10", "11"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐱🐱🐱 x 2 = ?",
+      "alternativas": ["4", "5", "6", "7"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quantos dedos temos nas duas mãos? ✋✋",
+      "alternativas": ["5", "8", "10", "12"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Uma dúzia tem quantas unidades?",
+      "alternativas": ["6", "10", "12", "15"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🔵🔵🔵🔵 + 🔵🔵🔵🔵 = ?",
+      "alternativas": ["6", "7", "8", "9"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "15 - 5 = ?",
+      "alternativas": ["5", "8", "10", "12"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Qual é o dobro de 4?",
+      "alternativas": ["6", "8", "10", "12"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Qual é a metade de 10?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "2 + 2 + 2 + 2 = ?",
+      "alternativas": ["6", "7", "8", "9"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍬🍬🍬🍬🍬🍬 ÷ 2 = ?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "Quantos dias tem uma semana?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "Quantos meses tem um ano?",
+      "alternativas": ["10", "11", "12", "13"],
+      "correta": 2,
+      "dificuldade": "facil"
+    }
+  ]
+}

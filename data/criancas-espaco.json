@@ -1,0 +1,125 @@
+{
+  "tema": "espaco",
+  "perguntas": [
+    {
+      "enunciado": "☀️ Qual estrela está mais perto da Terra?",
+      "alternativas": ["Lua", "Sol", "Marte", "Vênus"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🔴 Qual planeta é conhecido como 'planeta vermelho'?",
+      "alternativas": ["Vênus", "Júpiter", "Marte", "Saturno"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🪐 Qual planeta tem anéis ao redor?",
+      "alternativas": ["Marte", "Júpiter", "Urano", "Saturno"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌍 Qual planeta nós vivemos?",
+      "alternativas": ["Marte", "Terra", "Lua", "Sol"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌕 O que é a Lua?",
+      "alternativas": ["Uma estrela", "Um planeta", "Um satélite natural", "Um cometa"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🚀 Como se chama a pessoa que viaja para o espaço?",
+      "alternativas": ["Piloto", "Astronauta", "Aviador", "Navegador"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌟 O que são as estrelas?",
+      "alternativas": ["Bolas de gelo", "Bolas de gás quente", "Pedras brilhantes", "Satélites"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🪨 Como se chama uma pedra que cai do espaço?",
+      "alternativas": ["Estrela cadente", "Meteorito", "Cometa", "Asteroide"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "📡 Qual foi o primeiro país a enviar um homem ao espaço?",
+      "alternativas": ["Estados Unidos", "Rússia (URSS)", "China", "Brasil"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "👨‍🚀 Quem foi o primeiro homem a pisar na Lua?",
+      "alternativas": ["Yuri Gagarin", "Neil Armstrong", "Buzz Aldrin", "Alan Shepard"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🌑 Quantas fases a Lua tem?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🔭 Qual instrumento usamos para ver as estrelas de perto?",
+      "alternativas": ["Microscópio", "Binóculo", "Telescópio", "Lupa"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌌 Como se chama o grupo de estrelas no céu?",
+      "alternativas": ["Via Láctea", "Constelação", "Nebulosa", "Sistema Solar"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🌡️ Qual planeta é o mais quente do Sistema Solar?",
+      "alternativas": ["Mercúrio", "Vênus", "Marte", "Júpiter"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "❄️ Qual planeta é o mais frio do Sistema Solar?",
+      "alternativas": ["Saturno", "Urano", "Netuno", "Plutão"],
+      "correta": 2,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "🌏 Quantos planetas tem o Sistema Solar?",
+      "alternativas": ["7", "8", "9", "10"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🔵 Qual é o maior planeta do Sistema Solar?",
+      "alternativas": ["Saturno", "Júpiter", "Netuno", "Urano"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "⚪ Qual é o menor planeta do Sistema Solar?",
+      "alternativas": ["Marte", "Vênus", "Mercúrio", "Terra"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "☄️ O que é um cometa?",
+      "alternativas": ["Uma estrela", "Gelo e poeira espacial", "Um planeta", "Uma lua"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🛸 Qual é o nome da nossa galáxia?",
+      "alternativas": ["Andrômeda", "Via Láctea", "Centauro", "Orion"],
+      "correta": 1,
+      "dificuldade": "facil"
+    }
+  ]
+}

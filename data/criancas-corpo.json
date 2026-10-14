@@ -1,0 +1,125 @@
+{
+  "tema": "corpo",
+  "perguntas": [
+    {
+      "enunciado": "✋ Quantos dedos temos em cada mão?",
+      "alternativas": ["4", "5", "6", "10"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "❤️ Qual órgão bombeia o sangue pelo corpo?",
+      "alternativas": ["Pulmão", "Coração", "Cérebro", "Fígado"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🧠 Qual órgão usamos para pensar?",
+      "alternativas": ["Coração", "Pulmão", "Cérebro", "Estômago"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👃 Qual parte do corpo usamos para sentir cheiros?",
+      "alternativas": ["Olhos", "Orelhas", "Boca", "Nariz"],
+      "correta": 3,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👂 Qual parte do corpo usamos para ouvir?",
+      "alternativas": ["Olhos", "Orelhas", "Nariz", "Boca"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👅 Qual parte do corpo usamos para sentir sabores?",
+      "alternativas": ["Dentes", "Lábios", "Língua", "Garganta"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👀 Quantos olhos temos?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦴 O que temos dentro do corpo que nos deixa em pé?",
+      "alternativas": ["Músculos", "Ossos", "Sangue", "Pele"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🫁 Quais órgãos usamos para respirar?",
+      "alternativas": ["Rins", "Pulmões", "Intestino", "Estômago"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦷 Quantos dentes de leite uma criança tem?",
+      "alternativas": ["10", "15", "20", "32"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🦵 Quantas pernas temos?",
+      "alternativas": ["1", "2", "3", "4"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💪 O que faz os braços e pernas se mexerem?",
+      "alternativas": ["Ossos", "Pele", "Músculos", "Sangue"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🩸 Qual é a cor do sangue?",
+      "alternativas": ["Azul", "Verde", "Vermelho", "Roxo"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤒 O que o termômetro mede?",
+      "alternativas": ["Peso", "Altura", "Temperatura", "Pressão"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦴 Qual é o maior osso do corpo?",
+      "alternativas": ["Braço", "Costela", "Fêmur (coxa)", "Coluna"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "👁️ Qual dos 5 sentidos usamos para ver?",
+      "alternativas": ["Audição", "Tato", "Visão", "Paladar"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🖐️ Qual sentido nos permite sentir texturas?",
+      "alternativas": ["Olfato", "Tato", "Paladar", "Audição"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💤 O que acontece quando dormimos?",
+      "alternativas": ["O corpo para", "O corpo descansa e se recupera", "Nada", "Ficamos mais fracos"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🏃 Qual órgão bate mais rápido quando corremos?",
+      "alternativas": ["Cérebro", "Estômago", "Coração", "Pulmão"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍎 Onde a comida vai primeiro depois que engolimos?",
+      "alternativas": ["Intestino", "Pulmão", "Estômago", "Coração"],
+      "correta": 2,
+      "dificuldade": "facil"
+    }
+  ]
+}

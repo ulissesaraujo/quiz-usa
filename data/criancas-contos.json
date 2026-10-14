@@ -1,0 +1,125 @@
+{
+  "tema": "contos",
+  "perguntas": [
+    {
+      "enunciado": "👠 Quem perdeu o sapatinho de cristal no baile?",
+      "alternativas": ["Branca de Neve", "Bela Adormecida", "Cinderela", "Rapunzel"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍎 Qual princesa comeu uma maçã envenenada?",
+      "alternativas": ["Branca de Neve", "Cinderela", "Rapunzel", "Bela"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐺 Quem tentou enganar a Chapeuzinho Vermelho?",
+      "alternativas": ["Raposa", "Urso", "Lobo Mau", "Bruxa"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🏰 Quantos porquinhos tinham na história?",
+      "alternativas": ["2", "3", "4", "5"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💇‍♀️ Qual princesa tinha cabelos muito longos?",
+      "alternativas": ["Cinderela", "Bela", "Rapunzel", "Aurora"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐸 O que acontece quando a princesa beija o sapo?",
+      "alternativas": ["Vira bruxa", "Ele vira príncipe", "Nada", "Ela dorme"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🫘 O que João plantou que cresceu até o céu?",
+      "alternativas": ["Milho", "Trigo", "Feijão mágico", "Girassol"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🏠 De que era feita a casa da bruxa em João e Maria?",
+      "alternativas": ["Madeira", "Pedra", "Doces e biscoitos", "Palha"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👃 Por que o nariz do Pinóquio crescia?",
+      "alternativas": ["Quando chorava", "Quando mentia", "Quando ria", "Quando cantava"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💤 Quantos anos a Bela Adormecida dormiu?",
+      "alternativas": ["10 anos", "50 anos", "100 anos", "200 anos"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🪞 Quem perguntava 'Espelho, espelho meu'?",
+      "alternativas": ["Cinderela", "Madrasta da Branca de Neve", "Rapunzel", "Bela"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🧑‍🤝‍🧑 Quantos anões moravam com Branca de Neve?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐱 Qual animal usava botas e era muito esperto?",
+      "alternativas": ["Cachorro", "Gato", "Coelho", "Raposa"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦢 Em que os patinhos feios se transformam?",
+      "alternativas": ["Patos bonitos", "Cisnes", "Gansos", "Flamingos"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🧵 O que a princesa furou o dedo que a fez dormir?",
+      "alternativas": ["Agulha", "Espinho", "Fuso de roca", "Faca"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐋 Qual animal engoliu Pinóquio?",
+      "alternativas": ["Tubarão", "Baleia", "Crocodilo", "Polvo"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👧 Quem visitou a casa dos três ursos?",
+      "alternativas": ["Chapeuzinho", "Cachinhos Dourados", "Branca de Neve", "Alice"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌹 Quem se apaixonou pela Fera?",
+      "alternativas": ["Cinderela", "Aurora", "Bela", "Rapunzel"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🎺 Quem era o flautista que atraía ratos com sua música?",
+      "alternativas": ["Flautista de Hamelin", "João", "Pedro", "Hans"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐜 Qual inseto trabalhador aparece na fábula com a cigarra?",
+      "alternativas": ["Abelha", "Formiga", "Grilo", "Besouro"],
+      "correta": 1,
+      "dificuldade": "facil"
+    }
+  ]
+}

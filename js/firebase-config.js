@@ -26,7 +26,17 @@ export const TEMAS_DISPONIVEIS = [
         nome: 'Crianças', 
         icone: '🧒',
         subtemas: [
-            { id: 'ingles', nome: 'Inglês', icone: '🇺🇸' }
+            { id: 'ingles', nome: 'Inglês', icone: '🇺🇸' },
+            { id: 'desenhos', nome: 'Desenhos Animados', icone: '🎬' },
+            { id: 'matematica', nome: 'Matemática Divertida', icone: '🔢' },
+            { id: 'adivinhas', nome: 'Adivinhas', icone: '🧩' },
+            { id: 'planeta', nome: 'Planeta Terra', icone: '🌍' },
+            { id: 'corpo', nome: 'Corpo Humano', icone: '🧬' },
+            { id: 'musicas', nome: 'Músicas Infantis', icone: '🎵' },
+            { id: 'superherois', nome: 'Super-heróis', icone: '🦸' },
+            { id: 'espaco', nome: 'Espaço', icone: '🚀' },
+            { id: 'alimentos', nome: 'Alimentação Saudável', icone: '🥗' },
+            { id: 'contos', nome: 'Contos de Fadas', icone: '🏰' }
         ]
     },
     { id: 'curiosidades', nome: 'Curiosidades', icone: '💡' },

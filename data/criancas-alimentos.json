@@ -1,0 +1,125 @@
+{
+  "tema": "alimentos",
+  "perguntas": [
+    {
+      "enunciado": "🥕 Qual legume é laranja e faz bem para os olhos?",
+      "alternativas": ["Beterraba", "Batata", "Cenoura", "Abóbora"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍎 Qual fruta vermelha é símbolo de saúde?",
+      "alternativas": ["Morango", "Maçã", "Cereja", "Framboesa"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🥛 De onde vem o leite que bebemos?",
+      "alternativas": ["Galinha", "Vaca", "Ovelha", "Cabra"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🥦 Qual vegetal verde parece uma arvorezinha?",
+      "alternativas": ["Espinafre", "Alface", "Brócolis", "Couve"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍌 Qual fruta amarela é rica em potássio?",
+      "alternativas": ["Limão", "Banana", "Abacaxi", "Manga"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🥚 De onde vem o ovo?",
+      "alternativas": ["Vaca", "Galinha", "Pato", "Porco"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍊 Qual fruta é rica em vitamina C?",
+      "alternativas": ["Banana", "Maçã", "Laranja", "Uva"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🥬 Qual verdura usamos para fazer salada?",
+      "alternativas": ["Batata", "Cenoura", "Alface", "Cebola"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍇 Qual fruta usamos para fazer suco de uva?",
+      "alternativas": ["Amora", "Uva", "Jabuticaba", "Açaí"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🥜 Qual alimento é uma semente e pode ser alérgeno?",
+      "alternativas": ["Feijão", "Amendoim", "Milho", "Arroz"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🍯 Qual inseto produz o mel?",
+      "alternativas": ["Formiga", "Abelha", "Vespa", "Borboleta"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🫘 Qual alimento comemos com arroz no Brasil?",
+      "alternativas": ["Milho", "Feijão", "Ervilha", "Lentilha"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍅 Qual fruta vermelha usamos para fazer molho?",
+      "alternativas": ["Morango", "Cereja", "Tomate", "Pimentão"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🥔 Qual legume usamos para fazer batata frita?",
+      "alternativas": ["Mandioca", "Batata", "Inhame", "Cenoura"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💧 Quantos copos de água devemos beber por dia?",
+      "alternativas": ["2 copos", "4 copos", "6-8 copos", "12 copos"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🌽 Qual alimento vem da espiga?",
+      "alternativas": ["Trigo", "Arroz", "Milho", "Aveia"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍞 De que é feito o pão?",
+      "alternativas": ["Arroz", "Milho", "Trigo", "Aveia"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🧀 De onde vem o queijo?",
+      "alternativas": ["Da galinha", "Do leite", "Do ovo", "Da carne"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🍉 Qual fruta é verde por fora e vermelha por dentro?",
+      "alternativas": ["Melão", "Melancia", "Mamão", "Abacate"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🥗 O que é mais saudável comer todo dia?",
+      "alternativas": ["Doces", "Frituras", "Frutas e verduras", "Refrigerante"],
+      "correta": 2,
+      "dificuldade": "facil"
+    }
+  ]
+}

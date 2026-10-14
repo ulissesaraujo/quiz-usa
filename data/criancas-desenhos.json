@@ -1,0 +1,125 @@
+{
+  "tema": "desenhos",
+  "perguntas": [
+    {
+      "enunciado": "🧊 Qual princesa tem poderes de gelo?",
+      "alternativas": ["Rapunzel", "Moana", "Elsa", "Bela"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦁 Qual é o nome do leão que se torna rei na savana?",
+      "alternativas": ["Mufasa", "Simba", "Scar", "Timão"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🧜‍♀️ Qual princesa vive no fundo do mar?",
+      "alternativas": ["Cinderela", "Aurora", "Ariel", "Jasmine"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤠 Qual é o nome do cowboy de Toy Story?",
+      "alternativas": ["Buzz", "Rex", "Woody", "Slinky"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐠 Qual peixinho se perdeu no oceano?",
+      "alternativas": ["Dory", "Nemo", "Marlin", "Gil"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐷 Quem é a porquinha amiga do Peppa?",
+      "alternativas": ["Rebeca Coelha", "Suzy Ovelha", "Emily Elefante", "Candy Gata"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐶 Qual é o nome do cachorro do Mickey?",
+      "alternativas": ["Pateta", "Pluto", "Max", "Bolt"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🚀 Qual personagem diz 'Ao infinito e além!'?",
+      "alternativas": ["Woody", "Rex", "Buzz Lightyear", "Sr. Cabeça de Batata"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👸 Qual princesa perdeu o sapatinho de cristal?",
+      "alternativas": ["Branca de Neve", "Cinderela", "Aurora", "Bela"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐻 Qual ursinho adora mel?",
+      "alternativas": ["Ursinho Pooh", "Balu", "Ted", "Paddington"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦊 Quem é a amiga raposa do Ursinho Pooh?",
+      "alternativas": ["Tigrão", "Leitão", "Ió", "Nenhuma - não tem raposa"],
+      "correta": 3,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐉 Qual dragão é amigo da Mulan?",
+      "alternativas": ["Banguela", "Mushu", "Smaug", "Draco"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🎈 Qual filme da Pixar tem uma casa que voa com balões?",
+      "alternativas": ["Toy Story", "Up - Altas Aventuras", "Divertida Mente", "Carros"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐀 Qual ratinho sonha em ser chef de cozinha?",
+      "alternativas": ["Mickey", "Jerry", "Remy", "Stuart"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👧 Qual menina tem 5 emoções na cabeça?",
+      "alternativas": ["Moana", "Riley", "Vanellope", "Boo"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🦷 Qual é o nome da fada madrinha de Cinderela?",
+      "alternativas": ["Flora", "Fauna", "Fada Madrinha", "Sininho"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐯 Qual é o nome do tigre amigo do Ursinho Pooh?",
+      "alternativas": ["Tigrão", "Tigre", "Tony", "Rajá"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌊 Qual princesa navegou pelo oceano para salvar sua ilha?",
+      "alternativas": ["Ariel", "Pocahontas", "Moana", "Rapunzel"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐕 Qual filme tem 101 cachorrinhos dálmatas?",
+      "alternativas": ["A Dama e o Vagabundo", "101 Dálmatas", "Bolt", "Cães e Gatos"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦎 Qual é o nome do camaleão amigo da Rapunzel?",
+      "alternativas": ["Pascal", "Rango", "Camilo", "Leon"],
+      "correta": 0,
+      "dificuldade": "medio"
+    }
+  ]
+}

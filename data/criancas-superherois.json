@@ -1,0 +1,125 @@
+{
+  "tema": "superherois",
+  "perguntas": [
+    {
+      "enunciado": "🕷️ Qual super-herói foi picado por uma aranha?",
+      "alternativas": ["Batman", "Superman", "Homem-Aranha", "Flash"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦇 Qual herói se veste de morcego?",
+      "alternativas": ["Homem de Ferro", "Batman", "Aquaman", "Gavião Arqueiro"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "⚡ Qual super-herói é o homem mais rápido do mundo?",
+      "alternativas": ["Superman", "Flash", "Mercúrio", "Sonic"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🔨 Qual herói usa um martelo mágico?",
+      "alternativas": ["Capitão América", "Thor", "Hulk", "Homem de Ferro"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🛡️ Qual herói usa um escudo redondo?",
+      "alternativas": ["Thor", "Hulk", "Capitão América", "Gavião Arqueiro"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💚 Qual herói fica verde quando tem raiva?",
+      "alternativas": ["Lanterna Verde", "Hulk", "Visão", "Arqueiro Verde"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤖 Qual herói usa uma armadura de ferro?",
+      "alternativas": ["Homem de Ferro", "Homem de Aço", "Robocop", "Cyborg"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👸 Qual heroína é uma princesa amazona?",
+      "alternativas": ["Viúva Negra", "Supergirl", "Mulher Maravilha", "Capitã Marvel"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌊 Qual herói é o rei dos mares?",
+      "alternativas": ["Netuno", "Aquaman", "Namor", "Poseidon"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🔴 De qual planeta veio o Superman?",
+      "alternativas": ["Marte", "Krypton", "Saturno", "Terra"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐱‍👤 Qual é o nome verdadeiro do Homem-Aranha?",
+      "alternativas": ["Bruce Wayne", "Tony Stark", "Peter Parker", "Clark Kent"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💎 Quais são as joias que o Thanos quer reunir?",
+      "alternativas": ["Joias do Infinito", "Joias Místicas", "Pedras Preciosas", "Cristais Mágicos"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐾 Qual herói é o rei de Wakanda?",
+      "alternativas": ["Falcão", "Pantera Negra", "Luke Cage", "Blade"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👓 Qual herói usa raios laser nos olhos?",
+      "alternativas": ["Wolverine", "Ciclope", "Visão", "Flash"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "❄️ Qual heroína tem poderes de gelo nos X-Men?",
+      "alternativas": ["Tempestade", "Jean Grey", "Vampira", "Cristal"],
+      "correta": 3,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "🧲 Qual vilão controla metais?",
+      "alternativas": ["Thanos", "Magneto", "Loki", "Ultron"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🎯 Qual heroína é uma espiã russa?",
+      "alternativas": ["Mulher Maravilha", "Viúva Negra", "Gamora", "Nebulosa"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🏹 Qual herói usa arco e flecha?",
+      "alternativas": ["Arqueiro Verde", "Flash", "Aquaman", "Cyborg"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦸 Qual é o símbolo do Superman?",
+      "alternativas": ["Morcego", "Aranha", "Letra S", "Estrela"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌩️ Qual deus nórdico é Thor?",
+      "alternativas": ["Deus da Guerra", "Deus do Trovão", "Deus do Mar", "Deus do Sol"],
+      "correta": 1,
+      "dificuldade": "facil"
+    }
+  ]
+}

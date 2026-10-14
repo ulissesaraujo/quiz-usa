@@ -1,0 +1,125 @@
+{
+  "tema": "planeta",
+  "perguntas": [
+    {
+      "enunciado": "🦁🐘🦒 Qual continente é conhecido como o lar dos safáris?",
+      "alternativas": ["Europa", "Ásia", "África", "América"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐧 Onde vivem os pinguins?",
+      "alternativas": ["Deserto", "Floresta", "Antártida", "Praia tropical"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐨 Em qual país vivem os coalas?",
+      "alternativas": ["Brasil", "Austrália", "Japão", "Canadá"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐼 De qual país é o urso panda?",
+      "alternativas": ["Japão", "Coreia", "China", "Índia"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌊 Qual é o maior oceano do mundo?",
+      "alternativas": ["Atlântico", "Índico", "Ártico", "Pacífico"],
+      "correta": 3,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🏔️ Qual é a montanha mais alta do mundo?",
+      "alternativas": ["Monte Fuji", "Monte Everest", "Pico da Neblina", "Alpes"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🌳 Qual é a maior floresta tropical do mundo?",
+      "alternativas": ["Floresta do Congo", "Floresta Amazônica", "Floresta Negra", "Mata Atlântica"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐫 Qual animal vive no deserto?",
+      "alternativas": ["Urso polar", "Pinguim", "Camelo", "Foca"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐻‍❄️ Onde vive o urso polar?",
+      "alternativas": ["Floresta", "Deserto", "Ártico (Polo Norte)", "Savana"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦜 Qual ave colorida vive na floresta tropical?",
+      "alternativas": ["Pinguim", "Coruja", "Arara", "Águia"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌏 Quantos continentes existem no mundo?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🦈 Onde vivem os tubarões?",
+      "alternativas": ["Rios", "Lagos", "Oceanos", "Piscinas"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐒 Onde vivem a maioria dos macacos?",
+      "alternativas": ["Deserto", "Floresta tropical", "Polo Norte", "Montanhas nevadas"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦩 Qual ave rosa vive em lagos?",
+      "alternativas": ["Papagaio", "Flamingo", "Tucano", "Canário"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐊 Onde os crocodilos gostam de viver?",
+      "alternativas": ["Montanhas", "Deserto", "Rios e pântanos", "Neve"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌋 O que sai de um vulcão quando ele entra em erupção?",
+      "alternativas": ["Água", "Lava", "Neve", "Areia"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🏝️ O que é uma ilha?",
+      "alternativas": ["Montanha alta", "Terra cercada de água", "Deserto grande", "Floresta densa"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦘 Qual animal pula e vive na Austrália?",
+      "alternativas": ["Coala", "Canguru", "Ornitorrinco", "Emu"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "💧 De onde vem a água da chuva?",
+      "alternativas": ["Do mar", "Das nuvens", "Dos rios", "Das montanhas"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌈 Quantas cores tem o arco-íris?",
+      "alternativas": ["5", "6", "7", "8"],
+      "correta": 2,
+      "dificuldade": "facil"
+    }
+  ]
+}

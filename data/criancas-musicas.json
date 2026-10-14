@@ -1,0 +1,125 @@
+{
+  "tema": "musicas",
+  "perguntas": [
+    {
+      "enunciado": "🐔 Complete: 'A galinha pintadinha e o galo...'",
+      "alternativas": ["Carijó", "Garnizé", "Carijó", "Pintado"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐊 Complete: 'Eu conheço um jacaré que gosta de...'",
+      "alternativas": ["Nadar", "Comer", "Dormir", "Pular"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐸 Complete: 'Sapo cururu na beira do...'",
+      "alternativas": ["Lago", "Mar", "Rio", "Poço"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦋 Complete: 'Borboletinha tá na cozinha fazendo...'",
+      "alternativas": ["Bolo", "Comida", "Chocolate", "Suco"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "⭐ Complete: 'Brilha brilha estrelinha lá no céu...'",
+      "alternativas": ["Azulzinho", "Bem bonito", "Tão distante", "Brilhante"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐜 Complete: 'A formiguinha sobe, sobe, sobe, e a...'",
+      "alternativas": ["Chuva cai", "Neve cai", "Folha cai", "Noite vem"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐟 Qual música fala de um peixinho que queria nadar?",
+      "alternativas": ["Peixe Vivo", "Peixinho Dourado", "Peixe Azul", "Peixe do Mar"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🎂 Complete: 'Parabéns pra você, nesta data...'",
+      "alternativas": ["Feliz", "Querida", "Bonita", "Especial"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🚌 Complete: 'As rodas do ônibus rodam...'",
+      "alternativas": ["Rápido", "Devagar", "Rodam, rodam", "Sem parar"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌈 Qual música do Mundo Bita fala sobre cores?",
+      "alternativas": ["Arco-íris", "Cores do Mundo", "Colorido", "Pintando o Sete"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🐘 Complete: 'Um elefante incomoda muita gente, dois elefantes...'",
+      "alternativas": ["Fazem barulho", "Incomodam muito mais", "São pesados", "Andam devagar"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "👋 Complete: 'Se você está feliz bata...'",
+      "alternativas": ["O pé", "Palmas", "Na mesa", "Continência"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐴 Complete: 'Marcha soldado cabeça de...'",
+      "alternativas": ["Ferro", "Papel", "Pedra", "Madeira"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌙 Complete: 'Nana neném que a cuca vem...'",
+      "alternativas": ["Cantar", "Pegar", "Brincar", "Dormir"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🐷 Complete: 'Os três porquinhos saíram pra...'",
+      "alternativas": ["Comer", "Brincar", "Passear", "Trabalhar"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "👨‍🌾 Complete: 'Seu lobato tinha um sítio...'",
+      "alternativas": ["Ia ia ou", "Ô lê lê", "Tra la la", "La la la"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🦆 Complete: 'Patinho patinho cor de...'",
+      "alternativas": ["Ouro", "Prata", "Café", "Mel"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🎵 Qual é a música que começa com 'Ciranda cirandinha'?",
+      "alternativas": ["Ciranda", "Roda Roda", "Anel de Ouro", "Pula Corda"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🌊 Complete: 'O cravo brigou com a...'",
+      "alternativas": ["Rosa", "Margarida", "Violeta", "Tulipa"],
+      "correta": 0,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🎪 Complete: 'Fui no Tororó beber água e não...'",
+      "alternativas": ["Tinha", "Achei", "Vi", "Encontrei"],
+      "correta": 1,
+      "dificuldade": "facil"
+    }
+  ]
+}

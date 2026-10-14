@@ -1,0 +1,125 @@
+{
+  "tema": "adivinhas",
+  "perguntas": [
+    {
+      "enunciado": "🤔 O que é, o que é? Tem coroa mas não é rei, tem escamas mas não é peixe?",
+      "alternativas": ["Banana", "Maçã", "Abacaxi", "Melancia"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Quanto mais se tira, maior fica?",
+      "alternativas": ["Montanha", "Buraco", "Árvore", "Casa"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Tem dentes mas não morde?",
+      "alternativas": ["Cachorro", "Tubarão", "Pente", "Leão"],
+      "correta": 2,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Cai em pé e corre deitada?",
+      "alternativas": ["Bola", "Chuva", "Pedra", "Folha"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Anda com os pés na cabeça?",
+      "alternativas": ["Piolho", "Chapéu", "Óculos", "Cabelo"],
+      "correta": 0,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Tem pescoço mas não tem cabeça?",
+      "alternativas": ["Girafa", "Garrafa", "Cobra", "Cisne"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? É verde por fora e vermelha por dentro?",
+      "alternativas": ["Maçã", "Melancia", "Tomate", "Pimentão"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Tem asa mas não voa, tem bico mas não bica?",
+      "alternativas": ["Pássaro", "Avião", "Bule", "Borboleta"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Passa diante do sol e não faz sombra?",
+      "alternativas": ["Nuvem", "Vento", "Avião", "Pássaro"],
+      "correta": 1,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Tem cabeça mas não pensa?",
+      "alternativas": ["Boneca", "Fósforo", "Alfinete", "Todas as anteriores"],
+      "correta": 3,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Enche uma casa mas não enche uma mão?",
+      "alternativas": ["Ar", "Luz", "Botão", "Som"],
+      "correta": 2,
+      "dificuldade": "dificil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Nasce grande e morre pequeno?",
+      "alternativas": ["Árvore", "Lápis", "Pessoa", "Casa"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Tem 4 pernas mas não anda?",
+      "alternativas": ["Cachorro", "Mesa", "Gato", "Cavalo"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Sobe e desce mas não sai do lugar?",
+      "alternativas": ["Elevador", "Escada", "Avião", "Bola"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Está no meio do ovo?",
+      "alternativas": ["Gema", "Clara", "A letra V", "Casca"],
+      "correta": 2,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Tem olho mas não vê?",
+      "alternativas": ["Peixe", "Agulha", "Boneca", "Estátua"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Quanto mais seca, mais molhada fica?",
+      "alternativas": ["Roupa", "Toalha", "Esponja", "Piscina"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Todos têm mas ninguém pode perder?",
+      "alternativas": ["Dinheiro", "Sombra", "Amigos", "Brinquedos"],
+      "correta": 1,
+      "dificuldade": "medio"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Tem folhas mas não é árvore?",
+      "alternativas": ["Flor", "Livro", "Alface", "Caderno"],
+      "correta": 1,
+      "dificuldade": "facil"
+    },
+    {
+      "enunciado": "🤔 O que é, o que é? Corre mas não tem pés?",
+      "alternativas": ["Cachorro", "Água", "Cavalo", "Coelho"],
+      "correta": 1,
+      "dificuldade": "facil"
+    }
+  ]
+}
