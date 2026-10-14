@@ -17,6 +17,11 @@ import { Anunciador, GerenciadorFoco, NavegacaoTeclado } from './acessibilidade.
  * Retorna { emoji: string|null, texto: string }
  */
 function separarEmojiDoTexto(enunciado) {
+    // Se contém sinais matemáticos, é uma expressão - não separa
+    if (/[+\-=×÷]/.test(enunciado)) {
+        return { emoji: null, texto: enunciado };
+    }
+    
     // Regex para detectar emojis no início (incluindo sequências de emojis)
     const emojiRegex = /^([\p{Emoji_Presentation}\p{Extended_Pictographic}\u200d\ufe0f\s]+)/u;
     const match = enunciado.match(emojiRegex);
