@@ -192,6 +192,16 @@ function inicializarLogin() {
             elementos.displayJogador.textContent = nome;
             await carregarTemas();
             mostrarTela('temas');
+            
+            // Mostra atalho admin se jogador for Admin
+            const btnAdmin = document.getElementById('btn-painel-admin');
+            if (btnAdmin) {
+                if (nome.toLowerCase() === 'admin') {
+                    btnAdmin.classList.remove('oculto');
+                } else {
+                    btnAdmin.classList.add('oculto');
+                }
+            }
         }
     });
 }
