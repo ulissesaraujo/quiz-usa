@@ -445,14 +445,20 @@
         .filtros-grupo {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 16px;
             margin-bottom: 16px;
+            padding: 16px;
+            background: var(--gray-100);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-200);
         }
         
         .filtros-checkboxes {
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--gray-300);
         }
         
         .filtros-tema-linha {
@@ -464,10 +470,11 @@
 
         .filtros-tema-linha select {
             padding: 8px 12px;
-            border: 2px solid var(--gray-200);
+            border: 2px solid var(--gray-300);
             border-radius: 6px;
             font-family: inherit;
             min-width: 200px;
+            background: var(--white);
         }
 
         .filtro-contador {
@@ -484,9 +491,9 @@
             align-items: center;
             gap: 6px;
             padding: 6px 12px;
-            background: var(--gray-100);
+            background: var(--white);
             color: var(--gray-600);
-            border: 2px solid var(--gray-200);
+            border: 2px solid var(--gray-300);
             border-radius: 6px;
             cursor: pointer;
             font-size: 0.85rem;
@@ -574,12 +581,12 @@
         /* Abas de Navegação */
         .admin-tabs {
             display: flex;
-            gap: 0;
+            gap: 8px;
             margin-bottom: 24px;
-            background: var(--gray-100);
-            padding: 4px;
+            background: var(--gray-200);
+            padding: 6px;
             border-radius: var(--radius);
-            border: 2px solid var(--gray-200);
+            border: 2px solid var(--gray-300);
         }
 
         .admin-tab {
@@ -588,36 +595,30 @@
             font-family: inherit;
             font-size: 1rem;
             font-weight: 600;
-            border: none;
+            border: 2px solid var(--gray-300);
             border-radius: 8px;
             cursor: pointer;
-            background: transparent;
-            color: var(--gray-500);
+            background: var(--white);
+            color: var(--gray-600);
             transition: all 0.2s ease;
             position: relative;
         }
 
         .admin-tab:hover:not(.ativa) {
-            background: var(--white);
-            color: var(--gray-700);
+            background: var(--gray-50);
+            border-color: var(--primary);
+            color: var(--primary);
         }
 
         .admin-tab.ativa {
-            background: var(--white);
-            color: var(--primary);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
         }
         
         .admin-tab.ativa::after {
-            content: '';
-            position: absolute;
-            bottom: 4px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 40%;
-            height: 3px;
-            background: var(--primary);
-            border-radius: 2px;
+            display: none;
         }
 
         .admin-tab-content {
@@ -1150,13 +1151,13 @@
                 <div class="card-body">
                     <div class="filtros-grupo">
                         <div class="filtros-checkboxes">
-                            <label class="filtro-revisao">
+                            <label class="filtro-revisao" id="label-filtro-revisar" style="display: none;">
                                 <input type="checkbox" id="filtro-revisar">
-                                <span>⚠️ Só p/ revisão</span>
+                                <span>⚠️ Revisão (<span id="count-revisar">0</span>)</span>
                             </label>
-                            <label class="filtro-revisao">
+                            <label class="filtro-revisao" id="label-filtro-destaque" style="display: none;">
                                 <input type="checkbox" id="filtro-destaque">
-                                <span>⭐ Só destaques</span>
+                                <span>⭐ Destaques (<span id="count-destaque">0</span>)</span>
                             </label>
                         </div>
                         <div class="filtros-tema-linha">
@@ -1807,6 +1808,25 @@
         // Renderiza lista de perguntas
         function renderizarPerguntas() {
             let perguntasFiltradas = perguntas;
+            
+            // Conta totais de revisão e destaque
+            const totalRevisao = perguntas.filter(p => p.revisar === true).length;
+            const totalDestaque = perguntas.filter(p => p.destaque === true).length;
+            
+            // Atualiza contadores e visibilidade dos botões de filtro
+            const labelRevisar = document.getElementById('label-filtro-revisar');
+            const labelDestaque = document.getElementById('label-filtro-destaque');
+            const countRevisar = document.getElementById('count-revisar');
+            const countDestaque = document.getElementById('count-destaque');
+            
+            if (labelRevisar && countRevisar) {
+                countRevisar.textContent = totalRevisao;
+                labelRevisar.style.display = totalRevisao > 0 ? 'flex' : 'none';
+            }
+            if (labelDestaque && countDestaque) {
+                countDestaque.textContent = totalDestaque;
+                labelDestaque.style.display = totalDestaque > 0 ? 'flex' : 'none';
+            }
             
             // Verifica se filtros especiais estão ativos (revisão ou destaque)
             const filtroRevisar = document.getElementById('filtro-revisar');
