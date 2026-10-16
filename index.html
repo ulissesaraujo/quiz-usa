@@ -92,7 +92,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build #91 - 14:42:10 08/10/2026</p>
+                <p class="versao-debug">Build #92 - 14:52:30 08/10/2026</p>
             </div>
         </section>
 
@@ -216,19 +216,8 @@
                             🗺️ Geografia
                         </p>
                         
-                        <!-- Área direita: Cronômetro + Ajudas -->
+                        <!-- Área direita: Ajudas -->
                         <div class="header-direita">
-                            <!-- Cronômetro vem primeiro (à esquerda) -->
-                            <div class="cronometro oculto" 
-                                 id="cronometro"
-                                 role="timer" 
-                                 aria-label="Tempo restante para responder">
-                                <span class="cronometro-icon" aria-hidden="true">⏱️</span>
-                                <span class="cronometro-tempo" 
-                                      id="cronometro-tempo"
-                                      aria-live="off">10.0s</span>
-                            </div>
-                            
                             <!-- Barra de Ajudas (estilo badge como o tema) -->
                             <div class="ajudas-bar" id="ajudas-bar">
                                 <button class="btn-ajuda" id="btn-ajuda-tempo" title="Adicionar tempo extra">
@@ -246,6 +235,18 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Cronômetro (aparece abaixo do header durante fase de resposta) -->
+                    <div class="cronometro oculto" 
+                         id="cronometro"
+                         role="timer" 
+                         aria-label="Tempo restante para responder">
+                        <span class="cronometro-icon" aria-hidden="true">⏱️</span>
+                        <span class="cronometro-tempo" 
+                              id="cronometro-tempo"
+                              aria-live="off">10.0s</span>
+                    </div>
+                    
                     <h2 class="pergunta-enunciado" 
                         id="pergunta-enunciado"
                         tabindex="-1">

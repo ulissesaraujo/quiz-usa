@@ -1032,11 +1032,15 @@ body {
 .cronometro {
     display: flex;
     align-items: center;
-    gap: 4px;
-    padding: 4px 10px;
-    background: var(--gray-100);
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: linear-gradient(145deg, #f1f5f9 0%, #e2e8f0 100%);
     border-radius: var(--radius-full);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin: 12px auto;
+    width: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .cronometro.oculto {
@@ -1044,14 +1048,15 @@ body {
 }
 
 .cronometro-icon {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .cronometro-tempo {
-    font-weight: 600;
-    font-size: 0.85rem;
+    font-weight: 700;
+    font-size: 1rem;
     color: var(--gray-700);
-    min-width: 40px;
+    min-width: 50px;
+    text-align: center;
     transition: color 0.3s ease;
 }
 
