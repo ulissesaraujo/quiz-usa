@@ -1290,6 +1290,7 @@ body {
     gap: 8px;
     padding: 16px;
     border-top: 1px solid var(--gray-200);
+    user-select: text; /* Permite selecionar texto para copiar */
 }
 
 .detalhe-item {
