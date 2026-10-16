@@ -648,6 +648,72 @@ export async function buscarTodasPerguntas() {
 }
 
 /**
+ * Busca perguntas marcadas para revisão
+ */
+export async function buscarPerguntasRevisao() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        return [];
+    }
+    
+    try {
+        const { collection, getDocs, query, where, db } = window._firestore;
+        const perguntasCollection = collection(db, "perguntas");
+        
+        const q = query(perguntasCollection, where("revisar", "==", true));
+        const snapshot = await getDocs(q);
+        
+        const perguntas = [];
+        snapshot.forEach((doc) => {
+            perguntas.push({
+                id: doc.id,
+                ...doc.data()
+            });
+        });
+        
+        console.log(`🔍 Encontradas ${perguntas.length} perguntas para revisão`);
+        return perguntas;
+    } catch (error) {
+        console.error("Erro ao buscar perguntas para revisão:", error);
+        return [];
+    }
+}
+
+/**
+ * Busca perguntas destacadas
+ */
+export async function buscarPerguntasDestaque() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        return [];
+    }
+    
+    try {
+        const { collection, getDocs, query, where, db } = window._firestore;
+        const perguntasCollection = collection(db, "perguntas");
+        
+        const q = query(perguntasCollection, where("destaque", "==", true));
+        const snapshot = await getDocs(q);
+        
+        const perguntas = [];
+        snapshot.forEach((doc) => {
+            perguntas.push({
+                id: doc.id,
+                ...doc.data()
+            });
+        });
+        
+        console.log(`⭐ Encontradas ${perguntas.length} perguntas destacadas`);
+        return perguntas;
+    } catch (error) {
+        console.error("Erro ao buscar perguntas destacadas:", error);
+        return [];
+    }
+}
+
+/**
  * Exclui uma pergunta
  * @param {string} perguntaId - ID da pergunta
  */
