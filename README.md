@@ -19,7 +19,7 @@ Jogo de quiz interativo com temas variados, sistema de pontuação por velocidad
 - ✅ Fase de leitura (3 segundos para ler a pergunta)
 - ✅ Fase de resposta (10 segundos para responder)
 - ✅ Pontuação com bônus por velocidade
-- ✅ Multiplicador 2x de bônus para temas escolares
+- ✅ Tempo dobrado para temas escolares (20 segundos)
 
 ### Ajudas Disponíveis
 - ⏰ **Mais Tempo** - Adiciona segundos extras ao cronômetro
@@ -27,7 +27,7 @@ Jogo de quiz interativo com temas variados, sistema de pontuação por velocidad
 - ⏭️ **Pular** - Troca a pergunta por outra (não disponível em desafios)
 
 > 💡 A quantidade de ajudas varia conforme os temas escolhidos:
-> - Temas escolares: 3x tempo extra + multiplicador 2x de bônus
+> - Temas escolares: 3x tempo extra + tempo de resposta dobrado (20s)
 > - Temas infantis: 3x eliminar alternativas
 
 ### Rankings e Competição
@@ -71,7 +71,7 @@ Jogo de quiz interativo com temas variados, sistema de pontuação por velocidad
 
 **Pontuação máxima:** 150 pontos (15 pts × 10 perguntas)
 
-> 🏆 Temas escolares têm multiplicador de bônus **2x**!
+> 🏆 Temas escolares têm **tempo dobrado** (20 segundos para responder)!
 
 ## ⚔️ Sistema de Desafios
 
