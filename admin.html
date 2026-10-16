@@ -2111,7 +2111,12 @@
                 fecharModalColarJson();
                 mostrarMensagem(`${perguntasValidas.length} perguntas importadas com sucesso!`, 'sucesso');
                 
-                // Recarrega perguntas em background
+                // Pega o tema da primeira pergunta para filtrar
+                const temaImportado = perguntasValidas[0].tema;
+                
+                // Define o filtro para o tema importado e recarrega só esse tema
+                filtroTema.value = temaImportado;
+                filtroAtual = temaImportado;
                 carregarPerguntas();
                 
             } catch (e) {
