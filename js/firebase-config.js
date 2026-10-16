@@ -145,74 +145,55 @@ const firebasePromise = inicializarFirebase();
 
 /**
  * Busca todos os temas disponíveis
- * Retorna os temas estáticos + contagem de perguntas do Firebase
- * Para temas com subtemas, soma a contagem de todos os subtemas
+ * Retorna os temas do Firebase com contagem já desnormalizada
+ * Se Firebase não disponível, usa temas locais como fallback
  */
 export async function buscarTemas() {
     await firebasePromise;
     
-    // Função auxiliar para contar perguntas de um tema/subtema
-    async function contarPerguntas(temaId) {
-        if (!firebaseDisponivel || !window._firestore) return 0;
+    // Tenta buscar do Firebase primeiro
+    if (firebaseDisponivel && window._firestore) {
         try {
-            const { collection, getDocs, query, where, db } = window._firestore;
-            const q = query(collection(db, "perguntas"), where("tema", "==", temaId));
+            const { collection, getDocs, query, orderBy, db } = window._firestore;
+            const temasCollection = collection(db, "temas");
+            const q = query(temasCollection, orderBy("ordem", "asc"));
             const snapshot = await getDocs(q);
-            return snapshot.size;
-        } catch {
-            return 0;
+            
+            if (!snapshot.empty) {
+                const temas = [];
+                snapshot.forEach((doc) => {
+                    temas.push({
+                        id: doc.id,
+                        ...doc.data()
+                    });
+                });
+                console.log(`✅ ${temas.length} temas carregados do Firebase`);
+                return temas;
+            }
+        } catch (error) {
+            console.warn("Erro ao buscar temas do Firebase, usando fallback:", error);
         }
     }
     
-    // Retorna temas estáticos com contagem se possível
-    if (!firebaseDisponivel || !window._firestore) {
-        return TEMAS_DISPONIVEIS.map(t => ({ ...t, totalPerguntas: 0 }));
-    }
-    
-    try {
-        // Busca contagem de perguntas por tema (incluindo subtemas)
-        const temasComContagem = await Promise.all(
-            TEMAS_DISPONIVEIS.map(async (tema) => {
-                // Conta perguntas do tema principal
-                let totalPerguntas = await contarPerguntas(tema.id);
-                
-                // Se tem subtemas, conta também e adiciona contagem a cada subtema
-                let subtemasComContagem = null;
-                if (tema.subtemas && tema.subtemas.length > 0) {
-                    subtemasComContagem = await Promise.all(
-                        tema.subtemas.map(async (subtema) => {
-                            const subCount = await contarPerguntas(subtema.id);
-                            totalPerguntas += subCount;
-                            return { ...subtema, totalPerguntas: subCount };
-                        })
-                    );
-                }
-                
-                return { 
-                    ...tema, 
-                    totalPerguntas,
-                    subtemas: subtemasComContagem || tema.subtemas
-                };
-            })
-        );
-        
-        return temasComContagem;
-    } catch (error) {
-        console.error("Erro ao buscar temas:", error);
-        return TEMAS_DISPONIVEIS.map(t => ({ ...t, totalPerguntas: 0 }));
-    }
+    // Fallback: usa temas locais (para quando não há temas no Firebase)
+    console.log('📝 Usando temas locais (fallback)');
+    return TEMAS_DISPONIVEIS.map(t => ({ ...t, totalPerguntas: 0 }));
 }
 
 /**
  * Busca informações de um tema específico (incluindo subtemas)
+ * Funciona tanto com temas locais quanto do Firebase
  */
-export function buscarTemaPorId(temaId) {
+export function buscarTemaPorId(temaId, temasCarregados = null) {
+    // Se receber temas carregados, usa eles
+    const temas = temasCarregados || TEMAS_DISPONIVEIS;
+    
     // Primeiro busca nos temas principais
-    const temaPrincipal = TEMAS_DISPONIVEIS.find(t => t.id === temaId);
+    const temaPrincipal = temas.find(t => t.id === temaId);
     if (temaPrincipal) return temaPrincipal;
     
     // Se não encontrou, busca nos subtemas
-    for (const tema of TEMAS_DISPONIVEIS) {
+    for (const tema of temas) {
         if (tema.subtemas) {
             const subtema = tema.subtemas.find(s => s.id === temaId);
             if (subtema) return { ...subtema, temaPai: tema.id };
@@ -226,8 +207,9 @@ export function buscarTemaPorId(temaId) {
  * Retorna todos os IDs de temas relacionados (tema + subtemas)
  * Útil para buscar perguntas quando um tema pai é selecionado
  */
-export function obterTodosIdsTema(temaId) {
-    const tema = TEMAS_DISPONIVEIS.find(t => t.id === temaId);
+export function obterTodosIdsTema(temaId, temasCarregados = null) {
+    const temas = temasCarregados || TEMAS_DISPONIVEIS;
+    const tema = temas.find(t => t.id === temaId);
     if (!tema) return [temaId];
     
     const ids = [temaId];
@@ -1038,6 +1020,236 @@ export async function salvarConfiguracoes(config) {
  */
 export function getConfigPadrao() {
     return { ...CONFIG_PADRAO };
+}
+
+// ========================================
+// FUNÇÕES DE CRUD DE TEMAS
+// ========================================
+
+/**
+ * Busca todos os temas do Firebase
+ * @returns {Promise<Array>} - Array de temas
+ */
+export async function buscarTemasFirebase() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        console.log('Firebase offline - usando temas locais');
+        return TEMAS_DISPONIVEIS.map(t => ({ ...t, totalPerguntas: 0 }));
+    }
+    
+    try {
+        const { collection, getDocs, query, orderBy, db } = window._firestore;
+        const temasCollection = collection(db, "temas");
+        const q = query(temasCollection, orderBy("ordem", "asc"));
+        const snapshot = await getDocs(q);
+        
+        if (snapshot.empty) {
+            console.log('📝 Nenhum tema no Firebase, usando temas locais');
+            return TEMAS_DISPONIVEIS.map(t => ({ ...t, totalPerguntas: 0 }));
+        }
+        
+        const temas = [];
+        snapshot.forEach((doc) => {
+            temas.push({
+                id: doc.id,
+                ...doc.data()
+            });
+        });
+        
+        console.log(`✅ ${temas.length} temas carregados do Firebase`);
+        return temas;
+    } catch (error) {
+        console.error("Erro ao buscar temas:", error);
+        return TEMAS_DISPONIVEIS.map(t => ({ ...t, totalPerguntas: 0 }));
+    }
+}
+
+/**
+ * Salva um tema no Firebase (criar ou atualizar)
+ * @param {Object} tema - Dados do tema
+ * @returns {Promise<string>} - ID do tema
+ */
+export async function salvarTema(tema) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const { doc, setDoc, db } = window._firestore;
+        const temaRef = doc(db, "temas", tema.id);
+        
+        await setDoc(temaRef, {
+            nome: tema.nome,
+            icone: tema.icone,
+            ordem: tema.ordem || 0,
+            totalPerguntas: tema.totalPerguntas || 0,
+            subtemas: tema.subtemas || null,
+            atualizadoEm: new Date().toISOString()
+        });
+        
+        console.log("✅ Tema salvo:", tema.id);
+        return tema.id;
+    } catch (error) {
+        console.error("Erro ao salvar tema:", error);
+        throw error;
+    }
+}
+
+/**
+ * Exclui um tema do Firebase
+ * @param {string} temaId - ID do tema
+ */
+export async function excluirTema(temaId) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const { doc, deleteDoc, db } = window._firestore;
+        await deleteDoc(doc(db, "temas", temaId));
+        console.log("✅ Tema excluído:", temaId);
+        return true;
+    } catch (error) {
+        console.error("Erro ao excluir tema:", error);
+        throw error;
+    }
+}
+
+/**
+ * Atualiza a contagem de perguntas de um tema
+ * @param {string} temaId - ID do tema
+ * @returns {Promise<number>} - Nova contagem
+ */
+export async function atualizarContagemTema(temaId) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const { collection, getDocs, query, where, doc, getDoc, updateDoc, db } = window._firestore;
+        
+        // Busca o tema atual
+        const temaRef = doc(db, "temas", temaId);
+        const temaDoc = await getDoc(temaRef);
+        
+        if (!temaDoc.exists()) {
+            throw new Error('Tema não encontrado');
+        }
+        
+        const temaData = temaDoc.data();
+        let totalPerguntas = 0;
+        
+        // Conta perguntas do tema principal
+        const qPrincipal = query(collection(db, "perguntas"), where("tema", "==", temaId));
+        const snapshotPrincipal = await getDocs(qPrincipal);
+        totalPerguntas = snapshotPrincipal.size;
+        
+        // Se tem subtemas, conta e atualiza cada um
+        let subtemasAtualizados = null;
+        if (temaData.subtemas && temaData.subtemas.length > 0) {
+            subtemasAtualizados = await Promise.all(
+                temaData.subtemas.map(async (subtema) => {
+                    const qSub = query(collection(db, "perguntas"), where("tema", "==", subtema.id));
+                    const snapshotSub = await getDocs(qSub);
+                    const subCount = snapshotSub.size;
+                    totalPerguntas += subCount;
+                    return { ...subtema, totalPerguntas: subCount };
+                })
+            );
+        }
+        
+        // Atualiza o tema no Firebase
+        await updateDoc(temaRef, {
+            totalPerguntas,
+            subtemas: subtemasAtualizados || temaData.subtemas,
+            atualizadoEm: new Date().toISOString()
+        });
+        
+        console.log(`✅ Contagem atualizada para ${temaId}: ${totalPerguntas} perguntas`);
+        return totalPerguntas;
+    } catch (error) {
+        console.error("Erro ao atualizar contagem:", error);
+        throw error;
+    }
+}
+
+/**
+ * Atualiza a contagem de perguntas de TODOS os temas
+ * @returns {Promise<Object>} - Resumo da atualização
+ */
+export async function atualizarContagemTodosTemas() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const temas = await buscarTemasFirebase();
+        let totalAtualizado = 0;
+        
+        for (const tema of temas) {
+            await atualizarContagemTema(tema.id);
+            totalAtualizado++;
+        }
+        
+        console.log(`✅ Contagem atualizada para ${totalAtualizado} temas`);
+        return { temasAtualizados: totalAtualizado };
+    } catch (error) {
+        console.error("Erro ao atualizar contagem de todos os temas:", error);
+        throw error;
+    }
+}
+
+/**
+ * Migra os temas locais (TEMAS_DISPONIVEIS) para o Firebase
+ * @returns {Promise<number>} - Quantidade de temas migrados
+ */
+export async function migrarTemasParaFirebase() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const { doc, setDoc, db } = window._firestore;
+        let count = 0;
+        
+        for (let i = 0; i < TEMAS_DISPONIVEIS.length; i++) {
+            const tema = TEMAS_DISPONIVEIS[i];
+            const temaRef = doc(db, "temas", tema.id);
+            
+            await setDoc(temaRef, {
+                nome: tema.nome,
+                icone: tema.icone,
+                ordem: i + 1,
+                totalPerguntas: 0,
+                subtemas: tema.subtemas ? tema.subtemas.map(s => ({
+                    id: s.id,
+                    nome: s.nome,
+                    icone: s.icone,
+                    totalPerguntas: 0
+                })) : null,
+                criadoEm: new Date().toISOString()
+            });
+            
+            count++;
+        }
+        
+        console.log(`✅ ${count} temas migrados para o Firebase`);
+        return count;
+    } catch (error) {
+        console.error("Erro ao migrar temas:", error);
+        throw error;
+    }
 }
 
 export { db, firebaseDisponivel };

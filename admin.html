@@ -732,6 +732,81 @@
                 font-size: 0.9rem;
             }
         }
+
+        /* Lista de Temas */
+        .temas-lista {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .tema-item {
+            padding: 16px;
+            border-bottom: 1px solid var(--gray-100);
+            transition: background 0.2s;
+        }
+
+        .tema-item:hover {
+            background: var(--gray-50);
+        }
+
+        .tema-item:last-child {
+            border-bottom: none;
+        }
+
+        .tema-item.subtema {
+            padding-left: 32px;
+            background: var(--gray-50);
+        }
+
+        .tema-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .tema-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .tema-icone {
+            font-size: 1.5rem;
+        }
+
+        .tema-nome {
+            font-weight: 600;
+            color: var(--gray-800);
+        }
+
+        .tema-id {
+            font-size: 0.8rem;
+            color: var(--gray-400);
+            font-family: monospace;
+        }
+
+        .tema-stats {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+
+        .tema-stats span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .tema-acoes {
+            display: flex;
+            gap: 8px;
+        }
+
+        .oculto {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
@@ -745,6 +820,7 @@
         <!-- Abas de Navegação -->
         <div class="admin-tabs">
             <button class="admin-tab ativa" data-tab="perguntas">📝 Perguntas</button>
+            <button class="admin-tab" data-tab="temas">🏷️ Temas</button>
             <button class="admin-tab" data-tab="config">⚙️ Configurações</button>
         </div>
 
@@ -944,6 +1020,103 @@
         </div>
         </div><!-- Fim tab-perguntas -->
 
+        <!-- ABA: TEMAS -->
+        <div class="admin-tab-content" id="tab-temas">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-valor" id="temas-total">-</div>
+                    <div class="stat-label">Total de Temas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-valor" id="temas-subtemas">-</div>
+                    <div class="stat-label">Subtemas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-valor" id="temas-perguntas">-</div>
+                    <div class="stat-label">Perguntas Total</div>
+                </div>
+            </div>
+
+            <div class="admin-layout">
+                <!-- Formulário de Tema -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 id="titulo-form-tema">➕ Adicionar Tema</h2>
+                        <button class="btn btn-small btn-outline oculto" id="btn-cancelar-edicao-tema">✕ Cancelar</button>
+                    </div>
+                    <div class="card-body">
+                        <div id="mensagem-form-tema" class="mensagem"></div>
+                        
+                        <form id="form-tema">
+                            <div class="form-group">
+                                <label for="tema-id">ID do Tema * (sem espaços, minúsculo)</label>
+                                <input type="text" id="tema-id" placeholder="ex: historia-brasil" required pattern="[a-z0-9\-]+" title="Somente letras minúsculas, números e hífen">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tema-nome">Nome do Tema *</label>
+                                <input type="text" id="tema-nome" placeholder="ex: História do Brasil" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tema-icone">Ícone (emoji) *</label>
+                                <input type="text" id="tema-icone" placeholder="ex: 🇧🇷" required maxlength="4">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tema-ordem">Ordem de exibição</label>
+                                <input type="number" id="tema-ordem" placeholder="1" min="1" value="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tema-pai">Tema pai (se for subtema)</label>
+                                <select id="tema-pai">
+                                    <option value="">-- Nenhum (tema principal) --</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="btn-salvar-tema">
+                                💾 Salvar Tema
+                            </button>
+                        </form>
+
+                        <div class="import-export">
+                            <button class="btn btn-warning btn-small" id="btn-migrar-temas">
+                                📦 Migrar Temas Locais
+                            </button>
+                            <button class="btn btn-success btn-small" id="btn-atualizar-contagens">
+                                🔄 Atualizar Contagens
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lista de Temas -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>📋 Temas Cadastrados</h2>
+                        <button class="btn btn-small btn-outline" id="btn-atualizar-temas">🔄 Atualizar</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="loading oculto" id="loading-temas">
+                            <div class="spinner"></div>
+                            <p>Carregando temas...</p>
+                        </div>
+
+                        <div class="temas-lista" id="temas-lista">
+                            <!-- Temas serão inseridos aqui via JS -->
+                        </div>
+
+                        <div class="empty-state oculto" id="empty-temas">
+                            <span>🏷️</span>
+                            <p>Nenhum tema cadastrado no Firebase.</p>
+                            <p>Clique em "Migrar Temas Locais" para começar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Fim tab-temas -->
+
         <!-- ABA: CONFIGURAÇÕES -->
         <div class="admin-tab-content" id="tab-config">
             <div class="config-grid">
@@ -1085,7 +1258,13 @@
             salvarConfiguracoes,
             getConfigPadrao,
             TEMAS_DISPONIVEIS,
-            aguardarFirebase
+            aguardarFirebase,
+            buscarTemasFirebase,
+            salvarTema,
+            excluirTema,
+            atualizarContagemTema,
+            atualizarContagemTodosTemas,
+            migrarTemasParaFirebase
         } from './js/firebase-config.js';
 
         // Estado
@@ -1598,6 +1777,325 @@
                 mensagemForm.className = 'mensagem';
             }, 3000);
         }
+
+        // ========================================
+        // GERENCIAMENTO DE TEMAS
+        // ========================================
+        
+        let temasFirebase = [];
+        let editandoTemaId = null;
+        
+        // Elementos de Temas
+        const formTema = document.getElementById('form-tema');
+        const mensagemFormTema = document.getElementById('mensagem-form-tema');
+        const temasLista = document.getElementById('temas-lista');
+        const loadingTemas = document.getElementById('loading-temas');
+        const emptyTemas = document.getElementById('empty-temas');
+        const btnAtualizarTemas = document.getElementById('btn-atualizar-temas');
+        const btnMigrarTemas = document.getElementById('btn-migrar-temas');
+        const btnAtualizarContagens = document.getElementById('btn-atualizar-contagens');
+        const btnCancelarEdicaoTema = document.getElementById('btn-cancelar-edicao-tema');
+        const tituloFormTema = document.getElementById('titulo-form-tema');
+        const temaIdInput = document.getElementById('tema-id');
+        const temaNomeInput = document.getElementById('tema-nome');
+        const temaIconeInput = document.getElementById('tema-icone');
+        const temaOrdemInput = document.getElementById('tema-ordem');
+        const temaPaiSelect = document.getElementById('tema-pai');
+        const temasTotalEl = document.getElementById('temas-total');
+        const temasSubtemasEl = document.getElementById('temas-subtemas');
+        const temasPerguntasEl = document.getElementById('temas-perguntas');
+
+        // Carrega temas do Firebase
+        async function carregarTemas() {
+            if (!loadingTemas) return;
+            loadingTemas.classList.remove('oculto');
+            temasLista.innerHTML = '';
+            emptyTemas.classList.add('oculto');
+            
+            try {
+                temasFirebase = await buscarTemasFirebase();
+                
+                // Verifica se são temas do Firebase ou fallback local
+                const temFirebase = temasFirebase.some(t => t.atualizadoEm || t.criadoEm);
+                
+                if (!temFirebase) {
+                    emptyTemas.classList.remove('oculto');
+                    loadingTemas.classList.add('oculto');
+                    atualizarStatsTemas([]);
+                    return;
+                }
+                
+                renderizarTemas(temasFirebase);
+                atualizarSelectTemaPai(temasFirebase);
+                atualizarStatsTemas(temasFirebase);
+                
+            } catch (error) {
+                console.error('Erro ao carregar temas:', error);
+                temasLista.innerHTML = '<p class="empty-state">Erro ao carregar temas.</p>';
+            }
+            
+            loadingTemas.classList.add('oculto');
+        }
+
+        function atualizarStatsTemas(temas) {
+            let totalTemas = temas.length;
+            let totalSubtemas = 0;
+            let totalPerguntas = 0;
+            
+            temas.forEach(tema => {
+                totalPerguntas += tema.totalPerguntas || 0;
+                if (tema.subtemas) totalSubtemas += tema.subtemas.length;
+            });
+            
+            if (temasTotalEl) temasTotalEl.textContent = totalTemas;
+            if (temasSubtemasEl) temasSubtemasEl.textContent = totalSubtemas;
+            if (temasPerguntasEl) temasPerguntasEl.textContent = totalPerguntas;
+        }
+
+        function renderizarTemas(temas) {
+            temasLista.innerHTML = '';
+            
+            temas.forEach(tema => {
+                const temaEl = criarElementoTema(tema);
+                temasLista.appendChild(temaEl);
+                
+                if (tema.subtemas && tema.subtemas.length > 0) {
+                    tema.subtemas.forEach(subtema => {
+                        const subtemaEl = criarElementoTema(subtema, tema.id);
+                        subtemaEl.classList.add('subtema');
+                        temasLista.appendChild(subtemaEl);
+                    });
+                }
+            });
+        }
+
+        function criarElementoTema(tema, temaPaiId = null) {
+            const div = document.createElement('div');
+            div.className = 'tema-item';
+            div.dataset.id = tema.id;
+            div.dataset.pai = temaPaiId || '';
+            div.innerHTML = `
+                <div class="tema-header">
+                    <div class="tema-info">
+                        <span class="tema-icone">${tema.icone || '🏷️'}</span>
+                        <div>
+                            <div class="tema-nome">${tema.nome}</div>
+                            <div class="tema-id">${tema.id}</div>
+                        </div>
+                    </div>
+                    <div class="tema-acoes">
+                        <button class="btn btn-small btn-outline btn-editar-tema">✏️</button>
+                        <button class="btn btn-small btn-success btn-contagem-tema" title="Atualizar contagem">🔄</button>
+                        <button class="btn btn-small btn-danger btn-excluir-tema">🗑️</button>
+                    </div>
+                </div>
+                <div class="tema-stats">
+                    <span>📝 ${tema.totalPerguntas || 0} perguntas</span>
+                    ${tema.subtemas ? `<span>📂 ${tema.subtemas.length} subtemas</span>` : ''}
+                    <span>📊 Ordem: ${tema.ordem || '-'}</span>
+                </div>
+            `;
+            return div;
+        }
+
+        function atualizarSelectTemaPai(temas) {
+            if (!temaPaiSelect) return;
+            temaPaiSelect.innerHTML = '<option value="">-- Nenhum (tema principal) --</option>';
+            temas.forEach(tema => {
+                const option = document.createElement('option');
+                option.value = tema.id;
+                option.textContent = `${tema.icone} ${tema.nome}`;
+                temaPaiSelect.appendChild(option);
+            });
+        }
+
+        // Event listeners para temas
+        temasLista?.addEventListener('click', async (e) => {
+            const temaItem = e.target.closest('.tema-item');
+            if (!temaItem) return;
+            
+            const temaId = temaItem.dataset.id;
+            const temaPaiId = temaItem.dataset.pai;
+            
+            if (e.target.closest('.btn-editar-tema')) {
+                editarTema(temaId, temaPaiId);
+            } else if (e.target.closest('.btn-contagem-tema')) {
+                await atualizarContagemUmTema(temaId, temaPaiId);
+            } else if (e.target.closest('.btn-excluir-tema')) {
+                await confirmarExcluirTema(temaId, temaPaiId);
+            }
+        });
+
+        function editarTema(temaId, temaPaiId) {
+            let tema;
+            if (temaPaiId) {
+                const temaPai = temasFirebase.find(t => t.id === temaPaiId);
+                tema = temaPai?.subtemas?.find(s => s.id === temaId);
+            } else {
+                tema = temasFirebase.find(t => t.id === temaId);
+            }
+            
+            if (!tema) return;
+            
+            editandoTemaId = temaId;
+            temaIdInput.value = tema.id;
+            temaIdInput.readOnly = true;
+            temaNomeInput.value = tema.nome;
+            temaIconeInput.value = tema.icone;
+            temaOrdemInput.value = tema.ordem || 1;
+            temaPaiSelect.value = temaPaiId || '';
+            
+            tituloFormTema.textContent = '✏️ Editar Tema';
+            btnCancelarEdicaoTema.classList.remove('oculto');
+        }
+
+        function cancelarEdicaoTema() {
+            editandoTemaId = null;
+            formTema.reset();
+            temaIdInput.readOnly = false;
+            tituloFormTema.textContent = '➕ Adicionar Tema';
+            btnCancelarEdicaoTema.classList.add('oculto');
+        }
+
+        btnCancelarEdicaoTema?.addEventListener('click', cancelarEdicaoTema);
+
+        async function atualizarContagemUmTema(temaId, temaPaiId) {
+            const idParaAtualizar = temaPaiId || temaId;
+            try {
+                const count = await atualizarContagemTema(idParaAtualizar);
+                mostrarMensagemTema(`Contagem atualizada: ${count} perguntas`, 'sucesso');
+                await carregarTemas();
+            } catch (error) {
+                mostrarMensagemTema('Erro ao atualizar contagem', 'erro');
+            }
+        }
+
+        async function confirmarExcluirTema(temaId, temaPaiId) {
+            if (!confirm(`Excluir o tema "${temaId}"? As perguntas NÃO serão excluídas.`)) return;
+            
+            try {
+                if (temaPaiId) {
+                    // É subtema: atualiza o tema pai removendo o subtema
+                    const temaPai = temasFirebase.find(t => t.id === temaPaiId);
+                    if (temaPai) {
+                        temaPai.subtemas = temaPai.subtemas.filter(s => s.id !== temaId);
+                        await salvarTema(temaPai);
+                    }
+                } else {
+                    await excluirTema(temaId);
+                }
+                mostrarMensagemTema('Tema excluído com sucesso!', 'sucesso');
+                await carregarTemas();
+            } catch (error) {
+                mostrarMensagemTema('Erro ao excluir tema', 'erro');
+            }
+        }
+
+        formTema?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const id = temaIdInput.value.trim().toLowerCase();
+            const nome = temaNomeInput.value.trim();
+            const icone = temaIconeInput.value.trim();
+            const ordem = parseInt(temaOrdemInput.value) || 1;
+            const temaPaiId = temaPaiSelect.value;
+            
+            if (!id || !nome || !icone) {
+                mostrarMensagemTema('Preencha todos os campos obrigatórios', 'erro');
+                return;
+            }
+            
+            try {
+                if (temaPaiId) {
+                    // É subtema
+                    const temaPai = temasFirebase.find(t => t.id === temaPaiId);
+                    if (!temaPai) {
+                        mostrarMensagemTema('Tema pai não encontrado', 'erro');
+                        return;
+                    }
+                    
+                    const subtemas = temaPai.subtemas || [];
+                    const idx = subtemas.findIndex(s => s.id === id);
+                    
+                    if (idx >= 0) {
+                        subtemas[idx] = { id, nome, icone, totalPerguntas: subtemas[idx].totalPerguntas || 0 };
+                    } else {
+                        subtemas.push({ id, nome, icone, totalPerguntas: 0 });
+                    }
+                    
+                    temaPai.subtemas = subtemas;
+                    await salvarTema(temaPai);
+                } else {
+                    // É tema principal
+                    const temaExistente = temasFirebase.find(t => t.id === id);
+                    await salvarTema({
+                        id,
+                        nome,
+                        icone,
+                        ordem,
+                        totalPerguntas: temaExistente?.totalPerguntas || 0,
+                        subtemas: temaExistente?.subtemas || null
+                    });
+                }
+                
+                mostrarMensagemTema(editandoTemaId ? 'Tema atualizado!' : 'Tema criado!', 'sucesso');
+                cancelarEdicaoTema();
+                await carregarTemas();
+                
+            } catch (error) {
+                console.error('Erro ao salvar tema:', error);
+                mostrarMensagemTema('Erro ao salvar tema', 'erro');
+            }
+        });
+
+        btnMigrarTemas?.addEventListener('click', async () => {
+            if (!confirm('Migrar todos os temas locais para o Firebase? Isso criará os temas na nuvem.')) return;
+            
+            try {
+                const count = await migrarTemasParaFirebase();
+                mostrarMensagemTema(`${count} temas migrados com sucesso!`, 'sucesso');
+                await carregarTemas();
+            } catch (error) {
+                mostrarMensagemTema('Erro ao migrar temas', 'erro');
+            }
+        });
+
+        btnAtualizarContagens?.addEventListener('click', async () => {
+            if (!confirm('Atualizar contagem de TODOS os temas? Isso pode demorar um pouco.')) return;
+            
+            try {
+                btnAtualizarContagens.disabled = true;
+                btnAtualizarContagens.textContent = '⏳ Atualizando...';
+                
+                const result = await atualizarContagemTodosTemas();
+                mostrarMensagemTema(`Contagens atualizadas para ${result.temasAtualizados} temas!`, 'sucesso');
+                await carregarTemas();
+                
+            } catch (error) {
+                mostrarMensagemTema('Erro ao atualizar contagens', 'erro');
+            } finally {
+                btnAtualizarContagens.disabled = false;
+                btnAtualizarContagens.textContent = '🔄 Atualizar Contagens';
+            }
+        });
+
+        btnAtualizarTemas?.addEventListener('click', carregarTemas);
+
+        function mostrarMensagemTema(texto, tipo) {
+            if (!mensagemFormTema) return;
+            mensagemFormTema.textContent = texto;
+            mensagemFormTema.className = `mensagem ${tipo}`;
+            setTimeout(() => { mensagemFormTema.className = 'mensagem'; }, 3000);
+        }
+
+        // Carrega temas quando a aba é ativada
+        abas.forEach(aba => {
+            aba.addEventListener('click', () => {
+                if (aba.dataset.tab === 'temas' && temasLista && temasLista.children.length === 0) {
+                    carregarTemas();
+                }
+            });
+        });
 
         // Inicia
         init();
