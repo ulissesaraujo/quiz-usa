@@ -1808,21 +1808,20 @@
         function renderizarPerguntas() {
             let perguntasFiltradas = perguntas;
             
-            // Filtro por tema
-            if (filtroAtual) {
-                perguntasFiltradas = perguntasFiltradas.filter(p => p.tema === filtroAtual);
-            }
-            
-            // Filtro por revisão
+            // Verifica se filtros especiais estão ativos (revisão ou destaque)
             const filtroRevisar = document.getElementById('filtro-revisar');
-            if (filtroRevisar && filtroRevisar.checked) {
-                perguntasFiltradas = perguntasFiltradas.filter(p => p.revisar === true);
-            }
-            
-            // Filtro por destaque
             const filtroDestaque = document.getElementById('filtro-destaque');
-            if (filtroDestaque && filtroDestaque.checked) {
-                perguntasFiltradas = perguntasFiltradas.filter(p => p.destaque === true);
+            const filtroRevisarAtivo = filtroRevisar && filtroRevisar.checked;
+            const filtroDestaqueAtivo = filtroDestaque && filtroDestaque.checked;
+            
+            // Se revisão ou destaque está ativo, ignora filtro de tema (mostra de todos os temas)
+            if (filtroRevisarAtivo) {
+                perguntasFiltradas = perguntas.filter(p => p.revisar === true);
+            } else if (filtroDestaqueAtivo) {
+                perguntasFiltradas = perguntas.filter(p => p.destaque === true);
+            } else if (filtroAtual) {
+                // Só aplica filtro de tema se não tiver revisão/destaque ativo
+                perguntasFiltradas = perguntasFiltradas.filter(p => p.tema === filtroAtual);
             }
 
             // Atualiza contador - simples, só quantidade
