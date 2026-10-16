@@ -1286,8 +1286,8 @@ body {
 
 .detalhes-lista {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-direction: column;
+    gap: 12px;
     padding: 16px;
     border-top: 1px solid var(--gray-200);
     user-select: text; /* Permite selecionar texto para copiar */
@@ -1295,26 +1295,35 @@ body {
 
 .detalhe-item {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 12px;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
     background: var(--gray-100);
     border-radius: var(--radius-sm);
     font-size: 0.875rem;
+    border-left: 4px solid var(--gray-300);
 }
 
 .detalhe-item.correto {
-    background: rgba(34, 197, 94, 0.1);
-    color: var(--success-dark);
+    background: rgba(34, 197, 94, 0.08);
+    border-left-color: var(--success);
 }
 
 .detalhe-item.errado {
-    background: rgba(239, 68, 68, 0.1);
-    color: var(--danger-dark);
+    background: rgba(239, 68, 68, 0.08);
+    border-left-color: var(--danger);
+}
+
+.detalhe-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .detalhe-numero {
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--gray-600);
 }
 
 .detalhe-tema {
@@ -1323,6 +1332,62 @@ body {
 
 .detalhe-tempo {
     color: var(--gray-500);
+    font-size: 0.8rem;
+}
+
+.detalhe-pontos {
+    margin-left: auto;
+    font-weight: 600;
+}
+
+.detalhe-item.correto .detalhe-pontos {
+    color: var(--success-dark);
+}
+
+.detalhe-item.errado .detalhe-pontos {
+    color: var(--danger-dark);
+}
+
+.detalhe-enunciado {
+    color: var(--gray-700);
+    line-height: 1.4;
+    font-size: 0.85rem;
+}
+
+.detalhe-respostas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.8rem;
+}
+
+.detalhe-resposta {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.detalhe-resposta.acertou {
+    background: rgba(34, 197, 94, 0.2);
+    color: var(--success-dark);
+}
+
+.detalhe-resposta.errou {
+    background: rgba(239, 68, 68, 0.2);
+    color: var(--danger-dark);
+    text-decoration: line-through;
+}
+
+.detalhe-resposta.tempo-esgotado {
+    background: rgba(234, 179, 8, 0.2);
+    color: #92400e;
+}
+
+.detalhe-correta {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--success-dark);
+    font-weight: 500;
 }
 
 .detalhe-pontos {

@@ -337,6 +337,8 @@ export class QuizEngine {
         const detalheResposta = {
             perguntaId: pergunta.id,
             tema: pergunta.tema || null,
+            enunciado: pergunta.enunciado,
+            alternativas: pergunta.alternativas,
             tempo: tempoResposta,
             correto: false,
             pontosBase: 0,
@@ -411,6 +413,8 @@ export class QuizEngine {
         const detalheResposta = {
             perguntaId: pergunta.id,
             tema: pergunta.tema || null,
+            enunciado: pergunta.enunciado,
+            alternativas: pergunta.alternativas,
             tempo: Math.round(tempoResposta * 10) / 10, // Arredonda para 1 casa decimal
             correto: estaCorreta,
             pontosBase: pontosBase,

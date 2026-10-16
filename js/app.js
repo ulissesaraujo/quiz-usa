@@ -1112,11 +1112,36 @@ async function mostrarResultado(resultado) {
             }
         }
         
+        // Formata o enunciado (trunca se muito longo)
+        const enunciado = detalhe.enunciado || 'Pergunta não disponível';
+        const enunciadoCurto = enunciado.length > 80 ? enunciado.substring(0, 80) + '...' : enunciado;
+        
+        // Determina a resposta dada e a correta
+        let respostaInfo = '';
+        if (detalhe.alternativas) {
+            const respostaCorreta = detalhe.alternativas[detalhe.respostaCorreta];
+            
+            if (detalhe.tempoEsgotado) {
+                respostaInfo = `<span class="detalhe-resposta tempo-esgotado">⏱️ Tempo esgotado</span>
+                               <span class="detalhe-correta">✓ ${respostaCorreta}</span>`;
+            } else if (detalhe.correto) {
+                respostaInfo = `<span class="detalhe-resposta acertou">✓ ${respostaCorreta}</span>`;
+            } else {
+                const respostaDada = detalhe.alternativas[detalhe.respostaEscolhida];
+                respostaInfo = `<span class="detalhe-resposta errou">✗ ${respostaDada}</span>
+                               <span class="detalhe-correta">✓ ${respostaCorreta}</span>`;
+            }
+        }
+        
         item.innerHTML = `
-            <span class="detalhe-numero">#${index + 1}</span>
-            ${temaInfo}
-            <span class="detalhe-tempo">${detalhe.tempo}s</span>
-            <span class="detalhe-pontos">${detalhe.pontosTotais} pts</span>
+            <div class="detalhe-header">
+                <span class="detalhe-numero">#${index + 1}</span>
+                ${temaInfo}
+                <span class="detalhe-tempo">${detalhe.tempo}s</span>
+                <span class="detalhe-pontos">${detalhe.pontosTotais} pts</span>
+            </div>
+            <div class="detalhe-enunciado" title="${enunciado.replace(/"/g, '&quot;')}">${enunciadoCurto}</div>
+            <div class="detalhe-respostas">${respostaInfo}</div>
         `;
         elementos.detalhesLista.appendChild(item);
     });
