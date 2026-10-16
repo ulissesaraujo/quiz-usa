@@ -176,6 +176,7 @@ const elementos = {
     resultadoMensagem: document.getElementById('resultado-mensagem'),
     detalhesLista: document.getElementById('detalhes-lista'),
     rankingPartidaBody: document.getElementById('ranking-partida-body'),
+    btnJogarNovamente: document.getElementById('btn-jogar-novamente'),
     btnVoltarTemas: document.getElementById('btn-voltar-temas'),
     btnRankingGlobal: document.getElementById('btn-ranking-global'),
     
@@ -1365,8 +1366,16 @@ function obterMensagemMotivacional(percentual) {
 }
 
 function inicializarResultado() {
+    // Botão "Jogar Novamente" - joga a mesma sala (mesmos temas)
+    elementos.btnJogarNovamente.addEventListener('click', async () => {
+        // Inicia quiz com os mesmos temas selecionados
+        await iniciarQuiz();
+    });
+    
+    // Botão "Escolher Temas" - volta para seleção
     elementos.btnVoltarTemas.addEventListener('click', () => {
-        // Não limpa a seleção - permite jogar novamente com os mesmos temas
+        // Limpa a seleção para permitir escolher outros temas
+        temasManager.limparSelecao();
         mostrarTela('temas');
     });
     

@@ -1513,8 +1513,9 @@ body {
 /* Ações */
 .resultado-acoes {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* ========================================
