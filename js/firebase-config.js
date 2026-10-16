@@ -104,7 +104,8 @@ async function inicializarFirebase() {
             orderBy, 
             where,
             limit,
-            writeBatch
+            writeBatch,
+            increment
         } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
 
         const firebaseConfig = {
@@ -124,7 +125,7 @@ async function inicializarFirebase() {
         // Armazena as funções do Firestore globalmente
         window._firestore = { 
             collection, addDoc, getDocs, getDoc, doc, setDoc, updateDoc, deleteDoc,
-            query, orderBy, where, limit, writeBatch, db 
+            query, orderBy, where, limit, writeBatch, increment, db 
         };
         
         console.log('✅ Firebase inicializado com sucesso!');
