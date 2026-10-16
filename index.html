@@ -92,7 +92,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build #92 - 14:52:30 08/10/2026</p>
+                <p class="versao-debug">Build #93 - 15:05:40 08/10/2026</p>
             </div>
         </section>
 
@@ -181,19 +181,13 @@
                  class="tela" 
                  role="region" 
                  aria-label="Tela do quiz">
-            <header class="header-quiz">
+            <!-- Header simplificado (escondido ou mínimo) -->
+            <header class="header-quiz header-quiz-minimo">
                 <div class="quiz-info">
                     <span class="tema-info" 
                           id="quiz-tema-info"
                           aria-label="Temas selecionados">
                         Temas Selecionados
-                    </span>
-                    <span class="pergunta-contador" 
-                          id="pergunta-contador"
-                          role="status"
-                          aria-live="polite"
-                          aria-label="Progresso das perguntas">
-                        1/10
                     </span>
                 </div>
                 <div class="pontuacao-atual" aria-label="Pontuação atual">
@@ -209,42 +203,49 @@
             <div class="quiz-container">
                 <!-- Pergunta -->
                 <div class="pergunta-container" role="article">
-                    <div class="pergunta-header">
-                        <p class="pergunta-tema oculto" 
-                           id="pergunta-tema" 
-                           aria-hidden="true">
-                            🗺️ Geografia
-                        </p>
-                        
-                        <!-- Área direita: Ajudas -->
-                        <div class="header-direita">
-                            <!-- Barra de Ajudas (estilo badge como o tema) -->
-                            <div class="ajudas-bar" id="ajudas-bar">
-                                <button class="btn-ajuda" id="btn-ajuda-tempo" title="Adicionar tempo extra">
-                                    <span class="ajuda-icone">⏱️</span>
-                                    <span class="ajuda-texto">+Tempo</span>
-                                </button>
-                                <button class="btn-ajuda" id="btn-ajuda-eliminar" title="Eliminar 2 alternativas erradas">
-                                    <span class="ajuda-icone">❌</span>
-                                    <span class="ajuda-texto">Eliminar</span>
-                                </button>
-                                <button class="btn-ajuda" id="btn-ajuda-pular" title="Pular esta pergunta">
-                                    <span class="ajuda-icone">⏭️</span>
-                                    <span class="ajuda-texto">Pular</span>
-                                </button>
-                            </div>
+                    <!-- Barra de controles: Tema+Contador | Cronômetro | Ajudas -->
+                    <div class="quiz-controles-bar">
+                        <!-- Esquerda: Tema + Contador -->
+                        <div class="controles-esquerda">
+                            <p class="pergunta-tema" 
+                               id="pergunta-tema">
+                                🗺️ Geografia
+                            </p>
+                            <span class="pergunta-contador" 
+                                  id="pergunta-contador"
+                                  role="status"
+                                  aria-live="polite"
+                                  aria-label="Progresso das perguntas">
+                                1/10
+                            </span>
                         </div>
-                    </div>
-                    
-                    <!-- Cronômetro (aparece abaixo do header durante fase de resposta) -->
-                    <div class="cronometro oculto" 
-                         id="cronometro"
-                         role="timer" 
-                         aria-label="Tempo restante para responder">
-                        <span class="cronometro-icon" aria-hidden="true">⏱️</span>
-                        <span class="cronometro-tempo" 
-                              id="cronometro-tempo"
-                              aria-live="off">10.0s</span>
+                        
+                        <!-- Centro: Cronômetro -->
+                        <div class="cronometro oculto" 
+                             id="cronometro"
+                             role="timer" 
+                             aria-label="Tempo restante para responder">
+                            <span class="cronometro-icon" aria-hidden="true">⏱️</span>
+                            <span class="cronometro-tempo" 
+                                  id="cronometro-tempo"
+                                  aria-live="off">10.0s</span>
+                        </div>
+                        
+                        <!-- Direita: Ajudas -->
+                        <div class="ajudas-bar" id="ajudas-bar">
+                            <button class="btn-ajuda" id="btn-ajuda-tempo" title="Adicionar tempo extra">
+                                <span class="ajuda-icone">⏱️</span>
+                                <span class="ajuda-texto">+Tempo</span>
+                            </button>
+                            <button class="btn-ajuda" id="btn-ajuda-eliminar" title="Eliminar 2 alternativas erradas">
+                                <span class="ajuda-icone">❌</span>
+                                <span class="ajuda-texto">Eliminar</span>
+                            </button>
+                            <button class="btn-ajuda" id="btn-ajuda-pular" title="Pular esta pergunta">
+                                <span class="ajuda-icone">⏭️</span>
+                                <span class="ajuda-texto">Pular</span>
+                            </button>
+                        </div>
                     </div>
                     
                     <h2 class="pergunta-enunciado" 
