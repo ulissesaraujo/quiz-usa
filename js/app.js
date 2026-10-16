@@ -85,8 +85,14 @@ function calcularAjudasPorTema(temasSelecionados, configBase) {
         }
     };
     
-    // Verifica se algum tema selecionado é escolar (esc-*)
-    const temEscolar = temasSelecionados.some(t => t.startsWith('esc-'));
+    // Prefixos de subtemas escolares (mat-, qui-, fis-, bio-, his-, geo-, por-, ing-)
+    const prefixosEscolares = ['mat-', 'qui-', 'fis-', 'bio-', 'his-', 'geo-', 'por-', 'ing-'];
+    
+    // Verifica se algum tema selecionado é escolar (esc-* ou subtemas com prefixos escolares)
+    const temEscolar = temasSelecionados.some(t => 
+        t.startsWith('esc-') || 
+        prefixosEscolares.some(prefix => t.startsWith(prefix))
+    );
     
     // Verifica se é o tema crianças
     const temCriancas = temasSelecionados.includes('criancas') || 
