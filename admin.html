@@ -554,17 +554,17 @@
         /* Abas de Navegação */
         .admin-tabs {
             display: flex;
-            gap: 8px;
+            gap: 0;
             margin-bottom: 24px;
-            background: var(--white);
-            padding: 8px;
+            background: var(--gray-100);
+            padding: 4px;
             border-radius: var(--radius);
-            box-shadow: var(--shadow);
+            border: 2px solid var(--gray-200);
         }
 
         .admin-tab {
             flex: 1;
-            padding: 12px 24px;
+            padding: 14px 24px;
             font-family: inherit;
             font-size: 1rem;
             font-weight: 600;
@@ -574,16 +574,30 @@
             background: transparent;
             color: var(--gray-500);
             transition: all 0.2s ease;
+            position: relative;
         }
 
-        .admin-tab:hover {
-            background: var(--gray-100);
+        .admin-tab:hover:not(.ativa) {
+            background: var(--white);
             color: var(--gray-700);
         }
 
         .admin-tab.ativa {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .admin-tab.ativa::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 3px;
             background: var(--primary);
-            color: var(--white);
+            border-radius: 2px;
         }
 
         .admin-tab-content {
