@@ -319,6 +319,22 @@
             border-bottom: none;
         }
 
+        .pergunta-item.revisar {
+            background: #fff8e6;
+            border-left: 4px solid var(--warning);
+        }
+
+        .tag-revisao {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--warning);
+            color: white;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
         .pergunta-tema {
             display: inline-block;
             padding: 2px 8px;
@@ -432,6 +448,28 @@
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 600;
+        }
+
+        .filtro-revisao {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: var(--warning);
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .filtro-revisao:hover {
+            background: #e59100;
+        }
+
+        .filtro-revisao input {
+            cursor: pointer;
         }
 
         /* Mensagens */
@@ -1064,6 +1102,10 @@
                         <select id="filtro-tema">
                             <option value="">Todos os temas</option>
                         </select>
+                        <label class="filtro-revisao">
+                            <input type="checkbox" id="filtro-revisar">
+                            <span>⚠️ Só p/ revisão</span>
+                        </label>
                         <span class="filtro-contador" id="filtro-contador">0 perguntas</span>
                     </div>
 
@@ -1622,6 +1664,7 @@
                 filtroAtual = filtroTema.value;
                 renderizarPerguntas();
             });
+            document.getElementById('filtro-revisar')?.addEventListener('change', renderizarPerguntas);
             btnAtualizar.addEventListener('click', carregarPerguntas);
             btnExportar.addEventListener('click', exportarPerguntas);
             inputImportar.addEventListener('change', importarPerguntas);
@@ -1706,13 +1749,21 @@
         function renderizarPerguntas() {
             let perguntasFiltradas = perguntas;
             
+            // Filtro por tema
             if (filtroAtual) {
-                perguntasFiltradas = perguntas.filter(p => p.tema === filtroAtual);
+                perguntasFiltradas = perguntasFiltradas.filter(p => p.tema === filtroAtual);
+            }
+            
+            // Filtro por revisão
+            const filtroRevisar = document.getElementById('filtro-revisar');
+            if (filtroRevisar && filtroRevisar.checked) {
+                perguntasFiltradas = perguntasFiltradas.filter(p => p.revisar === true);
             }
 
             // Atualiza contador
             const total = perguntasFiltradas.length;
-            filtroContador.textContent = `${total} pergunta${total !== 1 ? 's' : ''}`;
+            const totalRevisao = perguntas.filter(p => p.revisar === true).length;
+            filtroContador.textContent = `${total} pergunta${total !== 1 ? 's' : ''}${totalRevisao > 0 ? ` (${totalRevisao} p/ revisão)` : ''}`;
 
             if (perguntasFiltradas.length === 0) {
                 perguntasLista.innerHTML = '<div class="empty-state"><span>📭</span><p>Nenhuma pergunta encontrada</p></div>';
@@ -1723,10 +1774,14 @@
                 const alternativasHtml = (p.alternativas || []).map((alt, i) => 
                     `<li class="${i === p.correta ? 'correta' : ''}">${alt}</li>`
                 ).join('');
+                
+                // Indicador de revisão
+                const revisaoTag = p.revisar ? '<span class="tag-revisao">⚠️ Revisar</span>' : '';
 
                 return `
-                    <div class="pergunta-item" data-id="${p.id}">
+                    <div class="pergunta-item ${p.revisar ? 'revisar' : ''}" data-id="${p.id}">
                         <span class="pergunta-tema">${temasIcones[p.tema] || '❓'} ${p.tema}</span>
+                        ${revisaoTag}
                         <div class="pergunta-enunciado" onclick="toggleAlternativas('alt-${index}')">${p.enunciado}</div>
                         <div class="pergunta-alternativas" id="alt-${index}">
                             <ul>${alternativasHtml}</ul>
@@ -1736,6 +1791,7 @@
                                 👁️ Ver alternativas
                             </button>
                             <div class="pergunta-acoes">
+                                ${p.revisar ? `<button class="btn btn-small btn-success" onclick="desmarcarRevisaoHandler('${p.id}')">✓ OK</button>` : ''}
                                 <button class="btn btn-small btn-outline" onclick="editarPerguntaHandler('${p.id}')">
                                     ✏️ Editar
                                 </button>
@@ -1822,6 +1878,28 @@
             } catch (error) {
                 console.error('Erro ao excluir:', error);
                 mostrarMensagem('Erro ao excluir pergunta.', 'erro');
+            }
+        };
+
+        // Desmarca pergunta para revisão (aprova a pergunta)
+        window.desmarcarRevisaoHandler = async function(id) {
+            try {
+                await atualizarPergunta(id, { 
+                    revisar: false, 
+                    motivoRevisao: null,
+                    dataRevisao: null 
+                });
+                // Atualiza localmente
+                const pergunta = perguntas.find(p => p.id === id);
+                if (pergunta) {
+                    pergunta.revisar = false;
+                    pergunta.motivoRevisao = null;
+                }
+                renderizarPerguntas();
+                mostrarMensagem('Pergunta aprovada!', 'sucesso');
+            } catch (error) {
+                console.error('Erro ao aprovar pergunta:', error);
+                mostrarMensagem('Erro ao aprovar pergunta.', 'erro');
             }
         };
 
