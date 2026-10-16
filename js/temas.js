@@ -443,12 +443,15 @@ export class TemasManager {
             return 'Nenhum tema selecionado';
         }
         
+        // Função para formatar nome do tema (inclui tema pai se for subtema)
+        const formatarNome = (t) => t.temaPaiNome ? `${t.temaPaiNome}: ${t.nome}` : t.nome;
+        
         if (temasObjs.length === 1) {
-            return temasObjs[0].nome;
+            return formatarNome(temasObjs[0]);
         }
         
         if (temasObjs.length <= 3) {
-            return temasObjs.map(t => t.nome).join(', ');
+            return temasObjs.map(formatarNome).join(', ');
         }
         
         return `${temasObjs.length} temas selecionados`;
