@@ -640,7 +640,9 @@ async function iniciarQuiz() {
         mostrarTela('quiz');
     } catch (error) {
         console.error('Erro ao iniciar quiz:', error);
-        alert('Erro ao carregar perguntas. Tente novamente.');
+        // Mostra mensagem mais específica se disponível
+        const msg = error.message || 'Erro desconhecido';
+        alert(`Erro ao carregar perguntas: ${msg}`);
     } finally {
         estado.carregando = false;
         elementos.btnJogar.disabled = false;
