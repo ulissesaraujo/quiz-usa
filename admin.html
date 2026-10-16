@@ -1042,9 +1042,12 @@
                             📥 Exportar JSON
                         </button>
                         <label class="btn btn-outline btn-small">
-                            📤 Importar JSON
+                            📤 Importar Arquivo
                             <input type="file" id="input-importar" accept=".json" multiple style="display: none;">
                         </label>
+                        <button class="btn btn-outline btn-small" id="btn-colar-json">
+                            📋 Colar JSON
+                        </button>
                         <button class="btn btn-primary btn-small" id="btn-gerar-prompt">
                             🤖 Gerar com IA
                         </button>
@@ -1356,12 +1359,35 @@
                 <textarea class="prompt-area" id="prompt-area" readonly></textarea>
                 
                 <div class="modal-dica">
-                    💡 <strong>Dica:</strong> Após gerar, salve como arquivo <code>.json</code> (UTF-8) e use "Importar JSON" para adicionar as perguntas.
+                    💡 <strong>Dica:</strong> Após gerar, use "📋 Colar JSON" para adicionar as perguntas diretamente.
                 </div>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline" id="btn-fechar-modal-2">Fechar</button>
                 <button class="btn btn-primary" id="btn-copiar-prompt">📋 Copiar Prompt</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Colar JSON -->
+    <div class="modal-overlay oculto" id="modal-colar-json">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>📋 Colar JSON de Perguntas</h3>
+                <button class="modal-close" id="btn-fechar-modal-json">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Cole o JSON gerado pela IA no campo abaixo:</p>
+                
+                <textarea class="prompt-area" id="json-area" placeholder='{"tema": "nome-tema", "perguntas": [...]}'></textarea>
+                
+                <div id="json-preview" class="modal-dica oculto">
+                    <span id="json-preview-text"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="btn-fechar-modal-json-2">Cancelar</button>
+                <button class="btn btn-success" id="btn-importar-json">✅ Importar Perguntas</button>
             </div>
         </div>
     </div>
@@ -1549,6 +1575,16 @@
             document.getElementById('modal-prompt')?.addEventListener('click', (e) => {
                 if (e.target.id === 'modal-prompt') fecharModalPrompt();
             });
+            
+            // Botão colar JSON
+            document.getElementById('btn-colar-json')?.addEventListener('click', abrirModalColarJson);
+            document.getElementById('btn-fechar-modal-json')?.addEventListener('click', fecharModalColarJson);
+            document.getElementById('btn-fechar-modal-json-2')?.addEventListener('click', fecharModalColarJson);
+            document.getElementById('btn-importar-json')?.addEventListener('click', importarJsonColado);
+            document.getElementById('modal-colar-json')?.addEventListener('click', (e) => {
+                if (e.target.id === 'modal-colar-json') fecharModalColarJson();
+            });
+            document.getElementById('json-area')?.addEventListener('input', validarJsonColado);
             
             // Click no card de partidas para zerar
             document.getElementById('card-partidas').addEventListener('click', zerarPartidas);
@@ -1969,6 +2005,110 @@
                 promptArea.select();
                 document.execCommand('copy');
                 alert('Prompt copiado!');
+            }
+        }
+
+        // ========================================
+        // MODAL: COLAR JSON
+        // ========================================
+        
+        function abrirModalColarJson() {
+            document.getElementById('json-area').value = '';
+            document.getElementById('json-preview').classList.add('oculto');
+            document.getElementById('modal-colar-json').classList.remove('oculto');
+        }
+        
+        function fecharModalColarJson() {
+            document.getElementById('modal-colar-json').classList.add('oculto');
+        }
+        
+        function validarJsonColado() {
+            const jsonArea = document.getElementById('json-area');
+            const preview = document.getElementById('json-preview');
+            const previewText = document.getElementById('json-preview-text');
+            
+            const texto = jsonArea.value.trim();
+            
+            if (!texto) {
+                preview.classList.add('oculto');
+                return;
+            }
+            
+            try {
+                const dados = JSON.parse(texto);
+                let perguntas = [];
+                let tema = null;
+                
+                if (Array.isArray(dados)) {
+                    perguntas = dados;
+                } else if (dados.perguntas && Array.isArray(dados.perguntas)) {
+                    perguntas = dados.perguntas;
+                    tema = dados.tema;
+                }
+                
+                const validas = perguntas.filter(p => 
+                    (p.tema || tema) && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
+                );
+                
+                preview.classList.remove('oculto');
+                preview.style.borderLeftColor = '#22c55e';
+                preview.style.background = '#f0fdf4';
+                previewText.innerHTML = `✅ JSON válido! <strong>${validas.length}</strong> perguntas encontradas${tema ? ` (tema: ${tema})` : ''}`;
+                
+            } catch (e) {
+                preview.classList.remove('oculto');
+                preview.style.borderLeftColor = '#ef4444';
+                preview.style.background = '#fef2f2';
+                previewText.innerHTML = `❌ JSON inválido: ${e.message}`;
+            }
+        }
+        
+        async function importarJsonColado() {
+            const jsonArea = document.getElementById('json-area');
+            const texto = jsonArea.value.trim();
+            
+            if (!texto) {
+                alert('Cole o JSON no campo acima.');
+                return;
+            }
+            
+            try {
+                const dados = JSON.parse(texto);
+                let perguntas = [];
+                let tema = null;
+                
+                if (Array.isArray(dados)) {
+                    perguntas = dados;
+                } else if (dados.perguntas && Array.isArray(dados.perguntas)) {
+                    perguntas = dados.perguntas;
+                    tema = dados.tema;
+                } else {
+                    alert('Formato inválido. O JSON deve ter um array de perguntas.');
+                    return;
+                }
+                
+                // Aplica tema do arquivo se não tiver na pergunta
+                const perguntasValidas = perguntas
+                    .map(p => ({ ...p, tema: p.tema || tema }))
+                    .filter(p => 
+                        p.tema && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
+                    );
+                
+                if (perguntasValidas.length === 0) {
+                    alert('Nenhuma pergunta válida encontrada no JSON.');
+                    return;
+                }
+                
+                if (!confirm(`Importar ${perguntasValidas.length} perguntas?`)) return;
+                
+                await adicionarPerguntasEmLote(perguntasValidas);
+                await carregarPerguntas();
+                
+                fecharModalColarJson();
+                mostrarMensagem(`${perguntasValidas.length} perguntas importadas com sucesso!`, 'sucesso');
+                
+            } catch (e) {
+                alert(`Erro ao processar JSON: ${e.message}`);
             }
         }
 
