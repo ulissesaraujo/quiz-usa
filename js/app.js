@@ -5,7 +5,7 @@
 import { QuizEngine } from './quiz.js';
 import { RankingManager } from './ranking.js';
 import { TemasManager } from './temas.js';
-import { buscarPerguntasPorIds, buscarConfiguracoes, salvarHistoricoPerguntas } from './firebase-config.js';
+import { buscarPerguntasPorIds, buscarConfiguracoes, salvarHistoricoPerguntas, marcarPerguntaRevisao } from './firebase-config.js';
 import { Anunciador, GerenciadorFoco, NavegacaoTeclado } from './acessibilidade.js';
 
 // ========================================
@@ -1186,17 +1186,42 @@ async function mostrarResultado(resultado) {
             }
         }
         
+        // Botão de reportar erro (só se tiver ID da pergunta)
+        const btnRevisar = detalhe.perguntaId 
+            ? `<button class="btn-revisar" data-pergunta-id="${detalhe.perguntaId}" title="Reportar erro nesta pergunta">⚠️</button>`
+            : '';
+        
         item.innerHTML = `
             <div class="detalhe-header">
                 <span class="detalhe-numero">#${index + 1}</span>
                 ${temaInfo}
                 <span class="detalhe-tempo">${detalhe.tempo}s</span>
                 <span class="detalhe-pontos">${detalhe.pontosTotais} pts</span>
+                ${btnRevisar}
             </div>
             <div class="detalhe-enunciado" title="${enunciado.replace(/"/g, '&quot;')}">${enunciadoCurto}</div>
             <div class="detalhe-respostas">${respostaInfo}</div>
         `;
         elementos.detalhesLista.appendChild(item);
+    });
+    
+    // Adiciona event listeners para os botões de revisar
+    elementos.detalhesLista.querySelectorAll('.btn-revisar').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const perguntaId = e.target.dataset.perguntaId;
+            if (perguntaId && confirm('Marcar esta pergunta para revisão?\n\nIsso indica que a resposta pode estar errada.')) {
+                try {
+                    await marcarPerguntaRevisao(perguntaId, 'Reportado pelo jogador');
+                    e.target.textContent = '✓';
+                    e.target.disabled = true;
+                    e.target.title = 'Marcada para revisão';
+                    e.target.classList.add('revisada');
+                } catch (error) {
+                    alert('Erro ao marcar pergunta. Tente novamente.');
+                    console.error(error);
+                }
+            }
+        });
     });
     
     // Carrega ranking

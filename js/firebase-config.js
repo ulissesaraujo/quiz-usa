@@ -692,6 +692,34 @@ export async function atualizarPergunta(perguntaId, dados) {
 }
 
 /**
+ * Marca uma pergunta para revisão
+ * @param {string} perguntaId - ID da pergunta
+ * @param {string} motivo - Motivo da revisão (opcional)
+ * @returns {Promise<boolean>}
+ */
+export async function marcarPerguntaRevisao(perguntaId, motivo = '') {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const { doc, updateDoc, db } = window._firestore;
+        await updateDoc(doc(db, "perguntas", perguntaId), {
+            revisar: true,
+            motivoRevisao: motivo,
+            dataRevisao: new Date().toISOString()
+        });
+        console.log("🔍 Pergunta marcada para revisão:", perguntaId);
+        return true;
+    } catch (error) {
+        console.error("Erro ao marcar pergunta para revisão:", error);
+        throw error;
+    }
+}
+
+/**
  * Busca perguntas por tema específico
  * @param {string} tema - ID do tema
  * @returns {Promise<Array>} - Array de perguntas com id
