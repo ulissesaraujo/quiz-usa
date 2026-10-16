@@ -742,6 +742,10 @@ function configurarCallbacksQuiz() {
         // Reseta estados visuais
         elementos.feedbackContainer.classList.add('oculto');
         elementos.alternativasContainer.classList.add('oculto');
+        elementos.cronometro.classList.add('oculto'); // Esconde cronômetro durante leitura
+        
+        // Desabilita ajudas durante fase de leitura
+        habilitarAjudas(false);
         
         // Limpa alternativas anteriores para forçar nova renderização
         elementos.alternativas.innerHTML = '';
@@ -762,20 +766,28 @@ function configurarCallbacksQuiz() {
             elementos.faseLeitura.classList.add('oculto');
             elementos.alternativasContainer.classList.remove('oculto');
             elementos.cronometro.classList.remove('oculto');
-            elementos.cronometroTempo.textContent = `${tempo.toFixed(1)}s`;
             
             // Usa o tempo limite configurado (padrão 10s)
             const limite = tempoLimite || 10;
-            const tempoAlerta = limite * 0.6;  // 60% do tempo = alerta
-            const tempoCritico = limite * 0.8; // 80% do tempo = crítico
             
-            // Muda cor do cronômetro conforme o tempo
+            // Cronômetro regressivo: mostra tempo RESTANTE
+            const tempoRestante = Math.max(0, limite - tempo);
+            elementos.cronometroTempo.textContent = `${tempoRestante.toFixed(1)}s`;
+            
+            // Calcula thresholds para alertas (baseado no tempo restante)
+            const tempoAlerta = limite * 0.4;  // 40% restante = alerta
+            const tempoCritico = limite * 0.2; // 20% restante = crítico
+            
+            // Muda cor do cronômetro conforme o tempo restante
             elementos.cronometroTempo.classList.remove('alerta', 'critico');
-            if (tempo >= tempoCritico) {
+            if (tempoRestante <= tempoCritico) {
                 elementos.cronometroTempo.classList.add('critico');
-            } else if (tempo >= tempoAlerta) {
+            } else if (tempoRestante <= tempoAlerta) {
                 elementos.cronometroTempo.classList.add('alerta');
             }
+            
+            // Habilita ajudas quando fase de resposta inicia (alternativas visíveis)
+            habilitarAjudas(true);
             
             // Renderiza alternativas apenas uma vez
             const perguntaAtual = quizEngine.perguntas[quizEngine.perguntaAtual];
@@ -804,6 +816,7 @@ function configurarCallbacksQuiz() {
 
 /**
  * Configura os botões de ajuda baseado nas configurações e ajudas calculadas
+ * Inicia desabilitado - será habilitado quando a fase de resposta começar
  */
 function configurarAjudas() {
     const config = estado.config || {};
@@ -813,7 +826,7 @@ function configurarAjudas() {
     if (elementos.btnAjudaTempo) {
         const tempoDisponivel = ajudas.tempo?.disponivel > 0;
         elementos.btnAjudaTempo.style.display = tempoDisponivel ? 'flex' : 'none';
-        elementos.btnAjudaTempo.disabled = false;
+        elementos.btnAjudaTempo.disabled = true; // Inicia desabilitado
         elementos.btnAjudaTempo.classList.remove('usado');
         atualizarBadgeAjuda(elementos.btnAjudaTempo, ajudas.tempo);
     }
@@ -822,7 +835,7 @@ function configurarAjudas() {
     if (elementos.btnAjudaEliminar) {
         const eliminarDisponivel = ajudas.eliminar?.disponivel > 0;
         elementos.btnAjudaEliminar.style.display = eliminarDisponivel ? 'flex' : 'none';
-        elementos.btnAjudaEliminar.disabled = false;
+        elementos.btnAjudaEliminar.disabled = true; // Inicia desabilitado
         elementos.btnAjudaEliminar.classList.remove('usado');
         atualizarBadgeAjuda(elementos.btnAjudaEliminar, ajudas.eliminar);
     }
@@ -831,7 +844,7 @@ function configurarAjudas() {
     if (elementos.btnAjudaPular) {
         const pularDisponivel = ajudas.pular?.disponivel > 0;
         elementos.btnAjudaPular.style.display = pularDisponivel ? 'flex' : 'none';
-        elementos.btnAjudaPular.disabled = false;
+        elementos.btnAjudaPular.disabled = true; // Inicia desabilitado
         elementos.btnAjudaPular.classList.remove('usado');
         atualizarBadgeAjuda(elementos.btnAjudaPular, ajudas.pular);
     }
@@ -842,6 +855,30 @@ function configurarAjudas() {
                       (ajudas.pular?.disponivel > 0);
     if (elementos.ajudasBar) {
         elementos.ajudasBar.style.display = temAjudas ? 'flex' : 'none';
+    }
+}
+
+/**
+ * Habilita ou desabilita os botões de ajuda
+ * @param {boolean} habilitar - true para habilitar, false para desabilitar
+ */
+function habilitarAjudas(habilitar) {
+    const ajudas = quizEngine.ajudas || {};
+    
+    // Só habilita se ainda tiver ajuda disponível e não estiver marcado como usado
+    if (elementos.btnAjudaTempo && elementos.btnAjudaTempo.style.display !== 'none') {
+        const temDisponivel = quizEngine.ajudaDisponivel('tempo');
+        elementos.btnAjudaTempo.disabled = !habilitar || !temDisponivel;
+    }
+    
+    if (elementos.btnAjudaEliminar && elementos.btnAjudaEliminar.style.display !== 'none') {
+        const temDisponivel = quizEngine.ajudaDisponivel('eliminar');
+        elementos.btnAjudaEliminar.disabled = !habilitar || !temDisponivel;
+    }
+    
+    if (elementos.btnAjudaPular && elementos.btnAjudaPular.style.display !== 'none') {
+        const temDisponivel = quizEngine.ajudaDisponivel('pular');
+        elementos.btnAjudaPular.disabled = !habilitar || !temDisponivel;
     }
 }
 
