@@ -633,6 +633,9 @@ async function iniciarQuiz() {
         // Inicia o quiz com as configurações
         quizEngine.iniciar(perguntasQuiz, configTemas, configComAjudas);
         
+        // Configura os botões de ajuda APÓS iniciar o quiz (ajudas já estão setadas)
+        configurarAjudas();
+        
         // Mostra tela do quiz
         mostrarTela('quiz');
     } catch (error) {
@@ -811,8 +814,7 @@ function configurarCallbacksQuiz() {
         mostrarResultado(resultado);
     };
     
-    // Configura botões de ajuda
-    configurarAjudas();
+    // Nota: configurarAjudas() é chamado após quizEngine.iniciar() na função iniciarQuiz()
 }
 
 /**
