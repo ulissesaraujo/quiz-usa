@@ -166,31 +166,33 @@ export class TemasManager {
         // Evita mostrar se já existe uma dica na tela
         if (document.querySelector('.dica-selecao')) return;
         
-        // Cria elemento da dica - overlay por cima dos temas
+        // Cria elemento da dica - overlay com fundo
         const dica = document.createElement('div');
-        dica.className = 'dica-selecao-feedback';
+        dica.className = 'dica-selecao-overlay';
         dica.innerHTML = `
+            <div class="dica-backdrop"></div>
             <div class="dica-card">
                 <span class="dica-linha1">Selecione mais temas</span>
                 <span class="dica-linha2">ou clique em Jogar</span>
             </div>
         `;
         
-        // Insere como overlay dentro do container de temas
-        const temasContainer = document.querySelector('.temas-container');
+        // Fecha ao clicar em qualquer lugar
+        dica.addEventListener('click', () => {
+            dica.classList.add('dica-saindo');
+            setTimeout(() => dica.remove(), 300);
+        });
         
-        if (temasContainer) {
-            temasContainer.style.position = 'relative';
-            temasContainer.appendChild(dica);
-            
-            // Remove automaticamente após 3 segundos
-            setTimeout(() => {
-                if (dica.parentNode) {
-                    dica.classList.add('dica-saindo');
-                    setTimeout(() => dica.remove(), 300);
-                }
-            }, 3000);
-        }
+        // Insere no body para garantir que fique por cima de tudo
+        document.body.appendChild(dica);
+        
+        // Remove automaticamente após 3 segundos
+        setTimeout(() => {
+            if (dica.parentNode) {
+                dica.classList.add('dica-saindo');
+                setTimeout(() => dica.remove(), 300);
+            }
+        }, 3000);
     }
 
     /**

@@ -460,31 +460,52 @@ body {
     align-items: start; /* Alinha items ao topo quando têm alturas diferentes */
 }
 
-/* Dica para primeira seleção - overlay por cima */
-.dica-selecao-feedback {
+/* Dica para primeira seleção - overlay com fundo */
+.dica-selecao-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: fadeIn 0.3s ease;
+}
+
+.dica-backdrop {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    animation: popIn 0.3s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
-.dica-selecao-feedback.dica-saindo {
-    animation: dicaSair 0.3s ease-out forwards;
+.dica-selecao-overlay.dica-saindo {
+    animation: fadeOut 0.3s ease-out forwards;
 }
 
-@keyframes dicaSair {
-    from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-    to { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.dica-card {
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.dica-selecao-overlay .dica-card {
+    position: relative;
     background: var(--white);
-    padding: 20px 32px;
+    padding: 24px 40px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     text-align: center;
+    animation: popIn 0.3s ease;
 }
 
 .dica-linha1 {
