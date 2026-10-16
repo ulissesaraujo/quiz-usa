@@ -1183,9 +1183,6 @@
                         </form>
 
                         <div class="import-export">
-                            <button class="btn btn-warning btn-small" id="btn-migrar-temas">
-                                📦 Migrar Temas Locais
-                            </button>
                             <button class="btn btn-success btn-small" id="btn-atualizar-contagens">
                                 🔄 Atualizar Contagens
                             </button>
@@ -1388,8 +1385,7 @@
             salvarTema,
             excluirTema,
             atualizarContagemTema,
-            atualizarContagemTodosTemas,
-            migrarTemasParaFirebase
+            atualizarContagemTodosTemas
         } from './js/firebase-config.js';
 
         // Estado
@@ -2000,7 +1996,6 @@
         const loadingTemas = document.getElementById('loading-temas');
         const emptyTemas = document.getElementById('empty-temas');
         const btnAtualizarTemas = document.getElementById('btn-atualizar-temas');
-        const btnMigrarTemas = document.getElementById('btn-migrar-temas');
         const btnAtualizarContagens = document.getElementById('btn-atualizar-contagens');
         const btnCancelarEdicaoTema = document.getElementById('btn-cancelar-edicao-tema');
         const tituloFormTema = document.getElementById('titulo-form-tema');
@@ -2253,18 +2248,6 @@
             } catch (error) {
                 console.error('Erro ao salvar tema:', error);
                 mostrarMensagemTema('Erro ao salvar tema', 'erro');
-            }
-        });
-
-        btnMigrarTemas?.addEventListener('click', async () => {
-            if (!confirm('Migrar todos os temas locais para o Firebase? Isso criará os temas na nuvem.')) return;
-            
-            try {
-                const count = await migrarTemasParaFirebase();
-                mostrarMensagemTema(`${count} temas migrados com sucesso!`, 'sucesso');
-                await carregarTemas();
-            } catch (error) {
-                mostrarMensagemTema('Erro ao migrar temas', 'erro');
             }
         });
 
