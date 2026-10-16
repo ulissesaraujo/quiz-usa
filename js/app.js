@@ -952,7 +952,7 @@ function usarAjudaTempo() {
     // Adiciona tempo extra ao cronômetro (multiplicador pode dobrar o valor)
     const tempoBase = estado.config.tempoExtra || 10;
     const tempoExtra = tempoBase * resultado.multiplicador;
-    quizEngine.tempoInicio += tempoExtra * 1000; // Adiciona tempo em ms
+    quizEngine.tempoAdicional += tempoExtra; // Adiciona ao tempo adicional
     
     console.log(`⏱️ Ajuda usada: +${tempoExtra} segundos (${resultado.multiplicador}x) - Restante: ${resultado.restante}`);
 }

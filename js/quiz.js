@@ -18,6 +18,7 @@ export class QuizEngine {
         this.descricaoTemas = '';
         this.respostas = []; // Armazena detalhes de cada resposta
         this.tempoInicio = null;
+        this.tempoAdicional = 0; // Tempo extra adicionado via ajuda
         this.timerLeitura = null;
         this.timerCronometro = null;
         this.cronometroSegundos = 0;
@@ -260,6 +261,7 @@ export class QuizEngine {
         clearInterval(this.timerCronometro);
         
         this.tempoInicio = Date.now();
+        this.tempoAdicional = 0; // Reseta tempo adicional para nova pergunta
         this.cronometroSegundos = 0;
         this._ultimoAnuncioTempo = 10; // Para controlar anúncios de tempo
         
@@ -272,7 +274,8 @@ export class QuizEngine {
         this.timerCronometro = setInterval(() => {
             try {
                 this.cronometroSegundos = (Date.now() - this.tempoInicio) / 1000;
-                const tempoLimite = this.config.tempoPergunta;
+                // Tempo limite inclui tempo adicional da ajuda
+                const tempoLimite = this.config.tempoPergunta + this.tempoAdicional;
                 
                 // Anuncia tempo restante em momentos críticos
                 const tempoRestante = Math.ceil(tempoLimite - this.cronometroSegundos);
@@ -293,7 +296,7 @@ export class QuizEngine {
                     });
                 }
                 
-                // Tempo esgotado após o limite configurado
+                // Tempo esgotado após o limite configurado (incluindo tempo adicional)
                 if (this.cronometroSegundos >= tempoLimite && !this.respondeu) {
                     this.tempoEsgotado();
                 }
@@ -527,6 +530,7 @@ export class QuizEngine {
         this.descricaoTemas = '';
         this.respostas = [];
         this.tempoInicio = null;
+        this.tempoAdicional = 0;
         this.cronometroSegundos = 0;
         this.respondeu = false;
         this.sessaoId = null;
