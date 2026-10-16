@@ -2065,6 +2065,7 @@
         
         async function importarJsonColado() {
             const jsonArea = document.getElementById('json-area');
+            const btnImportar = document.getElementById('btn-importar-json');
             const texto = jsonArea.value.trim();
             
             if (!texto) {
@@ -2101,14 +2102,23 @@
                 
                 if (!confirm(`Importar ${perguntasValidas.length} perguntas?`)) return;
                 
+                // Mostra loading
+                btnImportar.disabled = true;
+                btnImportar.textContent = '⏳ Importando...';
+                
                 await adicionarPerguntasEmLote(perguntasValidas);
-                await carregarPerguntas();
                 
                 fecharModalColarJson();
                 mostrarMensagem(`${perguntasValidas.length} perguntas importadas com sucesso!`, 'sucesso');
                 
+                // Recarrega perguntas em background
+                carregarPerguntas();
+                
             } catch (e) {
                 alert(`Erro ao processar JSON: ${e.message}`);
+            } finally {
+                btnImportar.disabled = false;
+                btnImportar.textContent = '✅ Importar Perguntas';
             }
         }
 
