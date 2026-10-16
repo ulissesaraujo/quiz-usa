@@ -166,12 +166,15 @@ export class TemasManager {
         // Evita mostrar se já existe uma dica na tela
         if (document.querySelector('.dica-selecao')) return;
         
-        // Cria elemento da dica
+        // Cria elemento da dica no estilo do feedback
         const dica = document.createElement('div');
-        dica.className = 'dica-selecao';
+        dica.className = 'dica-selecao-feedback';
         dica.innerHTML = `
-            <span>💡 Selecione mais temas ou clique em <strong>Jogar</strong> para começar!</span>
-            <button class="dica-fechar" aria-label="Fechar dica">✕</button>
+            <div class="dica-card">
+                <span class="dica-icon">💡</span>
+                <span class="dica-texto">Dica</span>
+                <span class="dica-detalhe">Selecione mais temas ou clique em <strong>Jogar</strong></span>
+            </div>
         `;
         
         // Insere ANTES da grade de temas (no topo, onde o usuário está olhando)
@@ -179,11 +182,6 @@ export class TemasManager {
         
         if (temasGrid) {
             temasGrid.parentNode.insertBefore(dica, temasGrid);
-            
-            // Fecha ao clicar no X
-            dica.querySelector('.dica-fechar').addEventListener('click', () => {
-                dica.remove();
-            });
             
             // Remove automaticamente após 3 segundos
             setTimeout(() => {
