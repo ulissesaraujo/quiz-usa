@@ -679,6 +679,11 @@ async function iniciarDesafio(partidaOriginal) {
         // Fecha o modal se estiver aberto
         elementos.modalRanking.classList.add('oculto');
         
+        // Carrega configurações globais (se ainda não carregou)
+        if (!estado.config) {
+            estado.config = await buscarConfiguracoes();
+        }
+        
         // Busca as perguntas específicas pelo ID
         const perguntas = await buscarPerguntasPorIds(partidaOriginal.perguntasIds);
         
@@ -687,9 +692,13 @@ async function iniciarDesafio(partidaOriginal) {
             return;
         }
         
+        // Calcula ajudas baseadas nos temas do desafio
+        const temasDesafio = partidaOriginal.temas || [];
+        const ajudas = calcularAjudasPorTema(temasDesafio, estado.config);
+        
         // Prepara configuração do desafio
         const configDesafio = {
-            temas: partidaOriginal.temas || [],
+            temas: temasDesafio,
             temasNomes: partidaOriginal.temasNomes || [],
             modoAleatorio: partidaOriginal.modoAleatorio || false,
             descricao: `⚔️ Desafio: ${partidaOriginal.jogador}`,
@@ -707,10 +716,16 @@ async function iniciarDesafio(partidaOriginal) {
         // Configura callbacks do quiz engine
         configurarCallbacksQuiz();
         
-        // Inicia o quiz em modo desafio
-        quizEngine.iniciar(perguntas, configDesafio);
+        // Adiciona ajudas à configuração
+        const configComAjudas = { ...estado.config, ajudas };
         
-        console.log(`⚔️ Desafio iniciado contra ${partidaOriginal.jogador}`);
+        // Inicia o quiz em modo desafio
+        quizEngine.iniciar(perguntas, configDesafio, configComAjudas);
+        
+        // Configura os botões de ajuda APÓS iniciar o quiz
+        configurarAjudas();
+        
+        console.log(`⚔️ Desafio iniciado contra ${partidaOriginal.jogador} - Temas: ${temasDesafio.join(', ')}`);
         
         // Mostra tela do quiz
         mostrarTela('quiz');
