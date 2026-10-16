@@ -1165,6 +1165,9 @@ async function mostrarResultado(resultado) {
     const percentualAcerto = (resultado.acertos / resultado.totalPerguntas) * 100;
     elementos.resultadoMensagem.innerHTML = obterMensagemMotivacional(percentualAcerto);
     
+    // Esconde botão "Jogar Novamente" no modo desafio (não faz sentido repetir um desafio)
+    elementos.btnJogarNovamente.style.display = resultado.modoDesafio ? 'none' : '';
+    
     // Renderiza detalhes por pergunta
     elementos.detalhesLista.innerHTML = '';
     resultado.detalhes.forEach((detalhe, index) => {
