@@ -92,7 +92,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build #116 - 20:45:00 08/10/2026</p>
+                <p class="versao-debug">Build #117 - 21:15:00 08/10/2026</p>
             </div>
         </section>
 
@@ -124,6 +124,9 @@
                             </button>
                             <button class="menu-item" id="btn-ver-ranking-geral">
                                 📊 Ranking Geral
+                            </button>
+                            <button class="menu-item" id="btn-ajuda">
+                                ❓ Como Jogar
                             </button>
                         </div>
                     </div>
@@ -445,6 +448,119 @@
                             <!-- Ranking será carregado via JavaScript -->
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL: AJUDA / COMO JOGAR -->
+        <div class="modal oculto" 
+             id="modal-ajuda"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modal-ajuda-titulo">
+            <div class="modal-content modal-ajuda">
+                <div class="modal-header">
+                    <h2 id="modal-ajuda-titulo">
+                        <span aria-hidden="true">❓</span> Como Jogar
+                    </h2>
+                    <button class="modal-fechar" 
+                            id="btn-fechar-ajuda"
+                            aria-label="Fechar modal">
+                        ✕
+                    </button>
+                </div>
+                
+                <div class="ajuda-conteudo">
+                    <section class="ajuda-secao">
+                        <h3>🎮 Começando</h3>
+                        <ol>
+                            <li>Digite seu nome na tela inicial</li>
+                            <li>Escolha um ou mais temas ou clique em <strong>🎲 Aleatório</strong></li>
+                            <li>Clique em <strong>▶ Jogar</strong> para iniciar</li>
+                        </ol>
+                    </section>
+                    
+                    <section class="ajuda-secao">
+                        <h3>⏱️ Durante o Quiz</h3>
+                        <ul>
+                            <li><strong>Fase de leitura:</strong> 3 segundos para ler a pergunta</li>
+                            <li><strong>Fase de resposta:</strong> 10 segundos para responder</li>
+                            <li><strong>Responda rápido!</strong> Quanto mais rápido, mais pontos de bônus</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="ajuda-secao">
+                        <h3>🛟 Ajudas Disponíveis</h3>
+                        <div class="ajuda-itens">
+                            <div class="ajuda-item">
+                                <span class="ajuda-item-icone">⏰</span>
+                                <div>
+                                    <strong>Mais Tempo</strong>
+                                    <p>Adiciona segundos extras ao cronômetro</p>
+                                </div>
+                            </div>
+                            <div class="ajuda-item">
+                                <span class="ajuda-item-icone">🚫</span>
+                                <div>
+                                    <strong>Eliminar</strong>
+                                    <p>Remove 2 alternativas erradas</p>
+                                </div>
+                            </div>
+                            <div class="ajuda-item">
+                                <span class="ajuda-item-icone">⏭️</span>
+                                <div>
+                                    <strong>Pular</strong>
+                                    <p>Troca a pergunta por outra (não disponível em desafios)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="ajuda-nota">💡 A quantidade de ajudas varia conforme os temas escolhidos</p>
+                    </section>
+                    
+                    <section class="ajuda-secao">
+                        <h3>📊 Sistema de Pontuação</h3>
+                        <table class="ajuda-tabela">
+                            <tr>
+                                <td>Resposta correta</td>
+                                <td><strong>10 pts</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Bônus ≤ 1 segundo</td>
+                                <td><strong>+5 pts</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Bônus ≤ 2 segundos</td>
+                                <td><strong>+3 pts</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Bônus ≤ 3 segundos</td>
+                                <td><strong>+2 pts</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Bônus ≤ 4 segundos</td>
+                                <td><strong>+1 pt</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Tempo esgotado</td>
+                                <td><strong>0 pts</strong></td>
+                            </tr>
+                        </table>
+                        <p class="ajuda-nota">🏆 Temas escolares têm multiplicador de bônus 2x!</p>
+                    </section>
+                    
+                    <section class="ajuda-secao">
+                        <h3>⚔️ Sistema de Desafios</h3>
+                        <ul>
+                            <li>Após jogar, outros podem desafiar você com as <strong>mesmas perguntas</strong></li>
+                            <li>Clique em <strong>⚔️ Desafiar</strong> no ranking para competir</li>
+                            <li>Compare pontuações e veja quem é melhor!</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="ajuda-secao">
+                        <h3>⚠️ Encontrou um erro?</h3>
+                        <p>Após responder, se perceber que a resposta correta está errada, clique no botão <strong>⚠️</strong> ao lado da pergunta para reportar. Isso ajuda a melhorar o quiz!</p>
+                    </section>
                 </div>
             </div>
         </div>

@@ -1924,6 +1924,163 @@ body {
 
 
 /* ========================================
+   MODAL DE AJUDA
+   ======================================== */
+.modal-ajuda {
+    max-width: 600px;
+}
+
+.ajuda-conteudo {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.ajuda-secao {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.ajuda-secao:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ajuda-secao h3 {
+    font-size: 1.1rem;
+    color: var(--gray-800);
+    margin-bottom: 12px;
+}
+
+.ajuda-secao ol,
+.ajuda-secao ul {
+    margin-left: 20px;
+    color: var(--gray-600);
+}
+
+.ajuda-secao li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.ajuda-secao p {
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+/* Itens de ajuda (ajudas disponíveis) */
+.ajuda-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.ajuda-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    background: var(--gray-50);
+    border-radius: var(--radius-sm);
+}
+
+.ajuda-item-icone {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.ajuda-item strong {
+    display: block;
+    color: var(--gray-800);
+    margin-bottom: 2px;
+}
+
+.ajuda-item p {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Nota de ajuda */
+.ajuda-nota {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Tabela de pontuação */
+.ajuda-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+
+.ajuda-tabela tr {
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.ajuda-tabela tr:last-child {
+    border-bottom: none;
+}
+
+.ajuda-tabela td {
+    padding: 8px 12px;
+    color: var(--gray-600);
+}
+
+.ajuda-tabela td:last-child {
+    text-align: right;
+    color: var(--primary);
+}
+
+/* Scrollbar customizada */
+.ajuda-conteudo::-webkit-scrollbar {
+    width: 6px;
+}
+
+.ajuda-conteudo::-webkit-scrollbar-track {
+    background: var(--gray-100);
+    border-radius: 3px;
+}
+
+.ajuda-conteudo::-webkit-scrollbar-thumb {
+    background: var(--gray-300);
+    border-radius: 3px;
+}
+
+.ajuda-conteudo::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-400);
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+    .modal-ajuda {
+        max-width: 95%;
+        margin: 20px auto;
+    }
+    
+    .ajuda-conteudo {
+        max-height: 60vh;
+    }
+    
+    .ajuda-secao h3 {
+        font-size: 1rem;
+    }
+    
+    .ajuda-item {
+        padding: 10px;
+    }
+    
+    .ajuda-item-icone {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ========================================
    ACESSIBILIDADE
    ======================================== */
 

@@ -187,7 +187,12 @@ const elementos = {
     // Modal Ranking Geral
     modalRankingGeral: document.getElementById('modal-ranking-geral'),
     modalFecharGeral: document.getElementById('modal-fechar-geral'),
-    rankingGeralBody: document.getElementById('ranking-geral-body')
+    rankingGeralBody: document.getElementById('ranking-geral-body'),
+    
+    // Modal Ajuda
+    modalAjuda: document.getElementById('modal-ajuda'),
+    btnAjuda: document.getElementById('btn-ajuda'),
+    btnFecharAjuda: document.getElementById('btn-fechar-ajuda')
 };
 
 // ========================================
@@ -556,6 +561,24 @@ function inicializarTemas() {
     elementos.btnVerRankingGeral.addEventListener('click', () => {
         elementos.menuDropdown?.classList.add('oculto');
         mostrarRankingGeral();
+    });
+    
+    // Botão de ajuda / como jogar
+    elementos.btnAjuda?.addEventListener('click', () => {
+        elementos.menuDropdown?.classList.add('oculto');
+        mostrarModalAjuda();
+    });
+    
+    // Fechar modal de ajuda
+    elementos.btnFecharAjuda?.addEventListener('click', () => {
+        elementos.modalAjuda?.classList.add('oculto');
+    });
+    
+    // Fechar modal de ajuda clicando fora
+    elementos.modalAjuda?.addEventListener('click', (e) => {
+        if (e.target === elementos.modalAjuda) {
+            elementos.modalAjuda.classList.add('oculto');
+        }
     });
     
     // Link para limpar seleção
@@ -1769,6 +1792,13 @@ function renderizarRankingGeral() {
     });
 }
 
+/**
+ * Mostra o modal de ajuda / como jogar
+ */
+function mostrarModalAjuda() {
+    abrirModal(elementos.modalAjuda, elementos.btnAjuda);
+}
+
 function inicializarModal() {
     // Modal Ranking por Sala
     elementos.modalFechar.addEventListener('click', () => {
@@ -1800,6 +1830,10 @@ function inicializarModal() {
         }
         if (!elementos.modalRankingGeral.classList.contains('oculto')) {
             fecharModal(elementos.modalRankingGeral);
+            return true;
+        }
+        if (elementos.modalAjuda && !elementos.modalAjuda.classList.contains('oculto')) {
+            fecharModal(elementos.modalAjuda);
             return true;
         }
         return false;
