@@ -174,11 +174,11 @@ export class TemasManager {
             <button class="dica-fechar" aria-label="Fechar dica">✕</button>
         `;
         
-        // Insere após a grade de temas
+        // Insere ANTES da grade de temas (no topo, onde o usuário está olhando)
         const temasGrid = document.querySelector('.temas-grid');
         
         if (temasGrid) {
-            temasGrid.parentNode.insertBefore(dica, temasGrid.nextSibling);
+            temasGrid.parentNode.insertBefore(dica, temasGrid);
             
             // Fecha ao clicar no X
             dica.querySelector('.dica-fechar').addEventListener('click', () => {
