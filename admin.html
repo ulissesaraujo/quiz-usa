@@ -335,6 +335,22 @@
             margin-left: 8px;
         }
 
+        .tag-destaque {
+            display: inline-block;
+            padding: 2px 8px;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .pergunta-item.destaque {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.05));
+            border-left: 3px solid #fbbf24;
+        }
+
         .pergunta-tema {
             display: inline-block;
             padding: 2px 8px;
@@ -1106,6 +1122,10 @@
                             <input type="checkbox" id="filtro-revisar">
                             <span>⚠️ Só p/ revisão</span>
                         </label>
+                        <label class="filtro-revisao">
+                            <input type="checkbox" id="filtro-destaque">
+                            <span>⭐ Só destaques</span>
+                        </label>
                         <span class="filtro-contador" id="filtro-contador">0 perguntas</span>
                     </div>
 
@@ -1665,6 +1685,7 @@
                 renderizarPerguntas();
             });
             document.getElementById('filtro-revisar')?.addEventListener('change', renderizarPerguntas);
+            document.getElementById('filtro-destaque')?.addEventListener('change', renderizarPerguntas);
             btnAtualizar.addEventListener('click', carregarPerguntas);
             btnExportar.addEventListener('click', exportarPerguntas);
             inputImportar.addEventListener('change', importarPerguntas);
@@ -1759,11 +1780,21 @@
             if (filtroRevisar && filtroRevisar.checked) {
                 perguntasFiltradas = perguntasFiltradas.filter(p => p.revisar === true);
             }
+            
+            // Filtro por destaque
+            const filtroDestaque = document.getElementById('filtro-destaque');
+            if (filtroDestaque && filtroDestaque.checked) {
+                perguntasFiltradas = perguntasFiltradas.filter(p => p.destaque === true);
+            }
 
             // Atualiza contador
             const total = perguntasFiltradas.length;
             const totalRevisao = perguntas.filter(p => p.revisar === true).length;
-            filtroContador.textContent = `${total} pergunta${total !== 1 ? 's' : ''}${totalRevisao > 0 ? ` (${totalRevisao} p/ revisão)` : ''}`;
+            const totalDestaque = perguntas.filter(p => p.destaque === true).length;
+            let contadorExtra = [];
+            if (totalRevisao > 0) contadorExtra.push(`${totalRevisao} p/ revisão`);
+            if (totalDestaque > 0) contadorExtra.push(`${totalDestaque} destaques`);
+            filtroContador.textContent = `${total} pergunta${total !== 1 ? 's' : ''}${contadorExtra.length > 0 ? ` (${contadorExtra.join(', ')})` : ''}`;
 
             if (perguntasFiltradas.length === 0) {
                 perguntasLista.innerHTML = '<div class="empty-state"><span>📭</span><p>Nenhuma pergunta encontrada</p></div>';
@@ -1777,10 +1808,14 @@
                 
                 // Indicador de revisão
                 const revisaoTag = p.revisar ? '<span class="tag-revisao">⚠️ Revisar</span>' : '';
+                
+                // Indicador de destaque
+                const destaqueTag = p.destaque ? `<span class="tag-destaque">⭐ ${p.curtidas || 1}</span>` : '';
 
                 return `
-                    <div class="pergunta-item ${p.revisar ? 'revisar' : ''}" data-id="${p.id}">
+                    <div class="pergunta-item ${p.revisar ? 'revisar' : ''} ${p.destaque ? 'destaque' : ''}" data-id="${p.id}">
                         <span class="pergunta-tema">${temasIcones[p.tema] || '❓'} ${p.tema}</span>
+                        ${destaqueTag}
                         ${revisaoTag}
                         <div class="pergunta-enunciado" onclick="toggleAlternativas('alt-${index}')">${p.enunciado}</div>
                         <div class="pergunta-alternativas" id="alt-${index}">

@@ -36,8 +36,10 @@ Jogo de quiz interativo com temas variados, sistema de pontuação por velocidad
 - ✅ Sistema de desafio (jogue com as mesmas perguntas de outro jogador)
 
 ### Qualidade do Conteúdo
+- ✅ Botão para destacar perguntas excelentes (⭐)
 - ✅ Botão para reportar perguntas com erros (⚠️)
 - ✅ Painel admin para revisão de perguntas marcadas
+- ✅ Filtro no admin para ver destaques e perguntas para revisão
 - ✅ Geração de perguntas por IA com distribuição equilibrada
 
 ### Acessibilidade

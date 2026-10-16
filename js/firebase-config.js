@@ -720,6 +720,33 @@ export async function marcarPerguntaRevisao(perguntaId, motivo = '') {
 }
 
 /**
+ * Marca uma pergunta como destaque (excelente)
+ * @param {string} perguntaId - ID da pergunta
+ * @returns {Promise<boolean>}
+ */
+export async function marcarPerguntaDestaque(perguntaId) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    try {
+        const { doc, updateDoc, increment, db } = window._firestore;
+        await updateDoc(doc(db, "perguntas", perguntaId), {
+            destaque: true,
+            curtidas: increment(1),
+            dataDestaque: new Date().toISOString()
+        });
+        console.log("⭐ Pergunta marcada como destaque:", perguntaId);
+        return true;
+    } catch (error) {
+        console.error("Erro ao marcar pergunta como destaque:", error);
+        throw error;
+    }
+}
+
+/**
  * Busca perguntas por tema específico
  * @param {string} tema - ID do tema
  * @returns {Promise<Array>} - Array de perguntas com id

@@ -5,7 +5,7 @@
 import { QuizEngine } from './quiz.js';
 import { RankingManager } from './ranking.js';
 import { TemasManager } from './temas.js';
-import { buscarPerguntasPorIds, buscarConfiguracoes, salvarHistoricoPerguntas, marcarPerguntaRevisao } from './firebase-config.js';
+import { buscarPerguntasPorIds, buscarConfiguracoes, salvarHistoricoPerguntas, marcarPerguntaRevisao, marcarPerguntaDestaque } from './firebase-config.js';
 import { Anunciador, GerenciadorFoco, NavegacaoTeclado } from './acessibilidade.js';
 
 // ========================================
@@ -1242,12 +1242,18 @@ async function mostrarResultado(resultado) {
             ? `<button class="btn-revisar" data-pergunta-id="${detalhe.perguntaId}" title="Reportar erro nesta pergunta">⚠️</button>`
             : '';
         
+        // Botão de destaque (pergunta excelente)
+        const btnDestaque = detalhe.perguntaId 
+            ? `<button class="btn-destaque" data-pergunta-id="${detalhe.perguntaId}" title="Marcar como pergunta excelente">⭐</button>`
+            : '';
+        
         item.innerHTML = `
             <div class="detalhe-header">
                 <span class="detalhe-numero">#${index + 1}</span>
                 ${temaInfo}
                 <span class="detalhe-tempo">${detalhe.tempo}s</span>
                 <span class="detalhe-pontos">${detalhe.pontosTotais} pts</span>
+                ${btnDestaque}
                 ${btnRevisar}
             </div>
             <div class="detalhe-enunciado" title="${enunciado.replace(/"/g, '&quot;')}">${enunciadoCurto}</div>
@@ -1275,10 +1281,29 @@ async function mostrarResultado(resultado) {
         });
     });
     
-    // Adiciona mensagem explicativa sobre o botão de reportar erro
+    // Adiciona event listeners para os botões de destaque
+    elementos.detalhesLista.querySelectorAll('.btn-destaque').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const perguntaId = e.target.dataset.perguntaId;
+            if (perguntaId && confirm('Marcar esta pergunta como excelente?\n\nIsso indica que a pergunta é muito boa!')) {
+                try {
+                    await marcarPerguntaDestaque(perguntaId);
+                    e.target.textContent = '🌟';
+                    e.target.disabled = true;
+                    e.target.title = 'Marcada como excelente!';
+                    e.target.classList.add('destacada');
+                } catch (error) {
+                    alert('Erro ao marcar pergunta. Tente novamente.');
+                    console.error(error);
+                }
+            }
+        });
+    });
+    
+    // Adiciona mensagem explicativa sobre os botões
     const dicaRevisar = document.createElement('div');
     dicaRevisar.className = 'dica-revisar';
-    dicaRevisar.innerHTML = '💡 <strong>Dica:</strong> Encontrou uma pergunta com resposta errada? Clique no ⚠️ para reportar e ajudar a melhorar o quiz!';
+    dicaRevisar.innerHTML = '💡 <strong>Dica:</strong> Gostou muito de uma pergunta? Clique no ⭐ para destacar! Encontrou erro? Clique no ⚠️ para reportar.';
     elementos.detalhesLista.appendChild(dicaRevisar);
     
     // Carrega ranking
