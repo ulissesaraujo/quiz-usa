@@ -84,11 +84,6 @@ export class TemasManager {
                                 this.subtemasSelecionados.size === 0 && 
                                 !this.modoAleatorio;
         
-        console.log('🔔 alternarTema - primeiraSelecao:', primeiraSelecao, 
-                    'temas:', this.temasSelecionados.size, 
-                    'subtemas:', this.subtemasSelecionados.size,
-                    'aleatorio:', this.modoAleatorio);
-        
         // Se estava em modo aleatório, desativa
         if (this.modoAleatorio) {
             this.modoAleatorio = false;
@@ -135,11 +130,7 @@ export class TemasManager {
         this.notificarSelecaoAlterada();
         
         // Mostra dica na primeira seleção
-        console.log('🔔 Verificando dica - primeiraSelecao:', primeiraSelecao, 
-                    'temasSelecionados:', this.temasSelecionados.size,
-                    'subtemasSelecionados:', this.subtemasSelecionados.size);
         if (primeiraSelecao && (this.temasSelecionados.size > 0 || this.subtemasSelecionados.size > 0)) {
-            console.log('🔔 Chamando mostrarDicaPrimeiraSelecao');
             this.mostrarDicaPrimeiraSelecao();
         }
     }
@@ -172,13 +163,8 @@ export class TemasManager {
      * Mostra dica para novos usuários na primeira seleção de tema
      */
     mostrarDicaPrimeiraSelecao() {
-        console.log('🔔 Dentro de mostrarDicaPrimeiraSelecao');
-        
-        // Verifica se já mostrou a dica antes
-        if (localStorage.getItem('quiz_dica_selecao_mostrada')) {
-            console.log('🔔 Já mostrou antes, saindo');
-            return;
-        }
+        // Evita mostrar se já existe uma dica na tela
+        if (document.querySelector('.dica-selecao')) return;
         
         // Cria elemento da dica
         const dica = document.createElement('div');
@@ -190,11 +176,9 @@ export class TemasManager {
         
         // Insere após a grade de temas
         const temasGrid = document.querySelector('.temas-grid');
-        console.log('🔔 temasGrid encontrado:', temasGrid);
         
         if (temasGrid) {
             temasGrid.parentNode.insertBefore(dica, temasGrid.nextSibling);
-            console.log('🔔 Dica inserida!');
             
             // Fecha ao clicar no X
             dica.querySelector('.dica-fechar').addEventListener('click', () => {
@@ -208,9 +192,6 @@ export class TemasManager {
                     setTimeout(() => dica.remove(), 300);
                 }
             }, 6000);
-            
-            // Marca que já mostrou
-            localStorage.setItem('quiz_dica_selecao_mostrada', '1');
         }
     }
 
