@@ -1552,7 +1552,7 @@ function fecharModal(modal) {
 // INICIALIZAÇÃO
 // ========================================
 async function init() {
-    console.log('🏰 Quizlândia - Build #64 - Iniciando...');
+    console.log('🏰 Quizlândia - Build #65 - Iniciando...');
     
     // Inicializa módulos
     inicializarLogin();
