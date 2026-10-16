@@ -484,9 +484,22 @@ export class TemasManager {
      * @returns {Object}
      */
     serializarParaResultado() {
+        const temasObjs = this.modoAleatorio ? [] : this.obterTemasObjetos();
+        
+        // Gera nomes dos temas, adicionando prefixo do tema pai para subtemas escolares
+        const temasNomes = this.modoAleatorio 
+            ? ['Aleatório'] 
+            : temasObjs.map(t => {
+                // Se é subtema e tem tema pai, adiciona prefixo
+                if (t.temaPaiNome) {
+                    return `${t.temaPaiNome}: ${t.nome}`;
+                }
+                return t.nome;
+            });
+        
         return {
             temas: this.modoAleatorio ? ['aleatorio'] : this.obterTemasSelecionados(),
-            temasNomes: this.modoAleatorio ? ['Aleatório'] : this.obterTemasObjetos().map(t => t.nome),
+            temasNomes: temasNomes,
             modoAleatorio: this.modoAleatorio,
             descricao: this.gerarDescricaoSelecao()
         };
