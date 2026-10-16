@@ -160,8 +160,13 @@ export class TemasManager {
      * Mostra dica para novos usuários na primeira seleção de tema
      */
     mostrarDicaPrimeiraSelecao() {
+        console.log('🔔 mostrarDicaPrimeiraSelecao chamada');
+        
         // Verifica se já mostrou a dica antes
-        if (localStorage.getItem('quiz_dica_selecao_mostrada')) return;
+        if (localStorage.getItem('quiz_dica_selecao_mostrada')) {
+            console.log('🔔 Dica já foi mostrada antes');
+            return;
+        }
         
         // Cria elemento da dica
         const dica = document.createElement('div');
@@ -173,8 +178,11 @@ export class TemasManager {
         
         // Insere após a grade de temas
         const temasGrid = document.querySelector('.temas-grid');
+        console.log('🔔 temasGrid encontrado:', !!temasGrid);
+        
         if (temasGrid) {
             temasGrid.parentNode.insertBefore(dica, temasGrid.nextSibling);
+            console.log('🔔 Dica inserida no DOM');
             
             // Fecha ao clicar no X
             dica.querySelector('.dica-fechar').addEventListener('click', () => {
