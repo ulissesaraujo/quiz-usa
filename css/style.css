@@ -750,8 +750,12 @@ body {
 .quiz-info .pergunta-tema {
     margin: 0;
     font-weight: 600;
-    font-size: 0.95rem;
-    color: white;
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    background: white;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .quiz-info .pergunta-contador {
