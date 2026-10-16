@@ -1224,6 +1224,12 @@ async function mostrarResultado(resultado) {
         });
     });
     
+    // Adiciona mensagem explicativa sobre o botão de reportar erro
+    const dicaRevisar = document.createElement('div');
+    dicaRevisar.className = 'dica-revisar';
+    dicaRevisar.innerHTML = '💡 <strong>Dica:</strong> Encontrou uma pergunta com resposta errada? Clique no ⚠️ para reportar e ajudar a melhorar o quiz!';
+    elementos.detalhesLista.appendChild(dicaRevisar);
+    
     // Carrega ranking
     await carregarRankingPartida(resultado.temas);
     
