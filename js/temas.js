@@ -166,22 +166,22 @@ export class TemasManager {
         // Evita mostrar se já existe uma dica na tela
         if (document.querySelector('.dica-selecao')) return;
         
-        // Cria elemento da dica no estilo do feedback
+        // Cria elemento da dica - overlay por cima dos temas
         const dica = document.createElement('div');
         dica.className = 'dica-selecao-feedback';
         dica.innerHTML = `
             <div class="dica-card">
-                <span class="dica-icon">💡</span>
-                <span class="dica-texto">Dica</span>
-                <span class="dica-detalhe">Selecione mais temas ou clique em <strong>Jogar</strong></span>
+                <span class="dica-linha1">Selecione mais temas</span>
+                <span class="dica-linha2">ou clique em Jogar</span>
             </div>
         `;
         
-        // Insere ANTES da grade de temas (no topo, onde o usuário está olhando)
-        const temasGrid = document.querySelector('.temas-grid');
+        // Insere como overlay dentro do container de temas
+        const temasContainer = document.querySelector('.temas-container');
         
-        if (temasGrid) {
-            temasGrid.parentNode.insertBefore(dica, temasGrid);
+        if (temasContainer) {
+            temasContainer.style.position = 'relative';
+            temasContainer.appendChild(dica);
             
             // Remove automaticamente após 3 segundos
             setTimeout(() => {

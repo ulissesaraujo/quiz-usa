@@ -460,11 +460,13 @@ body {
     align-items: start; /* Alinha items ao topo quando têm alturas diferentes */
 }
 
-/* Dica para primeira seleção - estilo feedback */
+/* Dica para primeira seleção - overlay por cima */
 .dica-selecao-feedback {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
     animation: popIn 0.3s ease;
 }
 
@@ -472,32 +474,31 @@ body {
     animation: dicaSair 0.3s ease-out forwards;
 }
 
+@keyframes dicaSair {
+    from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    to { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+}
+
 .dica-card {
     background: var(--white);
-    padding: 16px 32px;
+    padding: 20px 32px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     text-align: center;
 }
 
-.dica-icon {
+.dica-linha1 {
     display: block;
-    font-size: 2rem;
-    margin-bottom: 4px;
-}
-
-.dica-texto {
-    display: block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: #b8860b;
+    color: var(--gray-700);
     margin-bottom: 4px;
 }
 
-.dica-detalhe {
+.dica-linha2 {
     display: block;
-    font-size: 0.95rem;
-    color: var(--gray-600);
+    font-size: 1rem;
+    color: var(--gray-500);
 }
 
 /* Card de Tema */
