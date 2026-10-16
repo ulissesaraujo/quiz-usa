@@ -145,6 +145,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
         .card-header h2 {
@@ -152,6 +154,32 @@
             display: flex;
             align-items: center;
             gap: 8px;
+        }
+        
+        .header-acoes {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-warning {
+            background: var(--warning);
+            color: white;
+            border: none;
+        }
+        
+        .btn-warning:hover {
+            background: #e59100;
+        }
+        
+        .btn-destaque {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+            border: none;
+        }
+        
+        .btn-destaque:hover {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
         }
 
         .card-body {
@@ -1146,20 +1174,14 @@
             <div class="card">
                 <div class="card-header">
                     <h2>📋 Perguntas Cadastradas</h2>
-                    <button class="btn btn-small btn-outline" id="btn-atualizar">🔄 Atualizar</button>
+                    <div class="header-acoes">
+                        <button class="btn btn-small btn-warning" id="btn-revisar">⚠️ Revisão (<span id="count-revisar">0</span>)</button>
+                        <button class="btn btn-small btn-destaque" id="btn-destaque">⭐ Destaques (<span id="count-destaque">0</span>)</button>
+                        <button class="btn btn-small btn-outline" id="btn-atualizar">🔄 Atualizar</button>
+                    </div>
                 </div>
                 <div class="card-body">
                     <div class="filtros-grupo">
-                        <div class="filtros-checkboxes">
-                            <label class="filtro-revisao" id="label-filtro-revisar" style="display: none;">
-                                <input type="checkbox" id="filtro-revisar">
-                                <span>⚠️ Revisão (<span id="count-revisar">0</span>)</span>
-                            </label>
-                            <label class="filtro-revisao" id="label-filtro-destaque" style="display: none;">
-                                <input type="checkbox" id="filtro-destaque">
-                                <span>⭐ Destaques (<span id="count-destaque">0</span>)</span>
-                            </label>
-                        </div>
                         <div class="filtros-tema-linha">
                             <select id="filtro-tema">
                                 <option value="">Todos os temas</option>
@@ -1497,7 +1519,9 @@
         import { 
             adicionarPergunta, 
             adicionarPerguntasEmLote,
-            buscarTodasPerguntas, 
+            buscarTodasPerguntas,
+            buscarPerguntasRevisao,
+            buscarPerguntasDestaque,
             excluirPergunta,
             atualizarPergunta,
             buscarPerguntasPorTema,
@@ -1519,6 +1543,7 @@
         // Estado
         let perguntas = [];
         let filtroAtual = '';
+        let modoVisualizacao = 'tema'; // 'tema', 'revisao', 'destaque'
         let editandoId = null; // ID da pergunta sendo editada
 
         // Elementos
@@ -1726,6 +1751,10 @@
             document.getElementById('filtro-revisar')?.addEventListener('change', renderizarPerguntas);
             document.getElementById('filtro-destaque')?.addEventListener('change', renderizarPerguntas);
             btnAtualizar.addEventListener('click', carregarPerguntas);
+            
+            // Botões de revisão e destaque (busca direta do Firebase)
+            document.getElementById('btn-revisar')?.addEventListener('click', carregarRevisao);
+            document.getElementById('btn-destaque')?.addEventListener('click', carregarDestaque);
             btnExportar.addEventListener('click', exportarPerguntas);
             inputImportar.addEventListener('change', importarPerguntas);
             
@@ -1784,6 +1813,8 @@
         // Carrega perguntas do Firebase
         async function carregarPerguntas() {
             perguntasLista.innerHTML = '<div class="loading"><div class="spinner"></div><p>Carregando...</p></div>';
+            modoVisualizacao = 'tema';
+            atualizarBotoesVisualizacao();
             
             try {
                 perguntas = await buscarTodasPerguntas();
@@ -1792,6 +1823,63 @@
             } catch (error) {
                 console.error('Erro ao carregar perguntas:', error);
                 perguntasLista.innerHTML = '<div class="empty-state"><span>❌</span><p>Erro ao carregar perguntas</p></div>';
+            }
+        }
+
+        // Carrega apenas perguntas para revisão (busca direta do Firebase)
+        async function carregarRevisao() {
+            perguntasLista.innerHTML = '<div class="loading"><div class="spinner"></div><p>Buscando revisões...</p></div>';
+            modoVisualizacao = 'revisao';
+            atualizarBotoesVisualizacao();
+            
+            try {
+                perguntas = await buscarPerguntasRevisao();
+                document.getElementById('count-revisar').textContent = perguntas.length;
+                renderizarPerguntas();
+            } catch (error) {
+                console.error('Erro ao carregar revisões:', error);
+                perguntasLista.innerHTML = '<div class="empty-state"><span>❌</span><p>Erro ao carregar revisões</p></div>';
+            }
+        }
+
+        // Carrega apenas perguntas destacadas (busca direta do Firebase)
+        async function carregarDestaque() {
+            perguntasLista.innerHTML = '<div class="loading"><div class="spinner"></div><p>Buscando destaques...</p></div>';
+            modoVisualizacao = 'destaque';
+            atualizarBotoesVisualizacao();
+            
+            try {
+                perguntas = await buscarPerguntasDestaque();
+                document.getElementById('count-destaque').textContent = perguntas.length;
+                renderizarPerguntas();
+            } catch (error) {
+                console.error('Erro ao carregar destaques:', error);
+                perguntasLista.innerHTML = '<div class="empty-state"><span>❌</span><p>Erro ao carregar destaques</p></div>';
+            }
+        }
+
+        // Atualiza visual dos botões conforme modo de visualização
+        function atualizarBotoesVisualizacao() {
+            const btnRevisar = document.getElementById('btn-revisar');
+            const btnDestaque = document.getElementById('btn-destaque');
+            const btnAtualizar = document.getElementById('btn-atualizar');
+            
+            // Reset todos
+            btnRevisar.classList.remove('btn-primary');
+            btnRevisar.classList.add('btn-warning');
+            btnDestaque.classList.remove('btn-primary');
+            btnAtualizar.classList.remove('btn-primary');
+            btnAtualizar.classList.add('btn-outline');
+            
+            // Marca o ativo
+            if (modoVisualizacao === 'revisao') {
+                btnRevisar.classList.remove('btn-warning');
+                btnRevisar.classList.add('btn-primary');
+            } else if (modoVisualizacao === 'destaque') {
+                btnDestaque.classList.add('btn-primary');
+            } else {
+                btnAtualizar.classList.remove('btn-outline');
+                btnAtualizar.classList.add('btn-primary');
             }
         }
 
@@ -1809,40 +1897,24 @@
         function renderizarPerguntas() {
             let perguntasFiltradas = perguntas;
             
-            // Conta totais de revisão e destaque
-            const totalRevisao = perguntas.filter(p => p.revisar === true).length;
-            const totalDestaque = perguntas.filter(p => p.destaque === true).length;
-            
-            // Atualiza contadores e visibilidade dos botões de filtro
-            const labelRevisar = document.getElementById('label-filtro-revisar');
-            const labelDestaque = document.getElementById('label-filtro-destaque');
+            // No modo revisão ou destaque, já vem filtrado do Firebase
+            // Só atualiza os contadores nos botões
             const countRevisar = document.getElementById('count-revisar');
             const countDestaque = document.getElementById('count-destaque');
             
-            if (labelRevisar && countRevisar) {
-                countRevisar.textContent = totalRevisao;
-                labelRevisar.style.display = totalRevisao > 0 ? 'flex' : 'none';
+            // Se estiver no modo tema (todas), conta revisões e destaques
+            if (modoVisualizacao === 'tema') {
+                const totalRevisao = perguntas.filter(p => p.revisar === true).length;
+                const totalDestaque = perguntas.filter(p => p.destaque === true).length;
+                if (countRevisar) countRevisar.textContent = totalRevisao;
+                if (countDestaque) countDestaque.textContent = totalDestaque;
+                
+                // Aplica filtro de tema se selecionado
+                if (filtroAtual) {
+                    perguntasFiltradas = perguntasFiltradas.filter(p => p.tema === filtroAtual);
+                }
             }
-            if (labelDestaque && countDestaque) {
-                countDestaque.textContent = totalDestaque;
-                labelDestaque.style.display = totalDestaque > 0 ? 'flex' : 'none';
-            }
-            
-            // Verifica se filtros especiais estão ativos (revisão ou destaque)
-            const filtroRevisar = document.getElementById('filtro-revisar');
-            const filtroDestaque = document.getElementById('filtro-destaque');
-            const filtroRevisarAtivo = filtroRevisar && filtroRevisar.checked;
-            const filtroDestaqueAtivo = filtroDestaque && filtroDestaque.checked;
-            
-            // Se revisão ou destaque está ativo, ignora filtro de tema (mostra de todos os temas)
-            if (filtroRevisarAtivo) {
-                perguntasFiltradas = perguntas.filter(p => p.revisar === true);
-            } else if (filtroDestaqueAtivo) {
-                perguntasFiltradas = perguntas.filter(p => p.destaque === true);
-            } else if (filtroAtual) {
-                // Só aplica filtro de tema se não tiver revisão/destaque ativo
-                perguntasFiltradas = perguntasFiltradas.filter(p => p.tema === filtroAtual);
-            }
+            // Se estiver no modo revisão ou destaque, os dados já vêm filtrados
 
             // Atualiza contador - simples, só quantidade
             const total = perguntasFiltradas.length;
