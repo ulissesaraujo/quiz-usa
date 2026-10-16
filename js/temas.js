@@ -185,13 +185,13 @@ export class TemasManager {
                 dica.remove();
             });
             
-            // Remove automaticamente após 6 segundos
+            // Remove automaticamente após 3 segundos
             setTimeout(() => {
                 if (dica.parentNode) {
                     dica.classList.add('dica-saindo');
                     setTimeout(() => dica.remove(), 300);
                 }
-            }, 6000);
+            }, 3000);
         }
     }
 
