@@ -1122,7 +1122,7 @@ export async function excluirTema(temaId) {
 
 /**
  * Atualiza a contagem de perguntas de um tema
- * @param {string} temaId - ID do tema
+ * @param {string} temaId - ID do tema (pode ser tema raiz ou subtema)
  * @returns {Promise<number>} - Nova contagem
  */
 export async function atualizarContagemTema(temaId) {
@@ -1135,45 +1135,59 @@ export async function atualizarContagemTema(temaId) {
     try {
         const { collection, getDocs, query, where, doc, getDoc, updateDoc, db } = window._firestore;
         
-        // Busca o tema atual
+        // Primeiro, tenta buscar como tema raiz
         const temaRef = doc(db, "temas", temaId);
         const temaDoc = await getDoc(temaRef);
         
-        if (!temaDoc.exists()) {
-            throw new Error('Tema não encontrado');
+        if (temaDoc.exists()) {
+            // É um tema raiz - processa normalmente
+            const temaData = temaDoc.data();
+            let totalPerguntas = 0;
+            
+            // Conta perguntas do tema principal
+            const qPrincipal = query(collection(db, "perguntas"), where("tema", "==", temaId));
+            const snapshotPrincipal = await getDocs(qPrincipal);
+            totalPerguntas = snapshotPrincipal.size;
+            
+            // Se tem subtemas, conta e atualiza cada um
+            let subtemasAtualizados = null;
+            if (temaData.subtemas && temaData.subtemas.length > 0) {
+                subtemasAtualizados = await Promise.all(
+                    temaData.subtemas.map(async (subtema) => {
+                        const qSub = query(collection(db, "perguntas"), where("tema", "==", subtema.id));
+                        const snapshotSub = await getDocs(qSub);
+                        const subCount = snapshotSub.size;
+                        totalPerguntas += subCount;
+                        return { ...subtema, totalPerguntas: subCount };
+                    })
+                );
+            }
+            
+            // Atualiza o tema no Firebase
+            await updateDoc(temaRef, {
+                totalPerguntas,
+                subtemas: subtemasAtualizados || temaData.subtemas,
+                atualizadoEm: new Date().toISOString()
+            });
+            
+            console.log(`✅ Contagem atualizada para ${temaId}: ${totalPerguntas} perguntas`);
+            return totalPerguntas;
+        } else {
+            // Não é tema raiz - pode ser subtema, busca o tema pai
+            const temasCollection = collection(db, "temas");
+            const temasSnapshot = await getDocs(temasCollection);
+            
+            for (const temaDocItem of temasSnapshot.docs) {
+                const temaData = temaDocItem.data();
+                if (temaData.subtemas && temaData.subtemas.some(s => s.id === temaId)) {
+                    // Encontrou o tema pai - atualiza ele (que vai atualizar todos os subtemas)
+                    console.log(`🔍 ${temaId} é subtema de ${temaDocItem.id}, atualizando tema pai...`);
+                    return await atualizarContagemTema(temaDocItem.id);
+                }
+            }
+            
+            throw new Error(`Tema não encontrado: ${temaId}`);
         }
-        
-        const temaData = temaDoc.data();
-        let totalPerguntas = 0;
-        
-        // Conta perguntas do tema principal
-        const qPrincipal = query(collection(db, "perguntas"), where("tema", "==", temaId));
-        const snapshotPrincipal = await getDocs(qPrincipal);
-        totalPerguntas = snapshotPrincipal.size;
-        
-        // Se tem subtemas, conta e atualiza cada um
-        let subtemasAtualizados = null;
-        if (temaData.subtemas && temaData.subtemas.length > 0) {
-            subtemasAtualizados = await Promise.all(
-                temaData.subtemas.map(async (subtema) => {
-                    const qSub = query(collection(db, "perguntas"), where("tema", "==", subtema.id));
-                    const snapshotSub = await getDocs(qSub);
-                    const subCount = snapshotSub.size;
-                    totalPerguntas += subCount;
-                    return { ...subtema, totalPerguntas: subCount };
-                })
-            );
-        }
-        
-        // Atualiza o tema no Firebase
-        await updateDoc(temaRef, {
-            totalPerguntas,
-            subtemas: subtemasAtualizados || temaData.subtemas,
-            atualizadoEm: new Date().toISOString()
-        });
-        
-        console.log(`✅ Contagem atualizada para ${temaId}: ${totalPerguntas} perguntas`);
-        return totalPerguntas;
     } catch (error) {
         console.error("Erro ao atualizar contagem:", error);
         throw error;
