@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migrar Temas Escolares</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        h1 { color: #3b82f6; }
+        .btn { padding: 15px 30px; font-size: 18px; background: #3b82f6; color: white; border: none; border-radius: 8px; cursor: pointer; margin: 10px 5px; }
+        .btn:hover { background: #2563eb; }
+        .btn:disabled { background: #ccc; cursor: not-allowed; }
+        .btn-danger { background: #ef4444; }
+        .btn-danger:hover { background: #dc2626; }
+        #log { background: #f3f4f6; padding: 20px; border-radius: 8px; margin-top: 20px; white-space: pre-wrap; font-family: monospace; max-height: 400px; overflow-y: auto; }
+        .success { color: #22c55e; }
+        .error { color: #ef4444; }
+        .info { color: #3b82f6; }
+        .temas-preview { background: #f0f9ff; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .temas-preview h3 { margin-top: 0; }
+        .tema-item { margin: 5px 0; padding: 5px 10px; background: white; border-radius: 4px; }
+        .subtema { margin-left: 30px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>🎓 Migrar Temas Escolares para Firebase</h1>
+    
+    <p>Este script vai adicionar os temas de matérias escolares com subtemas por ano escolar.</p>
+    
+    <div class="temas-preview">
+        <h3>Temas que serão criados:</h3>
+        <div class="tema-item">📐 <strong>Matemática</strong></div>
+        <div class="subtema">└ 6º Ano, 7º Ano, 8º Ano, 9º Ano, 1º EM, 2º EM, 3º EM</div>
+        
+        <div class="tema-item">⚗️ <strong>Química</strong></div>
+        <div class="subtema">└ 9º Ano, 1º EM, 2º EM, 3º EM</div>
+        
+        <div class="tema-item">⚛️ <strong>Física</strong></div>
+        <div class="subtema">└ 9º Ano, 1º EM, 2º EM, 3º EM</div>
+        
+        <div class="tema-item">🧬 <strong>Biologia</strong></div>
+        <div class="subtema">└ 6º Ano, 7º Ano, 8º Ano, 9º Ano, 1º EM, 2º EM, 3º EM</div>
+        
+        <div class="tema-item">📖 <strong>Português</strong></div>
+        <div class="subtema">└ 6º Ano, 7º Ano, 8º Ano, 9º Ano, 1º EM, 2º EM, 3º EM</div>
+        
+        <div class="tema-item">🌎 <strong>Geografia Escolar</strong></div>
+        <div class="subtema">└ 6º Ano, 7º Ano, 8º Ano, 9º Ano, 1º EM, 2º EM, 3º EM</div>
+        
+        <div class="tema-item">📜 <strong>História Escolar</strong></div>
+        <div class="subtema">└ 6º Ano, 7º Ano, 8º Ano, 9º Ano, 1º EM, 2º EM, 3º EM</div>
+        
+        <div class="tema-item">🇬🇧 <strong>Inglês Escolar</strong></div>
+        <div class="subtema">└ 6º Ano, 7º Ano, 8º Ano, 9º Ano, 1º EM, 2º EM, 3º EM</div>
+    </div>
+    
+    <button class="btn" id="btn-migrar" onclick="migrarTemas()">🚀 Migrar Temas Escolares</button>
+    
+    <div id="log"></div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyD_fPui3UT7BCSqUlLzl3E5TDWFkTkkU2I",
+            authDomain: "jogo-da-velha-usa.firebaseapp.com",
+            projectId: "jogo-da-velha-usa",
+            storageBucket: "jogo-da-velha-usa.firebasestorage.app",
+            messagingSenderId: "371808043984",
+            appId: "1:371808043984:web:88e772bae13b93b881efd5"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const logEl = document.getElementById('log');
+        
+        function log(msg, tipo = '') {
+            const span = document.createElement('span');
+            span.className = tipo;
+            span.textContent = msg + '\n';
+            logEl.appendChild(span);
+            logEl.scrollTop = logEl.scrollHeight;
+        }
+
+        // Anos escolares para subtemas
+        const anosCompletos = [
+            { id: '6ano', nome: '6º Ano', icone: '6️⃣' },
+            { id: '7ano', nome: '7º Ano', icone: '7️⃣' },
+            { id: '8ano', nome: '8º Ano', icone: '8️⃣' },
+            { id: '9ano', nome: '9º Ano', icone: '9️⃣' },
+            { id: '1em', nome: '1º EM', icone: '1️⃣' },
+            { id: '2em', nome: '2º EM', icone: '2️⃣' },
+            { id: '3em', nome: '3º EM', icone: '3️⃣' }
+        ];
+
+        const anosEnsinoMedio = [
+            { id: '9ano', nome: '9º Ano', icone: '9️⃣' },
+            { id: '1em', nome: '1º EM', icone: '1️⃣' },
+            { id: '2em', nome: '2º EM', icone: '2️⃣' },
+            { id: '3em', nome: '3º EM', icone: '3️⃣' }
+        ];
+
+        function gerarSubtemas(prefixo, anos) {
+            return anos.map(ano => ({
+                id: `${prefixo}-${ano.id}`,
+                nome: ano.nome,
+                icone: ano.icone,
+                totalPerguntas: 0
+            }));
+        }
+
+        const temasEscolares = [
+            {
+                id: 'esc-matematica',
+                nome: 'Matemática',
+                icone: '📐',
+                ordem: 100,
+                totalPerguntas: 0,
+                subtemas: gerarSubtemas('mat', anosCompletos)
+            },
+            {
+                id: 'esc-quimica',
+                nome: 'Química',
+                icone: '⚗️',
+                ordem: 101,
+                totalPerguntas: 0,
+                subtemas: gerarSubtemas('qui', anosEnsinoMedio)
+            },
+            {
+                id: 'esc-fisica',
+                nome: 'Física',
+                icone: '⚛️',
+                ordem: 102,
+                totalPerguntas: 0,
+                subtemas: gerarSubtemas('fis', anosEnsinoMedio)
+            },
+            {
+                id: 'esc-biologia',
+                nome: 'Biologia',
+                icone: '🧬',
+                ordem: 103,
+                totalPerguntas: 0,
+                subtemas: gerarSubtemas('bio', anosCompletos)
+            },
+            {
+                id: 'esc-portugues',
+                nome: 'Português',
+                icone: '📖',
+                ordem: 104,
+                totalPerguntas: 0,
+                subtemas: gerarSubtemas('port', anosCompletos)
+            },
+            {
+                id: 'esc-geografia',
+                nome: 'Geografia Escolar',
+                icone: '🌎',
+                ordem: 105,
+                totalPerguntas: 0,
+                subtemas: gerarSubtemas('geo', anosCompletos)
+            },
+            {
+                id: 'esc-historia',
+                nome: 'História Escolar',
+                icone: '📜',
+                ordem: 106,
+                totalPerguntas: 0,
+                subtemas: gerarSubtemas('hist', anosCompletos)
+            },
+            {
+                id: 'esc-ingles',
+                nome: 'Inglês Escolar',
+                icone: '🇬🇧',
+                ordem: 107,
+                totalPerguntas: 0,
+                subtemas: gerarSubtemas('ing', anosCompletos)
+            }
+        ];
+
+        window.migrarTemas = async function() {
+            const btn = document.getElementById('btn-migrar');
+            btn.disabled = true;
+            btn.textContent = '⏳ Migrando...';
+            
+            log('Iniciando migração dos temas escolares...', 'info');
+            
+            let sucesso = 0;
+            let erros = 0;
+            
+            for (const tema of temasEscolares) {
+                try {
+                    const temaRef = doc(db, "temas", tema.id);
+                    await setDoc(temaRef, {
+                        ...tema,
+                        criadoEm: new Date().toISOString()
+                    });
+                    log(`✅ ${tema.icone} ${tema.nome} - ${tema.subtemas.length} subtemas`, 'success');
+                    sucesso++;
+                } catch (error) {
+                    log(`❌ Erro ao criar ${tema.nome}: ${error.message}`, 'error');
+                    erros++;
+                }
+            }
+            
+            log('', '');
+            log(`=== MIGRAÇÃO CONCLUÍDA ===`, 'info');
+            log(`✅ ${sucesso} temas criados com sucesso`, 'success');
+            if (erros > 0) {
+                log(`❌ ${erros} erros`, 'error');
+            }
+            log('', '');
+            log('Agora vá para o Admin e veja os temas na aba "Temas"!', 'info');
+            
+            btn.textContent = '✅ Concluído!';
+        }
+    </script>
+</body>
+</html>
