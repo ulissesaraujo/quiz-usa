@@ -79,6 +79,11 @@ export class TemasManager {
      * @param {boolean} isSubtema - Se é um subtema
      */
     alternarTema(temaId, isSubtema = false) {
+        // Verifica se é a primeira seleção (para mostrar dica)
+        const primeiraSelecao = this.temasSelecionados.size === 0 && 
+                                this.subtemasSelecionados.size === 0 && 
+                                !this.modoAleatorio;
+        
         // Se estava em modo aleatório, desativa
         if (this.modoAleatorio) {
             this.modoAleatorio = false;
@@ -123,6 +128,11 @@ export class TemasManager {
         }
         
         this.notificarSelecaoAlterada();
+        
+        // Mostra dica na primeira seleção
+        if (primeiraSelecao && (this.temasSelecionados.size > 0 || this.subtemasSelecionados.size > 0)) {
+            this.mostrarDicaPrimeiraSelecao();
+        }
     }
 
     /**
@@ -141,34 +151,20 @@ export class TemasManager {
      * @param {string} temaId - ID do tema
      */
     selecionarTema(temaId) {
-        console.log('🔔 selecionarTema:', temaId, 'size antes:', this.temasSelecionados.size, 'modoAleatorio:', this.modoAleatorio);
-        const primeiraSelecao = this.temasSelecionados.size === 0 && !this.modoAleatorio;
-        console.log('🔔 primeiraSelecao:', primeiraSelecao);
-        
         if (this.modoAleatorio) {
             this.modoAleatorio = false;
         }
         
         this.temasSelecionados.add(temaId);
         this.notificarSelecaoAlterada();
-        
-        // Mostra dica na primeira seleção
-        if (primeiraSelecao) {
-            this.mostrarDicaPrimeiraSelecao();
-        }
     }
     
     /**
      * Mostra dica para novos usuários na primeira seleção de tema
      */
     mostrarDicaPrimeiraSelecao() {
-        console.log('🔔 mostrarDicaPrimeiraSelecao chamada');
-        
         // Verifica se já mostrou a dica antes
-        if (localStorage.getItem('quiz_dica_selecao_mostrada')) {
-            console.log('🔔 Dica já foi mostrada antes');
-            return;
-        }
+        if (localStorage.getItem('quiz_dica_selecao_mostrada')) return;
         
         // Cria elemento da dica
         const dica = document.createElement('div');
@@ -180,11 +176,9 @@ export class TemasManager {
         
         // Insere após a grade de temas
         const temasGrid = document.querySelector('.temas-grid');
-        console.log('🔔 temasGrid encontrado:', !!temasGrid);
         
         if (temasGrid) {
             temasGrid.parentNode.insertBefore(dica, temasGrid.nextSibling);
-            console.log('🔔 Dica inserida no DOM');
             
             // Fecha ao clicar no X
             dica.querySelector('.dica-fechar').addEventListener('click', () => {
