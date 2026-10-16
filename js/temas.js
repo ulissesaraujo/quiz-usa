@@ -141,7 +141,9 @@ export class TemasManager {
      * @param {string} temaId - ID do tema
      */
     selecionarTema(temaId) {
+        console.log('🔔 selecionarTema:', temaId, 'size antes:', this.temasSelecionados.size, 'modoAleatorio:', this.modoAleatorio);
         const primeiraSelecao = this.temasSelecionados.size === 0 && !this.modoAleatorio;
+        console.log('🔔 primeiraSelecao:', primeiraSelecao);
         
         if (this.modoAleatorio) {
             this.modoAleatorio = false;
