@@ -860,19 +860,19 @@ function configurarAjudas() {
         atualizarBadgeAjuda(elementos.btnAjudaEliminar, ajudas.eliminar);
     }
     
-    // Configura botão de pular
+    // Configura botão de pular (não disponível no modo desafio - perguntas são fixas)
     if (elementos.btnAjudaPular) {
-        const pularDisponivel = ajudas.pular?.disponivel > 0;
+        const pularDisponivel = ajudas.pular?.disponivel > 0 && !quizEngine.modoDesafio;
         elementos.btnAjudaPular.style.display = pularDisponivel ? 'flex' : 'none';
         elementos.btnAjudaPular.disabled = true; // Inicia desabilitado
         elementos.btnAjudaPular.classList.remove('usado');
         atualizarBadgeAjuda(elementos.btnAjudaPular, ajudas.pular);
     }
     
-    // Verifica se há alguma ajuda ativada
+    // Verifica se há alguma ajuda ativada (pular não conta no modo desafio)
     const temAjudas = (ajudas.tempo?.disponivel > 0) || 
                       (ajudas.eliminar?.disponivel > 0) || 
-                      (ajudas.pular?.disponivel > 0);
+                      (ajudas.pular?.disponivel > 0 && !quizEngine.modoDesafio);
     if (elementos.ajudasBar) {
         elementos.ajudasBar.style.display = temAjudas ? 'flex' : 'none';
     }
