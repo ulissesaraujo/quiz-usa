@@ -186,13 +186,13 @@ export class TemasManager {
         // Insere no body para garantir que fique por cima de tudo
         document.body.appendChild(dica);
         
-        // Remove automaticamente após 2 segundos
+        // Remove automaticamente após 1 segundo
         setTimeout(() => {
             if (dica.parentNode) {
                 dica.classList.add('dica-saindo');
                 setTimeout(() => dica.remove(), 300);
             }
-        }, 2000);
+        }, 1000);
     }
 
     /**
