@@ -618,6 +618,11 @@ async function iniciarQuiz() {
         elementos.quizTemaInfo.textContent = configTemas.descricao;
         elementos.pontosAtuais.textContent = '0';
         
+        // Atualiza o badge do tema na barra de controles
+        if (elementos.perguntaTema) {
+            elementos.perguntaTema.textContent = configTemas.descricao;
+        }
+        
         // Configura callbacks do quiz engine
         configurarCallbacksQuiz();
         
@@ -725,12 +730,12 @@ function configurarCallbacksQuiz() {
             elementos.perguntaEnunciado.textContent = pergunta.enunciado;
         }
         
-        // Mostra o tema da pergunta se disponível
+        // Mostra o tema da pergunta se disponível (útil para modo aleatório)
+        // Se a pergunta tem tema específico, mostra ele; senão mantém o tema geral
         if (elementos.perguntaTema && tema) {
             const temaObj = temasManager.obterTemaPorId(tema);
             if (temaObj) {
                 elementos.perguntaTema.textContent = `${temaObj.icone} ${temaObj.nome}`;
-                elementos.perguntaTema.classList.remove('oculto');
             }
         }
         
