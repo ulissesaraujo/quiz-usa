@@ -2108,6 +2108,19 @@
                 
                 await adicionarPerguntasEmLote(perguntasValidas);
                 
+                // Identifica os temas únicos das perguntas importadas
+                const temasUnicos = [...new Set(perguntasValidas.map(p => p.tema))];
+                
+                // Atualiza a contagem de cada tema afetado
+                btnImportar.textContent = '⏳ Atualizando contagens...';
+                for (const temaId of temasUnicos) {
+                    try {
+                        await atualizarContagemTema(temaId);
+                    } catch (e) {
+                        console.warn(`Erro ao atualizar contagem do tema ${temaId}:`, e);
+                    }
+                }
+                
                 fecharModalColarJson();
                 mostrarMensagem(`${perguntasValidas.length} perguntas importadas com sucesso!`, 'sucesso');
                 
