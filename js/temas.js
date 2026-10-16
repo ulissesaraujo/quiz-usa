@@ -84,6 +84,11 @@ export class TemasManager {
                                 this.subtemasSelecionados.size === 0 && 
                                 !this.modoAleatorio;
         
+        console.log('🔔 alternarTema - primeiraSelecao:', primeiraSelecao, 
+                    'temas:', this.temasSelecionados.size, 
+                    'subtemas:', this.subtemasSelecionados.size,
+                    'aleatorio:', this.modoAleatorio);
+        
         // Se estava em modo aleatório, desativa
         if (this.modoAleatorio) {
             this.modoAleatorio = false;
@@ -130,7 +135,11 @@ export class TemasManager {
         this.notificarSelecaoAlterada();
         
         // Mostra dica na primeira seleção
+        console.log('🔔 Verificando dica - primeiraSelecao:', primeiraSelecao, 
+                    'temasSelecionados:', this.temasSelecionados.size,
+                    'subtemasSelecionados:', this.subtemasSelecionados.size);
         if (primeiraSelecao && (this.temasSelecionados.size > 0 || this.subtemasSelecionados.size > 0)) {
+            console.log('🔔 Chamando mostrarDicaPrimeiraSelecao');
             this.mostrarDicaPrimeiraSelecao();
         }
     }
