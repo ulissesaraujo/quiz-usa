@@ -929,6 +929,7 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
+    margin-left: auto; /* Sempre fixa à direita */
 }
 
 .ajudas-bar.oculto {
