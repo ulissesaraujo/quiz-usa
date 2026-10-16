@@ -147,7 +147,6 @@ const elementos = {
     linkLimparSelecao: document.getElementById('link-limpar-selecao'),
     
     // Quiz
-    quizTemaInfo: document.getElementById('quiz-tema-info'),
     perguntaContador: document.getElementById('pergunta-contador'),
     pontosAtuais: document.getElementById('pontos-atuais'),
     faseLeitura: document.getElementById('fase-leitura'),
@@ -616,7 +615,6 @@ async function iniciarQuiz() {
         const configTemas = temasManager.serializarParaResultado();
         
         // Atualiza UI
-        elementos.quizTemaInfo.textContent = configTemas.descricao;
         elementos.pontosAtuais.textContent = '0';
         
         // Atualiza o badge do tema na barra de controles
@@ -701,7 +699,9 @@ async function iniciarDesafio(partidaOriginal) {
         };
         
         // Atualiza UI
-        elementos.quizTemaInfo.textContent = configDesafio.descricao;
+        if (elementos.perguntaTema) {
+            elementos.perguntaTema.textContent = configDesafio.descricao;
+        }
         elementos.pontosAtuais.textContent = '0';
         
         // Configura callbacks do quiz engine
