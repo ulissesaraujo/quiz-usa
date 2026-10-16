@@ -312,10 +312,15 @@ function renderizarTemas() {
         // Indicador de subtemas
         const expandirBtn = temSubtemas ? `<span class="tema-expandir" aria-hidden="true">▶</span>` : '';
         
+        // Texto do contador (mostra "Em manutenção" se 0 perguntas)
+        const contadorTexto = (tema.totalPerguntas || 0) === 0 
+            ? '🔧 Em manutenção' 
+            : `${tema.totalPerguntas} perguntas`;
+        
         card.innerHTML = `
             <span class="tema-icone" aria-hidden="true">${tema.icone}</span>
             <h3 class="tema-nome">${tema.nome}</h3>
-            <span class="tema-contador">${tema.totalPerguntas || 0} perguntas</span>
+            <span class="tema-contador">${contadorTexto}</span>
             ${expandirBtn}
         `;
         
@@ -387,10 +392,15 @@ function criarCardSubtema(subtema, temaPaiId) {
     card.setAttribute('aria-label', `${subtema.nome}, ${subtema.totalPerguntas || 0} perguntas${selecionado ? ', selecionado' : ''}`);
     card.setAttribute('tabindex', '0');
     
+    // Texto do contador (mostra "🔧" se 0 perguntas)
+    const contadorTexto = (subtema.totalPerguntas || 0) === 0 
+        ? '🔧' 
+        : subtema.totalPerguntas;
+    
     card.innerHTML = `
         <span class="subtema-icone" aria-hidden="true">${subtema.icone}</span>
         <span class="subtema-nome">${subtema.nome}</span>
-        <span class="subtema-contador">${subtema.totalPerguntas || 0}</span>
+        <span class="subtema-contador">${contadorTexto}</span>
     `;
     
     card.addEventListener('click', () => {
