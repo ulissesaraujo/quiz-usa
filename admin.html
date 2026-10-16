@@ -775,6 +775,49 @@
             font-size: 1.5rem;
         }
 
+        /* Emoji Picker */
+        .input-com-emoji {
+            display: flex;
+            gap: 8px;
+        }
+
+        .input-com-emoji input {
+            flex: 1;
+        }
+
+        .emoji-picker {
+            margin-top: 8px;
+            padding: 12px;
+            background: var(--gray-50);
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+        }
+
+        .emoji-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 4px;
+        }
+
+        .emoji-item {
+            font-size: 1.5rem;
+            padding: 8px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .emoji-item:hover {
+            background: var(--gray-200);
+        }
+
+        @media (max-width: 640px) {
+            .emoji-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
         .tema-nome {
             font-weight: 600;
             color: var(--gray-800);
@@ -1165,7 +1208,54 @@
 
                             <div class="form-group">
                                 <label for="tema-icone">Ícone (emoji) *</label>
-                                <input type="text" id="tema-icone" placeholder="ex: 🇧🇷" required maxlength="4">
+                                <div class="input-com-emoji">
+                                    <input type="text" id="tema-icone" placeholder="ex: 🇧🇷" required maxlength="4">
+                                    <button type="button" class="btn btn-small btn-outline" id="btn-emoji-picker">😀</button>
+                                </div>
+                                <div class="emoji-picker oculto" id="emoji-picker">
+                                    <div class="emoji-grid">
+                                        <span class="emoji-item">🎨</span>
+                                        <span class="emoji-item">🔬</span>
+                                        <span class="emoji-item">🎬</span>
+                                        <span class="emoji-item">🍔</span>
+                                        <span class="emoji-item">🧒</span>
+                                        <span class="emoji-item">💡</span>
+                                        <span class="emoji-item">⚽</span>
+                                        <span class="emoji-item">🗺️</span>
+                                        <span class="emoji-item">📜</span>
+                                        <span class="emoji-item">📚</span>
+                                        <span class="emoji-item">🎮</span>
+                                        <span class="emoji-item">🎵</span>
+                                        <span class="emoji-item">📼</span>
+                                        <span class="emoji-item">🧪</span>
+                                        <span class="emoji-item">🏆</span>
+                                        <span class="emoji-item">🎯</span>
+                                        <span class="emoji-item">🌍</span>
+                                        <span class="emoji-item">🚀</span>
+                                        <span class="emoji-item">🎸</span>
+                                        <span class="emoji-item">🎤</span>
+                                        <span class="emoji-item">🏀</span>
+                                        <span class="emoji-item">🎾</span>
+                                        <span class="emoji-item">🏊</span>
+                                        <span class="emoji-item">🏎️</span>
+                                        <span class="emoji-item">🦸</span>
+                                        <span class="emoji-item">🧩</span>
+                                        <span class="emoji-item">🤔</span>
+                                        <span class="emoji-item">🇧🇷</span>
+                                        <span class="emoji-item">🇺🇸</span>
+                                        <span class="emoji-item">⚡</span>
+                                        <span class="emoji-item">🔢</span>
+                                        <span class="emoji-item">🫀</span>
+                                        <span class="emoji-item">🥗</span>
+                                        <span class="emoji-item">🏰</span>
+                                        <span class="emoji-item">📺</span>
+                                        <span class="emoji-item">🎶</span>
+                                        <span class="emoji-item">✨</span>
+                                        <span class="emoji-item">💜</span>
+                                        <span class="emoji-item">🤠</span>
+                                        <span class="emoji-item">🏅</span>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="form-group">
@@ -2329,6 +2419,21 @@
         }
 
         btnCancelarEdicaoTema?.addEventListener('click', cancelarEdicaoTema);
+
+        // Emoji Picker
+        const emojiPicker = document.getElementById('emoji-picker');
+        const btnEmojiPicker = document.getElementById('btn-emoji-picker');
+        
+        btnEmojiPicker?.addEventListener('click', () => {
+            emojiPicker.classList.toggle('oculto');
+        });
+        
+        emojiPicker?.addEventListener('click', (e) => {
+            if (e.target.classList.contains('emoji-item')) {
+                temaIconeInput.value = e.target.textContent;
+                emojiPicker.classList.add('oculto');
+            }
+        });
 
         async function atualizarContagemUmTema(temaId, temaPaiId) {
             const idParaAtualizar = temaPaiId || temaId;
