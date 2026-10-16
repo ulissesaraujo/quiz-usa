@@ -339,20 +339,26 @@ export async function buscarPerguntasPorTemas(temas, quantidade = 10, jogador = 
     }
     
     try {
-        const { collection, getDocs, db } = window._firestore;
+        const { collection, getDocs, query, where, db } = window._firestore;
         const perguntasCollection = collection(db, "perguntas");
         
-        // Busca todas as perguntas (evita necessidade de índice no Firestore)
-        const snapshot = await getDocs(perguntasCollection);
-        
-        // Filtra no JavaScript pelos temas selecionados
         let todasPerguntas = [];
-        snapshot.forEach((doc) => {
-            const pergunta = { id: doc.id, ...doc.data() };
-            if (temas.includes(pergunta.tema)) {
-                todasPerguntas.push(pergunta);
-            }
-        });
+        
+        // Busca perguntas de cada tema usando query com where (mais eficiente)
+        for (const temaId of temas) {
+            const q = query(
+                perguntasCollection,
+                where("tema", "==", temaId)
+            );
+            
+            const snapshot = await getDocs(q);
+            snapshot.forEach((doc) => {
+                todasPerguntas.push({
+                    id: doc.id,
+                    ...doc.data()
+                });
+            });
+        }
         
         // Aplica filtro de repetição se configurado
         let perguntasSorteadas;
@@ -367,7 +373,7 @@ export async function buscarPerguntasPorTemas(temas, quantidade = 10, jogador = 
         return perguntasSorteadas;
     } catch (error) {
         console.error("Erro ao buscar perguntas:", error);
-        throw error; // Propaga erro para mostrar mensagem mais específica
+        throw error;
     }
 }
 
