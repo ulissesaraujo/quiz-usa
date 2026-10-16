@@ -442,19 +442,32 @@
         }
 
         /* Filtros */
-        .filtros {
+        .filtros-grupo {
             display: flex;
+            flex-direction: column;
             gap: 12px;
             margin-bottom: 16px;
+        }
+        
+        .filtros-checkboxes {
+            display: flex;
+            gap: 12px;
             flex-wrap: wrap;
+        }
+        
+        .filtros-tema-linha {
+            display: flex;
+            gap: 12px;
             align-items: center;
+            flex-wrap: wrap;
         }
 
-        .filtros select {
+        .filtros-tema-linha select {
             padding: 8px 12px;
             border: 2px solid var(--gray-200);
             border-radius: 6px;
             font-family: inherit;
+            min-width: 200px;
         }
 
         .filtro-contador {
@@ -471,8 +484,9 @@
             align-items: center;
             gap: 6px;
             padding: 6px 12px;
-            background: var(--warning);
-            color: white;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            border: 2px solid var(--gray-200);
             border-radius: 6px;
             cursor: pointer;
             font-size: 0.85rem;
@@ -481,7 +495,13 @@
         }
 
         .filtro-revisao:hover {
-            background: #e59100;
+            background: var(--gray-200);
+        }
+        
+        .filtro-revisao:has(input:checked) {
+            background: var(--warning);
+            color: white;
+            border-color: var(--warning);
         }
 
         .filtro-revisao input {
@@ -1128,19 +1148,23 @@
                     <button class="btn btn-small btn-outline" id="btn-atualizar">🔄 Atualizar</button>
                 </div>
                 <div class="card-body">
-                    <div class="filtros">
-                        <select id="filtro-tema">
-                            <option value="">Todos os temas</option>
-                        </select>
-                        <label class="filtro-revisao">
-                            <input type="checkbox" id="filtro-revisar">
-                            <span>⚠️ Só p/ revisão</span>
-                        </label>
-                        <label class="filtro-revisao">
-                            <input type="checkbox" id="filtro-destaque">
-                            <span>⭐ Só destaques</span>
-                        </label>
-                        <span class="filtro-contador" id="filtro-contador">0 perguntas</span>
+                    <div class="filtros-grupo">
+                        <div class="filtros-checkboxes">
+                            <label class="filtro-revisao">
+                                <input type="checkbox" id="filtro-revisar">
+                                <span>⚠️ Só p/ revisão</span>
+                            </label>
+                            <label class="filtro-revisao">
+                                <input type="checkbox" id="filtro-destaque">
+                                <span>⭐ Só destaques</span>
+                            </label>
+                        </div>
+                        <div class="filtros-tema-linha">
+                            <select id="filtro-tema">
+                                <option value="">Todos os temas</option>
+                            </select>
+                            <span class="filtro-contador" id="filtro-contador">0 perguntas</span>
+                        </div>
                     </div>
 
                     <div class="perguntas-lista" id="perguntas-lista">
@@ -1801,14 +1825,9 @@
                 perguntasFiltradas = perguntasFiltradas.filter(p => p.destaque === true);
             }
 
-            // Atualiza contador
+            // Atualiza contador - simples, só quantidade
             const total = perguntasFiltradas.length;
-            const totalRevisao = perguntas.filter(p => p.revisar === true).length;
-            const totalDestaque = perguntas.filter(p => p.destaque === true).length;
-            let contadorExtra = [];
-            if (totalRevisao > 0) contadorExtra.push(`${totalRevisao} p/ revisão`);
-            if (totalDestaque > 0) contadorExtra.push(`${totalDestaque} destaques`);
-            filtroContador.textContent = `${total} pergunta${total !== 1 ? 's' : ''}${contadorExtra.length > 0 ? ` (${contadorExtra.join(', ')})` : ''}`;
+            filtroContador.textContent = `${total} pergunta${total !== 1 ? 's' : ''}`;
 
             if (perguntasFiltradas.length === 0) {
                 perguntasLista.innerHTML = '<div class="empty-state"><span>📭</span><p>Nenhuma pergunta encontrada</p></div>';
