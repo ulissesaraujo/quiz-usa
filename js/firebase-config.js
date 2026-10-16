@@ -1132,12 +1132,16 @@ export async function atualizarContagemTema(temaId) {
         throw new Error('Firebase não disponível');
     }
     
+    console.log(`📊 atualizarContagemTema chamada para: ${temaId}`);
+    
     try {
         const { collection, getDocs, query, where, doc, getDoc, updateDoc, db } = window._firestore;
         
         // Primeiro, tenta buscar como tema raiz
         const temaRef = doc(db, "temas", temaId);
         const temaDoc = await getDoc(temaRef);
+        
+        console.log(`📊 Tema ${temaId} existe como raiz: ${temaDoc.exists()}`);
         
         if (temaDoc.exists()) {
             // É um tema raiz - processa normalmente
@@ -1174,8 +1178,11 @@ export async function atualizarContagemTema(temaId) {
             return totalPerguntas;
         } else {
             // Não é tema raiz - pode ser subtema, busca o tema pai
+            console.log(`🔍 ${temaId} não é tema raiz, buscando tema pai...`);
             const temasCollection = collection(db, "temas");
             const temasSnapshot = await getDocs(temasCollection);
+            
+            console.log(`🔍 Buscando em ${temasSnapshot.size} temas...`);
             
             for (const temaDocItem of temasSnapshot.docs) {
                 const temaData = temaDocItem.data();
@@ -1186,6 +1193,7 @@ export async function atualizarContagemTema(temaId) {
                 }
             }
             
+            console.error(`❌ Tema não encontrado: ${temaId}`);
             throw new Error(`Tema não encontrado: ${temaId}`);
         }
     } catch (error) {

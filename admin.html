@@ -2181,9 +2181,11 @@ Das 20 perguntas, distribua assim:
                 btnImportar.textContent = '⏳ Atualizando contagens...';
                 for (const temaId of temasUnicos) {
                     try {
+                        console.log(`📊 Atualizando contagem do tema: ${temaId}`);
                         await atualizarContagemTema(temaId);
+                        console.log(`✅ Contagem atualizada para: ${temaId}`);
                     } catch (e) {
-                        console.warn(`Erro ao atualizar contagem do tema ${temaId}:`, e);
+                        console.error(`❌ Erro ao atualizar contagem do tema ${temaId}:`, e);
                     }
                 }
                 
