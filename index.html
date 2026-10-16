@@ -27,7 +27,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="canonical" href="https://ulissesaraujo.github.io/quizlandia/">
-    <link rel="stylesheet" href="css/style.css?v=73">
+    <link rel="stylesheet" href="css/style.css?v=75">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -92,7 +92,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build #74 - 23:25:10 15/10/2026</p>
+                <p class="versao-debug">Build #75 - 23:30:15 15/10/2026</p>
             </div>
         </section>
 
@@ -104,28 +104,29 @@
             <header class="header-temas">
                 <div class="header-info">
                     <span class="jogador-nome" id="display-jogador" aria-live="polite">Jogador</span>
-                    <button class="btn btn-small btn-outline" 
-                            id="btn-trocar-jogador"
-                            aria-label="Trocar de jogador">
-                        Trocar
-                    </button>
-                    <a href="admin.html" 
-                       class="btn btn-small btn-admin oculto" 
-                       id="btn-painel-admin"
-                       aria-label="Ir para painel administrativo">
-                        ⚙️ Admin
-                    </a>
                 </div>
-                <button class="btn btn-small btn-secondary" 
-                        id="btn-ver-ranking-salas"
-                        aria-label="Ver ranking por sala de jogo">
-                    <span aria-hidden="true">🏆</span> Ranking por Sala
-                </button>
-                <button class="btn btn-small btn-outline" 
-                        id="btn-ver-ranking-geral"
-                        aria-label="Ver ranking geral de todos os jogadores">
-                    <span aria-hidden="true">📊</span> Ranking Geral
-                </button>
+                <div class="menu-container">
+                    <button class="btn-menu-hamburguer" 
+                            id="btn-menu-hamburguer"
+                            aria-label="Abrir menu"
+                            aria-expanded="false">
+                        ☰
+                    </button>
+                    <div class="menu-dropdown oculto" id="menu-dropdown">
+                        <button class="menu-item" id="btn-trocar-jogador">
+                            👤 Trocar jogador
+                        </button>
+                        <a href="admin.html" class="menu-item oculto" id="btn-painel-admin">
+                            ⚙️ Painel Admin
+                        </a>
+                        <button class="menu-item" id="btn-ver-ranking-salas">
+                            🏆 Ranking por Sala
+                        </button>
+                        <button class="menu-item" id="btn-ver-ranking-geral">
+                            📊 Ranking Geral
+                        </button>
+                    </div>
+                </div>
             </header>
 
             <div class="temas-container">
@@ -458,6 +459,6 @@
     </div>
 
     <!-- Scripts -->
-    <script type="module" src="js/app.js?v=73"></script>
+    <script type="module" src="js/app.js?v=75"></script>
 </body>
 </html>

@@ -70,6 +70,8 @@ const elementos = {
     inputNome: document.getElementById('nome-jogador'),
     displayJogador: document.getElementById('display-jogador'),
     btnTrocarJogador: document.getElementById('btn-trocar-jogador'),
+    btnMenuHamburguer: document.getElementById('btn-menu-hamburguer'),
+    menuDropdown: document.getElementById('menu-dropdown'),
     
     // Temas
     temasGrid: document.getElementById('temas-grid'),
@@ -432,6 +434,28 @@ function atualizarUITemas() {
 }
 
 function inicializarTemas() {
+    // Menu hambúrguer
+    elementos.btnMenuHamburguer?.addEventListener('click', () => {
+        const menu = elementos.menuDropdown;
+        const isOpen = !menu.classList.contains('oculto');
+        
+        if (isOpen) {
+            menu.classList.add('oculto');
+            elementos.btnMenuHamburguer.setAttribute('aria-expanded', 'false');
+        } else {
+            menu.classList.remove('oculto');
+            elementos.btnMenuHamburguer.setAttribute('aria-expanded', 'true');
+        }
+    });
+    
+    // Fecha menu ao clicar fora
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.menu-container')) {
+            elementos.menuDropdown?.classList.add('oculto');
+            elementos.btnMenuHamburguer?.setAttribute('aria-expanded', 'false');
+        }
+    });
+    
     // Botão aleatório - vai direto para o jogo com temas aleatórios
     elementos.btnAleatorio.addEventListener('click', async () => {
         temasManager.setModoAleatorio(true);
@@ -447,16 +471,19 @@ function inicializarTemas() {
     
     // Botão trocar jogador
     elementos.btnTrocarJogador.addEventListener('click', () => {
+        elementos.menuDropdown?.classList.add('oculto');
         mostrarTela('login');
     });
     
     // Botão ver ranking por sala (agrupado)
     elementos.btnVerRankingSalas.addEventListener('click', () => {
+        elementos.menuDropdown?.classList.add('oculto');
         mostrarRankingGlobal();
     });
     
     // Botão ver ranking geral (lista simples)
     elementos.btnVerRankingGeral.addEventListener('click', () => {
+        elementos.menuDropdown?.classList.add('oculto');
         mostrarRankingGeral();
     });
     
