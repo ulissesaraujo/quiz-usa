@@ -977,6 +977,30 @@ body {
     white-space: nowrap;
 }
 
+/* Badge contador de ajudas disponíveis */
+.ajuda-badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: linear-gradient(145deg, #4ade80 0%, #22c55e 100%);
+    color: white;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-ajuda.usado .ajuda-badge {
+    display: none;
+}
+
 @media (max-width: 640px) {
     .header-direita {
         gap: 6px;

@@ -38,7 +38,15 @@ export class QuizEngine {
             ajudaPular: false
         };
         
-        // Estado das ajudas usadas na partida
+        // Estado das ajudas na partida (nova estrutura com quantidade e multiplicador)
+        // Cada ajuda: { disponivel: N, usado: 0, multiplicador: M }
+        this.ajudas = {
+            tempo: { disponivel: 1, usado: 0, multiplicador: 1 },
+            eliminar: { disponivel: 1, usado: 0, multiplicador: 1 },
+            pular: { disponivel: 1, usado: 0, multiplicador: 1 }
+        };
+        
+        // Mantém compatibilidade com código antigo (será removido futuramente)
         this.ajudasUsadas = {
             tempo: false,
             eliminar: false,
@@ -97,11 +105,18 @@ export class QuizEngine {
             };
         }
         
-        // Reseta estado das ajudas
+        // Reseta estado das ajudas (nova estrutura)
+        this.ajudas = configGlobal.ajudas || {
+            tempo: { disponivel: 1, usado: 0, multiplicador: 1 },
+            eliminar: { disponivel: 1, usado: 0, multiplicador: 1 },
+            pular: { disponivel: 1, usado: 0, multiplicador: 1 }
+        };
+        
+        // Mantém compatibilidade com código antigo
         this.ajudasUsadas = {
-            tempo: false,
-            eliminar: false,
-            pular: false
+            tempo: this.ajudas.tempo.usado >= this.ajudas.tempo.disponivel,
+            eliminar: this.ajudas.eliminar.usado >= this.ajudas.eliminar.disponivel,
+            pular: this.ajudas.pular.usado >= this.ajudas.pular.disponivel
         };
         
         this.perguntaAtual = 0;
@@ -541,5 +556,52 @@ export class QuizEngine {
             tempoTotal: tempoTotal,
             tempoMedio: this.respostas.length > 0 ? tempoTotal / this.respostas.length : 0
         };
+    }
+    
+    /**
+     * Verifica se uma ajuda está disponível para uso
+     * @param {string} tipo - Tipo da ajuda: 'tempo', 'eliminar', 'pular'
+     * @returns {boolean}
+     */
+    ajudaDisponivel(tipo) {
+        const ajuda = this.ajudas[tipo];
+        if (!ajuda) return false;
+        return ajuda.usado < ajuda.disponivel;
+    }
+    
+    /**
+     * Usa uma ajuda e retorna o multiplicador
+     * @param {string} tipo - Tipo da ajuda: 'tempo', 'eliminar', 'pular'
+     * @returns {{ sucesso: boolean, multiplicador: number, restante: number }}
+     */
+    usarAjuda(tipo) {
+        const ajuda = this.ajudas[tipo];
+        if (!ajuda || ajuda.usado >= ajuda.disponivel) {
+            return { sucesso: false, multiplicador: 1, restante: 0 };
+        }
+        
+        ajuda.usado++;
+        
+        // Atualiza compatibilidade com código antigo
+        if (ajuda.usado >= ajuda.disponivel) {
+            this.ajudasUsadas[tipo] = true;
+        }
+        
+        return { 
+            sucesso: true, 
+            multiplicador: ajuda.multiplicador,
+            restante: ajuda.disponivel - ajuda.usado
+        };
+    }
+    
+    /**
+     * Retorna quantas ajudas restam de um tipo
+     * @param {string} tipo - Tipo da ajuda
+     * @returns {number}
+     */
+    ajudasRestantes(tipo) {
+        const ajuda = this.ajudas[tipo];
+        if (!ajuda) return 0;
+        return ajuda.disponivel - ajuda.usado;
     }
 }

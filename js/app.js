@@ -47,13 +47,68 @@ const estado = {
     jogador: '',
     carregando: false,
     config: null, // Configurações globais do quiz
-    perguntaReserva: null // Pergunta extra para caso o usuário pule
+    perguntasReserva: [] // Perguntas extras para quando o usuário pular (pode ser mais de uma)
 };
 
 // Instâncias dos gerenciadores
 const quizEngine = new QuizEngine();
 const rankingManager = new RankingManager();
 const temasManager = new TemasManager();
+
+// ========================================
+// SISTEMA DE AJUDAS FLEXÍVEL
+// ========================================
+
+/**
+ * Calcula a configuração de ajudas baseado nos temas selecionados
+ * @param {string[]} temasSelecionados - IDs dos temas selecionados
+ * @param {Object} configBase - Configurações base do sistema
+ * @returns {Object} Configuração de ajudas { tempo, eliminar, pular }
+ */
+function calcularAjudasPorTema(temasSelecionados, configBase) {
+    // Configuração padrão: 1 uso cada, multiplicador 1x
+    const ajudas = {
+        tempo: { 
+            disponivel: configBase.ajudaTempo ? 1 : 0, 
+            usado: 0, 
+            multiplicador: 1 
+        },
+        eliminar: { 
+            disponivel: configBase.ajudaEliminar ? 1 : 0, 
+            usado: 0, 
+            multiplicador: 1 
+        },
+        pular: { 
+            disponivel: configBase.ajudaPular ? 1 : 0, 
+            usado: 0, 
+            multiplicador: 1 
+        }
+    };
+    
+    // Verifica se algum tema selecionado é escolar (esc-*)
+    const temEscolar = temasSelecionados.some(t => t.startsWith('esc-'));
+    
+    // Verifica se é o tema crianças
+    const temCriancas = temasSelecionados.includes('criancas') || 
+                        temasSelecionados.some(t => ['ingles', 'desenhos', 'matematica', 'adivinhas', 
+                            'planeta', 'corpo', 'musicas', 'superherois', 'espaco', 
+                            'alimentos', 'contos'].includes(t));
+    
+    // Regras especiais para temas escolares: 3x tempo com dobro do valor
+    if (temEscolar && configBase.ajudaTempo) {
+        ajudas.tempo.disponivel = 3;
+        ajudas.tempo.multiplicador = 2; // Dobro do tempo configurado
+        console.log('📚 Tema escolar detectado: 3x ajuda tempo com 2x valor');
+    }
+    
+    // Regras especiais para tema crianças: 3x eliminar
+    if (temCriancas && configBase.ajudaEliminar) {
+        ajudas.eliminar.disponivel = 3;
+        console.log('🧒 Tema crianças detectado: 3x ajuda eliminar');
+    }
+    
+    return ajudas;
+}
 
 // ========================================
 // ELEMENTOS DO DOM
@@ -522,10 +577,17 @@ async function iniciarQuiz() {
         const qtdPerguntas = estado.config.qtdPerguntas || 10;
         const evitarRepeticao = estado.config.evitarRepeticao || 0;
         
-        // Se pular está ativo, busca 1 pergunta extra como reserva
-        const qtdBuscar = estado.config.ajudaPular ? qtdPerguntas + 1 : qtdPerguntas;
+        // Obtém temas selecionados para calcular ajudas
+        const temasSelecionados = temasManager.obterTemasSelecionados();
         
-        // Busca perguntas usando a quantidade configurada e evitando repetição
+        // Calcula ajudas específicas para os temas selecionados
+        const ajudas = calcularAjudasPorTema(temasSelecionados, estado.config);
+        
+        // Quantidade de perguntas reserva = quantidade de pulos disponíveis
+        const qtdReserva = ajudas.pular.disponivel;
+        const qtdBuscar = qtdPerguntas + qtdReserva;
+        
+        // Busca perguntas usando a quantidade configurada + reservas
         const perguntas = await temasManager.buscarPerguntas(qtdBuscar, estado.jogador, evitarRepeticao);
         
         if (perguntas.length === 0) {
@@ -533,14 +595,14 @@ async function iniciarQuiz() {
             return;
         }
         
-        // Separa pergunta reserva (se houver) e perguntas principais
+        // Separa perguntas reserva e perguntas principais
         let perguntasQuiz = perguntas;
-        estado.perguntaReserva = null;
+        estado.perguntasReserva = [];
         
-        if (estado.config.ajudaPular && perguntas.length > qtdPerguntas) {
+        if (qtdReserva > 0 && perguntas.length > qtdPerguntas) {
             perguntasQuiz = perguntas.slice(0, qtdPerguntas);
-            estado.perguntaReserva = perguntas[qtdPerguntas];
-            console.log(`🎯 Pergunta reserva carregada: "${estado.perguntaReserva.id}"`);
+            estado.perguntasReserva = perguntas.slice(qtdPerguntas, qtdPerguntas + qtdReserva);
+            console.log(`🎯 ${estado.perguntasReserva.length} pergunta(s) reserva carregada(s): ${estado.perguntasReserva.map(p => p.id).join(', ')}`);
         }
         
         // Prepara configuração dos temas
@@ -553,8 +615,11 @@ async function iniciarQuiz() {
         // Configura callbacks do quiz engine
         configurarCallbacksQuiz();
         
+        // Adiciona ajudas à configuração
+        const configComAjudas = { ...estado.config, ajudas };
+        
         // Inicia o quiz com as configurações
-        quizEngine.iniciar(perguntasQuiz, configTemas, estado.config);
+        quizEngine.iniciar(perguntasQuiz, configTemas, configComAjudas);
         
         // Mostra tela do quiz
         mostrarTela('quiz');
@@ -727,34 +792,72 @@ function configurarCallbacksQuiz() {
 }
 
 /**
- * Configura os botões de ajuda baseado nas configurações
+ * Configura os botões de ajuda baseado nas configurações e ajudas calculadas
  */
 function configurarAjudas() {
     const config = estado.config || {};
+    const ajudas = quizEngine.ajudas || {};
     
-    // Mostra/oculta botões baseado na configuração
+    // Configura botão de tempo
     if (elementos.btnAjudaTempo) {
-        elementos.btnAjudaTempo.style.display = config.ajudaTempo ? 'flex' : 'none';
+        const tempoDisponivel = ajudas.tempo?.disponivel > 0;
+        elementos.btnAjudaTempo.style.display = tempoDisponivel ? 'flex' : 'none';
         elementos.btnAjudaTempo.disabled = false;
         elementos.btnAjudaTempo.classList.remove('usado');
+        atualizarBadgeAjuda(elementos.btnAjudaTempo, ajudas.tempo);
     }
     
+    // Configura botão de eliminar
     if (elementos.btnAjudaEliminar) {
-        elementos.btnAjudaEliminar.style.display = config.ajudaEliminar ? 'flex' : 'none';
+        const eliminarDisponivel = ajudas.eliminar?.disponivel > 0;
+        elementos.btnAjudaEliminar.style.display = eliminarDisponivel ? 'flex' : 'none';
         elementos.btnAjudaEliminar.disabled = false;
         elementos.btnAjudaEliminar.classList.remove('usado');
+        atualizarBadgeAjuda(elementos.btnAjudaEliminar, ajudas.eliminar);
     }
     
+    // Configura botão de pular
     if (elementos.btnAjudaPular) {
-        elementos.btnAjudaPular.style.display = config.ajudaPular ? 'flex' : 'none';
+        const pularDisponivel = ajudas.pular?.disponivel > 0;
+        elementos.btnAjudaPular.style.display = pularDisponivel ? 'flex' : 'none';
         elementos.btnAjudaPular.disabled = false;
         elementos.btnAjudaPular.classList.remove('usado');
+        atualizarBadgeAjuda(elementos.btnAjudaPular, ajudas.pular);
     }
     
     // Verifica se há alguma ajuda ativada
-    const temAjudas = config.ajudaTempo || config.ajudaEliminar || config.ajudaPular;
+    const temAjudas = (ajudas.tempo?.disponivel > 0) || 
+                      (ajudas.eliminar?.disponivel > 0) || 
+                      (ajudas.pular?.disponivel > 0);
     if (elementos.ajudasBar) {
         elementos.ajudasBar.style.display = temAjudas ? 'flex' : 'none';
+    }
+}
+
+/**
+ * Atualiza o badge de contador em um botão de ajuda
+ * @param {HTMLElement} btn - Botão da ajuda
+ * @param {Object} ajuda - Dados da ajuda { disponivel, usado, multiplicador }
+ */
+function atualizarBadgeAjuda(btn, ajuda) {
+    if (!btn || !ajuda) return;
+    
+    // Remove badge existente
+    let badge = btn.querySelector('.ajuda-badge');
+    
+    const restante = ajuda.disponivel - ajuda.usado;
+    
+    // Só mostra badge se tiver mais de 1 disponível ou se já usou alguma
+    if (ajuda.disponivel > 1 || ajuda.usado > 0) {
+        if (!badge) {
+            badge = document.createElement('span');
+            badge.className = 'ajuda-badge';
+            btn.appendChild(badge);
+        }
+        badge.textContent = restante;
+        badge.style.display = restante > 0 ? 'flex' : 'none';
+    } else if (badge) {
+        badge.remove();
     }
 }
 
@@ -779,44 +882,64 @@ function inicializarAjudas() {
  * Usa a ajuda de tempo extra
  */
 function usarAjudaTempo() {
-    if (quizEngine.ajudasUsadas.tempo || !estado.config?.ajudaTempo) return;
+    if (!quizEngine.ajudaDisponivel('tempo') || !estado.config?.ajudaTempo) return;
     
-    quizEngine.ajudasUsadas.tempo = true;
-    elementos.btnAjudaTempo.disabled = true;
-    elementos.btnAjudaTempo.classList.add('usado');
+    const resultado = quizEngine.usarAjuda('tempo');
+    if (!resultado.sucesso) return;
     
-    // Adiciona tempo extra ao cronômetro
-    const tempoExtra = estado.config.tempoExtra || 10;
+    // Atualiza badge
+    atualizarBadgeAjuda(elementos.btnAjudaTempo, quizEngine.ajudas.tempo);
+    
+    // Se não tem mais, desabilita o botão
+    if (resultado.restante === 0) {
+        elementos.btnAjudaTempo.disabled = true;
+        elementos.btnAjudaTempo.classList.add('usado');
+    }
+    
+    // Adiciona tempo extra ao cronômetro (multiplicador pode dobrar o valor)
+    const tempoBase = estado.config.tempoExtra || 10;
+    const tempoExtra = tempoBase * resultado.multiplicador;
     quizEngine.tempoInicio += tempoExtra * 1000; // Adiciona tempo em ms
     
-    console.log(`⏱️ Ajuda usada: +${tempoExtra} segundos`);
+    console.log(`⏱️ Ajuda usada: +${tempoExtra} segundos (${resultado.multiplicador}x) - Restante: ${resultado.restante}`);
 }
 
 /**
  * Usa a ajuda de eliminar alternativas
  */
 function usarAjudaEliminar() {
-    if (quizEngine.ajudasUsadas.eliminar || !estado.config?.ajudaEliminar) return;
+    if (!quizEngine.ajudaDisponivel('eliminar') || !estado.config?.ajudaEliminar) return;
     if (quizEngine.respondeu) return;
     
-    quizEngine.ajudasUsadas.eliminar = true;
-    elementos.btnAjudaEliminar.disabled = true;
-    elementos.btnAjudaEliminar.classList.add('usado');
+    const resultado = quizEngine.usarAjuda('eliminar');
+    if (!resultado.sucesso) return;
+    
+    // Atualiza badge
+    atualizarBadgeAjuda(elementos.btnAjudaEliminar, quizEngine.ajudas.eliminar);
+    
+    // Se não tem mais, desabilita o botão
+    if (resultado.restante === 0) {
+        elementos.btnAjudaEliminar.disabled = true;
+        elementos.btnAjudaEliminar.classList.add('usado');
+    }
     
     const pergunta = quizEngine.perguntas[quizEngine.perguntaAtual];
     const correta = pergunta.correta;
     
-    // Encontra índices das alternativas erradas
+    // Encontra índices das alternativas erradas que ainda não foram eliminadas
+    const botoes = elementos.alternativas.querySelectorAll('.alternativa-btn');
     const erradas = [];
     for (let i = 0; i < pergunta.alternativas.length; i++) {
-        if (i !== correta) erradas.push(i);
+        if (i !== correta && botoes[i] && !botoes[i].disabled) {
+            erradas.push(i);
+        }
     }
     
-    // Embaralha e pega 2 erradas para eliminar
-    const eliminar = erradas.sort(() => Math.random() - 0.5).slice(0, 2);
+    // Embaralha e pega 2 erradas para eliminar (ou menos se não tiver)
+    const qtdEliminar = Math.min(2, erradas.length);
+    const eliminar = erradas.sort(() => Math.random() - 0.5).slice(0, qtdEliminar);
     
     // Desabilita os botões das alternativas eliminadas
-    const botoes = elementos.alternativas.querySelectorAll('.alternativa-btn');
     eliminar.forEach(idx => {
         if (botoes[idx]) {
             botoes[idx].disabled = true;
@@ -825,19 +948,27 @@ function usarAjudaEliminar() {
         }
     });
     
-    console.log(`❌ Ajuda usada: Eliminadas alternativas ${eliminar.map(i => i + 1).join(' e ')}`);
+    console.log(`❌ Ajuda usada: Eliminadas alternativas ${eliminar.map(i => i + 1).join(' e ')} - Restante: ${resultado.restante}`);
 }
 
 /**
- * Usa a ajuda de pular pergunta - usa a pergunta reserva carregada no início
+ * Usa a ajuda de pular pergunta - usa as perguntas reserva carregadas no início
  */
 function usarAjudaPular() {
-    if (quizEngine.ajudasUsadas.pular || !estado.config?.ajudaPular) return;
+    if (!quizEngine.ajudaDisponivel('pular') || !estado.config?.ajudaPular) return;
     if (quizEngine.respondeu) return;
     
-    quizEngine.ajudasUsadas.pular = true;
-    elementos.btnAjudaPular.disabled = true;
-    elementos.btnAjudaPular.classList.add('usado');
+    const resultado = quizEngine.usarAjuda('pular');
+    if (!resultado.sucesso) return;
+    
+    // Atualiza badge
+    atualizarBadgeAjuda(elementos.btnAjudaPular, quizEngine.ajudas.pular);
+    
+    // Se não tem mais, desabilita o botão
+    if (resultado.restante === 0) {
+        elementos.btnAjudaPular.disabled = true;
+        elementos.btnAjudaPular.classList.add('usado');
+    }
     
     // Para o cronômetro
     clearInterval(quizEngine.timerCronometro);
@@ -845,13 +976,13 @@ function usarAjudaPular() {
     // Pega a pergunta atual que será pulada
     const perguntaPulada = quizEngine.perguntas[quizEngine.perguntaAtual];
     
-    console.log(`⏭️ Ajuda usada: Pulando pergunta "${perguntaPulada.id}"`);
+    console.log(`⏭️ Ajuda usada: Pulando pergunta "${perguntaPulada.id}" - Restante: ${resultado.restante}`);
     
-    // Usa a pergunta reserva se disponível
-    if (estado.perguntaReserva) {
-        quizEngine.perguntas[quizEngine.perguntaAtual] = estado.perguntaReserva;
-        console.log(`✅ Usando pergunta reserva: "${estado.perguntaReserva.id}"`);
-        estado.perguntaReserva = null; // Limpa a reserva (só pode usar uma vez)
+    // Usa a próxima pergunta reserva se disponível
+    if (estado.perguntasReserva && estado.perguntasReserva.length > 0) {
+        const perguntaReserva = estado.perguntasReserva.shift(); // Remove e retorna a primeira
+        quizEngine.perguntas[quizEngine.perguntaAtual] = perguntaReserva;
+        console.log(`✅ Usando pergunta reserva: "${perguntaReserva.id}" (restam ${estado.perguntasReserva.length} reservas)`);
     } else {
         // Sem reserva - remove a pergunta pulada
         console.log(`⚠️ Sem pergunta reserva disponível`);
