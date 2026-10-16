@@ -92,7 +92,7 @@
                     </button>
                 </form>
                 
-                <p class="versao-debug">Build #75 - 23:30:15 15/10/2026</p>
+                <p class="versao-debug">Build #76 - 23:38:01 15/10/2026</p>
             </div>
         </section>
 
@@ -101,38 +101,35 @@
                  class="tela" 
                  role="region" 
                  aria-label="Seleção de temas">
-            <header class="header-temas">
-                <div class="header-info">
-                    <span class="jogador-nome" id="display-jogador" aria-live="polite">Jogador</span>
-                </div>
-                <div class="menu-container">
-                    <button class="btn-menu-hamburguer" 
-                            id="btn-menu-hamburguer"
-                            aria-label="Abrir menu"
-                            aria-expanded="false">
-                        ☰
-                    </button>
-                    <div class="menu-dropdown oculto" id="menu-dropdown">
-                        <button class="menu-item" id="btn-trocar-jogador">
-                            👤 Trocar jogador
-                        </button>
-                        <a href="admin.html" class="menu-item oculto" id="btn-painel-admin">
-                            ⚙️ Painel Admin
-                        </a>
-                        <button class="menu-item" id="btn-ver-ranking-salas">
-                            🏆 Ranking por Sala
-                        </button>
-                        <button class="menu-item" id="btn-ver-ranking-geral">
-                            📊 Ranking Geral
-                        </button>
-                    </div>
-                </div>
-            </header>
 
             <div class="temas-container">
-                <h2 id="temas-titulo">Escolha os Temas</h2>
+                <div class="temas-header-linha">
+                    <h2 id="temas-titulo">Escolha os Temas, <span id="display-jogador">Jogador</span></h2>
+                    <div class="menu-container">
+                        <button class="btn-menu-hamburguer" 
+                                id="btn-menu-hamburguer"
+                                aria-label="Abrir menu"
+                                aria-expanded="false">
+                            ☰
+                        </button>
+                        <div class="menu-dropdown oculto" id="menu-dropdown">
+                            <button class="menu-item" id="btn-trocar-jogador">
+                                👤 Trocar jogador
+                            </button>
+                            <a href="admin.html" class="menu-item oculto" id="btn-painel-admin">
+                                ⚙️ Painel Admin
+                            </a>
+                            <button class="menu-item" id="btn-ver-ranking-salas">
+                                🏆 Ranking por Sala
+                            </button>
+                            <button class="menu-item" id="btn-ver-ranking-geral">
+                                📊 Ranking Geral
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <p class="temas-subtitle" id="temas-instrucoes">
-                    Selecione um ou mais temas. O sistema sorteará 10 perguntas para você!
+                    Selecione um ou mais temas para começar!
                 </p>
                 
                 <!-- Botões de Ação -->
@@ -459,6 +456,6 @@
     </div>
 
     <!-- Scripts -->
-    <script type="module" src="js/app.js?v=75"></script>
+    <script type="module" src="js/app.js?v=73"></script>
 </body>
 </html>

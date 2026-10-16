@@ -241,26 +241,27 @@ body {
 /* ========================================
    TELA 2: SELEÇÃO DE TEMAS
    ======================================== */
-.header-temas {
+.temas-container {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: var(--shadow-lg);
+}
+
+.temas-header-linha {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--white);
-    padding: 16px 20px;
-    border-radius: var(--radius);
-    margin-bottom: 24px;
-    box-shadow: var(--shadow);
+    margin-bottom: 8px;
 }
 
-.header-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.jogador-nome {
-    font-weight: 600;
+.temas-header-linha h2 {
+    margin: 0;
     color: var(--gray-800);
+}
+
+.temas-header-linha #display-jogador {
+    color: var(--primary);
 }
 
 /* Menu Hambúrguer */
@@ -322,19 +323,6 @@ body {
 
 .menu-item.oculto {
     display: none;
-}
-
-.temas-container {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    padding: 32px;
-    box-shadow: var(--shadow-lg);
-}
-
-.temas-container h2 {
-    color: var(--gray-800);
-    margin-bottom: 8px;
-    text-align: center;
 }
 
 .temas-subtitle {
