@@ -2323,6 +2323,69 @@ Das 20 perguntas, distribua assim:
             document.getElementById('modal-prompt').classList.remove('oculto');
         }
         
+        // Abre modal de prompt para um tema específico (vindo da lista de temas)
+        function abrirModalPromptParaTema(temaId, temaPaiId) {
+            let tema;
+            let temaLimpo;
+            
+            if (temaPaiId) {
+                const temaPai = temasFirebase.find(t => t.id === temaPaiId);
+                tema = temaPai?.subtemas?.find(s => s.id === temaId);
+            } else {
+                tema = temasFirebase.find(t => t.id === temaId);
+            }
+            
+            if (!tema) {
+                alert('Tema não encontrado');
+                return;
+            }
+            
+            temaLimpo = tema.nome;
+            
+            const prompt = `Crie 20 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
+
+**Regras:**
+- Perguntas variadas e interessantes sobre o tema
+- 4 alternativas por pergunta (A, B, C, D)
+- Apenas 1 alternativa correta
+- Dificuldade mista (fácil, média, difícil)
+- Não repita informações entre perguntas
+
+**DISTRIBUIÇÃO OBRIGATÓRIA DAS RESPOSTAS CORRETAS:**
+Das 20 perguntas, distribua assim:
+- 5 perguntas com "correta": 0
+- 5 perguntas com "correta": 1
+- 5 perguntas com "correta": 2
+- 5 perguntas com "correta": 3
+
+**Formato JSON obrigatório:**
+\`\`\`json
+{
+  "tema": "${temaId}",
+  "perguntas": [
+    {
+      "enunciado": "Qual é a pergunta?",
+      "alternativas": ["Opção A", "Opção B", "Opção C", "Opção D"],
+      "correta": 0
+    }
+  ]
+}
+\`\`\`
+
+**IMPORTANTE - Regras de formato:**
+- O campo "correta" é o índice (0, 1, 2 ou 3) da alternativa correta
+- Use encoding UTF-8
+- Retorne APENAS o JSON, sem texto adicional
+- **TODAS as alternativas DEVEM ser strings entre aspas duplas**
+- Coordenadas devem ser strings: "(3, 4)" e não (3, 4)
+- Números como resposta devem ser strings: "42" e não 42
+- Fórmulas matemáticas devem usar texto simples: "x² + 2x" ou "f(x) = 2x + 1"
+- Nunca use LaTeX (\\frac, \\sqrt, etc) - converta para texto legível`;
+
+            document.getElementById('prompt-area').value = prompt;
+            document.getElementById('modal-prompt').classList.remove('oculto');
+        }
+        
         function fecharModalPrompt() {
             document.getElementById('modal-prompt').classList.add('oculto');
         }
@@ -2603,6 +2666,7 @@ Das 20 perguntas, distribua assim:
                     <div class="tema-acoes">
                         <button class="btn btn-small btn-outline btn-editar-tema">✏️</button>
                         <button class="btn btn-small btn-success btn-contagem-tema" title="Atualizar contagem">🔄</button>
+                        <button class="btn btn-small btn-primary btn-gerar-ia-tema" title="Gerar perguntas com IA">🤖</button>
                         <button class="btn btn-small btn-danger btn-excluir-tema">🗑️</button>
                     </div>
                 </div>
@@ -2638,6 +2702,8 @@ Das 20 perguntas, distribua assim:
                 editarTema(temaId, temaPaiId);
             } else if (e.target.closest('.btn-contagem-tema')) {
                 await atualizarContagemUmTema(temaId, temaPaiId);
+            } else if (e.target.closest('.btn-gerar-ia-tema')) {
+                abrirModalPromptParaTema(temaId, temaPaiId);
             } else if (e.target.closest('.btn-excluir-tema')) {
                 await confirmarExcluirTema(temaId, temaPaiId);
             }
