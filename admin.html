@@ -1774,7 +1774,13 @@
                 if (btnExcluirTema) {
                     btnExcluirTema.classList.toggle('oculto', !filtroAtual);
                 }
-                renderizarPerguntas();
+                // Carrega automaticamente ao selecionar tema
+                if (filtroAtual) {
+                    carregarPerguntas();
+                } else {
+                    perguntas = [];
+                    renderizarPerguntas();
+                }
             });
             document.getElementById('filtro-revisar')?.addEventListener('change', renderizarPerguntas);
             document.getElementById('filtro-destaque')?.addEventListener('change', renderizarPerguntas);
