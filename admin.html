@@ -2351,10 +2351,14 @@
                 '5ef': '5º ano do Ensino Fundamental', '6ef': '6º ano do Ensino Fundamental',
                 '7ef': '7º ano do Ensino Fundamental', '8ef': '8º ano do Ensino Fundamental',
                 '9ef': '9º ano do Ensino Fundamental', '1em': '1º ano do Ensino Médio',
-                '2em': '2º ano do Ensino Médio', '3em': '3º ano do Ensino Médio'
+                '2em': '2º ano do Ensino Médio', '3em': '3º ano do Ensino Médio',
+                // Formato alternativo: Xano
+                '6ano': '6º ano do Ensino Fundamental', '7ano': '7º ano do Ensino Fundamental',
+                '8ano': '8º ano do Ensino Fundamental', '9ano': '9º ano do Ensino Fundamental'
             };
             
-            const match = temaId.match(/^([a-z]+)-(\d[a-z]+)$/i);
+            // Padrão: materia-serie (ex: fis-9ano, mat-1em)
+            const match = temaId.match(/^([a-z]+)-(\d+[a-z]+)$/i);
             if (match) {
                 const materia = materias[match[1].toLowerCase()];
                 const serie = series[match[2].toLowerCase()];
@@ -2545,8 +2549,21 @@ Das 100 perguntas, distribua assim:
             setTimeout(() => document.getElementById('json-area').focus(), 100);
         }
         
+        // Abre modal de colar JSON com tema pré-selecionado (vindo da lista de temas)
+        function abrirModalColarJsonParaTema(temaId) {
+            document.getElementById('json-area').value = '';
+            document.getElementById('json-preview').classList.add('oculto');
+            document.getElementById('modal-colar-json').classList.remove('oculto');
+            // Armazena o tema para usar na importação
+            document.getElementById('modal-colar-json').dataset.temaForcar = temaId;
+            // Foco no campo de texto
+            setTimeout(() => document.getElementById('json-area').focus(), 100);
+        }
+        
         function fecharModalColarJson() {
             document.getElementById('modal-colar-json').classList.add('oculto');
+            // Limpa tema forçado
+            delete document.getElementById('modal-colar-json').dataset.temaForcar;
         }
         
         function validarJsonColado() {
@@ -2603,7 +2620,11 @@ Das 100 perguntas, distribua assim:
         async function importarJsonColado() {
             const jsonArea = document.getElementById('json-area');
             const btnImportar = document.getElementById('btn-importar-json');
+            const modalColarJson = document.getElementById('modal-colar-json');
             const texto = jsonArea.value.trim();
+            
+            // Verifica se tem tema forçado (vindo da aba de temas)
+            const temaForcar = modalColarJson.dataset.temaForcar || null;
             
             if (!texto) {
                 alert('Cole o JSON no campo acima.');
@@ -2613,21 +2634,21 @@ Das 100 perguntas, distribua assim:
             try {
                 const dados = JSON.parse(texto);
                 let perguntas = [];
-                let tema = null;
+                let tema = temaForcar; // Usa tema forçado se existir
                 
                 if (Array.isArray(dados)) {
                     perguntas = dados;
                 } else if (dados.perguntas && Array.isArray(dados.perguntas)) {
                     perguntas = dados.perguntas;
-                    tema = dados.tema;
+                    if (!tema) tema = dados.tema; // Só usa do JSON se não tiver forçado
                 } else {
                     alert('Formato inválido. O JSON deve ter um array de perguntas.');
                     return;
                 }
                 
-                // Aplica tema do arquivo se não tiver na pergunta
+                // Aplica tema (forçado ou do arquivo) se não tiver na pergunta
                 const perguntasValidas = perguntas
-                    .map(p => ({ ...p, tema: p.tema || tema }))
+                    .map(p => ({ ...p, tema: temaForcar || p.tema || tema }))
                     .filter(p => 
                         p.tema && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
                     );
@@ -2795,6 +2816,7 @@ Das 100 perguntas, distribua assim:
                         <button class="btn btn-small btn-outline btn-editar-tema">✏️</button>
                         <button class="btn btn-small btn-success btn-contagem-tema" title="Atualizar contagem">🔄</button>
                         <button class="btn btn-small btn-primary btn-gerar-ia-tema" title="Gerar perguntas com IA">🤖</button>
+                        <button class="btn btn-small btn-warning btn-colar-json-tema" title="Colar JSON de perguntas">📋</button>
                         <button class="btn btn-small btn-danger btn-excluir-tema">🗑️</button>
                     </div>
                 </div>
@@ -2832,6 +2854,8 @@ Das 100 perguntas, distribua assim:
                 await atualizarContagemUmTema(temaId, temaPaiId);
             } else if (e.target.closest('.btn-gerar-ia-tema')) {
                 abrirModalPromptParaTema(temaId, temaPaiId);
+            } else if (e.target.closest('.btn-colar-json-tema')) {
+                abrirModalColarJsonParaTema(temaId);
             } else if (e.target.closest('.btn-excluir-tema')) {
                 await confirmarExcluirTema(temaId, temaPaiId);
             }
