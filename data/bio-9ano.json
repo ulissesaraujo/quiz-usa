@@ -1,0 +1,505 @@
+{
+  "tema": "bio-9ano",
+  "perguntas": [
+    {
+      "enunciado": "O que estuda a genética básica na biologia?",
+      "alternativas": ["A hereditariedade e transmissão de características de pais para filhos", "Somente a anatomia dos órgãos digestórios", "A movimentação dos animais", "O ciclo da água na atmosfera"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual molécula armazena a informação genética?",
+      "alternativas": ["DNA (Ácido desoxirribonucleico)", "Glicose", "Hemoglobina", "Insulina"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Como são chamadas as formas alternativas de um gene?",
+      "alternativas": ["Alelos", "Ribossomos", "Mitocôndrias", "Plasmídeos"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que caracteriza um genótipo homozigoto?",
+      "alternativas": ["Presença de dois alelos iguais (ex: AA ou aa)", "Presença de alelos diferentes (ex: Aa)", "Ausência de genes", "Duplicação do núcleo"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é um alelo recessivo?",
+      "alternativas": ["Só se manifesta quando em dose dupla", "Sempre domina o outro alelo", "Sofre mutação constante", "Exclusivo das células femininas"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é fenótipo em biologia?",
+      "alternativas": ["Características observáveis de um organismo", "Sequência de nucleotídeos do DNA", "Número de cromossomos", "Energia das mitocôndrias"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Quem é considerado o pai da genética?",
+      "alternativas": ["Gregor Mendel", "Charles Darwin", "Louis Pasteur", "Robert Hooke"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é evolução biológica?",
+      "alternativas": ["Modificação gradual das populações ao longo das gerações", "Transformação instantânea de um animal", "Adaptação individual ao frio", "Criação espontânea de bactérias"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Quem propôs a Teoria da Seleção Natural?",
+      "alternativas": ["Charles Darwin", "Gregor Mendel", "Jean-Baptiste Lamarck", "Watson e Crick"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que estabelece a Seleção Natural?",
+      "alternativas": ["Os mais adaptados têm maiores chances de sobreviver e reproduzir", "Animais mudam por vontade própria", "Espécies nascem idênticas", "O clima elimina todos os seres vivos"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que são órgãos análogos?",
+      "alternativas": ["Órgãos com mesma função mas origens diferentes", "Órgãos com mesma origem mas funções distintas", "Órgãos sem utilidade", "Estruturas idênticas em bactérias"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que são órgãos homólogos?",
+      "alternativas": ["Órgãos com mesma origem embrionária mas funções diferentes", "Órgãos com funções iguais e origens diferentes", "Estruturas sem relação genética", "Órgãos exclusivos de insetos"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que são órgãos vestigiais?",
+      "alternativas": ["Estruturas que perderam função ao longo da evolução", "Órgãos criados por mutação", "Sistema nervoso dos mamíferos", "Órgãos de respiração branquial"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é uma mutação genética?",
+      "alternativas": ["Alteração no DNA que pode gerar novas características", "Divisão normal das células", "Morte de tecidos", "Absorção de nutrientes"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual a diferença entre mitose e meiose?",
+      "alternativas": ["Mitose gera células idênticas; meiose gera células com metade dos cromossomos", "Meiose ocorre apenas na pele", "Mitose reduz cromossomos pela metade", "Não há diferença"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Quantos cromossomos tem uma célula humana?",
+      "alternativas": ["46 cromossomos (23 pares)", "23 cromossomos", "92 cromossomos", "10 cromossomos"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Quais cromossomos determinam sexo masculino?",
+      "alternativas": ["XY", "XX", "YY", "XO"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que estuda a ecologia?",
+      "alternativas": ["Interações entre seres vivos e ambiente", "Fabricação de medicamentos", "Estrutura dos átomos", "Mecânica dos fluidos"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é fluxo de energia no ecossistema?",
+      "alternativas": ["Repasse de energia através da cadeia alimentar", "Reciclagem de energia para o Sol", "Produção de eletricidade por plantas", "Perda total de matéria"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é o ciclo do carbono?",
+      "alternativas": ["Circulação do carbono entre atmosfera, oceanos e seres vivos", "Ciclo da água", "Ciclo das rochas", "Ciclo do oxigênio"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual função das bactérias fixadoras de nitrogênio?",
+      "alternativas": ["Transformar nitrogênio gasoso em compostos para plantas", "Consumir todo o nitrogênio", "Produzir oxigênio", "Destruir raízes"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é o Efeito Estufa natural?",
+      "alternativas": ["Fenômeno que retém calor na atmosfera", "Camada de poluição", "Derretimento das calotas", "Reflexão da luz solar"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que causa o aquecimento global?",
+      "alternativas": ["Aumento de gases de efeito estufa por queima de combustíveis", "Diminuição da atividade solar", "Excesso de chuva", "Rotação mais rápida da Terra"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é biodiversidade?",
+      "alternativas": ["Variedade de vida no planeta", "Quantidade de fábricas", "Número de rochas", "Poluição dos rios"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é espécie endêmica?",
+      "alternativas": ["Espécie que ocorre apenas em uma área específica", "Espécie em todos os continentes", "Espécie extinta", "Animal doméstico"],
+      "correta": 0
+    },
+    {
+      "enunciado": "O que é espécie exótica invasora?",
+      "alternativas": ["Espécie nativa protegida", "Espécie introduzida que prejudica a biodiversidade nativa", "Fóssil descoberto", "Microrganismo benéfico"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Como se chama a primeira Lei de Mendel?",
+      "alternativas": ["Lei da Segregação Independente", "Lei da Segregação dos Fatores", "Lei das Mutações", "Lei do DNA"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual estrutura Watson e Crick propuseram para o DNA?",
+      "alternativas": ["Fita simples circular", "Dupla hélice de nucleotídeos", "Proteína globular", "Carboidrato ramificado"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Quais são as bases nitrogenadas do DNA?",
+      "alternativas": ["Uracil, Timina, Guanina, Citosina", "Adenina, Timina, Citosina, Guanina", "Adenina, Uracil, Prolina, Metionina", "Fosfato, Açúcar, Nitrogênio"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual base emparelha com Adenina no DNA?",
+      "alternativas": ["Citosina", "Timina", "Guanina", "Uracila"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é síntese de proteínas?",
+      "alternativas": ["Quebra de gorduras", "Fabricação de proteínas a partir do DNA", "Respiração celular", "Digestão de carboidratos"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual a diferença entre DNA e RNA?",
+      "alternativas": ["DNA possui uracila", "DNA é dupla hélice com timina; RNA é fita simples com uracila", "RNA está só no núcleo", "Não há diferença"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é biotecnologia?",
+      "alternativas": ["Fabricação de ferramentas de pedra", "Uso de organismos vivos para desenvolver produtos úteis", "Estudo de fósseis", "Extração de petróleo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que são OGMs (transgênicos)?",
+      "alternativas": ["Animais sem material genético", "Organismos que receberam genes de outras espécies", "Plantas incapazes de fotossíntese", "Bactérias incapazes de reprodução"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual o nome da ovelha clonada em 1996?",
+      "alternativas": ["Molly", "Dolly", "Polly", "Sally"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que estuda a embriologia comparada?",
+      "alternativas": ["Anatomia dos ossos adultos", "Comparação do desenvolvimento embrionário entre animais", "Contaminação da água", "Clima das eras geológicas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Como o Neodarwinismo explica o pescoço da girafa?",
+      "alternativas": ["Esticaram o pescoço e passaram aos filhos", "Mutação e seleção natural favoreceram pescoços longos", "Ambiente forneceu pescoços longos", "Girafas antigas comiam carne"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é deriva genética?",
+      "alternativas": ["Seleção pelo ser humano", "Variação aleatória nas frequências dos alelos", "Cruzamento entre parentes", "Migração em massa"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é especiação?",
+      "alternativas": ["Extinção de espécie", "Surgimento de novas espécies a partir de população ancestral", "União de duas espécies", "Mutação de célula"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual a importância dos fósseis?",
+      "alternativas": ["Combustível para carros", "Evidências de formas de vida antigas", "Prever terremotos", "Pureza da água"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é pegada ecológica?",
+      "alternativas": ["Tamanho do sapato", "Medida do impacto humano sobre recursos naturais", "Quantidade de lixo nos oceanos", "Poluição sonora"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é desenvolvimento sustentável?",
+      "alternativas": ["Parar o progresso", "Atender o presente sem comprometer gerações futuras", "Esgotar todos os recursos", "Manter florestas intocadas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual problema da queima de combustíveis fósseis?",
+      "alternativas": ["Aumento da camada de ozônio", "Emissão de gases poluentes e de efeito estufa", "Resfriamento global", "Eliminação do nitrogênio"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que causa a chuva ácida?",
+      "alternativas": ["Excesso de oxigênio nas nuvens", "Reação da chuva com óxidos de enxofre e nitrogênio", "Poluição por detergentes", "Radiação ultravioleta"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual consequência da destruição da camada de ozônio?",
+      "alternativas": ["Aquecimento dos oceanos", "Maior incidência de raios UV nocivos", "Falta de oxigênio", "Aumento da pressão"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é eutrofização de um lago?",
+      "alternativas": ["Limpeza natural por peixes", "Excesso de nutrientes causando proliferação de algas", "Congelamento da água", "Acidificação do solo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual a célula reprodutora masculina?",
+      "alternativas": ["Óvulo", "Espermatozoide", "Zigoto", "Embrião"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é clonagem reprodutiva?",
+      "alternativas": ["Reprodução sexuada", "Produzir organismo geneticamente idêntico", "Mistura de genes de espécies", "Extinção de linhagens"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual objetivo do mapeamento do genoma humano?",
+      "alternativas": ["Contar ossos", "Identificar e sequenciar todos os genes humanos", "Fabricar hormônios", "Criar super-humanos"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é herança ligada ao sexo?",
+      "alternativas": ["Genes nas mitocôndrias", "Genes nos cromossomos sexuais", "Doenças por insetos", "Características em plantas"],
+      "correta": 1
+    },
+    {
+      "enunciado": "O que é codominância?",
+      "alternativas": ["Um alelo domina completamente", "Gene sofre mutação letal", "Dois alelos expressam-se simultaneamente no heterozigoto", "Genes fora do núcleo"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é dominância incompleta?",
+      "alternativas": ["Recessivo anula dominante", "Não há genes no cromossomo", "Heterozigoto tem fenótipo intermediário", "Pais transmitem características iguais"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que estuda a biogeografia?",
+      "alternativas": ["Composição do solo", "Clima polar", "Distribuição geográfica das espécies e razões evolutivas", "Reprodução de bactérias"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual crítica à teoria de Lamarck?",
+      "alternativas": ["Animais evoluíam pela água", "Negava fósseis", "Características adquiridas não se transmitem aos descendentes", "Negava células"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é o Neodarwinismo?",
+      "alternativas": ["Negação de Darwin", "Teoria religiosa", "União da Seleção Natural com genética moderna", "Estudo de fósseis marinhos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual o papel da recombinação genética?",
+      "alternativas": ["Reduzir DNA a zero", "Destruir cromossomos", "Promover troca entre cromossomos gerando novas combinações", "Impedir reprodução"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é reserva biológica?",
+      "alternativas": ["Área para indústrias", "Terreno para lixo", "Área protegida para preservar biodiversidade", "Fazenda de monocultura"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual causa da perda de biodiversidade nas florestas?",
+      "alternativas": ["Excesso de plantio nativo", "Diminuição do sol", "Desmatamento e fragmentação de habitats", "Canto de aves"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é reciclagem de materiais?",
+      "alternativas": ["Jogar lixo em aterros", "Queimar plásticos", "Transformar resíduos em matéria-prima", "Triturar vidro para jardins"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual gás absorve UV na camada de ozônio?",
+      "alternativas": ["Oxigênio (O2)", "CO2", "Ozônio (O3)", "Nitrogênio (N2)"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é pirâmide de energia?",
+      "alternativas": ["Construção histórica", "Quantidade de água", "Representação da energia em cada nível trófico", "Peso dos animais"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é equilíbrio ecológico?",
+      "alternativas": ["Nenhum animal come outro", "Clima nunca muda", "Populações mantêm interações estáveis", "Plantas param de crescer"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é poluição térmica?",
+      "alternativas": ["Congelamento de rios", "Aquecimento por vulcões", "Despejo de água quente prejudicando fauna aquática", "Evaporação de poças"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual importância das abelhas?",
+      "alternativas": ["Produzir veneno", "Consumir pólen", "Garantir reprodução das plantas pela polinização", "Alimento para carnívoros"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é fotossíntese?",
+      "alternativas": ["Respiração animal", "Digestão de alimentos", "Conversão de luz em energia química pelas plantas", "Reprodução de bactérias"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual organela faz respiração celular?",
+      "alternativas": ["Ribossomo", "Golgi", "Mitocôndria", "Lisossomo"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é cadeia alimentar?",
+      "alternativas": ["Rede de pesca", "Lojas de comida", "Sequência onde cada organismo serve de alimento para o seguinte", "Conservação de alimentos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Quem ocupa o primeiro nível trófico?",
+      "alternativas": ["Carnívoros", "Decompositores", "Produtores (plantas)", "Consumidores secundários"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é o ciclo da água?",
+      "alternativas": ["Água encanada nas cidades", "Tratamento de esgoto", "Circulação da água entre atmosfera, solo e seres vivos", "Fabricação de gelo"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual função do sistema imunológico?",
+      "alternativas": ["Digerir alimentos", "Transportar oxigênio", "Defender contra agentes invasores", "Produzir hormônios"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que são vacinas?",
+      "alternativas": ["Antibióticos", "Vitaminas", "Preparações que estimulam defesas imunológicas", "Analgésicos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é um ecossistema?",
+      "alternativas": ["Apenas animais", "Apenas plantas", "Seres vivos e ambiente físico onde interagem", "Sistema de irrigação"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que são consumidores primários?",
+      "alternativas": ["Carnívoros", "Plantas", "Herbívoros que comem produtores", "Fungos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual função dos decompositores?",
+      "alternativas": ["Produzir oxigênio", "Caçar animais", "Degradar matéria morta devolvendo nutrientes", "Polinizar flores"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é genótipo?",
+      "alternativas": ["Características físicas", "Cor dos olhos", "Conjunto de genes do organismo", "Tipo sanguíneo apenas"],
+      "correta": 2
+    },
+    {
+      "enunciado": "O que é competição interespecífica?",
+      "alternativas": ["Cooperação entre espécies", "Reprodução entre espécies", "Predação de herbívoros", "Disputa por recursos entre espécies diferentes"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que são produtores no ecossistema?",
+      "alternativas": ["Carnívoros", "Decompositores", "Herbívoros", "Organismos que fazem fotossíntese"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é sucessão ecológica?",
+      "alternativas": ["Extinção de espécies", "Migração de animais", "Crescimento de uma espécie", "Mudanças graduais na comunidade ao longo do tempo"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é teia alimentar?",
+      "alternativas": ["Rede de pesca", "Sequência única de alimentação", "Técnica de cultivo", "Cadeias alimentares interligadas"],
+      "correta": 3
+    },
+    {
+      "enunciado": "Qual o papel do núcleo celular?",
+      "alternativas": ["Digestão intracelular", "Produzir ATP", "Síntese de proteínas", "Armazenar e controlar informação genética"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é respiração celular?",
+      "alternativas": ["Troca de gases nos pulmões", "Entrada de ar pelas narinas", "Fotossíntese nas plantas", "Obtenção de energia a partir da glicose"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é o zigoto?",
+      "alternativas": ["Célula somática", "Tipo de gameta", "Espermatozoide maduro", "Célula resultante da fecundação"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que são gametas?",
+      "alternativas": ["Células do sangue", "Células nervosas", "Células musculares", "Células reprodutoras (óvulo e espermatozoide)"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é transcrição do DNA?",
+      "alternativas": ["Duplicação do DNA", "Divisão celular", "Destruição de genes", "Cópia da informação do DNA para RNA mensageiro"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é tradução na síntese proteica?",
+      "alternativas": ["Cópia do DNA", "Divisão da célula", "Duplicação dos cromossomos", "Conversão da mensagem do RNA em aminoácidos"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é um antibiótico?",
+      "alternativas": ["Tipo de vacina", "Hormônio natural", "Vitamina essencial", "Substância que combate bactérias"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que são ribossomos?",
+      "alternativas": ["Organelas de energia", "Transporte de substâncias", "Organelas de respiração", "Estruturas de síntese de proteínas"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é o complexo de Golgi?",
+      "alternativas": ["Organela de digestão", "Síntese de proteínas", "Respiração celular", "Processamento e empacotamento de substâncias"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é a membrana plasmática?",
+      "alternativas": ["Produz energia", "Armazena DNA", "Sintetiza proteínas", "Delimita a célula controlando entrada e saída de substâncias"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é o citoplasma?",
+      "alternativas": ["Núcleo da célula", "Membrana externa", "Parede celular", "Material que preenche a célula onde ficam organelas"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que são cloroplastos?",
+      "alternativas": ["Organelas de digestão", "Organelas de respiração", "Síntese de proteínas", "Organelas onde ocorre fotossíntese"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é retículo endoplasmático?",
+      "alternativas": ["Organela de digestão", "Centro de controle celular", "Membrana externa", "Rede de membranas para síntese e transporte"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que são lisossomos?",
+      "alternativas": ["Organelas de respiração", "Organelas de fotossíntese", "Síntese de proteínas", "Organelas de digestão intracelular"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é a parede celular?",
+      "alternativas": ["Membrana de todas as células", "Organela de digestão", "Síntese de proteínas", "Estrutura rígida externa em plantas e fungos"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é vacúolo nas células vegetais?",
+      "alternativas": ["Organela de respiração", "Síntese de proteínas", "Núcleo da célula", "Organela de armazenamento de água"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é a Segunda Lei de Mendel?",
+      "alternativas": ["Lei da Segregação dos Fatores", "Lei da Dominância", "Lei das Mutações", "Lei da Segregação Independente dos genes"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é crossing-over?",
+      "alternativas": ["Separação dos cromossomos", "Duplicação do DNA", "Destruição de genes", "Troca de segmentos entre cromossomos homólogos"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é a teoria celular?",
+      "alternativas": ["Só animais têm células", "Células surgem espontaneamente", "Células não se dividem", "Todos os seres vivos são formados por células"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é célula procariótica?",
+      "alternativas": ["Célula com núcleo definido", "Célula vegetal com cloroplastos", "Célula animal com mitocôndrias", "Célula sem núcleo organizado como bactérias"],
+      "correta": 3
+    },
+    {
+      "enunciado": "O que é célula eucariótica?",
+      "alternativas": ["Célula sem membrana plasmática", "Célula sem organelas", "Célula sem material genético", "Célula com núcleo organizado delimitado por membrana"],
+      "correta": 3
+    }
+  ]
+}
