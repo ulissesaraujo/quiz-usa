@@ -2427,9 +2427,10 @@ Das 100 perguntas, distribua assim:
         function abrirModalPromptParaTema(temaId, temaPaiId) {
             let tema;
             let temaLimpo;
+            let temaPai;
             
             if (temaPaiId) {
-                const temaPai = temasFirebase.find(t => t.id === temaPaiId);
+                temaPai = temasFirebase.find(t => t.id === temaPaiId);
                 tema = temaPai?.subtemas?.find(s => s.id === temaId);
             } else {
                 tema = temasFirebase.find(t => t.id === temaId);
@@ -2441,7 +2442,14 @@ Das 100 perguntas, distribua assim:
             }
             
             // Interpreta temas escolares para gerar descrição mais clara
-            temaLimpo = interpretarTemaEscolar(temaId, tema.nome);
+            // Se for subtema, inclui o nome do tema pai para contexto
+            if (temaPaiId && temaPai) {
+                const nomePai = temaPai.nome.replace(/^\p{Emoji}\s*/u, '').trim(); // Remove emoji
+                const nomeSubtema = tema.nome.replace(/^\p{Emoji}\s*/u, '').trim();
+                temaLimpo = interpretarTemaEscolar(temaId, `${nomePai} - ${nomeSubtema}`);
+            } else {
+                temaLimpo = interpretarTemaEscolar(temaId, tema.nome);
+            }
             
             const prompt = `Crie 100 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
 
