@@ -2423,6 +2423,8 @@ Das 20 perguntas, distribua assim:
             document.getElementById('json-area').value = '';
             document.getElementById('json-preview').classList.add('oculto');
             document.getElementById('modal-colar-json').classList.remove('oculto');
+            // Foco no campo de texto
+            setTimeout(() => document.getElementById('json-area').focus(), 100);
         }
         
         function fecharModalColarJson() {
