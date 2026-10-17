@@ -1931,7 +1931,7 @@
                 ).join('');
                 
                 // Indicador de revisão
-                const revisaoTag = p.revisar ? '<span class="tag-revisao">⚠️ Revisar</span>' : '';
+                const revisaoTag = p.revisar ? `<span class="tag-revisao">⚠️ ${p.reportes || 1}</span>` : '';
                 
                 // Indicador de destaque
                 const destaqueTag = p.destaque ? `<span class="tag-destaque">⭐ ${p.curtidas || 1}</span>` : '';

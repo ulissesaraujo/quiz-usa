@@ -772,11 +772,12 @@ export async function marcarPerguntaRevisao(perguntaId, motivo = '') {
     }
     
     try {
-        const { doc, updateDoc, db } = window._firestore;
+        const { doc, updateDoc, increment, db } = window._firestore;
         await updateDoc(doc(db, "perguntas", perguntaId), {
             revisar: true,
             motivoRevisao: motivo,
-            dataRevisao: new Date().toISOString()
+            dataRevisao: new Date().toISOString(),
+            reportes: increment(1)
         });
         console.log("🔍 Pergunta marcada para revisão:", perguntaId);
         return true;
