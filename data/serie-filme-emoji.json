@@ -1,0 +1,505 @@
+{
+  "tema": "serie-filme-emoji",
+  "perguntas": [
+    {
+      "enunciado": "🧪👨‍🔬💊💀 - Qual série é essa?",
+      "alternativas": ["Breaking Bad", "The Walking Dead", "Better Call Saul", "Dexter"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🦁👑🌍 - Qual filme é esse?",
+      "alternativas": ["Madagascar", "O Rei Leão", "Mogli", "Tarzan"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🧟‍♂️🔫🏚️ - Qual série é essa?",
+      "alternativas": ["Fear the Walking Dead", "Z Nation", "The Walking Dead", "Black Summer"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🚢💔🧊 - Qual filme é esse?",
+      "alternativas": ["Poseidon", "Náufrago", "Pearl Harbor", "Titanic"],
+      "correta": 3
+    },
+    {
+      "enunciado": "👸❄️⛄🎵 - Qual filme é esse?",
+      "alternativas": ["Frozen", "Valente", "Enrolados", "Moana"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🐉🔥👑⚔️ - Qual série é essa?",
+      "alternativas": ["Vikings", "Game of Thrones", "The Witcher", "House of the Dragon"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🕷️🏙️🦸‍♂️ - Qual filme é esse?",
+      "alternativas": ["Venom", "Batman", "Homem-Aranha", "Deadpool"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🔍👦👻🚲 - Qual série é essa?",
+      "alternativas": ["Dark", "The OA", "Locke & Key", "Stranger Things"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🦇🌃🃏 - Qual filme é esse?",
+      "alternativas": ["Batman: O Cavaleiro das Trevas", "Liga da Justiça", "Homem de Ferro", "Pantera Negra"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👨‍👩‍👧‍👦🏠📺😂 - Qual série é essa?",
+      "alternativas": ["How I Met Your Mother", "Friends", "The Big Bang Theory", "Modern Family"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🧙‍♂️💍🌋🗡️ - Qual filme é esse?",
+      "alternativas": ["Harry Potter", "As Crônicas de Nárnia", "O Senhor dos Anéis", "O Hobbit"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🏥👨‍⚕️💉❤️ - Qual série é essa?",
+      "alternativas": ["House", "ER", "The Good Doctor", "Grey's Anatomy"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🤖🔴🎢🤠 - Qual série é essa?",
+      "alternativas": ["Westworld", "Black Mirror", "Altered Carbon", "Humans"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🐀👨‍🍳🇫🇷🍽️ - Qual filme é esse?",
+      "alternativas": ["O Corcunda de Notre Dame", "Ratatouille", "Divertida Mente", "Procurando Nemo"],
+      "correta": 1
+    },
+    {
+      "enunciado": "⚡🧙‍♂️🏰🐍 - Qual filme é esse?",
+      "alternativas": ["O Senhor dos Anéis", "Percy Jackson", "Harry Potter", "As Crônicas de Nárnia"],
+      "correta": 2
+    },
+    {
+      "enunciado": "👨‍👩‍👧‍👦💛🍩🏠 - Qual série é essa?",
+      "alternativas": ["Family Guy", "Futurama", "American Dad", "Os Simpsons"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🏝️✈️🔢😱 - Qual série é essa?",
+      "alternativas": ["Lost", "Manifest", "The 100", "Yellowjackets"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🤖👦💙✈️ - Qual filme é esse?",
+      "alternativas": ["Wall-E", "O Gigante de Ferro", "Transformers", "Operação Big Hero"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🧜‍♀️🌊🏰🦀 - Qual filme é esse?",
+      "alternativas": ["Moana", "Procurando Nemo", "A Pequena Sereia", "Luca"],
+      "correta": 2
+    },
+    {
+      "enunciado": "👮‍♂️🍩😂🚔 - Qual série é essa?",
+      "alternativas": ["The Office", "Parks and Recreation", "Superstore", "Brooklyn Nine-Nine"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🏢📋😐💼 - Qual série é essa?",
+      "alternativas": ["The Office", "Parks and Recreation", "Silicon Valley", "Veep"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🚗⚡🔙⏰ - Qual filme é esse?",
+      "alternativas": ["Interestelar", "De Volta para o Futuro", "O Exterminador do Futuro", "Tenet"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🧪🦠🏠😷 - Qual série é essa?",
+      "alternativas": ["The Last of Us", "Black Mirror", "The Strain", "The Walking Dead"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🎪🐘✨👦 - Qual filme é esse?",
+      "alternativas": ["O Rei Leão", "Madagascar", "Circo dos Horrores", "Dumbo"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🦖🏝️🔬😱 - Qual filme é esse?",
+      "alternativas": ["Jurassic Park", "King Kong", "Godzilla", "Rampage"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👨‍⚕️🏠🦯😤 - Qual série é essa?",
+      "alternativas": ["ER", "House", "The Good Doctor", "Scrubs"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🐟🔍👨‍👦🌊 - Qual filme é esse?",
+      "alternativas": ["O Espanta Tubarões", "Moana", "Procurando Nemo", "A Pequena Sereia"],
+      "correta": 2
+    },
+    {
+      "enunciado": "👸🐸💋👑 - Qual filme é esse?",
+      "alternativas": ["Shrek", "Enrolados", "Cinderela", "A Princesa e o Sapo"],
+      "correta": 3
+    },
+    {
+      "enunciado": "💰🏦🔫🎭 - Qual série é essa?",
+      "alternativas": ["La Casa de Papel", "Ozark", "Breaking Bad", "Lupin"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🧟🍕😂🧠 - Qual série é essa?",
+      "alternativas": ["Z Nation", "iZombie", "Santa Clarita Diet", "The Walking Dead"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🐭🎬🧀👂 - Qual filme é esse?",
+      "alternativas": ["Ratatouille", "Stuart Little", "Mickey Mouse", "Alvin e os Esquilos"],
+      "correta": 2
+    },
+    {
+      "enunciado": "👰💀🎸🇲🇽 - Qual filme é esse?",
+      "alternativas": ["Moana", "Encanto", "Os Incríveis", "Viva - A Vida é uma Festa"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🌌⭐🚀👽 - Qual filme é esse?",
+      "alternativas": ["Star Wars", "Star Trek", "Guardiões da Galáxia", "Avatar"],
+      "correta": 0
+    },
+    {
+      "enunciado": "⛵🏴‍☠️💀🦜 - Qual filme é esse?",
+      "alternativas": ["Moby Dick", "Piratas do Caribe", "Peter Pan", "A Ilha do Tesouro"],
+      "correta": 1
+    },
+    {
+      "enunciado": "👩‍🦰🏹🏔️🐻 - Qual filme é esse?",
+      "alternativas": ["Mulan", "Frozen", "Valente", "Pocahontas"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🃏😈🔪💚 - Qual filme é esse?",
+      "alternativas": ["Esquadrão Suicida", "Deadpool", "Venom", "Coringa"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🚀🥔👨‍🚀🔴 - Qual filme é esse?",
+      "alternativas": ["Perdido em Marte", "Interestelar", "Gravidade", "Ad Astra"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🎈🤡🔴😱 - Qual filme é esse?",
+      "alternativas": ["O Palhaço", "IT: A Coisa", "O Circo", "Poltergeist"],
+      "correta": 1
+    },
+    {
+      "enunciado": "👩‍👧👻🏚️🔑 - Qual filme é esse?",
+      "alternativas": ["A Maldição da Residência Hill", "Annabelle", "O Iluminado", "A Órfã"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🏍️🔫👴📞 - Qual série é essa?",
+      "alternativas": ["Peaky Blinders", "Sons of Anarchy", "Breaking Bad", "Better Call Saul"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🦍🏙️✈️👱‍♀️ - Qual filme é esse?",
+      "alternativas": ["King Kong", "Rampage", "Planeta dos Macacos", "Godzilla"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🎩🐇⏰🫖 - Qual filme é esse?",
+      "alternativas": ["Peter Pan", "Alice no País das Maravilhas", "Mary Poppins", "A Bela e a Fera"],
+      "correta": 1
+    },
+    {
+      "enunciado": "👨‍🔬🧲💚 - Qual filme é esse?",
+      "alternativas": ["Homem de Ferro", "Capitão América", "Hulk", "Thor"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🏰👻🎃🦇 - Qual filme é esse?",
+      "alternativas": ["Frankenstein", "Drácula", "A Múmia", "O Estranho Mundo de Jack"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🐕‍🦺🏔️❄️ - Qual filme é esse?",
+      "alternativas": ["O Chamado da Floresta", "A Caminho de Casa", "Balto", "Marley e Eu"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👸👠🎃✨ - Qual filme é esse?",
+      "alternativas": ["Branca de Neve", "Cinderela", "Rapunzel", "Bela Adormecida"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🤖🌹❤️👧 - Qual filme é esse?",
+      "alternativas": ["Inteligência Artificial", "Her", "O Homem Bicentenário", "Ex Machina"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🏛️⚔️🦁👎 - Qual filme é esse?",
+      "alternativas": ["300", "Tróia", "Ben-Hur", "Gladiador"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🧲🔴⚡🎓 - Qual série é essa?",
+      "alternativas": ["The Flash", "Arrow", "Supergirl", "Smallville"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🎸🤘👻💀 - Qual filme é esse?",
+      "alternativas": ["Rock of Ages", "Viva - A Vida é uma Festa", "School of Rock", "Bohemian Rhapsody"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🏠👻👨‍👩‍👧‍👦😱 - Qual série é essa?",
+      "alternativas": ["American Horror Story", "Supernatural", "A Maldição da Residência Hill", "The Haunting of Bly Manor"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🎹🎶💔🇫🇷 - Qual filme é esse?",
+      "alternativas": ["Moulin Rouge", "O Pianista", "Whiplash", "La La Land"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🏎️🔴🇮🇹🏆 - Qual filme é esse?",
+      "alternativas": ["Ford vs Ferrari", "Rush", "Carros", "Velozes e Furiosos"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👨‍👩‍👧💜🧠😭 - Qual filme é esse?",
+      "alternativas": ["Soul", "Divertida Mente", "Elementos", "Red"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🎤🎸👩‍🎤⭐ - Qual filme é esse?",
+      "alternativas": ["Bohemian Rhapsody", "Rocketman", "Nasce Uma Estrela", "Yesterday"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🔪😱🏠👻 - Qual série é essa?",
+      "alternativas": ["Dexter", "Hannibal", "You", "Scream"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🧪⚗️💎🔵 - Qual série é essa?",
+      "alternativas": ["Breaking Bad", "Ozark", "Narcos", "The Wire"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👨‍👧🎈🏠✈️ - Qual filme é esse?",
+      "alternativas": ["Meu Malvado Favorito", "Up: Altas Aventuras", "Toy Story", "Divertida Mente"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🦸‍♂️🛡️⭐🇺🇸 - Qual filme é esse?",
+      "alternativas": ["Superman", "Thor", "Capitão América", "Homem de Ferro"],
+      "correta": 2
+    },
+    {
+      "enunciado": "👨‍👩‍👧‍👦🔴💊🩸 - Qual série é essa?",
+      "alternativas": ["Breaking Bad", "Better Call Saul", "The Wire", "The Handmaid's Tale"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🐼🥋🍜🐉 - Qual filme é esse?",
+      "alternativas": ["Kung Fu Panda", "Mulan", "Como Treinar o Seu Dragão", "Shrek"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👩‍⚕️🔬🧬👽 - Qual série é essa?",
+      "alternativas": ["Doctor Who", "Arquivo X", "Fringe", "The Strain"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🤴🎶🦁🇦🇫 - Qual filme é esse?",
+      "alternativas": ["Mulan", "Pocahontas", "Aladdin", "O Rei Leão"],
+      "correta": 2
+    },
+    {
+      "enunciado": "📱💀🎬😱 - Qual filme é esse?",
+      "alternativas": ["Sexta-Feira 13", "Pânico", "O Chamado", "O Grito"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🧙‍♀️🏰🐈‍⬛✨ - Qual filme é esse?",
+      "alternativas": ["O Serviço de Entregas da Kiki", "A Bela Adormecida", "A Branca de Neve", "Malévola"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🏃‍♂️🌀🏙️⚡ - Qual série é essa?",
+      "alternativas": ["Arrow", "The Flash", "Supergirl", "Legends of Tomorrow"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🧊⛵🌊🐻‍❄️ - Qual filme é esse?",
+      "alternativas": ["Frozen", "Valente", "A Era do Gelo", "Happy Feet"],
+      "correta": 2
+    },
+    {
+      "enunciado": "👀🔍📸🏙️ - Qual filme é esse?",
+      "alternativas": ["O Turista", "James Bond", "Missão Impossível", "Janela Indiscreta"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🚂⚡🧙‍♂️📚 - Qual filme é esse?",
+      "alternativas": ["Harry Potter e a Pedra Filosofal", "As Crônicas de Nárnia", "O Senhor dos Anéis", "Percy Jackson"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👨‍🔬🕷️🦎💉 - Qual filme é esse?",
+      "alternativas": ["Venom", "O Espetacular Homem-Aranha", "X-Men", "Hulk"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🛸👽🚲🌙 - Qual filme é esse?",
+      "alternativas": ["Super 8", "Contatos Imediatos", "E.T. - O Extraterrestre", "Chegada"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🏰🐲🗡️🧝‍♀️ - Qual série é essa?",
+      "alternativas": ["Game of Thrones", "The Witcher", "Vikings", "House of the Dragon"],
+      "correta": 3
+    },
+    {
+      "enunciado": "💃🕺🏆🎶 - Qual série é essa?",
+      "alternativas": ["Glee", "Grease", "High School Musical", "Fame"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🧛‍♂️💉🩸🌙 - Qual série é essa?",
+      "alternativas": ["The Originals", "The Vampire Diaries", "True Blood", "Being Human"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🤖🔴🎯🏃‍♂️ - Qual filme é esse?",
+      "alternativas": ["Blade Runner", "Ex Machina", "O Exterminador do Futuro", "Matrix"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🎰💰🃏🎲 - Qual filme é esse?",
+      "alternativas": ["Se Beber, Não Case", "21", "Rounders", "Onze Homens e um Segredo"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🐕🛷❄️🏔️ - Qual filme é esse?",
+      "alternativas": ["Balto", "A Caminho de Casa", "O Chamado da Floresta", "Bolt"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🎭👫🎶🇫🇷 - Qual filme é esse?",
+      "alternativas": ["Moulin Rouge", "O Fantasma da Ópera", "Os Miseráveis", "Chicago"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🦸‍♂️⚡🔨🌩️ - Qual filme é esse?",
+      "alternativas": ["Superman", "Shazam", "Thor", "Aquaman"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🔪🍖🍳👨‍🍳 - Qual série é essa?",
+      "alternativas": ["MasterChef", "The Bear", "Kitchen Confidential", "Hannibal"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🕵️‍♂️🔍🎩🇬🇧 - Qual série é essa?",
+      "alternativas": ["Sherlock", "Peaky Blinders", "Luther", "Doctor Who"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👨‍👧🪀🎢🤖 - Qual filme é esse?",
+      "alternativas": ["Wall-E", "Toy Story", "Os Incríveis", "Monstros S.A."],
+      "correta": 1
+    },
+    {
+      "enunciado": "🦠🧟‍♂️🍄🏙️ - Qual série é essa?",
+      "alternativas": ["The Walking Dead", "Fear the Walking Dead", "The Last of Us", "Z Nation"],
+      "correta": 2
+    },
+    {
+      "enunciado": "👨‍✈️🏝️🌊🔥 - Qual filme é esse?",
+      "alternativas": ["Piratas do Caribe", "A Ilha", "Poseidon", "Náufrago"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🏫👩‍🎤🎤💫 - Qual série é essa?",
+      "alternativas": ["Glee", "Victorious", "Hannah Montana", "High School Musical"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🐠💙🌊🦈 - Qual filme é esse?",
+      "alternativas": ["Tubarão", "Procurando Dory", "Moana", "O Espanta Tubarões"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🧹🏰👻🎬 - Qual filme é esse?",
+      "alternativas": ["Hocus Pocus", "A Noiva Cadáver", "Os Caça-Fantasmas", "Beetlejuice"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🐊🌿🏠🎸 - Qual filme é esse?",
+      "alternativas": ["Tarzan", "Mogli", "Rio", "Lilo & Stitch"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🏎️🌈👧🍬 - Qual filme é esse?",
+      "alternativas": ["Detona Ralph", "Carros", "Toy Story", "Monstros S.A."],
+      "correta": 0
+    },
+    {
+      "enunciado": "🌪️🏠🌈🐕 - Qual filme é esse?",
+      "alternativas": ["Twister", "O Mágico de Oz", "Alice no País das Maravilhas", "Fantasia"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🧙‍♀️🍎💀🪞 - Qual filme é esse?",
+      "alternativas": ["Malévola", "Rapunzel", "Branca de Neve", "A Bela Adormecida"],
+      "correta": 2
+    },
+    {
+      "enunciado": "👨‍👩‍👧🇨🇴🦋🎶 - Qual filme é esse?",
+      "alternativas": ["Viva", "Moana", "Luca", "Encanto"],
+      "correta": 3
+    },
+    {
+      "enunciado": "🎪🎭🎶🎩 - Qual filme é esse?",
+      "alternativas": ["O Rei do Show", "Moulin Rouge", "Chicago", "La La Land"],
+      "correta": 0
+    },
+    {
+      "enunciado": "🐉👦🛡️🔥 - Qual filme é esse?",
+      "alternativas": ["Eragon", "Como Treinar o Seu Dragão", "Shrek", "O Hobbit"],
+      "correta": 1
+    },
+    {
+      "enunciado": "⛓️🏃‍♂️🌙📖 - Qual série é essa?",
+      "alternativas": ["The 100", "Lost", "Prison Break", "Manifest"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🎸🎤👨‍🦳🇬🇧 - Qual filme é esse?",
+      "alternativas": ["Yesterday", "A Star is Born", "Bohemian Rhapsody", "Rocketman"],
+      "correta": 3
+    },
+    {
+      "enunciado": "👽🌽🚜🕳️ - Qual filme é esse?",
+      "alternativas": ["Interestelar", "Chegada", "Contato", "Ad Astra"],
+      "correta": 0
+    },
+    {
+      "enunciado": "👮‍♂️🐕💊🎭 - Qual série é essa?",
+      "alternativas": ["The Shield", "Narcos", "Breaking Bad", "Ozark"],
+      "correta": 1
+    },
+    {
+      "enunciado": "🎻🎭👨‍🎤🕯️ - Qual filme é esse?",
+      "alternativas": ["Whiplash", "Moulin Rouge", "O Fantasma da Ópera", "Chicago"],
+      "correta": 2
+    },
+    {
+      "enunciado": "🏹💚🏙️🎯 - Qual série é essa?",
+      "alternativas": ["The Flash", "Legends of Tomorrow", "Supergirl", "Arrow"],
+      "correta": 3
+    }
+  ]
+}
