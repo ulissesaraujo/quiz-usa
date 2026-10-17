@@ -659,14 +659,10 @@ export async function buscarPerguntasRevisao() {
     }
     
     try {
-        const { collection, getDocs, query, where, orderBy, db } = window._firestore;
+        const { collection, getDocs, query, where, db } = window._firestore;
         const perguntasCollection = collection(db, "perguntas");
         
-        const q = query(
-            perguntasCollection, 
-            where("revisar", "==", true),
-            orderBy("dataRevisao", "desc")
-        );
+        const q = query(perguntasCollection, where("revisar", "==", true));
         const snapshot = await getDocs(q);
         
         const perguntas = [];
@@ -675,6 +671,13 @@ export async function buscarPerguntasRevisao() {
                 id: doc.id,
                 ...doc.data()
             });
+        });
+        
+        // Ordena localmente por data de revisão (mais recentes primeiro)
+        perguntas.sort((a, b) => {
+            const dataA = a.dataRevisao || '';
+            const dataB = b.dataRevisao || '';
+            return dataB.localeCompare(dataA);
         });
         
         console.log(`🔍 Encontradas ${perguntas.length} perguntas para revisão`);
@@ -696,14 +699,10 @@ export async function buscarPerguntasDestaque() {
     }
     
     try {
-        const { collection, getDocs, query, where, orderBy, db } = window._firestore;
+        const { collection, getDocs, query, where, db } = window._firestore;
         const perguntasCollection = collection(db, "perguntas");
         
-        const q = query(
-            perguntasCollection, 
-            where("destaque", "==", true),
-            orderBy("dataDestaque", "desc")
-        );
+        const q = query(perguntasCollection, where("destaque", "==", true));
         const snapshot = await getDocs(q);
         
         const perguntas = [];
@@ -712,6 +711,13 @@ export async function buscarPerguntasDestaque() {
                 id: doc.id,
                 ...doc.data()
             });
+        });
+        
+        // Ordena localmente por data de destaque (mais recentes primeiro)
+        perguntas.sort((a, b) => {
+            const dataA = a.dataDestaque || '';
+            const dataB = b.dataDestaque || '';
+            return dataB.localeCompare(dataA);
         });
         
         console.log(`⭐ Encontradas ${perguntas.length} perguntas destacadas`);
@@ -882,19 +888,22 @@ export async function buscarPerguntasPorTema(tema) {
     }
     
     try {
-        const { collection, query, where, orderBy, getDocs, db } = window._firestore;
+        const { collection, query, where, getDocs, db } = window._firestore;
         const perguntasRef = collection(db, "perguntas");
-        const q = query(
-            perguntasRef, 
-            where("tema", "==", tema),
-            orderBy("criadoEm", "desc")
-        );
+        const q = query(perguntasRef, where("tema", "==", tema));
         const snapshot = await getDocs(q);
         
-        return snapshot.docs.map(doc => ({
+        const perguntas = snapshot.docs.map(doc => ({
             id: doc.id,
             ...doc.data()
         }));
+        
+        // Ordena localmente por data de criação (mais recentes primeiro)
+        return perguntas.sort((a, b) => {
+            const dataA = a.criadoEm || '';
+            const dataB = b.criadoEm || '';
+            return dataB.localeCompare(dataA);
+        });
     } catch (error) {
         console.error("Erro ao buscar perguntas por tema:", error);
         return [];
