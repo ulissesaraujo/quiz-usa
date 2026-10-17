@@ -2750,9 +2750,9 @@ Das 20 perguntas, distribua assim:
                     const idx = subtemas.findIndex(s => s.id === id);
                     
                     if (idx >= 0) {
-                        subtemas[idx] = { id, nome, icone, totalPerguntas: subtemas[idx].totalPerguntas || 0 };
+                        subtemas[idx] = { id, nome, icone, ordem, totalPerguntas: subtemas[idx].totalPerguntas || 0 };
                     } else {
-                        subtemas.push({ id, nome, icone, totalPerguntas: 0 });
+                        subtemas.push({ id, nome, icone, ordem, totalPerguntas: 0 });
                     }
                     
                     temaPai.subtemas = subtemas;
