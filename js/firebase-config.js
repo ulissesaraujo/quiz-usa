@@ -888,22 +888,19 @@ export async function buscarPerguntasPorTema(tema) {
     }
     
     try {
-        const { collection, query, where, getDocs, db } = window._firestore;
+        const { collection, query, where, orderBy, getDocs, db } = window._firestore;
         const perguntasRef = collection(db, "perguntas");
-        const q = query(perguntasRef, where("tema", "==", tema));
+        const q = query(
+            perguntasRef, 
+            where("tema", "==", tema),
+            orderBy("criadoEm", "desc")
+        );
         const snapshot = await getDocs(q);
         
-        const perguntas = snapshot.docs.map(doc => ({
+        return snapshot.docs.map(doc => ({
             id: doc.id,
             ...doc.data()
         }));
-        
-        // Ordena localmente por data de criação (mais recentes primeiro)
-        return perguntas.sort((a, b) => {
-            const dataA = a.criadoEm || '';
-            const dataB = b.criadoEm || '';
-            return dataB.localeCompare(dataA);
-        });
     } catch (error) {
         console.error("Erro ao buscar perguntas por tema:", error);
         return [];
