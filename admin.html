@@ -1187,6 +1187,9 @@
                                 <option value="">Todos os temas</option>
                             </select>
                             <span class="filtro-contador" id="filtro-contador">0 perguntas</span>
+                            <button type="button" class="btn btn-danger btn-small oculto" id="btn-excluir-tema" title="Excluir TODAS as perguntas deste tema">
+                                🗑️ Excluir Todas
+                            </button>
                         </div>
                     </div>
 
@@ -1525,6 +1528,7 @@
             contarPerguntasRevisao,
             contarPerguntasDestaque,
             excluirPergunta,
+            excluirPerguntasPorTema,
             atualizarPergunta,
             buscarPerguntasPorTema,
             buscarRanking,
@@ -1765,6 +1769,11 @@
             form.addEventListener('submit', handleSubmit);
             filtroTema.addEventListener('change', () => {
                 filtroAtual = filtroTema.value;
+                // Mostra/oculta botão de excluir tema
+                const btnExcluirTema = document.getElementById('btn-excluir-tema');
+                if (btnExcluirTema) {
+                    btnExcluirTema.classList.toggle('oculto', !filtroAtual);
+                }
                 renderizarPerguntas();
             });
             document.getElementById('filtro-revisar')?.addEventListener('change', renderizarPerguntas);
@@ -1798,6 +1807,9 @@
             
             // Click no card de partidas para zerar
             document.getElementById('card-partidas').addEventListener('click', zerarPartidas);
+            
+            // Botão excluir todas perguntas do tema
+            document.getElementById('btn-excluir-tema')?.addEventListener('click', excluirTodasDoTema);
         }
 
         // Zera todas as partidas
@@ -1826,6 +1838,54 @@
             } catch (error) {
                 console.error('Erro ao zerar partidas:', error);
                 mostrarMensagem('Erro ao excluir partidas: ' + error.message, 'erro');
+            }
+        }
+
+        // Exclui todas as perguntas do tema selecionado
+        async function excluirTodasDoTema() {
+            if (!filtroAtual) {
+                mostrarMensagem('Selecione um tema primeiro.', 'erro');
+                return;
+            }
+            
+            const qtdPerguntas = perguntas.length;
+            
+            if (qtdPerguntas === 0) {
+                mostrarMensagem('Não há perguntas para excluir neste tema.', 'erro');
+                return;
+            }
+            
+            // Primeira confirmação
+            if (!confirm(`⚠️ ATENÇÃO!\n\nIsso irá excluir TODAS as ${qtdPerguntas} perguntas do tema "${filtroAtual}".\n\nEsta ação NÃO pode ser desfeita!\n\nTem certeza?`)) {
+                return;
+            }
+            
+            // Segunda confirmação com o nome do tema
+            const confirmacao = prompt(`Para confirmar, digite o nome do tema: ${filtroAtual}`);
+            if (confirmacao !== filtroAtual) {
+                mostrarMensagem('Confirmação incorreta. Exclusão cancelada.', 'erro');
+                return;
+            }
+            
+            try {
+                mostrarMensagem('🗑️ Excluindo perguntas...', 'info');
+                const resultado = await excluirPerguntasPorTema(filtroAtual);
+                
+                // Limpa a lista local
+                perguntas = [];
+                renderizarPerguntas();
+                
+                // Atualiza contadores
+                totalPerguntasEl.textContent = '0';
+                filtroContador.textContent = '0 perguntas';
+                
+                // Atualiza contagem do tema no Firebase
+                await atualizarContagemTema(filtroAtual);
+                
+                mostrarMensagem(`✅ ${resultado.excluidas} perguntas do tema "${filtroAtual}" excluídas com sucesso!`, 'sucesso');
+            } catch (error) {
+                console.error('Erro ao excluir perguntas do tema:', error);
+                mostrarMensagem('Erro ao excluir: ' + error.message, 'erro');
             }
         }
 

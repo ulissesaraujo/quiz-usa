@@ -797,6 +797,49 @@ export async function excluirPergunta(perguntaId) {
 }
 
 /**
+ * Exclui todas as perguntas de um tema específico
+ * @param {string} tema - ID do tema
+ * @returns {Promise<{sucesso: boolean, excluidas: number}>}
+ */
+export async function excluirPerguntasPorTema(tema) {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        throw new Error('Firebase não disponível');
+    }
+    
+    const { collection, getDocs, deleteDoc, doc, query, where, db } = window._firestore;
+    
+    try {
+        // Busca todas as perguntas do tema
+        const q = query(collection(db, "perguntas"), where("tema", "==", tema));
+        const snapshot = await getDocs(q);
+        
+        if (snapshot.empty) {
+            console.log("⚠️ Nenhuma pergunta encontrada para o tema:", tema);
+            return { sucesso: true, excluidas: 0 };
+        }
+        
+        // Exclui em lotes de 10 para não sobrecarregar
+        const deletePromises = [];
+        let count = 0;
+        
+        snapshot.forEach((documento) => {
+            deletePromises.push(deleteDoc(doc(db, "perguntas", documento.id)));
+            count++;
+        });
+        
+        await Promise.all(deletePromises);
+        
+        console.log(`🗑️ ${count} perguntas do tema "${tema}" excluídas com sucesso`);
+        return { sucesso: true, excluidas: count };
+    } catch (error) {
+        console.error("Erro ao excluir perguntas do tema:", error);
+        throw error;
+    }
+}
+
+/**
  * Atualiza uma pergunta existente
  * @param {string} perguntaId - ID da pergunta
  * @param {Object} dados - Dados a atualizar
