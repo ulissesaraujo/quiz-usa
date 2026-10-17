@@ -659,10 +659,14 @@ export async function buscarPerguntasRevisao() {
     }
     
     try {
-        const { collection, getDocs, query, where, db } = window._firestore;
+        const { collection, getDocs, query, where, orderBy, db } = window._firestore;
         const perguntasCollection = collection(db, "perguntas");
         
-        const q = query(perguntasCollection, where("revisar", "==", true));
+        const q = query(
+            perguntasCollection, 
+            where("revisar", "==", true),
+            orderBy("dataRevisao", "desc")
+        );
         const snapshot = await getDocs(q);
         
         const perguntas = [];
@@ -692,10 +696,14 @@ export async function buscarPerguntasDestaque() {
     }
     
     try {
-        const { collection, getDocs, query, where, db } = window._firestore;
+        const { collection, getDocs, query, where, orderBy, db } = window._firestore;
         const perguntasCollection = collection(db, "perguntas");
         
-        const q = query(perguntasCollection, where("destaque", "==", true));
+        const q = query(
+            perguntasCollection, 
+            where("destaque", "==", true),
+            orderBy("dataDestaque", "desc")
+        );
         const snapshot = await getDocs(q);
         
         const perguntas = [];
@@ -874,9 +882,13 @@ export async function buscarPerguntasPorTema(tema) {
     }
     
     try {
-        const { collection, query, where, getDocs, db } = window._firestore;
+        const { collection, query, where, orderBy, getDocs, db } = window._firestore;
         const perguntasRef = collection(db, "perguntas");
-        const q = query(perguntasRef, where("tema", "==", tema));
+        const q = query(
+            perguntasRef, 
+            where("tema", "==", tema),
+            orderBy("criadoEm", "desc")
+        );
         const snapshot = await getDocs(q);
         
         return snapshot.docs.map(doc => ({
