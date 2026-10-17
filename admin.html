@@ -2460,10 +2460,20 @@ Das 20 perguntas, distribua assim:
                     (p.tema || tema) && p.enunciado && Array.isArray(p.alternativas) && typeof p.correta === 'number'
                 );
                 
-                preview.classList.remove('oculto');
-                preview.style.borderLeftColor = '#22c55e';
-                preview.style.background = '#f0fdf4';
-                previewText.innerHTML = `✅ JSON válido! <strong>${validas.length}</strong> perguntas encontradas${tema ? ` (tema: ${tema})` : ''}`;
+                if (validas.length > 0) {
+                    preview.classList.remove('oculto');
+                    preview.style.borderLeftColor = '#22c55e';
+                    preview.style.background = '#f0fdf4';
+                    previewText.innerHTML = `✅ <strong>${validas.length}</strong> perguntas válidas${tema ? ` (tema: ${tema})` : ''} - Importando...`;
+                    
+                    // Importa automaticamente após 300ms
+                    setTimeout(() => importarJsonColado(), 300);
+                } else {
+                    preview.classList.remove('oculto');
+                    preview.style.borderLeftColor = '#f59e0b';
+                    preview.style.background = '#fffbeb';
+                    previewText.innerHTML = `⚠️ JSON válido mas nenhuma pergunta encontrada`;
+                }
                 
             } catch (e) {
                 preview.classList.remove('oculto');
@@ -2509,8 +2519,6 @@ Das 20 perguntas, distribua assim:
                     alert('Nenhuma pergunta válida encontrada no JSON.');
                     return;
                 }
-                
-                if (!confirm(`Importar ${perguntasValidas.length} perguntas?`)) return;
                 
                 // Mostra loading
                 btnImportar.disabled = true;
