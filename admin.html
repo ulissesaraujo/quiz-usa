@@ -1902,6 +1902,17 @@
             }
         }
 
+        // Recarrega mantendo o modo atual (revisão, destaque ou tema)
+        async function recarregarModoAtual() {
+            if (modoVisualizacao === 'revisao') {
+                await carregarRevisao();
+            } else if (modoVisualizacao === 'destaque') {
+                await carregarDestaque();
+            } else {
+                await carregarPerguntas();
+            }
+        }
+
         // Carrega estatísticas
         async function carregarStats() {
             try {
@@ -2035,7 +2046,7 @@
                     mostrarMensagem('Pergunta adicionada com sucesso!', 'sucesso');
                     form.reset();
                 }
-                await carregarPerguntas();
+                await recarregarModoAtual();
             } catch (error) {
                 console.error('Erro ao salvar:', error);
                 mostrarMensagem('Erro ao salvar pergunta. Tente novamente.', 'erro');
@@ -2051,7 +2062,7 @@
             
             try {
                 await excluirPergunta(id);
-                await carregarPerguntas();
+                await recarregarModoAtual();
                 mostrarMensagem('Pergunta excluída!', 'sucesso');
             } catch (error) {
                 console.error('Erro ao excluir:', error);
