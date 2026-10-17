@@ -2429,11 +2429,15 @@ Das 100 perguntas, distribua assim:
             let temaLimpo;
             let temaPai;
             
+            console.log('abrirModalPromptParaTema:', { temaId, temaPaiId }); // Debug
+            
             if (temaPaiId) {
                 temaPai = temasFirebase.find(t => t.id === temaPaiId);
                 tema = temaPai?.subtemas?.find(s => s.id === temaId);
+                console.log('Subtema encontrado:', { temaPai: temaPai?.nome, tema: tema?.nome }); // Debug
             } else {
                 tema = temasFirebase.find(t => t.id === temaId);
+                console.log('Tema principal encontrado:', tema?.nome); // Debug
             }
             
             if (!tema) {
@@ -2444,12 +2448,16 @@ Das 100 perguntas, distribua assim:
             // Interpreta temas escolares para gerar descrição mais clara
             // Se for subtema, inclui o nome do tema pai para contexto
             if (temaPaiId && temaPai) {
-                const nomePai = temaPai.nome.replace(/^\p{Emoji}\s*/u, '').trim(); // Remove emoji
-                const nomeSubtema = tema.nome.replace(/^\p{Emoji}\s*/u, '').trim();
+                // Remove emojis do início dos nomes
+                const nomePai = temaPai.nome.replace(/^[\p{Emoji}\p{Emoji_Presentation}\p{Emoji_Modifier}\p{Emoji_Modifier_Base}\p{Emoji_Component}\uFE0F\u20E3]+\s*/gu, '').trim();
+                const nomeSubtema = tema.nome.replace(/^[\p{Emoji}\p{Emoji_Presentation}\p{Emoji_Modifier}\p{Emoji_Modifier_Base}\p{Emoji_Component}\uFE0F\u20E3]+\s*/gu, '').trim();
+                console.log('Nomes limpos:', { nomePai, nomeSubtema }); // Debug
                 temaLimpo = interpretarTemaEscolar(temaId, `${nomePai} - ${nomeSubtema}`);
             } else {
                 temaLimpo = interpretarTemaEscolar(temaId, tema.nome);
             }
+            
+            console.log('temaLimpo final:', temaLimpo); // Debug
             
             const prompt = `Crie 100 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
 
