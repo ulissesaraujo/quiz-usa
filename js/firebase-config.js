@@ -96,6 +96,7 @@ async function inicializarFirebase() {
             addDoc, 
             getDocs, 
             getDoc,
+            getCountFromServer,
             doc,
             setDoc,
             updateDoc,
@@ -124,7 +125,7 @@ async function inicializarFirebase() {
         
         // Armazena as funções do Firestore globalmente
         window._firestore = { 
-            collection, addDoc, getDocs, getDoc, doc, setDoc, updateDoc, deleteDoc,
+            collection, addDoc, getDocs, getDoc, getCountFromServer, doc, setDoc, updateDoc, deleteDoc,
             query, orderBy, where, limit, writeBatch, increment, db 
         };
         
@@ -710,6 +711,52 @@ export async function buscarPerguntasDestaque() {
     } catch (error) {
         console.error("Erro ao buscar perguntas destacadas:", error);
         return [];
+    }
+}
+
+/**
+ * Conta perguntas para revisão (sem trazer dados)
+ * @returns {Promise<number>}
+ */
+export async function contarPerguntasRevisao() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        return 0;
+    }
+    
+    try {
+        const { collection, getCountFromServer, query, where, db } = window._firestore;
+        const perguntasCollection = collection(db, "perguntas");
+        const q = query(perguntasCollection, where("revisar", "==", true));
+        const snapshot = await getCountFromServer(q);
+        return snapshot.data().count;
+    } catch (error) {
+        console.error("Erro ao contar revisões:", error);
+        return 0;
+    }
+}
+
+/**
+ * Conta perguntas destacadas (sem trazer dados)
+ * @returns {Promise<number>}
+ */
+export async function contarPerguntasDestaque() {
+    await firebasePromise;
+    
+    if (!firebaseDisponivel || !window._firestore) {
+        return 0;
+    }
+    
+    try {
+        const { collection, getCountFromServer, query, where, db } = window._firestore;
+        const perguntasCollection = collection(db, "perguntas");
+        const q = query(perguntasCollection, where("destaque", "==", true));
+        const snapshot = await getCountFromServer(q);
+        return snapshot.data().count;
+    } catch (error) {
+        console.error("Erro ao contar destaques:", error);
+        return 0;
     }
 }
 

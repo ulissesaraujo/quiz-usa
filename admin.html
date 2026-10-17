@@ -1522,6 +1522,8 @@
             buscarTodasPerguntas,
             buscarPerguntasRevisao,
             buscarPerguntasDestaque,
+            contarPerguntasRevisao,
+            contarPerguntasDestaque,
             excluirPergunta,
             atualizarPergunta,
             buscarPerguntasPorTema,
@@ -1732,12 +1734,29 @@
             }
         }
 
+        // Carrega contadores de revisão e destaque (sem trazer perguntas)
+        async function carregarContadoresIniciais() {
+            try {
+                const [qtdRevisao, qtdDestaque] = await Promise.all([
+                    contarPerguntasRevisao(),
+                    contarPerguntasDestaque()
+                ]);
+                
+                document.getElementById('count-revisar').textContent = qtdRevisao;
+                document.getElementById('count-destaque').textContent = qtdDestaque;
+                console.log(`📊 Contadores: ${qtdRevisao} revisões, ${qtdDestaque} destaques`);
+            } catch (error) {
+                console.error('Erro ao carregar contadores:', error);
+            }
+        }
+
         // Inicialização
         async function init() {
             await aguardarFirebase();
             await carregarSelectsTemas(); // Carrega temas nos selects
             await carregarStats();
             await carregarConfiguracoesTela();
+            await carregarContadoresIniciais(); // Carrega contadores de revisão/destaque
             
             // Mostra mensagem inicial em vez de carregar perguntas
             perguntasLista.innerHTML = '<p style="text-align: center; color: #888; padding: 2rem;">Clique em "Atualizar" para carregar as perguntas.</p>';
