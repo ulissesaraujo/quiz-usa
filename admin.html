@@ -2379,7 +2379,7 @@
             // Interpreta temas escolares para gerar descrição mais clara
             const temaLimpo = interpretarTemaEscolar(temaId, temaTextoLimpo);
             
-            const prompt = `Crie 10 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
+            const prompt = `Crie 100 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
 
 **Regras:**
 - Perguntas variadas e interessantes sobre o tema
@@ -2389,11 +2389,11 @@
 - Não repita informações entre perguntas
 
 **DISTRIBUIÇÃO OBRIGATÓRIA DAS RESPOSTAS CORRETAS:**
-Das 10 perguntas, distribua assim:
-- 2 perguntas com "correta": 0
-- 3 perguntas com "correta": 1
-- 2 perguntas com "correta": 2
-- 3 perguntas com "correta": 3
+Das 100 perguntas, distribua assim:
+- 25 perguntas com "correta": 0
+- 25 perguntas com "correta": 1
+- 25 perguntas com "correta": 2
+- 25 perguntas com "correta": 3
 
 **Formato JSON obrigatório:**
 \`\`\`json
@@ -2443,7 +2443,7 @@ Das 10 perguntas, distribua assim:
             // Interpreta temas escolares para gerar descrição mais clara
             temaLimpo = interpretarTemaEscolar(temaId, tema.nome);
             
-            const prompt = `Crie 10 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
+            const prompt = `Crie 100 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
 
 **Regras:**
 - Perguntas variadas e interessantes sobre o tema
@@ -2453,11 +2453,11 @@ Das 10 perguntas, distribua assim:
 - Não repita informações entre perguntas
 
 **DISTRIBUIÇÃO OBRIGATÓRIA DAS RESPOSTAS CORRETAS:**
-Das 10 perguntas, distribua assim:
-- 2 perguntas com "correta": 0
-- 3 perguntas com "correta": 1
-- 2 perguntas com "correta": 2
-- 3 perguntas com "correta": 3
+Das 100 perguntas, distribua assim:
+- 25 perguntas com "correta": 0
+- 25 perguntas com "correta": 1
+- 25 perguntas com "correta": 2
+- 25 perguntas com "correta": 3
 
 **Formato JSON obrigatório:**
 \`\`\`json
