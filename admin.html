@@ -1759,7 +1759,7 @@
             await carregarContadoresIniciais(); // Carrega contadores de revisão/destaque
             
             // Mostra mensagem inicial em vez de carregar perguntas
-            perguntasLista.innerHTML = '<p style="text-align: center; color: #888; padding: 2rem;">Clique em "Atualizar" para carregar as perguntas.</p>';
+            perguntasLista.innerHTML = '<p style="text-align: center; color: #888; padding: 2rem;">Selecione um tema e clique em "Atualizar", ou use os botões Revisão/Destaques.</p>';
             
             // Event listeners
             form.addEventListener('submit', handleSubmit);
@@ -1829,14 +1829,20 @@
             }
         }
 
-        // Carrega perguntas do Firebase
+        // Carrega perguntas do Firebase (requer tema selecionado)
         async function carregarPerguntas() {
+            // Verifica se tem tema selecionado
+            if (!filtroAtual) {
+                mostrarMensagem('Selecione um tema para carregar as perguntas.', 'erro');
+                return;
+            }
+            
             perguntasLista.innerHTML = '<div class="loading"><div class="spinner"></div><p>Carregando...</p></div>';
             modoVisualizacao = 'tema';
             atualizarBotoesVisualizacao();
             
             try {
-                perguntas = await buscarTodasPerguntas();
+                perguntas = await buscarPerguntasPorTema(filtroAtual);
                 totalPerguntasEl.textContent = perguntas.length;
                 renderizarPerguntas();
             } catch (error) {
