@@ -2267,6 +2267,37 @@
         }
 
         // ========================================
+        // INTERPRETADOR DE TEMAS ESCOLARES
+        // ========================================
+        
+        function interpretarTemaEscolar(temaId, temaNome) {
+            const materias = {
+                'mat': 'Matemática', 'por': 'Português', 'his': 'História',
+                'geo': 'Geografia', 'bio': 'Biologia', 'fis': 'Física',
+                'qui': 'Química', 'fil': 'Filosofia', 'soc': 'Sociologia',
+                'art': 'Artes', 'ing': 'Inglês', 'esp': 'Espanhol',
+                'lit': 'Literatura', 'red': 'Redação'
+            };
+            
+            const series = {
+                '1ef': '1º ano do Ensino Fundamental', '2ef': '2º ano do Ensino Fundamental',
+                '3ef': '3º ano do Ensino Fundamental', '4ef': '4º ano do Ensino Fundamental',
+                '5ef': '5º ano do Ensino Fundamental', '6ef': '6º ano do Ensino Fundamental',
+                '7ef': '7º ano do Ensino Fundamental', '8ef': '8º ano do Ensino Fundamental',
+                '9ef': '9º ano do Ensino Fundamental', '1em': '1º ano do Ensino Médio',
+                '2em': '2º ano do Ensino Médio', '3em': '3º ano do Ensino Médio'
+            };
+            
+            const match = temaId.match(/^([a-z]+)-(\d[a-z]+)$/i);
+            if (match) {
+                const materia = materias[match[1].toLowerCase()];
+                const serie = series[match[2].toLowerCase()];
+                if (materia && serie) return `${materia} do ${serie}`;
+            }
+            return temaNome;
+        }
+
+        // ========================================
         // MODAL: GERAR PROMPT PARA IA
         // ========================================
         
@@ -2276,10 +2307,13 @@
             const temaTexto = temaSelect.options[temaSelect.selectedIndex]?.text || 'Nome do Tema';
             
             // Limpa o texto do tema (remove indentação de subtema)
-            const temaLimpo = temaTexto.replace(/^\s*└\s*/, '').trim();
+            const temaTextoLimpo = temaTexto.replace(/^\s*└\s*/, '').trim();
             const temaId = temaSelecionado || 'nome-do-tema';
             
-            const prompt = `Crie 20 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
+            // Interpreta temas escolares para gerar descrição mais clara
+            const temaLimpo = interpretarTemaEscolar(temaId, temaTextoLimpo);
+            
+            const prompt = `Crie 10 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
 
 **Regras:**
 - Perguntas variadas e interessantes sobre o tema
@@ -2289,11 +2323,11 @@
 - Não repita informações entre perguntas
 
 **DISTRIBUIÇÃO OBRIGATÓRIA DAS RESPOSTAS CORRETAS:**
-Das 20 perguntas, distribua assim:
-- 5 perguntas com "correta": 0
-- 5 perguntas com "correta": 1
-- 5 perguntas com "correta": 2
-- 5 perguntas com "correta": 3
+Das 10 perguntas, distribua assim:
+- 2 perguntas com "correta": 0
+- 3 perguntas com "correta": 1
+- 2 perguntas com "correta": 2
+- 3 perguntas com "correta": 3
 
 **Formato JSON obrigatório:**
 \`\`\`json
@@ -2340,9 +2374,10 @@ Das 20 perguntas, distribua assim:
                 return;
             }
             
-            temaLimpo = tema.nome;
+            // Interpreta temas escolares para gerar descrição mais clara
+            temaLimpo = interpretarTemaEscolar(temaId, tema.nome);
             
-            const prompt = `Crie 20 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
+            const prompt = `Crie 10 perguntas de quiz sobre "${temaLimpo}" no formato JSON.
 
 **Regras:**
 - Perguntas variadas e interessantes sobre o tema
@@ -2352,11 +2387,11 @@ Das 20 perguntas, distribua assim:
 - Não repita informações entre perguntas
 
 **DISTRIBUIÇÃO OBRIGATÓRIA DAS RESPOSTAS CORRETAS:**
-Das 20 perguntas, distribua assim:
-- 5 perguntas com "correta": 0
-- 5 perguntas com "correta": 1
-- 5 perguntas com "correta": 2
-- 5 perguntas com "correta": 3
+Das 10 perguntas, distribua assim:
+- 2 perguntas com "correta": 0
+- 3 perguntas com "correta": 1
+- 2 perguntas com "correta": 2
+- 3 perguntas com "correta": 3
 
 **Formato JSON obrigatório:**
 \`\`\`json
