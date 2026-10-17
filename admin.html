@@ -2397,21 +2397,22 @@ Das 20 perguntas, distribua assim:
                 await navigator.clipboard.writeText(promptArea.value);
                 
                 const btnCopiar = document.getElementById('btn-copiar-prompt');
-                const textoOriginal = btnCopiar.textContent;
                 btnCopiar.textContent = '✓ Copiado!';
                 btnCopiar.classList.add('btn-success');
                 btnCopiar.classList.remove('btn-primary');
                 
+                // Fecha o modal após 500ms
                 setTimeout(() => {
-                    btnCopiar.textContent = textoOriginal;
+                    fecharModalPrompt();
+                    btnCopiar.textContent = '📋 Copiar Prompt';
                     btnCopiar.classList.remove('btn-success');
                     btnCopiar.classList.add('btn-primary');
-                }, 2000);
+                }, 500);
             } catch (err) {
                 // Fallback para navegadores mais antigos
                 promptArea.select();
                 document.execCommand('copy');
-                alert('Prompt copiado!');
+                fecharModalPrompt();
             }
         }
 
